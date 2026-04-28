@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fases Wyckoff (A→E) — Bertani Educação</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(41, 98, 255, 0.15), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--accent); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--s-3); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--accent); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+
+    .fases-grid { display: grid; grid-template-columns: repeat(5, 1fr); gap: var(--s-3); margin-top: var(--s-4); }
+    @media (max-width: 980px) { .fases-grid { grid-template-columns: repeat(2, 1fr); } }
+    .fase-card { background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: var(--radius-sm); padding: var(--s-4); }
+    .fase-card .letra { font-family: var(--mono); font-size: 32px; font-weight: 700; color: var(--accent); margin: 0; line-height: 1; }
+    .fase-card h4 { font-size: 14px; margin: var(--s-2) 0 4px; }
+    .fase-card p { font-size: 12px; color: var(--muted); line-height: 1.45; margin: 0; }
+
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); margin-top: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .ciclo-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .ciclo-card.acc { border-color: var(--green); }
+    .ciclo-card.dist { border-color: var(--warn); }
+    .ciclo-card h3 { margin: 0 0 var(--s-3); }
+    .ciclo-card.acc h3 { color: var(--green); }
+    .ciclo-card.dist h3 { color: var(--warn); }
+    .ciclo-card ul { padding-left: 24px; line-height: 1.7; color: var(--text-2); font-size: 14px; }
+    .ciclo-card ul li { margin-bottom: 6px; }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../dashboard.html">Dashboard</a><a href="index.html" class="active">Educação</a><a href="../calculadora/input.html">Calculadora</a><a href="../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../dashboard.html">Dashboard</a> › <a href="index.html">Educação</a> › Fases Wyckoff</p>
+    <div class="m-icon">🔄</div>
+    <h1 class="m-titulo">Fases Wyckoff (A → E)</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Estrutura</span> <span><strong>Pré-requisito de tudo</strong></span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <section class="panel">
+      <h2>O que são</h2>
+      <p>
+        Wyckoff dividiu o ciclo de mercado em <strong>5 fases sequenciais</strong> (A, B, C, D, E) que se repetem
+        em loop entre acumulação (compra institucional) e distribuição (venda institucional). Conhecer a fase
+        atual é o primeiro filtro do método: <strong>operar long só em fase D/E de acumulação, short só em D/E de distribuição</strong>.
+      </p>
+      <p>
+        Em cada fase, o Composite Man (operador institucional) tem um objetivo específico: detectar exaustão (A),
+        construir causa (B), testar absorção (C), executar markup/markdown (D) e expandir (E). Ler estrutura =
+        ler intenção institucional.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Diagrama (ciclo completo)</h2>
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 700 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="gw" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="700" height="320" fill="url(#gw)" />
+
+          <!-- Acumulação: queda → range → markup -->
+          <!-- Phase A: PS, SC, AR, ST -->
+          <path d="M 30 80 L 70 200 L 90 230 L 110 210 L 130 220" fill="none" stroke="#FF1744" stroke-width="2"/>
+          <text x="80" y="60" font-size="14" fill="#FF1744" font-weight="bold" text-anchor="middle">A</text>
+
+          <!-- Phase B: range -->
+          <path d="M 130 220 L 150 200 L 170 230 L 190 205 L 210 225 L 230 205 L 250 230" fill="none" stroke="#8A95A8" stroke-width="2"/>
+          <text x="190" y="190" font-size="14" fill="#8A95A8" font-weight="bold" text-anchor="middle">B</text>
+
+          <!-- Phase C: Spring -->
+          <path d="M 250 230 L 270 250 L 290 220" fill="none" stroke="#D4AF37" stroke-width="3"/>
+          <text x="280" y="270" font-size="14" fill="#D4AF37" font-weight="bold" text-anchor="middle">C · Spring</text>
+
+          <!-- Phase D: markup -->
+          <path d="M 290 220 L 320 190 L 340 170 L 360 150 L 380 130" fill="none" stroke="#00C853" stroke-width="2"/>
+          <text x="340" y="115" font-size="14" fill="#00C853" font-weight="bold" text-anchor="middle">D · Markup</text>
+
+          <!-- Phase E: markup expansivo -->
+          <path d="M 380 130 L 420 100 L 460 80 L 500 70" fill="none" stroke="#00C853" stroke-width="2.5"/>
+          <text x="445" y="55" font-size="14" fill="#00C853" font-weight="bold" text-anchor="middle">E</text>
+
+          <!-- Topo (Distribuição começa) -->
+          <circle cx="500" cy="70" r="4" fill="#FF1744"/>
+
+          <!-- Phase A (Distribuição): PSY, BC, AR -->
+          <path d="M 500 70 L 520 100 L 540 90 L 560 105" fill="none" stroke="#FF1744" stroke-width="2"/>
+
+          <!-- Phase C (Dist): UTAD -->
+          <path d="M 560 105 L 580 75 L 600 110" fill="none" stroke="#D4AF37" stroke-width="3"/>
+          <text x="585" y="68" font-size="11" fill="#D4AF37" font-weight="bold" text-anchor="middle">UTAD</text>
+
+          <!-- Phase D (markdown) -->
+          <path d="M 600 110 L 620 150 L 640 200 L 660 240" fill="none" stroke="#FF1744" stroke-width="2"/>
+
+          <!-- Linha do range -->
+          <line x1="120" y1="200" x2="290" y2="200" stroke="#2962FF" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0.6"/>
+          <line x1="120" y1="240" x2="290" y2="240" stroke="#2962FF" stroke-width="1" stroke-dasharray="3,3" stroke-opacity="0.6"/>
+          <text x="115" y="235" font-size="10" fill="#2962FF" text-anchor="end" font-family="monospace">range</text>
+
+          <text x="350" y="305" font-size="13" fill="#8A95A8" text-anchor="middle">Acumulação (longo) → Markup → Distribuição → Markdown → Acumulação...</text>
+        </svg>
+      </div>
+    </section>
+
+    <h2 style="font-size: 22px; margin: var(--s-5) 0 var(--s-3);">As 5 fases (acumulação)</h2>
+    <div class="fases-grid">
+      <div class="fase-card">
+        <p class="letra">A</p>
+        <h4>Parando a queda</h4>
+        <p>PS (Preliminary Support), SC (Selling Climax), AR (Automatic Rally), ST (Secondary Test). Volume alto, exaustão da venda.</p>
+      </div>
+      <div class="fase-card">
+        <p class="letra">B</p>
+        <h4>Construindo causa</h4>
+        <p>Range lateral, sucessivos testes do topo e fundo. Smart money acumulando devagar. Não opere aqui.</p>
+      </div>
+      <div class="fase-card" style="border-color: var(--gold);">
+        <p class="letra" style="color: var(--gold);">C</p>
+        <h4>Teste final (Spring)</h4>
+        <p>Falsa quebra abaixo do fundo do range pra coletar liquidez de stop. Recuperação rápida = sinal de virada.</p>
+      </div>
+      <div class="fase-card" style="border-color: var(--green);">
+        <p class="letra" style="color: var(--green);">D</p>
+        <h4>Markup</h4>
+        <p>Tendência de alta confirmada. Higher highs e higher lows no LTF. <strong>Setup mais lucrativo de continuação.</strong></p>
+      </div>
+      <div class="fase-card" style="border-color: var(--green);">
+        <p class="letra" style="color: var(--green);">E</p>
+        <h4>Markup expansivo</h4>
+        <p>Aceleração final. Volume pode reduzir (parábola). Sinal pra preparar saída ou caçar nova distribuição em formação.</p>
+      </div>
+    </div>
+
+    <div class="grid-2">
+      <div class="ciclo-card acc">
+        <h3>▲ Como identificar acumulação</h3>
+        <ul>
+          <li>Mercado vinha caindo (downtrend HTF)</li>
+          <li>Movimento perde força — velas com mechas longas em baixo</li>
+          <li>Volume de venda DIMINUI mesmo com novas mínimas (volume secando)</li>
+          <li>Preço entra em range lateral (Phase B)</li>
+          <li>Spring eventual abaixo do fundo + recuperação (Phase C)</li>
+          <li>Quebra acima do topo do range = Phase D iniciando = LONG ARMADO</li>
+        </ul>
+      </div>
+      <div class="ciclo-card dist">
+        <h3>▼ Como identificar distribuição</h3>
+        <ul>
+          <li>Mercado vinha subindo (uptrend HTF)</li>
+          <li>Movimento perde força — velas com mechas longas em cima</li>
+          <li>Volume de compra DIMINUI mesmo com novas máximas</li>
+          <li>Preço entra em range lateral</li>
+          <li>UTAD eventual acima do topo + rejeição (Phase C)</li>
+          <li>Quebra abaixo do fundo do range = Phase D iniciando = SHORT ARMADO</li>
+        </ul>
+      </div>
+    </div>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como usar no método Bertani</h2>
+      <p>
+        Na <a href="../calculadora/input.html">calculadora interativa</a>, o campo <strong>"Fase atual no 4H"</strong>
+        é o primeiro critério de score (peso 1.5/10). Identificar fase corretamente é pré-requisito —
+        sem isso, todos os outros sinais (sweep, MSS, FVG, OB) ficam descontextualizados.
+      </p>
+      <p>
+        Regra simplificada: <strong>só opere LONG em Phase D/E de acumulação. Só opere SHORT em Phase D/E de distribuição.</strong>
+        Phase B sem Spring/UTAD = NÃO OPERA. Phase A = recém-saído de tendência, ainda imaturo. Phase C =
+        possível setup de virada (Spring/UTAD), mas requer confirmação LTF (MSS).
+      </p>
+    </section>
+
+    <div style="margin-top: var(--s-5); display: flex; gap: var(--s-3); flex-wrap: wrap;">
+      <a href="index.html" class="btn">← Biblioteca</a>
+      <a href="modelos/spring-utad.html" class="btn">Próximo: Spring &amp; UTAD →</a>
+      <a href="../calculadora/input.html" class="btn btn-primary">🎯 Aplicar na análise</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div></footer>
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

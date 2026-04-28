@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard — Bertani App</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .dashboard-hero {
+      padding: var(--s-7) 0 var(--s-5);
+      position: relative;
+    }
+    .dashboard-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 30% -10%, rgba(41, 98, 255, 0.15), transparent 60%);
+      pointer-events: none;
+    }
+    .dashboard-greet {
+      font-size: 14px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--s-2);
+    }
+    .dashboard-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .dashboard-resumo {
+      font-size: 16px;
+      color: var(--text-2);
+      max-width: 640px;
+      margin: 0;
+    }
+
+    .tier-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-2);
+      padding: 8px 16px;
+      border-radius: 999px;
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-top: var(--s-4);
+    }
+    .tier-demo { background: var(--bg-2); color: var(--muted); border: 1px solid var(--border); }
+    .tier-briefing { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .tier-telapro { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .tier-elite { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+
+    .dashboard-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr;
+      gap: var(--s-5);
+      margin-top: var(--s-5);
+    }
+    @media (max-width: 1024px) {
+      .dashboard-grid { grid-template-columns: 1fr; }
+    }
+
+    .briefing-status {
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+    }
+    .briefing-status-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: var(--s-4);
+    }
+    .briefing-status-titulo {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .briefing-status-data {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--text-2);
+    }
+
+    .ativo-row {
+      display: grid;
+      grid-template-columns: 80px 1fr auto;
+      gap: var(--s-3);
+      padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+      align-items: center;
+    }
+    .ativo-row:last-child { border-bottom: 0; }
+    .ativo-codigo {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 16px;
+    }
+    .ativo-fase {
+      color: var(--muted);
+      font-size: 13px;
+    }
+    .ativo-status {
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .agenda-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+    }
+    .agenda-titulo {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: var(--s-4);
+    }
+    .agenda-evento {
+      display: flex;
+      gap: var(--s-3);
+      padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .agenda-evento:last-child { border-bottom: 0; }
+    .agenda-hora {
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 14px;
+      color: var(--accent);
+      flex-shrink: 0;
+      width: 60px;
+    }
+    .agenda-info { flex: 1; }
+    .agenda-titulo-evento { font-size: 14px; font-weight: 600; margin: 0 0 4px; }
+    .agenda-meta { font-size: 11px; color: var(--muted); }
+    .agenda-impacto-alto { color: var(--warn); font-weight: 700; }
+    .agenda-impacto-medio { color: var(--gold); font-weight: 700; }
+
+    .atalhos-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s-4);
+      margin-top: var(--s-5);
+    }
+    .atalho-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      transition: border-color var(--t-base), background var(--t-base), transform var(--t-fast);
+      text-decoration: none;
+      color: var(--text);
+    }
+    .atalho-card:hover {
+      border-color: var(--accent);
+      background: var(--card-hover);
+      transform: translateY(-2px);
+      text-decoration: none;
+    }
+    .atalho-card-icon {
+      font-size: 32px;
+      margin-bottom: var(--s-3);
+    }
+    .atalho-card h3 { font-size: 18px; margin: 0 0 var(--s-2); }
+    .atalho-card p { font-size: 13px; color: var(--muted); margin: 0; }
+    .atalho-card.locked {
+      opacity: 0.6;
+      pointer-events: none;
+      position: relative;
+    }
+    .atalho-card.locked::after {
+      content: "🔒 Tela Pro";
+      position: absolute;
+      top: var(--s-3);
+      right: var(--s-3);
+      font-size: 10px;
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.15);
+      padding: 4px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--gold);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-weight: 700;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="dashboard.html" class="active">Dashboard</a>
+        <a href="educacao/fases-wyckoff.html">Educação</a>
+        <a href="calculadora/input.html">Calculadora</a>
+        <a href="registro/historico.html">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <header class="dashboard-hero">
+    <div class="wrap">
+      <p class="dashboard-greet">Bom dia, Renato · 28 de abril de 2026 · terça-feira</p>
+      <h1 class="dashboard-titulo">Painel operacional</h1>
+      <p class="dashboard-resumo">
+        Briefing #2 publicado às 8h31. Reavaliação pós-IPCA confirmou WDO short em retest 5.005-5.009
+        (Score 6,5/10). Janela limpa do dia: 11h30-14h00 BRT.
+      </p>
+      <span class="tier-pill tier-briefing" id="tier-indicador">📰 Briefing R$ 147</span>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <div class="dashboard-grid">
+
+      <!-- ========== STATUS DO BRIEFING ========== -->
+      <section class="briefing-status">
+        <div class="briefing-status-header">
+          <span class="briefing-status-titulo">Status do dia · WIN + WDO</span>
+          <span class="briefing-status-data">28 ABR · 11h30 BRT</span>
+        </div>
+
+        <div class="ativo-row">
+          <span class="ativo-codigo">WIN1!</span>
+          <span class="ativo-fase">Phase A markdown · Spring no 0% formado · BPR 191.100-191.450</span>
+          <span class="ativo-status status-aguardar">Aguardar gatilho</span>
+        </div>
+
+        <div class="ativo-row">
+          <span class="ativo-codigo">WDO1!</span>
+          <span class="ativo-fase">Phase A distribution · BC+AR+SOW · setup short ativo</span>
+          <span class="ativo-status status-short">Short armado</span>
+        </div>
+
+        <div style="margin-top: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--border);">
+          <p class="muted" style="font-size: 13px; margin-bottom: var(--s-3);">
+            🌐 Filtro Anti-Narrativa Wyckoff: <strong style="color: var(--green);">ATIVA</strong> ·
+            news bearish empilhada (Irã, IA, IPCA, bancos) vs preço em Phase C de acumulação.
+            Smart money absorvendo enquanto retail vende em pânico.
+          </p>
+          <a href="briefing/do-dia.html" class="btn btn-primary btn-block">Ver briefing completo</a>
+        </div>
+      </section>
+
+      <!-- ========== AGENDA MACRO ========== -->
+      <aside class="agenda-card">
+        <h3 class="agenda-titulo">⚠️ Agenda macro · 28 ABR</h3>
+
+        <div class="agenda-evento">
+          <span class="agenda-hora">09:00</span>
+          <div class="agenda-info">
+            <p class="agenda-titulo-evento">IPCA-15 abril BR</p>
+            <p class="agenda-meta">Saiu: 0,89% · Surpresa dovish · Anti-narrativa ativa</p>
+          </div>
+        </div>
+
+        <div class="agenda-evento">
+          <span class="agenda-hora">11:00</span>
+          <div class="agenda-info">
+            <p class="agenda-titulo-evento">Confiança CB · US</p>
+            <p class="agenda-meta"><span class="agenda-impacto-alto">★★ ALTA</span> · janela 10:45-11:30</p>
+          </div>
+        </div>
+
+        <div class="agenda-evento">
+          <span class="agenda-hora">14:30</span>
+          <div class="agenda-info">
+            <p class="agenda-titulo-evento">Discurso Lagarde · BCE</p>
+            <p class="agenda-meta"><span class="agenda-impacto-medio">★★</span> · janela 14:15-14:45</p>
+          </div>
+        </div>
+
+        <div class="agenda-evento">
+          <span class="agenda-hora">17:30</span>
+          <div class="agenda-info">
+            <p class="agenda-titulo-evento">Estoques Petróleo API · US</p>
+            <p class="agenda-meta"><span class="agenda-impacto-medio">★★</span></p>
+          </div>
+        </div>
+
+        <div style="background: var(--green-soft); border-radius: var(--radius-sm); padding: var(--s-3); margin-top: var(--s-3); border-left: 3px solid var(--green);">
+          <p style="margin: 0; font-size: 13px; color: var(--green); font-weight: 600;">
+            🟢 Janela limpa: 11h30-14h00 BRT
+          </p>
+        </div>
+      </aside>
+
+    </div>
+
+    <!-- ========== ATALHOS DE NAVEGAÇÃO ========== -->
+    <section style="margin-top: var(--s-7);">
+      <h2 style="font-size: 20px; margin-bottom: var(--s-3);">Atalhos rápidos</h2>
+      <p class="muted" style="margin-bottom: var(--s-4);">Acesse direto as ferramentas que você usa todo dia.</p>
+
+      <div class="atalhos-grid">
+        <a href="educacao/fusao-completa.html" class="atalho-card">
+          <div class="atalho-card-icon">📚</div>
+          <h3>Biblioteca de modelos</h3>
+          <p>16 modelos ICT × Wyckoff catalogados com probabilidade calibrada e diagrama representativo.</p>
+        </a>
+
+        <a href="briefing/do-dia.html" class="atalho-card">
+          <div class="atalho-card-icon">📊</div>
+          <h3>Briefing do dia</h3>
+          <p>Setup operacional WIN/WDO atualizado, com zona, stop e alvos progressivos.</p>
+        </a>
+
+        <a href="calculadora/input.html" class="atalho-card">
+          <div class="atalho-card-icon">🎯</div>
+          <h3>Calculadora interativa</h3>
+          <p>14 critérios cruzados (Wyckoff × ICT × Anti-Narrativa) → score 0-10, viés e plano operacional com R/R.</p>
+        </a>
+
+        <a href="checklist/pre-trade.html" class="atalho-card locked">
+          <div class="atalho-card-icon">✅</div>
+          <h3>Checklist pré-trade</h3>
+          <p>10 verificações antes de armar a ordem. Score visual + autorização condicional.</p>
+        </a>
+
+        <a href="registro/novo-trade.html" class="atalho-card locked">
+          <div class="atalho-card-icon">📝</div>
+          <h3>Registrar trade</h3>
+          <p>Pós-trade com cálculo R$ automático (R$ 0,20/pt × contratos). Vai pro track record privado.</p>
+        </a>
+
+        <a href="registro/historico.html" class="atalho-card">
+          <div class="atalho-card-icon">📈</div>
+          <h3>Track record público</h3>
+          <p>Planilha auditável de todos os trades publicados. Win rate real, sem cherry-picking.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- ========== HISTÓRICO DE ANÁLISES (CALCULADORA) ========== -->
+    <section style="margin-top: var(--s-7);" id="hist-section">
+      <div style="display: flex; justify-content: space-between; align-items: baseline; margin-bottom: var(--s-3);">
+        <h2 style="font-size: 20px; margin: 0;">Histórico recente · calculadora</h2>
+        <a href="calculadora/input.html" style="font-size: 13px;">+ Nova análise →</a>
+      </div>
+      <p class="muted" style="margin-bottom: var(--s-4);">Últimas 5 análises rodadas nesta máquina. Salvas localmente.</p>
+      <div id="hist-list"></div>
+    </section>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    // Atualiza pill do tier ativo
+    (function () {
+      const tier = window.BertaniApp.access.getCurrentTier();
+      const el = document.getElementById('tier-indicador');
+      if (!el) return;
+      el.className = 'tier-pill';
+      const labels = {
+        demo: ['📰 Modo Demo', 'tier-demo'],
+        briefing: ['📰 Briefing R$ 147', 'tier-briefing'],
+        telapro: ['🎯 Tela Pro · acesso completo', 'tier-telapro'],
+        elite: ['💎 Elite 1:1', 'tier-elite'],
+      };
+      const [label, cls] = labels[tier] || labels.demo;
+      el.textContent = label;
+      el.classList.add(cls);
+
+      // Se for telapro+, libera atalhos lockados
+      if (window.BertaniApp.access.has('telapro')) {
+        document.querySelectorAll('.atalho-card.locked').forEach(c => c.classList.remove('locked'));
+      }
+    })();
+
+    // ========== HISTÓRICO DE ANÁLISES ==========
+    (function () {
+      const APP = window.BertaniApp;
+      const wrap = document.getElementById('hist-list');
+      let hist = [];
+      try { hist = JSON.parse(localStorage.getItem('bertani_calc_history') || '[]'); } catch(e){}
+
+      if (hist.length === 0) {
+        wrap.innerHTML = `
+          <div style="background: var(--card); border: 1px dashed var(--border-bright); border-radius: var(--radius); padding: var(--s-5); text-align: center;">
+            <p class="muted" style="margin: 0 0 var(--s-3);">Nenhuma análise salva ainda.</p>
+            <a href="calculadora/input.html" class="btn btn-primary">Rodar primeira análise</a>
+          </div>
+        `;
+        return;
+      }
+
+      const verdictColors = {
+        GO: { bg: 'var(--green-soft)', border: 'var(--green)', label: '🟢 GO' },
+        GO_CONDICIONAL: { bg: 'rgba(212, 175, 55, 0.12)', border: 'var(--gold)', label: '🟡 GO cond.' },
+        AGUARDAR: { bg: 'var(--accent-soft)', border: 'var(--accent)', label: '🔵 Aguardar' },
+        NO_GO_HARD: { bg: 'var(--warn-soft)', border: 'var(--warn)', label: '🔴 NO-GO' },
+      };
+
+      wrap.innerHTML = `
+        <div style="display: flex; flex-direction: column; gap: var(--s-2);">
+          ${hist.slice(0, 5).map(h => {
+            const v = verdictColors[h.verdict] || verdictColors.AGUARDAR;
+            const ts = new Date(h.ts);
+            const tsBR = `${ts.toLocaleDateString('pt-BR')} ${ts.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' })}`;
+            const ativo = h.ativo === 'WDO' ? 'WDO1!' : 'WIN1!';
+            const biasStr = h.bias === 'long' ? '▲ LONG' : (h.bias === 'short' ? '▼ SHORT' : '— Indef');
+            const biasColor = h.bias === 'long' ? 'var(--green)' : (h.bias === 'short' ? 'var(--warn)' : 'var(--muted)');
+            return `
+              <div style="display: grid; grid-template-columns: 100px 1fr auto auto auto; gap: var(--s-3); padding: var(--s-3) var(--s-4); background: var(--card); border: 1px solid var(--border); border-left: 3px solid ${v.border}; border-radius: var(--radius-sm); align-items: center;">
+                <span style="font-family: var(--mono); font-size: 13px; font-weight: 700;">${ativo}</span>
+                <span style="font-size: 12px; color: var(--muted);">${tsBR}</span>
+                <span style="font-family: var(--mono); font-size: 14px; font-weight: 700; color: ${biasColor};">${biasStr}</span>
+                <span style="font-family: var(--mono); font-size: 18px; font-weight: 700;">${(h.score || 0).toFixed(1)}<span style="color: var(--muted-2); font-weight: 400; font-size: 12px;">/10</span></span>
+                <span style="font-size: 11px; padding: 4px 10px; border-radius: 999px; background: ${v.bg}; border: 1px solid ${v.border}; font-weight: 700;">${v.label}</span>
+              </div>
+            `;
+          }).join('')}
+        </div>
+      `;
+    })();
+  </script>
+</body>
+</html>
