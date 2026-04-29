@@ -1,0 +1,87 @@
+{
+  "data": "2026-04-29",
+  "data_extenso": "Quarta-feira, 29 de abril de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 3,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Super Quarta · MÉTODO AGUARDA HOJE",
+    "subtitulo": "FOMC 15h + Copom 18h30 + IGP-M na manhã. Volume médio baixo · força HTF dividida · scores não passam do limiar."
+  },
+  "contexto_macro": {
+    "nivel": "MUITO ALTO",
+    "highlights": [
+      "IGP-M abril FGV (08:00 BRT) · termômetro inflação atacado · pode mexer câmbio na abertura",
+      "IPP março IBGE (09:00 BRT) · preços ao produtor · contexto industrial",
+      "FOMC decisão de juros (15:00 BRT) · Powell coletiva 15:30 — janela 14:30-16:00 EVITAR",
+      "Copom decisão Selic (18:30 BRT) · mercado já fechado (B3 17:55) · efeito amanhã na abertura",
+      "Reavaliação pós-Copom 19:00 BRT · briefing complementar pra cenários de quinta"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "descricao": "WIN sustentou pós-teste do 190.550 com volume institucional — absorção em zona de discount apesar do ruído macro carregado. Sinal de Composite Man comprando enquanto retail fica de fora esperando notícia. Não é gatilho isolado · é confluência pra amanhã."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "fase_wyckoff": "Phase B pós-teste 190.550",
+      "score": 4.5,
+      "veredito": "AGUARDAR",
+      "viés": "neutro",
+      "racional_publico": "Pós-teste do 190.550 com absorção institucional visível no volume — sinal bullish de fundo. Mas score não passa do limiar (4.5/10) porque HTF dividido e janela operacional comprometida pelo FOMC à tarde + Copom após mercado fechado. Método manda aguardar: setup imaturo pra entrada, mas estrutura pede atenção amanhã na abertura.",
+      "niveis_chave": {
+        "PDH": 191450,
+        "PDL": 190550,
+        "ajuste_b3": 191020,
+        "absorcao_zona": 190550
+      },
+      "comentario_breve": "Recruta fica de fora. Trader observa absorção e prepara plano pra quinta."
+    },
+    {
+      "codigo": "WDO1!",
+      "fase_wyckoff": "Phase A/B · heavy discount",
+      "score": 3.8,
+      "veredito": "AGUARDAR",
+      "viés": "neutro",
+      "racional_publico": "Range 4.947-5.269 com preço em heavy discount. Sem distribuição confirmada · sem acumulação clara. Score baixo dos dois lados (3.0 long · 3.8 short) porque a Super Quarta envenena qualquer leitura — FOMC pode mover dólar 1-2% em minutos e Copom à noite redefine o jogo. Operar hoje é apostar em notícia, não em estrutura.",
+      "niveis_chave": {
+        "PDH": 5025.0,
+        "PDL": 4985.0,
+        "ajuste_b3": 5008.0,
+        "range_high": 5269.0,
+        "range_low": 4947.0
+      },
+      "comentario_breve": "Sem setup. Câmbio refém de FOMC + Copom. Reavaliação 19h."
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "08:00", "evento": "IGP-M abril FGV", "impacto": "MEDIO", "janela_evitar": "07:55-08:15" },
+    { "hora_brt": "09:00", "evento": "IPP março IBGE", "impacto": "MEDIO", "janela_evitar": "08:55-09:15" },
+    { "hora_brt": "15:00", "evento": "FOMC decisão de juros · US", "impacto": "MUITO ALTO", "janela_evitar": "14:30-16:00" },
+    { "hora_brt": "15:30", "evento": "Powell coletiva FOMC · US", "impacto": "MUITO ALTO", "janela_evitar": "15:15-16:30" },
+    { "hora_brt": "18:30", "evento": "Copom decisão Selic · BR", "impacto": "MUITO ALTO", "obs": "Mercado B3 fechado (17:55)" },
+    { "hora_brt": "19:00", "evento": "Briefing complementar pós-Copom", "impacto": "—", "obs": "Reavaliação de cenários pra quinta-feira" }
+  ],
+  "kill_zones_recomendadas": [
+    "Pré-FOMC: 09:30-11:30 BRT (KZ abertura · evitar 09:00 IPP)",
+    "Pós-FOMC: 16:30-17:55 BRT (depois de Powell · só pra trader experiente com plano)",
+    "Quinta-feira na abertura: janela rica pós-Copom · cenários reavaliados"
+  ],
+  "regras_do_dia": [
+    "Hoje é dia de aguardar · método não dá luz verde com Score < 6,0.",
+    "Quem operar: máx 1 trade no instrumento, 2 totais. Risco fixo 0,5% (metade do padrão).",
+    "Evitar TODA janela 14:30-16:30 BRT (FOMC + Powell).",
+    "Trailing agressivo nos HL/LH do 5m após TP1 — notícia pode reverter rápido.",
+    "DD diário -2% encerra o dia (regra apertada hoje).",
+    "Anti-narrativa ATIVA no WIN — guardar pra confluência amanhã, NÃO operar isolado hoje."
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada de investimento. Risco em derivativos é alto."
+  }
+}
