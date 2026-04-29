@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Juros e Correlação WIN/WDO — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(212, 175, 55, 0.18), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--gold); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--s-3); }
+    .m-titulo { font-size: 38px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--gold); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel h3 { font-size: 17px; margin: var(--s-4) 0 var(--s-2); color: var(--text); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    .grid-3 { display: grid; grid-template-columns: repeat(3, 1fr); gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2, .grid-3 { grid-template-columns: 1fr; } }
+    .setup-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .setup-card.gold { border-color: var(--gold); } .setup-card.gold h3 { color: var(--gold); margin-top: 0; }
+    .setup-card.long { border-color: var(--green); } .setup-card.long h3 { color: var(--green); margin-top: 0; }
+    .setup-card.short { border-color: var(--warn); } .setup-card.short h3 { color: var(--warn); margin-top: 0; }
+    .setup-card ul { padding-left: 20px; color: var(--text-2); line-height: 1.6; font-size: 14px; }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .insight { background: rgba(212, 175, 55, 0.10); border-left: 4px solid var(--gold); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); color: var(--text-2); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+    .matriz { width: 100%; border-collapse: collapse; margin-top: var(--s-3); font-size: 13px; }
+    .matriz th, .matriz td { padding: 10px 12px; border: 1px solid var(--border); text-align: left; }
+    .matriz th { background: var(--bg-2); color: var(--gold); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .matriz td.bull { color: var(--green); }
+    .matriz td.bear { color: var(--warn); }
+    .matriz td.neutral { color: var(--muted); }
+    .glossy { background: var(--bg-2); border-radius: var(--radius-sm); padding: 14px 18px; margin: var(--s-2) 0; font-size: 14px; color: var(--text-2); border-left: 3px solid var(--accent-light); }
+    .glossy strong { color: var(--accent-light); }
+    .case-real { background: rgba(212, 175, 55, 0.06); border: 1px solid var(--gold); border-radius: var(--radius); padding: var(--s-5); margin-top: var(--s-4); }
+    .case-real h3 { color: var(--gold); margin: 0 0 var(--s-3); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../calculadora/input.html">Calculadora</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › Juros e Correlação WIN/WDO</p>
+    <div class="m-icon">📈</div>
+    <h1 class="m-titulo">Juros · o confirmador <span style="color: var(--gold);">mais nobre</span> do trader BR</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Contexto · Macro</span> <span><strong>Aplicação:</strong> WIN + WDO</span> <span><strong>Janela:</strong> pré-abertura 8h00-8h30</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <section class="panel">
+      <h2>Por que esse modelo existe</h2>
+      <p>
+        Trader técnico bom lê o gráfico. Trader profissional lê <strong>o gráfico + o macro</strong>.
+        Em WIN e WDO especificamente, a variável macro mais subestimada — e a mais previsível — é o
+        <strong>movimento dos juros</strong>. Não é magia. É contabilidade.
+      </p>
+      <p>
+        Quando juros sobem, dinheiro grande migra pra renda fixa e sai da bolsa. WIN cai. Quando
+        Treasury americano sobe, dólar global se fortalece e WDO sobe. Quando Brent sobe, inflação
+        importada via gasolina/diesel pressiona o BC, DI sobe, e o circuito completo se ativa.
+      </p>
+      <p>
+        Esta página explica <strong>o que são juros, por que se mexem, e como ler antes da abertura</strong>
+        pra ter um confirmador a mais (ou a menos) no setup técnico do dia. É o tipo de leitura que separa
+        recruta de trader experiente.
+      </p>
+    </section>
+
+    <!-- ============ O QUE SÃO JUROS ============ -->
+    <section class="panel">
+      <h2>1. O que são juros (do jeito que importa pro trader)</h2>
+      <p>
+        Esquece a definição de manual. Pra trader, juros é uma frase só: <strong>o preço do dinheiro no tempo</strong>.
+        Quanto mais alto o juro, mais caro custa pegar dinheiro hoje pra pagar amanhã. Quanto mais alto, mais
+        atrativa a renda fixa. Quanto mais alto, menos atrativa a bolsa (que não paga retorno garantido).
+      </p>
+
+      <div class="grid-3">
+        <div class="setup-card gold">
+          <h3>Selic</h3>
+          <p style="font-size: 13px; margin-top: 0;">A taxa básica decidida pelo Copom 8x ao ano. É o "juro raiz" do Brasil — quase tudo que tem juro no país tem Selic como referência (poupança, financiamento, CDI, DI).</p>
+          <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;"><strong>Hoje (29/04/2026):</strong> 14,75% (com expectativa de corte pra 14,50% no Copom 18h30).</p>
+        </div>
+        <div class="setup-card gold">
+          <h3>DI · CDI futuro</h3>
+          <p style="font-size: 13px; margin-top: 0;">A taxa que o mercado <em>aposta</em> que a Selic estará em determinada data futura. <strong>DI Jan 2027</strong> = aposta pra janeiro de 2027. <strong>DI Jan 2031</strong> = aposta pra 4 anos à frente.</p>
+          <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">É o que move o mercado de verdade — Selic muda 8x ao ano, DI muda em tempo real.</p>
+        </div>
+        <div class="setup-card gold">
+          <h3>Treasury 10y (US)</h3>
+          <p style="font-size: 13px; margin-top: 0;">O título do governo americano de 10 anos. É a referência mundial de juro "sem risco". Quando ele sobe, o mundo inteiro sente — capital deixa emergentes (Brasil) e volta pros EUA.</p>
+          <p style="font-size: 13px; color: var(--muted); margin-bottom: 0;">Símbolo TradingView: <code>TVC:US10Y</code></p>
+        </div>
+      </div>
+
+      <div class="glossy">
+        <strong>Sacada importante:</strong> a Selic é uma decisão política (BC fala uma vez por mês e meio). O <strong>DI</strong> é o que o mercado acha que vai acontecer — ele se mexe a cada minuto. <strong>Trader olha DI, não Selic.</strong>
+      </div>
+    </section>
+
+    <!-- ============ POR QUE OS JUROS SÃO SENSÍVEIS ============ -->
+    <section class="panel">
+      <h2>2. Por que os juros são sensíveis · 5 drivers</h2>
+      <p>
+        Juros não sobem ou caem do nada. Eles são <em>termômetro</em> de 5 fatores que disputam atenção.
+        Quando um deles acelera, o DI reage em segundos:
+      </p>
+
+      <ol class="lista-numerada">
+        <li>
+          <strong>Inflação corrente e expectada.</strong> Se o IPCA, IGP-M ou IPP saem acima do esperado,
+          mercado entende que o BC vai precisar manter juros altos por mais tempo (ou subir mais). DI sobe.
+          Se saem abaixo, DI cai. <em>Hoje (29/04): IGP-M veio +2,73% — maior alta em 5 anos. DI subiu.</em>
+        </li>
+        <li>
+          <strong>Câmbio (USD/BRL).</strong> Real desvalorizando = inflação importada (gasolina, eletrônicos,
+          insumos). Com risco de inflação subir, BC precisa segurar Selic mais alta. DI sobe.
+          <em>Hoje: USDBRL passou de R$ 5,00. Pressão.</em>
+        </li>
+        <li>
+          <strong>Fiscal (dívida e gastos do governo).</strong> Mais gastos = mais dívida = mais risco = juros
+          mais altos exigidos pra investidor topar emprestar pro Tesouro. Quando sai um anúncio fiscal ruim
+          (PEC dos Precatórios, novo gasto sem fonte), DI longo dispara antes de tudo.
+        </li>
+        <li>
+          <strong>Política externa (Fed e Treasuries).</strong> Se Treasury 10y sobe, dólar fortalece, real cai,
+          inflação importada cresce, BC tem menos espaço pra cortar. DI sobe por <em>simpatia macro</em>.
+        </li>
+        <li>
+          <strong>Choques exógenos.</strong> Guerra (Oriente Médio, Ucrânia), commodities disparando (petróleo,
+          minério, soja), crise sanitária. Coisas imprevisíveis que sobem o prêmio de risco. DI sobe.
+          <em>Hoje: Estreito de Ormuz fechado, Brent +5% pra US$ 110. DI longo subiu +15bps em 1 sessão.</em>
+        </li>
+      </ol>
+
+      <div class="insight">
+        <strong>Insight Bertani:</strong> os 5 drivers raramente vão na mesma direção todos os dias.
+        Quando 3+ apontam pro mesmo lado, é tese forte. Quando estão divididos, é dia de chop. <strong>O olho
+        treinado lê quantos drivers estão alinhados antes de operar.</strong>
+      </div>
+    </section>
+
+    <!-- ============ CURVA DE JUROS ============ -->
+    <section class="panel">
+      <h2>3. A curva de juros · onde o trader pega vantagem</h2>
+      <p>
+        A maioria do mercado olha "o DI subiu hoje 5bps". Trader experiente olha <strong>a forma da curva</strong>.
+        A curva de juros é a linha que liga as taxas de DIs com vencimentos diferentes — DI 1 ano, DI 2 anos,
+        DI 4 anos, DI 7 anos.
+      </p>
+
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 720 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="cv1" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="720" height="320" fill="url(#cv1)" />
+
+          <!-- Eixos -->
+          <line x1="80" y1="40" x2="80" y2="280" stroke="#3A4659" stroke-width="0.5"/>
+          <line x1="80" y1="280" x2="680" y2="280" stroke="#3A4659" stroke-width="0.5"/>
+          <text x="60" y="50" font-size="10" fill="#8A95A8" text-anchor="end">15%</text>
+          <text x="60" y="160" font-size="10" fill="#8A95A8" text-anchor="end">13,5%</text>
+          <text x="60" y="280" font-size="10" fill="#8A95A8" text-anchor="end">12%</text>
+          <text x="80" y="300" font-size="10" fill="#8A95A8" text-anchor="middle">DI 1y</text>
+          <text x="280" y="300" font-size="10" fill="#8A95A8" text-anchor="middle">DI 2y</text>
+          <text x="480" y="300" font-size="10" fill="#8A95A8" text-anchor="middle">DI 4y</text>
+          <text x="660" y="300" font-size="10" fill="#8A95A8" text-anchor="middle">DI 7y</text>
+
+          <!-- Curva normal (steepening) -->
+          <polyline points="80,90 280,150 480,170 660,180" fill="none" stroke="#00C853" stroke-width="2"/>
+          <text x="660" y="170" font-size="11" fill="#00C853" font-weight="bold" text-anchor="end">CURVA NORMAL</text>
+          <text x="660" y="155" font-size="9" fill="#00C853" text-anchor="end">curto&gt;longo · BC ciclo agressivo</text>
+
+          <!-- Curva abrindo -->
+          <polyline points="80,100 280,90 480,80 660,70" fill="none" stroke="#FF1744" stroke-width="2"/>
+          <text x="660" y="60" font-size="11" fill="#FF1744" font-weight="bold" text-anchor="end">CURVA ABRINDO</text>
+          <text x="660" y="48" font-size="9" fill="#FF1744" text-anchor="end">longo dispara · inflação persistente</text>
+
+          <!-- Curva fechando -->
+          <polyline points="80,180 280,210 480,235 660,250" fill="none" stroke="#5A91FF" stroke-width="2"/>
+          <text x="660" y="265" font-size="11" fill="#5A91FF" font-weight="bold" text-anchor="end">CURVA FECHANDO</text>
+          <text x="660" y="277" font-size="9" fill="#5A91FF" text-anchor="end">longo cai · alívio inflacionário</text>
+
+          <!-- Pontos nas linhas -->
+          <circle cx="80" cy="90" r="3" fill="#00C853"/><circle cx="280" cy="150" r="3" fill="#00C853"/><circle cx="480" cy="170" r="3" fill="#00C853"/><circle cx="660" cy="180" r="3" fill="#00C853"/>
+          <circle cx="80" cy="100" r="3" fill="#FF1744"/><circle cx="280" cy="90" r="3" fill="#FF1744"/><circle cx="480" cy="80" r="3" fill="#FF1744"/><circle cx="660" cy="70" r="3" fill="#FF1744"/>
+          <circle cx="80" cy="180" r="3" fill="#5A91FF"/><circle cx="280" cy="210" r="3" fill="#5A91FF"/><circle cx="480" cy="235" r="3" fill="#5A91FF"/><circle cx="660" cy="250" r="3" fill="#5A91FF"/>
+        </svg>
+      </div>
+
+      <div class="grid-3">
+        <div class="setup-card long">
+          <h3>Curva normal · descendente</h3>
+          <ul>
+            <li>Taxa curta (1-2y) > taxa longa (4-7y)</li>
+            <li>Mercado precifica BC <strong>cortando</strong> nos próximos 12-24 meses</li>
+            <li>Cenário típico: inflação controlada, BC iniciando ciclo de afrouxamento</li>
+            <li><strong>Implicação WIN:</strong> bullish (renda variável volta a fazer sentido)</li>
+            <li><strong>Implicação WDO:</strong> bearish (real fortalece com diferencial caindo)</li>
+          </ul>
+        </div>
+        <div class="setup-card short">
+          <h3>Curva abrindo · ascendente</h3>
+          <ul>
+            <li>Taxa longa subindo mais que curta</li>
+            <li>Mercado precifica <strong>inflação persistente</strong> ou risco fiscal</li>
+            <li>BC <strong>perdendo crédito</strong> de longo prazo</li>
+            <li><strong>Implicação WIN:</strong> bearish forte (capital foge da bolsa)</li>
+            <li><strong>Implicação WDO:</strong> bullish forte (real desvaloriza)</li>
+            <li><em>Caso de hoje 29/04 · DI 4y +15bps em 1 sessão</em></li>
+          </ul>
+        </div>
+        <div class="setup-card long">
+          <h3>Curva fechando · achatando</h3>
+          <ul>
+            <li>Taxa longa caindo mais que curta</li>
+            <li>Mercado precifica <strong>alívio inflacionário</strong> ou ciclo encerrando</li>
+            <li>Confiança no BC voltando</li>
+            <li><strong>Implicação WIN:</strong> bullish (valuation de bolsa volta a expandir)</li>
+            <li><strong>Implicação WDO:</strong> bearish (fluxo cambial favorável)</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="glossy">
+        <strong>Regra de ouro:</strong> a <strong>forma da curva</strong> é mais importante que a taxa pontual.
+        Curva abrindo +10bps = sinal mais forte que paralelo +20bps. A primeira mostra mudança de regime, a segunda só ajuste.
+      </div>
+    </section>
+
+    <!-- ============ CORRELAÇÃO COM WIN ============ -->
+    <section class="panel">
+      <h2>4. Correlação com WIN · 3 mecanismos</h2>
+      <p>
+        WIN é o futuro do Ibovespa. Quando juros mexem, ele responde através de 3 canais — todos
+        contábeis, nenhum emocional:
+      </p>
+
+      <ol class="lista-numerada">
+        <li>
+          <strong>Migração de capital.</strong> Quando DI subindo passa do limiar emocional do investidor
+          institucional, fundos vendem ações e compram renda fixa. É decisão fria. <em>Selic 14,75% +
+          inflação 4,5% = juro real ~9,8% — patamar onde renda fixa "trava" o capital.</em>
+        </li>
+        <li>
+          <strong>Custo de capital corporativo.</strong> Empresas listadas se financiam com base no DI.
+          Juros altos = dívida cara = lucro espremido = ação vale menos. Setores mais sensíveis: bancos
+          (ironicamente), construtoras, varejo, energia.
+        </li>
+        <li>
+          <strong>Valuation por desconto.</strong> Modelos de precificação de ação descontam fluxo de caixa
+          futuro pelo juro. Juro alto = denominador maior = preço justo menor. <em>Toda análise fundamentalista
+          recalcula valuation quando o DI longo se mexe.</em>
+        </li>
+      </ol>
+
+      <table class="matriz">
+        <thead>
+          <tr><th>Movimento dos juros</th><th>Reação esperada do WIN</th><th>Setores líderes</th><th>Setores escudo</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bear">DI ↑ (subindo)</td>
+            <td class="bear">↓ Bearish</td>
+            <td>Bancos · construtoras · varejo</td>
+            <td>Petrolíferas (se Brent ↑) · exportadoras</td>
+          </tr>
+          <tr>
+            <td class="bull">DI ↓ (caindo)</td>
+            <td class="bull">↑ Bullish</td>
+            <td>Construtoras · varejo · small caps</td>
+            <td>—</td>
+          </tr>
+          <tr>
+            <td class="bear">Curva abrindo</td>
+            <td class="bear">↓↓ Bearish forte</td>
+            <td>Todos os setores domésticos</td>
+            <td>Exportadoras se câmbio ajudar</td>
+          </tr>
+          <tr>
+            <td class="bull">Curva fechando</td>
+            <td class="bull">↑↑ Bullish forte</td>
+            <td>Sensíveis a juro (construtoras, bancos)</td>
+            <td>—</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ CORRELAÇÃO COM WDO ============ -->
+    <section class="panel">
+      <h2>5. Correlação com WDO · diferencial e fluxo</h2>
+      <p>
+        WDO é o futuro do USD/BRL. Juro mexe ele por 2 canais principais — diferencial de juros e
+        atratividade de fluxo cambial:
+      </p>
+
+      <ol class="lista-numerada">
+        <li>
+          <strong>Diferencial Selic vs Fed Funds.</strong> Quando juro brasileiro é muito mais alto que o americano,
+          investidor estrangeiro toma USD emprestado a juro baixo, troca por BRL e investe em renda fixa BR (carry trade).
+          <strong>Diferencial alto = dólar cai (WDO bear).</strong> Diferencial caindo = carry desmonta = dólar sobe.
+        </li>
+        <li>
+          <strong>Treasury 10y como termômetro global.</strong> Quando T10y sobe, dólar fortalece globalmente
+          (DXY sobe), real desvaloriza por simpatia. <em>Hoje: T10y up + Brent up = WDO de R$ 4,98 pra R$ 5,00 numa manhã.</em>
+        </li>
+      </ol>
+
+      <table class="matriz">
+        <thead>
+          <tr><th>Cenário</th><th>WDO</th><th>Lógica</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="bull">Selic alta + Fed cortando</td>
+            <td class="bull">↓ Bear WDO</td>
+            <td>Diferencial cresce · carry trade ativo · BRL fortalece</td>
+          </tr>
+          <tr>
+            <td class="bear">Selic caindo + Fed parado</td>
+            <td class="bear">↑ Bull WDO</td>
+            <td>Diferencial encolhe · carry desmonta · BRL enfraquece</td>
+          </tr>
+          <tr>
+            <td class="bear">DI BR subindo + Treasury subindo + Brent ↑</td>
+            <td class="bear">↑↑ Bull WDO forte</td>
+            <td>Inflação importada · risk off global · fluxo defensivo</td>
+          </tr>
+          <tr>
+            <td class="bull">DI BR caindo + Treasury caindo + risco mundial calmo</td>
+            <td class="bull">↓↓ Bear WDO forte</td>
+            <td>Apetite por EM volta · fluxo entra · BRL valoriza</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <div class="insight">
+        <strong>Importante:</strong> em <strong>dia de Brent disparando</strong>, a relação inverte
+        intuitivamente. Brent + DI BR + Treasury subindo simultaneamente = WDO sobe mesmo com Selic alta.
+        O <em>choque externo</em> supera o diferencial doméstico. Foi exatamente o que aconteceu hoje.
+      </div>
+    </section>
+
+    <!-- ============ A TRÍPLICE BERTANI ============ -->
+    <section class="panel">
+      <h2>6. A matriz Bertani de 4 inputs</h2>
+      <p>
+        Combinando o que aprendemos, surge a matriz operacional simples. Antes de operar, o trader olha
+        4 variáveis e atribui voto de <strong>+1, 0 ou -1</strong> pra cada:
+      </p>
+
+      <table class="matriz">
+        <thead>
+          <tr>
+            <th>Variável</th>
+            <th class="bull">+1 (bull WIN, bear WDO)</th>
+            <th class="bear">-1 (bear WIN, bull WDO)</th>
+            <th class="neutral">0 (neutro)</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>DI BR (curva)</strong></td>
+            <td class="bull">Caindo (>5bps no longo) ou curva fechando</td>
+            <td class="bear">Subindo (>5bps) ou curva abrindo</td>
+            <td class="neutral">Variação <5bps</td>
+          </tr>
+          <tr>
+            <td><strong>Treasury 10y</strong></td>
+            <td class="bull">Caindo >5bps</td>
+            <td class="bear">Subindo >5bps</td>
+            <td class="neutral">Variação <5bps</td>
+          </tr>
+          <tr>
+            <td><strong>Brent</strong></td>
+            <td class="bull">Caindo >2%</td>
+            <td class="bear">Subindo >2%</td>
+            <td class="neutral">Variação <2%</td>
+          </tr>
+          <tr>
+            <td><strong>DXY</strong></td>
+            <td class="bull">Caindo (>0,3%)</td>
+            <td class="bear">Subindo (>0,3%)</td>
+            <td class="neutral">Variação <0,3%</td>
+          </tr>
+        </tbody>
+      </table>
+
+      <h3>Interpretação da soma (bias_juros)</h3>
+      <table class="matriz">
+        <thead>
+          <tr><th>Soma</th><th>Leitura</th><th>Ação</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td><strong>+3 a +4</strong></td>
+            <td class="bull">TRÍPLICE+ confirmação BULL macro</td>
+            <td>Privilegiar long WIN · short WDO. Setup técnico ganha +1 ponto.</td>
+          </tr>
+          <tr>
+            <td><strong>+1 a +2</strong></td>
+            <td>Bias bull macro fraco</td>
+            <td>Setup long ganha confluência leve.</td>
+          </tr>
+          <tr>
+            <td><strong>0</strong></td>
+            <td class="neutral">Macro neutro/dividido</td>
+            <td>Setup decide sozinho no técnico. Operar com cautela.</td>
+          </tr>
+          <tr>
+            <td><strong>-1 a -2</strong></td>
+            <td>Bias bear macro fraco</td>
+            <td>Setup short ganha confluência leve.</td>
+          </tr>
+          <tr>
+            <td><strong>-3 a -4</strong></td>
+            <td class="bear">TRÍPLICE+ confirmação BEAR macro</td>
+            <td>Privilegiar short WIN · long WDO. Setup técnico ganha +1 ponto.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ CASE REAL · SUPER QUARTA ============ -->
+    <div class="case-real">
+      <h3>📅 Case real · Super Quarta 29 de abril de 2026</h3>
+      <p style="margin-top: 0;">A matriz aplicada pré-abertura validou perfeitamente o que aconteceu no pregão:</p>
+      <table class="matriz">
+        <thead>
+          <tr><th>Variável</th><th>Movimento</th><th>Voto</th></tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>DI Jan 2027</td>
+            <td>14,123% → 14,180% (+5,7bps)</td>
+            <td class="bear">-1 (subiu)</td>
+          </tr>
+          <tr>
+            <td>DI Jan 2029</td>
+            <td>13,594% → 13,740% (+14,6bps)</td>
+            <td class="bear">-1 (subiu forte)</td>
+          </tr>
+          <tr>
+            <td>DI Jan 2031</td>
+            <td>13,597% → 13,750% (+15,3bps)</td>
+            <td class="bear">-1 (curva abrindo)</td>
+          </tr>
+          <tr>
+            <td>Treasury 10y</td>
+            <td>yields subindo · choque petróleo</td>
+            <td class="bear">-1</td>
+          </tr>
+          <tr>
+            <td>Brent</td>
+            <td>+5% · ~US$ 110 (Estreito de Ormuz)</td>
+            <td class="bear">-1</td>
+          </tr>
+          <tr>
+            <td>DXY</td>
+            <td>+0,4% · busca de segurança</td>
+            <td class="bear">-1</td>
+          </tr>
+        </tbody>
+      </table>
+      <p style="margin-top: 16px;"><strong>Soma:</strong> -4 (TRÍPLICE+ confirmação BEAR · máximo)</p>
+      <p><strong>Resultado real do pregão (12h15):</strong></p>
+      <ul style="margin: 0 0 0 20px; color: var(--text-2);">
+        <li>WIN: <span class="bear" style="font-weight: 700;">-1,14%</span> (186.477 pts)</li>
+        <li>WDO: <span class="bull" style="font-weight: 700;">+0,40%</span> (R$ 5,0023)</li>
+      </ul>
+      <p style="margin-top: 16px;"><strong>✅ Matriz acertou em todos os 4 inputs.</strong> Trader que rodou esses 7 minutos antes de operar sabia o viés do dia antes do gráfico técnico abrir.</p>
+    </div>
+
+    <!-- ============ COMO LER NA ROTINA ============ -->
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>7. Como ler na rotina diária · 7 minutos pré-abertura</h2>
+      <ol class="lista-numerada">
+        <li><strong>07:30</strong> · Abre TradingView e busca: DI Jan próximo+2+4 anos, T10y, Brent, DXY.</li>
+        <li><strong>07:35</strong> · Anota a variação vs ajuste anterior pra cada (B3 publica DI · TradingView mostra US e commodities).</li>
+        <li><strong>07:40</strong> · Atribui +1, 0 ou -1 pra cada usando os thresholds da tabela acima.</li>
+        <li><strong>07:42</strong> · Soma os 4 votos. Resultado é o <strong>bias_juros</strong> do dia.</li>
+        <li><strong>07:45</strong> · Cruza com seu setup técnico:
+          <ul style="margin: 8px 0 0 16px; padding-left: 0; list-style: disc;">
+            <li>Setup long + bias_juros positivo = setup amplificado</li>
+            <li>Setup short + bias_juros negativo = setup amplificado</li>
+            <li>Setup contra o bias_juros = cautela · score reduzido</li>
+            <li>|bias_juros| ≥ 3 contra setup = bloquear operação (cap em score 5/10)</li>
+          </ul>
+        </li>
+        <li><strong>07:50</strong> · Decide se opera ou aguarda baseado no setup técnico + macro combinados.</li>
+        <li><strong>08:00</strong> · Briefing finalizado · pregão começa às 09:00.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>8. Quando NÃO confiar na matriz</h2>
+      <p>A matriz é poderosa mas mente em algumas janelas:</p>
+      <ol class="lista-numerada">
+        <li><strong>Dia de FOMC ou Copom (até 30min após decisão):</strong> juros podem ter spike fake antes da decisão.</li>
+        <li><strong>Pré-leilões de DI</strong> (B3 abre janela): movimento técnico, não macro.</li>
+        <li><strong>Vésperas de feriado US ou BR:</strong> liquidez baixa distorce yields e DXY.</li>
+        <li><strong>Choques exógenos não-precificados:</strong> golpe militar, atentado, default. Matriz vira ruído por 24-48h.</li>
+        <li><strong>Sexta após 15h BRT:</strong> position squaring distorce movimentos.</li>
+      </ol>
+      <p>Nessas janelas, descartar voto da matriz ou pesar com -50% (cada variável vota meio ponto).</p>
+    </section>
+
+    <div class="pitfall">
+      <strong>⚠ Erros comuns:</strong>
+      <ul style="margin: 8px 0 0 16px; color: var(--text-2); line-height: 1.6;">
+        <li><strong>Olhar Selic em vez de DI:</strong> Selic muda 8x ao ano. DI muda em tempo real. Trader pega DI.</li>
+        <li><strong>Olhar só taxa pontual:</strong> a forma da curva é mais nobre. +5bps no longo &gt; +10bps paralelo.</li>
+        <li><strong>Ignorar Treasury:</strong> trader BR pensa que é "só EUA". Mas T10y é o fluxo macro mais relevante depois do Brent.</li>
+        <li><strong>Operar contra macro extremo:</strong> bias_juros = -4 e tu insiste em long WIN porque "o gráfico tá bonito"? Vai apanhar.</li>
+        <li><strong>Não atualizar a leitura intradia:</strong> macro pode virar com news intraday. Refresh a cada 2h em dia volátil.</li>
+      </ul>
+    </div>
+
+    <div class="insight">
+      <strong>Insight Bertani · síntese final:</strong> juros não são "tema de economista". São o <strong>preço do dinheiro</strong>,
+      e o preço do dinheiro move <strong>todo</strong> ativo financeiro. Trader que ignora juros opera técnico
+      isolado · trader que lê juros opera com confluência macro. A diferença, no longo prazo, é meio ponto de
+      win rate e talvez 50% de equity curve.
+    </div>
+
+    <div style="margin-top: var(--s-5); display: flex; gap: var(--s-3); flex-wrap: wrap;">
+      <a href="anti-narrativa.html" class="btn">↗ Ver Anti-Narrativa</a>
+      <a href="kill-zones-b3.html" class="btn">↗ Ver Kill Zones B3</a>
+      <a href="volume-profile.html" class="btn">↗ Ver Volume Profile</a>
+      <a href="../index.html" class="btn">← Biblioteca</a>
+      <a href="../../calculadora/input.html" class="btn btn-primary">🎯 Rodar análise</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

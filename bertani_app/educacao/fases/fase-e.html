@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fase E · Tendência fora do range — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(0, 200, 83, 0.18), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: linear-gradient(135deg, var(--green), #00A848); color: white; display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; margin-bottom: var(--s-3); font-family: var(--mono); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--green); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--green); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel.green-border { border-color: var(--green); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .setup-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .setup-card.acc { border-color: var(--green); } .setup-card.acc h3 { color: var(--green); }
+    .setup-card.dist { border-color: var(--warn); } .setup-card.dist h3 { color: var(--warn); }
+    .setup-card h3 { margin: 0 0 var(--s-3); font-size: 17px; }
+    .setup-card ul { padding-left: 0; list-style: none; color: var(--text-2); line-height: 1.7; font-size: 14px; }
+    .setup-card ul li { margin-bottom: 12px; padding-left: 60px; position: relative; }
+    .setup-card ul li code { position: absolute; left: 0; top: 0; background: var(--bg-2); border: 1px solid var(--border-bright); padding: 2px 8px; border-radius: 6px; font-family: var(--mono); font-size: 11px; font-weight: 700; min-width: 50px; text-align: center; display: inline-block; }
+    .setup-card.acc ul li code { color: var(--green); border-color: var(--green); }
+    .setup-card.dist ul li code { color: var(--warn); border-color: var(--warn); }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: var(--green-soft); color: var(--green); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .pitfall strong { color: var(--warn); }
+    .exemplo-bertani { background: rgba(212, 175, 55, 0.06); border-left: 4px solid var(--gold); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .exemplo-bertani strong { color: var(--gold); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+    .navegacao-fases { display: flex; gap: var(--s-3); margin-top: var(--s-5); flex-wrap: wrap; justify-content: space-between; padding: var(--s-4); background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .navegacao-fases a { font-size: 14px; color: var(--text-2); text-decoration: none; }
+    .nav-prev::before { content: "← "; }
+    .nav-next::after { content: " →"; }
+    .destaque-green { background: rgba(0, 200, 83, 0.10); padding: var(--s-3) var(--s-4); border-radius: var(--radius-sm); border-left: 3px solid var(--green); margin: var(--s-3) 0; font-size: 14px; color: var(--text-2); }
+    .destaque-green strong { color: var(--green); }
+    .ciclo-fim { background: linear-gradient(135deg, rgba(41, 98, 255, 0.10), transparent); border: 1px solid var(--accent); padding: var(--s-5); border-radius: var(--radius); margin-top: var(--s-5); text-align: center; }
+    .ciclo-fim h3 { color: var(--accent); margin: 0 0 var(--s-2); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../calculadora/input.html">Calculadora</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › <a href="../fases-wyckoff.html">Fases Wyckoff</a> › Fase E</p>
+    <div class="m-icon">E</div>
+    <h1 class="m-titulo">Fase E · Tendência fora do range</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Fundação Wyckoff</span> <span><strong>Onde olhar:</strong> 4H · 1H</span> <span><strong>Quando opera:</strong> SETUP DE TRACE/EXAUSTÃO</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <section class="panel green-border">
+      <h2>O que é</h2>
+      <p>
+        A Fase E é o desdobramento da tendência fora do range — o markup ou markdown <strong>expansivo</strong>
+        que vai durar enquanto durar a causa construída na Fase B. Sucessão de máximas e mínimas
+        crescentes (em alta) ou decrescentes (em queda).
+      </p>
+      <p>
+        É a fase mais óbvia visualmente — qualquer pessoa olhando o gráfico vê tendência clara. Por isso é
+        a fase em que mais retail entra (sempre com atraso). E também é a fase em que o <strong>edge
+        Wyckoff diminui</strong>: estamos seguindo o que já é conhecido publicamente, sem o efeito surpresa
+        do Spring.
+      </p>
+      <div class="destaque-green">
+        <strong>🎯 Fase E não é fase de "armar setup novo".</strong> É fase de COLHER o que foi armado
+        na Fase C ou D. Quem entrou no Spring carrega a posição. Trailing stop sobe junto com os pullbacks.
+        Procura sinais de exaustão pra saída, não pra novas entradas.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Diagrama · Markup expansivo (acumulação) e Markdown expansivo (distribuição)</h2>
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="ge" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="700" height="360" fill="url(#ge)" />
+
+          <!-- ===== MARKUP EXPANSIVO (esquerda) ===== -->
+          <text x="60" y="35" font-size="13" fill="#00C853" font-weight="bold">▲ MARKUP expansivo (acc)</text>
+
+          <!-- Range (escondido por baixo) -->
+          <line x1="40" y1="220" x2="320" y2="220" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+          <text x="40" y="215" font-size="9" fill="#8A95A8">topo do range (rompido)</text>
+
+          <!-- Sucessão de SOS + LPS subindo -->
+          <path d="M 40 215 L 70 195 L 90 200 L 120 170 L 145 175 L 175 145 L 200 152 L 230 115 L 260 122 L 290 85 L 320 90" fill="none" stroke="#00C853" stroke-width="2.5"/>
+
+          <!-- Markers de SOS e LPS -->
+          <circle cx="120" cy="170" r="4" fill="#00C853"/>
+          <text x="105" y="160" font-size="9" fill="#00C853">SOS</text>
+
+          <circle cx="145" cy="175" r="4" fill="#FF1744"/>
+          <text x="148" y="190" font-size="9" fill="#FF1744">LPS</text>
+
+          <circle cx="175" cy="145" r="4" fill="#00C853"/>
+          <text x="160" y="135" font-size="9" fill="#00C853">SOS</text>
+
+          <circle cx="200" cy="152" r="4" fill="#FF1744"/>
+          <text x="203" y="167" font-size="9" fill="#FF1744">LPS</text>
+
+          <circle cx="230" cy="115" r="4" fill="#00C853"/>
+          <text x="215" y="105" font-size="9" fill="#00C853">SOS</text>
+
+          <circle cx="260" cy="122" r="4" fill="#FF1744"/>
+          <text x="263" y="137" font-size="9" fill="#FF1744">LPS</text>
+
+          <!-- Sinal de exaustão -->
+          <path d="M 290 85 L 305 60 L 315 50" fill="none" stroke="#D4AF37" stroke-width="2"/>
+          <circle cx="318" cy="48" r="5" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+          <text x="265" y="40" font-size="10" fill="#D4AF37" font-weight="bold">exaustão · próximo PSY</text>
+
+          <!-- Indicador FASE E -->
+          <line x1="40" y1="320" x2="320" y2="320" stroke="#00C853" stroke-width="2"/>
+          <text x="120" y="340" font-size="12" fill="#00C853" font-weight="bold">⟵ FASE E (markup) ⟶</text>
+
+          <!-- Linha divisória -->
+          <line x1="350" y1="20" x2="350" y2="360" stroke="#1F2A3C" stroke-width="1"/>
+
+          <!-- ===== MARKDOWN EXPANSIVO (direita) ===== -->
+          <text x="430" y="35" font-size="13" fill="#FF1744" font-weight="bold">▼ MARKDOWN expansivo (dist)</text>
+
+          <!-- Range (escondido por cima) -->
+          <line x1="380" y1="100" x2="660" y2="100" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3" opacity="0.5"/>
+          <text x="380" y="95" font-size="9" fill="#8A95A8">fundo do range (rompido)</text>
+
+          <!-- Sucessão de SOW + LPSY caindo -->
+          <path d="M 380 105 L 410 130 L 430 125 L 460 160 L 485 155 L 515 195 L 540 188 L 570 230 L 595 222 L 625 265 L 650 258" fill="none" stroke="#FF1744" stroke-width="2.5"/>
+
+          <!-- Markers -->
+          <circle cx="460" cy="160" r="4" fill="#FF1744"/>
+          <text x="465" y="155" font-size="9" fill="#FF1744">SOW</text>
+
+          <circle cx="485" cy="155" r="4" fill="#00C853"/>
+          <text x="488" y="150" font-size="9" fill="#00C853">LPSY</text>
+
+          <circle cx="515" cy="195" r="4" fill="#FF1744"/>
+          <text x="518" y="190" font-size="9" fill="#FF1744">SOW</text>
+
+          <circle cx="540" cy="188" r="4" fill="#00C853"/>
+          <text x="543" y="183" font-size="9" fill="#00C853">LPSY</text>
+
+          <circle cx="570" cy="230" r="4" fill="#FF1744"/>
+          <text x="573" y="225" font-size="9" fill="#FF1744">SOW</text>
+
+          <circle cx="595" cy="222" r="4" fill="#00C853"/>
+          <text x="598" y="217" font-size="9" fill="#00C853">LPSY</text>
+
+          <!-- Sinal de exaustão (fundo) -->
+          <path d="M 625 265 L 650 305 L 660 320" fill="none" stroke="#D4AF37" stroke-width="2"/>
+          <circle cx="660" cy="320" r="5" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+          <text x="555" y="335" font-size="10" fill="#D4AF37" font-weight="bold">exaustão · próximo PS</text>
+
+          <!-- Indicador FASE E -->
+          <line x1="380" y1="20" x2="660" y2="20" stroke="#FF1744" stroke-width="2" opacity="0"/>
+          <line x1="380" y1="20" x2="660" y2="20" stroke="#FF1744" stroke-width="0"/>
+        </svg>
+      </div>
+      <p style="text-align: center; font-size: 12px; color: var(--muted); margin-top: var(--s-2);">
+        Sucessão de SOS+LPS (markup) ou SOW+LPSY (markdown) cria a tendência. A fase termina com sinais de exaustão · clímax invertido começa novo ciclo.
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <div class="setup-card acc">
+        <h3>▲ Eventos da Fase E · Markup</h3>
+        <ul>
+          <li><code>SOS</code><strong>Sign of Strength</strong> — Movimentos impulsivos sucessivos pra cima, fora do range. Cada um vai mais alto que o anterior.</li>
+          <li><code>LPS</code><strong>Last Point of Support</strong> — Pullbacks dentro da tendência. Cada LPS é uma oportunidade de adicionar à posição (pyramid) ou mover stop pra cima.</li>
+          <li><strong>Padrão "escada"</strong> — Higher High + Higher Low repetindo. Estrutura saudável de markup.</li>
+          <li><strong>Exaustão tardia</strong> — Volume começa a divergir (preço sobe, volume não acompanha). Sinal pra começar a fechar posição.</li>
+        </ul>
+      </div>
+      <div class="setup-card dist">
+        <h3>▼ Eventos da Fase E · Markdown</h3>
+        <ul>
+          <li><code>SOW</code><strong>Sign of Weakness</strong> — Movimentos impulsivos sucessivos pra baixo, fora do range. Lower Low repetindo.</li>
+          <li><code>LPSY</code><strong>Last Point of Supply</strong> — Pullbacks de alta dentro da tendência bearish. Cada LPSY é resistência rejeitando.</li>
+          <li><strong>Padrão "escada invertida"</strong> — Lower High + Lower Low repetindo. Estrutura saudável de markdown.</li>
+          <li><strong>Exaustão tardia</strong> — Velas de queda perdem força, volume decresce. Sinal pra fechar posição short.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como gerenciar posição na Fase E</h2>
+      <ol class="lista-numerada">
+        <li><strong>Não abre nova posição contra a tendência.</strong> Em markup, não armar short pensando em "topo". Você pode estar errado por dias antes do topo verdadeiro.</li>
+        <li><strong>Trailing stop nos LH/HL do 15m</strong>. Cada novo LPS confirmado, sobe o stop pro novo HL (long) ou desce pro novo LH (short).</li>
+        <li><strong>Procura sinais de exaustão</strong>: divergência preço/volume · velas de reversão (engulfing, doji em região de extremo) · clímax invertido.</li>
+        <li><strong>Saída parcial em pools de liquidez</strong>: cada PWH/PWL atingido · pega 25-33% do tamanho · deixa o resto correr.</li>
+        <li><strong>Quando o primeiro PSY/PS aparecer</strong> (sinal de parada da tendência) · zerar posição. Estamos voltando pra Fase A do próximo ciclo.</li>
+      </ol>
+    </section>
+
+    <div class="exemplo-bertani">
+      <strong>📊 Exemplo Bertani · WDO1!</strong><br>
+      Após UTAD em 5.025 (terça) e MSOW de 70 pontos durante a Fase D (quarta-quinta), o WDO entra em
+      Fase E expansiva. Sucessão de 4 pullbacks de alta (LPSY) durante 2 dias, cada um falhando 5-8 pontos
+      abaixo do anterior. Posição short carregada desde 5.018 (entry no UTAD) com trailing nos LHs.
+      Stop atualizado de 5.030 pra 5.012 pra 4.998 pra 4.985 ao longo da semana. Saída parcial em 4.950
+      (TP1 · pool semanal), restante em 4.920 (TP2 · próximo pool HTF). <strong>Lucro total da posição:
+      ~95-100 pontos.</strong> Em 1 contrato WDO = R$ 950-1.000 (R$ 10/pt). Fase E é colheita pura.
+    </div>
+
+    <div class="pitfall">
+      <strong>⚠ Erro comum:</strong> entrar contra a Fase E achando que "já subiu/caiu demais". Mercado
+      pode estender bem além do que parece razoável quando a causa da Fase B foi grande. <strong>Lembrete
+      Wyckoff:</strong> "the trend is your friend until the end". Operar contra a Fase E só faz sentido
+      QUANDO já tem sinal de Fase A do ciclo seguinte (PS + clímax invertido + AR confirmados).
+    </div>
+
+    <div class="ciclo-fim">
+      <h3>🔁 O ciclo se completa</h3>
+      <p style="margin: 0; color: var(--text-2);">
+        Após a Fase E, o mercado começa <strong>novamente em Fase A</strong> — só que agora invertida.
+        Acumulação termina, distribuição começa (e vice-versa). O ciclo Wyckoff é fractal e contínuo.
+        Mesmo método, mesma leitura, escala diferente. <strong>Tu acabou de cobrir a fundação completa.</strong>
+      </p>
+    </div>
+
+    <div class="navegacao-fases">
+      <a href="fase-d.html" class="nav-prev">Fase D · Markup/Markdown dentro</a>
+      <a href="../fases-wyckoff.html" class="nav-next">Volta pro hub do ciclo</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644 · Conteúdo educacional · Não constitui recomendação · CVM 20</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
