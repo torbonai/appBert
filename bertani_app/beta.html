@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Programa de testes — Bertani</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .b-hero {
+      padding: var(--s-7) 0 var(--s-3);
+      position: relative;
+      text-align: center;
+    }
+    .b-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 400px at 50% -10%, rgba(212, 175, 55, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+    .b-pill {
+      display: inline-block;
+      padding: 6px 14px;
+      background: rgba(212, 175, 55, 0.15);
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--s-3);
+    }
+    .b-titulo { font-size: 38px; margin: 0 0 var(--s-3); line-height: 1.15; }
+    .b-titulo .gold { color: var(--gold); }
+    .b-sub {
+      font-size: 17px; color: var(--text-2);
+      max-width: 580px; margin: 0 auto;
+      line-height: 1.55;
+    }
+
+    .b-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1fr;
+      gap: var(--s-5);
+      margin-top: var(--s-6);
+    }
+    @media (max-width: 980px) { .b-grid { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      margin-bottom: var(--s-4);
+    }
+    .panel h3 {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--muted);
+      margin: 0 0 var(--s-3); font-weight: 700;
+    }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+
+    .timeline { display: flex; flex-direction: column; gap: var(--s-3); }
+    .tl-item {
+      display: grid;
+      grid-template-columns: auto 1fr;
+      gap: var(--s-3);
+      padding: var(--s-3);
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      border-left: 3px solid var(--accent);
+    }
+    .tl-item .num {
+      width: 36px; height: 36px;
+      border-radius: 50%;
+      background: var(--accent);
+      color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--mono); font-weight: 700;
+      flex-shrink: 0;
+    }
+    .tl-item .body h4 { margin: 0 0 4px; font-size: 14px; }
+    .tl-item .body p { margin: 0; font-size: 13px; color: var(--text-2); line-height: 1.5; }
+
+    .what-list { list-style: none; padding: 0; margin: 0; }
+    .what-list li {
+      padding: var(--s-2) 0;
+      padding-left: 28px;
+      position: relative;
+      color: var(--text-2);
+      line-height: 1.5;
+      font-size: 14px;
+      border-bottom: 1px dashed var(--border);
+    }
+    .what-list li:last-child { border-bottom: 0; }
+    .what-list li::before {
+      content: "✓"; position: absolute; left: 0;
+      color: var(--green); font-weight: 700;
+    }
+
+    .form-row { margin-bottom: var(--s-4); }
+    .form-row label {
+      display: block;
+      font-size: 13px;
+      color: var(--text-2);
+      margin-bottom: var(--s-2);
+      font-weight: 600;
+    }
+    .form-row .req { color: var(--warn); margin-left: 4px; }
+    .form-row .hint {
+      font-size: 11px; color: var(--muted);
+      margin-top: 4px; line-height: 1.4;
+    }
+    .input, .select, .textarea {
+      width: 100%;
+      background: var(--bg-2);
+      border: 1px solid var(--border-bright);
+      border-radius: var(--radius-sm);
+      padding: 12px 14px;
+      color: var(--text);
+      font-family: var(--sans);
+      font-size: 15px;
+    }
+    .input:focus, .select:focus, .textarea:focus {
+      outline: 0; border-color: var(--accent);
+    }
+    .textarea { resize: vertical; min-height: 100px; }
+
+    .pill-group { display: flex; gap: var(--s-2); flex-wrap: wrap; }
+    .pill-input {
+      flex: 1; min-width: 120px;
+      padding: 10px 14px;
+      background: var(--bg-2);
+      border: 1px solid var(--border-bright);
+      border-radius: 999px;
+      text-align: center;
+      font-size: 13px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: all var(--t-fast);
+      user-select: none;
+    }
+    .pill-input:hover { border-color: var(--accent); }
+    .pill-input.selected {
+      background: var(--accent);
+      border-color: var(--accent);
+      color: white;
+    }
+
+    .btn-submit {
+      width: 100%;
+      padding: 16px;
+      background: var(--gold);
+      color: var(--bg);
+      border: 0;
+      border-radius: var(--radius-sm);
+      font-size: 15px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: background var(--t-fast);
+    }
+    .btn-submit:hover { background: #E5C247; }
+    .btn-submit:disabled { background: var(--muted-2); cursor: not-allowed; }
+
+    .compliance {
+      margin-top: var(--s-5);
+      padding: var(--s-4);
+      background: var(--bg-2);
+      border-left: 3px solid var(--muted-2);
+      border-radius: var(--radius-sm);
+      font-size: 12px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+
+    .success-state {
+      text-align: center;
+      padding: var(--s-8) var(--s-5);
+    }
+    .success-state .icon {
+      font-size: 72px;
+      color: var(--green);
+      margin-bottom: var(--s-4);
+    }
+    .success-state h2 { margin: 0 0 var(--s-3); }
+    .success-state p { color: var(--text-2); max-width: 460px; margin: 0 auto var(--s-4); line-height: 1.6; }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <a href="index.html" class="btn">← Voltar</a>
+    </div>
+  </nav>
+
+  <header class="b-hero">
+    <div class="wrap">
+      <span class="b-pill">🧪 Programa de testes · Vagas limitadas</span>
+      <h1 class="b-titulo">Quero rodar o método<br><span class="gold">comigo durante 30 dias.</span></h1>
+      <p class="b-sub">
+        Antes de lançar oficialmente, vou abrir acesso completo do app e do briefing premium
+        pra um grupo restrito de clientes próximos. Sem cobrança no período.
+        Em troca: feedback honesto e permissão pra usar os resultados como case.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <div class="b-grid" id="content-grid">
+
+      <!-- COLUNA ESQUERDA: explicação -->
+      <div>
+        <section class="panel">
+          <h2>Como funciona</h2>
+          <div class="timeline">
+            <div class="tl-item">
+              <span class="num">1</span>
+              <div class="body">
+                <h4>Você se inscreve nesta página</h4>
+                <p>Formulário simples ao lado. Eu leio cada inscrição pessoalmente.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="num">2</span>
+              <div class="body">
+                <h4>Eu seleciono os 30-50 testers iniciais</h4>
+                <p>Critério: clientes do Private + audiência mais engajada do Telegram/Insta.
+                Aviso por email/Telegram em até 72h após inscrição.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="num">3</span>
+              <div class="body">
+                <h4>30 dias de acesso completo · sem cobrança</h4>
+                <p>Briefing diário premium (entry, stop, alvos exatos, racional Wyckoff×ICT)
+                + app completo (calculadora, checklist, registrador de trade, biblioteca de modelos).</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="num">4</span>
+              <div class="body">
+                <h4>Você dá feedback semanal estruturado</h4>
+                <p>5 perguntas curtas por semana sobre o que funcionou/não funcionou.
+                Permissão de usar seu resultado anônimo como case quando lançar.</p>
+              </div>
+            </div>
+            <div class="tl-item">
+              <span class="num">5</span>
+              <div class="body">
+                <h4>Após 30 dias · oferta de fundador</h4>
+                <p>Quem testar e quiser continuar pega preço de fundador
+                <strong>vitalício</strong> antes do lançamento público. Sem promessa de número agora.</p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel">
+          <h3>O que você vai testar</h3>
+          <ul class="what-list">
+            <li>Briefing diário escrito (8h30 BRT) com setup pronto WIN/WDO</li>
+            <li>Calculadora interativa com motor de scoring 11 critérios</li>
+            <li>Checklist pré-trade com 10 verificações disciplinares</li>
+            <li>Biblioteca de modelos Wyckoff × ICT (16 modelos catalogados)</li>
+            <li>Filtro Anti-Narrativa Wyckoff (3º pilar do método)</li>
+            <li>Registrador de trades com cálculo R$ automático</li>
+            <li>Track record auditável dos trades publicados</li>
+          </ul>
+        </section>
+
+        <div class="compliance">
+          <strong>Compliance.</strong> Renato Bertani é Analista CNPI registrado sob T 9644. O conteúdo do
+          Bertani App tem caráter exclusivamente educacional e analítico (Resolução CVM 20). Não constitui
+          recomendação personalizada de investimento. Operações em derivativos envolvem alto grau de risco
+          e podem resultar em perda total ou superior ao capital investido.
+        </div>
+      </div>
+
+      <!-- COLUNA DIREITA: formulário -->
+      <div>
+        <section class="panel" style="position: sticky; top: var(--s-5);">
+          <h2 style="font-size: 20px;">Inscrição · Programa de Testes</h2>
+          <p style="color: var(--muted); font-size: 13px; margin: 0 0 var(--s-4);">
+            Tudo confidencial. Eu leio e respondo pessoalmente.
+          </p>
+
+          <form id="beta-form" autocomplete="on">
+            <div class="form-row">
+              <label>Nome completo<span class="req">*</span></label>
+              <input type="text" class="input" id="nome" required maxlength="100">
+            </div>
+
+            <div class="form-row">
+              <label>Email<span class="req">*</span></label>
+              <input type="email" class="input" id="email" required>
+              <p class="hint">É por aqui que aviso se você foi selecionado.</p>
+            </div>
+
+            <div class="form-row">
+              <label>Telegram (opcional)</label>
+              <input type="text" class="input" id="telegram" placeholder="@seu_user">
+              <p class="hint">Se você já está no canal BERTANI Briefing, me ajuda a confirmar.</p>
+            </div>
+
+            <div class="form-row">
+              <label>Faixa de banca operacional<span class="req">*</span></label>
+              <div class="pill-group" data-name="banca">
+                <div class="pill-input" data-value="<10k">Até R$ 10k</div>
+                <div class="pill-input selected" data-value="10k-30k">R$ 10k–30k</div>
+                <div class="pill-input" data-value="30k-100k">R$ 30k–100k</div>
+                <div class="pill-input" data-value="100k+">R$ 100k+</div>
+              </div>
+              <p class="hint">Não é critério de seleção — me ajuda a calibrar exemplos de cálculo de contratos.</p>
+            </div>
+
+            <div class="form-row">
+              <label>Você já é meu aluno hoje?<span class="req">*</span></label>
+              <div class="pill-group" data-name="aluno">
+                <div class="pill-input" data-value="private">Sim · Sala Private</div>
+                <div class="pill-input" data-value="ex-aluno">Já fui aluno</div>
+                <div class="pill-input selected" data-value="seguidor">Acompanho mas não comprei</div>
+                <div class="pill-input" data-value="novo">Cheguei recente</div>
+              </div>
+            </div>
+
+            <div class="form-row">
+              <label>Por que você quer testar?<span class="req">*</span></label>
+              <textarea class="textarea" id="motivacao" required maxlength="500" placeholder="Em 1-2 frases. O que te chamou atenção, o que você espera ver."></textarea>
+              <p class="hint" id="motivacao-counter">0 / 500 caracteres</p>
+            </div>
+
+            <button type="submit" class="btn-submit" id="btn-submit">
+              Quero testar com Renato
+            </button>
+            <p style="font-size: 11px; color: var(--muted); margin-top: 12px; text-align: center;">
+              Inscrição não garante seleção. Aviso em até 72h.
+            </p>
+          </form>
+        </section>
+      </div>
+
+    </div>
+
+    <!-- SUCCESS STATE (mostrado após submit) -->
+    <div id="success-state" style="display: none;">
+      <div class="success-state">
+        <div class="icon">✓</div>
+        <h2>Inscrição recebida</h2>
+        <p>
+          Eu leio cada inscrição pessoalmente. Se você for selecionado pra rodar o teste comigo,
+          chega aviso por email em até 72h.
+        </p>
+        <p>
+          Enquanto isso, entra no canal Telegram público pra ver os briefings rodando ao vivo:
+        </p>
+        <a href="https://t.me/renato_bertani" target="_blank" class="btn btn-primary">
+          📱 Entrar no Telegram público
+        </a>
+        <p style="margin-top: var(--s-5);">— Renato Bertani · Analista CNPI T 9644</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">Conteúdo educacional. Não constitui recomendação personalizada. Resolução CVM 20.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var APP = window.BertaniApp;
+
+      // Pill groups
+      document.querySelectorAll('.pill-group').forEach(function (g) {
+        g.addEventListener('click', function (e) {
+          var p = e.target.closest('.pill-input');
+          if (!p) return;
+          g.querySelectorAll('.pill-input').forEach(function (x) { x.classList.remove('selected'); });
+          p.classList.add('selected');
+        });
+      });
+      function getPill(name) {
+        var el = document.querySelector('.pill-group[data-name="' + name + '"] .pill-input.selected');
+        return el ? el.dataset.value : null;
+      }
+
+      // Counter
+      var motivEl = document.getElementById('motivacao');
+      var counterEl = document.getElementById('motivacao-counter');
+      motivEl.addEventListener('input', function () {
+        counterEl.textContent = motivEl.value.length + ' / 500 caracteres';
+      });
+
+      // Submit
+      document.getElementById('beta-form').addEventListener('submit', function (e) {
+        e.preventDefault();
+        var btn = document.getElementById('btn-submit');
+        btn.disabled = true;
+        btn.textContent = 'Enviando...';
+
+        var payload = {
+          ts: new Date().toISOString(),
+          nome: document.getElementById('nome').value.trim(),
+          email: document.getElementById('email').value.trim().toLowerCase(),
+          telegram: document.getElementById('telegram').value.trim(),
+          banca: getPill('banca'),
+          aluno: getPill('aluno'),
+          motivacao: document.getElementById('motivacao').value.trim(),
+          source: 'beta_form_v1'
+        };
+
+        // Salva localmente (fallback)
+        try {
+          var local = JSON.parse(localStorage.getItem('bertani_beta_signups') || '[]');
+          local.unshift(payload);
+          localStorage.setItem('bertani_beta_signups', JSON.stringify(local.slice(0, 100)));
+        } catch (err) { /* noop */ }
+
+        // Envia pro Apps Script (Sheets) — mesmo endpoint do track record
+        // Aba "beta_signups" deve ser criada no Apps Script
+        var params = new URLSearchParams({
+          token: APP.config.sheetsToken,
+          action: 'beta_signup',
+          nome: payload.nome,
+          email: payload.email,
+          telegram: payload.telegram,
+          banca: payload.banca,
+          aluno: payload.aluno,
+          motivacao: payload.motivacao,
+          source: payload.source,
+          ts: payload.ts
+        });
+        var url = APP.config.sheetsEndpoint + '?' + params.toString();
+
+        fetch(url, { method: 'GET', mode: 'no-cors' })
+          .then(function () {
+            // mode: no-cors não permite ler resposta — assumimos sucesso
+            showSuccess();
+          })
+          .catch(function () {
+            // Mesmo com erro de rede, salvou local — mostra sucesso
+            showSuccess();
+          });
+      });
+
+      function showSuccess() {
+        document.getElementById('content-grid').style.display = 'none';
+        document.getElementById('success-state').style.display = 'block';
+        window.scrollTo({ top: 0, behavior: 'smooth' });
+      }
+    })();
+  </script>
+</body>
+</html>
