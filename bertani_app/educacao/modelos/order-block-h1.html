@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Order Block H1 — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(212, 175, 55, 0.12), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--gold); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--s-3); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--gold); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .setup-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .setup-card.long { border-color: var(--green); } .setup-card.long h3 { color: var(--green); }
+    .setup-card.short { border-color: var(--warn); } .setup-card.short h3 { color: var(--warn); }
+    .setup-card h3 { margin: 0 0 var(--s-3); font-size: 17px; }
+    .setup-card ul { padding-left: 20px; color: var(--text-2); line-height: 1.6; font-size: 14px; }
+    .setup-card ul li { margin-bottom: 6px; }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li:last-child { border-bottom: 0; }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../calculadora/input.html">Calculadora</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › Order Block H1</p>
+    <div class="m-icon">📦</div>
+    <h1 class="m-titulo">Order Block H1</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Continuação</span> <span><strong>Win rate alvo:</strong> 68%+</span> <span><strong>TF ideal:</strong> H1</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+    <section class="panel">
+      <h2>O que é</h2>
+      <p>
+        Order Block (OB) é a <strong>última vela contrária</strong> antes de um movimento direcional forte.
+        Em movimento de alta forte, é a última vela vermelha (de baixa) antes da explosão. Em queda forte,
+        é a última vela verde antes do tombo.
+      </p>
+      <p>
+        Por que importa: aquela vela é onde <strong>grandes ordens institucionais foram absorvidas</strong>.
+        Quando o preço volta àquele nível depois (retest), o smart money frequentemente acumula de novo —
+        é o "endereço" deles. Setup ICT mais clássico depois de FVG.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Diagrama</h2>
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 600 320" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="g1" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="600" height="320" fill="url(#g1)" />
+
+          <!-- Velas vermelhas (queda anterior) -->
+          <rect x="60" y="100" width="20" height="40" fill="#FF1744"/>
+          <rect x="100" y="120" width="20" height="50" fill="#FF1744"/>
+
+          <!-- Order Block: ÚLTIMA vela vermelha antes do impulso -->
+          <rect x="140" y="160" width="22" height="50" fill="#FF1744" stroke="#D4AF37" stroke-width="3"/>
+          <text x="151" y="135" font-size="11" fill="#D4AF37" text-anchor="middle" font-weight="bold">OB</text>
+
+          <!-- Velas de impulso bullish -->
+          <rect x="180" y="80" width="20" height="120" fill="#00C853"/>
+          <rect x="220" y="60" width="20" height="50" fill="#00C853"/>
+          <rect x="260" y="50" width="20" height="40" fill="#00C853"/>
+
+          <!-- Recuo até o OB -->
+          <rect x="300" y="55" width="20" height="50" fill="#FF1744"/>
+          <rect x="340" y="80" width="20" height="60" fill="#FF1744"/>
+          <rect x="380" y="120" width="20" height="50" fill="#FF1744"/>
+
+          <!-- Retest do OB -->
+          <rect x="420" y="155" width="22" height="60" fill="#FF1744"/>
+          <rect x="460" y="120" width="20" height="50" fill="#00C853"/>
+          <rect x="500" y="90" width="20" height="60" fill="#00C853"/>
+
+          <!-- Highlight zona OB -->
+          <rect x="50" y="160" width="500" height="50" fill="#D4AF37" fill-opacity="0.12" stroke="#D4AF37" stroke-width="1" stroke-dasharray="4,3"/>
+
+          <!-- Setas -->
+          <text x="320" y="280" font-size="13" fill="#2962FF" font-family="monospace" text-anchor="middle">Retest do OB → entrada de continuação ▲</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="setup-card long">
+        <h3>▲ Setup Bullish</h3>
+        <ul>
+          <li><strong>Bias HTF:</strong> 4H bullish, Phase D/E acc</li>
+          <li><strong>OB válido:</strong> última vela vermelha antes de impulso de alta com corpo &gt; 1,5× ATR</li>
+          <li><strong>Entry:</strong> dentro do corpo do OB no retest (entre open e close)</li>
+          <li><strong>Stop:</strong> abaixo da mínima do OB + buffer (30pt WIN, 1,5pt WDO)</li>
+          <li><strong>Alvo:</strong> próxima máxima estrutural ou pool de liquidez acima</li>
+          <li><strong>Confluência ideal:</strong> OB + FVG na mesma região</li>
+        </ul>
+      </div>
+      <div class="setup-card short">
+        <h3>▼ Setup Bearish</h3>
+        <ul>
+          <li><strong>Bias HTF:</strong> 4H bearish, Phase D/E dist</li>
+          <li><strong>OB válido:</strong> última vela verde antes de impulso de baixa</li>
+          <li><strong>Entry:</strong> dentro do corpo do OB no retest</li>
+          <li><strong>Stop:</strong> acima da máxima do OB + buffer</li>
+          <li><strong>Alvo:</strong> próxima mínima estrutural ou pool abaixo</li>
+          <li><strong>Confluência ideal:</strong> OB + sweep BSL acima</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como identificar</h2>
+      <ol class="lista-numerada">
+        <li>Localize um movimento direcional FORTE recente (impulso) no H1.</li>
+        <li>Volte para a ÚLTIMA vela <strong>contrária</strong> antes do início desse impulso. Essa é o OB candidato.</li>
+        <li>Confirme: o impulso quebrou estrutura (BOS) acima do topo anterior? Se sim, OB validado.</li>
+        <li>Marque o range do corpo da vela (open–close) — essa é sua zona de retest.</li>
+        <li>Aguarde o preço retornar a essa zona antes de pensar em entrada.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Regras de entrada</h2>
+      <ol class="lista-numerada">
+        <li><strong>OB sozinho não basta.</strong> Combine com FVG na mesma região, ou sweep recente da liquidez de baixo (long) / cima (short).</li>
+        <li><strong>Entry no 50% do corpo do OB.</strong> Não na máxima nem na mínima — o "fair value" do block.</li>
+        <li><strong>Stop ESTRUTURAL.</strong> Logo abaixo da mecha do OB (long) ou acima (short). Nunca apertado por dentro do corpo.</li>
+        <li><strong>R/R mínimo 1:2.5.</strong> OB tem latência maior — alvo precisa pagar a espera.</li>
+        <li><strong>OB mitigado &gt; 50% perde força.</strong> Se o preço já varreu o meio do OB e voltou, sinal enfraquecido. Buscar próximo OB H1 acima/abaixo.</li>
+      </ol>
+    </section>
+
+    <div class="pitfall">
+      <strong>⚠ Erro comum:</strong> confundir OB com qualquer vela de reversão. OB tem que ser a ÚLTIMA contrária
+      antes de um impulso que QUEBRA ESTRUTURA (BOS). Sem BOS, é só uma vela de pullback comum — não tem peso institucional.
+    </div>
+
+    <div style="margin-top: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--border);">
+      <h3 style="font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 var(--s-3);">Páginas relacionadas</h3>
+      <div style="display: flex; gap: var(--s-3); flex-wrap: wrap;">
+        <a href="mss-pos-sweep.html" class="btn">↗ MSS pós-sweep · gatilho LTF</a>
+        <a href="liquidity-runs.html" class="btn">↗ Liquidity Runs · onde o OB importa</a>
+        <a href="volume-profile.html" class="btn">↗ Volume Profile · valida o OB</a>
+      </div>
+    </div>
+
+    <div style="margin-top: var(--s-4); display: flex; gap: var(--s-3); flex-wrap: wrap;">
+      <a href="../index.html" class="btn">← Biblioteca</a>
+      <a href="breaker-block.html" class="btn">Próximo: Breaker Block →</a>
+      <a href="../../calculadora/input.html" class="btn btn-primary">🎯 Rodar análise</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
