@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="FVG Ótimo (Nested FVG) — modelo de máxima precisão Wyckoff x ICT · Bertani Educação">
+
+  <title>FVG Ótimo (Nested FVG) — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    /* === Estilo de página de modelo (extraído do _template.html) === */
+    .modelo-header {
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      margin-bottom: var(--s-6);
+      position: relative;
+      overflow: hidden;
+    }
+    .modelo-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(800px 300px at 80% -20%, rgba(41, 98, 255, 0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .modelo-header > * { position: relative; z-index: 1; }
+
+    .modelo-icone {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: var(--s-4);
+    }
+
+    .modelo-titulo {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0 0 var(--s-3);
+    }
+    @media (max-width: 768px) { .modelo-titulo { font-size: 30px; } }
+
+    .modelo-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-2);
+      margin-bottom: var(--s-5);
+    }
+    .modelo-tag {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .modelo-tag-fusion {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    .modelo-stats {
+      display: flex;
+      gap: var(--s-6);
+      flex-wrap: wrap;
+      padding-top: var(--s-4);
+      border-top: 1px solid var(--border);
+    }
+    .modelo-stat { display: flex; flex-direction: column; gap: var(--s-1); }
+    .modelo-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .modelo-stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      font-family: var(--mono);
+      color: var(--accent-2);
+    }
+    .modelo-stat-amostra { font-size: 12px; color: var(--muted); }
+
+    .modelo-secao {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      margin-bottom: var(--s-4);
+    }
+    .modelo-secao h2 {
+      display: flex; align-items: center; gap: var(--s-2);
+      font-size: 18px; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--muted); margin-bottom: var(--s-4); font-weight: 600;
+    }
+    .modelo-secao h2::before { content: "●"; color: var(--accent); font-size: 14px; }
+    .modelo-secao h2.green::before { color: var(--green); }
+    .modelo-secao h2.red::before { color: var(--warn); }
+    .modelo-secao h2.gold::before { color: var(--gold); }
+
+    .modelo-definicao p { font-size: 16px; line-height: 1.65; color: var(--text-2); margin: 0; }
+
+    .modelo-diagrama {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3);
+      text-align: center;
+    }
+    .modelo-diagrama img { max-width: 100%; height: auto; border-radius: var(--radius-sm); }
+
+    .modelo-setups {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4);
+    }
+    @media (max-width: 768px) { .modelo-setups { grid-template-columns: 1fr; } }
+    .modelo-setup {
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4);
+      border-left: 3px solid;
+    }
+    .modelo-setup-bullish { border-left-color: var(--green); }
+    .modelo-setup-bearish { border-left-color: var(--warn); }
+    .modelo-setup h3 {
+      font-size: 14px; text-transform: uppercase; letter-spacing: 0.06em;
+      margin-bottom: var(--s-3);
+    }
+    .modelo-setup-bullish h3 { color: var(--green); }
+    .modelo-setup-bearish h3 { color: var(--warn); }
+    .modelo-setup p { margin: 0; font-size: 14px; line-height: 1.55; color: var(--text-2); }
+
+    .modelo-passos { list-style: none; counter-reset: passo; padding: 0; margin: 0; }
+    .modelo-passos li {
+      counter-increment: passo;
+      display: flex; gap: var(--s-3);
+      padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .modelo-passos li:last-child { border-bottom: 0; }
+    .modelo-passos li::before {
+      content: counter(passo);
+      flex-shrink: 0;
+      width: 32px; height: 32px;
+      border-radius: 50%;
+      background: var(--accent-soft); color: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 14px; font-weight: 700; font-family: var(--mono);
+    }
+    .modelo-passos li > div { flex: 1; padding-top: 4px; color: var(--text-2); line-height: 1.55; }
+    .modelo-passos.regras li::before { background: var(--green-soft); color: var(--green); }
+
+    .modelo-back {
+      display: inline-flex; align-items: center; gap: var(--s-2);
+      color: var(--muted); font-size: 13px;
+      margin-bottom: var(--s-5); text-decoration: none;
+    }
+    .modelo-back:hover { color: var(--text); text-decoration: none; }
+
+    .calibracao-nota {
+      background: rgba(212, 175, 55, 0.08);
+      border: 1px solid rgba(212, 175, 55, 0.3);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3) var(--s-4);
+      font-size: 13px;
+      color: var(--gold);
+      margin-top: var(--s-3);
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="../../dashboard.html">Dashboard</a>
+        <a href="../fusao-completa.html" class="active">Educação</a>
+        <a href="../../calculadora/input.html">Calculadora</a>
+        <a href="../../registro/historico.html">Track Record</a>
+      </div>
+      <a href="../../dashboard.html" class="btn">Dashboard</a>
+    </div>
+  </nav>
+
+  <main class="wrap wrap-narrow" style="padding-top: var(--s-6); padding-bottom: var(--s-8);">
+
+    <a href="../fusao-completa.html" class="modelo-back">← Voltar à biblioteca de modelos</a>
+
+    <!-- ========== HEADER ========== -->
+    <header class="modelo-header">
+      <div class="modelo-icone">🎯</div>
+
+      <h1 class="modelo-titulo">FVG Ótimo (Nested FVG)</h1>
+
+      <div class="modelo-tags">
+        <span class="modelo-tag">FVG dentro de FVG</span>
+        <span class="modelo-tag">Multi-TF</span>
+        <span class="modelo-tag">Precisão</span>
+        <span class="modelo-tag modelo-tag-fusion">Wyckoff Fusion</span>
+      </div>
+
+      <div class="modelo-stats">
+        <div class="modelo-stat">
+          <span class="modelo-stat-label">Win Rate Bertani</span>
+          <span class="modelo-stat-value">—</span>
+          <span class="modelo-stat-amostra">amostra em construção</span>
+        </div>
+        <div class="modelo-stat">
+          <span class="modelo-stat-label">Timeframes</span>
+          <span class="modelo-stat-value" style="color: var(--text); font-size: 18px;">H1 + M15</span>
+          <span class="modelo-stat-amostra">aplicabilidade</span>
+        </div>
+        <div class="modelo-stat">
+          <span class="modelo-stat-label">Confluência</span>
+          <span class="modelo-stat-value" style="color: var(--text); font-size: 18px;">Alta</span>
+          <span class="modelo-stat-amostra">dual timeframe</span>
+        </div>
+      </div>
+
+      <div class="calibracao-nota">
+        ⚙️ Win Rate em construção: amostra própria de pregões WIN/WDO sendo coletada.
+        Probabilidade calibrada disponível após 30+ pregões de track record auditado.
+      </div>
+    </header>
+
+    <!-- ========== DEFINIÇÃO ========== -->
+    <section class="modelo-secao modelo-definicao">
+      <h2>Definição completa</h2>
+      <p>
+        O FVG Ótimo — também chamado de <strong>Nested FVG</strong> — ocorre quando um Fair Value Gap
+        de timeframe menor (M15) está <em>contido dentro</em> de um FVG de timeframe maior (H1 ou H4).
+        A zona de sobreposição entre os dois FVGs é o ponto onde o desequilíbrio de curto prazo e o de
+        médio prazo convergem no mesmo nível de preço — gerando a maior probabilidade de rejeição
+        institucional. <strong>É o setup de entrada de máxima precisão dentro de uma zona de FVG ampla.</strong>
+      </p>
+    </section>
+
+    <!-- ========== DIAGRAMA ========== -->
+    <section class="modelo-secao">
+      <h2>Diagrama representativo</h2>
+      <div class="modelo-diagrama">
+        <img src="../../assets/img/nested-fvg.png" alt="Diagrama FVG Ótimo (Nested FVG) — FVG M15 sobreposto dentro do FVG H1">
+      </div>
+    </section>
+
+    <!-- ========== SETUPS ========== -->
+    <section class="modelo-secao">
+      <h2 class="green">Setups direcionais</h2>
+      <div class="modelo-setups">
+        <div class="modelo-setup modelo-setup-bullish">
+          <h3>🟢 Setup Bullish</h3>
+          <p>
+            FVG bullish em H1 identificado (zona ampla). Dentro dessa zona, forma-se um FVG bullish
+            em M15 (zona menor sobreposta). A região de sobreposição dos dois é o <strong>ponto ótimo
+            de entrada long</strong>, onde a probabilidade de absorção institucional é máxima.
+          </p>
+        </div>
+        <div class="modelo-setup modelo-setup-bearish">
+          <h3>🔴 Setup Bearish</h3>
+          <p>
+            FVG bearish em H1 com FVG bearish em M15 contido dentro. A zona de sobreposição é o
+            <strong>ponto ótimo de entrada short</strong>, com confluência de desequilíbrio em
+            ambos os timeframes apontando pra rejeição.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== COMO IDENTIFICAR ========== -->
+    <section class="modelo-secao">
+      <h2 class="gold">Como identificar</h2>
+      <ol class="modelo-passos">
+        <li><div>Identificar um FVG no HTF (H1 ou H4) como zona de interesse principal — geralmente entre a sombra de 3 candles consecutivos com gap de eficiência claro.</div></li>
+        <li><div>Esperar o preço retornar à zona do FVG HTF — não antecipar entrada antes do retorno.</div></li>
+        <li><div>Quando o preço estiver dentro do FVG HTF, observar o LTF (M15) buscando um FVG menor formando-se na mesma direção.</div></li>
+        <li><div>Verificar se o FVG M15 está contido dentro do FVG H1 — a sobreposição é a zona Nested.</div></li>
+        <li><div>Confirmar com volume crescente na vela que cria o FVG M15 e price action de absorção (rejeição clara, wicks expressivos).</div></li>
+      </ol>
+    </section>
+
+    <!-- ========== REGRAS DE ENTRADA ========== -->
+    <section class="modelo-secao">
+      <h2 class="green">Regras de entrada</h2>
+      <ol class="modelo-passos regras">
+        <li><div>Entrar quando o preço atinge o FVG interno (M15) que está dentro do FVG externo (H1) — não entrar antes.</div></li>
+        <li><div>Confirmar com candle de rejeição na zona de sobreposição (engulfing ou pin bar) com volume acima da média M20 do M15.</div></li>
+        <li><div>Stop estrutural: além do extremo do FVG H1 (não do M15) — distância maior, mas mais segura contra ruído.</div></li>
+        <li><div>R:R mínimo: 1:2 do entry ao próximo ponto de interesse HTF (PDH/PDL, OB H1, FVG H1 oposto).</div></li>
+        <li><div>Realização parcial: 50% no primeiro objetivo (ponto estrutural mais próximo) com stop pra BE; trailing nos 50% restantes ou alvo final no PDH/PDL oposto.</div></li>
+      </ol>
+    </section>
+
+    <!-- ========== Navegação ========== -->
+    <section class="modelo-secao" style="text-align: center; padding: var(--s-6);">
+      <p class="muted mb-3">Continue explorando a biblioteca</p>
+      <div class="row gap-3" style="justify-content: center; flex-wrap: wrap;">
+        <a href="../fusao-completa.html" class="btn">Ver todos os 16 modelos</a>
+        <a href="../../calculadora/input.html" class="btn btn-primary">Aplicar na calculadora</a>
+      </div>
+    </section>
+
+    <div style="margin-top: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--border);">
+      <h3 style="font-size: 13px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin: 0 0 var(--s-3);">Páginas relacionadas</h3>
+      <div style="display: flex; gap: var(--s-3); flex-wrap: wrap;">
+        <a href="bpr-short.html" class="btn">↗ BPR Short · evolução do FVG</a>
+        <a href="mss-pos-sweep.html" class="btn">↗ MSS pós-sweep · gatilho LTF</a>
+        <a href="volume-profile.html" class="btn">↗ Volume Profile · valida o nested</a>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada de investimento.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
