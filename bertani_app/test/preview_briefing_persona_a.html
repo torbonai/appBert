@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PREVIEW · Briefing Persona A · Bertani App</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .preview-banner {
+      background: linear-gradient(135deg, var(--gold), #B8941F);
+      color: var(--bg);
+      padding: 12px var(--s-5);
+      text-align: center;
+      font-weight: 700; font-size: 13px; letter-spacing: 0.04em;
+    }
+    .preview-banner strong { font-size: 14px; }
+
+    .b-hero {
+      padding: var(--s-7) 0 var(--s-3);
+      position: relative;
+    }
+    .b-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 30% -10%, rgba(41, 98, 255, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+    .b-edicao {
+      font-size: 13px; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: var(--s-2);
+    }
+    .b-titulo { font-size: 36px; margin: 0 0 var(--s-2); line-height: 1.15; }
+    .b-subtitulo { font-size: 17px; color: var(--text-2); margin: 0 0 var(--s-3); max-width: 640px; }
+    .b-meta {
+      display: inline-flex; align-items: center; gap: var(--s-2);
+      padding: 6px 14px; background: var(--bg-2);
+      border: 1px solid var(--border-bright); border-radius: 999px;
+      font-family: var(--mono); font-size: 12px; color: var(--text-2);
+    }
+
+    .b-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr;
+      gap: var(--s-5); margin-top: var(--s-5);
+    }
+    @media (max-width: 980px) { .b-grid { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-6);
+      margin-bottom: var(--s-4);
+    }
+    .panel h3 {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); margin: 0 0 var(--s-4); font-weight: 700;
+    }
+
+    .ativo-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-6);
+      margin-bottom: var(--s-4);
+    }
+    .ativo-header {
+      display: grid; grid-template-columns: auto 1fr;
+      gap: var(--s-4); align-items: center;
+      padding-bottom: var(--s-4); border-bottom: 1px solid var(--border);
+      margin-bottom: var(--s-4);
+    }
+    .ativo-codigo {
+      font-family: var(--mono); font-size: 24px; font-weight: 700;
+    }
+    .ativo-info .resumo { font-size: 14px; color: var(--text-2); }
+
+    .veredito-pill {
+      display: inline-flex; padding: 6px 16px; border-radius: 999px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; margin-bottom: var(--s-3);
+    }
+    .veredito-cond { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .veredito-aguardar { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+
+    .niveis-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-2); margin: var(--s-3) 0;
+    }
+    @media (max-width: 600px) { .niveis-grid { grid-template-columns: repeat(2, 1fr); } }
+    .nivel-cell {
+      background: var(--bg-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: var(--s-2) var(--s-3);
+    }
+    .nivel-cell .lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .nivel-cell .val { font-family: var(--mono); font-size: 16px; font-weight: 700; margin-top: 2px; }
+
+    .racional-block {
+      background: var(--accent-soft); border-left: 3px solid var(--accent);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4); margin-top: var(--s-3);
+      font-size: 14px; color: var(--text-2); line-height: 1.6;
+    }
+    .racional-block strong { color: var(--accent); }
+
+    .plano-block {
+      background: linear-gradient(135deg, rgba(255, 23, 68, 0.08), transparent);
+      border: 1px solid var(--warn);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      margin-top: var(--s-4);
+    }
+    .plano-titulo {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      font-weight: 700; margin: 0 0 var(--s-3);
+      color: var(--warn);
+    }
+    .plano-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-3);
+    }
+    .plano-cell {
+      padding: var(--s-3) var(--s-4); background: var(--bg-2);
+      border-radius: var(--radius-sm); border: 1px solid var(--border);
+    }
+    .plano-cell .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .plano-cell .v { font-family: var(--mono); font-size: 20px; font-weight: 700; margin-top: 4px; }
+    .plano-cell .v.ok { color: var(--green); }
+    .plano-cell .v.warn { color: var(--warn); }
+    .plano-cell .v.gold { color: var(--gold); }
+    .plano-cell .s { font-size: 12px; color: var(--muted-2); margin-top: 2px; }
+
+    .tps-line {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-2); margin-top: var(--s-3);
+    }
+    @media (max-width: 600px) { .tps-line { grid-template-columns: 1fr; } }
+    .tp-cell {
+      padding: var(--s-3); background: var(--bg-2);
+      border-radius: var(--radius-sm); border: 1px solid var(--border);
+    }
+    .tp-cell .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .tp-cell .v { font-family: var(--mono); font-size: 17px; font-weight: 700; margin-top: 2px; color: var(--gold); }
+    .tp-cell .s { font-size: 11px; color: var(--muted-2); margin-top: 2px; }
+
+    .agenda-row {
+      display: grid; grid-template-columns: 60px 1fr;
+      gap: var(--s-3); padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .agenda-row:last-child { border-bottom: 0; }
+    .agenda-hora { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent); }
+    .agenda-evento { font-size: 13px; color: var(--text); margin: 0 0 2px; font-weight: 600; }
+    .agenda-meta { font-size: 11px; color: var(--muted); margin: 0; }
+    .agenda-meta .imp-alto { color: var(--warn); font-weight: 700; }
+
+    .kz-block {
+      background: var(--green-soft); border: 1px solid var(--green);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3); margin-top: var(--s-3);
+      font-size: 13px; color: var(--green); font-weight: 600;
+    }
+
+    .regra-list {
+      list-style: none; padding: 0; margin: 0;
+      counter-reset: regra;
+    }
+    .regra-list li {
+      counter-increment: regra;
+      padding: var(--s-2) 0; padding-left: 28px;
+      position: relative; font-size: 13px; color: var(--text-2);
+      border-bottom: 1px dashed var(--border);
+    }
+    .regra-list li:last-child { border-bottom: 0; }
+    .regra-list li::before {
+      content: counter(regra, decimal-leading-zero);
+      position: absolute; left: 0; top: var(--s-2);
+      font-family: var(--mono); font-size: 11px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    .info-pa-banner {
+      background: var(--accent-soft); border-left: 4px solid var(--accent);
+      padding: var(--s-3) var(--s-4); border-radius: var(--radius-sm);
+      margin: var(--s-3) 0;
+      font-size: 13px; color: var(--text-2); line-height: 1.5;
+    }
+    .info-pa-banner strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <div class="preview-banner">
+    🔍 PREVIEW · <strong>Briefing do dia · Persona A · Briefing R$ 147</strong> · Sem jargão Wyckoff/score/anti-narrativa
+  </div>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="preview_persona_a.html">Dashboard</a>
+        <!-- Educação · Calculadora · Track Record · ESCONDIDOS pra Persona A -->
+      </div>
+      <button class="btn">Sair</button>
+    </div>
+  </nav>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <header class="b-hero">
+      <div>
+        <p class="b-edicao">Edição #2 · Terça-feira, 28 de abril de 2026</p>
+        <h1 class="b-titulo">Reavaliação pós-IPCA confirma WDO short em retest 5.005-5.009</h1>
+        <p class="b-subtitulo">IPCA-15 saiu 0,89% — surpresa dovish. Setup operacional armado.</p>
+        <span class="b-meta">⏱ Publicado às 08:31 BRT · por Renato Bertani · Analista CNPI · T 9644</span>
+      </div>
+    </header>
+
+    <div class="info-pa-banner">
+      <strong>💡 Pra você:</strong> abaixo está o setup operacional do dia. Entrada, stop e alvos prontos.
+      Não precisa ler análise técnica · só executar na sua corretora dentro da janela limpa indicada.
+    </div>
+
+    <div class="b-grid">
+      <!-- ===== Coluna esquerda · Ativos ===== -->
+      <div>
+
+        <!-- WIN1! · AGUARDAR -->
+        <section class="ativo-card">
+          <header class="ativo-header">
+            <div class="ativo-codigo">WIN1!</div>
+            <div class="ativo-info">
+              <p class="resumo">Setup imaturo. Aguardar definição na abertura.</p>
+            </div>
+          </header>
+
+          <span class="veredito-pill veredito-aguardar">🔵 Aguardar</span>
+
+          <div class="niveis-grid">
+            <div class="nivel-cell"><div class="lbl">PDH</div><div class="val">191.800</div></div>
+            <div class="nivel-cell"><div class="lbl">PDL</div><div class="val">191.020</div></div>
+            <div class="nivel-cell"><div class="lbl">AJUSTE B3</div><div class="val">191.450</div></div>
+          </div>
+
+          <div class="racional-block">
+            <strong>💡 Por que esse setup:</strong><br>
+            Preço em meio do dealing range, sem gatilho confirmado. Aguardar definição na abertura.
+          </div>
+        </section>
+
+        <!-- WDO1! · GO_CONDICIONAL · com PLANO -->
+        <section class="ativo-card">
+          <header class="ativo-header">
+            <div class="ativo-codigo">WDO1!</div>
+            <div class="ativo-info">
+              <p class="resumo">Setup armado. Confirmar com volume no retest.</p>
+            </div>
+          </header>
+
+          <span class="veredito-pill veredito-cond">🟡 GO Condicional</span>
+
+          <div class="niveis-grid">
+            <div class="nivel-cell"><div class="lbl">PDH</div><div class="val">5.025,5</div></div>
+            <div class="nivel-cell"><div class="lbl">PDL</div><div class="val">4.985</div></div>
+            <div class="nivel-cell"><div class="lbl">AJUSTE B3</div><div class="val">5.012,5</div></div>
+            <div class="nivel-cell"><div class="lbl">FVG TOPO</div><div class="val">5.012</div></div>
+            <div class="nivel-cell"><div class="lbl">FVG FUNDO</div><div class="val">5.005</div></div>
+          </div>
+
+          <div class="racional-block">
+            <strong>💡 Por que esse setup:</strong><br>
+            Distribuição confirmada no 4H. IPCA dovish hoje pressiona dólar pra cair. Esperar retest da zona 5.005-5.009 com volume.
+          </div>
+
+          <!-- PLANO OPERACIONAL · Persona A vê (sem score, sem anti-narrativa) -->
+          <div class="plano-block">
+            <p class="plano-titulo">🎯 Plano operacional · ▼ SHORT</p>
+            <div class="plano-grid">
+              <div class="plano-cell">
+                <div class="l">Entry</div>
+                <div class="v warn">5.005-5.009</div>
+                <div class="s">zona de retest</div>
+              </div>
+              <div class="plano-cell">
+                <div class="l">Stop Loss</div>
+                <div class="v warn">5.013,5</div>
+                <div class="s">5 pts além do extremo</div>
+              </div>
+            </div>
+            <div class="tps-line">
+              <div class="tp-cell">
+                <div class="l">TP1 · 50%</div>
+                <div class="v">4.985</div>
+                <div class="s">parcial</div>
+              </div>
+              <div class="tp-cell">
+                <div class="l">TP2 · 25%</div>
+                <div class="v">4.980</div>
+                <div class="s">parcial</div>
+              </div>
+              <div class="tp-cell">
+                <div class="l">TP3 · 25%</div>
+                <div class="v">4.975</div>
+                <div class="s">final</div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- NOTA: Persona A NÃO vê o painel "🌐 Contexto macro" técnico (com IPCA dovish, anti-narrativa, etc) -->
+
+      </div>
+
+      <!-- ===== Coluna direita · Sidebar ===== -->
+      <aside>
+        <section class="panel">
+          <h3>⚠️ Agenda macro</h3>
+
+          <div class="agenda-row">
+            <span class="agenda-hora">09:00</span>
+            <div>
+              <p class="agenda-evento">IPCA-15 abril BR</p>
+              <p class="agenda-meta">✅ Saiu: 0,89% (DOVISH)</p>
+            </div>
+          </div>
+
+          <div class="agenda-row">
+            <span class="agenda-hora">11:00</span>
+            <div>
+              <p class="agenda-evento">Confiança CB · US</p>
+              <p class="agenda-meta"><span class="imp-alto">★★ ALTA</span> · evitar 10:45-11:30</p>
+            </div>
+          </div>
+
+          <div class="agenda-row">
+            <span class="agenda-hora">14:30</span>
+            <div>
+              <p class="agenda-evento">Discurso Lagarde · BCE</p>
+              <p class="agenda-meta">★★ MEDIA · evitar 14:15-14:45</p>
+            </div>
+          </div>
+
+          <div class="agenda-row">
+            <span class="agenda-hora">17:30</span>
+            <div>
+              <p class="agenda-evento">Estoques Petróleo API · US</p>
+              <p class="agenda-meta">★★ MEDIA</p>
+            </div>
+          </div>
+
+          <div class="kz-block">🟢 11:30-14:00 BRT (janela limpa pós-CB · pré-Lagarde)</div>
+          <div class="kz-block">🟢 14:45-15:30 BRT (NY open continuação)</div>
+        </section>
+
+        <section class="panel">
+          <h3>📜 Regras do dia</h3>
+          <ul class="regra-list">
+            <li>Máx 2 trades no instrumento, 4 totais.</li>
+            <li>Risco fixo 1% da banca por trade.</li>
+            <li>Trailing nos HL/LH do 15m após TP1.</li>
+            <li>DD diário -3% encerra o dia.</li>
+          </ul>
+        </section>
+      </aside>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
