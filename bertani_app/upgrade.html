@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Planos · Bertani App</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .upgrade-hero {
+      padding: var(--s-7) 0 var(--s-5);
+      text-align: center;
+      position: relative;
+    }
+    .upgrade-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(900px 400px at 50% -10%, rgba(212, 175, 55, 0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .upgrade-hero h1 { font-size: 40px; margin: 0 0 var(--s-3); }
+    .upgrade-hero h1 .gold { color: var(--gold); }
+    .upgrade-hero p { font-size: 17px; color: var(--text-2); max-width: 640px; margin: 0 auto; }
+
+    .planos-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-4);
+      margin-top: var(--s-6);
+    }
+    @media (max-width: 980px) { .planos-grid { grid-template-columns: 1fr; } }
+
+    .plano-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+      transition: border-color var(--t-base), transform var(--t-fast);
+    }
+    .plano-card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    .plano-card.destaque { border-color: var(--gold); }
+    .plano-card.destaque::before {
+      content: "Mais popular";
+      position: absolute;
+      top: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      background: var(--gold);
+      color: var(--bg);
+      font-size: 11px;
+      font-weight: 700;
+      padding: 4px 14px;
+      border-radius: 999px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+    }
+    .plano-titulo {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      margin: 0 0 var(--s-2);
+      font-weight: 700;
+    }
+    .plano-nome {
+      font-size: 26px;
+      margin: 0 0 var(--s-2);
+      font-weight: 700;
+    }
+    .plano-preco {
+      font-size: 36px;
+      font-family: var(--mono);
+      color: var(--accent);
+      font-weight: 700;
+      margin: 0;
+    }
+    .plano-card.destaque .plano-preco { color: var(--gold); }
+    .plano-card.elite .plano-preco { color: var(--green); }
+    .plano-preco-sub {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 var(--s-4);
+    }
+    .plano-tagline {
+      font-size: 14px;
+      color: var(--text-2);
+      margin: 0 0 var(--s-5);
+      padding-bottom: var(--s-4);
+      border-bottom: 1px solid var(--border);
+      min-height: 60px;
+    }
+    .plano-features {
+      list-style: none;
+      padding: 0;
+      margin: 0 0 var(--s-5);
+      flex: 1;
+    }
+    .plano-features li {
+      display: flex;
+      gap: var(--s-2);
+      padding: var(--s-2) 0;
+      font-size: 14px;
+      color: var(--text-2);
+      align-items: flex-start;
+    }
+    .plano-features li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .plano-features li.off { color: var(--muted-2); }
+    .plano-features li.off::before { content: "—"; color: var(--muted-2); }
+
+    .plano-cta {
+      display: block;
+      width: 100%;
+      padding: 14px 24px;
+      text-align: center;
+      font-weight: 700;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border-radius: var(--radius-sm);
+      text-decoration: none;
+      transition: background var(--t-fast), transform var(--t-fast);
+    }
+    .plano-cta:hover { transform: translateY(-1px); text-decoration: none; }
+    .plano-cta-primary { background: var(--accent); color: white; }
+    .plano-cta-primary:hover { background: var(--accent-hover); color: white; }
+    .plano-cta-gold { background: var(--gold); color: var(--bg); }
+    .plano-cta-gold:hover { background: #E5C247; color: var(--bg); }
+    .plano-cta-elite { background: var(--green); color: white; }
+    .plano-cta-elite:hover { background: #00E561; color: white; }
+    .plano-cta-current {
+      background: var(--bg-2);
+      color: var(--muted);
+      cursor: default;
+      pointer-events: none;
+      border: 1px dashed var(--border-bright);
+    }
+
+    .comparativo {
+      margin-top: var(--s-8);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+    }
+    .comparativo h2 {
+      padding: var(--s-5) var(--s-6) 0;
+      margin: 0 0 var(--s-3);
+      font-size: 22px;
+    }
+    .comparativo p {
+      padding: 0 var(--s-6) var(--s-4);
+      color: var(--muted);
+      margin: 0;
+    }
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 14px;
+    }
+    .comp-table th,
+    .comp-table td {
+      padding: var(--s-3) var(--s-4);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .comp-table th {
+      background: var(--bg-2);
+      color: var(--text-2);
+      font-weight: 600;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .comp-table th.tier { text-align: center; min-width: 110px; }
+    .comp-table td.tier { text-align: center; font-family: var(--mono); }
+    .comp-table .feat { font-weight: 600; color: var(--text); }
+    .comp-table .y { color: var(--green); font-weight: 700; }
+    .comp-table .n { color: var(--muted-2); }
+    .comp-table tr:last-child td { border-bottom: 0; }
+
+    .faq {
+      margin-top: var(--s-8);
+    }
+    .faq h2 { font-size: 22px; margin: 0 0 var(--s-5); }
+    .faq-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4) var(--s-5);
+      margin-bottom: var(--s-3);
+    }
+    .faq-item summary {
+      cursor: pointer;
+      font-weight: 600;
+      color: var(--text);
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .faq-item summary::-webkit-details-marker { display: none; }
+    .faq-item summary::after { content: "+"; color: var(--accent); font-size: 24px; line-height: 1; transition: transform var(--t-fast); }
+    .faq-item[open] summary::after { transform: rotate(45deg); }
+    .faq-item p {
+      margin: var(--s-3) 0 0;
+      color: var(--text-2);
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+    .compliance-block {
+      margin-top: var(--s-7);
+      padding: var(--s-5);
+      background: var(--bg-2);
+      border-left: 3px solid var(--muted-2);
+      border-radius: var(--radius-sm);
+      font-size: 13px;
+      color: var(--muted);
+      line-height: 1.6;
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="dashboard.html">Dashboard</a>
+        <a href="educacao/fases-wyckoff.html">Educação</a>
+        <a href="calculadora/input.html">Calculadora</a>
+        <a href="registro/historico.html">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <header class="upgrade-hero">
+    <div class="wrap">
+      <h1>Operar com método é<br><span class="gold">um plano por vez</span></h1>
+      <p>
+        Três camadas. Mesmo método (Wyckoff × ICT × Anti-Narrativa). Diferentes níveis de aprofundamento.
+        Você escolhe onde quer começar e migra quando faz sentido.
+      </p>
+      <div id="tier-atual" style="margin-top: var(--s-4);"></div>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <!-- ============ CARDS DE PLANO ============ -->
+    <section class="planos-grid">
+
+      <!-- ===== Briefing R$ 147 ===== -->
+      <div class="plano-card" id="card-briefing">
+        <p class="plano-titulo">📰 Mensal</p>
+        <h2 class="plano-nome">Briefing</h2>
+        <p class="plano-preco">R$ 147</p>
+        <p class="plano-preco-sub">por mês · cancela quando quiser</p>
+        <p class="plano-tagline">
+          Setup operacional diário do WIN/WDO no seu Telegram, com entry, stop e alvos.
+          Para quem quer seguir o método sem fazer análise sozinho.
+        </p>
+        <ul class="plano-features">
+          <li>Briefing escrito diário (8h30 BRT)</li>
+          <li>Setup completo: entry, SL, TP1/TP2/TP3</li>
+          <li>Score 0-10 do dia + viés direcional</li>
+          <li>Filtro Anti-Narrativa Wyckoff aplicado</li>
+          <li>Acesso à biblioteca de modelos (16 ICT × Wyckoff)</li>
+          <li>Track record público auditável</li>
+          <li class="off">Calculadora interativa avançada</li>
+          <li class="off">Modo leitor do app educacional completo</li>
+          <li class="off">Mentoria 1:1</li>
+        </ul>
+        <a href="#" class="plano-cta plano-cta-primary" data-plano="briefing">
+          Assinar Briefing
+        </a>
+      </div>
+
+      <!-- ===== Tela Pro R$ 697 (DESTAQUE) ===== -->
+      <div class="plano-card destaque" id="card-telapro">
+        <p class="plano-titulo">🎯 Mensal</p>
+        <h2 class="plano-nome">Tela Pro</h2>
+        <p class="plano-preco">R$ 697</p>
+        <p class="plano-preco-sub">por mês · cancela quando quiser</p>
+        <p class="plano-tagline">
+          Tudo do Briefing + ferramentas pra rodar análise sozinho.
+          Para quem quer aprender a pescar — não só comer o peixe.
+        </p>
+        <ul class="plano-features">
+          <li><strong>Tudo do plano Briefing</strong></li>
+          <li>Calculadora interativa (14 critérios)</li>
+          <li>Plano operacional completo com R/R real e contratos sugeridos</li>
+          <li>Modo leitor do app educacional (todos os 16 modelos detalhados)</li>
+          <li>Checklist pré-trade interativo</li>
+          <li>Registrador de trades com cálculo R$ automático</li>
+          <li>Histórico privado de análises</li>
+          <li>Suporte por DM Telegram (resposta em 24h)</li>
+          <li class="off">Mentoria 1:1</li>
+        </ul>
+        <a href="#" class="plano-cta plano-cta-gold" data-plano="telapro">
+          Assinar Tela Pro
+        </a>
+      </div>
+
+      <!-- ===== Elite 1:1 R$ 2.997 ===== -->
+      <div class="plano-card elite" id="card-elite">
+        <p class="plano-titulo">💎 Mensal</p>
+        <h2 class="plano-nome">Elite 1:1</h2>
+        <p class="plano-preco">R$ 2.997</p>
+        <p class="plano-preco-sub">por mês · 6 vagas total</p>
+        <p class="plano-tagline">
+          Tudo do Tela Pro + acompanhamento direto comigo.
+          Para quem opera valores expressivos e quer revisão semanal de execução.
+        </p>
+        <ul class="plano-features">
+          <li><strong>Tudo do plano Tela Pro</strong></li>
+          <li>Mentoria 1:1 quinzenal de 60 min (vídeo)</li>
+          <li>Revisão semanal escrita do meu trade journal</li>
+          <li>Acesso ao grupo Elite (Telegram exclusivo · 6 pessoas)</li>
+          <li>Resposta DM em até 4h em horário comercial</li>
+          <li>Co-design de rules customizado pra sua banca/perfil</li>
+          <li>Acesso antecipado a features novas do app</li>
+          <li>2 horas de "live trading" mensal comigo (você assiste minha tela)</li>
+        </ul>
+        <a href="#" class="plano-cta plano-cta-elite" data-plano="elite">
+          Solicitar entrevista
+        </a>
+      </div>
+    </section>
+
+    <!-- ============ TABELA COMPARATIVA ============ -->
+    <section class="comparativo">
+      <h2>Comparativo detalhado</h2>
+      <p>Cada linha é uma capacidade real do produto.</p>
+      <table class="comp-table">
+        <thead>
+          <tr>
+            <th>Recurso</th>
+            <th class="tier">Briefing<br>R$ 147</th>
+            <th class="tier">Tela Pro<br>R$ 697</th>
+            <th class="tier">Elite<br>R$ 2.997</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td class="feat">Briefing escrito diário (Telegram)</td><td class="tier y">✓</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Setup completo (entry/SL/TP1/TP2/TP3)</td><td class="tier y">✓</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Score 0-10 + viés do dia</td><td class="tier y">✓</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Filtro Anti-Narrativa Wyckoff</td><td class="tier y">✓</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Track record público auditável</td><td class="tier y">✓</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Biblioteca de modelos (16 ICT × Wyckoff)</td><td class="tier">resumo</td><td class="tier y">completo</td><td class="tier y">completo</td></tr>
+          <tr><td class="feat">Calculadora interativa</td><td class="tier n">—</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Plano operacional com R/R real e contratos</td><td class="tier n">—</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Checklist pré-trade interativo</td><td class="tier n">—</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Registrador de trades + cálculo R$</td><td class="tier n">—</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Histórico privado de análises</td><td class="tier n">—</td><td class="tier y">✓</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Suporte DM Telegram</td><td class="tier n">—</td><td class="tier">24h</td><td class="tier y">4h</td></tr>
+          <tr><td class="feat">Mentoria 1:1 (vídeo quinzenal)</td><td class="tier n">—</td><td class="tier n">—</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Revisão semanal do trade journal</td><td class="tier n">—</td><td class="tier n">—</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Grupo Elite Telegram (6 pessoas)</td><td class="tier n">—</td><td class="tier n">—</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Co-design de rules customizado</td><td class="tier n">—</td><td class="tier n">—</td><td class="tier y">✓</td></tr>
+          <tr><td class="feat">Live trading mensal (2h)</td><td class="tier n">—</td><td class="tier n">—</td><td class="tier y">✓</td></tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ============ FAQ ============ -->
+    <section class="faq">
+      <h2>Perguntas frequentes</h2>
+
+      <details class="faq-item">
+        <summary>Qual a diferença real entre Briefing e Tela Pro?</summary>
+        <p>
+          O Briefing entrega o setup pronto: você lê, executa. Não precisa abrir o gráfico, não precisa
+          identificar sweep ou MSS — eu já fiz por você. <strong>Tela Pro</strong> entrega o Briefing E
+          as ferramentas pra você rodar sua própria análise: calculadora interativa, plano com cálculo
+          de contratos automático, histórico privado. É a diferença entre comer o peixe e aprender a pescar.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Posso começar pelo Briefing e depois migrar pra Tela Pro?</summary>
+        <p>
+          Sim. A migração é com 1 clique no app — você só paga a diferença proporcional. Quem está hoje no
+          Briefing R$ 147 e migra pra Tela Pro paga só os R$ 550 de diferença mensal a partir do upgrade.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>O que é Filtro Anti-Narrativa Wyckoff?</summary>
+        <p>
+          Princípio clássico de Wyckoff: <em>"Composite Man vende as boas notícias no topo, compra as ruins
+          no fundo."</em> Quando uma manchete bearish (Irã, IPCA alto, banco quebrando) sai e o preço NÃO
+          cai mas absorve, isso é smart money comprando pânico do varejo. É o terceiro pilar do método
+          Bertani — diferencia análise técnica pura (que ignora narrativa) de análise contextual
+          (que incorpora a divergência narrativa como sinal forte).
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Posso cancelar quando quiser?</summary>
+        <p>
+          Sim. Briefing e Tela Pro são mensais, sem fidelidade — você cancela direto no painel TurboCloud
+          a qualquer momento e o acesso continua até o fim do ciclo já pago. Elite tem mínimo de 3 meses
+          dado o acompanhamento individualizado.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Como funciona a oferta de fundador R$ 97 vitalício?</summary>
+        <p>
+          Vagas limitadas para alunos que já estavam comigo antes do Briefing existir como produto autônomo
+          (alunos do Private HeroSpark). Preço R$ 97/mês <strong>vitalício</strong> — não sobe nunca enquanto
+          a assinatura estiver ativa. Encerra dia <strong>03/05/2026 23h59 BRT</strong>. Se você é elegível,
+          recebeu email separado com link de checkout pré-aprovado.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Vocês operam minha conta?</summary>
+        <p>
+          <strong>Não.</strong> Sou Analista CNPI (T 9644), não gestor. O conteúdo do app é educacional e
+          analítico — você executa as operações na sua corretora. Resolução CVM 20: análise de valores
+          mobiliários não constitui recomendação personalizada de investimento.
+        </p>
+      </details>
+
+      <details class="faq-item">
+        <summary>Que resultado posso esperar?</summary>
+        <p>
+          Não prometo resultado. O track record é público e auditável (link no app) — você vê os trades
+          publicados nos briefings com win rate, R/R médio e drawdown reais. Performance passada não
+          garante futura. Risco em derivativos é alto e pode resultar em perda total do capital.
+        </p>
+      </details>
+
+    </section>
+
+    <div class="compliance-block">
+      <strong>Compliance.</strong> Renato Bertani é Analista CNPI registrado sob T 9644 na APIMEC.
+      O conteúdo do Bertani App tem caráter exclusivamente educacional e analítico (Resolução CVM 20).
+      Não constitui recomendação personalizada de investimento. Operações em derivativos
+      (mini-índice, mini-dólar) envolvem alto grau de risco e podem resultar em perda total ou superior
+      ao capital investido. Consulte um assessor de investimentos credenciado antes de operar.
+      Performance passada não garante resultado futuro.
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">Conteúdo educacional. Não constitui recomendação personalizada. Resolução CVM 20.</p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var APP = window.BertaniApp;
+      var tier = APP.access.getCurrentTier();
+
+      // Pill do tier atual
+      var labels = {
+        demo: 'Você está no modo Demo · sem assinatura',
+        briefing: 'Você assina o plano Briefing R$ 147',
+        telapro: 'Você assina o plano Tela Pro R$ 697',
+        elite: 'Você é Elite 1:1'
+      };
+      var labelClasses = {
+        demo: 'tier-demo',
+        briefing: 'tier-briefing',
+        telapro: 'tier-telapro',
+        elite: 'tier-elite'
+      };
+      var pill = document.createElement('span');
+      pill.className = 'tier-pill ' + labelClasses[tier];
+      pill.textContent = labels[tier];
+      document.getElementById('tier-atual').appendChild(pill);
+
+      // Marca o card do plano atual
+      var cardMap = { briefing: 'card-briefing', telapro: 'card-telapro', elite: 'card-elite' };
+      if (cardMap[tier]) {
+        var card = document.getElementById(cardMap[tier]);
+        var cta = card.querySelector('.plano-cta');
+        cta.className = 'plano-cta plano-cta-current';
+        cta.textContent = 'Seu plano atual';
+        cta.removeAttribute('href');
+      }
+
+      // CTAs (placeholders — vão pro TurboCloud quando estiver configurado)
+      var checkoutUrls = {
+        briefing: 'https://pay.turbocloud.com.br/PLACEHOLDER_briefing',
+        telapro: 'https://pay.turbocloud.com.br/PLACEHOLDER_telapro',
+        elite: 'mailto:renato.bertani31@gmail.com?subject=Quero%20entrevista%20Elite%201:1'
+      };
+      document.querySelectorAll('[data-plano]').forEach(function (el) {
+        if (el.classList.contains('plano-cta-current')) return;
+        el.addEventListener('click', function (e) {
+          e.preventDefault();
+          var p = el.dataset.plano;
+          var url = checkoutUrls[p];
+          if (url.indexOf('PLACEHOLDER') >= 0) {
+            APP.ui.toast('Checkout TurboCloud em configuração. Por enquanto, contato direto: renato.bertani31@gmail.com', 'info', 5000);
+          } else {
+            window.location.href = url;
+          }
+        });
+      });
+    })();
+  </script>
+</body>
+</html>
