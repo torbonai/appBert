@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Obrigado · Bertani App</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .ty-container {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: var(--s-5);
+      position: relative;
+    }
+    .ty-container::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 500px at 50% 0%, rgba(0, 200, 83, 0.15), transparent 60%);
+      pointer-events: none;
+    }
+    .ty-card {
+      max-width: 600px;
+      width: 100%;
+      background: var(--card);
+      border: 1px solid var(--green);
+      border-radius: var(--radius-lg);
+      padding: var(--s-7);
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-lg);
+    }
+    .ty-icon {
+      width: 80px; height: 80px;
+      border-radius: 50%;
+      background: var(--green);
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 44px;
+      color: white;
+      margin-bottom: var(--s-4);
+    }
+    .ty-pill {
+      display: inline-block;
+      padding: 4px 14px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      margin-bottom: var(--s-3);
+    }
+    .ty-pill.briefing { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .ty-pill.telapro { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .ty-pill.elite { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+    .ty-pill.fundador { background: linear-gradient(135deg, rgba(212, 175, 55, 0.25), rgba(0, 200, 83, 0.15)); color: var(--gold); border: 1px solid var(--gold); }
+
+    .ty-titulo { font-size: 30px; margin: 0 0 var(--s-3); }
+    .ty-sub {
+      font-size: 16px; color: var(--text-2);
+      max-width: 480px; margin: 0 auto var(--s-5);
+      line-height: 1.55;
+    }
+
+    .ty-info-box {
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4);
+      text-align: left;
+      margin: var(--s-4) auto;
+      max-width: 480px;
+    }
+    .ty-info-box h4 {
+      font-size: 12px; text-transform: uppercase;
+      letter-spacing: 0.08em; color: var(--muted);
+      margin: 0 0 var(--s-2); font-weight: 700;
+    }
+    .ty-info-box ul {
+      list-style: none; padding: 0; margin: 0;
+    }
+    .ty-info-box li {
+      padding: 6px 0; padding-left: 24px;
+      position: relative; font-size: 13px;
+      color: var(--text-2); line-height: 1.5;
+    }
+    .ty-info-box li::before {
+      content: "→"; position: absolute; left: 0;
+      color: var(--accent); font-weight: 700;
+    }
+
+    .ty-redirect {
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3);
+      font-size: 13px;
+      color: var(--text-2);
+      margin: var(--s-4) auto 0;
+      max-width: 480px;
+    }
+    .ty-redirect strong { color: var(--accent); }
+    .ty-counter { font-family: var(--mono); font-weight: 700; }
+
+    .ty-actions {
+      display: flex; gap: var(--s-3);
+      justify-content: center; margin-top: var(--s-4);
+      flex-wrap: wrap;
+    }
+    .ty-actions .btn { min-width: 180px; padding: 14px 24px; font-weight: 700; }
+
+    .ty-compliance {
+      font-size: 11px; color: var(--muted);
+      margin-top: var(--s-5); line-height: 1.5;
+    }
+
+    /* Estado de erro */
+    .ty-error .ty-card { border-color: var(--warn); }
+    .ty-error .ty-icon { background: var(--warn); }
+  </style>
+</head>
+<body>
+
+  <div class="ty-container" id="ty-container">
+    <div class="ty-card">
+      <div class="ty-icon" id="ty-icon">✓</div>
+      <span class="ty-pill" id="ty-pill"></span>
+      <h1 class="ty-titulo" id="ty-titulo">Compra confirmada</h1>
+      <p class="ty-sub" id="ty-sub"></p>
+
+      <div class="ty-info-box">
+        <h4>Próximos passos</h4>
+        <ul id="ty-passos"></ul>
+      </div>
+
+      <div class="ty-redirect" id="ty-redirect">
+        Redirecionando pro painel em <span class="ty-counter" id="ty-counter">5</span>s...
+        <br><strong>Não fechou?</strong> <a href="#" id="ty-link-direto">Clique aqui</a>.
+      </div>
+
+      <div class="ty-actions">
+        <a href="dashboard.html" class="btn btn-primary" id="ty-btn-painel">→ Ir pro painel agora</a>
+        <a href="index.html" class="btn">Voltar ao início</a>
+      </div>
+
+      <p class="ty-compliance">
+        Email de confirmação enviado pro endereço cadastrado · contato: renato.bertani31@gmail.com
+        <br>Renato Bertani · Analista CNPI T 9644 · Conteúdo educacional · Resolução CVM 20
+      </p>
+    </div>
+  </div>
+
+  <script src="assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var APP = window.BertaniApp;
+
+      // ============ Lê parâmetros do redirect ============
+      var params = new URLSearchParams(window.location.search);
+      var produto = (params.get('produto') || '').toLowerCase();
+      var key = params.get('key') || '';
+      var fundador = params.get('fundador') === '1';
+      var compraId = params.get('compra') || params.get('order_id') || '';
+
+      // ============ Configuração por produto ============
+      var configs = {
+        briefing: {
+          pillText: '📰 Briefing R$ ' + (fundador ? '97 · Fundador Vitalício' : '147'),
+          pillClass: fundador ? 'fundador' : 'briefing',
+          titulo: fundador ? 'Bem-vindo, fundador.' : 'Bem-vindo ao Briefing Bertani',
+          sub: fundador
+            ? 'Você acabou de garantir preço de fundador VITALÍCIO. Seu acesso está liberado.'
+            : 'Sua assinatura está ativa. Briefing diário começa segunda às 8h30 BRT.',
+          passos: [
+            'Acesso ao app Bertani liberado em modo Briefing',
+            'Você será adicionado ao Telegram premium em até 30min (manualmente · pelo @ que você cadastrou)',
+            'Primeiro briefing escrito chega no canal Telegram amanhã 8h30 BRT',
+            'Modo leitor das páginas educacionais já disponível no app'
+          ],
+          keyPrefix: 'BR_'
+        },
+        telapro: {
+          pillText: '🎯 Tela Pro R$ 697',
+          pillClass: 'telapro',
+          titulo: 'Bem-vindo à Tela Pro',
+          sub: 'Acesso completo ao app + Telegram premium + suporte direto. Biblioteca de modelos · checklist · registrador liberados.',
+          passos: [
+            'Acesso completo ao app Bertani (checklist, registrador, biblioteca · 23 modelos)',
+            'Telegram premium em até 30min (manualmente · pelo @ que você cadastrou)',
+            'Suporte por DM Telegram com resposta em até 24h',
+            'Briefing diário inclui cálculo automático de contratos e ganho R$ por TP'
+          ],
+          keyPrefix: 'TP_'
+        },
+        elite: {
+          pillText: '💎 Elite 1:1',
+          pillClass: 'elite',
+          titulo: 'Bem-vindo ao Elite',
+          sub: 'Tudo do Tela Pro + acompanhamento direto comigo. Vou te chamar pessoalmente nas próximas 48h.',
+          passos: [
+            'Tudo do plano Tela Pro liberado imediatamente',
+            'Convite pra mentoria 1:1 (vídeo) chega em até 48h por email',
+            'Adição ao grupo Elite Telegram (6 pessoas) · até 24h',
+            'Resposta DM em até 4h em horário comercial'
+          ],
+          keyPrefix: 'EL_'
+        }
+      };
+
+      var cfg = configs[produto];
+
+      // ============ Caso de erro: produto inválido ============
+      if (!cfg) {
+        document.body.classList.add('ty-error');
+        document.getElementById('ty-icon').textContent = '!';
+        document.getElementById('ty-pill').style.display = 'none';
+        document.getElementById('ty-titulo').textContent = 'Confirmação recebida';
+        document.getElementById('ty-sub').textContent =
+          'Não conseguimos identificar qual plano foi adquirido. Sua compra está confirmada — entre em contato pra ajustar acesso: renato.bertani31@gmail.com';
+        document.getElementById('ty-passos').innerHTML =
+          '<li>Confirmação chegou pelo HeroSpark</li>' +
+          '<li>Acesso ao app vai ser liberado manualmente em até 24h</li>';
+        document.getElementById('ty-redirect').style.display = 'none';
+        document.getElementById('ty-btn-painel').style.display = 'none';
+        return;
+      }
+
+      // ============ Aplica config no DOM ============
+      var pillEl = document.getElementById('ty-pill');
+      pillEl.textContent = cfg.pillText;
+      pillEl.classList.add(cfg.pillClass);
+
+      document.getElementById('ty-titulo').textContent = cfg.titulo;
+      document.getElementById('ty-sub').textContent = cfg.sub;
+
+      var passosUl = document.getElementById('ty-passos');
+      cfg.passos.forEach(function (p) {
+        var li = document.createElement('li');
+        li.textContent = p;
+        passosUl.appendChild(li);
+      });
+
+      // ============ Salva key no localStorage ============
+      if (key) {
+        try { localStorage.setItem(APP.config.storageKey, key); } catch (e) {}
+      } else if (compraId) {
+        // Se não veio key explícita, gera a partir do prefixo + compraId
+        var generatedKey = cfg.keyPrefix + compraId;
+        try { localStorage.setItem(APP.config.storageKey, generatedKey); } catch (e) {}
+      }
+
+      // ============ Redirect counter ============
+      var redirectUrl = 'dashboard.html';
+      var counter = 5;
+      var counterEl = document.getElementById('ty-counter');
+      var linkDireto = document.getElementById('ty-link-direto');
+      linkDireto.href = redirectUrl;
+
+      var interval = setInterval(function () {
+        counter--;
+        counterEl.textContent = counter;
+        if (counter <= 0) {
+          clearInterval(interval);
+          window.location.href = redirectUrl;
+        }
+      }, 1000);
+
+      // Para o redirect se usuário interagir (clica em algum link/botão)
+      document.querySelectorAll('a, button').forEach(function (el) {
+        el.addEventListener('click', function () { clearInterval(interval); });
+      });
+    })();
+  </script>
+</body>
+</html>

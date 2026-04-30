@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Briefing do dia · Bertani</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .b-hero {
+      padding: var(--s-7) 0 var(--s-3);
+      position: relative;
+    }
+    .b-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 30% -10%, rgba(41, 98, 255, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+    .b-edicao {
+      font-size: 13px; color: var(--muted);
+      text-transform: uppercase; letter-spacing: 0.08em;
+      margin-bottom: var(--s-2);
+    }
+    .b-titulo { font-size: 36px; margin: 0 0 var(--s-2); line-height: 1.15; }
+    .b-subtitulo { font-size: 17px; color: var(--text-2); margin: 0 0 var(--s-3); max-width: 640px; }
+    .b-meta {
+      display: inline-flex; align-items: center; gap: var(--s-2);
+      padding: 6px 14px; background: var(--bg-2);
+      border: 1px solid var(--border-bright); border-radius: 999px;
+      font-family: var(--mono); font-size: 12px; color: var(--text-2);
+    }
+
+    .b-grid {
+      display: grid; grid-template-columns: 1.5fr 1fr;
+      gap: var(--s-5); margin-top: var(--s-5);
+    }
+    @media (max-width: 980px) { .b-grid { grid-template-columns: 1fr; } }
+
+    .panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-6);
+      margin-bottom: var(--s-4);
+    }
+    .panel h3 {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--muted); margin: 0 0 var(--s-4); font-weight: 700;
+    }
+
+    /* ========== Macro context ========== */
+    .macro-pill {
+      display: inline-block; padding: 4px 12px; border-radius: 999px;
+      font-size: 11px; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; margin-bottom: var(--s-3);
+    }
+    .macro-pill.dovish { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+    .macro-pill.hawkish { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
+    .macro-pill.neutral { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .macro-list { list-style: none; padding: 0; margin: 0; }
+    .macro-list li {
+      padding: var(--s-2) 0; padding-left: 20px;
+      position: relative; font-size: 14px; color: var(--text-2);
+      border-bottom: 1px dashed var(--border);
+    }
+    .macro-list li:last-child { border-bottom: 0; }
+    .macro-list li::before {
+      content: "▸"; position: absolute; left: 0; color: var(--accent);
+    }
+    .anti-narr-block {
+      background: rgba(212, 175, 55, 0.06);
+      border-left: 3px solid var(--gold);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3) var(--s-4);
+      margin-top: var(--s-4);
+      font-size: 13px; color: var(--text-2); line-height: 1.5;
+    }
+    .anti-narr-block strong { color: var(--gold); }
+
+    /* ========== Ativo card ========== */
+    .ativo-card {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-6);
+      margin-bottom: var(--s-4);
+    }
+    .ativo-header {
+      display: grid; grid-template-columns: auto 1fr auto;
+      gap: var(--s-4); align-items: center;
+      padding-bottom: var(--s-4); border-bottom: 1px solid var(--border);
+      margin-bottom: var(--s-4);
+    }
+    .ativo-codigo {
+      font-family: var(--mono); font-size: 24px; font-weight: 700;
+    }
+    .ativo-info .fase { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 2px; }
+    .ativo-info .resumo { font-size: 14px; color: var(--text-2); }
+    .ativo-score-box {
+      text-align: center;
+      padding: 8px 14px;
+      border-radius: var(--radius-sm);
+      background: var(--bg-2);
+      border: 1px solid var(--border-bright);
+      min-width: 80px;
+    }
+    .ativo-score-num { font-family: var(--mono); font-size: 24px; font-weight: 700; line-height: 1; }
+    .ativo-score-num.high { color: var(--green); }
+    .ativo-score-num.mid { color: var(--gold); }
+    .ativo-score-num.low { color: var(--accent); }
+    .ativo-score-max { font-size: 11px; color: var(--muted); }
+
+    .veredito-pill {
+      display: inline-flex; padding: 6px 16px; border-radius: 999px;
+      font-size: 12px; font-weight: 700; letter-spacing: 0.06em;
+      text-transform: uppercase; margin-bottom: var(--s-3);
+    }
+    .veredito-go { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+    .veredito-cond { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .veredito-aguardar { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .veredito-no { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
+
+    .niveis-grid {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-2); margin: var(--s-3) 0;
+    }
+    @media (max-width: 600px) { .niveis-grid { grid-template-columns: repeat(2, 1fr); } }
+    .nivel-cell {
+      background: var(--bg-2); border: 1px solid var(--border);
+      border-radius: var(--radius-sm); padding: var(--s-2) var(--s-3);
+    }
+    .nivel-cell .lbl { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .nivel-cell .val { font-family: var(--mono); font-size: 16px; font-weight: 700; margin-top: 2px; }
+
+    .racional-block {
+      background: var(--bg-2); border-radius: var(--radius-sm);
+      padding: var(--s-4); margin-top: var(--s-3);
+      font-size: 14px; color: var(--text-2); line-height: 1.6;
+    }
+
+    /* ========== Plano operacional (gated) ========== */
+    .plano-block {
+      background: linear-gradient(135deg, rgba(0, 200, 83, 0.08), transparent);
+      border: 1px solid var(--green);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      margin-top: var(--s-4);
+      position: relative;
+    }
+    .plano-block.short {
+      background: linear-gradient(135deg, rgba(255, 23, 68, 0.08), transparent);
+      border-color: var(--warn);
+    }
+    .plano-titulo {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      font-weight: 700; margin: 0 0 var(--s-3);
+    }
+    .plano-titulo.short { color: var(--warn); }
+    .plano-titulo.long { color: var(--green); }
+
+    .plano-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: var(--s-3);
+    }
+    .plano-cell {
+      padding: var(--s-3) var(--s-4);
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      border: 1px solid var(--border);
+    }
+    .plano-cell .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .plano-cell .v { font-family: var(--mono); font-size: 20px; font-weight: 700; margin-top: 4px; }
+    .plano-cell .v.ok { color: var(--green); }
+    .plano-cell .v.warn { color: var(--warn); }
+    .plano-cell .v.gold { color: var(--gold); }
+    .plano-cell .s { font-size: 12px; color: var(--muted-2); margin-top: 2px; }
+
+    .tps-line {
+      display: grid; grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-2); margin-top: var(--s-3);
+    }
+    @media (max-width: 600px) { .tps-line { grid-template-columns: 1fr; } }
+    .tp-cell {
+      padding: var(--s-3); background: var(--bg-2);
+      border-radius: var(--radius-sm); border: 1px solid var(--border);
+    }
+    .tp-cell .l { font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.06em; }
+    .tp-cell .v { font-family: var(--mono); font-size: 17px; font-weight: 700; margin-top: 2px; color: var(--gold); }
+    .tp-cell .s { font-size: 11px; color: var(--muted-2); margin-top: 2px; }
+
+    .extras-telapro {
+      margin-top: var(--s-4);
+      padding-top: var(--s-3);
+      border-top: 1px dashed var(--border);
+      font-size: 13px; color: var(--text-2);
+    }
+    .extras-telapro strong { color: var(--gold); }
+
+    /* ========== Lock overlay (Demo / sem assinatura) ========== */
+    .lock-cta {
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.12), rgba(41, 98, 255, 0.08));
+      border: 2px solid var(--gold);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      text-align: center;
+      margin-top: var(--s-5);
+    }
+    .lock-cta h3 { font-size: 22px; margin: 0 0 var(--s-3); color: var(--gold); }
+    .lock-cta p { color: var(--text-2); max-width: 480px; margin: 0 auto var(--s-4); }
+
+    /* ========== Sidebar ========== */
+    .sidebar-box {
+      position: sticky; top: var(--s-5);
+    }
+    .agenda-row {
+      display: grid; grid-template-columns: 60px 1fr;
+      gap: var(--s-3); padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .agenda-row:last-child { border-bottom: 0; }
+    .agenda-hora { font-family: var(--mono); font-size: 13px; font-weight: 700; color: var(--accent); }
+    .agenda-evento { font-size: 13px; color: var(--text); margin: 0 0 2px; font-weight: 600; }
+    .agenda-meta { font-size: 11px; color: var(--muted); margin: 0; }
+    .agenda-meta .imp-alto { color: var(--warn); font-weight: 700; }
+    .agenda-meta .imp-medio { color: var(--gold); font-weight: 700; }
+
+    .kz-block {
+      background: var(--green-soft);
+      border: 1px solid var(--green);
+      border-radius: var(--radius-sm);
+      padding: var(--s-3); margin-top: var(--s-3);
+      font-size: 13px; color: var(--green);
+      font-weight: 600;
+    }
+    .regra-list {
+      list-style: none; padding: 0; margin: 0;
+      counter-reset: regra;
+    }
+    .regra-list li {
+      counter-increment: regra;
+      padding: var(--s-2) 0; padding-left: 28px;
+      position: relative; font-size: 13px; color: var(--text-2);
+      border-bottom: 1px dashed var(--border);
+    }
+    .regra-list li:last-child { border-bottom: 0; }
+    .regra-list li::before {
+      content: counter(regra, decimal-leading-zero);
+      position: absolute; left: 0; top: var(--s-2);
+      font-family: var(--mono); font-size: 11px;
+      color: var(--accent); font-weight: 700;
+    }
+
+    /* ========== Empty state ========== */
+    .empty {
+      text-align: center; padding: var(--s-8) var(--s-5);
+    }
+    .empty .icon { font-size: 64px; opacity: 0.4; }
+    .empty h2 { margin: var(--s-4) 0 var(--s-2); }
+    .empty p { color: var(--muted); margin: 0 0 var(--s-4); }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="../dashboard.html">Dashboard</a>
+        <a href="../educacao/fases-wyckoff.html">Educação</a>
+        
+        <a href="../registro/historico.html">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <main class="wrap" id="main" style="padding-bottom: var(--s-8);">
+    <!-- Conteúdo carregado via JS -->
+    <div class="empty">
+      <div class="icon">⏳</div>
+      <h2>Carregando briefing...</h2>
+    </div>
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+  <script>
+    // Aguarda BertaniApp carregar (defesa contra race condition app.js → script inline)
+    function bootBriefing() {
+      'use strict';
+      if (!window.BertaniApp || !window.BertaniApp.access) {
+        console.warn('[briefing] BertaniApp ainda não disponível, aguardando...');
+        setTimeout(bootBriefing, 50);
+        return;
+      }
+
+      var APP = window.BertaniApp;
+      var tier = APP.access.getCurrentTier();
+      var hasBriefing = APP.access.has('briefing');
+      var hasTelaPro = APP.access.has('telapro');
+      var mostraTecnico = hasTelaPro;
+      var mainEl = document.getElementById('main');
+
+      // Esconde links técnicos do nav pro tier Briefing/Demo
+      if (!hasTelaPro) {
+        document.querySelectorAll('.nav-links a').forEach(function (a) {
+          var href = a.getAttribute('href') || '';
+          if (href.indexOf('calculadora') >= 0 || href.indexOf('educacao') >= 0 || href.indexOf('historico') >= 0) {
+            a.style.display = 'none';
+          }
+        });
+      }
+
+      function todayISO() {
+        var d = new Date();
+        return d.getFullYear() + '-' +
+          String(d.getMonth() + 1).padStart(2, '0') + '-' +
+          String(d.getDate()).padStart(2, '0');
+      }
+
+      function showError(titulo, detalhe, dataAlvo) {
+        mainEl.innerHTML = '<div class="empty"><div class="icon">📭</div>' +
+          '<h2>' + titulo + '</h2>' +
+          '<p>' + detalhe + '</p>' +
+          (dataAlvo ? '<p style="font-size: 13px; color: var(--muted); margin-top: 16px;">Data buscada: ' + dataAlvo + '</p>' : '') +
+          '<div style="margin-top: 24px; display: flex; gap: 12px; justify-content: center; flex-wrap: wrap;">' +
+          '<a href="../dashboard.html" class="btn btn-primary">Voltar ao Dashboard</a>' +
+          '<a href="track-record.html" class="btn">Ver Track Record</a>' +
+          '</div></div>';
+      }
+
+      var dataParam = new URLSearchParams(window.location.search).get('data');
+      var dataAlvo = dataParam || todayISO();
+      console.log('[briefing] data alvo:', dataAlvo, '· tier:', tier);
+
+      // Timeout de segurança: se nada carregar em 8s, mostra erro
+      var loadCompleted = false;
+      var timeoutId = setTimeout(function () {
+        if (!loadCompleted) {
+          console.error('[briefing] timeout · 8s sem resposta');
+          showError('Tempo esgotado',
+            'A página demorou demais pra carregar. Verifica tua conexão e tenta de novo.',
+            dataAlvo);
+        }
+      }, 8000);
+
+      function fetchJSON(url) {
+        return fetch(url, { cache: 'no-cache' })
+          .then(function (r) {
+            if (!r.ok) {
+              console.warn('[briefing] fetch falhou:', url, 'status', r.status);
+              throw new Error('http_' + r.status);
+            }
+            return r.text().then(function (txt) {
+              try {
+                return JSON.parse(txt);
+              } catch (e) {
+                console.error('[briefing] JSON inválido em', url, ':', e.message);
+                console.error('[briefing] resposta começa com:', txt.substring(0, 80));
+                throw new Error('json_parse');
+              }
+            });
+          });
+      }
+
+      function loadBriefing(data) {
+        console.log('[briefing] tentando carregar:', './' + data + '.json');
+        return fetchJSON('./' + data + '.json')
+          .then(function (j) { console.log('[briefing] carregado direto:', data); return j; })
+          .catch(function (e) {
+            console.warn('[briefing] direto falhou (' + e.message + '), tentando manifest...');
+            return fetchJSON('./manifest.json')
+              .then(function (man) {
+                if (!man.briefings || man.briefings.length === 0) {
+                  throw new Error('manifest_vazio');
+                }
+                var ultimo = man.briefings.slice().sort().reverse()[0];
+                console.log('[briefing] manifest aponta pra:', ultimo);
+                return fetchJSON('./' + ultimo + '.json').then(function (j) {
+                  j._fallback = ultimo;
+                  return j;
+                });
+              });
+          });
+      }
+
+      loadBriefing(dataAlvo)
+        .then(function (briefing) {
+          loadCompleted = true;
+          clearTimeout(timeoutId);
+          if (!briefing) {
+            showError('Briefing não disponível',
+              'Não foi possível carregar nenhum briefing recente.',
+              dataAlvo);
+            return;
+          }
+          try {
+            render(briefing);
+            console.log('[briefing] renderizado com sucesso · edição', briefing.edicao);
+          } catch (renderErr) {
+            console.error('[briefing] erro durante render:', renderErr);
+            showError('Erro ao renderizar briefing',
+              'Os dados foram carregados mas houve um erro na exibição. Detalhe técnico: ' + renderErr.message,
+              dataAlvo);
+          }
+        })
+        .catch(function (e) {
+          loadCompleted = true;
+          clearTimeout(timeoutId);
+          console.error('[briefing] falha total:', e);
+          showError('Briefing não encontrado',
+            'O briefing de ' + dataAlvo + ' ainda não foi publicado, ou houve erro ao carregar (detalhe: ' + e.message + ').',
+            dataAlvo);
+        });
+
+      function fmtPts(n) {
+        if (n == null) return '—';
+        return Number(n).toLocaleString('pt-BR', { maximumFractionDigits: 1 });
+      }
+      function fmtBRL(n) {
+        if (n == null) return '—';
+        return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
+      }
+
+      function render(b) {
+        if (!b) return;
+        var html = '';
+
+        // ===== HERO =====
+        html += '<header class="b-hero"><div>';
+        html += '<p class="b-edicao">Edição #' + b.edicao + ' · ' + b.data_extenso + '</p>';
+        html += '<h1 class="b-titulo">' + b.destaque.manchete + '</h1>';
+        html += '<p class="b-subtitulo">' + b.destaque.subtitulo + '</p>';
+        html += '<span class="b-meta">⏱ Publicado às ' + b.hora_publicacao + ' · por ' + b.autor.nome + ' · ' + b.autor.registro + '</span>';
+        if (b._fallback) html += '<p style="color: var(--gold); margin-top: 12px; font-size: 13px;">⚠ Briefing de hoje ainda não publicado. Mostrando edição mais recente: ' + b._fallback + '.</p>';
+        html += '</div></header>';
+
+        // ===== GRID PRINCIPAL =====
+        html += '<div class="b-grid"><div>';
+
+        // ===== Contexto macro · só pra Tela Pro (Persona B avançada) =====
+        if (mostraTecnico) {
+          var macroCls = b.contexto_macro.nivel.toLowerCase();
+          html += '<section class="panel">';
+          html += '<h3>🌐 Contexto macro</h3>';
+          html += '<span class="macro-pill ' + macroCls + '">' + b.contexto_macro.nivel + '</span>';
+          html += '<ul class="macro-list">';
+          b.contexto_macro.highlights.forEach(function (h) { html += '<li>' + h + '</li>'; });
+          html += '</ul>';
+          if (b.contexto_macro.filtro_anti_narrativa && b.contexto_macro.filtro_anti_narrativa.ativa) {
+            html += '<div class="anti-narr-block"><strong>🌐 Filtro Anti-Narrativa Wyckoff: ATIVA</strong><br>';
+            html += b.contexto_macro.filtro_anti_narrativa.descricao + '</div>';
+          }
+          html += '</section>';
+        }
+
+        // ===== Ativos =====
+        b.ativos.forEach(function (at) {
+          html += renderAtivo(at);
+        });
+
+        // ===== Lock CTA pra demo =====
+        if (!hasBriefing) {
+          html += renderLockCTA();
+        }
+
+        html += '</div>'; // fim coluna esquerda
+
+        // ===== SIDEBAR =====
+        html += '<aside><div class="sidebar-box">';
+
+        html += '<section class="panel"><h3>⚠️ Agenda macro</h3>';
+        b.agenda_macro.forEach(function (a) {
+          html += '<div class="agenda-row">';
+          html += '<span class="agenda-hora">' + a.hora_brt + '</span>';
+          html += '<div><p class="agenda-evento">' + a.evento + '</p>';
+          var meta = '';
+          if (a.status === 'publicado') meta = '✅ ' + (a.resultado || 'publicado');
+          else if (a.impacto === 'ALTO') meta = '<span class="imp-alto">★★ ALTA</span> · ' + (a.janela_evitar || 'evitar janela');
+          else if (a.impacto === 'MEDIO') meta = '<span class="imp-medio">★★ MEDIA</span> · ' + (a.janela_evitar || '');
+          else meta = a.impacto || '';
+          html += '<p class="agenda-meta">' + meta + '</p></div></div>';
+        });
+        if (b.kill_zones_recomendadas) {
+          b.kill_zones_recomendadas.forEach(function (k) {
+            html += '<div class="kz-block">🟢 ' + k + '</div>';
+          });
+        }
+        html += '</section>';
+
+        html += '<section class="panel"><h3>📜 Regras do dia</h3>';
+        html += '<ul class="regra-list">';
+        b.regras_do_dia.forEach(function (r) { html += '<li>' + r + '</li>'; });
+        html += '</ul></section>';
+
+        html += '</div></aside>';
+        html += '</div>'; // fim grid
+
+        document.getElementById('main').innerHTML = html;
+      }
+
+      function renderAtivo(at) {
+        var faseLower = at.fase_wyckoff || '';
+        var scoreCls = at.score >= 7.5 ? 'high' : (at.score >= 6 ? 'mid' : 'low');
+        var verCls = ({ GO: 'veredito-go', GO_CONDICIONAL: 'veredito-cond', AGUARDAR: 'veredito-aguardar', NO_GO: 'veredito-no' })[at.veredito] || 'veredito-aguardar';
+        var verLabel = ({ GO: '🟢 GO', GO_CONDICIONAL: '🟡 GO Condicional', AGUARDAR: '🔵 Aguardar', NO_GO: '🔴 NO-GO' })[at.veredito] || at.veredito;
+
+        var html = '<section class="ativo-card">';
+        html += '<header class="ativo-header">';
+        html += '<div class="ativo-codigo">' + at.codigo + '</div>';
+        html += '<div class="ativo-info">';
+        // Pra Persona A: só mostra comentário breve (não a fase Wyckoff técnica)
+        if (mostraTecnico) {
+          html += '<p class="fase">' + faseLower + '</p>';
+        }
+        html += '<p class="resumo">' + (at.comentario_breve || '') + '</p>';
+        html += '</div>';
+        // Score só pra Tela Pro
+        if (mostraTecnico) {
+          html += '<div class="ativo-score-box"><div class="ativo-score-num ' + scoreCls + '">' + at.score.toFixed(1) + '</div><div class="ativo-score-max">/10</div></div>';
+        }
+        html += '</header>';
+
+        html += '<span class="veredito-pill ' + verCls + '">' + verLabel + '</span>';
+
+        // Níveis chave
+        if (at.niveis_chave) {
+          html += '<div class="niveis-grid">';
+          Object.keys(at.niveis_chave).forEach(function (k) {
+            var label = k.replace(/_/g, ' ').toUpperCase();
+            html += '<div class="nivel-cell"><div class="lbl">' + label + '</div><div class="val">' + fmtPts(at.niveis_chave[k]) + '</div></div>';
+          });
+          html += '</div>';
+        }
+
+        // Racional · Persona A mostra explicação simples · Tela Pro mostra Wyckoff×ICT completo
+        if (hasBriefing && mostraTecnico) {
+          html += '<div class="racional-block"><strong>📖 Racional Wyckoff × ICT:</strong><br>' + at.racional_publico + '</div>';
+        } else if (hasBriefing && !mostraTecnico) {
+          var racionalSimples = at.comentario_breve || (at.racional_publico ? at.racional_publico.split('.')[0] + '.' : '');
+          html += '<div class="racional-block" style="background: var(--accent-soft); border-left: 3px solid var(--accent);"><strong>💡 Por que esse setup:</strong><br>' + racionalSimples + '</div>';
+        } else {
+          html += '<div class="racional-block" style="filter: blur(4px); opacity: 0.5; user-select: none;">' + (at.racional_publico || '') + '</div>';
+        }
+
+        // Plano operacional · só renderiza se ATIVO tem plano (briefings AGUARDAR não têm)
+        if (at.plano && hasBriefing) {
+          var planoCls = at.plano.direcao === 'SHORT' ? 'short' : 'long';
+          var dirIcon = at.plano.direcao === 'SHORT' ? '▼' : '▲';
+          var dirCol = at.plano.direcao === 'SHORT' ? 'warn' : 'ok';
+
+          html += '<div class="plano-block ' + planoCls + '">';
+          html += '<p class="plano-titulo ' + planoCls + '">🎯 Plano operacional · ' + dirIcon + ' ' + at.plano.direcao + '</p>';
+          html += '<div class="plano-grid">';
+          html += '<div class="plano-cell"><div class="l">Entry</div><div class="v ' + dirCol + '">' + (at.plano.entry_zona || at.plano.entry) + '</div><div class="s">zona de retest</div></div>';
+          html += '<div class="plano-cell"><div class="l">Stop Loss</div><div class="v warn">' + fmtPts(at.plano.stop) + '</div><div class="s">' + at.plano.stop_pts + ' pts além do extremo</div></div>';
+          html += '</div>';
+
+          html += '<div class="tps-line">';
+          html += '<div class="tp-cell"><div class="l">TP1 · ' + (at.plano.tp1_partial_pct || 50) + '%</div><div class="v">' + fmtPts(at.plano.tp1) + '</div><div class="s">' + at.plano.tp1_rr + 'R</div></div>';
+          html += '<div class="tp-cell"><div class="l">TP2 · ' + (at.plano.tp2_partial_pct || 25) + '%</div><div class="v">' + fmtPts(at.plano.tp2) + '</div><div class="s">' + at.plano.tp2_rr + 'R</div></div>';
+          html += '<div class="tp-cell"><div class="l">TP3 · ' + (at.plano.tp3_partial_pct || 25) + '%</div><div class="v">' + fmtPts(at.plano.tp3) + '</div><div class="s">' + at.plano.tp3_rr + 'R</div></div>';
+          html += '</div>';
+
+          if (hasTelaPro && at.plano.contratos_banca_30k_risco_1pct) {
+            html += '<div class="extras-telapro">';
+            html += '<strong>🎯 Tela Pro · cálculo aritmético:</strong> ';
+            html += 'Banca R$ 30.000 · risco 1% · <strong>' + at.plano.contratos_banca_30k_risco_1pct + ' contratos</strong>. ';
+            html += 'Ganho TP1: ' + fmtBRL(at.plano.ganho_bruto_tp1_brl) + ' · ';
+            html += 'TP2: ' + fmtBRL(at.plano.ganho_bruto_tp2_brl) + ' · ';
+            html += 'TP3: ' + fmtBRL(at.plano.ganho_bruto_tp3_brl) + '.';
+            html += '</div>';
+          } else if (!hasTelaPro) {
+            html += '<div class="extras-telapro" style="filter: blur(3px); opacity: 0.6;"><strong>🎯 Tela Pro:</strong> cálculo de contratos e ganho R$ por TP. <a href="../upgrade.html" style="filter: none;">Upgrade →</a></div>';
+          }
+          html += '</div>';
+        } else if (at.plano && !hasBriefing) {
+          html += '<div class="plano-block ' + (at.plano.direcao === 'SHORT' ? 'short' : 'long') + '" style="filter: blur(8px); pointer-events: none; opacity: 0.5;">';
+          html += '<p class="plano-titulo ' + (at.plano.direcao === 'SHORT' ? 'short' : 'long') + '">🎯 Plano operacional</p>';
+          html += '<div class="plano-grid"><div class="plano-cell"><div class="l">Entry</div><div class="v">●●●●●</div></div><div class="plano-cell"><div class="l">Stop</div><div class="v">●●●●</div></div></div>';
+          html += '</div>';
+        } else if (!at.plano && hasBriefing) {
+          // Caso AGUARDAR · sem plano operacional (briefing #3 todo AGUARDAR é exemplo)
+          html += '<div class="plano-block" style="border-color: var(--muted); background: rgba(138,149,168,0.05);">';
+          html += '<p class="plano-titulo" style="color: var(--muted);">⏸ Sem setup operacional hoje</p>';
+          html += '<p style="color: var(--text-2); font-size: 14px; margin: 8px 0 0; line-height: 1.5;">';
+          html += 'Método aguarda confirmação. Score atual ' + at.score.toFixed(1) + '/10 não passa do limiar (≥ 6.0). ';
+          html += 'Trader experiente <strong>respeita a ausência de gatilho</strong> · recruta força a entrada.';
+          html += '</p></div>';
+        }
+
+        html += '</section>';
+        return html;
+      }
+
+      function renderLockCTA() {
+        return '<div class="lock-cta">' +
+          '<h3>🔒 Conteúdo exclusivo de assinantes</h3>' +
+          '<p>O briefing diário completo (racional, plano operacional, entries, alvos e cálculos) é exclusivo do plano <strong>Briefing R$ 147</strong> ou superior. Você está em modo Demo.</p>' +
+          '<a href="../upgrade.html" class="btn btn-primary">Conhecer os planos</a>' +
+        '</div>';
+      }
+    }
+
+    bootBriefing();
+  </script>
+</body>
+</html>

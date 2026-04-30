@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fase C · Teste (Spring / UTAD) — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(212, 175, 55, 0.15), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--gold); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 32px; font-weight: 700; margin-bottom: var(--s-3); font-family: var(--mono); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--gold); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--gold); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel.gold-border { border-color: var(--gold); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .setup-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .setup-card.acc { border-color: var(--green); } .setup-card.acc h3 { color: var(--green); }
+    .setup-card.dist { border-color: var(--warn); } .setup-card.dist h3 { color: var(--warn); }
+    .setup-card h3 { margin: 0 0 var(--s-3); font-size: 17px; }
+    .setup-card ul { padding-left: 0; list-style: none; color: var(--text-2); line-height: 1.7; font-size: 14px; }
+    .setup-card ul li { margin-bottom: 12px; padding-left: 60px; position: relative; }
+    .setup-card ul li code { position: absolute; left: 0; top: 0; background: var(--bg-2); border: 1px solid var(--border-bright); padding: 2px 8px; border-radius: 6px; font-family: var(--mono); font-size: 11px; font-weight: 700; min-width: 50px; text-align: center; display: inline-block; }
+    .setup-card.acc ul li code { color: var(--green); border-color: var(--green); }
+    .setup-card.dist ul li code { color: var(--warn); border-color: var(--warn); }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: rgba(212, 175, 55, 0.18); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .pitfall strong { color: var(--warn); }
+    .exemplo-bertani { background: rgba(212, 175, 55, 0.06); border-left: 4px solid var(--gold); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .exemplo-bertani strong { color: var(--gold); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+    .navegacao-fases { display: flex; gap: var(--s-3); margin-top: var(--s-5); flex-wrap: wrap; justify-content: space-between; padding: var(--s-4); background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); }
+    .navegacao-fases a { font-size: 14px; color: var(--text-2); text-decoration: none; }
+    .nav-prev::before { content: "← "; }
+    .nav-next::after { content: " →"; }
+    .destaque-gold { background: linear-gradient(135deg, rgba(212, 175, 55, 0.10), transparent); padding: var(--s-3) var(--s-4); border-radius: var(--radius-sm); border-left: 3px solid var(--gold); margin: var(--s-3) 0; font-size: 14px; color: var(--text-2); }
+    .destaque-gold strong { color: var(--gold); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › <a href="../fases-wyckoff.html">Fases Wyckoff</a> › Fase C</p>
+    <div class="m-icon">C</div>
+    <h1 class="m-titulo">Fase C · Teste · Spring & UTAD</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Fundação Wyckoff</span> <span><strong>Onde olhar:</strong> 4H · 1H</span> <span><strong>Quando opera:</strong> SETUP DE VIRADA</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <section class="panel gold-border">
+      <h2>O que é</h2>
+      <p>
+        A Fase C é o evento de <strong>teste final</strong>. Antes de fazer o markup (subida) ou markdown
+        (queda) confirmado, o Composite Man executa um último teste de stop dos varejistas no extremo
+        oposto do range. Esse teste tem nome próprio:
+      </p>
+      <ul style="padding-left: 20px; color: var(--text-2); line-height: 1.7;">
+        <li><strong>Spring</strong> — em acumulação · falsa quebra para BAIXO da mínima do range</li>
+        <li><strong>UTAD</strong> — em distribuição · falsa quebra para CIMA da máxima do range</li>
+      </ul>
+      <p>
+        Em ambos casos, o preço PENETRA o extremo (caça liquidez de stops) e VOLTA pra dentro do range.
+        Se voltar com força + volume + LTF confirmando, marca início confirmado da Fase D (markup ou
+        markdown).
+      </p>
+      <div class="destaque-gold">
+        <strong>🎯 Aqui é onde o trader Wyckoff faz dinheiro.</strong> A Fase C é onde 70% dos setups
+        operacionais do método são armados. Spring + MSS LTF é o setup A+ clássico.
+      </div>
+    </section>
+
+    <section class="panel">
+      <h2>Diagrama · Spring (acumulação) vs UTAD (distribuição)</h2>
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 700 380" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="gc" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="700" height="380" fill="url(#gc)" />
+
+          <!-- ===== SPRING (esquerda · acumulação) ===== -->
+          <text x="60" y="35" font-size="13" fill="#00C853" font-weight="bold">▲ SPRING (acumulação)</text>
+
+          <!-- Range -->
+          <line x1="40" y1="80" x2="320" y2="80" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="40" y1="220" x2="320" y2="220" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="40" y="75" font-size="9" fill="#8A95A8">topo do range</text>
+          <text x="40" y="235" font-size="9" fill="#8A95A8">fundo do range (SC)</text>
+
+          <!-- Movimento dentro do range chegando perto do fundo -->
+          <path d="M 40 130 L 70 160 L 100 200 L 130 215" fill="none" stroke="#FF1744" stroke-width="2"/>
+
+          <!-- SPRING · perfura abaixo + volta -->
+          <path d="M 130 215 L 165 270 L 175 280" fill="none" stroke="#FF1744" stroke-width="2"/>
+          <circle cx="178" cy="282" r="6" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+          <text x="155" y="305" font-size="13" fill="#D4AF37" font-weight="bold" text-anchor="middle">SPRING</text>
+          <text x="155" y="320" font-size="9" fill="#8A95A8" text-anchor="middle">caça SSL</text>
+
+          <!-- Volta forte -->
+          <path d="M 178 282 L 210 200 L 240 150" fill="none" stroke="#00C853" stroke-width="3"/>
+
+          <!-- Test of Spring (opcional · pullback dentro do range) -->
+          <path d="M 240 150 L 260 180 L 280 195" fill="none" stroke="#FF1744" stroke-width="2"/>
+          <circle cx="280" cy="195" r="4" fill="#00C853"/>
+          <text x="285" y="200" font-size="10" fill="#00C853" font-weight="bold">Test SP</text>
+
+          <!-- Sobe pra Fase D -->
+          <path d="M 280 195 L 310 130 L 330 90" fill="none" stroke="#00C853" stroke-width="2"/>
+
+          <!-- Texto FASE C -->
+          <line x1="120" y1="345" x2="280" y2="345" stroke="#D4AF37" stroke-width="2"/>
+          <text x="160" y="340" font-size="11" fill="#D4AF37" font-weight="bold">⟵ FASE C ⟶</text>
+
+          <!-- Linha divisória -->
+          <line x1="350" y1="20" x2="350" y2="370" stroke="#1F2A3C" stroke-width="1"/>
+
+          <!-- ===== UTAD (direita · distribuição) ===== -->
+          <text x="430" y="35" font-size="13" fill="#FF1744" font-weight="bold">▼ UTAD (distribuição)</text>
+
+          <!-- Range -->
+          <line x1="380" y1="80" x2="660" y2="80" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3"/>
+          <line x1="380" y1="220" x2="660" y2="220" stroke="#8A95A8" stroke-width="1" stroke-dasharray="4,3"/>
+          <text x="660" y="75" font-size="9" fill="#8A95A8" text-anchor="end">topo do range (BC)</text>
+          <text x="660" y="235" font-size="9" fill="#8A95A8" text-anchor="end">fundo do range</text>
+
+          <!-- Movimento dentro do range chegando perto do topo -->
+          <path d="M 380 170 L 410 140 L 440 100 L 470 85" fill="none" stroke="#00C853" stroke-width="2"/>
+
+          <!-- UTAD · perfura acima + volta -->
+          <path d="M 470 85 L 500 50 L 510 40" fill="none" stroke="#00C853" stroke-width="2"/>
+          <circle cx="513" cy="38" r="6" fill="#D4AF37" stroke="#D4AF37" stroke-width="2"/>
+          <text x="513" y="25" font-size="13" fill="#D4AF37" font-weight="bold" text-anchor="middle">UTAD</text>
+          <text x="513" y="320" font-size="9" fill="#8A95A8" text-anchor="middle"></text>
+
+          <!-- Volta forte -->
+          <path d="M 513 38 L 545 130 L 575 200" fill="none" stroke="#FF1744" stroke-width="3"/>
+
+          <!-- Test of UTAD -->
+          <path d="M 575 200 L 595 170 L 615 150" fill="none" stroke="#00C853" stroke-width="2"/>
+          <circle cx="615" cy="150" r="4" fill="#FF1744"/>
+          <text x="620" y="148" font-size="10" fill="#FF1744" font-weight="bold">Test UTAD</text>
+
+          <!-- Cai pra Fase D -->
+          <path d="M 615 150 L 635 220 L 660 270" fill="none" stroke="#FF1744" stroke-width="2"/>
+
+          <!-- Texto FASE C -->
+          <line x1="460" y1="345" x2="640" y2="345" stroke="#D4AF37" stroke-width="2"/>
+          <text x="500" y="340" font-size="11" fill="#D4AF37" font-weight="bold">⟵ FASE C ⟶</text>
+        </svg>
+      </div>
+      <p style="text-align: center; font-size: 12px; color: var(--muted); margin-top: var(--s-2);">
+        Spring (caça liquidez abaixo) e UTAD (caça liquidez acima) são o mesmo evento espelhado · Composite Man coletando última liquidez antes do markup/markdown.
+      </p>
+    </section>
+
+    <section class="grid-2">
+      <div class="setup-card acc">
+        <h3>▲ Eventos da Fase C · Acumulação</h3>
+        <ul>
+          <li><code>SP</code><strong>Spring</strong> — Falsa quebra para baixo da mínima do range. Volume tipicamente alto durante a perfuração (clímax de stop hunt). Recuperação rápida.</li>
+          <li><code>Test SP</code><strong>Teste do Spring</strong> — Pullback dentro do range que verifica se a oferta sumiu de vez. Volume MENOR que o Spring. Confirma a estrutura.</li>
+          <li><code>LPS</code><strong>Last Point of Support</strong> — Variante alternativa: o teste pode formar um LPS sem o Spring acontecer (estrutura #2 de acumulação). Mais raro.</li>
+          <li><code>TSO</code><strong>Terminal Shakeout</strong> — Versão extrema do Spring · perfuração profunda do fundo + recuperação rápida e violenta. Sinal de força máxima.</li>
+        </ul>
+      </div>
+      <div class="setup-card dist">
+        <h3>▼ Eventos da Fase C · Distribuição</h3>
+        <ul>
+          <li><code>UTAD</code><strong>Upthrust After Distribution</strong> — Falsa quebra para cima da máxima do range. Volume alto durante a penetração. Rejeição rápida.</li>
+          <li><code>Test UTAD</code><strong>Teste do UTAD</strong> — Movimento de alta dentro do range que verifica se a demanda sumiu. Volume MENOR que o UTAD.</li>
+          <li><code>LPSY</code><strong>Last Point of Supply</strong> — Variante alternativa: teste sem o UTAD acontecer (estrutura #2 de distribuição).</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como identificar Fase C no gráfico</h2>
+      <ol class="lista-numerada">
+        <li>Você já passou pelas Fases A e B · range demarcado · 2-4 testes de cada extremo já aconteceram.</li>
+        <li>Procura uma <strong>vela de penetração</strong> do extremo do range. Em acumulação: vela vermelha que perfura abaixo da mínima. Em distribuição: vela verde que perfura acima da máxima.</li>
+        <li>Volume <strong>alto</strong> na vela de perfuração (clímax de stops sendo executados). Sem volume = é só ruído, não é Spring/UTAD verdadeiro.</li>
+        <li>Após a penetração, o preço <strong>retorna pra dentro do range na mesma sessão ou no candle seguinte</strong>. Se ficar fora do range, NÃO é Spring/UTAD — é rompimento real.</li>
+        <li>Confirma com <strong>MSS no LTF (15m)</strong>: após Spring, o preço quebra um topo recente no 15m. Após UTAD, quebra um fundo. <strong>Sem MSS, não opera.</strong></li>
+        <li>Aguarda <strong>retest da zona do extremo</strong> (Test of Spring / Test of UTAD). Entry no retest é mais conservador que entrada no MSS direto.</li>
+      </ol>
+    </section>
+
+    <div class="exemplo-bertani">
+      <strong>📊 Exemplo Bertani · WIN1!</strong><br>
+      Range entre 134.120 (mínima · SC formado em 2 dias atrás) e 134.985 (máxima · AR). Após 5 toques
+      alternados, na manhã da quarta-feira o WIN abre fazendo gap de baixa e perfora 134.120, indo até
+      <strong>133.950 · 170 pontos abaixo do range</strong>. Volume na vela de perfuração: 2,3× a média.
+      Em 15 minutos o preço volta pra 134.300, dentro do range. <strong>Isso é Spring.</strong> No 15m,
+      o preço quebra o topo de 134.450 (MSS bull). Setup armado: entry no retest de 134.380, stop em
+      133.900 (abaixo da mecha do Spring), TP1 em 134.985 (topo do range), TP2 em 135.420 (próximo pool
+      HTF). R/R de 1:2.5 a 1:5 dependendo do alvo. <strong>Score 9/10 no método Bertani.</strong>
+    </div>
+
+    <div class="pitfall">
+      <strong>⚠ Erro comum:</strong> entrar long no momento exato do Spring (na mecha de baixo) sem
+      esperar confirmação. Se o Spring "falhar" e o preço continuar caindo, vira <strong>Failed Spring</strong>
+      e o markup vira markdown. Por isso a regra de ouro: <strong>NUNCA entra na perfuração do Spring,
+      espera MSS no LTF</strong>. Você perde 2-5 pontos de R/R por esperar a confirmação, mas economiza
+      todo capital quando o Spring falha (e ele falha em ~20-25% das vezes).
+    </div>
+
+    <div class="navegacao-fases">
+      <a href="fase-b.html" class="nav-prev">Fase B · Construindo causa</a>
+      <a href="fase-d.html" class="nav-next">Fase D · Markup/Markdown dentro</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644 · Conteúdo educacional · Não constitui recomendação · CVM 20</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
