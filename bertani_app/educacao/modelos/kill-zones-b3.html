@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kill Zones B3 — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(212, 175, 55, 0.15), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--gold); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--s-3); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--gold); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .insight { background: rgba(212, 175, 55, 0.08); border-left: 4px solid var(--gold); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); color: var(--text-2); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+    .timeline { width: 100%; border-collapse: collapse; margin-top: var(--s-3); font-size: 13px; }
+    .timeline th, .timeline td { padding: 12px 14px; border: 1px solid var(--border); text-align: left; vertical-align: top; }
+    .timeline th { background: var(--bg-2); color: var(--gold); font-size: 12px; text-transform: uppercase; letter-spacing: 0.04em; }
+    .timeline td.hora { font-family: var(--mono); font-weight: 700; color: var(--gold); white-space: nowrap; }
+    .timeline tr.kz-prime { background: rgba(212,175,55,0.05); }
+    .timeline tr.kz-skip { opacity: 0.55; }
+    .badge-kz { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; }
+    .badge-kz.gold { background: rgba(212,175,55,0.18); color: var(--gold); }
+    .badge-kz.green { background: var(--green-soft); color: var(--green); }
+    .badge-kz.warn { background: var(--warn-soft); color: var(--warn); }
+    .badge-kz.muted { background: rgba(138,149,168,0.15); color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../calculadora/input.html">Calculadora</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › Kill Zones B3</p>
+    <div class="m-icon">⏰</div>
+    <h1 class="m-titulo">Kill Zones B3</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Contexto · ICT</span> <span><strong>Mercado:</strong> WIN/WDO</span> <span><strong>Pregão:</strong> 09:00-17:55 BRT</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+    <section class="panel">
+      <h2>O que são</h2>
+      <p>
+        <strong>Kill zones</strong> são janelas intraday de <strong>alta liquidez e alta volatilidade</strong> onde
+        smart money tipicamente imprime os movimentos direcionais relevantes. ICT identificou as kill zones
+        no mercado americano (London Open, NY Open, NY PM); pra trader de WIN/WDO, é necessário <strong>adaptar</strong>
+        ao pregão B3 (09:00-17:55 BRT) e ao calendário macro brasileiro.
+      </p>
+      <p>
+        Fora de kill zone, o mercado tende a ser <em>algorítmico, lateral, sem direção</em> — terreno de chop e fakeouts.
+        Setup com score 8/10 fora de kill zone vira 5/10 na prática. Kill zone <strong>multiplica</strong> a probabilidade
+        do setup que já é bom; não cria setup do nada.
+      </p>
+      <p>
+        Pro método Bertani, <strong>kill zone é filtro hard</strong>: setup fora dela = score capado em 6/10. Trader
+        Tela Pro respeita as janelas. Trader Briefing R$ 147 tem direção e zonas, mas precisa entender quando elas
+        são executáveis.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Mapa do dia · pregão B3</h2>
+      <table class="timeline">
+        <thead>
+          <tr>
+            <th>Hora BRT</th>
+            <th>Janela</th>
+            <th>Tipo</th>
+            <th>Características</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="kz-prime">
+            <td class="hora">09:00–10:00</td>
+            <td><strong>Abertura B3</strong></td>
+            <td><span class="badge-kz gold">KZ PRIME</span></td>
+            <td>Maior volume do dia em WIN/WDO. Gap fill ou continuação. Ideal pra Opening Range setups (3 velas M5). Volatilidade 1,2-2× ATR.</td>
+          </tr>
+          <tr class="kz-skip">
+            <td class="hora">10:00–10:30</td>
+            <td>Pós-abertura calma</td>
+            <td><span class="badge-kz muted">SKIP</span></td>
+            <td>"Zona morta" intermediária. WR de 41% segundo João. Volume cai. Não abrir setup novo aqui.</td>
+          </tr>
+          <tr class="kz-prime">
+            <td class="hora">10:30–11:30</td>
+            <td><strong>NY Pré-Open</strong> (overlap inicial)</td>
+            <td><span class="badge-kz gold">KZ PRIME</span></td>
+            <td>Pré-abertura US (Wall Street pre-market). Volume volta. Bom pra setups de continuação ou fade do movimento de abertura B3.</td>
+          </tr>
+          <tr class="kz-prime">
+            <td class="hora">11:30–13:00</td>
+            <td><strong>NY Open + KZ Wall Street</strong></td>
+            <td><span class="badge-kz green">KZ ALTA</span></td>
+            <td>NY abre 11:30 BRT. Maior overlap do dia entre B3 e Wall Street. Movimentos correlacionados ES1/SPX. Janela ouro pra setups direcionais grandes.</td>
+          </tr>
+          <tr class="kz-skip">
+            <td class="hora">13:00–14:30</td>
+            <td>Lunch chop</td>
+            <td><span class="badge-kz warn">EVITAR</span></td>
+            <td>Almoço NY. Volume despenca. Movimentos algorítmicos sem direção. Fakeouts frequentes. NÃO ABRIR setup novo.</td>
+          </tr>
+          <tr class="kz-prime">
+            <td class="hora">14:30–16:30</td>
+            <td><strong>NY PM</strong> (volta do lunch)</td>
+            <td><span class="badge-kz gold">KZ PRIME</span></td>
+            <td>Maior volatilidade da tarde. Onde rodam dados macro US (ADP, ISM, JOLTS, PCE). Cuidado com janelas de news (FOMC 15h, NFP 09:30 NY = 10:30 BRT).</td>
+          </tr>
+          <tr class="kz-skip">
+            <td class="hora">16:30–17:00</td>
+            <td>Pré-fechamento NY</td>
+            <td><span class="badge-kz muted">CAUTELA</span></td>
+            <td>NY fecha 17:00 BRT (horário verão US). Movimentos podem ser realização institucional, não direcionais.</td>
+          </tr>
+          <tr class="kz-prime">
+            <td class="hora">17:00–17:55</td>
+            <td><strong>Fechamento B3</strong></td>
+            <td><span class="badge-kz green">KZ FECHAMENTO</span></td>
+            <td>Última corrida do dia. Liquidez de fim. Bom pra setups de mean reversion ou trade de continuação curta com trailing apertado.</td>
+          </tr>
+          <tr class="kz-skip">
+            <td class="hora">17:55→09:00</td>
+            <td>Mercado fechado B3</td>
+            <td><span class="badge-kz warn">FORA</span></td>
+            <td>WIN/WDO não negociam. Análise de overnight via futuros US (ES1, NQ1, DXY) e gap esperado pra abertura.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <section class="grid-2">
+      <div style="background: var(--card); border: 1px solid var(--gold); border-radius: var(--radius); padding: var(--s-5);">
+        <h3 style="color: var(--gold); margin: 0 0 var(--s-3);">★ Top 3 Kill Zones B3</h3>
+        <ol class="lista-numerada">
+          <li><strong>11:30–13:00 (NY Open + Wall Street):</strong> overlap dourado. Maior probabilidade de setup A+. Direção institucional clara. Volume 1,5-2× a média.</li>
+          <li><strong>09:00–10:00 (Abertura B3):</strong> gap day, opening range, momentum. Volume picos. Bom pra setups de continuação ou fade preciso.</li>
+          <li><strong>14:30–16:30 (NY PM):</strong> dados macro US + segunda corrida. Onde rodam Spring/UTAD em zona de discount/premium do dia.</li>
+        </ol>
+      </div>
+      <div style="background: var(--card); border: 1px solid var(--warn); border-radius: var(--radius); padding: var(--s-5);">
+        <h3 style="color: var(--warn); margin: 0 0 var(--s-3);">⚠ Janelas pra EVITAR</h3>
+        <ol class="lista-numerada">
+          <li><strong>10:00–10:30:</strong> "zona morta" pós-abertura. WR ruim, sem direção institucional.</li>
+          <li><strong>13:00–14:30 (Lunch chop):</strong> volume colapsa. Setup nessa janela vira sorte.</li>
+          <li><strong>5min antes/depois de news macro:</strong> FOMC, Copom, NFP, IPCA, FGV, PCE. Mercado vira loteria.</li>
+          <li><strong>Sexta após 15h BRT:</strong> position squaring + saída institucional pré-weekend. Movimentos não-direcionais.</li>
+          <li><strong>Vésperas de feriado US/BR:</strong> volume cai 30-50%.</li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como usar kill zones operacionalmente</h2>
+      <ol class="lista-numerada">
+        <li><strong>Antes do pregão</strong> (08:00-09:00), mapeie quais kill zones rodam no dia e quais janelas evitar (FOMC? Copom? IPCA?).</li>
+        <li><strong>Marque no chart</strong> as bordas das KZs (linhas verticais ou zonas pintadas). TradingView tem custom Pine indicators pra isso.</li>
+        <li><strong>Setup só conta dentro de KZ.</strong> Fora dela = setup capado em 6/10 ou bloqueado.</li>
+        <li><strong>Score adicional:</strong> setup em KZ Prime + Filtro Anti-Narrativa ATIVA = +1 ponto na calculadora.</li>
+        <li><strong>News-skip:</strong> ±5 minutos de qualquer news ALTA (FOMC, Copom, NFP, IPCA) = não abrir nem fechar trade.</li>
+        <li><strong>Realize parcial antes do fim da KZ:</strong> não deixe trade aberto cruzando lunch chop sem TP1 garantido.</li>
+        <li><strong>Drawdown diário fica mais apertado em dia de macro:</strong> -2% em vez de -3% (regra Super Quarta tipo briefing #3).</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Calendário macro recorrente · pra antecipar janelas críticas</h2>
+      <table class="timeline">
+        <tbody>
+          <tr>
+            <td class="hora">~08:00–09:00 BRT</td>
+            <td>IGP-M, IPCA-15, IPP, PNAD (BR · FGV/IBGE)</td>
+            <td><span class="badge-kz warn">EVITAR ABERTURA</span></td>
+          </tr>
+          <tr>
+            <td class="hora">10:30 BRT</td>
+            <td>NFP / Payroll US (1ª sexta do mês)</td>
+            <td><span class="badge-kz warn">EVITAR ±15min</span></td>
+          </tr>
+          <tr>
+            <td class="hora">11:30 BRT</td>
+            <td>NY Open</td>
+            <td><span class="badge-kz gold">JANELA</span></td>
+          </tr>
+          <tr>
+            <td class="hora">15:00 BRT</td>
+            <td>FOMC decisão de juros (8x ao ano)</td>
+            <td><span class="badge-kz warn">EVITAR 14:45-16:00</span></td>
+          </tr>
+          <tr>
+            <td class="hora">15:30 BRT</td>
+            <td>Powell coletiva FOMC</td>
+            <td><span class="badge-kz warn">EVITAR 15:15-16:30</span></td>
+          </tr>
+          <tr>
+            <td class="hora">18:30 BRT</td>
+            <td>Copom decisão Selic (8x ao ano)</td>
+            <td><span class="badge-kz muted">B3 já fechou · efeito amanhã</span></td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <div class="insight">
+      <strong>Conexão Wyckoff × ICT:</strong> kill zones são as janelas onde o <strong>Composite Man está
+      ativo</strong> (institucional operando volume real). Spring/UTAD, MSS, BPR, sweeps de SSL/BSL — todos esses
+      eventos têm taxa de sucesso muito maior dentro de KZ porque é quando smart money está executando, não posicionando.
+      Fora de KZ, o que se vê é HFT zigzag e ruído algorítmico.
+    </div>
+
+    <div class="pitfall">
+      <strong>⚠ Erros comuns:</strong>
+      <ul style="margin: 8px 0 0 16px; color: var(--text-2); line-height: 1.6;">
+        <li><strong>"O setup tá perfeito mas não é KZ":</strong> espera. Setup que estava perfeito 13h00 ainda estará às 14:30, ou em melhor zona depois do lunch.</li>
+        <li><strong>Operar 5min antes de news ALTA:</strong> mesmo o setup mais limpo vira loteria com FOMC/Copom no caminho.</li>
+        <li><strong>Madrugada / overnight:</strong> WIN/WDO fecham 17:55. Não há "after hours" pra trader BR — é fora do pregão.</li>
+        <li><strong>Confiar em KZ alheia:</strong> kill zones US (ICT clássico: London 03h, NY 09h NY) não casam direto com B3. Use as adaptadas BR.</li>
+        <li><strong>Sexta após 15h:</strong> mesmo dentro de NY PM, volume cai e direção fica sem confirmação institucional. Cautela tripla.</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: var(--s-5); display: flex; gap: var(--s-3); flex-wrap: wrap;">
+      <a href="anti-narrativa.html" class="btn">↗ Filtro Anti-Narrativa</a>
+      <a href="../index.html" class="btn">← Biblioteca</a>
+      <a href="../../calculadora/input.html" class="btn btn-primary">🎯 Rodar análise</a>
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>
