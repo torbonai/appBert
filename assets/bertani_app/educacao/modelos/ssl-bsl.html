@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SSL / BSL — Bertani Educação</title>
+  <link rel="stylesheet" href="../../assets/css/style.css">
+  <style>
+    .m-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .m-hero::before { content: ""; position: absolute; inset: 0; background: radial-gradient(800px 300px at 30% -10%, rgba(212, 175, 55, 0.15), transparent 60%); pointer-events: none; }
+    .m-icon { width: 72px; height: 72px; border-radius: 18px; background: var(--gold); color: var(--bg); display: flex; align-items: center; justify-content: center; font-size: 36px; margin-bottom: var(--s-3); }
+    .m-titulo { font-size: 36px; margin: 0 0 var(--s-3); }
+    .m-stats { display: inline-flex; gap: var(--s-4); padding: 8px 16px; background: var(--bg-2); border: 1px solid var(--border-bright); border-radius: 999px; font-size: 13px; }
+    .m-stats strong { color: var(--gold); }
+    .panel { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-6); margin-bottom: var(--s-4); }
+    .panel h2 { font-size: 22px; margin: 0 0 var(--s-3); }
+    .panel p { color: var(--text-2); line-height: 1.65; margin: 0 0 var(--s-3); }
+    .diagrama-wrap { background: var(--bg-2); border-radius: var(--radius-sm); padding: var(--s-4); margin: var(--s-3) 0; text-align: center; }
+    .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-4); }
+    @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; } }
+    .setup-card { background: var(--card); border: 1px solid var(--border); border-radius: var(--radius); padding: var(--s-5); }
+    .setup-card.long { border-color: var(--green); } .setup-card.long h3 { color: var(--green); }
+    .setup-card.short { border-color: var(--warn); } .setup-card.short h3 { color: var(--warn); }
+    .setup-card h3 { margin: 0 0 var(--s-3); font-size: 17px; }
+    .setup-card ul { padding-left: 20px; color: var(--text-2); line-height: 1.6; font-size: 14px; }
+    .lista-numerada { counter-reset: lista; padding: 0; list-style: none; }
+    .lista-numerada li { counter-increment: lista; padding: var(--s-3) 0; padding-left: 40px; position: relative; font-size: 14px; color: var(--text-2); line-height: 1.6; border-bottom: 1px dashed var(--border); }
+    .lista-numerada li::before { content: counter(lista); position: absolute; left: 0; top: var(--s-3); width: 28px; height: 28px; border-radius: 50%; background: rgba(212, 175, 55, 0.15); color: var(--gold); display: flex; align-items: center; justify-content: center; font-family: var(--mono); font-size: 13px; font-weight: 700; }
+    .pitfall { background: var(--warn-soft); border-left: 4px solid var(--warn); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); }
+    .insight { background: rgba(212, 175, 55, 0.08); border-left: 4px solid var(--gold); padding: var(--s-4); border-radius: var(--radius-sm); margin-top: var(--s-4); color: var(--text-2); }
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+  </style>
+</head>
+<body>
+  <nav class="app-nav"><div class="wrap"><div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div><div class="nav-links"><a href="../../dashboard.html">Dashboard</a><a href="../index.html" class="active">Educação</a><a href="../../registro/historico.html">Track Record</a></div><button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button></div></nav>
+
+  <header class="m-hero"><div class="wrap">
+    <p class="breadcrumb"><a href="../../dashboard.html">Dashboard</a> › <a href="../index.html">Educação</a> › SSL / BSL</p>
+    <div class="m-icon">⊜</div>
+    <h1 class="m-titulo">SSL / BSL</h1>
+    <div class="m-stats"><span><strong>Categoria:</strong> Liquidez · ICT</span> <span><strong>TF:</strong> H1 / 4H / D1</span> <span><strong>Função:</strong> mapa de stops</span></div>
+  </div></header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+    <section class="panel">
+      <h2>O que é</h2>
+      <p>
+        <strong>SSL (Sell Side Liquidity)</strong> são pools de liquidez <strong>abaixo</strong> de mínimas relevantes —
+        zonas onde stop-losses de comprados estão acumulados. <strong>BSL (Buy Side Liquidity)</strong> são pools <strong>acima</strong>
+        de máximas relevantes — onde estão os stops de vendidos. Smart money <strong>varre</strong> esses pools antes de
+        imprimir movimentos direcionais.
+      </p>
+      <p>
+        ICT 2022 trata o mercado como um jogo de coleta de liquidez: instituições precisam de contraparte em volume pra
+        construir posições grandes; varrer SSL e BSL é como elas <em>geram</em> essa contraparte. Saber onde estão esses
+        pools é saber onde o preço quer ir antes de ir.
+      </p>
+      <p>
+        Pra trader BR, mapear SSL/BSL diários transforma o gráfico de "linhas aleatórias" em <strong>roteiro de movimentação</strong>.
+        Preço varre PDL → cria sweep → MSS → entra no plano. Sem o mapa, qualquer entrada é chute.
+      </p>
+    </section>
+
+    <section class="panel">
+      <h2>Diagrama · Pools de liquidez no dealing range</h2>
+      <div class="diagrama-wrap">
+        <svg viewBox="0 0 700 360" xmlns="http://www.w3.org/2000/svg">
+          <defs>
+            <pattern id="liq1" width="40" height="40" patternUnits="userSpaceOnUse"><path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1F2A3C" stroke-width="0.5"/></pattern>
+          </defs>
+          <rect width="700" height="360" fill="url(#liq1)" />
+
+          <!-- BSL acima -->
+          <rect x="40" y="60" width="620" height="20" fill="rgba(255,23,68,0.12)" stroke="#FF1744" stroke-width="0.5" stroke-dasharray="3,3"/>
+          <text x="55" y="75" font-size="11" fill="#FF1744" font-weight="bold">BSL · stops de vendido (Buy Side Liquidity)</text>
+          <line x1="40" y1="80" x2="660" y2="80" stroke="#FF1744" stroke-width="1" stroke-dasharray="4,3"/>
+
+          <!-- Equal highs (formação BSL) -->
+          <line x1="120" y1="80" x2="280" y2="80" stroke="#FF1744" stroke-width="2"/>
+          <text x="200" y="55" font-size="10" fill="#FF1744" text-anchor="middle">equal highs ★</text>
+
+          <!-- Velas formando equal highs -->
+          <rect x="100" y="80" width="20" height="60" fill="#00C853"/>
+          <line x1="110" y1="78" x2="110" y2="80" stroke="#00C853" stroke-width="1"/>
+          <rect x="130" y="100" width="20" height="60" fill="#FF1744"/>
+          <rect x="160" y="120" width="20" height="50" fill="#FF1744"/>
+          <rect x="190" y="100" width="20" height="50" fill="#00C853"/>
+          <rect x="220" y="80" width="20" height="50" fill="#00C853"/>
+          <line x1="230" y1="78" x2="230" y2="82" stroke="#00C853" stroke-width="1"/>
+          <rect x="250" y="80" width="20" height="40" fill="#00C853"/>
+          <line x1="260" y1="78" x2="260" y2="82" stroke="#00C853" stroke-width="1"/>
+
+          <!-- Sweep BSL -->
+          <rect x="280" y="60" width="22" height="60" fill="#00C853"/>
+          <line x1="291" y1="40" x2="291" y2="60" stroke="#00C853" stroke-width="1.5"/>
+          <text x="291" y="35" font-size="11" fill="#D4AF37" text-anchor="middle" font-weight="bold">sweep ↑</text>
+
+          <!-- Reversão pra baixo -->
+          <rect x="310" y="100" width="20" height="80" fill="#FF1744"/>
+          <rect x="340" y="180" width="20" height="60" fill="#FF1744"/>
+          <rect x="370" y="200" width="20" height="50" fill="#FF1744"/>
+          <rect x="400" y="220" width="20" height="50" fill="#FF1744"/>
+
+          <!-- Equal lows (formação SSL) -->
+          <line x1="380" y1="270" x2="540" y2="270" stroke="#00C853" stroke-width="2"/>
+          <text x="460" y="265" font-size="10" fill="#00C853" text-anchor="middle">equal lows ★</text>
+
+          <rect x="420" y="240" width="20" height="30" fill="#00C853"/>
+          <line x1="430" y1="270" x2="430" y2="272" stroke="#00C853" stroke-width="1"/>
+          <rect x="450" y="220" width="20" height="50" fill="#FF1744"/>
+          <rect x="480" y="240" width="20" height="30" fill="#FF1744"/>
+          <line x1="490" y1="270" x2="490" y2="272" stroke="#FF1744" stroke-width="1"/>
+          <rect x="510" y="220" width="20" height="50" fill="#00C853"/>
+          <rect x="540" y="240" width="20" height="30" fill="#FF1744"/>
+          <line x1="550" y1="270" x2="550" y2="272" stroke="#FF1744" stroke-width="1"/>
+
+          <!-- Sweep SSL -->
+          <rect x="565" y="245" width="22" height="40" fill="#FF1744"/>
+          <line x1="576" y1="285" x2="576" y2="305" stroke="#FF1744" stroke-width="1.5"/>
+          <text x="576" y="320" font-size="11" fill="#D4AF37" text-anchor="middle" font-weight="bold">sweep ↓</text>
+
+          <!-- Reversão pra cima após sweep SSL -->
+          <rect x="600" y="180" width="20" height="80" fill="#00C853"/>
+          <rect x="630" y="120" width="20" height="60" fill="#00C853"/>
+
+          <!-- SSL abaixo -->
+          <rect x="40" y="280" width="620" height="20" fill="rgba(0,200,83,0.12)" stroke="#00C853" stroke-width="0.5" stroke-dasharray="3,3"/>
+          <text x="55" y="295" font-size="11" fill="#00C853" font-weight="bold">SSL · stops de comprado (Sell Side Liquidity)</text>
+          <line x1="40" y1="280" x2="660" y2="280" stroke="#00C853" stroke-width="1" stroke-dasharray="4,3"/>
+
+          <text x="350" y="345" font-size="11" fill="#8A95A8" text-anchor="middle" font-style="italic">Smart money varre BSL acima → reversão · varre SSL abaixo → reversão</text>
+        </svg>
+      </div>
+    </section>
+
+    <section class="grid-2">
+      <div class="setup-card long">
+        <h3>★ Onde fica SSL (procurar long)</h3>
+        <ul>
+          <li><strong>PDL:</strong> mínima do dia anterior — referência psicológica forte.</li>
+          <li><strong>PWL / PML:</strong> mínima da semana / mês anterior — pools maiores.</li>
+          <li><strong>Equal lows:</strong> 2+ mínimas alinhadas formando piso aparente. Stops acumulados ali.</li>
+          <li><strong>Mínima do dealing range (PDL do range):</strong> stops de quem comprou no fundo.</li>
+          <li><strong>Round numbers:</strong> 190.000, 4.900, etc — psicológicos. Stops gravitam ao redor.</li>
+          <li><strong>Mínima de pivôs HTF (H1, H4):</strong> swing lows recentes.</li>
+        </ul>
+      </div>
+      <div class="setup-card short">
+        <h3>★ Onde fica BSL (procurar short)</h3>
+        <ul>
+          <li><strong>PDH:</strong> máxima do dia anterior.</li>
+          <li><strong>PWH / PMH:</strong> máxima da semana / mês.</li>
+          <li><strong>Equal highs:</strong> 2+ máximas alinhadas formando teto aparente.</li>
+          <li><strong>Máxima do dealing range:</strong> stops de quem vendeu no topo.</li>
+          <li><strong>Round numbers acima do preço.</strong></li>
+          <li><strong>Máxima de pivôs HTF.</strong></li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="panel" style="margin-top: var(--s-4);">
+      <h2>Como mapear SSL/BSL no gráfico</h2>
+      <ol class="lista-numerada">
+        <li><strong>Comece pelo D1.</strong> Marque PDH, PDL, PWH, PWL como linhas horizontais permanentes.</li>
+        <li><strong>Vá pra H4.</strong> Identifique equal highs/lows recentes (2+ toques alinhados em pivôs).</li>
+        <li><strong>Vá pra H1.</strong> Marque pivôs locais — máximas e mínimas internas do dealing range.</li>
+        <li><strong>Identifique round numbers</strong> próximos do preço atual. WIN: múltiplos de 500pt. WDO: múltiplos de 5pt.</li>
+        <li><strong>Categorize por relevância:</strong> PDH/PDL/PWH/PWL = pools major. Equal highs/lows = pools secundários.</li>
+        <li><strong>Atualize diariamente.</strong> SSL/BSL "atingidos" perdem força — passa a procurar o próximo pool intacto.</li>
+      </ol>
+    </section>
+
+    <section class="panel">
+      <h2>Como SSL/BSL viram setup</h2>
+      <ol class="lista-numerada">
+        <li><strong>Identifique o pool a ser varrido</strong> (próximo SSL ou BSL alinhado com narrativa do dia).</li>
+        <li><strong>Aguarde o preço chegar perto</strong> — não opera antes de tocar.</li>
+        <li><strong>Sweep:</strong> mecha fura o pool e fecha de volta dentro. Volume alto durante o sweep.</li>
+        <li><strong>Confirmação:</strong> MSS no LTF (5m ou 15m) — quebra estrutural na direção oposta ao sweep.</li>
+        <li><strong>Entry:</strong> pullback no FVG ou OB criado pelo displacement pós-MSS.</li>
+        <li><strong>Stop:</strong> além da mecha do sweep + buffer.</li>
+        <li><strong>Alvo:</strong> próximo pool oposto (sweep SSL → alvo BSL acima).</li>
+      </ol>
+    </section>
+
+    <div class="insight">
+      <strong>Conexão Wyckoff × ICT:</strong> SSL = liquidez que o <strong>Spring</strong> precisa caçar antes da acumulação;
+      BSL = liquidez que o <strong>UTAD</strong> precisa caçar antes da distribuição. Em outras palavras: ICT chamou de "pool" o
+      que Wyckoff descrevia como "stops abaixo do range". Mesma realidade, vocabulário moderno.
+    </div>
+
+    <div class="pitfall">
+      <strong>⚠ Erros comuns:</strong>
+      <ul style="margin: 8px 0 0 16px; color: var(--text-2); line-height: 1.6;">
+        <li><strong>Operar contra o pool intacto:</strong> entrar long no PDH (BSL acima) é como saltar contra um trem.</li>
+        <li><strong>Confundir sweep com BOS:</strong> sweep volta pra dentro; BOS sustenta fora. São opostos.</li>
+        <li><strong>Mapa desatualizado:</strong> SSL atingido ontem não é mais pool. Refaça o mapa toda manhã.</li>
+        <li><strong>Equal highs não são pool real:</strong> só com 2+ toques bem alinhados (tolerância 30pt em WIN, 1pt em WDO).</li>
+        <li><strong>Ignorar contexto macro:</strong> BSL acima + notícia bullish = pode romper sustentado (vira BOS, não sweep).</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: var(--s-5); display: flex; gap: var(--s-3); flex-wrap: wrap;">
+      <a href="equal-highs-lows.html" class="btn">→ Próximo: Equal Highs/Lows</a>
+      <a href="mss-pos-sweep.html" class="btn">↗ Ver MSS pós-sweep</a>
+      <a href="../index.html" class="btn">← Biblioteca</a>
+      
+    </div>
+  </main>
+
+  <footer class="app-footer"><div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div></footer>
+  <script src="../../assets/js/app.js"></script>
+</body>
+</html>

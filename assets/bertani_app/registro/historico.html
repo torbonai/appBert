@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Record · Bertani App</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+
+  <style>
+    .h-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .h-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 50% -10%, rgba(0, 200, 83, 0.10), transparent 60%);
+      pointer-events: none;
+    }
+    .h-titulo { font-size: 32px; margin: 0 0 var(--s-2); }
+    .h-sub { font-size: 15px; color: var(--text-2); max-width: 720px; margin: 0; }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: var(--s-3);
+      margin: var(--s-5) 0;
+    }
+    @media (max-width: 1024px) { .stats-grid { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .stats-grid { grid-template-columns: repeat(2, 1fr); } }
+
+    .stat {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-4);
+    }
+    .stat .l { font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 4px; }
+    .stat .v { font-family: var(--mono); font-size: 22px; font-weight: 700; margin: 0; }
+    .stat .v.green { color: var(--green); }
+    .stat .v.warn { color: var(--warn); }
+    .stat .v.gold { color: var(--gold); }
+    .stat .s { font-size: 11px; color: var(--muted-2); margin: 4px 0 0; }
+
+    .toolbar {
+      display: flex; gap: var(--s-3); flex-wrap: wrap;
+      align-items: center;
+      margin-bottom: var(--s-4);
+    }
+    .toolbar .sel {
+      padding: 8px 14px;
+      background: var(--card);
+      border: 1px solid var(--border-bright);
+      border-radius: 999px;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .toolbar .sel.active { border-color: var(--accent); color: var(--accent); }
+    .toolbar .grow { flex: 1; }
+
+    .trades-table-wrap {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow-x: auto;
+    }
+    .trades-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .trades-table th, .trades-table td {
+      padding: var(--s-3) var(--s-4);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .trades-table th {
+      background: var(--bg-2);
+      color: var(--text-2);
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      position: sticky;
+      top: 0;
+    }
+    .trades-table td.mono { font-family: var(--mono); }
+    .trades-table .pill {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .pill-long { background: var(--green-soft); color: var(--green); }
+    .pill-short { background: var(--warn-soft); color: var(--warn); }
+    .pill-win { background: var(--green-soft); color: var(--green); }
+    .pill-loss { background: var(--warn-soft); color: var(--warn); }
+    .pill-be { background: rgba(212, 175, 55, 0.15); color: var(--gold); }
+    .brl-pos { color: var(--green); font-weight: 700; }
+    .brl-neg { color: var(--warn); font-weight: 700; }
+
+    .empty {
+      text-align: center; padding: var(--s-8) var(--s-5);
+    }
+    .empty .icon { font-size: 64px; opacity: 0.4; }
+    .empty h2 { margin: var(--s-4) 0 var(--s-2); }
+    .empty p { color: var(--muted); margin: 0 0 var(--s-4); }
+
+    .public-link {
+      margin-top: var(--s-5);
+      padding: var(--s-4) var(--s-5);
+      background: var(--accent-soft);
+      border: 1px solid var(--accent);
+      border-radius: var(--radius);
+      display: flex;
+      gap: var(--s-3);
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .public-link p { margin: 0; flex: 1; min-width: 220px; }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand"><div class="brand-mark">B</div><span>BERTANI</span></div>
+      <div class="nav-links">
+        <a href="../dashboard.html">Dashboard</a>
+        <a href="../educacao/fases-wyckoff.html">Educação</a>
+        
+        <a href="historico.html" class="active">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <header class="h-hero">
+    <div class="wrap">
+      <h1 class="h-titulo">Track Record</h1>
+      <p class="h-sub">
+        Histórico completo dos seus trades registrados nesta máquina.
+        Win rate, R/R médio, drawdown e P&amp;L em R$ — tudo calculado em tempo real.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);" id="main">
+
+    <!-- ============ STATS ============ -->
+    <section class="stats-grid">
+      <div class="stat"><p class="l">Total trades</p><p class="v" id="s-total">0</p><p class="s">registrados</p></div>
+      <div class="stat"><p class="l">Win rate</p><p class="v" id="s-wr">—</p><p class="s">vitórias / total</p></div>
+      <div class="stat"><p class="l">P&amp;L acumulado</p><p class="v" id="s-pnl">R$ 0</p><p class="s">soma líquida</p></div>
+      <div class="stat"><p class="l">R/R médio (ganhos)</p><p class="v gold" id="s-rr">—</p><p class="s">payoff</p></div>
+      <div class="stat"><p class="l">Maior ganho</p><p class="v green" id="s-max">—</p><p class="s">trade único</p></div>
+      <div class="stat"><p class="l">Pior perda</p><p class="v warn" id="s-min">—</p><p class="s">drawdown trade</p></div>
+    </section>
+
+    <!-- ============ TOOLBAR ============ -->
+    <div class="toolbar">
+      <div class="sel active" data-filter="all">Todos</div>
+      <div class="sel" data-filter="WIN1">WIN</div>
+      <div class="sel" data-filter="WDO1">WDO</div>
+      <div class="sel" data-filter="LONG">Long</div>
+      <div class="sel" data-filter="SHORT">Short</div>
+      <div class="sel" data-filter="WIN_RES">Vitórias</div>
+      <div class="sel" data-filter="LOSS_RES">Perdas</div>
+      <div class="grow"></div>
+      <button class="btn" id="btn-csv">⬇ Exportar CSV</button>
+      <a href="novo-trade.html" class="btn btn-primary">+ Novo trade</a>
+    </div>
+
+    <!-- ============ TABELA ============ -->
+    <div id="lista-container"></div>
+
+    <div class="public-link">
+      <p>📊 <strong>Track record público auditável:</strong> a planilha pública com todos os trades publicados nos briefings está em
+        <a href="https://docs.google.com/spreadsheets/d/11vdDac-OgllCYSCKaRyc9_SlfBH_sifAZHdSaGBjwPM/" target="_blank">Google Sheets</a>.
+        Auditável por terceiros, sem cherry-picking. Win rate real do método.
+      </p>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap"><p>© 2026 Renato Bertani · CNPI T 9644</p></div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var APP = window.BertaniApp;
+      var trades = [];
+      try { trades = JSON.parse(localStorage.getItem('bertani_trades') || '[]'); } catch(e) {}
+
+      var filtroAtivo = 'all';
+
+      function aplicarFiltro(arr) {
+        if (filtroAtivo === 'all') return arr;
+        if (filtroAtivo === 'WIN1') return arr.filter(function (t) { return t.ativo === 'WIN'; });
+        if (filtroAtivo === 'WDO1') return arr.filter(function (t) { return t.ativo === 'WDO'; });
+        if (filtroAtivo === 'LONG') return arr.filter(function (t) { return t.direcao === 'LONG'; });
+        if (filtroAtivo === 'SHORT') return arr.filter(function (t) { return t.direcao === 'SHORT'; });
+        if (filtroAtivo === 'WIN_RES') return arr.filter(function (t) { return t.resultado === 'WIN'; });
+        if (filtroAtivo === 'LOSS_RES') return arr.filter(function (t) { return t.resultado === 'LOSS'; });
+        return arr;
+      }
+
+      function calcStats(arr) {
+        var total = arr.length;
+        var wins = arr.filter(function (t) { return t.resultado === 'WIN'; }).length;
+        var losses = arr.filter(function (t) { return t.resultado === 'LOSS'; }).length;
+        var pnl = arr.reduce(function (a, t) { return a + (t.brl || 0); }, 0);
+        var winsArr = arr.filter(function (t) { return t.resultado === 'WIN' && t.rr; });
+        var rrMedio = winsArr.length ? (winsArr.reduce(function (a, t) { return a + Math.abs(t.rr); }, 0) / winsArr.length).toFixed(2) : null;
+        var max = arr.length ? Math.max.apply(null, arr.map(function (t) { return t.brl || 0; })) : 0;
+        var min = arr.length ? Math.min.apply(null, arr.map(function (t) { return t.brl || 0; })) : 0;
+        return {
+          total: total,
+          winRate: total > 0 ? Math.round(wins / total * 100) : null,
+          pnl: pnl,
+          rrMedio: rrMedio,
+          max: max,
+          min: min,
+          wins: wins,
+          losses: losses
+        };
+      }
+
+      function render() {
+        var filtrados = aplicarFiltro(trades);
+        var stats = calcStats(filtrados);
+
+        // Stats
+        document.getElementById('s-total').textContent = stats.total;
+        document.getElementById('s-wr').textContent = stats.winRate != null ? stats.winRate + '%' : '—';
+        document.getElementById('s-wr').className = 'v ' + (stats.winRate >= 60 ? 'green' : (stats.winRate >= 50 ? 'gold' : 'warn'));
+
+        var pnlEl = document.getElementById('s-pnl');
+        pnlEl.textContent = APP.fmt.brl(stats.pnl);
+        pnlEl.className = 'v ' + (stats.pnl > 0 ? 'green' : (stats.pnl < 0 ? 'warn' : ''));
+
+        document.getElementById('s-rr').textContent = stats.rrMedio ? stats.rrMedio + 'R' : '—';
+        document.getElementById('s-max').textContent = stats.total ? APP.fmt.brl(stats.max) : '—';
+        document.getElementById('s-min').textContent = stats.total ? APP.fmt.brl(stats.min) : '—';
+
+        // Lista
+        var container = document.getElementById('lista-container');
+        if (filtrados.length === 0) {
+          container.innerHTML =
+            '<div class="empty" style="background: var(--card); border: 1px dashed var(--border-bright); border-radius: var(--radius);">' +
+              '<div class="icon">📈</div>' +
+              '<h2>' + (trades.length === 0 ? 'Nenhum trade registrado ainda' : 'Nenhum trade nesse filtro') + '</h2>' +
+              '<p>' + (trades.length === 0 ? 'Comece registrando seu primeiro trade.' : 'Tente outro filtro.') + '</p>' +
+              (trades.length === 0 ? '<a href="novo-trade.html" class="btn btn-primary">+ Registrar primeiro trade</a>' : '') +
+            '</div>';
+          return;
+        }
+
+        var html = '<div class="trades-table-wrap"><table class="trades-table">';
+        html += '<thead><tr>';
+        ['Data', 'Hora', 'Ativo', 'Dir', 'Entry', 'Stop', 'Saída', 'Pts', 'Cont', 'R/R', 'Resultado', 'R$', 'Modelo'].forEach(function (h) {
+          html += '<th>' + h + '</th>';
+        });
+        html += '</tr></thead><tbody>';
+        filtrados.forEach(function (t) {
+          html += '<tr>';
+          html += '<td class="mono">' + (t.data || '—') + '</td>';
+          html += '<td class="mono">' + (t.hora || '—') + '</td>';
+          html += '<td class="mono">' + (t.ativo === 'WIN' ? 'WIN1!' : 'WDO1!') + '</td>';
+          html += '<td><span class="pill ' + (t.direcao === 'LONG' ? 'pill-long' : 'pill-short') + '">' + (t.direcao === 'LONG' ? '▲ L' : '▼ S') + '</span></td>';
+          html += '<td class="mono">' + (t.entry || '—') + '</td>';
+          html += '<td class="mono">' + (t.stop || '—') + '</td>';
+          html += '<td class="mono">' + (t.saida || '—') + '</td>';
+          html += '<td class="mono ' + (t.pts >= 0 ? 'brl-pos' : 'brl-neg') + '">' + (t.pts != null ? t.pts.toFixed(1) : '—') + '</td>';
+          html += '<td class="mono">' + (t.contratos || '—') + '</td>';
+          html += '<td class="mono">' + (t.rr != null ? t.rr.toFixed(2) + 'R' : '—') + '</td>';
+          var pr = ({ WIN: 'pill-win', LOSS: 'pill-loss', BE: 'pill-be' })[t.resultado] || '';
+          var prTxt = ({ WIN: '✓ WIN', LOSS: '✗ LOSS', BE: '= BE' })[t.resultado] || t.resultado;
+          html += '<td><span class="pill ' + pr + '">' + prTxt + '</span></td>';
+          html += '<td class="mono ' + (t.brl >= 0 ? 'brl-pos' : 'brl-neg') + '">' + APP.fmt.brl(t.brl || 0) + '</td>';
+          html += '<td>' + (t.modelo || '—') + '</td>';
+          html += '</tr>';
+        });
+        html += '</tbody></table></div>';
+        container.innerHTML = html;
+      }
+
+      // Toolbar
+      document.querySelectorAll('.sel').forEach(function (s) {
+        s.addEventListener('click', function () {
+          document.querySelectorAll('.sel').forEach(function (x) { x.classList.remove('active'); });
+          s.classList.add('active');
+          filtroAtivo = s.dataset.filter;
+          render();
+        });
+      });
+
+      // CSV export
+      document.getElementById('btn-csv').addEventListener('click', function () {
+        if (trades.length === 0) {
+          APP.ui.toast('Nenhum trade pra exportar', 'info');
+          return;
+        }
+        var headers = ['data', 'hora', 'ativo', 'direcao', 'entry', 'stop', 'saida', 'pts', 'contratos', 'rr', 'resultado', 'brl', 'modelo', 'score_entrada', 'anti_narr', 'notas'];
+        var rows = [headers.join(',')];
+        trades.forEach(function (t) {
+          var row = headers.map(function (h) {
+            var v = t[h];
+            if (v == null) return '';
+            if (typeof v === 'string' && (v.indexOf(',') >= 0 || v.indexOf('"') >= 0)) return '"' + v.replace(/"/g, '""') + '"';
+            return v;
+          });
+          rows.push(row.join(','));
+        });
+        var csv = rows.join('\n');
+        var blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
+        var url = URL.createObjectURL(blob);
+        var a = document.createElement('a');
+        a.href = url;
+        a.download = 'bertani_trades_' + new Date().toISOString().split('T')[0] + '.csv';
+        a.click();
+        URL.revokeObjectURL(url);
+        APP.ui.toast('CSV baixado', 'success');
+      });
+
+      render();
+    })();
+  </script>
+</body>
+</html>

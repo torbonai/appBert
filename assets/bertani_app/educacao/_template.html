@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modelo Educacional — App Bertani · Wyckoff x ICT">
+
+  <!--
+  ====================================================================
+  TEMPLATE EDUCACIONAL CANÔNICO — App Bertani v1.0
+  ====================================================================
+  Como usar:
+    1. Copia este arquivo pra `bertani_app/educacao/modelos/<nome>.html`
+    2. Edita os 6 blocos marcados com <!-- EDITE: ... -->
+    3. Substitui o {{TITULO}} no <title> e nos placeholders
+    4. Atualiza tags + WIN RATE + amostra na seção .modelo-stats
+    5. Salva e abre no browser pra revisar
+
+  Estrutura padronizada (6 seções) — extraída do app do João:
+    [1] Header (ícone, título, tags, WIN RATE histórico)
+    [2] Definição Completa (parágrafo único)
+    [3] Diagrama Representativo (canvas/SVG ou img placeholder)
+    [4] Setup Bullish + Setup Bearish (lado a lado)
+    [5] Como Identificar (lista numerada)
+    [6] Regras de Entrada (lista numerada)
+  ====================================================================
+  -->
+
+  <title>{{TITULO}} — Bertani Educação</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    /* ========== Estilo específico de página de modelo educacional ========== */
+    .modelo-header {
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      margin-bottom: var(--s-6);
+      position: relative;
+      overflow: hidden;
+    }
+    .modelo-header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: radial-gradient(800px 300px at 80% -20%, rgba(41, 98, 255, 0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .modelo-header > * { position: relative; z-index: 1; }
+
+    .modelo-icone {
+      width: 72px;
+      height: 72px;
+      border-radius: 18px;
+      background: var(--cor, var(--accent));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 36px;
+      margin-bottom: var(--s-4);
+    }
+
+    .modelo-titulo {
+      font-size: 40px;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+      margin: 0 0 var(--s-3);
+    }
+
+    .modelo-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: var(--s-2);
+      margin-bottom: var(--s-5);
+    }
+    .modelo-tag {
+      display: inline-block;
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      border: 1px solid var(--accent);
+      color: var(--accent);
+      background: var(--accent-soft);
+    }
+    .modelo-tag-fusion {
+      border-color: var(--gold);
+      color: var(--gold);
+      background: rgba(212, 175, 55, 0.12);
+    }
+
+    .modelo-stats {
+      display: flex;
+      gap: var(--s-6);
+      flex-wrap: wrap;
+      padding-top: var(--s-4);
+      border-top: 1px solid var(--border);
+    }
+    .modelo-stat {
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-1);
+    }
+    .modelo-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .modelo-stat-value {
+      font-size: 28px;
+      font-weight: 700;
+      font-family: var(--mono);
+      color: var(--accent-2);
+    }
+    .modelo-stat-amostra {
+      font-size: 12px;
+      color: var(--muted);
+    }
+
+    .modelo-secao {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      margin-bottom: var(--s-4);
+    }
+    .modelo-secao h2 {
+      display: flex;
+      align-items: center;
+      gap: var(--s-2);
+      font-size: 18px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      color: var(--muted);
+      margin-bottom: var(--s-4);
+      font-weight: 600;
+    }
+    .modelo-secao h2::before {
+      content: "●";
+      color: var(--accent);
+      font-size: 14px;
+    }
+    .modelo-secao h2.green::before { color: var(--green); }
+    .modelo-secao h2.red::before { color: var(--warn); }
+    .modelo-secao h2.gold::before { color: var(--gold); }
+
+    .modelo-definicao p {
+      font-size: 16px;
+      line-height: 1.65;
+      color: var(--text-2);
+      margin: 0;
+    }
+
+    .modelo-diagrama {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: var(--s-5);
+      text-align: center;
+      min-height: 280px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .modelo-diagrama img {
+      max-width: 100%;
+      height: auto;
+      border-radius: var(--radius-sm);
+    }
+    .modelo-diagrama-placeholder {
+      color: var(--muted);
+      font-size: 14px;
+      font-style: italic;
+    }
+
+    .modelo-setups {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: var(--s-4);
+    }
+    @media (max-width: 768px) {
+      .modelo-setups { grid-template-columns: 1fr; }
+    }
+    .modelo-setup {
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4);
+      border-left: 3px solid;
+    }
+    .modelo-setup-bullish { border-left-color: var(--green); }
+    .modelo-setup-bearish { border-left-color: var(--warn); }
+    .modelo-setup h3 {
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin-bottom: var(--s-3);
+    }
+    .modelo-setup-bullish h3 { color: var(--green); }
+    .modelo-setup-bearish h3 { color: var(--warn); }
+    .modelo-setup p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--text-2);
+    }
+
+    .modelo-passos {
+      list-style: none;
+      counter-reset: passo;
+      padding: 0;
+    }
+    .modelo-passos li {
+      counter-increment: passo;
+      display: flex;
+      gap: var(--s-3);
+      padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .modelo-passos li:last-child { border-bottom: 0; }
+    .modelo-passos li::before {
+      content: counter(passo);
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+      font-weight: 700;
+      font-family: var(--mono);
+    }
+    .modelo-passos li > div {
+      flex: 1;
+      padding-top: 4px;
+      color: var(--text-2);
+      line-height: 1.55;
+    }
+
+    .modelo-passos.regras li::before {
+      background: var(--green-soft);
+      color: var(--green);
+    }
+
+    .modelo-back {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-2);
+      color: var(--muted);
+      font-size: 13px;
+      margin-bottom: var(--s-5);
+      text-decoration: none;
+    }
+    .modelo-back:hover {
+      color: var(--text);
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/educacao/fases-wyckoff.html">Educação</a>
+        <a href="/registro/historico.html">Track Record</a>
+      </div>
+      <a href="/dashboard.html" class="btn">Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ========== CONTEÚDO ========== -->
+  <main class="wrap wrap-narrow" style="padding-top: var(--s-6); padding-bottom: var(--s-8);">
+
+    <a href="/educacao/index.html" class="modelo-back">
+      ← Voltar à biblioteca de modelos
+    </a>
+
+    <!-- ========== [1] HEADER ========== -->
+    <header class="modelo-header">
+      <!-- EDITE: cor de fundo do ícone (--cor) -->
+      <div class="modelo-icone" style="--cor: var(--accent);">
+        <!-- EDITE: emoji ou ícone do modelo (ex: 🎯, ⚖️, 📐) -->
+        🎯
+      </div>
+
+      <!-- EDITE: título do modelo -->
+      <h1 class="modelo-titulo">{{TITULO}}</h1>
+
+      <!-- EDITE: tags categorizadoras (2-4 tags) -->
+      <div class="modelo-tags">
+        <span class="modelo-tag">{{TAG_1}}</span>
+        <span class="modelo-tag">{{TAG_2}}</span>
+        <span class="modelo-tag">{{TAG_3}}</span>
+        <span class="modelo-tag modelo-tag-fusion">Wyckoff Fusion</span>
+      </div>
+
+      <div class="modelo-stats">
+        <div class="modelo-stat">
+          <span class="modelo-stat-label">Win Rate Histórico</span>
+          <!-- EDITE: probabilidade calibrada com amostra própria -->
+          <span class="modelo-stat-value">{{WIN_RATE}}</span>
+          <span class="modelo-stat-amostra">{{AMOSTRA}}</span>
+        </div>
+        <div class="modelo-stat">
+          <span class="modelo-stat-label">Timeframes</span>
+          <span class="modelo-stat-value" style="color: var(--text); font-size: 18px;">{{TIMEFRAMES}}</span>
+          <span class="modelo-stat-amostra">aplicabilidade</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- ========== [2] DEFINIÇÃO COMPLETA ========== -->
+    <section class="modelo-secao modelo-definicao">
+      <h2>Definição completa</h2>
+      <p>{{DEFINICAO}}</p>
+    </section>
+
+    <!-- ========== [3] DIAGRAMA REPRESENTATIVO ========== -->
+    <section class="modelo-secao">
+      <h2>Diagrama representativo</h2>
+      <div class="modelo-diagrama">
+        <!-- EDITE: substituir pelo diagrama real (PNG ou SVG inline) -->
+        <img src="../assets/img/{{NOME_DIAGRAMA}}.png" alt="Diagrama {{TITULO}}"
+             onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+        <div class="modelo-diagrama-placeholder" style="display: none;">
+          Diagrama em construção · será adicionado em breve
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== [4] SETUPS BULLISH + BEARISH ========== -->
+    <section class="modelo-secao">
+      <h2 class="green">Setups direcionais</h2>
+      <div class="modelo-setups">
+        <div class="modelo-setup modelo-setup-bullish">
+          <h3>🟢 Setup Bullish</h3>
+          <p>{{SETUP_BULLISH}}</p>
+        </div>
+        <div class="modelo-setup modelo-setup-bearish">
+          <h3>🔴 Setup Bearish</h3>
+          <p>{{SETUP_BEARISH}}</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== [5] COMO IDENTIFICAR ========== -->
+    <section class="modelo-secao">
+      <h2 class="gold">Como identificar</h2>
+      <ol class="modelo-passos">
+        <li><div>{{PASSO_1}}</div></li>
+        <li><div>{{PASSO_2}}</div></li>
+        <li><div>{{PASSO_3}}</div></li>
+        <li><div>{{PASSO_4}}</div></li>
+        <li><div>{{PASSO_5}}</div></li>
+      </ol>
+    </section>
+
+    <!-- ========== [6] REGRAS DE ENTRADA ========== -->
+    <section class="modelo-secao">
+      <h2 class="green">Regras de entrada</h2>
+      <ol class="modelo-passos regras">
+        <li><div>{{REGRA_1}}</div></li>
+        <li><div>{{REGRA_2}}</div></li>
+        <li><div>{{REGRA_3}}</div></li>
+        <li><div>{{REGRA_4}}</div></li>
+        <li><div>{{REGRA_5}}</div></li>
+      </ol>
+    </section>
+
+    <!-- ========== Navegação entre modelos ========== -->
+    <section class="modelo-secao" style="text-align: center; padding: var(--s-6);">
+      <p class="muted mb-3">Próximos modelos da biblioteca</p>
+      <div class="row gap-3" style="justify-content: center; flex-wrap: wrap;">
+        <a href="/educacao/index.html" class="btn">Ver biblioteca completa</a>
+        </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada de investimento.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+</body>
+</html>

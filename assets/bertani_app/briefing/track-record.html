@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Track Record dos Briefings · Bertani</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .tr-hero { padding: var(--s-7) 0 var(--s-3); position: relative; }
+    .tr-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 50% -10%, rgba(0, 200, 83, 0.10), transparent 60%);
+      pointer-events: none;
+    }
+    .tr-titulo { font-size: 36px; margin: 0 0 var(--s-2); }
+    .tr-titulo .gold { color: var(--gold); }
+    .tr-sub {
+      font-size: 16px; color: var(--text-2); margin: 0 0 var(--s-3); max-width: 720px;
+    }
+
+    .tr-stats {
+      display: grid;
+      grid-template-columns: repeat(6, 1fr);
+      gap: var(--s-3);
+      margin: var(--s-5) 0;
+    }
+    @media (max-width: 1024px) { .tr-stats { grid-template-columns: repeat(3, 1fr); } }
+    @media (max-width: 600px) { .tr-stats { grid-template-columns: repeat(2, 1fr); } }
+    .tr-stat {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-4);
+    }
+    .tr-stat .l {
+      font-size: 11px; text-transform: uppercase; letter-spacing: 0.06em;
+      color: var(--muted); margin: 0 0 4px;
+    }
+    .tr-stat .v {
+      font-family: var(--mono); font-size: 24px; font-weight: 700;
+      margin: 0; line-height: 1;
+    }
+    .tr-stat .v.green { color: var(--green); }
+    .tr-stat .v.warn { color: var(--warn); }
+    .tr-stat .v.gold { color: var(--gold); }
+    .tr-stat .s { font-size: 11px; color: var(--muted-2); margin: 4px 0 0; }
+
+    .panel {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); padding: var(--s-5);
+      margin-bottom: var(--s-4);
+    }
+
+    .panel-info {
+      background: rgba(212, 175, 55, 0.06);
+      border-left: 4px solid var(--gold);
+      padding: var(--s-4) var(--s-5);
+      border-radius: var(--radius-sm);
+      margin: var(--s-4) 0;
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+    .panel-info strong { color: var(--gold); }
+
+    .tr-table-wrap {
+      background: var(--card); border: 1px solid var(--border);
+      border-radius: var(--radius); overflow-x: auto;
+    }
+    .tr-table { width: 100%; border-collapse: collapse; font-size: 13px; }
+    .tr-table th, .tr-table td {
+      padding: var(--s-3) var(--s-4);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+      white-space: nowrap;
+    }
+    .tr-table th {
+      background: var(--bg-2);
+      color: var(--text-2);
+      font-weight: 600;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      position: sticky; top: 0;
+    }
+    .tr-table td.mono { font-family: var(--mono); }
+    .tr-table tr:last-child td { border-bottom: 0; }
+    .tr-table tr:hover { background: var(--bg-2); }
+
+    .pill-ver {
+      display: inline-block;
+      padding: 2px 10px;
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+    }
+    .pill-go { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
+    .pill-go-cond { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .pill-aguardar { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
+    .pill-no-go { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
+
+    .pill-dir { font-family: var(--mono); font-size: 11px; font-weight: 700; padding: 2px 8px; border-radius: 999px; }
+    .pill-long { background: var(--green-soft); color: var(--green); }
+    .pill-short { background: var(--warn-soft); color: var(--warn); }
+    .pill-neutro { background: var(--bg-2); color: var(--muted); }
+
+    .pts-positivo { color: var(--green); font-weight: 700; }
+    .pts-zero { color: var(--muted); }
+    .pts-negativo { color: var(--warn); font-weight: 700; }
+
+    .check-cell {
+      display: inline-block; width: 22px; height: 22px;
+      border-radius: 50%; line-height: 22px;
+      text-align: center; font-size: 13px; font-weight: 700;
+    }
+    .check-yes { background: var(--green-soft); color: var(--green); }
+    .check-no { background: var(--bg-2); color: var(--muted-2); }
+
+    .calc-banca {
+      background: var(--bg-2); border: 1px solid var(--border-bright);
+      border-radius: var(--radius); padding: var(--s-5);
+      margin-top: var(--s-5);
+    }
+    .calc-banca h3 { font-size: 16px; margin: 0 0 var(--s-3); }
+    .calc-row { display: grid; grid-template-columns: 1fr 1fr; gap: var(--s-3); margin-bottom: var(--s-3); }
+    .calc-row label { display: block; font-size: 13px; color: var(--text-2); margin-bottom: 4px; }
+    .calc-row input, .calc-row select {
+      width: 100%; padding: 10px 14px;
+      background: var(--bg); border: 1px solid var(--border-bright);
+      border-radius: var(--radius-sm); color: var(--text);
+      font-family: var(--mono); font-size: 14px;
+    }
+    .calc-resultado {
+      background: var(--card); border-left: 3px solid var(--green);
+      padding: var(--s-3) var(--s-4); border-radius: var(--radius-sm);
+      margin-top: var(--s-3); font-size: 14px;
+    }
+    .calc-resultado strong { color: var(--green); font-size: 18px; }
+
+    .empty {
+      text-align: center; padding: var(--s-7) var(--s-5);
+    }
+
+    .breadcrumb { font-size: 13px; color: var(--muted); margin-bottom: var(--s-3); }
+    .breadcrumb a { color: var(--muted); }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="../dashboard.html">Dashboard</a>
+        <a href="do-dia.html">Briefing do dia</a>
+        <a href="track-record.html" class="active">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <header class="tr-hero">
+    <div class="wrap">
+      <p class="breadcrumb"><a href="../dashboard.html">Dashboard</a> › <a href="do-dia.html">Briefing</a> › Track Record</p>
+      <h1 class="tr-titulo">Track Record dos <span class="gold">Briefings Diários</span></h1>
+      <p class="tr-sub">
+        Resultado de cada briefing publicado · em <strong>pontos</strong> (cada trader contextualiza pela própria banca).
+        Sem cherry-picking · sem trade desconsiderado · auditável.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <div id="content">
+      <div class="empty">
+        <p style="color: var(--muted);">Carregando track record...</p>
+      </div>
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Resultado passado não garante resultado futuro.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+
+      function fmtPts(n) {
+        if (n == null) return '—';
+        return Number(n).toLocaleString('pt-BR', { maximumFractionDigits: 2 });
+      }
+
+      function fmtData(d) {
+        const dt = new Date(d + 'T12:00:00');
+        return dt.toLocaleDateString('pt-BR', { day: '2-digit', month: 'short' });
+      }
+
+      function pillVer(v) {
+        const map = {
+          GO: ['🟢 GO', 'pill-go'],
+          GO_CONDICIONAL: ['🟡 GO Cond.', 'pill-go-cond'],
+          AGUARDAR: ['🔵 Aguardar', 'pill-aguardar'],
+          NO_GO: ['🔴 NO-GO', 'pill-no-go']
+        };
+        const [label, cls] = map[v] || ['—', 'pill-aguardar'];
+        return '<span class="pill-ver ' + cls + '">' + label + '</span>';
+      }
+
+      function pillDir(d) {
+        if (d === 'LONG') return '<span class="pill-dir pill-long">▲ LONG</span>';
+        if (d === 'SHORT') return '<span class="pill-dir pill-short">▼ SHORT</span>';
+        return '<span class="pill-dir pill-neutro">—</span>';
+      }
+
+      function check(b) {
+        return b ? '<span class="check-cell check-yes">✓</span>' : '<span class="check-cell check-no">·</span>';
+      }
+
+      function ptsClass(n) {
+        if (n == null || n === 0) return 'pts-zero';
+        return n > 0 ? 'pts-positivo' : 'pts-negativo';
+      }
+
+      function render(data) {
+        const main = document.getElementById('content');
+        const stats = data.estatisticas;
+        const linhas = data.linhas;
+
+        let html = '';
+
+        // ===== STATS =====
+        html += '<section class="tr-stats">';
+        html += '<div class="tr-stat"><p class="l">Briefings publicados</p><p class="v">' + stats.total_edicoes + '</p><p class="s">edições</p></div>';
+        html += '<div class="tr-stat"><p class="l">Setups armados</p><p class="v gold">' + stats.vereditos_go + '</p><p class="s">de ' + stats.total_linhas + ' análises</p></div>';
+        html += '<div class="tr-stat"><p class="l">Setups acionados</p><p class="v">' + stats.setups_acionados + '/' + stats.vereditos_go + '</p><p class="s">preço chegou na zona</p></div>';
+        html += '<div class="tr-stat"><p class="l">TP1 atingidos</p><p class="v green">' + stats.tp1_atingidos + '/' + stats.setups_acionados + '</p><p class="s">' + Math.round(stats.win_rate_pct_setups_armados) + '% win rate</p></div>';
+        html += '<div class="tr-stat"><p class="l">Stops batidos</p><p class="v warn">' + stats.stops_batidos + '</p><p class="s">de ' + stats.setups_acionados + ' acionados</p></div>';
+        html += '<div class="tr-stat"><p class="l">Pts capturados</p><p class="v gold">+' + fmtPts(stats.pts_capturados_acumulados) + '</p><p class="s">acumulados (executor 50/25/25)</p></div>';
+        html += '</section>';
+
+        // ===== INFO =====
+        html += '<div class="panel-info">';
+        html += '<strong>Como ler:</strong> cada linha é 1 análise (1 ativo · 1 dia). Veredito AGUARDAR significa que NÃO houve setup acionável — disciplina é parte do método.';
+        html += ' Pts capturados usam fórmula <strong>50% TP1 + 25% TP2 + 25% TP3</strong> (parcial padrão Bertani · 25% restante em BE quando alvo seguinte não atinge).';
+        html += '</div>';
+
+        // ===== TABELA =====
+        html += '<div class="tr-table-wrap"><table class="tr-table">';
+        html += '<thead><tr>';
+        ['Data', '#', 'Ativo', 'Veredito', 'Direção', 'Entry', 'Stop pts', 'TP1', 'TP2', 'TP3', 'R/R', 'Acion.', 'TP1', 'TP2', 'TP3', 'Stop', 'Pts ✓', 'Status'].forEach(h => {
+          html += '<th>' + h + '</th>';
+        });
+        html += '</tr></thead><tbody>';
+
+        linhas.forEach(l => {
+          html += '<tr>';
+          html += '<td class="mono">' + fmtData(l.data) + '</td>';
+          html += '<td class="mono">#' + l.edicao + '</td>';
+          html += '<td class="mono"><strong>' + l.ativo + '</strong></td>';
+          html += '<td>' + pillVer(l.veredito) + '</td>';
+          html += '<td>' + pillDir(l.direcao) + '</td>';
+          html += '<td class="mono">' + (l.entry_ref || '—') + '</td>';
+          html += '<td class="mono">' + (l.stop_pts || '—') + '</td>';
+          html += '<td class="mono">' + (l.tp1_pts ? '+' + l.tp1_pts : '—') + '</td>';
+          html += '<td class="mono">' + (l.tp2_pts ? '+' + l.tp2_pts : '—') + '</td>';
+          html += '<td class="mono">' + (l.tp3_pts ? '+' + l.tp3_pts : '—') + '</td>';
+          html += '<td class="mono">' + (l.tp1_rr ? l.tp1_rr + 'R' : '—') + '</td>';
+          html += '<td>' + check(l.acionou) + '</td>';
+          html += '<td>' + check(l.tp1_hit) + '</td>';
+          html += '<td>' + check(l.tp2_hit) + '</td>';
+          html += '<td>' + check(l.tp3_hit) + '</td>';
+          html += '<td>' + (l.stop_hit ? '<span class="check-cell" style="background: var(--warn-soft); color: var(--warn);">!</span>' : '<span class="check-cell check-no">·</span>') + '</td>';
+          const ptsCls = ptsClass(l.pts_executor);
+          html += '<td class="mono ' + ptsCls + '">' + (l.pts_executor > 0 ? '+' : '') + fmtPts(l.pts_executor) + '</td>';
+          html += '<td style="font-size: 11px;">' + l.status_resultado + '</td>';
+          html += '</tr>';
+        });
+
+        html += '</tbody></table></div>';
+
+        // ===== Calculadora de banca =====
+        html += '<div class="calc-banca">';
+        html += '<h3>🧮 Quanto isso seria na sua banca?</h3>';
+        html += '<p style="font-size: 13px; color: var(--muted); margin: 0 0 var(--s-4);">Cada trader multiplica os pts pelo próprio tamanho de posição. Use a calculadora abaixo pra ver:</p>';
+        html += '<div class="calc-row">';
+        html += '<div><label>Sua banca (R$)</label><input type="number" id="calc-banca" value="30000" step="1000"></div>';
+        html += '<div><label>Risco por trade (%)</label><input type="number" id="calc-risco" value="1" step="0.1" min="0.1" max="3"></div>';
+        html += '</div>';
+        html += '<div id="calc-resultado-wrap"></div>';
+        html += '</div>';
+
+        main.innerHTML = html;
+
+        // Eventos calculadora
+        const inputBanca = document.getElementById('calc-banca');
+        const inputRisco = document.getElementById('calc-risco');
+        const wrap = document.getElementById('calc-resultado-wrap');
+
+        function recalc() {
+          const banca = parseFloat(inputBanca.value) || 0;
+          const risco = parseFloat(inputRisco.value) || 1;
+          const riscoBRL = banca * (risco / 100);
+
+          // Pega só linhas acionadas
+          const acionados = linhas.filter(l => l.acionou && l.stop_pts);
+          let html = '';
+
+          if (acionados.length === 0) {
+            html = '<div class="calc-resultado"><p style="margin: 0;">Sem trades acionados ainda · só veredito AGUARDAR.</p></div>';
+          } else {
+            let pnlTotal = 0;
+            const detalhes = acionados.map(l => {
+              const pontoBRL = l.ativo === 'WDO1!' ? 10 : 0.20;
+              const valorPorContrato = l.stop_pts * pontoBRL;
+              const contratos = Math.max(1, Math.floor(riscoBRL / valorPorContrato));
+              const pnl = l.pts_executor * pontoBRL * contratos;
+              pnlTotal += pnl;
+              return l.data + ' · ' + l.ativo + ' · ' + contratos + ' contrato' + (contratos > 1 ? 's' : '') + ' · ' + (pnl >= 0 ? '+' : '') + 'R$ ' + pnl.toFixed(2);
+            }).join('<br>');
+
+            html = '<div class="calc-resultado">';
+            html += '<p style="margin: 0 0 8px;"><strong>Resultado acumulado: ' + (pnlTotal >= 0 ? '+' : '') + 'R$ ' + pnlTotal.toFixed(2) + '</strong> em ' + acionados.length + ' trade' + (acionados.length > 1 ? 's' : '') + ' acionado' + (acionados.length > 1 ? 's' : '') + '.</p>';
+            html += '<p style="margin: 0; font-size: 12px; color: var(--muted-2); line-height: 1.6;">' + detalhes + '</p>';
+            html += '</div>';
+          }
+          wrap.innerHTML = html;
+        }
+
+        inputBanca.addEventListener('input', recalc);
+        inputRisco.addEventListener('input', recalc);
+        recalc();
+      }
+
+      function renderEmpty() {
+        document.getElementById('content').innerHTML =
+          '<div class="empty"><h2>Track Record vazio</h2><p style="color: var(--muted);">Os primeiros briefings serão registrados a partir de hoje.</p></div>';
+      }
+
+      fetch('track_record.json')
+        .then(r => r.ok ? r.json() : null)
+        .then(data => data ? render(data) : renderEmpty())
+        .catch(() => renderEmpty());
+    })();
+  </script>
+</body>
+</html>
