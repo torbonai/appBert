@@ -1,0 +1,135 @@
+{
+  "data": "2026-04-30",
+  "data_extenso": "Quinta-feira, 30 de abril de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 4,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Hawkish global pesa mais que Copom dovish",
+    "subtitulo": "Último dia útil de abril · Fed duro com inflação · Copom cortou Selic pra 14,50% · Ibovespa em 6º pregão de queda · sexta feriado."
+  },
+  "contexto_macro": {
+    "nivel": "HAWKISH",
+    "highlights": [
+      "FOMC manteve juros 3,50-3,75% MAS com 4 dissidentes (raríssimo desde 1992)",
+      "Powell coletiva NÃO suavizou · inflação curto prazo no foco",
+      "Copom cortou Selic pra 14,50% (-0,25pp esperado)",
+      "Ibovespa fechou ontem em -2,05% aos 184.750 (6º pregão consecutivo de queda)",
+      "Dólar à vista voltou aos R$ 5,0018",
+      "Petróleo Brent acima de USD 110/bbl (Oriente Médio)",
+      "HOJE 30/04: US GDP advance 9h30 BRT · Jobless Claims · dados fiscais BR",
+      "Sexta 01/05 = feriado Trabalhador (B3 fechada)"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "descricao": "Hawkish global confirmatório: Fed duro + Powell duro + Brent alto pressionam IND pra baixo. Anti-Narrativa CONFIRMATÓRIA bearish em WIN e bullish em WDO (USD strong pós-FOMC supera corte BR esperado)."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "fase_wyckoff": "Phase A potencial · capitulação ativa · sem AR confirmado · vol 4H climático 1,74× média na queda 191670→188685",
+      "score": 5.4,
+      "veredito": "AGUARDAR",
+      "viés": "short",
+      "racional_publico": "Phase A potencial · capitulação ativa pós-FOMC hawkish. Volume climático 4H confirma capitulação (1,74× a média na barra de queda 191670→188685), mas AR (Automatic Rally) ainda não foi confirmado. Sem AR não tem range definido · sem range não tem ponto operacional. Bias estrutural SHORT · entry condicional só em pullback técnico após confirmação de AR.",
+      "niveis_chave": {
+        "PDH": 191670,
+        "PDL": 184750,
+        "ajuste_b3": null,
+        "fundo_capitulacao": 188685,
+        "zona_sweep": 188685
+      },
+      "plano": {
+        "direcao": "SHORT",
+        "entry_zona": "188.500-189.000",
+        "stop": 189500,
+        "stop_pts": 1000,
+        "tp1": 187000,
+        "tp1_rr": 1.5,
+        "tp1_partial_pct": 50,
+        "tp2": 185500,
+        "tp2_rr": 3.0,
+        "tp2_partial_pct": 25,
+        "tp3": 184000,
+        "tp3_rr": 4.5,
+        "tp3_partial_pct": 25,
+        "contratos_banca_30k_risco_1pct": 3,
+        "ganho_bruto_tp1_brl": 540,
+        "ganho_bruto_tp2_brl": 525,
+        "ganho_bruto_tp3_brl": 600,
+        "setup": "Pullback 188.500-189.000 + MSS bearish no 15m",
+        "kill_zone": "10:30-11:45 BRT (após digestão GDP US)"
+      },
+      "comentario_breve": "Recruta força entrada. Trader aguarda AR confirmado antes de armar pullback short."
+    },
+    {
+      "codigo": "WDO1!",
+      "fase_wyckoff": "Phase B/C iniciando re-acumulação pós-Spring 4975 · vol 4H 1,27M na barra de subida pós-FOMC = institucional comprando dólar",
+      "score": 5.9,
+      "veredito": "AGUARDAR",
+      "viés": "long",
+      "racional_publico": "Phase B/C iniciando re-acumulação pós-Spring no 4975 (sweep do fundo + bounce confirmado). Volume 4H institucional (1,27M) na barra de subida pós-FOMC indica big money comprando dólar · narrativa de USD strong pós-FOMC hawkish supera o corte BR esperado. Bias estrutural LONG · entry condicional em pullback pra zona OB intraday (4988-4995) com MSS bullish no 15m. Cautela pré-Copom-impact.",
+      "niveis_chave": {
+        "PDH": 5025.5,
+        "PDL": 4975.0,
+        "ajuste_b3": null,
+        "spring_zone": 4975,
+        "OB_intraday_high": 4995,
+        "OB_intraday_low": 4988
+      },
+      "plano": {
+        "direcao": "LONG",
+        "entry_zona": "4.988-4.995",
+        "stop": 4982,
+        "stop_pts": 10,
+        "tp1": 5040,
+        "tp1_rr": 3.5,
+        "tp1_partial_pct": 50,
+        "tp2": 5060,
+        "tp2_rr": 5.0,
+        "tp2_partial_pct": 25,
+        "tp3": 5080,
+        "tp3_rr": 7.0,
+        "tp3_partial_pct": 25,
+        "contratos_banca_30k_risco_1pct": 3,
+        "ganho_bruto_tp1_brl": 690,
+        "ganho_bruto_tp2_brl": 525,
+        "ganho_bruto_tp3_brl": 600,
+        "setup": "Pullback 4988-4995 + MSS bullish no 15m",
+        "kill_zone": "10:30-11:45 BRT (após GDP US digerido)"
+      },
+      "comentario_breve": "Recruta entra cego. Trader aguarda pullback pra zona OB com MSS confirmado."
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "09:00-09:25", "evento": "Leilão de abertura B3 + posicionamento pré-GDP", "impacto": "ALTO", "janela_evitar": "09:00-09:25" },
+    { "hora_brt": "09:30", "evento": "US GDP Q1 advance + Jobless Claims", "impacto": "MUITO ALTO", "janela_evitar": "09:25-10:30" },
+    { "hora_brt": "10:30-11:45", "evento": "🟢 Janela limpa · digestão GDP US", "impacto": "—" },
+    { "hora_brt": "11:45-13:30", "evento": "Almoço NY · evitar", "impacto": "—" },
+    { "hora_brt": "13:30-14:30", "evento": "🟢 Janela limpa · NY tarde · fluxo direcional", "impacto": "—" },
+    { "hora_brt": "15:30-16:30", "evento": "🟢 Janela limpa · última KZ · cautela pré-feriado", "impacto": "—" },
+    { "hora_brt": "16:00-17:55", "evento": "Pré-fechamento prolongado · realizações esperadas", "impacto": "MEDIO" }
+  ],
+  "kill_zones_recomendadas": [
+    "10:30-11:45 BRT · digestão US GDP advance",
+    "13:30-14:30 BRT · NY tarde · fluxo direcional",
+    "15:30-16:30 BRT · última KZ · cautela pré-feriado"
+  ],
+  "regras_do_dia": [
+    "HARD AVOID 09:25-10:30 BRT · ±60min do GDP US (não operar)",
+    "Quinta pré-feriado pede cautela na 2ª metade do dia",
+    "NÃO DORMIR EM POSIÇÃO LONGA quinta-feira (sexta 01/05 fechado · feriado Trabalhador)",
+    "Máx 1 trade no instrumento, 2 totais. Risco fixo 0,5% (metade do padrão por ser dia macro carregado).",
+    "Trailing agressivo nos HL/LH do 5m após TP1.",
+    "DD diário -2% encerra o dia."
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada. Risco em derivativos é alto."
+  }
+}
