@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Checklist pré-trade · Bertani App</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .ck-hero {
+      padding: var(--s-7) 0 var(--s-3);
+      position: relative;
+    }
+    .ck-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(800px 300px at 50% -10%, rgba(0, 200, 83, 0.10), transparent 60%);
+      pointer-events: none;
+    }
+    .ck-titulo { font-size: 32px; margin: 0 0 var(--s-2); }
+    .ck-sub { font-size: 15px; color: var(--text-2); max-width: 640px; margin: 0; }
+
+    .progress-bar {
+      margin-top: var(--s-5);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      display: grid;
+      grid-template-columns: 1fr auto 200px;
+      gap: var(--s-5);
+      align-items: center;
+    }
+    @media (max-width: 768px) {
+      .progress-bar { grid-template-columns: 1fr; }
+    }
+    .progress-text .l { font-size: 12px; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); margin: 0 0 4px; }
+    .progress-text .v { font-family: var(--mono); font-size: 28px; font-weight: 700; margin: 0; }
+    .progress-bar-track {
+      width: 100%; height: 12px;
+      background: var(--bg-2);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    .progress-bar-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent), var(--green));
+      transition: width 0.4s ease;
+    }
+    .verdict-pill {
+      padding: 12px 24px;
+      border-radius: 999px;
+      font-weight: 700;
+      text-align: center;
+      font-size: 14px;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      border: 2px solid var(--border);
+      transition: all var(--t-base);
+    }
+    .verdict-pill.ok { background: var(--green-soft); color: var(--green); border-color: var(--green); }
+    .verdict-pill.partial { background: rgba(212, 175, 55, 0.15); color: var(--gold); border-color: var(--gold); }
+    .verdict-pill.no { background: var(--warn-soft); color: var(--warn); border-color: var(--warn); }
+
+    .ck-list {
+      display: flex; flex-direction: column;
+      gap: var(--s-3); margin-top: var(--s-5);
+    }
+    .ck-item {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      cursor: pointer;
+      transition: border-color var(--t-fast), background var(--t-fast);
+      display: grid;
+      grid-template-columns: auto 1fr auto;
+      gap: var(--s-4);
+      align-items: flex-start;
+    }
+    .ck-item:hover { border-color: var(--accent); }
+    .ck-item.checked {
+      background: linear-gradient(135deg, rgba(0, 200, 83, 0.08), transparent);
+      border-color: var(--green);
+    }
+    .ck-item.critical-no {
+      background: linear-gradient(135deg, rgba(255, 23, 68, 0.08), transparent);
+      border-color: var(--warn);
+    }
+    .ck-checkbox {
+      width: 28px; height: 28px;
+      border: 2px solid var(--border-bright);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all var(--t-fast);
+      flex-shrink: 0;
+    }
+    .ck-item.checked .ck-checkbox {
+      background: var(--green);
+      border-color: var(--green);
+      color: white;
+    }
+    .ck-item.checked .ck-checkbox::after { content: "✓"; font-weight: 700; }
+
+    .ck-body .num {
+      font-family: var(--mono);
+      font-size: 11px;
+      color: var(--muted);
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .ck-body h4 {
+      font-size: 16px;
+      margin: 0 0 4px;
+      color: var(--text);
+      font-weight: 600;
+    }
+    .ck-body .desc {
+      font-size: 13px;
+      color: var(--muted);
+      margin: 0 0 var(--s-2);
+      line-height: 1.5;
+    }
+    .ck-body .ajuda {
+      font-size: 12px;
+      color: var(--text-2);
+      background: var(--bg-2);
+      border-left: 3px solid var(--accent);
+      padding: var(--s-2) var(--s-3);
+      border-radius: var(--radius-sm);
+      margin-top: var(--s-2);
+      line-height: 1.5;
+      display: none;
+    }
+    .ck-item.expanded .ck-body .ajuda { display: block; }
+
+    .ck-peso {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--muted);
+      text-align: right;
+      flex-shrink: 0;
+    }
+    .ck-peso .badge-critico {
+      display: inline-block;
+      padding: 2px 8px;
+      background: var(--warn-soft);
+      color: var(--warn);
+      border-radius: 999px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      margin-bottom: 4px;
+    }
+    .ck-toggle-help {
+      background: none;
+      border: none;
+      color: var(--accent);
+      font-size: 12px;
+      cursor: pointer;
+      padding: 0;
+      text-decoration: underline;
+      margin-top: var(--s-2);
+    }
+
+    .actions {
+      margin-top: var(--s-6);
+      display: flex;
+      gap: var(--s-3);
+      flex-wrap: wrap;
+    }
+    .actions .btn { flex: 1; min-width: 200px; padding: 14px; font-weight: 700; }
+
+    .insight-block {
+      margin-top: var(--s-5);
+      padding: var(--s-5);
+      background: var(--bg-2);
+      border-left: 4px solid var(--accent);
+      border-radius: var(--radius-sm);
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.6;
+    }
+    .insight-block strong { color: var(--accent); }
+  </style>
+</head>
+<body>
+
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="../dashboard.html">Dashboard</a>
+        <a href="../educacao/fases-wyckoff.html">Educação</a>
+        
+        <a href="../registro/historico.html">Track Record</a>
+      </div>
+      <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+    </div>
+  </nav>
+
+  <header class="ck-hero">
+    <div class="wrap">
+      <h1 class="ck-titulo">Checklist pré-trade</h1>
+      <p class="ck-sub">
+        10 verificações antes de armar a ordem. Item <strong style="color: var(--warn);">crítico</strong>
+        não cumprido = NO-GO automático mesmo com o resto OK. Score 7/10+ = autorização condicional.
+      </p>
+    </div>
+  </header>
+
+  <main class="wrap" style="padding-bottom: var(--s-8);">
+
+    <div class="progress-bar">
+      <div class="progress-text">
+        <p class="l">Itens cumpridos</p>
+        <p class="v"><span id="count">0</span> <span style="color: var(--muted-2); font-weight: 400;">/ 10</span></p>
+      </div>
+      <div class="progress-bar-track">
+        <div class="progress-bar-fill" id="bar-fill" style="width: 0%"></div>
+      </div>
+      <div class="verdict-pill no" id="verdict-pill">⛔ NO-GO</div>
+    </div>
+
+    <div class="ck-list" id="ck-list"></div>
+
+    <div class="actions">
+      <button class="btn btn-primary" id="btn-armar" disabled>🎯 Armar ordem</button>
+      <button class="btn" id="btn-resetar">Resetar checklist</button>
+      
+    </div>
+
+    <div class="insight-block">
+      <strong>Por que checklist?</strong> Trader profissional perde menos pq decide fora do mercado, não dentro.
+      Lista escrita força você a confrontar evidências antes da ordem. Sem checklist, o cérebro mistura
+      torcida (quero ganhar) com análise (vejo isso). Com checklist, separa.
+    </div>
+
+  </main>
+
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">Conteúdo educacional. Resolução CVM 20.</p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+  <script>
+    (function () {
+      'use strict';
+      var APP = window.BertaniApp;
+
+      var CHECKLIST = [
+        {
+          id: 'bias_htf',
+          critico: true,
+          titulo: 'Bias HTF (4H) confirmado',
+          desc: 'Wyckoff phase D/E acc (long) ou D/E dist (short). Nunca operar contra HTF.',
+          ajuda: 'Abra o gráfico no 4H. Identifique a fase Wyckoff atual: acumulação (Fase A→E) ou distribuição (Fase A→E). Operar long em Fase D/E de acumulação. Operar short em Fase D/E de distribuição. Fase B sem Spring/Upthrust = NÃO OPERA, causa ainda construindo.'
+        },
+        {
+          id: 'sweep',
+          critico: true,
+          titulo: 'Sweep recente da liquidez certa',
+          desc: 'SSL varrida (long) ou BSL varrida (short) nas últimas 4-12h. Sem sweep = sem combustível.',
+          ajuda: 'Sweep = preço varre máxima ou mínima recente e volta. Em long: o preço FUROU pra baixo um fundo (SSL = sell-side liquidity), pegou stops dos vendidos, e voltou. Em short: o preço FUROU pra cima um topo (BSL = buy-side liquidity), pegou stops dos comprados, e voltou. Setup ICT clássico = sweep + MSS.'
+        },
+        {
+          id: 'mss',
+          critico: true,
+          titulo: 'MSS confirmado no 15m',
+          desc: 'Market Structure Shift na direção do trade. Quebra de estrutura no LTF após o sweep.',
+          ajuda: 'No 15m, depois do sweep, o preço quebrou um topo recente (MSS bull pra long) ou rompeu um fundo recente (MSS bear pra short). Sem MSS = sweep foi só ruído, sem confirmação de mudança de tendência. MSS é o gatilho que valida o sweep.'
+        },
+        {
+          id: 'poi_aligned',
+          critico: false,
+          titulo: 'POI alinhado (FVG ou OB H1)',
+          desc: 'Entry em FVG bullish/bearish ou Order Block H1 não mitigado.',
+          ajuda: 'POI = Point of Interest. Pode ser um FVG (gap entre velas), Order Block (vela origem do movimento), Breaker, ou BPR. Ideal: entry em retest de POI H1 do lado certo. Sem POI = entry no chute. Com POI = entry no nível que smart money deixou marcado.'
+        },
+        {
+          id: 'rr_2to1',
+          critico: true,
+          titulo: 'R/R mínimo 1:2 até TP1',
+          desc: 'Distância pra primeiro alvo no mínimo 2× a distância pro stop. Aritmética obrigatória.',
+          ajuda: 'Calcule: (distância entre Entry e TP1) ÷ (distância entre Entry e Stop). Resultado < 2 = trade ruim mesmo com 70% win rate. Resultado ≥ 2 = matemática de longo prazo te favorece. Calcule manualmente antes de operar.'
+        },
+        {
+          id: 'kill_zone',
+          critico: false,
+          titulo: 'Em kill zone ativa',
+          desc: 'KZ Abertura 9h30-10h30 BRT, NY Open 13h30-14h30, ou NY PM 15h30-16h30.',
+          ajuda: 'Volume e direcionalidade caem fora dessas janelas. Almoço (12h-13h30 BRT) é cemitério de stops. Pré-fechamento (16h30+) ruído. Operar fora da kill zone aceita uma perda de edge — só faz sentido se setup é excepcional (score 8.5+).'
+        },
+        {
+          id: 'volume_alto',
+          critico: false,
+          titulo: 'Volume confirmando',
+          desc: 'Volume no candle de gatilho ≥ 1,5× MA20. Composite Man presente.',
+          ajuda: 'Volume é a "respiração" do mercado. Candle grande SEM volume = manipulação algorítmica, vai voltar. Candle grande COM volume alto = institucional executando, segue. Use indicador "Volume + MA(20)" no gráfico — basta comparar a vela atual com a média.'
+        },
+        {
+          id: 'anti_narr',
+          critico: false,
+          titulo: 'Filtro Anti-Narrativa OK',
+          desc: 'Notícia não conflita com o bias técnico. Idealmente: divergente alinhado.',
+          ajuda: 'Princípio Wyckoff: Composite Man vende boa notícia no topo, compra notícia ruim no fundo. Se você vai LONG e o IPCA saiu péssimo (bearish) MAS o preço aceitou, isso é divergência narrativa = sinal forte. Se a notícia é confirmatória (bom IPCA + você vai long), também ok. Se contraria + preço cede = NÃO opera.'
+        },
+        {
+          id: 'dd_ok',
+          critico: true,
+          titulo: 'Drawdown diário > -3%',
+          desc: 'Não está em drawdown ≥ -3% no dia. Se já bateu, fechar dia.',
+          ajuda: 'Regra dura. -3% diário é o stop de operador, não o stop de trade. Bateu? Fecha o terminal e estuda. Forçar trade pra recuperar é como apostar dobrando: matematicamente garante ruína no longo prazo. Disciplina aqui é a única edge real do retail.'
+        },
+        {
+          id: 'trades_max',
+          critico: true,
+          titulo: 'Trades hoje < 4 (máx 2 no instrumento)',
+          desc: 'Limite operacional: 2 trades por instrumento, 4 totais por dia.',
+          ajuda: 'Cada trade extra dilui a qualidade média da decisão. 1° trade do dia = melhor setup. 4° trade = quase sempre tédio ou revanche. Sua banca não cresce por número de trades, cresce por qualidade × tamanho da posição × frequência de setups A+.'
+        }
+      ];
+
+      var state = {};
+
+      function render() {
+        var list = document.getElementById('ck-list');
+        list.innerHTML = '';
+        CHECKLIST.forEach(function (item, i) {
+          var checked = !!state[item.id];
+          var div = document.createElement('div');
+          div.className = 'ck-item' + (checked ? ' checked' : '') + (item.critico && !checked ? ' critical-pending' : '');
+          div.innerHTML =
+            '<div class="ck-checkbox"></div>' +
+            '<div class="ck-body">' +
+              '<p class="num">Item ' + String(i + 1).padStart(2, '0') + '</p>' +
+              '<h4>' + item.titulo + '</h4>' +
+              '<p class="desc">' + item.desc + '</p>' +
+              '<button class="ck-toggle-help" type="button" data-id="' + item.id + '">' +
+                (item.criticoExpanded ? '↑ Esconder explicação' : '↓ Ver explicação detalhada') +
+              '</button>' +
+              '<div class="ajuda">' + item.ajuda + '</div>' +
+            '</div>' +
+            '<div class="ck-peso">' +
+              (item.critico ? '<span class="badge-critico">crítico</span><br>' : '') +
+              (item.critico ? 'NO-GO se não' : 'recomendado') +
+            '</div>';
+
+          // Toggle checkbox
+          div.addEventListener('click', function (e) {
+            if (e.target.classList.contains('ck-toggle-help')) return;
+            state[item.id] = !state[item.id];
+            saveState();
+            render();
+            updateProgress();
+          });
+
+          list.appendChild(div);
+        });
+
+        // Help toggles
+        list.querySelectorAll('.ck-toggle-help').forEach(function (btn) {
+          btn.addEventListener('click', function (e) {
+            e.stopPropagation();
+            var parent = btn.closest('.ck-item');
+            parent.classList.toggle('expanded');
+            btn.textContent = parent.classList.contains('expanded') ? '↑ Esconder explicação' : '↓ Ver explicação detalhada';
+          });
+        });
+      }
+
+      function updateProgress() {
+        var count = 0;
+        var criticosFalha = 0;
+        CHECKLIST.forEach(function (item) {
+          if (state[item.id]) count++;
+          else if (item.critico) criticosFalha++;
+        });
+
+        document.getElementById('count').textContent = count;
+        document.getElementById('bar-fill').style.width = (count / 10 * 100) + '%';
+
+        var pill = document.getElementById('verdict-pill');
+        var btnArmar = document.getElementById('btn-armar');
+
+        if (criticosFalha > 0) {
+          pill.className = 'verdict-pill no';
+          pill.textContent = '⛔ NO-GO · ' + criticosFalha + ' crítico' + (criticosFalha > 1 ? 's' : '') + ' faltando';
+          btnArmar.disabled = true;
+        } else if (count >= 8) {
+          pill.className = 'verdict-pill ok';
+          pill.textContent = '🟢 GO';
+          btnArmar.disabled = false;
+        } else if (count >= 7) {
+          pill.className = 'verdict-pill partial';
+          pill.textContent = '🟡 GO Condicional';
+          btnArmar.disabled = false;
+        } else {
+          pill.className = 'verdict-pill no';
+          pill.textContent = '⛔ Score baixo';
+          btnArmar.disabled = true;
+        }
+      }
+
+      function saveState() {
+        try { localStorage.setItem('bertani_checklist_state', JSON.stringify(state)); } catch (e) {}
+      }
+      function loadState() {
+        try {
+          state = JSON.parse(localStorage.getItem('bertani_checklist_state') || '{}');
+          // Limpa state se for de outro dia
+          var savedDay = localStorage.getItem('bertani_checklist_day');
+          var today = new Date().toDateString();
+          if (savedDay !== today) {
+            state = {};
+            localStorage.setItem('bertani_checklist_day', today);
+          }
+        } catch (e) { state = {}; }
+      }
+
+      document.getElementById('btn-resetar').addEventListener('click', function () {
+        if (!confirm('Resetar checklist?')) return;
+        state = {};
+        saveState();
+        render();
+        updateProgress();
+      });
+
+      document.getElementById('btn-armar').addEventListener('click', function () {
+        APP.ui.toast('Setup autorizado. Vai lá e executa com disciplina.', 'success', 4000);
+        // Futuro: redirect pra registro/novo-trade.html com pré-preenchimento
+        setTimeout(function () { window.location.href = '../registro/novo-trade.html'; }, 1200);
+      });
+
+      loadState();
+      render();
+      updateProgress();
+    })();
+  </script>
+</body>
+</html>

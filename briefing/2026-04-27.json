@@ -1,0 +1,73 @@
+{
+  "data": "2026-04-27",
+  "data_extenso": "Segunda-feira, 27 de abril de 2026",
+  "hora_publicacao": "08:32 BRT",
+  "edicao": 1,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Hoje não operei. Publiquei o porquê antes do mercado abrir.",
+    "subtitulo": "Score técnico WIN: 3,5/10. WDO: 3,0/10. Nenhum atinge meu critério mínimo (≥ 6/10). Saber ficar de fora é parte do jogo."
+  },
+  "contexto_macro": {
+    "nivel": "NEUTRAL",
+    "highlights": [
+      "Sem evento macro relevante na agenda BR/US esta segunda",
+      "Focus 8h25: sem alteração relevante nas projeções",
+      "Mercado entrando devagar pós-fim de semana",
+      "Spring no fundo do range diário ainda em construção"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": false,
+      "descricao": "Sem manchete relevante. Filtro em standby."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "fase_wyckoff": "Fase B accumulation",
+      "score": 3.5,
+      "veredito": "AGUARDAR",
+      "viés": "neutro",
+      "racional_publico": "Causa ainda em construção no 4H. Sem MSS recente, sem sweep significativo. Preço no meio de range com baixa volatilidade. Esperar definição.",
+      "niveis_chave": {
+        "PDH": 134680,
+        "PDL": 133940,
+        "ajuste_b3": 134200
+      },
+      "comentario_breve": "Fase B sem gatilho. Aguardar."
+    },
+    {
+      "codigo": "WDO1!",
+      "fase_wyckoff": "Fase B distribution",
+      "score": 3.0,
+      "veredito": "AGUARDAR",
+      "viés": "neutro",
+      "racional_publico": "Lateralidade no 4H. Sem upthrust recente confirmado. Volume baixo no candle de gatilho potencial. Continuar observando.",
+      "niveis_chave": {
+        "PDH": 5022.0,
+        "PDL": 4998.5,
+        "ajuste_b3": 5010.0
+      },
+      "comentario_breve": "Range sem direção clara."
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "08:25", "evento": "Focus BCB", "impacto": "BAIXO", "status": "publicado", "resultado": "sem mudança relevante" }
+  ],
+  "kill_zones_recomendadas": [
+    "Sem janela operacional recomendada hoje. Score insuficiente."
+  ],
+  "regras_do_dia": [
+    "AGUARDAR é a operação correta hoje.",
+    "Reler material da Educação se for usar o tempo.",
+    "Não forçar trade por tédio."
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada de investimento. Risco em derivativos é alto."
+  }
+}
