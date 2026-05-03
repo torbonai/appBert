@@ -37,8 +37,8 @@
       "viés": "long",
       "racional_publico": "WIN está em fase de Reacumulação clássica · caiu de 200k pra 186k em 5 sessões · acumulou volume nos lows · agora a curva de Bias virou COMPRA com MSS confirmado. O dealing range 186.865-200.745 é o terreno do Composite Man esta semana. Long em discount (onde estamos) busca o EQ 193.805 · esse é o trade do método. Se o preço falhar em sustentar acima do PDC 190.085, o setup desinverte e vira armadilha (spring falsa).",
       "niveis_chave": {
-        "PDH": 191670,
-        "PDL": 188500,
+        "PDH": 191035,
+        "PDL": 188305,
         "ajuste_b3": 190628,
         "DR_high": 200745,
         "DR_low": 186865,
@@ -47,13 +47,13 @@
       },
       "ajuste_b3_meta": {
         "data_referencia": "2026-04-30",
-        "fonte": "Fechamento Quinta · sexta foi feriado"
+        "fonte": "Ajuste oficial B3 · candle diário do último pregão (sexta foi feriado)"
       },
       "plano": {
         "direcao": "LONG",
         "entry_zona": "188.500-189.000",
-        "stop": 186700,
-        "stop_pts": 1800,
+        "stop": 186800,
+        "stop_pts": 1700,
         "tp1": 193805,
         "tp1_rr": 3.5,
         "tp1_partial_pct": 50,
@@ -76,23 +76,23 @@
       "viés": "short",
       "racional_publico": "WDO em premium do range com lean bearish · mas Bias Curva v6 ainda SEM SETUP (não confirmou MSS bearish ainda). Premium do DR (short válido se confirmar). DXY recovering globalmente = USDBRL pode reverter o move bearish recente · risco de invalidação rápida. Macro contrário: DXY long bias contradiz o local WDO bear. Operar SOMENTE se Bias virar VENDA + sweep BSL 4.999/5.005 + MSS bearish 15m.",
       "niveis_chave": {
-        "PDH": 5035,
-        "PDL": 4940,
-        "ajuste_b3": 4980,
-        "DR_high": 4999,
+        "PDH": 5035.5,
+        "PDL": 4975,
+        "ajuste_b3": 4992.05,
+        "DR_high": 5035.5,
         "DR_low": 4947.5,
-        "EQ_DR": 4973.25,
-        "OB_bullish_4H": 4940
+        "EQ_DR": 4991.5,
+        "OB_bullish_4H": 4947.5
       },
       "ajuste_b3_meta": {
         "data_referencia": "2026-04-30",
-        "fonte": "Fechamento Quinta · sexta foi feriado"
+        "fonte": "Ajuste oficial B3 · candle diário do último pregão (sexta foi feriado)"
       },
       "plano": {
         "direcao": "SHORT",
-        "entry_zona": "4.995-4.999",
-        "stop": 5008,
-        "stop_pts": 9,
+        "entry_zona": "5.005-5.020",
+        "stop": 5040,
+        "stop_pts": 25,
         "tp1": 4973,
         "tp1_rr": 2.5,
         "tp1_partial_pct": 50,
