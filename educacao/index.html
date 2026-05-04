@@ -148,6 +148,106 @@
 
   <main class="wrap" style="padding-bottom: var(--s-8);">
 
+    <!-- ============ BANNER · CURSO SMART MONEY (TELAPRO+) ============ -->
+    <a href="curso-smart-money.html" class="curso-banner" id="curso-banner" style="display: none; text-decoration: none; color: inherit;">
+      <style>
+        .curso-banner {
+          display: block;
+          margin-top: var(--s-5);
+          margin-bottom: var(--s-2);
+          background: linear-gradient(120deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+          border: 1px solid var(--gold);
+          border-radius: var(--radius);
+          padding: var(--s-5) var(--s-6);
+          position: relative;
+          overflow: hidden;
+          transition: all var(--t-base);
+        }
+        .curso-banner::before {
+          content: ""; position: absolute; inset: 0;
+          background: radial-gradient(600px 200px at 90% 50%, rgba(212, 175, 55, 0.15), transparent 60%);
+          pointer-events: none;
+        }
+        .curso-banner:hover {
+          border-color: var(--gold);
+          background: linear-gradient(120deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.06));
+          transform: translateY(-1px);
+        }
+        .curso-banner-conteudo {
+          display: flex;
+          gap: var(--s-5);
+          align-items: center;
+          position: relative;
+          z-index: 1;
+        }
+        .curso-banner-icone {
+          font-size: 48px;
+          flex-shrink: 0;
+        }
+        .curso-banner-texto h3 {
+          color: var(--gold);
+          font-size: 22px;
+          margin: 0 0 var(--s-1);
+        }
+        .curso-banner-texto p {
+          color: var(--text-2);
+          font-size: 14px;
+          line-height: 1.5;
+          margin: 0;
+        }
+        .curso-banner-tag {
+          display: inline-block;
+          padding: 2px 8px;
+          background: rgba(212, 175, 55, 0.15);
+          border: 1px solid var(--gold);
+          border-radius: 4px;
+          color: var(--gold);
+          font-size: 10px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+          margin-bottom: var(--s-2);
+        }
+        .curso-banner-cta {
+          margin-left: auto;
+          color: var(--gold);
+          font-weight: 600;
+          font-size: 14px;
+          flex-shrink: 0;
+        }
+        @media (max-width: 768px) {
+          .curso-banner-conteudo { flex-direction: column; align-items: flex-start; text-align: left; }
+          .curso-banner-icone { font-size: 36px; }
+          .curso-banner-cta { margin-left: 0; }
+        }
+      </style>
+      <div class="curso-banner-conteudo">
+        <div class="curso-banner-icone">🎓</div>
+        <div class="curso-banner-texto">
+          <span class="curso-banner-tag">⭐ Tela Pro · Curso completo</span>
+          <h3>Smart Money Map · Wyckoff</h3>
+          <p>27 aulas (~6h) cobrindo Wyckoff do zero ao avançado · gravadas pelo Renato. Acesse pela HeroSpark integrada com sua chave Tela Pro.</p>
+        </div>
+        <div class="curso-banner-cta">Acessar curso →</div>
+      </div>
+    </a>
+    <script>
+      // Mostra banner só pra TELAPRO+
+      (function(){
+        function checkAndShow(){
+          const acc = window.BertaniApp && window.BertaniApp.access;
+          if (acc && acc.has(acc.TIER_TELAPRO)) {
+            document.getElementById('curso-banner').style.display = 'block';
+          }
+        }
+        if (document.readyState === 'loading') {
+          document.addEventListener('DOMContentLoaded', function(){ setTimeout(checkAndShow, 100); });
+        } else {
+          setTimeout(checkAndShow, 100);
+        }
+      })();
+    </script>
+
     <div class="filtros">
       <div class="filtro active" data-cat="all">Todos</div>
       <div class="filtro" data-cat="estrutura">Estrutura</div>

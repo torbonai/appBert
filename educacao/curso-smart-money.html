@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Smart Money Map · Curso Wyckoff completo · 27 aulas · acesso Tela Pro Bertani">
+
+  <title>Smart Money Map · Curso Wyckoff · Bertani App</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .crs-hero {
+      padding: var(--s-7) 0 var(--s-5);
+      position: relative;
+    }
+    .crs-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 30% -10%, rgba(212, 175, 55, 0.18), transparent 60%);
+      pointer-events: none;
+    }
+    .crs-hero > * { position: relative; z-index: 1; }
+
+    .crs-eyebrow {
+      font-size: 13px;
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--s-3);
+      font-weight: 700;
+    }
+    .crs-titulo {
+      font-size: 44px;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--s-3);
+      font-weight: 700;
+    }
+    .crs-resumo {
+      font-size: 17px;
+      color: var(--text-2);
+      max-width: 720px;
+      margin: 0 0 var(--s-5);
+      line-height: 1.55;
+    }
+
+    .crs-stats {
+      display: flex;
+      gap: var(--s-6);
+      flex-wrap: wrap;
+      padding: var(--s-4) var(--s-5);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+    }
+    .crs-stat {
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+    .crs-stat-label {
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .crs-stat-value {
+      font-family: var(--mono);
+      font-size: 22px;
+      font-weight: 700;
+      color: var(--gold);
+    }
+
+    .crs-bloco {
+      margin-top: var(--s-7);
+    }
+    .crs-bloco-header {
+      display: flex;
+      align-items: baseline;
+      gap: var(--s-3);
+      margin-bottom: var(--s-4);
+      padding-bottom: var(--s-2);
+      border-bottom: 1px solid var(--border);
+    }
+    .crs-bloco-num {
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--gold);
+      font-weight: 700;
+      letter-spacing: 0.08em;
+    }
+    .crs-bloco-titulo {
+      font-size: 22px;
+      margin: 0;
+      font-weight: 700;
+    }
+    .crs-bloco-sub {
+      margin-left: auto;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .crs-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-3);
+    }
+    @media (max-width: 1024px) {
+      .crs-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 640px) {
+      .crs-grid { grid-template-columns: 1fr; }
+    }
+
+    .crs-aula {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-4);
+      cursor: pointer;
+      transition: all var(--t-base);
+      text-decoration: none;
+      color: var(--text);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-3);
+    }
+    .crs-aula:hover {
+      border-color: var(--gold);
+      transform: translateY(-2px);
+      text-decoration: none;
+      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.08);
+    }
+    .crs-aula-thumb {
+      aspect-ratio: 16/9;
+      background: linear-gradient(135deg, #1a1a1a, #2a2a2a);
+      border-radius: var(--radius-sm);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      gap: var(--s-2);
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(212, 175, 55, 0.3);
+    }
+    .crs-aula-thumb::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.15), transparent 50%);
+      pointer-events: none;
+    }
+    .crs-aula-thumb-num {
+      font-family: var(--mono);
+      font-size: 32px;
+      font-weight: 700;
+      color: var(--gold);
+      letter-spacing: 0.04em;
+      z-index: 1;
+    }
+    .crs-aula-thumb-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 0.12em;
+      color: var(--gold);
+      opacity: 0.7;
+      z-index: 1;
+    }
+    .crs-aula-thumb-play {
+      position: absolute;
+      top: 50%; left: 50%;
+      transform: translate(-50%, -50%);
+      width: 48px;
+      height: 48px;
+      border-radius: 50%;
+      background: rgba(0,0,0,0.6);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      opacity: 0;
+      transition: opacity var(--t-base);
+      z-index: 2;
+    }
+    .crs-aula:hover .crs-aula-thumb-play { opacity: 1; }
+    .crs-aula-thumb-play::after {
+      content: "▶";
+      color: var(--gold);
+      font-size: 18px;
+      margin-left: 3px;
+    }
+
+    .crs-aula-titulo {
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--text);
+      margin: 0;
+      line-height: 1.35;
+      min-height: 38px;
+    }
+    .crs-aula-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: var(--s-2);
+    }
+    .crs-aula-duracao {
+      font-family: var(--mono);
+      font-size: 12px;
+      padding: 3px 8px;
+      background: var(--bg-2);
+      border-radius: 4px;
+      color: var(--text-2);
+    }
+    .crs-aula-status {
+      font-size: 11px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+
+    .crs-cta-final {
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 1px solid var(--gold);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      text-align: center;
+      margin-top: var(--s-7);
+    }
+    .crs-cta-final h3 {
+      font-size: 22px;
+      margin: 0 0 var(--s-2);
+      color: var(--gold);
+    }
+    .crs-cta-final p {
+      color: var(--text-2);
+      max-width: 540px;
+      margin: 0 auto var(--s-4);
+      line-height: 1.55;
+    }
+
+    /* Tier gate · pra quem não é TELAPRO+ */
+    .crs-locked-overlay {
+      display: none;
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 2px dashed var(--gold);
+      border-radius: var(--radius);
+      padding: var(--s-7);
+      text-align: center;
+      margin: var(--s-7) 0;
+    }
+    .crs-locked-overlay h2 {
+      color: var(--gold);
+      font-size: 28px;
+      margin: 0 0 var(--s-3);
+    }
+    .crs-locked-overlay p {
+      color: var(--text-2);
+      max-width: 480px;
+      margin: 0 auto var(--s-4);
+      line-height: 1.55;
+    }
+    body.locked .crs-conteudo { display: none; }
+    body.locked .crs-locked-overlay { display: block; }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/educacao/index.html">Educação</a>
+        <a href="/registro/historico.html">Track Record</a>
+      </div>
+      <a href="/dashboard.html" class="btn">Voltar ao Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="crs-hero">
+    <div class="wrap">
+      <div class="crs-eyebrow">⭐ EXCLUSIVO TELA PRO · CURSO COMPLETO</div>
+      <h1 class="crs-titulo">Smart Money Map · Wyckoff</h1>
+      <p class="crs-resumo">
+        27 aulas (~6h) cobrindo Wyckoff do zero ao avançado · gravadas pelo Renato.
+        A teoria que está por trás de cada briefing · do princípio Oferta/Demanda
+        até as Zonas de Operação aplicadas no WIN/WDO.
+      </p>
+
+      <div class="crs-stats">
+        <div class="crs-stat">
+          <span class="crs-stat-label">Aulas</span>
+          <span class="crs-stat-value">27</span>
+        </div>
+        <div class="crs-stat">
+          <span class="crs-stat-label">Duração total</span>
+          <span class="crs-stat-value">~6h</span>
+        </div>
+        <div class="crs-stat">
+          <span class="crs-stat-label">Plataforma</span>
+          <span class="crs-stat-value" style="color: var(--text); font-size: 16px;">HeroSpark</span>
+        </div>
+        <div class="crs-stat">
+          <span class="crs-stat-label">Acesso</span>
+          <span class="crs-stat-value" style="color: var(--text); font-size: 16px;">Tela Pro+</span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========== TIER GATE OVERLAY (escondido por default · ativado via JS) ========== -->
+  <main class="wrap">
+    <div class="crs-locked-overlay">
+      <h2>🔒 Acesso Tela Pro</h2>
+      <p>O curso Smart Money Map · Wyckoff está disponível pra assinantes Tela Pro (R$ 697/mês) e Elite (R$ 1.997/mês). Inclui 27 aulas, suporte direto e atualizações.</p>
+      <a href="/upgrade.html" class="btn">Fazer upgrade →</a>
+    </div>
+
+    <!-- ========== CONTEÚDO (TELAPRO+) ========== -->
+    <div class="crs-conteudo" style="padding-bottom: var(--s-8);">
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 1 · FUNDAMENTOS                                         -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 01</span>
+          <h2 class="crs-bloco-titulo">Fundamentos · Wyckoff e as 3 Leis</h2>
+          <span class="crs-bloco-sub">5 aulas · ~54 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-1"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 2 · ESTRUTURAS                                          -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 02</span>
+          <h2 class="crs-bloco-titulo">Estruturas · Acumulação e Distribuição</h2>
+          <span class="crs-bloco-sub">2 aulas · ~36 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-2"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 3 · EVENTOS DA FASE A/B                                 -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 03</span>
+          <h2 class="crs-bloco-titulo">Eventos · PS · Clímax · AR · ST</h2>
+          <span class="crs-bloco-sub">6 aulas · ~88 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-3"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 4 · VOLUME                                              -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 04</span>
+          <h2 class="crs-bloco-titulo">Análise de Volume · VSA</h2>
+          <span class="crs-bloco-sub">1 aula · ~21 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-4"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 5 · AGITAÇÃO (Spring/UTAD)                              -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 05</span>
+          <h2 class="crs-bloco-titulo">Agitação · Spring e UTAD</h2>
+          <span class="crs-bloco-sub">3 aulas · ~52 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-5"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 6 · QUEBRA (Markup/Markdown)                            -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 06</span>
+          <h2 class="crs-bloco-titulo">Quebra · Markup e Markdown</h2>
+          <span class="crs-bloco-sub">3 aulas · ~45 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-6"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 7 · ZONAS DE OPERAÇÃO                                   -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 07</span>
+          <h2 class="crs-bloco-titulo">Zonas de Operação · Premium e Discount</h2>
+          <span class="crs-bloco-sub">4 aulas · ~54 min</span>
+        </div>
+        <div class="crs-grid" id="bloco-7"></div>
+      </section>
+
+      <!-- ============================================================ -->
+      <!-- BLOCO 8 · SETUP TÉCNICO                                       -->
+      <!-- ============================================================ -->
+      <section class="crs-bloco">
+        <div class="crs-bloco-header">
+          <span class="crs-bloco-num">BLOCO 08</span>
+          <h2 class="crs-bloco-titulo">Plataforma · Profit + Setups</h2>
+          <span class="crs-bloco-sub">3 aulas · duração a confirmar</span>
+        </div>
+        <div class="crs-grid" id="bloco-8"></div>
+      </section>
+
+      <!-- ========== CTA FINAL ========== -->
+      <section class="crs-cta-final">
+        <h3>Acompanhe seu progresso na HeroSpark</h3>
+        <p>O HeroSpark salva o progresso de cada aula automaticamente. Quando voltar aqui, você vê o que já assistiu marcado.</p>
+        <a href="https://membros.renatobertani.com.br/courses/477437/online_course" target="_blank" rel="noopener" class="btn">
+          Ver progresso na HeroSpark →
+        </a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada de investimento.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+
+  <script>
+    // ========================================================================
+    // CONFIGURAÇÃO DAS 27 AULAS
+    // ========================================================================
+    // Substitua os valores `url:` pelas URLs reais do HeroSpark quando tiver.
+    // Padrão HeroSpark: https://membros.renatobertani.com.br/courses/477437/online_course/lectures/LECTURE_ID
+    // ========================================================================
+
+    const HEROSPARK_BASE = 'https://membros.renatobertani.com.br/courses/477437/online_course';
+
+    const AULAS = [
+      // Bloco 1 · Fundamentos
+      { num: 1,  bloco: 1, titulo: 'Quem foi Richard Wyckoff',                duracao: '09:40', url: HEROSPARK_BASE },
+      { num: 2,  bloco: 1, titulo: 'As 3 Leis Fundamentais de Wyckoff',       duracao: '08:24', url: HEROSPARK_BASE },
+      { num: 3,  bloco: 1, titulo: '1ª Lei · Oferta e Demanda',               duracao: '16:52', url: HEROSPARK_BASE },
+      { num: 4,  bloco: 1, titulo: '2ª Lei · Causa e Consequência',           duracao: '07:42', url: HEROSPARK_BASE },
+      { num: 5,  bloco: 1, titulo: '3ª Lei · Esforço e Resultado',            duracao: '11:50', url: HEROSPARK_BASE },
+
+      // Bloco 2 · Estruturas
+      { num: 6,  bloco: 2, titulo: 'Aula 6 · (a confirmar)',                  duracao: '—',    url: HEROSPARK_BASE },
+      { num: 7,  bloco: 2, titulo: 'O que é distribuição',                    duracao: '18:17', url: HEROSPARK_BASE },
+
+      // Bloco 3 · Eventos Fase A/B
+      { num: 8,  bloco: 3, titulo: 'Parada Preliminar (PS / PSY)',            duracao: '16:16', url: HEROSPARK_BASE },
+      { num: 9,  bloco: 3, titulo: 'Clímax (Selling Climax / Buying Climax)', duracao: '19:08', url: HEROSPARK_BASE },
+      { num: 10, bloco: 3, titulo: 'Reação Automática (AR) · Teoria',         duracao: '17:27', url: HEROSPARK_BASE },
+      { num: 11, bloco: 3, titulo: 'Reação Automática (AR) · Prática',        duracao: '05:20', url: HEROSPARK_BASE },
+      { num: 12, bloco: 3, titulo: 'Secondary Test (ST)',                     duracao: '11:02', url: HEROSPARK_BASE },
+      { num: 13, bloco: 3, titulo: 'ST in B · Teste secundário em B',         duracao: '19:08', url: HEROSPARK_BASE },
+
+      // Bloco 4 · Volume
+      { num: 14, bloco: 4, titulo: 'VSA · Volume Spread Analysis',            duracao: '20:42', url: HEROSPARK_BASE },
+
+      // Bloco 5 · Agitação
+      { num: 15, bloco: 5, titulo: 'Agitação · Parte 1',                      duracao: '10:12', url: HEROSPARK_BASE },
+      { num: 16, bloco: 5, titulo: 'Agitação · Parte 2',                      duracao: '24:14', url: HEROSPARK_BASE },
+      { num: 17, bloco: 5, titulo: 'Agitação · Parte 3',                      duracao: '18:06', url: HEROSPARK_BASE },
+
+      // Bloco 6 · Quebra
+      { num: 18, bloco: 6, titulo: 'Quebra · Parte 1',                        duracao: '15:23', url: HEROSPARK_BASE },
+      { num: 19, bloco: 6, titulo: 'Quebra · Parte 2',                        duracao: '13:30', url: HEROSPARK_BASE },
+      { num: 20, bloco: 6, titulo: 'Quebra · Parte 3',                        duracao: '15:55', url: HEROSPARK_BASE },
+
+      // Bloco 7 · Zonas
+      { num: 21, bloco: 7, titulo: 'Zonas de Operação · Parte 1',             duracao: '13:19', url: HEROSPARK_BASE },
+      { num: 22, bloco: 7, titulo: 'Zonas de Operação · Parte 2',             duracao: '14:05', url: HEROSPARK_BASE },
+      { num: 23, bloco: 7, titulo: 'Zonas de Operação · Parte 3',             duracao: '12:06', url: HEROSPARK_BASE },
+      { num: 24, bloco: 7, titulo: 'Zonas de Operação · Parte 4',             duracao: '14:14', url: HEROSPARK_BASE },
+
+      // Bloco 8 · Plataforma
+      { num: 25, bloco: 8, titulo: 'Configuração Básica Profit',              duracao: '—',    url: HEROSPARK_BASE },
+      { num: 26, bloco: 8, titulo: 'Aula 26 · (a confirmar)',                 duracao: '—',    url: HEROSPARK_BASE },
+      { num: 27, bloco: 8, titulo: 'Aula 27 · (a confirmar)',                 duracao: '—',    url: HEROSPARK_BASE },
+    ];
+
+    // ========================================================================
+    // RENDER
+    // ========================================================================
+    function renderAulas() {
+      AULAS.forEach(aula => {
+        const container = document.getElementById('bloco-' + aula.bloco);
+        if (!container) return;
+
+        const card = document.createElement('a');
+        card.className = 'crs-aula';
+        card.href = aula.url;
+        card.target = '_blank';
+        card.rel = 'noopener';
+        card.innerHTML = `
+          <div class="crs-aula-thumb">
+            <span class="crs-aula-thumb-label">Aula</span>
+            <span class="crs-aula-thumb-num">${String(aula.num).padStart(2, '0')}</span>
+            <div class="crs-aula-thumb-play"></div>
+          </div>
+          <p class="crs-aula-titulo">${aula.titulo}</p>
+          <div class="crs-aula-meta">
+            <span class="crs-aula-duracao">${aula.duracao}</span>
+            <span class="crs-aula-status">Ver na HeroSpark →</span>
+          </div>
+        `;
+        container.appendChild(card);
+      });
+    }
+
+    // ========================================================================
+    // TIER GATE · usa API do app.js (BertaniApp.access)
+    // ========================================================================
+    function checkTier() {
+      const acc = window.BertaniApp && window.BertaniApp.access;
+      if (!acc) {
+        // app.js não carregou · trata como locked por segurança
+        document.body.classList.add('locked');
+        return;
+      }
+      // Libera pra TELAPRO+ (telapro, elite, admin)
+      const liberado = acc.has(acc.TIER_TELAPRO);
+      if (!liberado) {
+        document.body.classList.add('locked');
+      }
+    }
+
+    // ========================================================================
+    // INIT
+    // ========================================================================
+    document.addEventListener('DOMContentLoaded', function() {
+      renderAulas();
+      // Espera 100ms pro app.js carregar tier do localStorage
+      setTimeout(checkTier, 100);
+    });
+  </script>
+
+</body>
+</html>
