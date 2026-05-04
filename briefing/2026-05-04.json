@@ -65,7 +65,7 @@
         "ganho_bruto_tp1_brl": 530,
         "ganho_bruto_tp2_brl": 1166,
         "setup": "Sweep do PDL/SSL 186.865 + MSS bullish 15m · OU pullback 188.500-189.000 com FVG/OB do 15m",
-        "kill_zone": "London Overlap 9h15-10h30 · OU NY Open 13h30-14h30"
+        "kill_zone": "Janela B3 limpa 9h15-10h30 · OU NY Open 10h30-11h30 BRT"
       },
       "comentario_breve": "Setup A+ raro com QUADRUPLE confluence (técnico + spring overnight ES/NAS). Trader experiente arma o pullback ou aguarda sweep + MSS pra entrada precisa."
     },
@@ -104,7 +104,7 @@
         "ganho_bruto_tp1_brl": 660,
         "ganho_bruto_tp2_brl": 1590,
         "setup": "Sweep BSL 4.999/5.005 + MSS bearish 15m · APENAS se Bias virar VENDA",
-        "kill_zone": "NY Open 13h30 (WDO reage forte ao DXY)"
+        "kill_zone": "NY Open 10h30 BRT (WDO reage forte ao DXY)"
       },
       "comentario_breve": "WDO em modo esperar bias · não opere se score abaixo de 6. Aceita 5.000 → potencial long até 5.035 (PDH). Rejeita 5.000 com volume → short setup ativa."
     }
@@ -123,7 +123,7 @@
     },
     {
       "hora_brt": "09:15-10:30",
-      "evento": "🟢 London Overlap · entry preferencial WIN long",
+      "evento": "🟢 Janela B3 limpa · pós-leilão · entry preferencial WIN long",
       "impacto": "—"
     },
     {
@@ -144,14 +144,14 @@
       "impacto": "—"
     },
     {
-      "hora_brt": "13:30-14:30",
+      "hora_brt": "10:30-11:30",
       "evento": "🟢 NY Open · WDO short se confirmar bias bear",
       "impacto": "—"
     }
   ],
   "kill_zones_recomendadas": [
-    "09:15-10:30 BRT · London Overlap · entry preferencial WIN long",
-    "13:30-14:30 BRT · NY Open · WDO short se confirmar bias bear"
+    "09:15-10:30 BRT · Janela B3 limpa (pós-leilão) · entry preferencial WIN long",
+    "10:30-11:30 BRT · NY Open (= 09:30 ET · GMT-4) · WDO short se confirmar bias bear"
   ],
   "regras_do_dia": [
     "Gap UP esperado pelos sprigs ES/NAS overnight · aguardar primeiros 15 min do leilão antes de operar",
