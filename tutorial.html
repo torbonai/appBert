@@ -1,0 +1,531 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Tutorial Bertani · 5 minutos pra entender como usar o app">
+
+  <title>Tutorial · Bertani App · 5 minutos pra entender</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .tut-hero {
+      padding: var(--s-7) 0 var(--s-5);
+      position: relative;
+      text-align: center;
+    }
+    .tut-hero::before {
+      content: "";
+      position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 50% -10%, rgba(41, 98, 255, 0.15), transparent 60%);
+      pointer-events: none;
+    }
+    .tut-hero > * { position: relative; z-index: 1; }
+    .tut-eyebrow {
+      font-size: 13px;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--s-3);
+      font-weight: 600;
+    }
+    .tut-titulo {
+      font-size: 44px;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--s-3);
+      font-weight: 700;
+    }
+    .tut-resumo {
+      font-size: 17px;
+      color: var(--text-2);
+      max-width: 640px;
+      margin: 0 auto;
+      line-height: 1.5;
+    }
+    .tut-tempo {
+      display: inline-flex;
+      align-items: center;
+      gap: var(--s-2);
+      margin-top: var(--s-4);
+      padding: 8px 16px;
+      border-radius: 999px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .tut-secao {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      margin-bottom: var(--s-4);
+      position: relative;
+    }
+    .tut-secao-num {
+      position: absolute;
+      top: var(--s-4);
+      right: var(--s-5);
+      font-family: var(--mono);
+      font-size: 13px;
+      color: var(--muted);
+      letter-spacing: 0.08em;
+    }
+    .tut-secao h2 {
+      font-size: 24px;
+      margin: 0 0 var(--s-2);
+      letter-spacing: -0.01em;
+    }
+    .tut-secao h2 .tut-icone {
+      display: inline-block;
+      width: 36px;
+      height: 36px;
+      border-radius: 10px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      text-align: center;
+      line-height: 36px;
+      margin-right: var(--s-2);
+      font-size: 18px;
+      vertical-align: -8px;
+    }
+    .tut-secao .tut-sub {
+      color: var(--muted);
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--s-4);
+      font-weight: 600;
+    }
+    .tut-secao p {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--text-2);
+      margin: 0 0 var(--s-3);
+    }
+    .tut-secao p strong { color: var(--text); }
+
+    .tut-pilares {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: var(--s-3);
+      margin-top: var(--s-4);
+    }
+    @media (max-width: 768px) {
+      .tut-pilares { grid-template-columns: 1fr; }
+    }
+    .tut-pilar {
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4);
+      border-left: 3px solid var(--accent);
+    }
+    .tut-pilar:nth-child(2) { border-left-color: var(--gold); }
+    .tut-pilar:nth-child(3) { border-left-color: var(--green); }
+    .tut-pilar h3 {
+      font-size: 13px;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      margin: 0 0 var(--s-2);
+      color: var(--accent);
+    }
+    .tut-pilar:nth-child(2) h3 { color: var(--gold); }
+    .tut-pilar:nth-child(3) h3 { color: var(--green); }
+    .tut-pilar p {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-2);
+      margin: 0;
+    }
+
+    .tut-areas {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: var(--s-3);
+      margin-top: var(--s-4);
+    }
+    @media (max-width: 768px) {
+      .tut-areas { grid-template-columns: 1fr; }
+    }
+    .tut-area {
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      padding: var(--s-4);
+      border: 1px solid var(--border);
+    }
+    .tut-area-icone {
+      font-size: 24px;
+      margin-bottom: var(--s-2);
+    }
+    .tut-area h3 {
+      font-size: 16px;
+      margin: 0 0 var(--s-2);
+      color: var(--text);
+    }
+    .tut-area p {
+      font-size: 13px;
+      line-height: 1.55;
+      color: var(--text-2);
+      margin: 0;
+    }
+    .tut-area-tag {
+      display: inline-block;
+      margin-top: var(--s-2);
+      padding: 3px 8px;
+      border-radius: 4px;
+      font-size: 11px;
+      font-family: var(--mono);
+      background: var(--accent-soft);
+      color: var(--accent);
+      border: 1px solid var(--accent);
+    }
+
+    .tut-passo {
+      display: flex;
+      gap: var(--s-3);
+      padding: var(--s-3) 0;
+      border-bottom: 1px solid var(--border);
+    }
+    .tut-passo:last-child { border-bottom: 0; }
+    .tut-passo-bola {
+      flex-shrink: 0;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-family: var(--mono);
+      font-weight: 700;
+      font-size: 14px;
+    }
+    .tut-passo-texto h4 {
+      font-size: 15px;
+      margin: 4px 0 var(--s-1);
+      color: var(--text);
+    }
+    .tut-passo-texto p {
+      margin: 0;
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.55;
+    }
+
+    .tut-callout {
+      background: rgba(41, 98, 255, 0.08);
+      border-left: 3px solid var(--accent);
+      padding: var(--s-3) var(--s-4);
+      border-radius: var(--radius-sm);
+      margin: var(--s-4) 0;
+    }
+    .tut-callout.warn {
+      background: rgba(231, 75, 75, 0.08);
+      border-left-color: var(--warn);
+    }
+    .tut-callout.gold {
+      background: rgba(212, 175, 55, 0.08);
+      border-left-color: var(--gold);
+    }
+    .tut-callout p {
+      margin: 0;
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .tut-callout strong { color: var(--text); }
+
+    .tut-cta {
+      background: linear-gradient(180deg, var(--card), var(--bg-2));
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-6);
+      text-align: center;
+      margin-top: var(--s-6);
+    }
+    .tut-cta h3 {
+      font-size: 20px;
+      margin: 0 0 var(--s-2);
+    }
+    .tut-cta p {
+      color: var(--text-2);
+      max-width: 480px;
+      margin: 0 auto var(--s-4);
+      font-size: 14px;
+      line-height: 1.55;
+    }
+    .tut-cta-btns {
+      display: flex;
+      gap: var(--s-3);
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .tut-checklist {
+      list-style: none;
+      padding: 0;
+      margin: var(--s-3) 0 0;
+    }
+    .tut-checklist li {
+      padding: var(--s-2) 0;
+      border-bottom: 1px solid var(--border);
+      color: var(--text-2);
+      font-size: 14px;
+      line-height: 1.5;
+      display: flex;
+      gap: var(--s-2);
+    }
+    .tut-checklist li:last-child { border-bottom: 0; }
+    .tut-checklist li::before {
+      content: "✓";
+      color: var(--green);
+      font-weight: 700;
+      flex-shrink: 0;
+    }
+    .tut-checklist li.no::before {
+      content: "✕";
+      color: var(--warn);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/educacao/fases-wyckoff.html">Educação</a>
+        <a href="/registro/historico.html">Track Record</a>
+      </div>
+      <a href="/dashboard.html" class="btn">Voltar ao Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <section class="tut-hero">
+    <div class="wrap wrap-narrow">
+      <div class="tut-eyebrow">📚 Onboarding · Bertani App</div>
+      <h1 class="tut-titulo">Como usar o app</h1>
+      <p class="tut-resumo">5 minutos pra entender o que tem dentro, como ler um briefing e tirar o melhor proveito do método sem se perder no caminho.</p>
+      <div class="tut-tempo">⏱ 5 min de leitura · 5 seções</div>
+    </div>
+  </section>
+
+  <!-- ========== CONTEÚDO ========== -->
+  <main class="wrap wrap-narrow" style="padding-bottom: var(--s-8);">
+
+    <!-- ========== [1] BEM-VINDO ========== -->
+    <section class="tut-secao">
+      <span class="tut-secao-num">01 / 05</span>
+      <h2><span class="tut-icone">🦅</span>Bem-vindo ao Bertani</h2>
+      <div class="tut-sub">O que é · pra quem é · 3 pilares</div>
+
+      <p>O Bertani App é a <strong>fábrica de briefing</strong> que o Renato usa pra operar mini-índice (WIN) e mini-dólar (WDO) na B3. Aqui dentro você acessa o mesmo material que ele consulta toda manhã antes do leilão.</p>
+
+      <p>Não é um sinaleiro nem um robô. É um <strong>método auditável</strong> · todo setup vem com racional explicado, score 0-10 e referências aos modelos por trás.</p>
+
+      <p><strong>Pra quem é:</strong> trader que já opera (ou está começando a operar) WIN/WDO no day-trade, quer um norte técnico antes da abertura, e cansou de YouTube de "guru". Não é pra investidor passivo nem pra quem busca trade automatizado.</p>
+
+      <div class="tut-pilares">
+        <div class="tut-pilar">
+          <h3>Wyckoff</h3>
+          <p>Lê fases (acumulação · distribuição · markup · markdown) e identifica o que o Composite Man está fazendo no preço. Base macro do método.</p>
+        </div>
+        <div class="tut-pilar">
+          <h3>ICT 2022</h3>
+          <p>Ferramentas precisas de entrada (FVG, Order Block, Liquidity Sweep, MSS) que mostram <em>onde exatamente</em> entrar dentro da fase Wyckoff.</p>
+        </div>
+        <div class="tut-pilar">
+          <h3>Filtro Anti-Narrativa</h3>
+          <p>Camada que checa se o setup técnico bate com a narrativa macro do dia (DXY, juros, S&P, BCB). Se não bate, score cai · setup é desativado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== [2] COMO ACESSAR ========== -->
+    <section class="tut-secao">
+      <span class="tut-secao-num">02 / 05</span>
+      <h2><span class="tut-icone">🔑</span>Como acessar</h2>
+      <div class="tut-sub">Link único pessoal · sem login · sem senha</div>
+
+      <p>Você recebeu por email um <strong>link com sua chave pessoal</strong> (formato <code>?key=TP_BETA_NNN</code>). Esse link é seu cartão de acesso.</p>
+
+      <ul class="tut-checklist">
+        <li>Abre o link <strong>UMA VEZ</strong> em cada navegador que pretende usar (PC, celular, etc)</li>
+        <li>Depois disso, pode salvar a URL simples (sem o <code>?key=</code>) nos favoritos · vai funcionar normal</li>
+        <li>O acesso fica salvo no navegador via cookie/localStorage · zero senha pra esquecer</li>
+        <li class="no">Não abre em janela <strong>anônima/incógnita</strong> · ela apaga o cookie e cai em modo demo</li>
+        <li class="no">Não compartilha o link com outras pessoas · a chave é pessoal e rastreável</li>
+      </ul>
+
+      <div class="tut-callout warn">
+        <p><strong>Perdeu o link?</strong> Sem drama · responde o email de boas-vindas pedindo reenvio. Sua chave continua a mesma.</p>
+      </div>
+    </section>
+
+    <!-- ========== [3] O QUE TEM DENTRO ========== -->
+    <section class="tut-secao">
+      <span class="tut-secao-num">03 / 05</span>
+      <h2><span class="tut-icone">🗺️</span>O que tem dentro</h2>
+      <div class="tut-sub">4 áreas principais · todas no menu superior</div>
+
+      <div class="tut-areas">
+        <div class="tut-area">
+          <div class="tut-area-icone">🎯</div>
+          <h3>Dashboard</h3>
+          <p>Página inicial · resumo do dia em 30 segundos. Setup principal, score, agenda macro, hard avoids. <strong>Comece sempre por aqui.</strong></p>
+          <span class="tut-area-tag">/dashboard.html</span>
+        </div>
+        <div class="tut-area">
+          <div class="tut-area-icone">📋</div>
+          <h3>Briefing do Dia</h3>
+          <p>Versão completa do briefing · entry, stop, alvos, racional técnico, narrativa macro. Acessa pelo botão "Ver briefing completo".</p>
+          <span class="tut-area-tag">/briefing/do-dia.html</span>
+        </div>
+        <div class="tut-area">
+          <div class="tut-area-icone">📚</div>
+          <h3>Educação</h3>
+          <p>Biblioteca dos modelos do método. 8+ modelos ICT, 5 fases Wyckoff, correlação juros, anti-narrativa. Vale ler aos poucos.</p>
+          <span class="tut-area-tag">/educacao/index.html</span>
+        </div>
+        <div class="tut-area">
+          <div class="tut-area-icone">📊</div>
+          <h3>Track Record</h3>
+          <p>Histórico público dos setups publicados nos briefings. Win rate, R:R médio, drawdown · prova social do método.</p>
+          <span class="tut-area-tag">/registro/historico.html</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== [4] COMO LER UM BRIEFING ========== -->
+    <section class="tut-secao">
+      <span class="tut-secao-num">04 / 05</span>
+      <h2><span class="tut-icone">🔍</span>Como ler um briefing</h2>
+      <div class="tut-sub">A anatomia · 5 elementos pra olhar na ordem</div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">1</div>
+        <div class="tut-passo-texto">
+          <h4>Manchete do dia</h4>
+          <p>Frase de abertura no topo · resume o vento do dia em 1 linha. Ex: <em>"Reacumulação WIN · Spring ES/NAS overnight · vento favorável"</em>. Se a manchete fala em "vento contra" ou "macro mixed", já liga o radar.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">2</div>
+        <div class="tut-passo-texto">
+          <h4>Agenda macro</h4>
+          <p>Lista de eventos do dia com horários e impacto (BAIXA · MÉDIA · ALTA). PMI, Focus, FOMC, NFP, Copom · ±60 min do evento é janela suja, evita operar.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">3</div>
+        <div class="tut-passo-texto">
+          <h4>WIN1! e WDO1!</h4>
+          <p>Os 2 ativos que o briefing cobre. Cada um vem com: <strong>Bias</strong> (LONG · SHORT · NEUTRAL), <strong>Score</strong> (0-10), <strong>Veredito</strong> (GO · GO_CONDICIONAL · AGUARDAR). Score abaixo de 6 = setup fraco · não opera. Score 7-8 = bom · 9-10 = A+ raro.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">4</div>
+        <div class="tut-passo-texto">
+          <h4>Setup completo (se score ≥ 6)</h4>
+          <p>Entry zone, stop loss, TP1 e TP2. Sempre vem com R:R calculado e racional ("por que esse setup faz sentido hoje"). Se for "AGUARDAR", você só vê o racional · sem números · porque o método não inventa setup.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">5</div>
+        <div class="tut-passo-texto">
+          <h4>Hard avoids</h4>
+          <p>Janelas do dia em que NÃO se opera · leilão de abertura (9h00-9h25 BR), almoço NY (11h45-13h30), ±60min de evento macro. Respeitar isso protege de noise.</p>
+        </div>
+      </div>
+
+      <div class="tut-callout gold">
+        <p><strong>"AGUARDAR" não é fraqueza.</strong> O método publica veredito honesto. Em ~30% dos dias o setup é "AGUARDAR" porque a confluência não fechou. Essa é a parte mais valiosa do briefing · ela te impede de operar lixo.</p>
+      </div>
+    </section>
+
+    <!-- ========== [5] BOAS PRÁTICAS ========== -->
+    <section class="tut-secao">
+      <span class="tut-secao-num">05 / 05</span>
+      <h2><span class="tut-icone">⚖️</span>Boas práticas</h2>
+      <div class="tut-sub">5 regras que separam recruta de trader experiente</div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">1</div>
+        <div class="tut-passo-texto">
+          <h4>Risco fixo de 1% por trade</h4>
+          <p>Não muda esse número. Mesmo em setup A+ score 9. A consistência vem do tamanho ser igual · não de "apostar mais quando sente que vai dar".</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">2</div>
+        <div class="tut-passo-texto">
+          <h4>Máximo 2 trades por dia</h4>
+          <p>Bertani opera no máximo 2 setups/dia. Se atingiu meta (TP1 + TP2), encerra · não força mais um. Se levou stop em 2, encerra também · não tenta "vingar".</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">3</div>
+        <div class="tut-passo-texto">
+          <h4>Respeita o "AGUARDAR"</h4>
+          <p>Se o briefing diz AGUARDAR, você não opera o ativo naquele dia. Resista a tentação de "olhar o gráfico e ver se vai". Confiança no sistema.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">4</div>
+        <div class="tut-passo-texto">
+          <h4>Primeiros 15 min do leilão · fora</h4>
+          <p>09:00-09:15 BRT é confusão pura · gaps, false breakouts, slippage. Espera o leilão "respirar" antes de procurar entrada. London Overlap (09:15-10:30) é janela limpa.</p>
+        </div>
+      </div>
+
+      <div class="tut-passo">
+        <div class="tut-passo-bola">5</div>
+        <div class="tut-passo-texto">
+          <h4>Feedback é ouro</h4>
+          <p>Você é beta tester · seu input molda o produto final. Setup confuso? Texto difícil? Bug? Conta pro Rafa via WhatsApp ou pelo formulário de feedback. Resposta em até 24h.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CTA FINAL ========== -->
+    <section class="tut-cta">
+      <h3>Tutorial concluído ✅</h3>
+      <p>Próximo passo · volta pro dashboard, lê o briefing de hoje com olhar treinado e, se for dia de operar, monta o trade com a calma de quem entende a anatomia.</p>
+      <div class="tut-cta-btns">
+        <a href="/dashboard.html" class="btn">Ir pro Dashboard</a>
+        <a href="/educacao/index.html" class="btn btn-secondary">Explorar Educação</a>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada de investimento.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="assets/js/app.js"></script>
+</body>
+</html>
