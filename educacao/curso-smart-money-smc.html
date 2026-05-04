@@ -3,9 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Smart Money Map · Curso Wyckoff completo · 27 aulas · acesso Tela Pro Bertani">
+  <meta name="description" content="Smart Money Map · SMC · 13 aulas Smart Money Concepts ICT 2022 · acesso Tela Pro Bertani">
 
-  <title>Smart Money Map · Curso Wyckoff · Bertani App</title>
+  <title>Smart Money Map · SMC · Curso ICT · Bertani App</title>
   <link rel="stylesheet" href="../assets/css/style.css">
   <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
 
@@ -16,14 +16,14 @@
     }
     .crs-hero::before {
       content: ""; position: absolute; inset: 0;
-      background: radial-gradient(900px 350px at 30% -10%, rgba(212, 175, 55, 0.18), transparent 60%);
+      background: radial-gradient(900px 350px at 30% -10%, rgba(41, 98, 255, 0.18), transparent 60%);
       pointer-events: none;
     }
     .crs-hero > * { position: relative; z-index: 1; }
 
     .crs-eyebrow {
       font-size: 13px;
-      color: var(--gold);
+      color: var(--accent);
       text-transform: uppercase;
       letter-spacing: 0.08em;
       margin-bottom: var(--s-3);
@@ -68,7 +68,7 @@
       font-family: var(--mono);
       font-size: 22px;
       font-weight: 700;
-      color: var(--gold);
+      color: var(--accent);
     }
 
     .crs-bloco {
@@ -85,7 +85,7 @@
     .crs-bloco-num {
       font-family: var(--mono);
       font-size: 13px;
-      color: var(--gold);
+      color: var(--accent);
       font-weight: 700;
       letter-spacing: 0.08em;
     }
@@ -126,10 +126,10 @@
       gap: var(--s-3);
     }
     .crs-aula:hover {
-      border-color: var(--gold);
+      border-color: var(--accent);
       transform: translateY(-2px);
       text-decoration: none;
-      box-shadow: 0 8px 24px rgba(212, 175, 55, 0.08);
+      box-shadow: 0 8px 24px rgba(41, 98, 255, 0.10);
     }
     .crs-aula-thumb {
       aspect-ratio: 16/9;
@@ -142,19 +142,19 @@
       gap: var(--s-2);
       position: relative;
       overflow: hidden;
-      border: 1px solid rgba(212, 175, 55, 0.3);
+      border: 1px solid rgba(41, 98, 255, 0.3);
     }
     .crs-aula-thumb::before {
       content: "";
       position: absolute; inset: 0;
-      background: radial-gradient(circle at 30% 30%, rgba(212, 175, 55, 0.15), transparent 50%);
+      background: radial-gradient(circle at 30% 30%, rgba(41, 98, 255, 0.18), transparent 50%);
       pointer-events: none;
     }
     .crs-aula-thumb-num {
       font-family: var(--mono);
       font-size: 32px;
       font-weight: 700;
-      color: var(--gold);
+      color: var(--accent);
       letter-spacing: 0.04em;
       z-index: 1;
     }
@@ -162,8 +162,8 @@
       font-size: 10px;
       text-transform: uppercase;
       letter-spacing: 0.12em;
-      color: var(--gold);
-      opacity: 0.7;
+      color: var(--accent);
+      opacity: 0.8;
       z-index: 1;
     }
     .crs-aula-thumb-play {
@@ -184,7 +184,7 @@
     .crs-aula:hover .crs-aula-thumb-play { opacity: 1; }
     .crs-aula-thumb-play::after {
       content: "▶";
-      color: var(--gold);
+      color: var(--accent);
       font-size: 18px;
       margin-left: 3px;
     }
@@ -220,7 +220,7 @@
 
     .crs-cta-final {
       background: linear-gradient(180deg, var(--card), var(--bg-2));
-      border: 1px solid var(--gold);
+      border: 1px solid var(--accent);
       border-radius: var(--radius);
       padding: var(--s-6);
       text-align: center;
@@ -229,7 +229,7 @@
     .crs-cta-final h3 {
       font-size: 22px;
       margin: 0 0 var(--s-2);
-      color: var(--gold);
+      color: var(--accent);
     }
     .crs-cta-final p {
       color: var(--text-2);
@@ -238,7 +238,43 @@
       line-height: 1.55;
     }
 
-    /* Tier gate · pra quem não é TELAPRO+ */
+    /* Mapa modelo→aula */
+    .crs-mapa {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      margin-top: var(--s-6);
+    }
+    .crs-mapa h3 {
+      font-size: 16px;
+      margin: 0 0 var(--s-3);
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-weight: 600;
+    }
+    .crs-mapa table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 13px;
+    }
+    .crs-mapa th, .crs-mapa td {
+      padding: var(--s-2) var(--s-3);
+      text-align: left;
+      border-bottom: 1px solid var(--border);
+    }
+    .crs-mapa th {
+      color: var(--muted);
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+      font-size: 11px;
+    }
+    .crs-mapa td a { color: var(--accent); text-decoration: none; }
+    .crs-mapa td a:hover { text-decoration: underline; }
+
+    /* Tier gate */
     .crs-locked-overlay {
       display: none;
       background: linear-gradient(180deg, var(--card), var(--bg-2));
@@ -285,21 +321,21 @@
   <header class="crs-hero">
     <div class="wrap">
       <div class="crs-eyebrow">⭐ EXCLUSIVO TELA PRO · CURSO COMPLETO</div>
-      <h1 class="crs-titulo">Smart Money Map · Wyckoff</h1>
+      <h1 class="crs-titulo">Smart Money Map · SMC</h1>
       <p class="crs-resumo">
-        27 aulas (~6h) cobrindo Wyckoff do zero ao avançado · gravadas pelo Renato.
-        A teoria que está por trás de cada briefing · do princípio Oferta/Demanda
-        até as Zonas de Operação aplicadas no WIN/WDO.
+        13 aulas (~3h) cobrindo Smart Money Concepts (ICT 2022) · gravadas pelo Renato.
+        FVG, Order Block, BoS, CHoCH, Liquidity, Premium/Discount · todas as ferramentas
+        de timing fino que aparecem no briefing diário.
       </p>
 
       <div class="crs-stats">
         <div class="crs-stat">
           <span class="crs-stat-label">Aulas</span>
-          <span class="crs-stat-value">27</span>
+          <span class="crs-stat-value">13</span>
         </div>
         <div class="crs-stat">
           <span class="crs-stat-label">Duração total</span>
-          <span class="crs-stat-value">~6h</span>
+          <span class="crs-stat-value">~3h</span>
         </div>
         <div class="crs-stat">
           <span class="crs-stat-label">Plataforma</span>
@@ -313,11 +349,11 @@
     </div>
   </header>
 
-  <!-- ========== TIER GATE OVERLAY (escondido por default · ativado via JS) ========== -->
+  <!-- ========== TIER GATE OVERLAY ========== -->
   <main class="wrap">
     <div class="crs-locked-overlay">
       <h2>🔒 Acesso Tela Pro</h2>
-      <p>O curso Smart Money Map · Wyckoff está disponível pra assinantes Tela Pro (R$ 697/mês) e Elite (R$ 1.997/mês). Inclui 27 aulas, suporte direto e atualizações.</p>
+      <p>O curso Smart Money Map · SMC está disponível pra assinantes Tela Pro (R$ 697/mês) e Elite (R$ 1.997/mês). Inclui as 13 aulas, suporte direto e atualizações.</p>
       <a href="/upgrade.html" class="btn">Fazer upgrade →</a>
     </div>
 
@@ -330,101 +366,128 @@
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 01</span>
-          <h2 class="crs-bloco-titulo">Fundamentos · Wyckoff e as 3 Leis</h2>
-          <span class="crs-bloco-sub">5 aulas · ~54 min</span>
+          <h2 class="crs-bloco-titulo">Fundamentos · Estrutura de Mercado</h2>
+          <span class="crs-bloco-sub">2 aulas · base do método</span>
         </div>
         <div class="crs-grid" id="bloco-1"></div>
       </section>
 
       <!-- ============================================================ -->
-      <!-- BLOCO 2 · ESTRUTURAS                                          -->
+      <!-- BLOCO 2 · LIQUIDEZ E IMBALANCE                                -->
       <!-- ============================================================ -->
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 02</span>
-          <h2 class="crs-bloco-titulo">Estruturas · Acumulação e Distribuição</h2>
-          <span class="crs-bloco-sub">2 aulas · ~36 min</span>
+          <h2 class="crs-bloco-titulo">FVG, Imbalance e Liquidez</h2>
+          <span class="crs-bloco-sub">2 aulas · zonas-chave</span>
         </div>
         <div class="crs-grid" id="bloco-2"></div>
       </section>
 
       <!-- ============================================================ -->
-      <!-- BLOCO 3 · EVENTOS DA FASE A/B                                 -->
+      <!-- BLOCO 3 · BoS / CHoCH                                         -->
       <!-- ============================================================ -->
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 03</span>
-          <h2 class="crs-bloco-titulo">Eventos · PS · Clímax · AR · ST</h2>
-          <span class="crs-bloco-sub">6 aulas · ~88 min</span>
+          <h2 class="crs-bloco-titulo">Quebras de estrutura · BoS e CHoCH</h2>
+          <span class="crs-bloco-sub">3 aulas · timing direcional</span>
         </div>
         <div class="crs-grid" id="bloco-3"></div>
       </section>
 
       <!-- ============================================================ -->
-      <!-- BLOCO 4 · VOLUME                                              -->
+      <!-- BLOCO 4 · ORDER BLOCK                                         -->
       <!-- ============================================================ -->
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 04</span>
-          <h2 class="crs-bloco-titulo">Análise de Volume · VSA</h2>
-          <span class="crs-bloco-sub">1 aula · ~21 min</span>
+          <h2 class="crs-bloco-titulo">Order Block</h2>
+          <span class="crs-bloco-sub">2 aulas · zonas institucionais</span>
         </div>
         <div class="crs-grid" id="bloco-4"></div>
       </section>
 
       <!-- ============================================================ -->
-      <!-- BLOCO 5 · AGITAÇÃO (Spring/UTAD)                              -->
+      <!-- BLOCO 5 · P&D · PISCINAS DE LIQUIDEZ                          -->
       <!-- ============================================================ -->
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 05</span>
-          <h2 class="crs-bloco-titulo">Agitação · Spring e UTAD</h2>
-          <span class="crs-bloco-sub">3 aulas · ~52 min</span>
+          <h2 class="crs-bloco-titulo">Premium/Discount e Piscinas de Liquidez</h2>
+          <span class="crs-bloco-sub">2 aulas · onde operar</span>
         </div>
         <div class="crs-grid" id="bloco-5"></div>
       </section>
 
       <!-- ============================================================ -->
-      <!-- BLOCO 6 · QUEBRA (Markup/Markdown)                            -->
+      <!-- BLOCO 6 · OPERACIONALIZAÇÃO                                   -->
       <!-- ============================================================ -->
       <section class="crs-bloco">
         <div class="crs-bloco-header">
           <span class="crs-bloco-num">BLOCO 06</span>
-          <h2 class="crs-bloco-titulo">Quebra · Markup e Markdown</h2>
-          <span class="crs-bloco-sub">3 aulas · ~45 min</span>
+          <h2 class="crs-bloco-titulo">Operacionalização e Volume Profile</h2>
+          <span class="crs-bloco-sub">2 aulas · execução prática</span>
         </div>
         <div class="crs-grid" id="bloco-6"></div>
       </section>
 
-      <!-- ============================================================ -->
-      <!-- BLOCO 7 · ZONAS DE OPERAÇÃO                                   -->
-      <!-- ============================================================ -->
-      <section class="crs-bloco">
-        <div class="crs-bloco-header">
-          <span class="crs-bloco-num">BLOCO 07</span>
-          <h2 class="crs-bloco-titulo">Zonas de Operação · Premium e Discount</h2>
-          <span class="crs-bloco-sub">4 aulas · ~54 min</span>
-        </div>
-        <div class="crs-grid" id="bloco-7"></div>
-      </section>
-
-      <!-- ============================================================ -->
-      <!-- BLOCO 8 · SETUP TÉCNICO                                       -->
-      <!-- ============================================================ -->
-      <section class="crs-bloco">
-        <div class="crs-bloco-header">
-          <span class="crs-bloco-num">BLOCO 08</span>
-          <h2 class="crs-bloco-titulo">Extras · Configuração de plataforma</h2>
-          <span class="crs-bloco-sub">3 aulas · setup técnico Profit</span>
-        </div>
-        <div class="crs-grid" id="bloco-8"></div>
+      <!-- ========== MAPA · MODELO BIBLIOTECA → AULA SMC ========== -->
+      <section class="crs-mapa">
+        <h3>📍 Mapa · cada modelo da biblioteca → aula relacionada</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>Quando o briefing menciona...</th>
+              <th>Aula recomendada</th>
+              <th>Modelo da biblioteca</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>FVG · Imbalance · Nested FVG</td>
+              <td>Aula 02 · Fair Value Gap</td>
+              <td><a href="modelos/fvg-simples.html">FVG simples</a> · <a href="modelos/nested-fvg.html">Nested FVG</a></td>
+            </tr>
+            <tr>
+              <td>BoS · Quebra estrutural</td>
+              <td>Aula 04 · BoS</td>
+              <td><a href="modelos/breaker-block.html">Breaker Block</a></td>
+            </tr>
+            <tr>
+              <td>CHoCH · MSS</td>
+              <td>Aulas 05 e 06 · CHoCH 1 e 2</td>
+              <td><a href="modelos/mss-pos-sweep.html">MSS pós-sweep</a></td>
+            </tr>
+            <tr>
+              <td>Order Block · OB</td>
+              <td>Aulas 07 e 08 · OB 1 e 2</td>
+              <td><a href="modelos/order-block-h1.html">Order Block H1</a></td>
+            </tr>
+            <tr>
+              <td>P&D · Premium · Discount</td>
+              <td>Aula 09 · P&D</td>
+              <td><a href="modelos/dealing-range.html">Dealing Range</a></td>
+            </tr>
+            <tr>
+              <td>SSL · BSL · Sweep · Liquidity Run</td>
+              <td>Aulas 03 e 10 · Liquidez</td>
+              <td><a href="modelos/liquidity-runs.html">Liquidity Runs</a> · <a href="modelos/ssl-bsl.html">SSL/BSL</a></td>
+            </tr>
+            <tr>
+              <td>Volume Profile · POC · Value Area</td>
+              <td>Aula 12 · Volume Profile</td>
+              <td><a href="modelos/volume-profile.html">Volume Profile</a></td>
+            </tr>
+          </tbody>
+        </table>
       </section>
 
       <!-- ========== CTA FINAL ========== -->
       <section class="crs-cta-final">
         <h3>Acompanhe seu progresso na HeroSpark</h3>
-        <p>O HeroSpark salva o progresso de cada aula automaticamente. Quando voltar aqui, você vê o que já assistiu marcado.</p>
-        <a href="https://membros.renatobertani.com.br/courses/477437/online_course" target="_blank" rel="noopener" class="btn">
+        <p>O HeroSpark salva o progresso de cada aula automaticamente. Quando voltar aqui, vê o que já assistiu marcado.</p>
+        <a href="https://membros.renatobertani.com.br" target="_blank" rel="noopener" class="btn">
           Ver progresso na HeroSpark →
         </a>
       </section>
@@ -447,57 +510,36 @@
 
   <script>
     // ========================================================================
-    // CONFIGURAÇÃO DAS 27 AULAS
-    // ========================================================================
-    // Substitua os valores `url:` pelas URLs reais do HeroSpark quando tiver.
-    // Padrão HeroSpark: https://membros.renatobertani.com.br/courses/477437/online_course/lectures/LECTURE_ID
+    // CONFIGURAÇÃO DAS 13 AULAS · CURSO SMC
     // ========================================================================
 
-    const HEROSPARK_BASE = 'https://membros.renatobertani.com.br/courses/477437/online_course';
+    const HEROSPARK_BASE = 'https://membros.renatobertani.com.br';
 
     const AULAS = [
       // Bloco 1 · Fundamentos
-      { num: 1,  bloco: 1, titulo: 'Quem foi Richard Wyckoff',                duracao: '09:40', url: HEROSPARK_BASE },
-      { num: 2,  bloco: 1, titulo: 'As 3 Leis Fundamentais de Wyckoff',       duracao: '08:24', url: HEROSPARK_BASE },
-      { num: 3,  bloco: 1, titulo: '1ª Lei · Oferta e Demanda',               duracao: '16:52', url: HEROSPARK_BASE },
-      { num: 4,  bloco: 1, titulo: '2ª Lei · Causa e Consequência',           duracao: '07:42', url: HEROSPARK_BASE },
-      { num: 5,  bloco: 1, titulo: '3ª Lei · Esforço e Resultado',            duracao: '11:50', url: HEROSPARK_BASE },
+      { num: 0,  bloco: 1, titulo: 'Introdução ao SMC',                          duracao: '—',    url: HEROSPARK_BASE },
+      { num: 1,  bloco: 1, titulo: 'Ondas de Impulso e Retração',                duracao: '—',    url: HEROSPARK_BASE },
 
-      // Bloco 2 · Estruturas
-      { num: 6,  bloco: 2, titulo: 'O que é acumulação',                      duracao: '—',    url: HEROSPARK_BASE },
-      { num: 7,  bloco: 2, titulo: 'O que é distribuição',                    duracao: '18:17', url: HEROSPARK_BASE },
+      // Bloco 2 · FVG e Liquidez
+      { num: 2,  bloco: 2, titulo: 'Fair Value Gap e Imbalance',                 duracao: '—',    url: HEROSPARK_BASE },
+      { num: 3,  bloco: 2, titulo: 'Internal Range Liquidity e External Range', duracao: '—',    url: HEROSPARK_BASE },
 
-      // Bloco 3 · Eventos Fase A/B
-      { num: 8,  bloco: 3, titulo: 'Parada Preliminar (PS / PSY)',            duracao: '16:16', url: HEROSPARK_BASE },
-      { num: 9,  bloco: 3, titulo: 'Clímax (Selling Climax / Buying Climax)', duracao: '19:08', url: HEROSPARK_BASE },
-      { num: 10, bloco: 3, titulo: 'Reação Automática (AR) · Teoria',         duracao: '17:27', url: HEROSPARK_BASE },
-      { num: 11, bloco: 3, titulo: 'Reação Automática (AR) · Prática',        duracao: '05:20', url: HEROSPARK_BASE },
-      { num: 12, bloco: 3, titulo: 'Secondary Test (ST)',                     duracao: '11:02', url: HEROSPARK_BASE },
-      { num: 13, bloco: 3, titulo: 'ST in B · Teste secundário em B',         duracao: '19:08', url: HEROSPARK_BASE },
+      // Bloco 3 · BoS / CHoCH
+      { num: 4,  bloco: 3, titulo: 'BoS · Break of Structure',                   duracao: '—',    url: HEROSPARK_BASE },
+      { num: 5,  bloco: 3, titulo: 'CHoCH · Parte 1',                            duracao: '—',    url: HEROSPARK_BASE },
+      { num: 6,  bloco: 3, titulo: 'CHoCH · Parte 2',                            duracao: '—',    url: HEROSPARK_BASE },
 
-      // Bloco 4 · Volume
-      { num: 14, bloco: 4, titulo: 'VSA · Volume Spread Analysis',            duracao: '20:42', url: HEROSPARK_BASE },
+      // Bloco 4 · Order Block
+      { num: 7,  bloco: 4, titulo: 'Order Block · Parte 1',                      duracao: '—',    url: HEROSPARK_BASE },
+      { num: 8,  bloco: 4, titulo: 'Order Block · Parte 2',                      duracao: '—',    url: HEROSPARK_BASE },
 
-      // Bloco 5 · Agitação
-      { num: 15, bloco: 5, titulo: 'Agitação · Parte 1',                      duracao: '10:12', url: HEROSPARK_BASE },
-      { num: 16, bloco: 5, titulo: 'Agitação · Parte 2',                      duracao: '24:14', url: HEROSPARK_BASE },
-      { num: 17, bloco: 5, titulo: 'Agitação · Parte 3',                      duracao: '18:06', url: HEROSPARK_BASE },
+      // Bloco 5 · P&D · Liquidez
+      { num: 9,  bloco: 5, titulo: 'P&D · Premium e Discount',                   duracao: '—',    url: HEROSPARK_BASE },
+      { num: 10, bloco: 5, titulo: 'Piscinas de Liquidez',                       duracao: '—',    url: HEROSPARK_BASE },
 
-      // Bloco 6 · Quebra
-      { num: 18, bloco: 6, titulo: 'Quebra · Parte 1',                        duracao: '15:23', url: HEROSPARK_BASE },
-      { num: 19, bloco: 6, titulo: 'Quebra · Parte 2',                        duracao: '13:30', url: HEROSPARK_BASE },
-      { num: 20, bloco: 6, titulo: 'Quebra · Parte 3',                        duracao: '15:55', url: HEROSPARK_BASE },
-
-      // Bloco 7 · Zonas
-      { num: 21, bloco: 7, titulo: 'Zonas de Operação · Parte 1',             duracao: '13:19', url: HEROSPARK_BASE },
-      { num: 22, bloco: 7, titulo: 'Zonas de Operação · Parte 2',             duracao: '14:05', url: HEROSPARK_BASE },
-      { num: 23, bloco: 7, titulo: 'Zonas de Operação · Parte 3',             duracao: '12:06', url: HEROSPARK_BASE },
-      { num: 24, bloco: 7, titulo: 'Zonas de Operação · Parte 4',             duracao: '14:14', url: HEROSPARK_BASE },
-
-      // Bloco 8 · Plataforma
-      { num: 25, bloco: 8, titulo: 'Configuração Básica Profit',              duracao: '—',    url: HEROSPARK_BASE },
-      { num: 26, bloco: 8, titulo: 'Aula 26 · (a confirmar)',                 duracao: '—',    url: HEROSPARK_BASE },
-      { num: 27, bloco: 8, titulo: 'Aula 27 · (a confirmar)',                 duracao: '—',    url: HEROSPARK_BASE },
+      // Bloco 6 · Operacionalização
+      { num: 11, bloco: 6, titulo: 'Operacionalização',                          duracao: '—',    url: HEROSPARK_BASE },
+      { num: 12, bloco: 6, titulo: 'Volume Profile · A ferramenta que mudou meu trading', duracao: '—', url: HEROSPARK_BASE },
     ];
 
     // ========================================================================
@@ -535,11 +577,9 @@
     function checkTier() {
       const acc = window.BertaniApp && window.BertaniApp.access;
       if (!acc) {
-        // app.js não carregou · trata como locked por segurança
         document.body.classList.add('locked');
         return;
       }
-      // Libera pra TELAPRO+ (telapro, elite, admin)
       const liberado = acc.has(acc.TIER_TELAPRO);
       if (!liberado) {
         document.body.classList.add('locked');
@@ -551,7 +591,6 @@
     // ========================================================================
     document.addEventListener('DOMContentLoaded', function() {
       renderAulas();
-      // Espera 100ms pro app.js carregar tier do localStorage
       setTimeout(checkTier, 100);
     });
   </script>

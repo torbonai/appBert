@@ -148,96 +148,184 @@
 
   <main class="wrap" style="padding-bottom: var(--s-8);">
 
-    <!-- ============ BANNER · CURSO SMART MONEY (TELAPRO+) ============ -->
-    <a href="curso-smart-money.html" class="curso-banner" id="curso-banner" style="display: none; text-decoration: none; color: inherit;">
+    <!-- ============ BANNER · CURSOS SMART MONEY (TELAPRO+) ============ -->
+    <div class="cursos-section" id="cursos-section" style="display: none;">
       <style>
-        .curso-banner {
-          display: block;
+        .cursos-section {
           margin-top: var(--s-5);
           margin-bottom: var(--s-2);
-          background: linear-gradient(120deg, rgba(212, 175, 55, 0.12), rgba(212, 175, 55, 0.04));
+        }
+        .cursos-header {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          gap: var(--s-3);
+          margin-bottom: var(--s-3);
+          flex-wrap: wrap;
+        }
+        .cursos-header h2 {
+          font-size: 18px;
+          margin: 0;
+          color: var(--text);
+        }
+        .cursos-header h2 span {
+          color: var(--gold);
+        }
+        .cursos-header .tag {
+          display: inline-block;
+          padding: 3px 10px;
+          background: rgba(212, 175, 55, 0.15);
           border: 1px solid var(--gold);
+          border-radius: 999px;
+          color: var(--gold);
+          font-size: 11px;
+          font-weight: 700;
+          text-transform: uppercase;
+          letter-spacing: 0.08em;
+        }
+        .cursos-grid {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          gap: var(--s-3);
+        }
+        @media (max-width: 768px) {
+          .cursos-grid { grid-template-columns: 1fr; }
+        }
+        .curso-card {
+          display: block;
+          background: linear-gradient(120deg, rgba(212, 175, 55, 0.08), rgba(212, 175, 55, 0.02));
+          border: 1px solid var(--border);
           border-radius: var(--radius);
-          padding: var(--s-5) var(--s-6);
+          padding: var(--s-5);
           position: relative;
           overflow: hidden;
           transition: all var(--t-base);
+          text-decoration: none;
+          color: inherit;
         }
-        .curso-banner::before {
+        .curso-card.smc {
+          background: linear-gradient(120deg, rgba(41, 98, 255, 0.08), rgba(41, 98, 255, 0.02));
+        }
+        .curso-card::before {
           content: ""; position: absolute; inset: 0;
-          background: radial-gradient(600px 200px at 90% 50%, rgba(212, 175, 55, 0.15), transparent 60%);
+          background: radial-gradient(400px 150px at 90% 50%, rgba(212, 175, 55, 0.10), transparent 60%);
           pointer-events: none;
         }
-        .curso-banner:hover {
-          border-color: var(--gold);
-          background: linear-gradient(120deg, rgba(212, 175, 55, 0.18), rgba(212, 175, 55, 0.06));
-          transform: translateY(-1px);
+        .curso-card.smc::before {
+          background: radial-gradient(400px 150px at 90% 50%, rgba(41, 98, 255, 0.12), transparent 60%);
         }
-        .curso-banner-conteudo {
+        .curso-card:hover {
+          border-color: var(--gold);
+          transform: translateY(-2px);
+          text-decoration: none;
+          box-shadow: 0 8px 24px rgba(212, 175, 55, 0.08);
+        }
+        .curso-card.smc:hover {
+          border-color: var(--accent);
+          box-shadow: 0 8px 24px rgba(41, 98, 255, 0.10);
+        }
+        .curso-card-conteudo {
           display: flex;
-          gap: var(--s-5);
+          gap: var(--s-4);
           align-items: center;
           position: relative;
           z-index: 1;
         }
-        .curso-banner-icone {
-          font-size: 48px;
+        .curso-card-icone {
+          font-size: 42px;
           flex-shrink: 0;
         }
-        .curso-banner-texto h3 {
-          color: var(--gold);
-          font-size: 22px;
-          margin: 0 0 var(--s-1);
-        }
-        .curso-banner-texto p {
-          color: var(--text-2);
-          font-size: 14px;
-          line-height: 1.5;
-          margin: 0;
-        }
-        .curso-banner-tag {
+        .curso-card-texto { flex: 1; }
+        .curso-card-tag {
           display: inline-block;
           padding: 2px 8px;
           background: rgba(212, 175, 55, 0.15);
           border: 1px solid var(--gold);
           border-radius: 4px;
           color: var(--gold);
-          font-size: 10px;
+          font-size: 9px;
           font-weight: 700;
           text-transform: uppercase;
           letter-spacing: 0.08em;
-          margin-bottom: var(--s-2);
+          margin-bottom: 6px;
         }
-        .curso-banner-cta {
-          margin-left: auto;
+        .curso-card.smc .curso-card-tag {
+          background: rgba(41, 98, 255, 0.12);
+          border-color: var(--accent);
+          color: var(--accent);
+        }
+        .curso-card-titulo {
+          color: var(--gold);
+          font-size: 19px;
+          margin: 0 0 4px;
+          font-weight: 700;
+          letter-spacing: -0.01em;
+        }
+        .curso-card.smc .curso-card-titulo { color: var(--accent); }
+        .curso-card-meta {
+          font-family: var(--mono);
+          font-size: 12px;
+          color: var(--text-2);
+          margin: 0 0 6px;
+        }
+        .curso-card-desc {
+          color: var(--text-2);
+          font-size: 13px;
+          line-height: 1.5;
+          margin: 0;
+        }
+        .curso-card-cta {
+          margin-top: var(--s-3);
           color: var(--gold);
           font-weight: 600;
-          font-size: 14px;
-          flex-shrink: 0;
+          font-size: 13px;
+          display: inline-flex;
+          align-items: center;
+          gap: 6px;
         }
-        @media (max-width: 768px) {
-          .curso-banner-conteudo { flex-direction: column; align-items: flex-start; text-align: left; }
-          .curso-banner-icone { font-size: 36px; }
-          .curso-banner-cta { margin-left: 0; }
-        }
+        .curso-card.smc .curso-card-cta { color: var(--accent); }
       </style>
-      <div class="curso-banner-conteudo">
-        <div class="curso-banner-icone">🎓</div>
-        <div class="curso-banner-texto">
-          <span class="curso-banner-tag">⭐ Tela Pro · Curso completo</span>
-          <h3>Smart Money Map · Wyckoff</h3>
-          <p>27 aulas (~6h) cobrindo Wyckoff do zero ao avançado · gravadas pelo Renato. Acesse pela HeroSpark integrada com sua chave Tela Pro.</p>
-        </div>
-        <div class="curso-banner-cta">Acessar curso →</div>
+
+      <div class="cursos-header">
+        <h2>🎓 Cursos Smart Money Map · <span>40 aulas · ~9h</span></h2>
+        <span class="tag">⭐ Tela Pro</span>
       </div>
-    </a>
+
+      <div class="cursos-grid">
+        <a href="curso-smart-money.html" class="curso-card">
+          <div class="curso-card-conteudo">
+            <div class="curso-card-icone">📜</div>
+            <div class="curso-card-texto">
+              <span class="curso-card-tag">Wyckoff Clássico</span>
+              <h3 class="curso-card-titulo">Wyckoff</h3>
+              <p class="curso-card-meta">27 aulas · ~6h</p>
+              <p class="curso-card-desc">Do princípio Oferta/Demanda às Zonas de Operação · base do método.</p>
+              <span class="curso-card-cta">Acessar curso →</span>
+            </div>
+          </div>
+        </a>
+
+        <a href="curso-smart-money-smc.html" class="curso-card smc">
+          <div class="curso-card-conteudo">
+            <div class="curso-card-icone">⚡</div>
+            <div class="curso-card-texto">
+              <span class="curso-card-tag">SMC · ICT 2022</span>
+              <h3 class="curso-card-titulo">Smart Money Concepts</h3>
+              <p class="curso-card-meta">13 aulas · ~3h</p>
+              <p class="curso-card-desc">FVG, Order Block, BoS, CHoCH, Liquidez · timing fino do briefing.</p>
+              <span class="curso-card-cta">Acessar curso →</span>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
     <script>
-      // Mostra banner só pra TELAPRO+
+      // Mostra cursos só pra TELAPRO+
       (function(){
         function checkAndShow(){
           const acc = window.BertaniApp && window.BertaniApp.access;
           if (acc && acc.has(acc.TIER_TELAPRO)) {
-            document.getElementById('curso-banner').style.display = 'block';
+            document.getElementById('cursos-section').style.display = 'block';
           }
         }
         if (document.readyState === 'loading') {
