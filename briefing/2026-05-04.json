@@ -3,39 +3,42 @@
   "data_extenso": "Segunda-feira, 4 de maio de 2026",
   "hora_publicacao": "08:30 BRT",
   "edicao": 5,
+  "atualizacao_v2": "2026-05-04T07:55-03:00 · re-leitura overnight aplicada (DXY +11bps · ES/NAS spring · USDJPY +37 pips · WIN score 7→8)",
   "autor": {
     "nome": "Renato Bertani",
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "Reacumulação WIN · DXY em recovery",
-    "subtitulo": "Primeira segunda do beta · feriado sexta gerou gap pendente · WIN long em discount com triple confluence · WDO neutro com lean bearish · USDJPY 156,7 é pivot global"
+    "manchete": "Reacumulação WIN · spring overnight confirma · setup A+",
+    "subtitulo": "Primeira segunda do beta · feriado sexta gerou gap pendente · WIN long em discount com QUADRUPLE confluence (técnico + spring ES/NAS overnight) · WDO neutro com lean bearish e gap up esperado · DXY 98,32 a 7bps do EQ alvo"
   },
   "contexto_macro": {
-    "nivel": "MIXED",
+    "nivel": "MIXED · vento favorável overnight",
     "highlights": [
-      "S&P 500 fechou sexta em 7.223 pts · pressão vendedora últimas horas",
-      "Nasdaq 27.680 pts · fechou em alta intradia (+0,5%)",
-      "DXY: 98,21 · em DISCOUNT do range · Bias COMPRA com alvo EQ 98,39",
-      "USDBRL spot sexta: 4,99 · Real fortaleceu -0,65% no dia",
-      "Yen extremo: USDJPY caiu de 160,7 → 155,5 na semana (-1,55%) · ricocheteou pra 156,7 · BoJ alert zone",
+      "🟢 SPRING OVERNIGHT: ES varreu 7.192 e voltou pra 7.227 · NAS varreu 27.566 e voltou pra 27.720 · sweep + recovery clássico = vento favorável pra abertura BR",
+      "DXY: 98,32 (recuperou +11 bps overnight) · próximo do EQ alvo 98,39 (a 7 bps) · Bias normalizou de COMPRA pra Sem Setup",
+      "USDJPY: 157,05 (subiu +37 pips overnight) · setup long FX em curso · alvo EQ 158,11",
+      "S&P 500 fechou sexta em 7.223 pts · pressão vendedora últimas horas (revertida no overnight)",
+      "Nasdaq 27.680 pts · fechou em alta intradia sexta (+0,5%) · spring overnight reforça",
+      "USDBRL spot sexta: 4,99 · Real fortaleceu -0,65% no dia · gap up WDO esperado pelo DXY",
+      "Yen pivot: USDJPY 156,7 segue como BoJ alert zone · perde = DXY enfraquece global",
+      "JPN225 em VENDA com preço varrendo BSL · risco risk-off mid-day se Asia continuar caindo",
       "Brent USD 102,5 · Ouro USD 4.616 (+0,6%)",
-      "Sem FOMC, NFP ou Copom esta semana · semana de digestão",
-      "USDJPY 156,7 é pivot global · perde = DXY enfraquece global"
+      "Sem FOMC, NFP ou Copom esta semana · semana de digestão"
     ],
     "filtro_anti_narrativa": {
       "ativa": false,
-      "descricao": "Macro mixed · sem evento que crie anti-narrativa clara hoje. WIN long aproveita discount técnico · WDO espera confirmação de bias antes de operar. DXY em recovery pode dar suporte ao USDBRL."
+      "descricao": "Macro mixed · sem evento que crie anti-narrativa clara hoje. WIN long aproveita discount técnico REFORÇADO pelo spring overnight de ES/NAS. WDO espera confirmação de bias antes de operar. DXY próximo do EQ alvo · próxima quebra define USD."
     }
   },
   "ativos": [
     {
       "codigo": "WIN1!",
-      "fase_wyckoff": "Reacumulação clássica · preço estabilizando após queda 200k → 186k entre 24/04 e 30/04 com volume expandindo nos lows",
-      "score": 7.0,
+      "fase_wyckoff": "Reacumulação clássica · preço estabilizando após queda 200k → 186k entre 24/04 e 30/04 com volume expandindo nos lows · spring overnight ES/NAS confirma viés bull",
+      "score": 8.0,
       "veredito": "GO",
       "viés": "long",
-      "racional_publico": "WIN está em fase de Reacumulação clássica · caiu de 200k pra 186k em 5 sessões · acumulou volume nos lows · agora a curva de Bias virou COMPRA com MSS confirmado. O dealing range 186.865-200.745 é o terreno do Composite Man esta semana. Long em discount (onde estamos) busca o EQ 193.805 · esse é o trade do método. Se o preço falhar em sustentar acima do PDC 190.085, o setup desinverte e vira armadilha (spring falsa).",
+      "racional_publico": "WIN está em fase de Reacumulação clássica · caiu de 200k pra 186k em 5 sessões · acumulou volume nos lows · agora a curva de Bias virou COMPRA com MSS confirmado. O dealing range 186.865-200.745 é o terreno do Composite Man esta semana. Long em discount (onde estamos) busca o EQ 193.805 · esse é o trade do método. Reforço overnight: ES e Nasdaq fizeram spring bullish (sweep dos lows + recovery quase completo), confirmando vento global favorável pra abertura BR · score sobe de 7 pra 8 com essa 4ª confluência. Se o preço falhar em sustentar acima do PDC 190.085, o setup desinverte e vira armadilha (spring falsa). Cuidado se gap up >500 pts (>190.585): risco de UPTHRUST · exigir CHoCH M15 + MSS bem claro antes de entrar long.",
       "niveis_chave": {
         "PDH": 191035,
         "PDL": 188305,
@@ -66,7 +69,7 @@
         "setup": "Sweep do PDL/SSL 186.865 + MSS bullish 15m · OU pullback 188.500-189.000 com FVG/OB do 15m",
         "kill_zone": "London Overlap 9h15-10h30 · OU NY Open 13h30-14h30"
       },
-      "comentario_breve": "WIN long em discount com triple confluence (Bias bull + Discount DR + EQ alvo). Setup A+ do método. Aguardar sweep + MSS confirmado."
+      "comentario_breve": "WIN long em discount com QUADRUPLE confluence (Bias bull + Discount DR + EQ alvo + spring ES/NAS overnight). Setup A+ do método · score 8/10. Aguardar sweep + MSS confirmado."
     },
     {
       "codigo": "WDO1!",
@@ -74,7 +77,7 @@
       "score": 5.0,
       "veredito": "AGUARDAR",
       "viés": "short",
-      "racional_publico": "WDO em premium do range com lean bearish · mas Bias Curva v6 ainda SEM SETUP (não confirmou MSS bearish ainda). Premium do DR (short válido se confirmar). DXY recovering globalmente = USDBRL pode reverter o move bearish recente · risco de invalidação rápida. Macro contrário: DXY long bias contradiz o local WDO bear. Operar SOMENTE se Bias virar VENDA + sweep BSL 4.999/5.005 + MSS bearish 15m.",
+      "racional_publico": "WDO em premium do range com lean bearish · mas Bias Curva v6 ainda SEM SETUP (não confirmou MSS bearish ainda). Premium do DR (short válido se confirmar). Projeção overnight: DXY +11 bps + USDJPY +37 pips = WDO deve abrir em GAP UP esperado de 4.985-4.995 (premium top, próximo BSL 4.999). Se gap up testar 4.995-4.999 com REJEIÇÃO clara nas primeiras 30min, setup short fica MAIS válido. Se aceitar acima de 4.999, vira invalidação e potencial long até 5.005-5.015. Macro contrário: DXY recovering pode dar suporte ao USDBRL = risco de invalidação rápida do bear local. Operar SOMENTE se Bias virar VENDA + sweep BSL 4.999/5.005 + MSS bearish 15m.",
       "niveis_chave": {
         "PDH": 5035.5,
         "PDL": 4975,
@@ -105,7 +108,7 @@
         "setup": "Sweep BSL 4.999/5.005 + MSS bearish 15m · APENAS se Bias virar VENDA",
         "kill_zone": "NY Open 13h30 (WDO reage forte ao DXY)"
       },
-      "comentario_breve": "WDO em modo esperar bias · não opere se score abaixo de 6. Aceita 5.000 → potencial long até 5.035 (PDH). Rejeita 5.000 com volume → short setup ativa."
+      "comentario_breve": "WDO em modo esperar bias · não opere se score abaixo de 6. Gap up esperado 4.985-4.995 pelo overnight DXY/USDJPY. Aceita 5.000 → potencial long até 5.035 (PDH). Rejeita 5.000 com volume → short setup ativa."
     }
   ],
   "agenda_macro": [
@@ -142,10 +145,12 @@
     "13:30-14:30 BRT · NY Open · WDO short se confirmar bias bear"
   ],
   "regras_do_dia": [
-    "Gap de abertura provável em ambos ativos (3 dias sem trading no BR · feriado sexta) · aguardar primeiros 15 min do leilão antes de operar",
+    "Gap de abertura UP esperado em ambos ativos (3 dias sem trading + spring overnight ES/NAS) · aguardar primeiros 15 min do leilão antes de operar",
     "PMI Composto BR às 10h45 = janela 10h30-11h15 com cuidado",
-    "Correlação WIN x S&P forte: se ES futures abrirem fracos, WIN pode iniciar abaixo do PDC 190.085 · invalida score 7 · cairia pra 5 (esperar 188.500 antes de pensar em long)",
-    "USDJPY 156,70 é pivot global da semana · se quebrar zona na Asia, DXY perde força · WDO short fica mais válido, WIN long fica mais fraco",
+    "Correlação WIN x S&P confirmou positiva no overnight (spring) · viés WIN long reforçado · só invalida se ES desfizer o spring nas próximas horas",
+    "DXY 98,32 a 7 bps do EQ alvo 98,39 · gatilho macro do dia: quebra acima = USD strong → WDO sobe / pressiona WIN. Mantém abaixo = vento neutro pro WIN",
+    "USDJPY 156,70 é pivot global da semana · se quebrar zona, DXY perde força · WDO short fica mais válido, WIN long fica mais fraco",
+    "JPN225 em VENDA com preço varrendo BSL · risco de risk-off mid-day se Asia continuar caindo (proxy do appetite global)",
     "Risco fixo 1% por trade · máximo 2 trades no dia",
     "Trailing nos HL/LH do 5m após TP1",
     "Score < 6 = não opera (apenas observa)",
