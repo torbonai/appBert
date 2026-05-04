@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Glossário Bertani · 70+ termos de Wyckoff, ICT, operacional e macro · busca em tempo real">
+
+  <title>Glossário · Bertani App · 70+ termos do método</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2220%22 fill=%22%232962FF%22/><text x=%2250%22 y=%2266%22 font-size=%2256%22 text-anchor=%22middle%22 fill=%22white%22 font-family=%22monospace%22 font-weight=%22bold%22>B</text></svg>">
+
+  <style>
+    .glos-hero {
+      padding: var(--s-7) 0 var(--s-4);
+      position: relative;
+    }
+    .glos-hero::before {
+      content: ""; position: absolute; inset: 0;
+      background: radial-gradient(900px 350px at 30% -10%, rgba(41, 98, 255, 0.12), transparent 60%);
+      pointer-events: none;
+    }
+    .glos-hero > * { position: relative; z-index: 1; }
+
+    .glos-eyebrow {
+      font-size: 13px;
+      color: var(--accent);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: var(--s-2);
+      font-weight: 600;
+    }
+    .glos-titulo {
+      font-size: 40px;
+      letter-spacing: -0.02em;
+      margin: 0 0 var(--s-2);
+      font-weight: 700;
+    }
+    .glos-resumo {
+      font-size: 16px;
+      color: var(--text-2);
+      max-width: 640px;
+      line-height: 1.5;
+      margin: 0 0 var(--s-5);
+    }
+
+    .glos-busca {
+      display: flex;
+      gap: var(--s-3);
+      align-items: center;
+      max-width: 600px;
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: 6px 6px 6px var(--s-4);
+      transition: border-color var(--t-base);
+    }
+    .glos-busca:focus-within {
+      border-color: var(--accent);
+    }
+    .glos-busca-icon {
+      color: var(--muted);
+      font-size: 18px;
+      flex-shrink: 0;
+    }
+    .glos-busca input {
+      flex: 1;
+      background: transparent;
+      border: 0;
+      outline: 0;
+      color: var(--text);
+      font-size: 15px;
+      padding: var(--s-3) 0;
+      font-family: inherit;
+    }
+    .glos-busca input::placeholder { color: var(--muted); }
+    .glos-busca-clear {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--muted);
+      padding: 4px 10px;
+      font-size: 12px;
+      cursor: pointer;
+      display: none;
+    }
+    .glos-busca-clear:hover { color: var(--text); border-color: var(--accent); }
+    .glos-busca.has-text .glos-busca-clear { display: block; }
+
+    .glos-counter {
+      margin-top: var(--s-3);
+      font-size: 13px;
+      color: var(--muted);
+    }
+    .glos-counter strong { color: var(--accent); }
+
+    .glos-categoria {
+      margin-top: var(--s-6);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      overflow: hidden;
+    }
+    .glos-cat-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: var(--s-4) var(--s-5);
+      background: var(--bg-2);
+      cursor: pointer;
+      transition: background var(--t-fast);
+      user-select: none;
+    }
+    .glos-cat-header:hover { background: var(--card-hover); }
+    .glos-cat-titulo {
+      display: flex;
+      align-items: center;
+      gap: var(--s-3);
+      margin: 0;
+      font-size: 17px;
+      font-weight: 600;
+    }
+    .glos-cat-icone {
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      background: var(--accent-soft);
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+    }
+    .glos-cat-count {
+      font-family: var(--mono);
+      font-size: 12px;
+      color: var(--muted);
+      padding: 3px 8px;
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 4px;
+    }
+    .glos-cat-toggle {
+      color: var(--muted);
+      font-size: 14px;
+      transition: transform var(--t-base);
+    }
+    .glos-categoria.aberta .glos-cat-toggle { transform: rotate(180deg); }
+
+    .glos-cat-conteudo {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height var(--t-base);
+    }
+    .glos-categoria.aberta .glos-cat-conteudo {
+      max-height: 5000px;
+    }
+    .glos-cat-conteudo-inner {
+      padding: var(--s-2) 0;
+    }
+
+    .glos-termo {
+      padding: var(--s-4) var(--s-5);
+      border-top: 1px solid var(--border);
+      transition: background var(--t-fast);
+    }
+    .glos-termo:first-child { border-top: 0; }
+    .glos-termo.escondido { display: none; }
+
+    .glos-termo-header {
+      display: flex;
+      align-items: baseline;
+      gap: var(--s-3);
+      margin-bottom: var(--s-2);
+      flex-wrap: wrap;
+    }
+    .glos-termo-sigla {
+      font-family: var(--mono);
+      font-size: 16px;
+      font-weight: 700;
+      color: var(--accent);
+      letter-spacing: 0.02em;
+    }
+    .glos-termo-nome {
+      font-size: 14px;
+      color: var(--text-2);
+    }
+    .glos-termo-tag {
+      margin-left: auto;
+      font-size: 10px;
+      padding: 2px 8px;
+      border-radius: 999px;
+      background: var(--bg-2);
+      color: var(--muted);
+      border: 1px solid var(--border);
+      text-transform: uppercase;
+      letter-spacing: 0.06em;
+    }
+    .glos-termo-def {
+      font-size: 14px;
+      line-height: 1.6;
+      color: var(--text-2);
+      margin: 0 0 var(--s-2);
+    }
+    .glos-termo-link {
+      font-size: 12px;
+      color: var(--accent);
+      text-decoration: none;
+    }
+    .glos-termo-link:hover { text-decoration: underline; }
+    .glos-termo-exemplo {
+      font-size: 12px;
+      color: var(--muted);
+      font-style: italic;
+      margin: var(--s-2) 0 0;
+      padding: var(--s-2) var(--s-3);
+      background: var(--bg-2);
+      border-left: 2px solid var(--border);
+      border-radius: 0 4px 4px 0;
+    }
+
+    .glos-vazio {
+      display: none;
+      text-align: center;
+      padding: var(--s-7);
+      color: var(--muted);
+    }
+    .glos-vazio.visivel { display: block; }
+
+    .glos-nota {
+      margin-top: var(--s-7);
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-5);
+      text-align: center;
+    }
+    .glos-nota p { color: var(--text-2); margin: 0; line-height: 1.55; }
+
+    /* Print stylesheet · pra "imprimir pra consulta rápida" */
+    @media print {
+      .app-nav, .app-footer, .glos-busca, .glos-counter, .glos-cat-toggle, .btn { display: none; }
+      .glos-categoria.aberta .glos-cat-conteudo { max-height: none; overflow: visible; }
+      .glos-categoria { page-break-inside: avoid; border: 1px solid #999; margin-bottom: 1cm; }
+      .glos-cat-header { background: #f0f0f0; }
+      body { background: white; color: black; }
+      .glos-termo { border-top: 1px solid #ccc; padding: 8px 16px; }
+      .glos-termo-sigla { color: #2962FF; }
+      .glos-termo-def, .glos-termo-nome { color: #333; }
+      .glos-categoria { display: block !important; }
+      .glos-cat-conteudo { max-height: none !important; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ========== NAV ========== -->
+  <nav class="app-nav">
+    <div class="wrap">
+      <div class="brand">
+        <div class="brand-mark">B</div>
+        <span>BERTANI</span>
+      </div>
+      <div class="nav-links">
+        <a href="/dashboard.html">Dashboard</a>
+        <a href="/educacao/index.html">Educação</a>
+        <a href="/registro/historico.html">Track Record</a>
+      </div>
+      <a href="/dashboard.html" class="btn">Voltar ao Dashboard</a>
+    </div>
+  </nav>
+
+  <!-- ========== HERO ========== -->
+  <header class="glos-hero">
+    <div class="wrap wrap-narrow">
+      <div class="glos-eyebrow">📖 GLOSSÁRIO · MÉTODO BERTANI</div>
+      <h1 class="glos-titulo">Termos do briefing diário</h1>
+      <p class="glos-resumo">
+        70+ siglas e conceitos usados no app, no briefing e nos cursos.
+        Busca em tempo real abaixo · ou navega pelas 8 categorias.
+      </p>
+
+      <div class="glos-busca" id="glos-busca-wrap">
+        <span class="glos-busca-icon">🔍</span>
+        <input type="text" id="glos-busca" placeholder="Buscar termo (ex: long, FVG, anti-narrativa, stop)..." autocomplete="off">
+        <button class="glos-busca-clear" id="glos-busca-clear">limpar</button>
+      </div>
+
+      <p class="glos-counter">
+        <strong id="glos-mostrando">70</strong> de <strong id="glos-total">70</strong> termos
+        · <a href="javascript:window.print()" style="color: var(--accent); text-decoration: none;">📄 Imprimir versão completa</a>
+      </p>
+    </div>
+  </header>
+
+  <!-- ========== CONTEÚDO ========== -->
+  <main class="wrap wrap-narrow" style="padding-bottom: var(--s-8);">
+
+    <div id="glos-container"></div>
+
+    <div class="glos-vazio" id="glos-vazio">
+      <p>Nenhum termo encontrado pra essa busca.</p>
+      <p style="font-size: 13px; margin-top: var(--s-2);">Faltou algum termo importante? <a href="https://wa.me/" style="color: var(--accent);">Avisa pelo WhatsApp do suporte</a> · adicionamos ainda hoje.</p>
+    </div>
+
+    <div class="glos-nota">
+      <p>
+        <strong>Faltou algum termo?</strong> Manda no WhatsApp do suporte (Rafa) ou pelo formulário de feedback ·
+        este glossário é vivo · cresce com a demanda dos testers.
+      </p>
+    </div>
+
+  </main>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="app-footer">
+    <div class="wrap">
+      <p>© 2026 Renato Bertani · Analista CNPI T 9644</p>
+      <p class="compliance">
+        Conteúdo educacional. Não constitui recomendação personalizada de investimento.
+        Risco em derivativos é alto. Resolução CVM 20.
+      </p>
+    </div>
+  </footer>
+
+  <script src="../assets/js/app.js"></script>
+
+  <script>
+    // ========================================================================
+    // GLOSSÁRIO · 70+ termos
+    // ========================================================================
+
+    const CATEGORIAS = [
+      { id: 'direcao',     icone: '🎯', titulo: 'Direção do trade',          tag: 'Básico' },
+      { id: 'estrutura',   icone: '🧱', titulo: 'Estrutura de mercado',      tag: 'ICT' },
+      { id: 'liquidez',    icone: '💧', titulo: 'Liquidez',                  tag: 'ICT' },
+      { id: 'zonas',       icone: '🎁', titulo: 'Zonas ICT (FVG · OB · BPR)',tag: 'ICT' },
+      { id: 'wyckoff',     icone: '📐', titulo: 'Wyckoff · eventos e fases', tag: 'Wyckoff' },
+      { id: 'analise',     icone: '📊', titulo: 'Análise técnica',           tag: 'Análise' },
+      { id: 'operacional', icone: '⚙️', titulo: 'Operacional · gestão',      tag: 'Risco' },
+      { id: 'macro',       icone: '🌍', titulo: 'Macro & Filtros Bertani',   tag: 'Macro' }
+    ];
+
+    const TERMOS = [
+      // ============ DIREÇÃO ============
+      { sigla: 'LONG',     nome: 'compra · posição comprada', cat: 'direcao',
+        def: 'Posição em que você ganha se o preço SOBE. Entry abaixo, TP acima, stop abaixo do entry.',
+        ex: 'Briefing diz "WIN1! GO LONG · score 8" → você COMPRA WIN.' },
+      { sigla: 'SHORT',    nome: 'venda · posição vendida', cat: 'direcao',
+        def: 'Posição em que você ganha se o preço CAI. Entry acima, TP abaixo, stop acima do entry.',
+        ex: 'Briefing diz "WDO1! GO SHORT · score 7" → você VENDE WDO.' },
+      { sigla: 'BULLISH',  nome: 'altista · de alta', cat: 'direcao',
+        def: 'Cenário em que se espera alta de preço. Sinônimo de "long bias".' },
+      { sigla: 'BEARISH',  nome: 'baixista · de baixa', cat: 'direcao',
+        def: 'Cenário em que se espera queda de preço. Sinônimo de "short bias".' },
+      { sigla: 'PULLBACK', nome: 'recuo · correção', cat: 'direcao',
+        def: 'Movimento contra-tendência temporário · oportunidade de entrar a favor da tendência principal a um preço melhor.',
+        ex: 'Tendência long, espera pullback até FVG pra entrar comprado.' },
+      { sigla: 'RETEST',   nome: 'reteste', cat: 'direcao',
+        def: 'Preço volta pra testar uma zona já visitada (suporte virou resistência ou vice-versa).' },
+      { sigla: 'BOUNCE',   nome: 'rejeição', cat: 'direcao',
+        def: 'Preço chega numa zona, é rejeitado e volta · sinal de força da zona.' },
+
+      // ============ ESTRUTURA ============
+      { sigla: 'BoS',      nome: 'Break of Structure · quebra de estrutura', cat: 'estrutura',
+        def: 'Preço quebra um topo (em uptrend) ou fundo (em downtrend) anterior · CONFIRMA continuação da tendência.',
+        link: 'modelos/breaker-block.html', linkTexto: 'Veja modelo Breaker Block' },
+      { sigla: 'CHoCH',    nome: 'Change of Character · mudança de caráter', cat: 'estrutura',
+        def: 'Preço quebra um swing low (em uptrend) ou swing high (em downtrend) · primeiro sinal de REVERSÃO.',
+        link: 'modelos/mss-pos-sweep.html', linkTexto: 'Veja modelo MSS' },
+      { sigla: 'MSS',      nome: 'Market Structure Shift · mudança estrutural', cat: 'estrutura',
+        def: 'CHoCH confirmado por candle de fechamento + volume · sinal forte de inversão.',
+        link: 'modelos/mss-pos-sweep.html', linkTexto: 'Veja modelo MSS pós-sweep' },
+      { sigla: 'HH',       nome: 'Higher High · topo mais alto', cat: 'estrutura',
+        def: 'Topo acima do anterior · característica de uptrend.' },
+      { sigla: 'HL',       nome: 'Higher Low · fundo mais alto', cat: 'estrutura',
+        def: 'Fundo acima do anterior · confirma uptrend.' },
+      { sigla: 'LL',       nome: 'Lower Low · fundo mais baixo', cat: 'estrutura',
+        def: 'Fundo abaixo do anterior · característica de downtrend.' },
+      { sigla: 'LH',       nome: 'Lower High · topo mais baixo', cat: 'estrutura',
+        def: 'Topo abaixo do anterior · confirma downtrend.' },
+      { sigla: 'EQH',      nome: 'Equal Highs · topos iguais', cat: 'estrutura',
+        def: 'Dois ou mais topos no mesmo nível · cria liquidez (BSL) acima · candidato a sweep.',
+        link: 'modelos/equal-highs-lows.html', linkTexto: 'Veja modelo EQH/EQL' },
+      { sigla: 'EQL',      nome: 'Equal Lows · fundos iguais', cat: 'estrutura',
+        def: 'Dois ou mais fundos no mesmo nível · cria liquidez (SSL) abaixo · candidato a sweep.',
+        link: 'modelos/equal-highs-lows.html', linkTexto: 'Veja modelo EQH/EQL' },
+      { sigla: 'SWEEP',    nome: 'varredura de liquidez', cat: 'estrutura',
+        def: 'Preço varre topo/fundo, pega stops, e VOLTA · sinal de manipulação institucional · gatilho clássico de entrada Bertani.',
+        ex: 'Sweep do BSL 5.005 + recovery + MSS bearish 15m = setup short A+.' },
+
+      // ============ LIQUIDEZ ============
+      { sigla: 'SSL',      nome: 'Sell-Side Liquidity · liquidez de venda', cat: 'liquidez',
+        def: 'Stops de quem está LONG · ficam ABAIXO de fundos. Quando preço varre, executa esses stops.',
+        link: 'modelos/ssl-bsl.html', linkTexto: 'Veja modelo SSL/BSL' },
+      { sigla: 'BSL',      nome: 'Buy-Side Liquidity · liquidez de compra', cat: 'liquidez',
+        def: 'Stops de quem está SHORT · ficam ACIMA de topos. Quando preço varre, executa esses stops.',
+        link: 'modelos/ssl-bsl.html', linkTexto: 'Veja modelo SSL/BSL' },
+      { sigla: 'LIQ RUN',  nome: 'Liquidity Run · corrida de liquidez', cat: 'liquidez',
+        def: 'Movimento direcional pra coletar liquidez (atingir stops em massa) · normalmente seguido de reversão.',
+        link: 'modelos/liquidity-runs.html', linkTexto: 'Veja modelo Liquidity Runs' },
+      { sigla: 'STOP HUNT', nome: 'caça aos stops', cat: 'liquidez',
+        def: 'Movimento institucional de varrer stops · sinônimo prático de sweep.' },
+      { sigla: 'BUYSIDE',  nome: 'lado da compra', cat: 'liquidez',
+        def: 'Acima do preço · onde estão BSL e ordens de compra paradas.' },
+      { sigla: 'SELLSIDE', nome: 'lado da venda', cat: 'liquidez',
+        def: 'Abaixo do preço · onde estão SSL e ordens de venda paradas.' },
+      { sigla: 'LIQ POOL', nome: 'piscina de liquidez', cat: 'liquidez',
+        def: 'Aglomeração de stops e ordens pendentes · zonas que o Composite Man tende a "drenar".' },
+      { sigla: 'DOL',      nome: 'Draw on Liquidity · alvo de liquidez', cat: 'liquidez',
+        def: 'Próximo alvo provável que o preço vai buscar · geralmente liquidez maior visível no chart.' },
+
+      // ============ ZONAS ICT ============
+      { sigla: 'FVG',      nome: 'Fair Value Gap · gap de valor justo', cat: 'zonas',
+        def: 'Gap de 3 candles onde a 2ª vela imprime sem se sobrepor · zona de imbalance · alvo natural pra retorno do preço.',
+        link: 'modelos/fvg-simples.html', linkTexto: 'Veja FVG simples · Nested FVG' },
+      { sigla: 'IFVG',     nome: 'Inverted FVG · FVG invertido', cat: 'zonas',
+        def: 'FVG que falha (preço fecha do outro lado) · vira zona de continuação na direção oposta.' },
+      { sigla: 'OB',       nome: 'Order Block · bloco de ordens', cat: 'zonas',
+        def: 'Última vela contrária antes de movimento impulsivo · zona onde institucionais posicionaram ordens · alvo de retorno.',
+        link: 'modelos/order-block-h1.html', linkTexto: 'Veja modelo Order Block H1' },
+      { sigla: 'BB',       nome: 'Breaker Block · bloco quebrado', cat: 'zonas',
+        def: 'Order Block que foi violado e virou suporte/resistência reverso · oportunidade pós-BoS.',
+        link: 'modelos/breaker-block.html', linkTexto: 'Veja modelo Breaker Block' },
+      { sigla: 'BPR',      nome: 'Balanced Price Range · faixa equilibrada', cat: 'zonas',
+        def: 'Sobreposição de FVG bullish e FVG bearish · zona de inversão de alto valor.',
+        link: 'modelos/bpr-long.html', linkTexto: 'Veja BPR Long · BPR Short' },
+      { sigla: 'OTE',      nome: 'Optimal Trade Entry · entrada ótima', cat: 'zonas',
+        def: 'Faixa de Fibonacci 62-79% do impulso anterior · onde institucionais costumam adicionar posição.' },
+      { sigla: 'IMBALANCE', nome: 'desequilíbrio de preço', cat: 'zonas',
+        def: 'Sinônimo prático de FVG · região onde só comprador OU só vendedor agiu.' },
+
+      // ============ WYCKOFF ============
+      { sigla: 'PS',       nome: 'Preliminary Support · suporte preliminar', cat: 'wyckoff',
+        def: 'Primeiro sinal de compra após downtrend · começo da Fase A de acumulação.',
+        link: 'fases/fase-a.html', linkTexto: 'Veja Fase A · Parar tendência' },
+      { sigla: 'PSY',      nome: 'Preliminary Supply · oferta preliminar', cat: 'wyckoff',
+        def: 'Primeiro sinal de venda após uptrend · começo da Fase A de distribuição.',
+        link: 'fases/fase-a.html', linkTexto: 'Veja Fase A' },
+      { sigla: 'SC',       nome: 'Selling Climax · clímax de venda', cat: 'wyckoff',
+        def: 'Pânico final do downtrend · grande vela vermelha com volume gigantesco · marca o fundo provável.',
+        link: 'fases/fase-a.html', linkTexto: 'Veja Fase A' },
+      { sigla: 'BC',       nome: 'Buying Climax · clímax de compra', cat: 'wyckoff',
+        def: 'Euforia final do uptrend · grande vela verde com volume excessivo · marca o topo provável.',
+        link: 'fases/fase-a.html', linkTexto: 'Veja Fase A' },
+      { sigla: 'AR',       nome: 'Automatic Rally · reação automática', cat: 'wyckoff',
+        def: 'Recuperação rápida após o SC · define o topo do range de acumulação.',
+        link: 'fases/fase-a.html', linkTexto: 'Veja Fase A' },
+      { sigla: 'ST',       nome: 'Secondary Test · teste secundário', cat: 'wyckoff',
+        def: 'Re-teste do fundo do SC com volume MENOR · confirma absorção de oferta · sinal positivo.',
+        link: 'fases/fase-b.html', linkTexto: 'Veja Fase B' },
+      { sigla: 'SOS',      nome: 'Sign of Strength · sinal de força', cat: 'wyckoff',
+        def: 'Movimento bullish forte que rompe topo do range · confirma intenção bullish.',
+        link: 'fases/fase-d.html', linkTexto: 'Veja Fase D' },
+      { sigla: 'SOW',      nome: 'Sign of Weakness · sinal de fraqueza', cat: 'wyckoff',
+        def: 'Movimento bearish forte que rompe fundo do range · confirma intenção bearish.',
+        link: 'fases/fase-d.html', linkTexto: 'Veja Fase D' },
+      { sigla: 'LPS',      nome: 'Last Point of Support · último apoio', cat: 'wyckoff',
+        def: 'Último pullback antes do markup · entrada de baixo risco em acumulação.' },
+      { sigla: 'LPSY',     nome: 'Last Point of Supply · última oferta', cat: 'wyckoff',
+        def: 'Último rally antes do markdown · entrada short de baixo risco em distribuição.' },
+      { sigla: 'SPRING',   nome: 'mola · falsa quebra do fundo', cat: 'wyckoff',
+        def: 'Preço varre o fundo do range, ativa stops, e VOLTA · gatilho clássico Wyckoff em acumulação.',
+        link: 'modelos/spring-utad.html', linkTexto: 'Veja modelo Spring · UTAD' },
+      { sigla: 'UTAD',     nome: 'Upthrust After Distribution · falsa quebra do topo', cat: 'wyckoff',
+        def: 'Preço varre o topo do range, ativa stops, e VOLTA · gatilho clássico Wyckoff em distribuição.',
+        link: 'modelos/spring-utad.html', linkTexto: 'Veja modelo Spring · UTAD' },
+      { sigla: 'ACUMULAÇÃO', nome: 'fase de absorção institucional', cat: 'wyckoff',
+        def: 'Range lateral após downtrend · institucionais comprando · precede markup (alta).',
+        link: 'fases-wyckoff.html', linkTexto: 'Veja as 5 fases Wyckoff' },
+      { sigla: 'DISTRIBUIÇÃO', nome: 'fase de descarga institucional', cat: 'wyckoff',
+        def: 'Range lateral após uptrend · institucionais vendendo · precede markdown (queda).',
+        link: 'fases-wyckoff.html', linkTexto: 'Veja as 5 fases Wyckoff' },
+
+      // ============ ANÁLISE ============
+      { sigla: 'P&D',      nome: 'Premium and Discount', cat: 'analise',
+        def: 'Conceito que divide o range em 2 metades · acima da metade = PREMIUM (caro · vender) · abaixo = DISCOUNT (barato · comprar).',
+        link: 'modelos/dealing-range.html', linkTexto: 'Veja Dealing Range' },
+      { sigla: 'PREMIUM',  nome: 'metade superior do range · "caro"', cat: 'analise',
+        def: 'Zona de venda preferencial · institucionais distribuem aqui.' },
+      { sigla: 'DISCOUNT', nome: 'metade inferior do range · "barato"', cat: 'analise',
+        def: 'Zona de compra preferencial · institucionais acumulam aqui.' },
+      { sigla: 'EQ',       nome: 'Equilibrium · linha do meio', cat: 'analise',
+        def: '50% do range · divisor entre Premium e Discount · alvo natural quando preço está nos extremos.' },
+      { sigla: 'POC',      nome: 'Point of Control · pico de volume', cat: 'analise',
+        def: 'Preço com mais volume negociado num período · âncora forte · age como ímã.',
+        link: 'modelos/volume-profile.html', linkTexto: 'Veja Volume Profile' },
+      { sigla: 'VAH',      nome: 'Value Area High · topo da área de valor', cat: 'analise',
+        def: 'Topo dos 70% de volume central · resistência respeitada · alvo de short.' },
+      { sigla: 'VAL',      nome: 'Value Area Low · fundo da área de valor', cat: 'analise',
+        def: 'Fundo dos 70% de volume central · suporte respeitado · alvo de long.' },
+      { sigla: 'VSA',      nome: 'Volume Spread Analysis · análise volume × range', cat: 'analise',
+        def: 'Lê esforço (volume) vs resultado (range) · base do método Wyckoff moderno.',
+        link: 'modelos/volume-financeiro.html', linkTexto: 'Veja Volume Financeiro' },
+      { sigla: 'VOLUME PROFILE', nome: 'perfil de volume horizontal', cat: 'analise',
+        def: 'Histograma de volume por preço · revela onde o "dinheiro grande" agiu.',
+        link: 'modelos/volume-profile.html', linkTexto: 'Veja Volume Profile' },
+      { sigla: 'DEALING RANGE', nome: 'range de operação · faixa-base', cat: 'analise',
+        def: 'Range definido por topo e fundo de referência · base pra calcular Premium / Discount / EQ.',
+        link: 'modelos/dealing-range.html', linkTexto: 'Veja Dealing Range' },
+
+      // ============ OPERACIONAL ============
+      { sigla: 'ENTRY',    nome: 'preço de entrada', cat: 'operacional',
+        def: 'Preço onde você compra (long) ou vende (short).' },
+      { sigla: 'STOP',     nome: 'Stop Loss · preço de saída perdedora', cat: 'operacional',
+        def: 'Preço pré-definido onde você sai do trade pra LIMITAR a perda. Inviolável.' },
+      { sigla: 'TP',       nome: 'Take Profit · preço de saída vencedora', cat: 'operacional',
+        def: 'Preço pré-definido onde realiza lucro. TP1 = primeiro alvo · TP2 = segundo alvo (geralmente mais distante).' },
+      { sigla: 'R:R',      nome: 'Risk Reward · relação risco / retorno', cat: 'operacional',
+        def: 'Razão entre quanto você arrisca e quanto pretende ganhar. R:R de 1:3 = arriscar R$1 pra ganhar R$3. Mínimo aceitável: 1:1.5.' },
+      { sigla: 'RISCO FIXO', nome: 'tamanho de posição padronizado', cat: 'operacional',
+        def: 'Mesma porcentagem do capital arriscada em CADA trade · 1% é o padrão Bertani. Calcula contratos a partir do stop.' },
+      { sigla: 'DRAWDOWN', nome: 'queda máxima do capital', cat: 'operacional',
+        def: 'Maior recuo da curva de capital desde o pico anterior. Mede stress do método. Aceitável: até 15-20%.' },
+      { sigla: 'WIN RATE', nome: 'taxa de acerto', cat: 'operacional',
+        def: 'Porcentagem de trades vencedores. Setup bom: ≥55%. Não vale sozinho · precisa olhar junto com R:R.' },
+      { sigla: 'PROFIT FACTOR', nome: 'fator de lucro', cat: 'operacional',
+        def: 'Lucro bruto ÷ prejuízo bruto. ≥1.5 é positivo · ≥2.0 é excelente.' },
+      { sigla: 'BREAKEVEN', nome: 'empate · zerar risco', cat: 'operacional',
+        def: 'Mover stop pro preço de entry após TP1 atingido. Garante que trade não vire perdedor.' },
+      { sigla: 'TRAILING STOP', nome: 'stop dinâmico', cat: 'operacional',
+        def: 'Stop que sobe (em long) ou cai (em short) acompanhando estrutura · captura tendência sem dar muito espaço.' },
+
+      // ============ MACRO BERTANI ============
+      { sigla: 'DXY',      nome: 'Dollar Index · índice do dólar', cat: 'macro',
+        def: 'Mede dólar americano contra cesta de 6 moedas. Acima de 100 = USD forte. Inverso de WDO/WIN historicamente.' },
+      { sigla: 'BCB',      nome: 'Banco Central do Brasil', cat: 'macro',
+        def: 'Define Selic e política monetária BR. Decisões mexem com WDO/USDBRL na hora.' },
+      { sigla: 'FOCUS',    nome: 'Relatório Focus · expectativas BR', cat: 'macro',
+        def: 'Boletim semanal do BCB com expectativas de mercado pra IPCA, Selic, PIB. Sai segunda 8h25 BRT.' },
+      { sigla: 'FOMC',     nome: 'Federal Open Market Committee', cat: 'macro',
+        def: 'Reunião do BC americano · define taxa Fed. Datas mexem com S&P, DXY · indireto no WIN/WDO.' },
+      { sigla: 'NFP',      nome: 'Non-Farm Payrolls · emprego US', cat: 'macro',
+        def: 'Dado mensal de emprego americano (1ª sexta do mês). Volátil · evita operar ±60min do horário.' },
+      { sigla: 'ANTI-NARRATIVA', nome: 'Filtro Anti-Narrativa Wyckoff', cat: 'macro',
+        def: '3º pilar Bertani · checa se o setup técnico bate com a narrativa macro do dia. Se não bate, score cai → setup desativado.',
+        link: 'modelos/anti-narrativa.html', linkTexto: 'Veja modelo Anti-Narrativa' },
+      { sigla: 'KILL ZONE', nome: 'sessões de alta liquidez', cat: 'macro',
+        def: 'Janelas do dia com volume e direcionalidade · London Open, NY Open, London Close. Onde os setups acontecem.',
+        link: 'modelos/kill-zones-b3.html', linkTexto: 'Veja Kill Zones B3' },
+      { sigla: 'HARD AVOID', nome: 'janelas a evitar', cat: 'macro',
+        def: 'Períodos do dia com liquidez ruim ou alta volatilidade ruim · leilão de abertura B3, ±60min de evento macro, almoço NY. Não opera.' },
+      { sigla: 'LONDON OVERLAP', nome: 'Overlap Londres · 09:15-10:30 BRT', cat: 'macro',
+        def: 'Janela em que pregão de Londres + pre-market NY estão ativos · alta liquidez · entry preferencial WIN.' },
+      { sigla: 'NY OPEN',  nome: 'Abertura Nova York · 13:30 BRT', cat: 'macro',
+        def: 'Abertura oficial S&P · grande movimento direcional · gatilho clássico de WDO short.' },
+      { sigla: 'MATRIZ JUROS', nome: 'Matriz Bertani de Juros', cat: 'macro',
+        def: 'Combinação de DI BR + Treasury US + Brent + DXY que define cenário macro. Base do briefing.',
+        link: 'modelos/juros-correlacao.html', linkTexto: 'Veja Correlação Juros' }
+    ];
+
+    // ========================================================================
+    // RENDER
+    // ========================================================================
+    function renderTermos() {
+      const container = document.getElementById('glos-container');
+      container.innerHTML = '';
+
+      CATEGORIAS.forEach(cat => {
+        const termosCat = TERMOS.filter(t => t.cat === cat.id);
+        if (!termosCat.length) return;
+
+        const catEl = document.createElement('section');
+        catEl.className = 'glos-categoria aberta';
+        catEl.dataset.cat = cat.id;
+        catEl.innerHTML = `
+          <div class="glos-cat-header" onclick="this.parentElement.classList.toggle('aberta')">
+            <h2 class="glos-cat-titulo">
+              <span class="glos-cat-icone">${cat.icone}</span>
+              ${cat.titulo}
+            </h2>
+            <div style="display: flex; align-items: center; gap: var(--s-3);">
+              <span class="glos-cat-count">${termosCat.length} termos</span>
+              <span class="glos-cat-toggle">▼</span>
+            </div>
+          </div>
+          <div class="glos-cat-conteudo">
+            <div class="glos-cat-conteudo-inner">
+              ${termosCat.map(t => `
+                <div class="glos-termo" data-busca="${(t.sigla + ' ' + t.nome + ' ' + t.def).toLowerCase()}">
+                  <div class="glos-termo-header">
+                    <span class="glos-termo-sigla">${t.sigla}</span>
+                    <span class="glos-termo-nome">${t.nome}</span>
+                    <span class="glos-termo-tag">${cat.tag}</span>
+                  </div>
+                  <p class="glos-termo-def">${t.def}</p>
+                  ${t.link ? `<a href="${t.link}" class="glos-termo-link">→ ${t.linkTexto}</a>` : ''}
+                  ${t.ex ? `<p class="glos-termo-exemplo">💡 ${t.ex}</p>` : ''}
+                </div>
+              `).join('')}
+            </div>
+          </div>
+        `;
+        container.appendChild(catEl);
+      });
+
+      document.getElementById('glos-total').textContent = TERMOS.length;
+      document.getElementById('glos-mostrando').textContent = TERMOS.length;
+    }
+
+    // ========================================================================
+    // BUSCA EM TEMPO REAL
+    // ========================================================================
+    function setupBusca() {
+      const input = document.getElementById('glos-busca');
+      const wrap = document.getElementById('glos-busca-wrap');
+      const clearBtn = document.getElementById('glos-busca-clear');
+      const counter = document.getElementById('glos-mostrando');
+      const vazio = document.getElementById('glos-vazio');
+
+      function filtrar() {
+        const q = input.value.trim().toLowerCase();
+        const termos = document.querySelectorAll('.glos-termo');
+        let mostrando = 0;
+
+        termos.forEach(t => {
+          const matches = !q || t.dataset.busca.includes(q);
+          t.classList.toggle('escondido', !matches);
+          if (matches) mostrando++;
+        });
+
+        // Esconde categoria vazia · expande as com match
+        document.querySelectorAll('.glos-categoria').forEach(cat => {
+          const hasMatch = cat.querySelector('.glos-termo:not(.escondido)');
+          cat.style.display = hasMatch ? '' : 'none';
+          if (q && hasMatch) cat.classList.add('aberta');
+        });
+
+        counter.textContent = mostrando;
+        wrap.classList.toggle('has-text', !!q);
+        vazio.classList.toggle('visivel', mostrando === 0 && !!q);
+      }
+
+      input.addEventListener('input', filtrar);
+      clearBtn.addEventListener('click', function(){
+        input.value = '';
+        filtrar();
+        input.focus();
+      });
+
+      // Atalho · "/" foca o input
+      document.addEventListener('keydown', function(e){
+        if (e.key === '/' && document.activeElement !== input) {
+          e.preventDefault();
+          input.focus();
+        }
+      });
+    }
+
+    // ========================================================================
+    // INIT
+    // ========================================================================
+    document.addEventListener('DOMContentLoaded', function() {
+      renderTermos();
+      setupBusca();
+    });
+  </script>
+
+</body>
+</html>
