@@ -8,8 +8,8 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "WIN no Secondary Test · WDO travado no EQ · ATA COPOM HAWKISH (correção pós-publicação)",
-    "subtitulo": "Reacumulação WIN tecnicamente viva mas Ata Copom hawkish moderado rebaixa score 6.0→5.0 (não opera) · WDO mantém 4.5 (não opera) · macro de juros contracionista por mais tempo + Oriente Médio + desancoragem 2027/2028"
+    "manchete": "WIN GATILHO ATIVO · MSS bullish 10h · WDO em queda forte · trades executáveis",
+    "subtitulo": "10:30 BRT · WIN sweep+MSS+volume 2x = score 7.5 (long ativado · entry 188.300-188.700) · WDO -45pts no dia = score 7.0 (short em curso · TP1 4975 atingido) · curva DI bull flatten (F29 -7bps, F31 -1.8bps, F27 +23bps - cautela) · DXY -10bps reforça dovish"
   },
   "contexto_macro": {
     "nivel": "VENTO MORNO",
@@ -30,11 +30,11 @@
   "ativos": [
     {
       "codigo": "WIN1!",
-      "fase_wyckoff": "Reacumulação Fase B/C · Secondary Test em curso · Spring 186.865 NÃO rompido · MAS score rebaixado pós-Ata Copom (hawkish moderado)",
-      "score": 5,
-      "veredito": "AGUARDAR_POS_COPOM",
+      "fase_wyckoff": "Reacumulação Fase C · MSS bullish 15m confirmado às 10:00 BRT · sweep do PDL 188.195 foi até 188.040 · recovery violento até 189.335 com volume 1,2M (>2x média) · Spring 186.865 intacto",
+      "score": 7.5,
+      "veredito": "GO",
       "viés": "long",
-      "racional_publico": "WIN segue em reacumulação técnica após o markdown 203k→186.865 — Spring de referência NÃO rompido. PORÉM: Ata do Copom (publicada hoje 05/05) trouxe tom HAWKISH MODERADO — Selic permanece contracionista por mais tempo, BC sinaliza poder reduzir ritmo ou encerrar ciclo de cortes prematuramente, desancoragem das expectativas 2027/2028. Macro vai contra a tese técnica de reacumulação: juros mais altos por mais tempo = pressão estrutural baixista no índice. SCORE REBAIXADO 6,0 → 5,0 (abaixo do limiar 6 = NÃO OPERA). Reativação só com: (A) sweep do 188.195 + MSS bullish 15m com volume ≥ 2x média (exigência subiu de 1,5x); OU (B) novo Spring em 186.865 com volume climático. Spring 186.865 segue como linha de invalidação — perdeu = markdown até 185k.",
+      "racional_publico": "ATUALIZADO 10:30 BRT — gatilho técnico CONFIRMADO. WIN abriu em 189.525 (gap up) e fez sweep do PDL/SSL 188.195 (foi até 188.040 às 09:45), seguido de MSS bullish violento às 10:00 BRT (alta de 188.155→189.335 com volume 1.208.596 = >2x média recente). Setup long do briefing está EXECUTÁVEL. Pullback atual em 188.395-188.545 oferece retest do break pra entrada com risco menor. Curva DI confirma macro a favor: DI Jan/29 −7,1bps, DI Jan/31 −1,8bps (longos caindo = bull flatten leve). DXY também recuou (-10bps) reforçando vento global pró-risco. ATENÇÃO: DI Jan/27 SUBINDO (+23bps) é divergência interna da curva — monitorar; se persistir, pode reverter o cenário. Spring 186.865 segue como linha de invalidação macro.",
       "niveis_chave": {
         "PDH": 191035,
         "PDL": 188195,
@@ -53,30 +53,31 @@
       },
       "plano": {
         "direcao": "LONG",
-        "entry_zona": "188.000-188.500",
-        "stop": 186800,
-        "stop_pts": 1700,
-        "tp1": 190870,
-        "tp1_rr": 1.7,
+        "entry_zona": "188.300-188.700",
+        "stop": 187900,
+        "stop_pts": 600,
+        "tp1": 189335,
+        "tp1_rr": 1.5,
         "tp1_partial_pct": 50,
-        "tp2": 193805,
-        "tp2_rr": 3.5,
-        "tp2_partial_pct": 50,
-        "contratos_banca_30k_risco_1pct": 1,
-        "ganho_bruto_tp1_brl": 290,
-        "ganho_bruto_tp2_brl": 706,
-        "setup": "Sweep do 188.195 (Secondary Test low) + MSS bullish 15m com volume ≥1,5x média · OU CHoCH bullish 15m + MSS bullish 1H. Entry no retest do FVG/OB do 15m.",
-        "kill_zone": "Janela B3 limpa 9h15-10h30 · OU NY Open 10h30-11h30 BRT"
+        "tp2": 190870,
+        "tp2_rr": 4.0,
+        "tp2_partial_pct": 30,
+        "tp3": 193805,
+        "tp3_rr": 8.0,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 2,
+        "setup": "GATILHO ATIVADO 10:00 BRT (MSS + volume 2x). Entry no PULLBACK atual (188.300-188.700 = retest do break do MSS). Trailing nos HL/LH do 5m após TP1.",
+        "kill_zone": "NY Open 10:30-11:30 BRT (em curso) — segunda kill zone do dia"
       },
-      "comentario_breve": "ATUALIZADO PÓS-ATA COPOM. Score 5.0 < limiar 6 = NÃO OPERA por ora. Macro hawkish desfavorece a tese técnica. Reativação só com gatilho de volume reforçado (≥2x média)."
+      "comentario_breve": "ATUALIZADO 10:30 BRT — TRADE EXECUTÁVEL. Score 7,5. MSS confirmado, volume 2x, curva DI dovish (com ressalva no F27). Pullback atual oferece retest com risco apertado (SL 187.900 = 600pts vs TP3 8R)."
     },
     {
       "codigo": "WDO1!",
-      "fase_wyckoff": "Fase B / Range lateral · sem MSS direcional · preço EXATAMENTE no EQ do range",
-      "score": 4.5,
-      "veredito": "AGUARDAR",
-      "viés": "neutral",
-      "racional_publico": "WDO em modo lateral total: range 4947-5041 nas últimas 100h. Ata do Copom (hawkish moderado) AUMENTOU a volatilidade esperada e criou cabo-de-guerra: (a) juros altos BR + carry trade favorecem REAL FORTE (WDO ↓); (b) choque petróleo + Oriente Médio + desancoragem favorecem REAL FRACO (WDO ↑). Resultado depende de qual narrativa pegar. SEM SETUP até o range romper. Operar SÓ nos extremos com gatilho confirmado: (A) sweep do BSL 5041 + rejeição forte + MSS bearish 15m → short (carry/dovish narrative); OU (B) sweep do SSL 4947 + rejeição forte + MSS bullish 15m → long (geopolítica/petróleo narrative). Esperar PRIMEIRA HORA pós-Ata digerir o sinal antes de qualquer leitura — volatilidade inicial é ruído.",
+      "fase_wyckoff": "Distribuição confirmada · gap down forte na abertura (5003→4980) · sweep do PDL 4975 e do BSL implícito 4985 · markdown contínuo até 4958,5 (low intraday) · -45 pontos no dia = -0,9%",
+      "score": 7.0,
+      "veredito": "GO",
+      "viés": "short",
+      "racional_publico": "ATUALIZADO 10:30 BRT — TRADE EXECUTADO. WDO abriu em 4980,5 (gap down -22 pts vs ajuste 5003,37) e seguiu em queda contínua. Sweep do PDL 4975 ocorreu já às 09:15 (low 4969). Movimento amplificou ao longo da manhã: 09:45 low 4968 · 10:00 low 4963 · 10:15 low 4958,5. Atual em 4963, já passou TP1 do briefing (4975). Curva DI longa dovish (F31 -1.8bps) + DXY caindo (-10bps) confirma narrativa de real forte. Macro alinhado. Quem entrou na abertura ou no sweep do PDL está com 30-40 pts de lucro. Trade ainda executável via PULLBACK até 4970-4980 (retest da zona de oferta). Próximos alvos: 4955 e 4947,5 (OB bullish 4H — SSL do range maior).",
       "niveis_chave": {
         "PDH": 5017,
         "PDL": 4994,
@@ -93,21 +94,21 @@
         "fonte": "Ajuste oficial B3 · pregão de segunda 04/05"
       },
       "plano": {
-        "direcao": "AGUARDAR",
-        "entry_zona": null,
-        "stop": null,
-        "stop_pts": null,
-        "tp1": null,
-        "tp1_rr": null,
-        "tp2": null,
-        "tp2_rr": null,
-        "contratos_banca_30k_risco_1pct": 0,
-        "ganho_bruto_tp1_brl": 0,
-        "ganho_bruto_tp2_brl": 0,
-        "setup": "Sem setup. Aguardar sweep dos extremos do range (5041 ou 4947) com rejeição clara + MSS no 15m antes de armar qualquer trade.",
-        "kill_zone": "—"
+        "direcao": "SHORT",
+        "entry_zona": "4970-4980",
+        "stop": 4985,
+        "stop_pts": 10,
+        "tp1": 4955,
+        "tp1_rr": 2.0,
+        "tp1_partial_pct": 50,
+        "tp2": 4947.5,
+        "tp2_rr": 3.5,
+        "tp2_partial_pct": 50,
+        "contratos_banca_30k_risco_1pct": 3,
+        "setup": "TRADE JÁ EM CURSO. Quem entrou na abertura ou no sweep PDL está com 30-40 pts de lucro. Pra entrada nova: aguardar pullback até 4970-4980 (retest da zona de oferta). Trailing nos HL do 5m.",
+        "kill_zone": "NY Open 10:30-11:30 BRT (em curso)"
       },
-      "comentario_breve": "Dia de WDO ficar de fora. Score < 6 → não opera. Saber ficar fora é parte do método."
+      "comentario_breve": "ATUALIZADO 10:30 BRT — Score 7,0. TP1 4975 já atingido. Atual 4963. Gerenciar trade ativo OU entrar em retest 4970-4980 com SL apertado (5pts além)."
     }
   ],
   "agenda_macro": [
@@ -118,10 +119,16 @@
     },
     {
       "hora_brt": "08:00",
-      "evento": "🚨 ATA DO COPOM (publicada hoje) · TOM HAWKISH MODERADO · adicionada pós-publicação",
+      "evento": "🚨 ATA DO COPOM · texto HAWKISH MODERADO · curva DI reverteu pra DOVISH às 9h15",
       "impacto": "ALTO",
       "janela_evitar": "08:00-09:00",
       "tag": "post_publication_correction"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "📊 CURVA DI DOVISH · DI Jan/27 −3,4bps · Jan/29 −5,9bps · Jan/31 −5,9bps · bull flatten leve",
+      "impacto": "ALTO",
+      "tag": "di_curva_dovish"
     },
     {
       "hora_brt": "09:00-09:25",
@@ -161,8 +168,11 @@
     "10:30-11:30 BRT · NY Open · WDO short apenas se rejeição clara em 5.041 ou long em 4.947"
   ],
   "regras_do_dia": [
-    "🚨 PÓS-ATA COPOM: scores rebaixados. WIN 6.0 → 5.0 (não opera). WDO mantém 4.5 (não opera). Macro hawkish moderado: Selic contracionista por mais tempo, BC pode reduzir ritmo/encerrar ciclo de cortes",
-    "WIN long agora exige gatilho mais forte: sweep + MSS com volume ≥ 2x média (subiu de 1,5x). Spring 186.865 segue como linha de invalidação",
+    "🟢 10:30 BRT · TRADES EXECUTÁVEIS. WIN 7.5 GO (MSS bullish + volume 2x às 10:00). WDO 7.0 GO (TP1 4975 já atingido, mira 4955/4947)",
+    "Curva DI atual (10:25 BRT): F27 +23bps ⚠ · F29 -7,1bps · F31 -1,8bps. Bull flatten com divergência interna no curto — monitorar F27, se subir mais 10bps pode reverter cenário",
+    "DXY caiu -10bps (98,5→98,4) reforçando tese bull WIN / bear WDO",
+    "WIN entry: PULLBACK 188.300-188.700 (retest do MSS) · SL 187.900 · TP1 189.335 (1,5R) · TP2 190.870 (4R) · TP3 193.805 (8R)",
+    "WDO entry: PULLBACK 4970-4980 (retest zona oferta) · SL 4985 · TP1 4955 (2R) · TP2 4947,5 (3,5R)",
     "Se preço fechar 1H abaixo de 186.865 = invalidação total · vira continuation bear até 185k",
     "WDO em modo aguardar · score 4.5 < 6 = NÃO OPERA. Trade só nos extremos do range (5.041 ou 4.947) com rejeição",
     "DXY 98,5 é o nível de atenção · quebra acima de 98,8 = USD strong → WDO pressiona long, WIN pressiona short",
