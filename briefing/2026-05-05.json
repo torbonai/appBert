@@ -31,14 +31,14 @@
     {
       "codigo": "WIN1!",
       "fase_wyckoff": "Reacumulação Fase B/C · Secondary Test em curso · Spring 186.865 NÃO rompido · volume decrescente nas quedas = absorção",
-      "score": 6.0,
+      "score": 6,
       "veredito": "GO_CONTINGENTE",
       "viés": "long",
       "racional_publico": "WIN segue em reacumulação após o markdown 203k→186.865 da semana passada. O low 186.865 é o Spring de referência e NÃO foi rompido — preço bounce para 191k (Automatic Rally) e voltou pra 188-189 fazendo o Secondary Test clássico. Volume decrescente nas descidas = absorção em curso. ES/NAS verdes overnight + DXY recovery leve = vento misto. Setup long do briefing #5 (entrada 188.500-189.000, SL 186.800, TP1 193.805) ainda válido — preço está colado no fundo da zona. ATENÇÃO: para entrar AGORA em LONG, exigir um dos dois gatilhos: (A) novo sweep do low 188.195 + MSS bullish 15m com volume ≥1,5x média; OU (B) CHoCH bullish 15m + MSS 1H confirmado. Sem nenhum dos dois, NÃO PERSEGUIR — Spring pode falhar e virar markdown direto pra 185k.",
       "niveis_chave": {
         "PDH": 191035,
         "PDL": 188195,
-        "ajuste_b3": 188374,
+        "ajuste_b3": 190628,
         "DR_high": 203470,
         "DR_low": 186865,
         "EQ_DR": 195167,
@@ -48,8 +48,8 @@
         "OB_bullish_4H": 187500
       },
       "ajuste_b3_meta": {
-        "data_referencia": "2026-05-04",
-        "fonte": "Ajuste oficial B3 · pregão de segunda 04/05"
+        "data_referencia": "2026-04-30",
+        "fonte": "TradingView close D-1 (proxy do ajuste B3)"
       },
       "plano": {
         "direcao": "LONG",
@@ -80,7 +80,7 @@
       "niveis_chave": {
         "PDH": 5017,
         "PDL": 4994,
-        "ajuste_b3": 5003.37,
+        "ajuste_b3": 4992.051,
         "DR_high": 5041,
         "DR_low": 4947.5,
         "EQ_DR": 4994.25,
@@ -89,8 +89,8 @@
         "OB_bullish_4H": 4947.5
       },
       "ajuste_b3_meta": {
-        "data_referencia": "2026-05-04",
-        "fonte": "Ajuste oficial B3 · pregão de segunda 04/05"
+        "data_referencia": "2026-04-30",
+        "fonte": "TradingView close D-1 (proxy do ajuste B3)"
       },
       "plano": {
         "direcao": "AGUARDAR",
