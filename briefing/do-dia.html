@@ -47,6 +47,40 @@
       color: var(--muted); margin: 0 0 var(--s-4); font-weight: 700;
     }
 
+    /* ========== Intraday Snapshot Card ========== */
+    .intraday-card {
+      background: linear-gradient(135deg, rgba(41,98,255,0.08) 0%, rgba(0,200,131,0.04) 100%);
+      border: 1px solid rgba(41,98,255,0.35);
+      border-radius: var(--radius); padding: var(--s-5);
+      margin-bottom: var(--s-4);
+    }
+    .intraday-card .head {
+      display: flex; align-items: baseline; justify-content: space-between;
+      margin-bottom: var(--s-3);
+    }
+    .intraday-card .title {
+      font-size: 12px; text-transform: uppercase; letter-spacing: 0.08em;
+      color: var(--accent); font-weight: 700;
+    }
+    .intraday-card .stamp { font-size: 12px; color: var(--muted); font-family: var(--mono); }
+    .intraday-grid {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+      gap: var(--s-3);
+    }
+    .intraday-cell {
+      background: rgba(0,0,0,0.18); border-radius: 8px; padding: var(--s-2) var(--s-3);
+      border-left: 3px solid var(--border);
+    }
+    .intraday-cell.up   { border-left-color: var(--green); }
+    .intraday-cell.down { border-left-color: var(--warn); }
+    .intraday-cell .sym { font-size: 11px; color: var(--muted); font-weight: 700; letter-spacing: 0.05em; }
+    .intraday-cell .price { font-size: 18px; font-family: var(--mono); font-weight: 700; color: var(--text); margin-top: 2px; }
+    .intraday-cell .var { font-size: 12px; font-family: var(--mono); margin-top: 2px; }
+    .intraday-cell .var.up   { color: var(--green); }
+    .intraday-cell .var.down { color: var(--warn); }
+    .intraday-cell .pos { font-size: 10px; color: var(--muted); margin-top: 4px; }
+    .intraday-card .hint { font-size: 11px; color: var(--muted); margin-top: var(--s-3); font-style: italic; }
+
     /* ========== Macro context ========== */
     .macro-pill {
       display: inline-block; padding: 4px 12px; border-radius: 999px;
@@ -406,6 +440,8 @@
           try {
             render(briefing);
             console.log('[briefing] renderizado com sucesso · edição', briefing.edicao);
+            // Carrega snapshot intraday em paralelo (não bloqueia render)
+            loadIntradaySnap(briefing.data);
           } catch (renderErr) {
             console.error('[briefing] erro durante render:', renderErr);
             showError('Erro ao renderizar briefing',
@@ -431,6 +467,57 @@
         return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
       }
 
+      function loadIntradaySnap(briefingDate) {
+        var el = document.getElementById('intraday-snap');
+        if (!el) return;
+        fetch('../data/intraday_snapshots/latest.json', { cache: 'no-cache' })
+          .then(function (r) { if (!r.ok) throw new Error('no-snap'); return r.json(); })
+          .then(function (snap) {
+            if (!snap || snap.trading_date !== briefingDate) return; // ignora se não é do dia
+            var fmtPrice = function(v, sym) {
+              if (typeof v !== 'number') return '—';
+              if (sym === 'WIN1!' || sym === 'WDO1!') return v.toLocaleString('pt-BR', { minimumFractionDigits: 0, maximumFractionDigits: 1 });
+              if (sym === 'USDJPY') return v.toFixed(3);
+              if (sym === 'DXY') return v.toFixed(2);
+              if (sym === 'XAUUSD') return v.toFixed(2);
+              return v.toFixed(2);
+            };
+            var html = '<div class="intraday-card">';
+            html += '<div class="head"><span class="title">📊 Snapshot intraday</span><span class="stamp">' + (snap.snapshot_label || '—') + '</span></div>';
+            html += '<div class="intraday-grid">';
+            var order = ['WIN1!', 'WDO1!', 'USDJPY', 'DXY', 'NAS100', 'US500', 'XAUUSD'];
+            order.forEach(function (sym) {
+              var d = snap.ativos && snap.ativos[sym];
+              if (!d || d.error) return;
+              var dir = d.change_pct > 0 ? 'up' : (d.change_pct < 0 ? 'down' : '');
+              var prevClose = d.daily_prev_close && d.daily_prev_close.close;
+              var varVsPrev = (typeof prevClose === 'number' && typeof d.last === 'number')
+                ? ((d.last - prevClose) / prevClose * 100) : null;
+              var varStr;
+              if (varVsPrev != null) {
+                var s = varVsPrev > 0 ? '+' : '';
+                varStr = s + varVsPrev.toFixed(2) + '%';
+                dir = varVsPrev > 0 ? 'up' : (varVsPrev < 0 ? 'down' : '');
+              } else {
+                varStr = (d.change_pct > 0 ? '+' : '') + d.change_pct + '%';
+              }
+              html += '<div class="intraday-cell ' + dir + '">';
+              html += '<div class="sym">' + sym + '</div>';
+              html += '<div class="price">' + fmtPrice(d.last, sym) + '</div>';
+              html += '<div class="var ' + dir + '">' + varStr + '</div>';
+              if (typeof d.pos_in_range_pct === 'number') {
+                html += '<div class="pos">range 50h: ' + d.pos_in_range_pct + '%</div>';
+              }
+              html += '</div>';
+            });
+            html += '</div>';
+            html += '<p class="hint">Atualização horária automática. Snapshot vs fechamento D-1. Dados do TradingView Desktop.</p>';
+            html += '</div>';
+            el.innerHTML = html;
+          })
+          .catch(function () { /* silencioso — sem snapshot, não mostra nada */ });
+      }
+
       function render(b) {
         if (!b) return;
         var html = '';
@@ -446,6 +533,9 @@
 
         // ===== GRID PRINCIPAL =====
         html += '<div class="b-grid"><div>';
+
+        // ===== Snapshot Intraday (auto-atualizado a cada hora) =====
+        html += '<div id="intraday-snap"></div>';
 
         // ===== Contexto macro · só pra Tela Pro (Persona B avançada) =====
         if (mostraTecnico) {
