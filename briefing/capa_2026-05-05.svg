@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1080" height="1920" viewBox="0 0 1080 1920">
+  <defs>
+    <style>
+      .bg     { fill: #0B0E14; }
+      .card   { fill: #151C29; }
+      .text   { fill: #E6EBF2; }
+      .text2  { fill: #C3CCDB; }
+      .muted  { fill: #8A95A8; }
+      .accent { fill: #2962FF; }
+      .accent_light { fill: #5A91FF; }
+      .green  { fill: #00C853; }
+      .warn   { fill: #FF1744; }
+      .gold   { fill: #D4AF37; }
+      .badge  { fill: #B4A58C; }
+      .amber  { fill: #FFB300; }
+      .sans       { font-family: "Inter", "Segoe UI", system-ui, sans-serif; }
+      .sans_bold  { font-family: "Inter", "Segoe UI", system-ui, sans-serif; font-weight: 700; }
+      .mono_bold  { font-family: "Cascadia Mono", "Consolas", "Liberation Mono", monospace; font-weight: 700; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1080" height="1920" class="bg"/>
+
+  <!-- ========== HEADER ========== -->
+  <text x="540" y="120" text-anchor="middle" class="sans muted" font-size="26">BERTANI BRIEFING</text>
+  <text x="540" y="180" text-anchor="middle" class="sans_bold text" font-size="50">05 MAI · TERÇA-FEIRA</text>
+  <text x="540" y="220" text-anchor="middle" class="sans muted" font-size="22">Edição #6 · 2026</text>
+
+  <!-- Tag selo BETA -->
+  <rect x="372" y="252" width="336" height="44" rx="22" ry="22" fill="#111722" stroke="#D4AF37" stroke-width="2"/>
+  <text x="540" y="282" text-anchor="middle" class="sans_bold gold" font-size="20" letter-spacing="1.5">BETA · 45 TESTERS</text>
+
+  <!-- ========== TÍTULO PRINCIPAL ========== -->
+  <text x="540" y="420" text-anchor="middle" class="sans_bold accent_light" font-size="84">SECONDARY TEST</text>
+  <text x="540" y="510" text-anchor="middle" class="sans_bold accent_light" font-size="48">WIN VIVO · WDO TRAVADO NO EQ</text>
+
+  <!-- ========== MANCHETE 2 LINHAS ========== -->
+  <text x="540" y="600" text-anchor="middle" class="sans muted" font-size="28">Long contingente WIN · WDO sem trigger</text>
+  <text x="540" y="642" text-anchor="middle" class="sans muted" font-size="28">Macro vento morno · semana de digestão</text>
+
+  <!-- ========== CARD WIN1! · GO CONTINGENTE (AMBER) ========== -->
+  <rect x="75" y="690" width="930" height="220" rx="20" ry="20" class="card" stroke="#FFB300" stroke-width="3"/>
+  <text x="110" y="770" class="sans_bold text" font-size="56">WIN1!</text>
+
+  <!-- Badge AMBER GO CONTINGENTE -->
+  <rect x="710" y="730" width="266" height="58" rx="29" ry="29" fill="#FFB300" stroke="#FFB300" stroke-width="2"/>
+  <text x="843" y="769" text-anchor="middle" class="sans_bold" fill="#0B0E14" font-size="26">GO CONTINGENTE</text>
+
+  <!-- Tag e descrição -->
+  <text x="110" y="828" class="sans muted" font-size="22">Reacumulação · Phase B/C</text>
+  <text x="110" y="860" class="sans muted" font-size="22">Long contingente · Spring 186.865 segurou</text>
+
+  <!-- Score + entry line -->
+  <text x="110" y="895" class="mono_bold amber" font-size="32">6.0/10</text>
+  <text x="240" y="893" class="sans_bold amber" font-size="26">Entry 188.000-188.500 · SL 186.800</text>
+
+  <!-- ========== CARD WDO1! · AGUARDAR ========== -->
+  <rect x="75" y="940" width="930" height="220" rx="20" ry="20" class="card" stroke="#3C4B64" stroke-width="2"/>
+  <text x="110" y="1020" class="sans_bold text" font-size="56">WDO1!</text>
+
+  <!-- Badge AGUARDAR -->
+  <rect x="780" y="980" width="196" height="58" rx="29" ry="29" fill="#111722" stroke="#B4A58C" stroke-width="2"/>
+  <text x="878" y="1019" text-anchor="middle" class="sans_bold badge" font-size="26">AGUARDAR</text>
+
+  <text x="110" y="1078" class="sans muted" font-size="22">Phase B lateral · EQ do range</text>
+
+  <text x="110" y="1145" class="mono_bold warn" font-size="32">4.5/10</text>
+  <text x="240" y="1143" class="sans_bold warn" font-size="26">Sem trigger · só extremos 5.041 / 4.947,5</text>
+
+  <!-- ========== DESTAQUE LIVE (substitui linha SETUP A+) ========== -->
+  <rect x="75" y="1200" width="930" height="140" rx="20" ry="20" fill="#1A1410" stroke="#D4AF37" stroke-width="3"/>
+  <text x="540" y="1255" text-anchor="middle" class="sans_bold gold" font-size="34">🎥 LIVE QUARTA · 20h</text>
+  <text x="540" y="1305" text-anchor="middle" class="sans_bold text" font-size="42">ANTI-NARRATIVA WYCKOFF</text>
+
+  <!-- ========== BANNER MACRO ========== -->
+  <rect x="80" y="1370" width="920" height="160" rx="20" ry="20" class="accent"/>
+  <text x="540" y="1418" text-anchor="middle" class="sans_bold" fill="#FFFFFF" font-size="32">PMI COMPOSTO US / EUROZONA</text>
+  <text x="540" y="1490" text-anchor="middle" class="sans_bold" fill="#FFFFFF" font-size="50">11h00 BRT</text>
+
+  <!-- ========== JANELAS LIMPAS ========== -->
+  <text x="540" y="1590" text-anchor="middle" class="sans_bold green" font-size="22">🟢 JANELAS LIMPAS</text>
+  <text x="540" y="1626" text-anchor="middle" class="sans text2" font-size="22">9h15-10h30 Londres · 10h30-11h30 NY Open</text>
+
+  <!-- ========== ALERTA VERMELHO ========== -->
+  <text x="540" y="1690" text-anchor="middle" class="sans_bold warn" font-size="22">⚠ SPRING 186.865 É A LINHA</text>
+  <text x="540" y="1722" text-anchor="middle" class="sans muted" font-size="20">viva acima · morta abaixo</text>
+
+  <!-- ========== FOOTER ========== -->
+  <text x="540" y="1800" text-anchor="middle" class="sans muted" font-size="30">@renatobertanioficial</text>
+  <text x="540" y="1846" text-anchor="middle" class="sans muted" font-size="18">CNPI T 9644 · CVM 20 · Educacional</text>
+  <text x="540" y="1882" text-anchor="middle" class="mono_bold muted" font-size="22">Terça, 05 de maio de 2026 · 08:30</text>
+</svg>

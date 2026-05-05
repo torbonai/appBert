@@ -38,7 +38,7 @@
       "niveis_chave": {
         "PDH": 191035,
         "PDL": 188195,
-        "ajuste_b3": 190628,
+        "ajuste_b3": 188374,
         "DR_high": 203470,
         "DR_low": 186865,
         "EQ_DR": 195167,
@@ -48,8 +48,8 @@
         "OB_bullish_4H": 187500
       },
       "ajuste_b3_meta": {
-        "data_referencia": "2026-04-30",
-        "fonte": "TradingView close D-1 (proxy do ajuste B3)"
+        "data_referencia": "2026-05-04",
+        "fonte": "Ajuste oficial B3 · pregão de segunda 04/05"
       },
       "plano": {
         "direcao": "LONG",
@@ -80,7 +80,7 @@
       "niveis_chave": {
         "PDH": 5017,
         "PDL": 4994,
-        "ajuste_b3": 4992.051,
+        "ajuste_b3": 5003.37,
         "DR_high": 5041,
         "DR_low": 4947.5,
         "EQ_DR": 4994.25,
@@ -89,8 +89,8 @@
         "OB_bullish_4H": 4947.5
       },
       "ajuste_b3_meta": {
-        "data_referencia": "2026-04-30",
-        "fonte": "TradingView close D-1 (proxy do ajuste B3)"
+        "data_referencia": "2026-05-04",
+        "fonte": "Ajuste oficial B3 · pregão de segunda 04/05"
       },
       "plano": {
         "direcao": "AGUARDAR",
