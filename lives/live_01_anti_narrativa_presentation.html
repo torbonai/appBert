@@ -1,0 +1,1217 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Live #1 — Anti-Narrativa Wyckoff · Bertani</title>
+<style>
+  :root {
+    --bg: #0B0E14;
+    --bg-card: #131822;
+    --bg-elev: #1A2030;
+    --text: #E6E8EB;
+    --dim: #9AA0AC;
+    --blue: #2962FF;
+    --green: #24C88C;
+    --red: #E94335;
+    --amber: #F5B700;
+    --border: rgba(154,160,172,0.15);
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    background: var(--bg);
+    color: var(--text);
+    font-family: 'Liberation Sans', -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif;
+    overflow: hidden;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ==================== Progress bar ==================== */
+  #progress {
+    position: fixed; top: 0; left: 0; right: 0;
+    height: 3px;
+    background: rgba(154,160,172,0.1);
+    z-index: 100;
+  }
+  #progress-fill {
+    height: 100%;
+    background: var(--blue);
+    width: 0%;
+    transition: width 0.3s ease;
+  }
+
+  /* ==================== Slide counter ==================== */
+  #slide-counter {
+    position: fixed; top: 14px; right: 24px;
+    font-size: 13px;
+    color: var(--dim);
+    font-family: 'DejaVu Mono', 'Consolas', monospace;
+    z-index: 100;
+    background: rgba(11,14,20,0.7);
+    padding: 4px 10px;
+    border-radius: 4px;
+  }
+
+  /* ==================== Brand ribbon ==================== */
+  #brand {
+    position: fixed; top: 14px; left: 24px;
+    font-size: 12px;
+    color: var(--dim);
+    z-index: 100;
+    letter-spacing: 0.15em;
+  }
+  #brand strong { color: var(--text); }
+
+  /* ==================== Slides ==================== */
+  #slides {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .slide {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    padding: 80px 100px 80px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+  }
+
+  .slide.active {
+    display: flex;
+    opacity: 1;
+  }
+
+  /* ==================== Typography ==================== */
+  .eyebrow {
+    font-size: 14px;
+    color: var(--blue);
+    text-transform: uppercase;
+    letter-spacing: 0.25em;
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+
+  h1 {
+    font-size: 88px;
+    line-height: 1.05;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    margin-bottom: 24px;
+  }
+
+  h2 {
+    font-size: 64px;
+    line-height: 1.1;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    margin-bottom: 20px;
+  }
+
+  h3 {
+    font-size: 36px;
+    line-height: 1.2;
+    font-weight: 600;
+    margin-bottom: 16px;
+  }
+
+  .lead {
+    font-size: 28px;
+    line-height: 1.4;
+    color: var(--text);
+    max-width: 1100px;
+    font-weight: 400;
+  }
+
+  .body-text {
+    font-size: 22px;
+    line-height: 1.5;
+    color: var(--text);
+    max-width: 950px;
+  }
+
+  .dim { color: var(--dim); }
+  .accent-blue { color: var(--blue); }
+  .accent-green { color: var(--green); }
+  .accent-red { color: var(--red); }
+  .accent-amber { color: var(--amber); }
+
+  /* ==================== Layouts ==================== */
+  .center { text-align: center; align-items: center; }
+  .center .lead { margin-left: auto; margin-right: auto; }
+
+  .split {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+  }
+
+  .grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 32px;
+    margin-top: 40px;
+  }
+
+  .grid-4 {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 28px;
+    margin-top: 32px;
+  }
+
+  /* ==================== Cards ==================== */
+  .card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 32px;
+  }
+
+  .card-pillar {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 36px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+  }
+  .card-pillar::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0;
+    height: 4px;
+    background: var(--blue);
+  }
+  .card-pillar.green::before { background: var(--green); }
+  .card-pillar.amber::before { background: var(--amber); }
+  .card-pillar .num {
+    font-size: 14px;
+    color: var(--dim);
+    letter-spacing: 0.25em;
+    margin-bottom: 12px;
+  }
+  .card-pillar .title {
+    font-size: 28px;
+    font-weight: 700;
+    margin-bottom: 12px;
+  }
+  .card-pillar .desc {
+    font-size: 16px;
+    color: var(--dim);
+    line-height: 1.5;
+  }
+
+  /* ==================== Quote slides ==================== */
+  .quote-block {
+    border-left: 6px solid var(--blue);
+    padding: 24px 0 24px 36px;
+    font-size: 44px;
+    line-height: 1.3;
+    font-style: italic;
+    font-weight: 300;
+    max-width: 1200px;
+  }
+  .quote-attrib {
+    margin-top: 28px;
+    font-size: 18px;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+  }
+
+  /* ==================== Crystal Clear box ==================== */
+  .crystal-box {
+    background: linear-gradient(135deg, rgba(41,98,255,0.12), rgba(36,200,140,0.06));
+    border: 2px solid var(--blue);
+    border-radius: 16px;
+    padding: 48px;
+    margin-top: 24px;
+  }
+  .crystal-box h3 {
+    color: var(--blue);
+    margin-bottom: 24px;
+    font-size: 28px;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+  }
+  .crystal-box ul {
+    list-style: none;
+  }
+  .crystal-box li {
+    font-size: 26px;
+    line-height: 1.5;
+    margin-bottom: 18px;
+    padding-left: 36px;
+    position: relative;
+  }
+  .crystal-box li::before {
+    content: '✓';
+    position: absolute;
+    left: 0;
+    color: var(--green);
+    font-weight: 700;
+    font-size: 28px;
+  }
+  .crystal-box li.deny::before {
+    content: '✗';
+    color: var(--red);
+  }
+
+  /* ==================== Score breakdown ==================== */
+  .score-bar {
+    display: grid;
+    grid-template-columns: 200px 1fr 80px;
+    align-items: center;
+    gap: 16px;
+    margin-bottom: 14px;
+    font-size: 18px;
+  }
+  .score-bar .label { color: var(--dim); }
+  .score-bar .bar {
+    height: 24px;
+    background: var(--bg-elev);
+    border-radius: 4px;
+    overflow: hidden;
+    position: relative;
+  }
+  .score-bar .fill {
+    height: 100%;
+    background: var(--blue);
+    border-radius: 4px;
+  }
+  .score-bar .fill.green { background: var(--green); }
+  .score-bar .fill.amber { background: var(--amber); }
+  .score-bar .val {
+    text-align: right;
+    color: var(--text);
+    font-weight: 600;
+  }
+
+  /* ==================== Step flow ==================== */
+  .flow {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+    margin-top: 36px;
+  }
+  .flow-step {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 20px 16px;
+    text-align: center;
+    position: relative;
+  }
+  .flow-step .num {
+    font-size: 12px;
+    color: var(--dim);
+    letter-spacing: 0.2em;
+    margin-bottom: 8px;
+  }
+  .flow-step .name {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 6px;
+  }
+  .flow-step .detail {
+    font-size: 13px;
+    color: var(--dim);
+    line-height: 1.4;
+  }
+  .flow-step.highlight {
+    border-color: var(--blue);
+    box-shadow: 0 0 0 2px rgba(41,98,255,0.25);
+  }
+  .flow-step.highlight::after {
+    content: '↑ ANTI-NARRATIVA ATIVA AQUI';
+    position: absolute;
+    bottom: -28px; left: 50%;
+    transform: translateX(-50%);
+    font-size: 11px;
+    color: var(--blue);
+    letter-spacing: 0.15em;
+    white-space: nowrap;
+    font-weight: 600;
+  }
+
+  /* ==================== Q&A list ==================== */
+  .qa {
+    margin-top: 24px;
+  }
+  .qa-item {
+    margin-bottom: 28px;
+    border-left: 3px solid var(--blue);
+    padding-left: 24px;
+  }
+  .qa-q {
+    font-size: 22px;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  .qa-a {
+    font-size: 18px;
+    color: var(--dim);
+    line-height: 1.5;
+  }
+
+  /* ==================== Tag / pill ==================== */
+  .pill {
+    display: inline-block;
+    padding: 4px 14px;
+    border-radius: 999px;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin-right: 8px;
+  }
+  .pill.green { background: rgba(36,200,140,0.15); color: var(--green); }
+  .pill.red { background: rgba(233,67,53,0.15); color: var(--red); }
+  .pill.amber { background: rgba(245,183,0,0.15); color: var(--amber); }
+  .pill.blue { background: rgba(41,98,255,0.15); color: var(--blue); }
+
+  /* ==================== Bottom controls ==================== */
+  #controls {
+    position: fixed; bottom: 24px; left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 12px;
+    z-index: 100;
+  }
+  #controls button {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    color: var(--text);
+    width: 44px; height: 44px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: all 0.2s;
+  }
+  #controls button:hover {
+    background: var(--bg-elev);
+    border-color: var(--blue);
+  }
+  #controls button:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+  }
+
+  /* ==================== Speaker notes ==================== */
+  #speaker-notes {
+    position: fixed;
+    bottom: 80px; left: 24px; right: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(19,24,34,0.96);
+    border: 1px solid var(--blue);
+    border-radius: 12px;
+    padding: 20px 28px;
+    z-index: 99;
+    max-height: 40vh;
+    overflow-y: auto;
+    display: none;
+    box-shadow: 0 10px 40px rgba(0,0,0,0.5);
+  }
+  #speaker-notes.visible { display: block; }
+  #speaker-notes h4 {
+    font-size: 12px;
+    color: var(--blue);
+    letter-spacing: 0.2em;
+    margin-bottom: 12px;
+    text-transform: uppercase;
+  }
+  #speaker-notes p {
+    font-size: 15px;
+    line-height: 1.5;
+    color: var(--text);
+    margin-bottom: 8px;
+  }
+
+  /* ==================== Help bar ==================== */
+  #help {
+    position: fixed; bottom: 24px; right: 24px;
+    font-size: 11px;
+    color: var(--dim);
+    letter-spacing: 0.05em;
+    text-align: right;
+    z-index: 100;
+  }
+  #help kbd {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: 3px;
+    padding: 2px 6px;
+    font-family: 'DejaVu Mono', monospace;
+    font-size: 10px;
+    color: var(--text);
+  }
+
+  /* ==================== SVG visuals base ==================== */
+  svg.illustration {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+
+  /* ==================== Cover slide ==================== */
+  .cover-tag {
+    font-size: 14px;
+    color: var(--blue);
+    letter-spacing: 0.3em;
+    margin-bottom: 24px;
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .cover-meta {
+    margin-top: 48px;
+    font-size: 16px;
+    color: var(--dim);
+    letter-spacing: 0.1em;
+  }
+  .cover-meta strong { color: var(--text); }
+
+  /* ==================== Animation ==================== */
+  @keyframes fadeUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .slide.active > * {
+    animation: fadeUp 0.6s ease;
+    animation-fill-mode: both;
+  }
+  .slide.active > *:nth-child(1) { animation-delay: 0.1s; }
+  .slide.active > *:nth-child(2) { animation-delay: 0.2s; }
+  .slide.active > *:nth-child(3) { animation-delay: 0.3s; }
+  .slide.active > *:nth-child(4) { animation-delay: 0.4s; }
+
+  /* ==================== Print mode (export to PDF) ==================== */
+  @media print {
+    .slide {
+      display: flex !important;
+      opacity: 1 !important;
+      page-break-after: always;
+      height: 100vh;
+    }
+    #controls, #help, #speaker-notes, #brand, #slide-counter, #progress { display: none !important; }
+  }
+</style>
+</head>
+<body>
+
+<div id="progress"><div id="progress-fill"></div></div>
+<div id="brand"><strong>BERTANI</strong> · LIVE #01</div>
+<div id="slide-counter">01 / 20</div>
+
+<main id="slides">
+
+  <!-- ==================== SLIDE 1: COVER ==================== -->
+  <section class="slide active center">
+    <div class="cover-tag">LIVE #01 · WYCKOFF SERIES</div>
+    <h1>Anti-Narrativa<br><span class="accent-blue">Wyckoff</span></h1>
+    <p class="lead">O 3º pilar do método Bertani · O filtro que transforma news em vantagem operacional.</p>
+    <svg class="illustration" viewBox="0 0 600 200" style="margin: 40px auto;">
+      <!-- Composite Man silhouette + arrows -->
+      <defs>
+        <linearGradient id="grad-arrow-up" x1="0%" y1="100%" x2="0%" y2="0%">
+          <stop offset="0%" stop-color="#24C88C" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="#24C88C"/>
+        </linearGradient>
+        <linearGradient id="grad-arrow-down" x1="0%" y1="0%" x2="0%" y2="100%">
+          <stop offset="0%" stop-color="#E94335" stop-opacity="0.2"/>
+          <stop offset="100%" stop-color="#E94335"/>
+        </linearGradient>
+      </defs>
+      <!-- Top: news headline negative -->
+      <text x="100" y="30" fill="#E94335" font-size="14" font-weight="600" text-anchor="middle">📰 "CRISE"</text>
+      <!-- Down arrow (sellers panicking) -->
+      <path d="M 100 50 L 100 110 M 92 100 L 100 115 L 108 100" stroke="url(#grad-arrow-down)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <!-- Composite Man center -->
+      <g transform="translate(300, 100)">
+        <circle cx="0" cy="-30" r="18" fill="#2962FF" opacity="0.85"/>
+        <rect x="-22" y="-12" width="44" height="48" rx="6" fill="#2962FF" opacity="0.85"/>
+        <text x="0" y="60" fill="#9AA0AC" font-size="13" letter-spacing="2" text-anchor="middle">COMPOSITE MAN</text>
+      </g>
+      <!-- Up arrow (buying the dip) -->
+      <path d="M 500 110 L 500 50 M 492 60 L 500 45 L 508 60" stroke="url(#grad-arrow-up)" stroke-width="3" fill="none" stroke-linecap="round"/>
+      <text x="500" y="180" fill="#24C88C" font-size="14" font-weight="600" text-anchor="middle">📈 ABSORÇÃO</text>
+    </svg>
+    <p class="cover-meta"><strong>Quarta · 06/05/2026 · 20h00 BRT</strong> · YouTube ao vivo · 90 min</p>
+  </section>
+
+  <!-- ==================== SLIDE 2: HOOK - O CASO DE HOJE ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Hook · Bloco 1</div>
+    <h2>Ontem, ao vivo, o método entregou.</h2>
+    <div class="split" style="margin-top: 40px;">
+      <div>
+        <p class="lead">Ontem 8h30 · Briefing #6 publicado:</p>
+        <div class="quote-block" style="font-size: 26px; margin-top: 20px;">
+          "WIN no Secondary Test do Spring 186.865.<br>Long contingente, score 6.0.<br>Spring é a linha — viva acima, morta abaixo."
+        </div>
+        <p style="margin-top: 28px; font-size: 22px;" class="accent-green">→ Algumas horas depois, aconteceu exatamente isso.</p>
+      </div>
+      <div>
+        <svg class="illustration" viewBox="0 0 400 300">
+          <!-- Schematic Spring + Secondary Test chart -->
+          <line x1="20" y1="280" x2="380" y2="280" stroke="#1A2030" stroke-width="1"/>
+          <line x1="20" y1="20" x2="20" y2="280" stroke="#1A2030" stroke-width="1"/>
+          <!-- Spring low marker -->
+          <line x1="20" y1="240" x2="380" y2="240" stroke="#E94335" stroke-width="1" stroke-dasharray="4 4"/>
+          <text x="380" y="237" fill="#E94335" font-size="11" text-anchor="end">Spring 186.865</text>
+          <!-- Price action down to spring -->
+          <polyline points="20,80 50,100 80,140 110,180 140,210 170,235 200,242" fill="none" stroke="#9AA0AC" stroke-width="2"/>
+          <!-- Spring touch and bounce -->
+          <circle cx="200" cy="244" r="5" fill="#E94335"/>
+          <text x="200" y="265" fill="#E94335" font-size="10" text-anchor="middle">Spring touch</text>
+          <!-- Bounce up -->
+          <polyline points="200,244 230,210 260,180 290,170 320,160 350,150" fill="none" stroke="#24C88C" stroke-width="2.5"/>
+          <circle cx="350" cy="150" r="5" fill="#24C88C"/>
+          <text x="350" y="140" fill="#24C88C" font-size="10" text-anchor="middle">Absorção 15m</text>
+          <!-- Volume bars -->
+          <rect x="195" y="270" width="10" height="10" fill="#24C88C" opacity="0.6"/>
+          <rect x="225" y="272" width="10" height="8" fill="#24C88C" opacity="0.5"/>
+          <rect x="255" y="274" width="10" height="6" fill="#24C88C" opacity="0.4"/>
+          <text x="200" y="20" fill="#9AA0AC" font-size="11">WIN · 15m · 05/05/2026</text>
+        </svg>
+      </div>
+    </div>
+    <p style="margin-top: 32px; font-size: 20px;" class="dim">Não foi sorte. Foi a leitura de um princípio com quase 100 anos.</p>
+  </section>
+
+  <!-- ==================== SLIDE 3: O ELEFANTE NA SALA ==================== -->
+  <section class="slide center">
+    <div class="eyebrow">A Objeção · Bloco 1</div>
+    <h2>"Esse negócio de Anti-Narrativa<br><span class="accent-amber">confunde mais do que ajuda.</span>"</h2>
+    <p class="lead" style="margin-top: 32px;">E quem disse isso tem razão — <strong>se eu não explicar direito.</strong></p>
+    <p class="lead" style="margin-top: 24px;">Hoje a gente resolve isso de uma vez.</p>
+    <div style="margin-top: 48px; padding: 24px 36px; background: var(--bg-card); border: 1px solid var(--blue); border-radius: 12px; max-width: 900px;">
+      <p style="font-size: 20px; color: var(--dim);">No fim da live, vocês vão saber:</p>
+      <p style="font-size: 24px; margin-top: 12px;" class="accent-blue">✓ Quando uso o filtro · Quando NÃO uso · Por quê funciona · Por quê pode falhar</p>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 4: WYCKOFF QUEM FOI ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Conceito · Bloco 2</div>
+    <h2>Richard D. Wyckoff <span class="dim">(1873-1934)</span></h2>
+    <div class="split" style="margin-top: 32px;">
+      <div>
+        <p class="body-text">Operador da Bolsa de NY entre 1900-1930.</p>
+        <p class="body-text" style="margin-top: 18px;">Estudou os padrões dos grandes operadores da época: <strong>J.P. Morgan</strong>, <strong>Jesse Livermore</strong>, <strong>James Keene</strong>.</p>
+        <p class="body-text" style="margin-top: 18px;">Criou um conceito revolucionário pra explicar o comportamento institucional:</p>
+        <h3 style="margin-top: 24px;" class="accent-blue">O Composite Man.</h3>
+      </div>
+      <div style="text-align: center;">
+        <svg class="illustration" viewBox="0 0 300 300">
+          <!-- Stylized bust -->
+          <circle cx="150" cy="100" r="50" fill="none" stroke="#2962FF" stroke-width="2"/>
+          <circle cx="150" cy="100" r="50" fill="#2962FF" opacity="0.1"/>
+          <!-- Body -->
+          <path d="M 80 280 Q 80 180 150 180 Q 220 180 220 280" fill="none" stroke="#2962FF" stroke-width="2"/>
+          <path d="M 80 280 Q 80 180 150 180 Q 220 180 220 280" fill="#2962FF" opacity="0.1"/>
+          <!-- Decorative -->
+          <text x="150" y="103" fill="#2962FF" font-size="13" text-anchor="middle" letter-spacing="2">CM</text>
+          <!-- Subtle arrows around -->
+          <path d="M 30 50 L 50 70" stroke="#9AA0AC" stroke-width="1" opacity="0.3"/>
+          <path d="M 270 50 L 250 70" stroke="#9AA0AC" stroke-width="1" opacity="0.3"/>
+          <text x="150" y="295" fill="#9AA0AC" font-size="12" text-anchor="middle" letter-spacing="3">A METÁFORA DO SMART MONEY</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 5: O PRINCÍPIO ==================== -->
+  <section class="slide center">
+    <div class="eyebrow">Conceito · Bloco 2</div>
+    <div class="quote-block">
+      "O Composite Man <span class="accent-red">vende boa notícia no topo.</span><br>
+      <span class="accent-green">Compra má notícia no fundo.</span><br>
+      O público faz o oposto."
+    </div>
+    <p class="quote-attrib">— Richard D. Wyckoff</p>
+    <p class="lead dim" style="margin-top: 48px; font-size: 22px;">A pergunta operacional: <span class="accent-blue">como você opera com isso?</span></p>
+  </section>
+
+  <!-- ==================== SLIDE 6: POR QUE FUNCIONA ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Conceito · Bloco 2</div>
+    <h2>Por que isso <span class="accent-blue">funciona</span>?</h2>
+    <p class="lead" style="margin-top: 24px;">Institucional precisa de <strong>liquidez</strong>. Liquidez é a contraparte oposta.</p>
+
+    <div class="grid-4" style="margin-top: 48px;">
+      <div class="card">
+        <div style="font-size: 28px; margin-bottom: 12px;">🐋</div>
+        <h3 style="font-size: 24px;" class="accent-red">Vendedor institucional</h3>
+        <p class="body-text dim" style="font-size: 18px;">precisa de <strong>comprador eufórico</strong>. <br><br>→ Manchete positiva atrai retail.</p>
+      </div>
+      <div class="card">
+        <div style="font-size: 28px; margin-bottom: 12px;">🐋</div>
+        <h3 style="font-size: 24px;" class="accent-green">Comprador institucional</h3>
+        <p class="body-text dim" style="font-size: 18px;">precisa de <strong>vendedor desesperado</strong>. <br><br>→ Manchete negativa gera capitulação.</p>
+      </div>
+    </div>
+
+    <p class="lead" style="margin-top: 40px; font-size: 24px;" class="accent-blue">News é o ímã que atrai a contraparte. <span class="dim">Não é informação — é ferramenta de execução.</span></p>
+  </section>
+
+  <!-- ==================== SLIDE 7: 3 PILARES ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Método · Bloco 2</div>
+    <h2>Os 3 Pilares Bertani</h2>
+    <p class="lead" style="margin-top: 16px;">Cada pilar resolve uma camada diferente do problema operacional.</p>
+
+    <div class="grid-3">
+      <div class="card-pillar amber">
+        <div class="num">PILAR 1</div>
+        <div class="title accent-amber">Wyckoff</div>
+        <p class="desc">O <strong>mapa</strong> do dinheiro institucional.<br><br>Fases A → B → C → D → E.<br>Acumulação, distribuição, Spring, UTAD.</p>
+      </div>
+      <div class="card-pillar green">
+        <div class="num">PILAR 2</div>
+        <div class="title accent-green">ICT</div>
+        <p class="desc">Os <strong>gatilhos</strong> de entrada precisos.<br><br>FVG, OB, MSS, Sweep.<br>Kill zones intraday.</p>
+      </div>
+      <div class="card-pillar">
+        <div class="num">PILAR 3</div>
+        <div class="title accent-blue">Anti-Narrativa</div>
+        <p class="desc">O <strong>filtro</strong> de contexto HTF.<br><br>Cruza tom de news com fase Wyckoff.<br>+1 modifier quando há divergência.</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 40px; font-size: 18px;" class="dim center">Wyckoff dá o mapa. ICT dá o gatilho. <span class="accent-blue">Anti-Narrativa dá o contexto.</span></p>
+  </section>
+
+  <!-- ==================== SLIDE 8: CRYSTAL CLEAR ==================== -->
+  <section class="slide">
+    <div class="eyebrow">⚠️ Slide-chave da live · Bloco 2</div>
+    <h2>O que <span class="accent-blue">é</span> e o que <span class="accent-red">não é</span>.</h2>
+
+    <div class="crystal-box">
+      <h3>Anti-Narrativa É:</h3>
+      <ul>
+        <li>Um <strong>modificador de score HTF</strong> — adiciona +1 quando news contradiz fase técnica</li>
+        <li>Roda <strong>1× ao dia</strong>, no pré-mercado, no Passo 1.7 do briefing</li>
+        <li>Suporte a teses de <strong>swing/multi-day</strong>, não scalp</li>
+        <li>Um <strong>tie-breaker</strong> quando o score técnico está no limiar (5.0-6.0)</li>
+      </ul>
+    </div>
+
+    <div class="crystal-box" style="margin-top: 24px; border-color: var(--red); background: linear-gradient(135deg, rgba(233,67,53,0.08), rgba(233,67,53,0.02));">
+      <h3 style="color: var(--red);">Anti-Narrativa NÃO é:</h3>
+      <ul>
+        <li class="deny">Um sistema novo que substitui Wyckoff ou ICT</li>
+        <li class="deny">Gatilho de entrada — você não compra "porque a news é negativa"</li>
+        <li class="deny">Override de estrutura — nunca contraria leitura técnica</li>
+        <li class="deny">Ferramenta de scalp intraday — irrelevante em trades de 5-15 min</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 9: CASE 1 - WIN HOJE ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Case 1 · Charts ao vivo · Bloco 3</div>
+    <h2>WIN · <span class="accent-green">Ontem, 05/05</span></h2>
+
+    <div class="split" style="margin-top: 32px;">
+      <div>
+        <p class="body-text">
+          <span class="pill blue">CONTEXTO MACRO</span><br>
+          "Vento morno · sem trigger · semana de digestão"
+        </p>
+        <p class="body-text" style="margin-top: 20px;">
+          <span class="pill amber">FASE WYCKOFF 4H</span><br>
+          Reacumulação Phase B/C · Secondary Test
+        </p>
+        <p class="body-text" style="margin-top: 20px;">
+          <span class="pill red">SPRING LEVEL</span><br>
+          186.865 · não rompido (low real: 186.900)
+        </p>
+        <div style="margin-top: 32px; background: var(--bg-card); padding: 24px; border-radius: 8px; border: 1px solid var(--border);">
+          <p style="font-size: 16px; color: var(--dim); margin-bottom: 16px;">DECOMPOSIÇÃO DO SCORE</p>
+          <div class="score-bar">
+            <span class="label">Wyckoff fase</span>
+            <div class="bar"><div class="fill amber" style="width: 60%;"></div></div>
+            <span class="val">2.0</span>
+          </div>
+          <div class="score-bar">
+            <span class="label">ICT (sweep + OB)</span>
+            <div class="bar"><div class="fill green" style="width: 90%;"></div></div>
+            <span class="val">3.0</span>
+          </div>
+          <div class="score-bar">
+            <span class="label">Anti-Narrativa</span>
+            <div class="bar"><div class="fill" style="width: 100%;"></div></div>
+            <span class="val accent-blue">+1.0</span>
+          </div>
+          <div class="score-bar" style="border-top: 1px solid var(--border); padding-top: 12px; margin-top: 12px;">
+            <span class="label" style="color: var(--text); font-weight: 600;">SCORE TOTAL</span>
+            <div class="bar"><div class="fill green" style="width: 60%;"></div></div>
+            <span class="val accent-green" style="font-size: 22px;">6.0</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p style="font-size: 18px; color: var(--dim); margin-bottom: 16px;">PRICE ACTION 15m (intraday)</p>
+        <svg class="illustration" viewBox="0 0 400 320">
+          <!-- Spring chart -->
+          <line x1="20" y1="290" x2="380" y2="290" stroke="#1A2030"/>
+          <line x1="20" y1="20" x2="20" y2="290" stroke="#1A2030"/>
+          <!-- Spring level dashed -->
+          <line x1="20" y1="240" x2="380" y2="240" stroke="#E94335" stroke-width="1.5" stroke-dasharray="6 4"/>
+          <text x="380" y="234" fill="#E94335" font-size="12" text-anchor="end">186.865 Spring</text>
+          <!-- Entry zone -->
+          <rect x="20" y="180" width="360" height="20" fill="#24C88C" opacity="0.08"/>
+          <text x="380" y="195" fill="#24C88C" font-size="11" text-anchor="end">188.000-188.500 entry</text>
+          <!-- Price descent -->
+          <polyline points="30,90 60,110 90,140 120,170 150,200 180,225 210,238 230,243" fill="none" stroke="#9AA0AC" stroke-width="2"/>
+          <!-- Spring touch -->
+          <circle cx="230" cy="245" r="6" fill="#E94335"/>
+          <text x="230" y="270" fill="#E94335" font-size="10" text-anchor="middle">Touch + bounce</text>
+          <!-- Recovery -->
+          <polyline points="230,245 260,210 290,190 320,180 360,175" fill="none" stroke="#24C88C" stroke-width="2.5"/>
+          <circle cx="360" cy="175" r="6" fill="#24C88C"/>
+          <text x="360" y="160" fill="#24C88C" font-size="10" text-anchor="end">Effort + Result</text>
+          <!-- Volume contraction -->
+          <text x="20" y="20" fill="#9AA0AC" font-size="11">Volume contraindo na queda → absorção</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 10: CASE 2 - IPCA-15 28/04 ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Case 2 · Bloco 3</div>
+    <h2>IPCA-15 · <span class="accent-blue">28/04/2026</span></h2>
+    <p class="lead" style="margin-top: 16px;">News <span class="accent-green">dovish</span> que deveria subir o WIN. Mas o WIN primeiro <span class="accent-red">DESCEU</span>.</p>
+
+    <div class="split" style="margin-top: 36px;">
+      <div>
+        <span class="pill blue">A NARRATIVA</span>
+        <h3 style="margin-top: 14px; font-size: 26px;">IPCA-15 abril: 0,89%</h3>
+        <p class="body-text" style="font-size: 18px; margin-top: 12px;">Consenso era 0,95% · veio <strong class="accent-green">ABAIXO</strong>. Sinal dovish para Selic.</p>
+        <p class="body-text dim" style="font-size: 16px; margin-top: 10px;">Reação esperada do mercado: WIN sobe (queda de juros = stocks rally).</p>
+
+        <span class="pill green" style="margin-top: 28px; display: inline-block;">O FILTRO ATIVOU</span>
+        <h3 style="margin-top: 14px; font-size: 24px;" class="accent-blue">Anti-Narrativa LONG</h3>
+        <p class="body-text" style="font-size: 16px; margin-top: 10px;">News bullish + WIN em fundo do range 100h (192.600) + preço NÃO subindo apesar do IPCA bom = Composite Man absorvendo o pânico do retail.</p>
+      </div>
+
+      <div>
+        <span class="pill amber">A REALIDADE</span>
+        <h3 style="margin-top: 14px; font-size: 26px;">WIN primeiro DESCEU</h3>
+        <p class="body-text" style="font-size: 18px; margin-top: 12px;">Em vez de subir com o IPCA bom, preço cedeu mais — capitulação dos comprados otimistas que entraram na manchete.</p>
+        <p class="body-text dim" style="font-size: 16px; margin-top: 10px;">Quem comprou na notícia entrou no <strong>topo da euforia inicial</strong>. Quem esperou absorção + sweep entrou no <strong>fundo do movimento</strong>.</p>
+
+        <span class="pill red" style="margin-top: 28px; display: inline-block;">A LIÇÃO</span>
+        <h3 style="margin-top: 14px; font-size: 24px;">Sem o filtro, perdeu.</h3>
+        <p class="body-text" style="font-size: 16px; margin-top: 10px;">"A reação racional do mercado quase nunca é a reação real. <strong>O smart money usa a manchete contra o retail.</strong>"</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== SLIDE 11: CASE 3 - QUANDO NÃO ATIVA ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Case 3 · Bloco 3</div>
+    <h2>Quando o filtro <span class="accent-amber">NÃO ativa</span>.</h2>
+    <p class="lead" style="margin-top: 16px;">Cenário comum: news positiva + acumulação Wyckoff = filtro DESLIGADO.</p>
+
+    <div class="grid-4" style="margin-top: 40px;">
+      <div class="card">
+        <span class="pill green">CENÁRIO 1</span>
+        <h3 style="margin-top: 16px; font-size: 22px;">News positiva + FASE D markup</h3>
+        <p class="body-text dim" style="font-size: 17px; margin-top: 12px;">News e técnica <strong>alinhadas</strong>. Sem divergência pra capturar. Filtro neutro.</p>
+      </div>
+      <div class="card">
+        <span class="pill red">CENÁRIO 2</span>
+        <h3 style="margin-top: 16px; font-size: 22px;">News negativa + FASE D markdown</h3>
+        <p class="body-text dim" style="font-size: 17px; margin-top: 12px;">Igual: sinal e contexto na mesma direção. <strong>Sem absorção institucional invisível.</strong></p>
+      </div>
+    </div>
+
+    <p style="margin-top: 40px; font-size: 22px;" class="accent-blue center">Filtro só ATIVA em divergência. <span class="dim">Não é buff genérico no score.</span></p>
+  </section>
+
+  <!-- ==================== SLIDE 12: CASE 4 - CROSS-MARKET ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Case 4 · Bloco 3</div>
+    <h2>Não é macete só de WIN.</h2>
+    <p class="lead" style="margin-top: 24px;">O princípio do Composite Man é universal — vale pra qualquer mercado com news cycle.</p>
+
+    <div class="grid-3" style="margin-top: 40px;">
+      <div class="card center">
+        <div style="font-size: 38px; margin-bottom: 12px;">🇧🇷</div>
+        <h3 style="font-size: 22px;">B3 / WIN-WDO</h3>
+        <p class="body-text dim" style="font-size: 16px;">Copom, BCB Focus, payroll BR</p>
+      </div>
+      <div class="card center">
+        <div style="font-size: 38px; margin-bottom: 12px;">🇺🇸</div>
+        <h3 style="font-size: 22px;">CME / ES-NQ</h3>
+        <p class="body-text dim" style="font-size: 16px;">FOMC, NFP, CPI, FED minutes</p>
+      </div>
+      <div class="card center">
+        <div style="font-size: 38px; margin-bottom: 12px;">💱</div>
+        <h3 style="font-size: 22px;">FX / DXY-EUR</h3>
+        <p class="body-text dim" style="font-size: 16px;">ECB, BoJ intervention, geopolítica</p>
+      </div>
+    </div>
+
+    <p class="body-text dim" style="margin-top: 40px;">⚠️ <strong>Não vale pra cripto</strong> — manipulação narrativa funciona com lógica diferente (volume mais retail, news cycle agressivo).</p>
+  </section>
+
+  <!-- ==================== SLIDE 13: CASE 5 - QUANDO O FILTRO FALHA (COPOM 05/05) ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Case real · Humildade · 05/05/2026</div>
+    <h2>Quando o filtro <span class="accent-red">falha</span>.</h2>
+    <p class="lead" style="margin-top: 16px;">Porque ninguém vende Santo Graal aqui. E ontem teve uma lição ao vivo.</p>
+
+    <div class="split" style="margin-top: 32px; gap: 48px;">
+      <div>
+        <div style="border-left: 3px solid var(--green); padding-left: 18px; margin-bottom: 22px;">
+          <span class="pill green">8h30</span>
+          <p style="font-size: 18px; margin-top: 8px; line-height: 1.5;"><strong>Briefing #6 publicado.</strong> WIN long contingente · score <strong class="accent-green">6.0</strong>. Anti-Narrativa ATIVA: news "vento morno" + reacumulação = +1.</p>
+        </div>
+        <div style="border-left: 3px solid var(--amber); padding-left: 18px; margin-bottom: 22px;">
+          <span class="pill amber">12h</span>
+          <p style="font-size: 18px; margin-top: 8px; line-height: 1.5;"><strong>Ata do Copom sai · HAWKISH MODERADO.</strong> Selic contracionista por mais tempo. Desancoragem 2027/2028. Choque petróleo + Oriente Médio.</p>
+        </div>
+        <div style="border-left: 3px solid var(--red); padding-left: 18px;">
+          <span class="pill red">12h30</span>
+          <p style="font-size: 18px; margin-top: 8px; line-height: 1.5;"><strong>Update publicado.</strong> Score WIN rebaixado <strong class="accent-red">6.0 → 5.0</strong> · AGUARDAR. Volume exigido subiu pra ≥2× média.</p>
+        </div>
+      </div>
+
+      <div>
+        <h3 style="font-size: 26px;" class="accent-red">O que falhou.</h3>
+        <p class="body-text" style="font-size: 17px; margin-top: 12px; line-height: 1.55;">O briefing das 8h30 <strong>não puxou a Ata do Copom</strong> no input — evento que mudou o tom hawkish do dia.</p>
+        <p class="body-text" style="font-size: 17px; margin-top: 10px; line-height: 1.55;">Hawkish + reacumulação = o +1 da Anti-Narrativa que sustentava o long fica <strong class="accent-red">neutro ou negativo</strong>.</p>
+
+        <h3 style="font-size: 26px; margin-top: 28px;" class="accent-blue">A lição.</h3>
+        <ul style="margin-top: 12px; padding-left: 24px; line-height: 1.85; font-size: 17px; color: var(--dim);">
+          <li>Filtro depende de <strong style="color: var(--text);">inputs completos</strong></li>
+          <li>Falta fonte → acerta Wyckoff, erra o macro</li>
+          <li>Briefing é <strong style="color: var(--text);">documento vivo</strong>, não sinal fechado</li>
+          <li>Track Record público: erro aparece, correção também</li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="margin-top: 24px; font-size: 22px;" class="accent-blue center">Filtro é <strong>probabilidade</strong>, não certeza. E só funciona com inputs completos.</p>
+  </section>
+
+  <!-- ==================== SLIDE 14: 5 PASSOS ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Setup completo · Bloco 4</div>
+    <h2>Os 5 passos do método.</h2>
+    <p class="lead dim" style="margin-top: 16px; font-size: 22px;">Onde exatamente o Anti-Narrativa entra no fluxo.</p>
+
+    <div class="flow">
+      <div class="flow-step highlight">
+        <div class="num">PASSO 1</div>
+        <div class="name">Bias HTF (4H)</div>
+        <div class="detail">Fase Wyckoff · Dealing range · Posição</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">PASSO 2</div>
+        <div class="name">Confirmação 1H</div>
+        <div class="detail">MSS · OBs HTF não mitigados</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">PASSO 3</div>
+        <div class="name">Gatilho 15m</div>
+        <div class="detail">Sweep + MSS local · FVG/OB</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">PASSO 4</div>
+        <div class="name">Score</div>
+        <div class="detail">≥ 6/10 + nenhum avoid ativo</div>
+      </div>
+      <div class="flow-step">
+        <div class="num">PASSO 5</div>
+        <div class="name">Plano escrito</div>
+        <div class="detail">Entry · SL · TP1/TP2 · Kill zone</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 80px; font-size: 22px;" class="dim center">Anti-Narrativa entra no <strong class="accent-blue">Passo 1</strong>, modificando o score HTF antes da cascata técnica.</p>
+  </section>
+
+  <!-- ==================== SLIDE 15: APLICAÇÃO COMPLETA WIN ==================== -->
+  <section class="slide">
+    <div class="eyebrow">End-to-end · Bloco 4</div>
+    <h2>O caso WIN de ontem · método inteiro.</h2>
+
+    <div class="grid-4" style="grid-template-columns: repeat(2, 1fr); margin-top: 32px;">
+      <div class="card">
+        <span class="pill amber">PASSO 1</span>
+        <h3 style="margin-top: 12px; font-size: 22px;">Bias HTF</h3>
+        <p class="body-text dim" style="font-size: 16px;">Reacumulação B/C · Range 186.865-203.470 · <strong class="accent-blue">Anti-Narrativa ATIVA</strong> (news vento morno + acumulação)</p>
+      </div>
+      <div class="card">
+        <span class="pill blue">PASSO 2</span>
+        <h3 style="margin-top: 12px; font-size: 22px;">Confirmação 1H</h3>
+        <p class="body-text dim" style="font-size: 16px;">OB bullish 4H não mitigado em 187.500 · MSS pendente</p>
+      </div>
+      <div class="card">
+        <span class="pill green">PASSO 3</span>
+        <h3 style="margin-top: 12px; font-size: 22px;">Gatilho 15m</h3>
+        <p class="body-text dim" style="font-size: 16px;">Sweep do 188.195 + MSS bullish 15m com volume ≥1,5×</p>
+      </div>
+      <div class="card">
+        <span class="pill green">PASSO 4</span>
+        <h3 style="margin-top: 12px; font-size: 22px;">Score</h3>
+        <p class="body-text dim" style="font-size: 16px;">5.0 técnico + 1.0 Anti-Narrativa = <strong class="accent-green">6.0 (limiar)</strong></p>
+      </div>
+    </div>
+
+    <div style="margin-top: 20px; background: var(--bg-card); border-left: 4px solid var(--blue); padding: 20px 28px; border-radius: 8px;">
+      <span class="pill blue">PASSO 5 · PLANO ESCRITO</span>
+      <p style="margin-top: 10px; font-family: 'DejaVu Mono', monospace; font-size: 15px; line-height: 1.7;">
+        Entry: <strong>188.000-188.500</strong> · SL: <strong>186.800</strong> · TP1: <strong>190.870 (1.7R)</strong> · TP2: <strong>193.805 (3.5R)</strong><br>
+        Kill zone: 9h15-10h30 (B3) · 10h30-11h30 (NY Open) · 1 contrato @ 1% risco
+      </p>
+    </div>
+
+    <div style="margin-top: 14px; padding: 16px 24px; background: rgba(245,183,0,0.08); border-left: 4px solid var(--amber); border-radius: 6px;">
+      <span class="pill amber">RECALIBRAÇÃO 12h · ATA COPOM HAWKISH</span>
+      <p style="margin-top: 8px; font-size: 15px; line-height: 1.5;">Macro contradiz a tese técnica → score WIN <strong class="accent-red">6.0 → 5.0</strong> · AGUARDAR. Anti-Narrativa neutralizada. Update publicado no canal. <span class="dim">→ ver slide 13</span></p>
+    </div>
+
+    <p style="margin-top: 18px; font-size: 21px;" class="accent-blue center">Plano escrito antes da abertura. <strong>Recalibrado quando o macro muda.</strong> <span class="dim">Sem "depende".</span></p>
+  </section>
+
+  <!-- ==================== SLIDE 16: Q&A ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Perguntas frequentes · Bloco 5</div>
+    <h2>As 4 perguntas mais comuns.</h2>
+
+    <div class="qa">
+      <div class="qa-item">
+        <div class="qa-q">1. Como sei se a news é negativa o suficiente pra ativar o filtro?</div>
+        <div class="qa-a">→ Por <strong>agregação</strong>. Não é uma manchete só, é o tom AGREGADO da semana. 3-5 fontes (Bloomberg, FED minutes, BCB Focus, Valor). Tom claramente negativo + fase Wyckoff bullish = ativa.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">2. E se o filtro me dizer pra entrar contra a estrutura?</div>
+        <div class="qa-a">→ <strong>NUNCA</strong>. O filtro só REFORÇA leitura técnica existente. Se a estrutura é bear, filtro não muda isso. <strong>Tie-breaker, não override.</strong></div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">3. Quando NÃO usar Anti-Narrativa?</div>
+        <div class="qa-a">→ <strong>Scalp intraday</strong> (5-15 min). O filtro é HTF — só serve pra confirmar viés do dia/semana. Pra trade de 10 min, é irrelevante.</div>
+      </div>
+      <div class="qa-item">
+        <div class="qa-q">4. Vale só pra B3 ou pra qualquer mercado?</div>
+        <div class="qa-a">→ Vale pra <strong>qualquer mercado com news cycle</strong>: índices, FX, commodities. <strong>Não vale pra cripto</strong> (manipulação narrativa diferente).</div>
+      </div>
+    </div>
+
+    <p style="margin-top: 32px; font-size: 18px;" class="dim center">[Reservar 5-7 min · pegar 3 perguntas reais do chat ao vivo]</p>
+  </section>
+
+  <!-- ==================== SLIDE 17: O BRIEFING DIÁRIO ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Aplicação · Bloco 6</div>
+    <h2>Onde isso vive: o <span class="accent-blue">Briefing Diário</span>.</h2>
+    <p class="lead" style="margin-top: 16px;">Todo dia útil, antes da abertura B3. WIN + WDO. Plano escrito.</p>
+
+    <div class="card" style="margin-top: 32px; font-family: 'DejaVu Mono', monospace; font-size: 14px; line-height: 1.7; max-width: 900px;">
+      <p style="color: var(--blue);">📊 BRIEFING BERTANI #6 — 05/05/2026 — TERÇA-FEIRA</p>
+      <p style="color: var(--dim); margin-top: 12px;">🌍 CONTEXTO MACRO — VENTO MORNO</p>
+      <p style="margin-top: 8px;">• S&P +0,30% | Nasdaq +0,57% | DXY 98,497 (+0,25%)</p>
+      <p>• Sem FOMC, NFP, Copom ou IPCA hoje — semana de digestão</p>
+      <p style="color: var(--dim); margin-top: 16px;">📈 MINI ÍNDICE (WIN)</p>
+      <p style="margin-top: 8px;">Fase Wyckoff 4H: <strong style="color: var(--amber);">REACUMULAÇÃO (Fase B/C)</strong></p>
+      <p>Spring level: 186.865 — NÃO rompido</p>
+      <p>⚡ Viés do dia: LONG CONTINGENTE — Score: <strong style="color: var(--green);">6,0/10</strong></p>
+      <p style="color: var(--blue); margin-top: 8px;">↑ Anti-Narrativa ATIVA: news vento morno × acumulação técnica</p>
+    </div>
+
+    <p style="margin-top: 32px; font-size: 18px;" class="dim center">Demonstração ao vivo: abrir briefing #6 e #7 nas abas e ler em voz alta.</p>
+  </section>
+
+  <!-- ==================== SLIDE 18: O BERTANI APP ==================== -->
+  <section class="slide">
+    <div class="eyebrow">Aplicação · Bloco 6</div>
+    <h2>O <span class="accent-blue">Bertani App</span>.</h2>
+    <p class="lead" style="margin-top: 16px;">Tudo que vocês precisam pra rodar o método, em um só lugar.</p>
+
+    <div class="grid-4" style="grid-template-columns: repeat(4, 1fr); margin-top: 32px;">
+      <div class="card center">
+        <div style="font-size: 32px; margin-bottom: 12px;">📊</div>
+        <h3 style="font-size: 18px;">Dashboard</h3>
+        <p class="body-text dim" style="font-size: 14px;">Briefing diário · Track Record</p>
+      </div>
+      <div class="card center">
+        <div style="font-size: 32px; margin-bottom: 12px;">📚</div>
+        <h3 style="font-size: 18px;">Biblioteca</h3>
+        <p class="body-text dim" style="font-size: 14px;">16 modelos · 12 páginas educacionais</p>
+      </div>
+      <div class="card center">
+        <div style="font-size: 32px; margin-bottom: 12px;">📖</div>
+        <h3 style="font-size: 18px;">Glossário</h3>
+        <p class="body-text dim" style="font-size: 14px;">70 termos · 8 categorias</p>
+      </div>
+      <div class="card center">
+        <div style="font-size: 32px; margin-bottom: 12px;">🎓</div>
+        <h3 style="font-size: 18px;">Cursos SMM</h3>
+        <p class="body-text dim" style="font-size: 14px;">Wyckoff (27 aulas) + SMC (13 aulas)</p>
+      </div>
+    </div>
+
+    <p style="margin-top: 40px; font-size: 18px;" class="dim center">Demonstração ao vivo: tour pelas 4 áreas · destacar termo "Anti-Narrativa" no Glossário.</p>
+  </section>
+
+  <!-- ==================== SLIDE 19: CTA BETA ==================== -->
+  <section class="slide center">
+    <div class="eyebrow">Convite · Bloco 6</div>
+    <h2>Quem quer experimentar:<br><span class="accent-green">Beta tester · gratuito por 30 dias.</span></h2>
+
+    <div style="margin-top: 48px; max-width: 800px;">
+      <p class="lead">Você recebe:</p>
+      <ul style="margin-top: 24px; list-style: none; font-size: 22px; line-height: 2.2;">
+        <li>✓ Briefing diário WIN + WDO antes da abertura</li>
+        <li>✓ Acesso ao Bertani App (dashboard · biblioteca · glossário · cursos)</li>
+        <li>✓ Track Record público auditável</li>
+        <li>✓ Suporte via WhatsApp Business</li>
+      </ul>
+    </div>
+
+    <div style="margin-top: 48px; padding: 24px 48px; background: rgba(36,200,140,0.1); border: 2px solid var(--green); border-radius: 12px;">
+      <p style="font-size: 22px;" class="accent-green"><strong>Link na descrição da live → app.renatobertani.com.br</strong></p>
+    </div>
+
+    <p class="dim" style="margin-top: 32px; font-size: 18px;">Quem já é beta tester: usem o glossário. Cliquem em "Anti-Narrativa". Está tudo lá registrado.</p>
+  </section>
+
+  <!-- ==================== SLIDE 20: ENCERRAMENTO ==================== -->
+  <section class="slide center">
+    <div class="eyebrow">Encerramento</div>
+    <div class="quote-block" style="text-align: left; margin: 0 auto;">
+      <span class="accent-amber">Wyckoff dá o mapa.</span><br>
+      <span class="accent-green">ICT dá o gatilho.</span><br>
+      <span class="accent-blue">Anti-Narrativa dá o contexto.</span>
+    </div>
+    <p class="lead" style="margin-top: 48px; font-size: 26px;">3 pilares. Plano escrito antes da abertura.<br><span class="dim">Sem "depende". Sem áudio de 40 minutos.</span></p>
+
+    <div style="margin-top: 64px; display: flex; gap: 60px; justify-content: center; align-items: center;">
+      <div>
+        <p style="font-size: 14px;" class="dim">Quinta 8h30</p>
+        <p style="font-size: 22px;" class="accent-green"><strong>Briefing #7</strong></p>
+      </div>
+      <div style="height: 60px; width: 1px; background: var(--border);"></div>
+      <div>
+        <p style="font-size: 14px;" class="dim">Próxima quarta</p>
+        <p style="font-size: 22px;" class="accent-blue"><strong>Live #2 · Kill Zones B3</strong></p>
+      </div>
+    </div>
+
+    <p style="margin-top: 64px; font-size: 28px;" class="accent-blue">Boa noite.</p>
+  </section>
+
+</main>
+
+<!-- ==================== Speaker notes overlay ==================== -->
+<aside id="speaker-notes">
+  <h4>Notas do apresentador · Slide <span id="notes-slide-num">1</span></h4>
+  <div id="notes-content"></div>
+</aside>
+
+<!-- ==================== Controls ==================== -->
+<nav id="controls">
+  <button onclick="prev()" id="btn-prev" title="Anterior (←)">‹</button>
+  <button onclick="next()" id="btn-next" title="Próximo (→)">›</button>
+</nav>
+
+<!-- ==================== Help bar ==================== -->
+<div id="help">
+  <kbd>←</kbd> <kbd>→</kbd> navegar · <kbd>F</kbd> full-screen · <kbd>N</kbd> notas · <kbd>Home</kbd>/<kbd>End</kbd> ir pro início/fim
+</div>
+
+<script>
+  // ==================== Speaker notes content ====================
+  const notes = {
+    1: "<p><strong>Tempo:</strong> 30s. Boas-vindas, agradecer presença. Mencionar duração (90 min) e estrutura.</p><p>Pedir pra galera comentar de onde tá assistindo.</p>",
+    2: "<p><strong>Tempo:</strong> 2-3 min. Hook principal. Mostrar print do briefing #6 e do chart de hoje.</p><p>Falar com convicção: 'não foi sorte'.</p>",
+    3: "<p><strong>Tempo:</strong> 1-2 min. Endereçar a objeção honestamente. Não defensivo.</p><p>'Quem disse, tem razão SE eu não explicar direito.'</p>",
+    4: "<p><strong>Tempo:</strong> 2 min. Bio rápida. Não enrolar. O foco é o conceito do Composite Man.</p>",
+    5: "<p><strong>Tempo:</strong> 3 min. Citação central. Ler em voz pausada. Repetir 2x. Pedir pra audiência salvar print.</p>",
+    6: "<p><strong>Tempo:</strong> 2 min. Liquidez = contraparte. Whale precisa de retail. News é o ímã.</p>",
+    7: "<p><strong>Tempo:</strong> 2 min. Apresentar os 3 pilares. Cada um resolve uma camada.</p><p>Importante: 'cada pilar é necessário, nenhum sozinho é suficiente'.</p>",
+    8: "<p><strong>SLIDE-CHAVE DA LIVE.</strong> Tempo: 1-2 min. Ler item por item, devagar.</p><p>Pedir confirmação: 'isso ficou claro?'. Esperar comentários no chat.</p>",
+    9: "<p><strong>Tempo:</strong> 5 min. Compartilhar TradingView ao vivo. Mostrar chart real do WIN 15m de 05/05.</p><p>Decompor o score na frente da audiência. Lembrar: 'isso aconteceu ONTEM ao vivo, registrado no briefing #6'.</p>",
+    10: "<p><strong>Tempo:</strong> 5 min. Caso IPCA-15 do dia 28/04/2026.</p><p>Mostrar a manchete do dia (IPCA 0,89% vs consenso 0,95%). Mostrar o WIN abrindo fraco apesar da news dovish. Explicar a absorção. Frase-âncora: 'A reação racional do mercado quase nunca é a reação real'.</p>",
+    11: "<p><strong>Tempo:</strong> 5 min. Importante: mostrar que filtro NÃO é buff genérico. Só ativa em divergência.</p>",
+    12: "<p><strong>Tempo:</strong> 5 min. Validar princípio em outros mercados. Reforça credibilidade.</p>",
+    13: "<p><strong>Tempo:</strong> 5-6 min. Caso REAL acontecido ontem (05/05/2026). Compartilhar print do briefing #6 + print do update Copom 12h.</p><p>Frase-âncora: 'tive um calor hoje cedo. O briefing saiu sem eu ter puxado a Ata do Copom. Quando ela saiu hawkish moderado, tive que rebaixar o score na hora.'</p><p><strong>Mensagem central:</strong> isso é processo, não santo graal. Erro reconhecido + corrigido em público = método em ação.</p>",
+    14: "<p><strong>Tempo:</strong> 3 min. Apresentar fluxo dos 5 passos. Destacar onde Anti-Narrativa entra.</p>",
+    15: "<p><strong>Tempo:</strong> 12 min. Walk-through completo do WIN de ONTEM (05/05). Aplicação prática integral, INCLUINDO a recalibração 12h pós-Ata Copom.</p><p>Importante: ligar slide 13 com slide 15 — 'lembram da limitação do filtro que mostrei? Aqui ela aparece no plano. O score saiu 6.0, mas depois do Copom virou 5.0. AGUARDAR.'</p><p>Frase-âncora: 'plano escrito antes da abertura. Recalibrado quando o macro muda. Sem áudio de 40 minutos. Sem depende.'</p>",
+    16: "<p><strong>Tempo:</strong> 15 min total. 4 min nas perguntas pré-preparadas + 11 min nas perguntas do chat.</p><p>Pegar pelo menos 3 perguntas reais. Tornar as pessoas parte da live.</p>",
+    17: "<p><strong>Tempo:</strong> 5 min. Abrir briefing #6 (manhã) E o update Copom 12h em abas paralelas. Ler em voz alta. Mostrar a recalibração ao vivo: como um documento se atualiza dentro do mesmo dia.</p>",
+    18: "<p><strong>Tempo:</strong> 8 min. Tour pelo Bertani App ao vivo. Mostrar dashboard, biblioteca, glossário, cursos.</p><p>Destaque pro termo Anti-Narrativa no glossário.</p>",
+    19: "<p><strong>Tempo:</strong> 5 min. CTA soft. Sem hard sell.</p><p>Mencionar: 'sem pagar nada por 30 dias'. Link claro.</p>",
+    20: "<p><strong>Tempo:</strong> 2 min. Encerramento forte. Recapitular os 3 pilares. Anunciar próxima live.</p><p>Boa noite com convicção. Não enrolar.</p>"
+  };
+
+  let current = 1;
+  const totalSlides = document.querySelectorAll('.slide').length;
+
+  document.getElementById('slide-counter').textContent =
+    String(current).padStart(2, '0') + ' / ' + String(totalSlides).padStart(2, '0');
+
+  function goto(n) {
+    if (n < 1 || n > totalSlides) return;
+    document.querySelectorAll('.slide').forEach(s => s.classList.remove('active'));
+    const target = document.querySelectorAll('.slide')[n - 1];
+    target.classList.add('active');
+    current = n;
+    document.getElementById('slide-counter').textContent =
+      String(current).padStart(2, '0') + ' / ' + String(totalSlides).padStart(2, '0');
+    document.getElementById('progress-fill').style.width = (current / totalSlides * 100) + '%';
+
+    document.getElementById('btn-prev').disabled = (current === 1);
+    document.getElementById('btn-next').disabled = (current === totalSlides);
+
+    // Update speaker notes if visible
+    document.getElementById('notes-slide-num').textContent = current;
+    document.getElementById('notes-content').innerHTML = notes[current] || '<p class="dim">Sem notas para este slide.</p>';
+  }
+
+  function next() { if (current < totalSlides) goto(current + 1); }
+  function prev() { if (current > 1) goto(current - 1); }
+
+  // Keyboard navigation
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'ArrowRight' || e.key === ' ' || e.key === 'PageDown') { e.preventDefault(); next(); }
+    else if (e.key === 'ArrowLeft' || e.key === 'PageUp') { e.preventDefault(); prev(); }
+    else if (e.key === 'Home') { e.preventDefault(); goto(1); }
+    else if (e.key === 'End') { e.preventDefault(); goto(totalSlides); }
+    else if (e.key === 'f' || e.key === 'F') {
+      e.preventDefault();
+      if (!document.fullscreenElement) document.documentElement.requestFullscreen();
+      else document.exitFullscreen();
+    }
+    else if (e.key === 'n' || e.key === 'N') {
+      e.preventDefault();
+      document.getElementById('speaker-notes').classList.toggle('visible');
+    }
+    else if (/^[0-9]$/.test(e.key)) {
+      // Press 1-9 + Enter to jump
+      const num = parseInt(e.key);
+      if (num >= 1 && num <= 9) goto(num);
+    }
+  });
+
+  // Init
+  goto(1);
+</script>
+
+</body>
+</html>
