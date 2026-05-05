@@ -1,0 +1,87 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "last_updated": "2026-05-05",
+    "scope": "Calendário macro BR/US relevante para WIN/WDO. Não é exaustivo. Eventos não listados podem existir — usar como FILTRO MÍNIMO, não como verdade absoluta.",
+    "review_cadence": "Renato deve atualizar mensalmente (ou quando descobrir evento não listado, como aconteceu com Ata Copom 05/05).",
+    "schema": {
+      "date": "YYYY-MM-DD (Brasília time)",
+      "events": [
+        {
+          "hora_brt": "HH:MM",
+          "evento": "Nome do evento",
+          "fonte": "BCB / IBGE / FED / etc",
+          "impacto": "BAIXO|MEDIO|ALTO",
+          "tag": "id semantico (ex: copom_decisao, ipca, fomc, nfp, ata_copom)",
+          "janela_evitar": "HH:MM-HH:MM (opcional)"
+        }
+      ]
+    },
+    "events_recurring": {
+      "description": "Eventos recorrentes que NÃO precisam ser repetidos por data — checados programaticamente",
+      "items": [
+        { "tag": "focus_relatorio", "rule": "Toda segunda-feira 08:25 BRT (exceto feriados)", "impacto": "BAIXO" },
+        { "tag": "leilao_abertura_b3", "rule": "Toda 9h-9h25 BRT em dia útil B3", "impacto": "ALTO", "janela_evitar": "09:00-09:25" },
+        { "tag": "leilao_fechamento_b3", "rule": "Toda 17h45-17h55 BRT em dia útil B3", "impacto": "ALTO", "janela_evitar": "17:45-17:55" }
+      ]
+    },
+    "review_required": [
+      "IPCA mensal (datas IBGE específicas)",
+      "Boletim Focus extraordinário",
+      "FOMC datas exatas 2026 (8 reuniões/ano)",
+      "Copom datas exatas 2026 (8 reuniões/ano + atas)",
+      "NFP (1ª sexta de cada mês, mas validar feriado US)"
+    ]
+  },
+  "events_by_date": {
+    "2026-05-05": [
+      {
+        "hora_brt": "08:00",
+        "evento": "Ata da reunião do Copom (abril/2026)",
+        "fonte": "BCB",
+        "impacto": "ALTO",
+        "tag": "ata_copom",
+        "janela_evitar": "08:00-09:30",
+        "nota": "Tom hawkish moderado · Selic 14,50% · sinal de poder reduzir ritmo ou encerrar ciclo de cortes · desancoragem expectativas 2027/2028 · choque petróleo/Oriente Médio como wildcard"
+      },
+      {
+        "hora_brt": "11:00",
+        "evento": "PMI Composto US/Eurozona",
+        "fonte": "S&P Global",
+        "impacto": "MEDIO",
+        "tag": "pmi_composto",
+        "janela_evitar": "10:45-11:15"
+      }
+    ],
+    "2026-05-06": [
+      {
+        "hora_brt": "20:00",
+        "evento": "🎥 Live #1 BERTANI · Anti-narrativa Wyckoff (YouTube)",
+        "fonte": "Bertani",
+        "impacto": "—",
+        "tag": "bertani_live",
+        "nota": "Conteúdo educacional. Não impacta mercado mas é dia de divulgação."
+      }
+    ],
+    "2026-05-08": [
+      {
+        "hora_brt": "09:00",
+        "evento": "IPCA · Brasil · abril/2026 (CONFIRMAR DATA com IBGE)",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "ipca",
+        "janela_evitar": "08:30-10:00",
+        "review_required": true
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "Payroll EUA · abril/2026 (CONFIRMAR DATA — 1ª sexta May)",
+        "fonte": "BLS",
+        "impacto": "ALTO",
+        "tag": "nfp",
+        "janela_evitar": "09:00-11:00",
+        "review_required": true
+      }
+    ]
+  }
+}

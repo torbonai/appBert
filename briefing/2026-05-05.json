@@ -8,8 +8,8 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "WIN no Secondary Test do Spring · WDO travado no EQ",
-    "subtitulo": "Reacumulação WIN ainda viva · low 186.865 NÃO rompido · DXY 98,50 recovery leve · ES/NAS verdes overnight · WDO sem sinal direcional · score WIN 6.0 (long contingente) · WDO 4.5 (aguardar)"
+    "manchete": "WIN no Secondary Test · WDO travado no EQ · ATA COPOM HAWKISH (correção pós-publicação)",
+    "subtitulo": "Reacumulação WIN tecnicamente viva mas Ata Copom hawkish moderado rebaixa score 6.0→5.0 (não opera) · WDO mantém 4.5 (não opera) · macro de juros contracionista por mais tempo + Oriente Médio + desancoragem 2027/2028"
   },
   "contexto_macro": {
     "nivel": "VENTO MORNO",
@@ -30,11 +30,11 @@
   "ativos": [
     {
       "codigo": "WIN1!",
-      "fase_wyckoff": "Reacumulação Fase B/C · Secondary Test em curso · Spring 186.865 NÃO rompido · volume decrescente nas quedas = absorção",
-      "score": 6,
-      "veredito": "GO_CONTINGENTE",
+      "fase_wyckoff": "Reacumulação Fase B/C · Secondary Test em curso · Spring 186.865 NÃO rompido · MAS score rebaixado pós-Ata Copom (hawkish moderado)",
+      "score": 5,
+      "veredito": "AGUARDAR_POS_COPOM",
       "viés": "long",
-      "racional_publico": "WIN segue em reacumulação após o markdown 203k→186.865 da semana passada. O low 186.865 é o Spring de referência e NÃO foi rompido — preço bounce para 191k (Automatic Rally) e voltou pra 188-189 fazendo o Secondary Test clássico. Volume decrescente nas descidas = absorção em curso. ES/NAS verdes overnight + DXY recovery leve = vento misto. Setup long do briefing #5 (entrada 188.500-189.000, SL 186.800, TP1 193.805) ainda válido — preço está colado no fundo da zona. ATENÇÃO: para entrar AGORA em LONG, exigir um dos dois gatilhos: (A) novo sweep do low 188.195 + MSS bullish 15m com volume ≥1,5x média; OU (B) CHoCH bullish 15m + MSS 1H confirmado. Sem nenhum dos dois, NÃO PERSEGUIR — Spring pode falhar e virar markdown direto pra 185k.",
+      "racional_publico": "WIN segue em reacumulação técnica após o markdown 203k→186.865 — Spring de referência NÃO rompido. PORÉM: Ata do Copom (publicada hoje 05/05) trouxe tom HAWKISH MODERADO — Selic permanece contracionista por mais tempo, BC sinaliza poder reduzir ritmo ou encerrar ciclo de cortes prematuramente, desancoragem das expectativas 2027/2028. Macro vai contra a tese técnica de reacumulação: juros mais altos por mais tempo = pressão estrutural baixista no índice. SCORE REBAIXADO 6,0 → 5,0 (abaixo do limiar 6 = NÃO OPERA). Reativação só com: (A) sweep do 188.195 + MSS bullish 15m com volume ≥ 2x média (exigência subiu de 1,5x); OU (B) novo Spring em 186.865 com volume climático. Spring 186.865 segue como linha de invalidação — perdeu = markdown até 185k.",
       "niveis_chave": {
         "PDH": 191035,
         "PDL": 188195,
@@ -68,7 +68,7 @@
         "setup": "Sweep do 188.195 (Secondary Test low) + MSS bullish 15m com volume ≥1,5x média · OU CHoCH bullish 15m + MSS bullish 1H. Entry no retest do FVG/OB do 15m.",
         "kill_zone": "Janela B3 limpa 9h15-10h30 · OU NY Open 10h30-11h30 BRT"
       },
-      "comentario_breve": "Setup contingente · Spring vivo mas sem gatilho ainda. Score 6.0 = limiar mínimo. Não force entrada — espera o sweep do low intraday + MSS antes de armar."
+      "comentario_breve": "ATUALIZADO PÓS-ATA COPOM. Score 5.0 < limiar 6 = NÃO OPERA por ora. Macro hawkish desfavorece a tese técnica. Reativação só com gatilho de volume reforçado (≥2x média)."
     },
     {
       "codigo": "WDO1!",
@@ -76,7 +76,7 @@
       "score": 4.5,
       "veredito": "AGUARDAR",
       "viés": "neutral",
-      "racional_publico": "WDO está em modo lateral total: range 4947-5041 nas últimas 100h, range 4975-5017 nas últimas 12h, e atualmente em 4998,5 — exatamente no EQ do range. Não há fase Wyckoff clara, não há MSS direcional, não há sweep significativo recente. Macro também não dá direção: DXY +0,25% pressionaria USDBRL pra cima, mas o local não está reagindo. SEM SETUP HOJE. Operar só nos extremos: (A) sweep do BSL 5041 com rejeição + MSS bearish 15m → short; OU (B) sweep do SSL 4947 com rejeição + MSS bullish 15m → long. Score abaixo de 6 = NÃO OPERA. Dia de observar e aprender.",
+      "racional_publico": "WDO em modo lateral total: range 4947-5041 nas últimas 100h. Ata do Copom (hawkish moderado) AUMENTOU a volatilidade esperada e criou cabo-de-guerra: (a) juros altos BR + carry trade favorecem REAL FORTE (WDO ↓); (b) choque petróleo + Oriente Médio + desancoragem favorecem REAL FRACO (WDO ↑). Resultado depende de qual narrativa pegar. SEM SETUP até o range romper. Operar SÓ nos extremos com gatilho confirmado: (A) sweep do BSL 5041 + rejeição forte + MSS bearish 15m → short (carry/dovish narrative); OU (B) sweep do SSL 4947 + rejeição forte + MSS bullish 15m → long (geopolítica/petróleo narrative). Esperar PRIMEIRA HORA pós-Ata digerir o sinal antes de qualquer leitura — volatilidade inicial é ruído.",
       "niveis_chave": {
         "PDH": 5017,
         "PDL": 4994,
@@ -117,6 +117,13 @@
       "impacto": "BAIXO"
     },
     {
+      "hora_brt": "08:00",
+      "evento": "🚨 ATA DO COPOM (publicada hoje) · TOM HAWKISH MODERADO · adicionada pós-publicação",
+      "impacto": "ALTO",
+      "janela_evitar": "08:00-09:00",
+      "tag": "post_publication_correction"
+    },
+    {
       "hora_brt": "09:00-09:25",
       "evento": "⛔ Leilão de abertura B3",
       "impacto": "ALTO",
@@ -154,7 +161,8 @@
     "10:30-11:30 BRT · NY Open · WDO short apenas se rejeição clara em 5.041 ou long em 4.947"
   ],
   "regras_do_dia": [
-    "WIN long é CONTINGENTE · sem sweep+MSS confirmado, NÃO PERSEGUIR. Spring 186.865 é a linha que separa reacumulação viva de markdown novo",
+    "🚨 PÓS-ATA COPOM: scores rebaixados. WIN 6.0 → 5.0 (não opera). WDO mantém 4.5 (não opera). Macro hawkish moderado: Selic contracionista por mais tempo, BC pode reduzir ritmo/encerrar ciclo de cortes",
+    "WIN long agora exige gatilho mais forte: sweep + MSS com volume ≥ 2x média (subiu de 1,5x). Spring 186.865 segue como linha de invalidação",
     "Se preço fechar 1H abaixo de 186.865 = invalidação total · vira continuation bear até 185k",
     "WDO em modo aguardar · score 4.5 < 6 = NÃO OPERA. Trade só nos extremos do range (5.041 ou 4.947) com rejeição",
     "DXY 98,5 é o nível de atenção · quebra acima de 98,8 = USD strong → WDO pressiona long, WIN pressiona short",
