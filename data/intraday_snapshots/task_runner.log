@@ -46,3 +46,41 @@ Exit code: 0
 [2026-05-06T12:30:41.040Z]   ✓ DI curve · 5 vertices
 [2026-05-06T12:30:41.094Z]   ✓ Saved 2026-05-06_0930.json + latest.json
 [2026-05-06T12:30:41.095Z]   · invoking publish_briefing...
+[2026-05-06T12:30:45.417Z]   ✓ Published
+[2026-05-06T12:30:45.418Z] ◀ Snapshot end · duration 43s
+Exit code: 0 
+ 
+=== 06/05/2026 10:30:01,56 === 
+[2026-05-06T13:30:02.025Z] ▶ Snapshot start · 2026-05-06T10:30:01-03:00
+[2026-05-06T14:22:11.740Z]   ✗ WIN1! · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:146
+    at <anonymous>:1:152
+[2026-05-06T14:22:11.768Z]   ✗ WDO1! · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:146
+    at <anonymous>:1:152
+[2026-05-06T14:22:11.770Z]   ✗ DXY · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:137
+    at <anonymous>:1:143
+[2026-05-06T14:22:11.773Z]   ✗ USDJPY · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:148
+    at <anonymous>:1:154
+[2026-05-06T14:22:11.775Z]   ✗ US500 · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:147
+    at <anonymous>:1:153
+[2026-05-06T14:22:11.777Z]   ✗ NAS100 · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:148
+    at <anonymous>:1:154
+[2026-05-06T14:22:11.784Z]   ✗ XAUUSD · CDP eval: TypeError: Cannot read properties of undefined (reading '_activeChartWidgetWV')
+    at <anonymous>:1:58
+    at <anonymous>:1:148
+    at <anonymous>:1:154
+[2026-05-06T14:22:11.805Z]   · fetching DI curve from Investing...
+[2026-05-06T14:22:13.380Z]   ✓ DI curve · 5 vertices
+[2026-05-06T14:22:13.459Z]   ✓ Saved 2026-05-06_1030.json + latest.json
+[2026-05-06T14:22:13.460Z]   · invoking publish_briefing...
