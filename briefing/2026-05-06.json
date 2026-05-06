@@ -1,0 +1,238 @@
+{
+  "data": "2026-05-06",
+  "data_extenso": "Quarta-feira, 6 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 7,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "TRÉGUA SEM CONVICÇÃO · ATA ABRIU PAUSA SELIC · DI BULL FLATTEN DO MIOLO · FILTRO ANTI-NARRATIVA ATIVO",
+    "subtitulo": "DXY 98,44 (+0,1%) sem quebra · USDJPY 157,91 estável · Brent 109+ ainda pressiona · DI miolo cedeu forte (F28 −12,5bps · F29 −9,4bps) mas ponta longa caiu pouco (F33 −2,4bps) = mercado precifica PAUSA, não corte agressivo · ADP US 9h15 ALTO IMPACTO · WIN GO_CONDICIONAL long (rompimento 191.035 OU pullback profundo 188.500-189.000) · WDO GO_CONDICIONAL short com stop largo (Brent + ata abrem squeeze do real) · trade #6 WIN segue em trailing positivo (TP1 morning 190.870 não acionou)"
+  },
+  "contexto_macro": {
+    "nivel": "VENTO MORNO",
+    "highlights": [
+      "DXY 98,444 (+0,1%) · range 98,2-98,6 mantido · sem quebra estrutural do dólar",
+      "USDJPY 157,91 · Tóquio fechado hoje (feriado JP) · sem fluxo de carry-unwind significativo",
+      "US10Y 4,419% (−2,1bps) · US30Y 4,986% (voltou abaixo de 5%) · US2Y 3,937% · acomodação leve",
+      "Brent jul US$ 109,87 (−3,99% no dia, mas ainda 109+) · choque inflacionário persiste · 1.500 navios travados no Golfo Pérsico",
+      "🟢 SPX 7.259,22 (+0,81%) ATH · NASDAQ 25.326,13 (+1,03%) ATH · Dow 49.298,25 (+0,73%)",
+      "Ibov à vista fechou ontem 186.753,82 (+0,62%) · ATH parcial · descolamento técnico sustentado",
+      "📊 Curva DI bull flatten do MIOLO: F27 −6,9bps · F28 −12,5bps · F29 −9,4bps · F31 −5,4bps · F33 −2,4bps · ponta longa caiu pouco = mercado precifica PAUSA, não dovish estrutural",
+      "Ata Copom HAWKISH MODERADA · abriu espaço pra PAUSA no ciclo Selic (não corte agressivo)",
+      "Trégua tática Oriente Médio em curso · sem convicção · 1.500 navios travados Golfo",
+      "Real apreciou ontem por CARRY mais atraente (não por tufão bullish global)",
+      "Briefing #6: WDO short ✅ TP2 4.947,5 cravado (+25-32 pts · trade fechado) · WIN long ⏳ em trailing positivo · TP1 morning 190.870 NÃO acionou (high 190.245) · trade segue aberto, SL 187.900 não tocado",
+      "🚨 ADP US 9h15 (+108k previsto vs +62k mar) ALTO IMPACTO · BC leilão swap reverso US$ 500M às 9h20 (drena USD) · Banxico 16h · Goolsbee Fed 14h · Live Bertani 20h"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "descricao": "Narrativa dominante da imprensa = 'trégua + ata mais dura + carry atraente = real forte e Ibov ATH'. Contraindicações reais: Brent 109+ persiste, ata abriu PAUSA Selic (não corte agressivo · ponta longa DI caiu apenas 2,4bps confirmando), 1.500 navios travados no Golfo Pérsico, trégua Oriente Médio sem convicção. Quando narrativa de real-forte é unânime, o squeeze do real é o risco escondido, não a tese. Operar com gestão apertada nos dois lados — sem chase de narrativa."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "fase_wyckoff": "Reacumulação Fase D pendente · Spring 186.865 (29/04) e Secondary Test 188.195 confirmados (#6) · markup ainda não validado por rompimento da PDH 191.035 · ontem testou 188.040 e fechou em 189.411 (recovery saudável dentro do range)",
+      "score": 6.5,
+      "veredito": "GO_CONDICIONAL",
+      "viés": "long",
+      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica do WIN segue construtiva: Spring 186.865 intacto, Secondary Test 188.195 segurou, candle de ontem foi recovery após teste de 188.040. Mas o markup ainda não foi validado — precisa romper a PDH/PWH 191.035 com volume. Macro hoje é VENTO MORNO, não TUFAO: DXY estável em 98,44, USDJPY 157,91 sem quebra de 156, Brent ainda em 109+ pressionando inflação. A curva DI fechou em bull flatten do MIOLO (F28 −12,5bps · F29 −9,4bps) mas a ponta longa caiu pouco (F33 −2,4bps) — mercado precifica PAUSA Selic, não corte agressivo. Filtro anti-narrativa ATIVO: a narrativa unânime de 'real-forte + Ibov ATH' tem contraindicações relevantes. Setup só com gatilho confirmado — sem chase no miolo. ADP às 9h15 é o trigger macro do dia. Trade #6 WIN ainda vivo em trailing positivo (TP1 morning 190.870 não acionou ontem · high 190.245), gerenciar antes de novo trade.",
+      "niveis_chave": {
+        "PDH": 190245,
+        "PDL": 188040,
+        "ajuste_b3": 189411,
+        "DR_high": 200785,
+        "DR_low": 186865,
+        "EQ_DR": 193825,
+        "spring_low": 186865,
+        "secondary_test_low": 188195,
+        "automatic_rally_high": 190870,
+        "PWH": 191035,
+        "OB_bullish_4H": 187500
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-05",
+        "fonte": "Ajuste oficial B3 · pregão de terça 05/05"
+      },
+      "plano": {
+        "direcao": "LONG",
+        "entry_zona": "191.000-191.300 (Opção A · breakout-pullback) · alternativa Opção B 188.500-189.000 (pullback profundo)",
+        "stop": 190700,
+        "stop_pts": 450,
+        "tp1": 191700,
+        "tp1_rr": 1.2,
+        "tp1_partial_pct": 50,
+        "tp2": 192310,
+        "tp2_rr": 2.6,
+        "tp2_partial_pct": 30,
+        "tp3": 193805,
+        "tp3_rr": 5.9,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 3,
+        "setup": "Opção A (preferida): long em rompimento confirmado de 191.035 com volume ≥1,5x média + close 15m acima · entry 191.000-191.300 · SL 190.700 (just below PDH + buffer 335pts). Opção B (alternativa): long em pullback profundo 188.500-189.000 (retest do PDL 188.195 recuperado · zona discount) · SL 187.900 (abaixo Spring + buffer · stop_pts 800). Anti-trade: comprar miolo 189.500-190.500 sem gatilho.",
+        "kill_zone": "9h30-10h30 BRT pós-ADP (digestão do dado de empregos US) · ou 13h30-14h30 NY Open"
+      },
+      "comentario_breve": "Score 6,5. GO_CONDICIONAL. Markup pendente — espera rompimento confirmado de 191.035 (Opção A · RR TP3 5,9R) OU pullback profundo 188.500-189.000 (Opção B · RR TP3 6,3R). Filtro anti-narrativa ATIVO: vento MORNO, não TUFAO. ADP 9h15 e BC swap 9h20 podem mover a abertura."
+    },
+    {
+      "codigo": "WDO1!",
+      "fase_wyckoff": "Distribuição confirmada · sweep do PDL ontem (PDL 5.003 → low 4.937,5) · piso semanal 4.937,5 testado e segurando · volume secando no fim do dia (94k vs 1,3M na abertura) · pré-cascata MAS com risco de squeeze",
+      "score": 6.5,
+      "veredito": "GO_CONDICIONAL",
+      "viés": "short",
+      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica do WDO segue bearish: distribuição confirmada na semana, ontem fez sweep do PDL e testou o piso semanal 4.937,5 com volume secando. Macro favorável marginalmente: BC vai drenar US$ 500M no leilão swap reverso de 9h20 (bullish BRL no curto prazo), curva DI bull flatten do miolo confirma carry atraente. MAS contraindicações importantes: Brent ainda em 109+ pressionando inflação, ata Copom abriu PAUSA Selic (não corte agressivo · ponta longa DI caiu apenas 2,4bps confirmando), trégua Oriente Médio sem convicção, ADP US às 9h15 com previsão FORTE (+108k vs +62k mar) pode apreciar USD. Filtro anti-narrativa ATIVO: a narrativa unânime de 'real-forte + WDO em queda' é justamente o setup onde squeeze acontece. Setup short ainda válido mas com STOP LARGO (4.965) e cancelamento se gap up > 4.985 com força = squeeze em curso.",
+      "niveis_chave": {
+        "PDH": 4985,
+        "PDL": 4937.5,
+        "ajuste_b3": 4942.601,
+        "DR_high": 5041,
+        "DR_low": 4937.5,
+        "EQ_DR": 4989.25,
+        "BSL_proximo": 4985,
+        "SSL_proximo": 4937.5,
+        "OB_bullish_4H": 4937.5
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-05",
+        "fonte": "Ajuste oficial B3 · pregão de terça 05/05"
+      },
+      "plano": {
+        "direcao": "SHORT",
+        "entry_zona": "4940-4948",
+        "stop": 4965,
+        "stop_pts": 21,
+        "tp1": 4910,
+        "tp1_rr": 1.6,
+        "tp1_partial_pct": 50,
+        "tp2": 4880,
+        "tp2_rr": 3.0,
+        "tp2_partial_pct": 30,
+        "tp3": 4850,
+        "tp3_rr": 4.5,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "Short na quebra do 4.937,5 com volume + retest fracassado da zona ex-suporte 4.940-4.948. Stop LARGO (4.965 = acima da consolidação 4.937-4.948 + buffer) dado risco de squeeze do real (Brent 109+ + ata abriu pausa Selic + ponta longa DI caiu pouco). CANCELAMENTO: se gap up > 4.985 com força = squeeze em curso, short OFF. Anti-trade: vender 4.945-4.985 sem rompimento confirmado.",
+        "kill_zone": "9h30-10h30 BRT pós-ADP + leilão BC swap (risco direcional alto) · ou 13h30-14h30 NY Open"
+      },
+      "comentario_breve": "Score 6,5. GO_CONDICIONAL com ressalva. Stop largo (4.965 · 21pts) dado risco de squeeze do real (Brent 109+, ata abriu pausa Selic, ponta longa DI caiu pouco). Setup ainda válido se 4.937,5 quebrar com volume. Cancelamento: gap up > 4.985."
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:00",
+      "evento": "Dario Durigan no 'Bom Dia Ministro'",
+      "impacto": "BAIXO",
+      "tag": "durigan_bom_dia_ministro"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão de abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "🚨 ADP US empregos (+108k previsto vs +62k mar)",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:30",
+      "tag": "adp_us_empregos"
+    },
+    {
+      "hora_brt": "09:20",
+      "evento": "BC leilão swap cambial reverso US$ 500M (10k contratos · drena USD)",
+      "impacto": "MEDIO",
+      "tag": "bc_swap_reverso_500m"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "Itaú teleconferência de balanço",
+      "impacto": "MEDIO",
+      "tag": "itau_balanco_teleconf"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "Estoques de petróleo US (DOE)",
+      "impacto": "MEDIO",
+      "tag": "doe_estoques_petroleo"
+    },
+    {
+      "hora_brt": "13:00",
+      "evento": "Lula viaja a Washington (encontro Trump 7/05)",
+      "impacto": "BAIXO",
+      "tag": "lula_washington"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "Goolsbee (Fed) fala",
+      "impacto": "MEDIO",
+      "tag": "goolsbee_fed_speak"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "Fluxo cambial semanal BCB",
+      "impacto": "MEDIO",
+      "tag": "fluxo_cambial_bcb"
+    },
+    {
+      "hora_brt": "16:00",
+      "evento": "Banxico decisão monetária",
+      "impacto": "MEDIO",
+      "tag": "banxico_decisao",
+      "janela_evitar": "15:45-16:30"
+    },
+    {
+      "hora_brt": "17:30",
+      "evento": "Bradesco balanço (after market)",
+      "impacto": "BAIXO",
+      "tag": "bradesco_balanco"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão de fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3"
+    },
+    {
+      "hora_brt": "20:00",
+      "evento": "🎥 Live #1 BERTANI · Anti-narrativa Wyckoff (YouTube)",
+      "impacto": "—",
+      "tag": "bertani_live"
+    },
+    {
+      "hora_brt": "20:50",
+      "evento": "Ata BoJ",
+      "impacto": "MEDIO",
+      "tag": "ata_boj"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    "9h30-10h30 BRT · pós-ADP (digestão do dado de empregos US) + leilão BC swap · janela B3 limpa após digestão · entry preferencial WIN long se rompimento de 191.035 confirmar OU WDO short se 4.937,5 quebrar com volume",
+    "13h30-14h30 BRT · NY Open · WDO reage forte ao DXY · WIN segue tendência da manhã",
+    "15h30-16h30 BRT · última kill zone · cuidado com Banxico (16h) podendo mover LATAM FX e exaustão do dia"
+  ],
+  "regras_do_dia": [
+    "🟡 WIN GO_CONDICIONAL long · Score 6,5. Opção A: rompimento confirmado de 191.035 com volume ≥1,5x média · entry 191.000-191.300 · SL 190.700 (450pts) · TP1 191.700 (1,2R) · TP2 192.310 (2,6R) · TP3 193.805 (5,9R)",
+    "🟡 WIN Opção B (alternativa): pullback profundo 188.500-189.000 (retest PDL recuperado · zona discount) · SL 187.900 (800pts) · TP1 191.035 (2,9R) · TP2 192.310 (4,4R) · TP3 193.805 (6,3R)",
+    "🟡 WDO GO_CONDICIONAL short · Score 6,5 com ressalva. Entry 4.940-4.948 (retest da zona ex-suporte) · SL LARGO 4.965 (21pts) · TP1 4.910 (1,6R) · TP2 4.880 (3,0R) · TP3 4.850 (4,5R)",
+    "⚠ WDO CANCELAMENTO: se gap up > 4.985 com força = squeeze em curso, short OFF · operar contra a narrativa unânime exige gestão apertada",
+    "🟠 Filtro Anti-Narrativa ATIVO · narrativa de 'real-forte + Ibov ATH' tem contraindicações reais (Brent 109+ · ata abriu pausa Selic · ponta longa DI caiu pouco · trégua sem convicção) · squeeze do real é o risco escondido",
+    "📊 Curva DI EOD 05/05: F27 −6,9bps · F28 −12,5bps · F29 −9,4bps · F31 −5,4bps · F33 −2,4bps · bull flatten do MIOLO mas ponta longa firme = mercado precifica PAUSA, não corte agressivo · monitorar reversão",
+    "🌍 DXY 98,44 estável · USDJPY 157,91 estável · sem quebra estrutural do dólar · vento MORNO (não TUFAO)",
+    "🚨 ADP US 9h15 (+108k previsto vs +62k mar) é o trigger macro do dia · janela 09:00-09:30 evitar · digestão a partir de 9h30",
+    "🟢 BC leilão swap reverso 9h20 (US$ 500M · drena USD) = bullish BRL no curto · suporta short WDO no piso 4.937,5",
+    "📌 WIN trade #6 ainda vivo em trailing positivo · TP1 morning 190.870 NÃO acionou ontem (high 190.245) · gerenciar antes de novo trade · trailing nos HL/LH do 5m",
+    "🔴 Spring 186.865 segue como linha de invalidação macro do WIN · vivo acima, morto abaixo (vira continuation bear até 185k)",
+    "Risco fixo 1% por trade · máximo 2 trades por instrumento · máximo 4 trades totais no dia · trailing nos HL/LH do 5m após TP1 · break-even após TP1",
+    "Score < 6 = não opera · DD diário −3% encerra o dia · 2 losses consecutivos = pausa 2h"
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada. Risco em derivativos é alto."
+  }
+}
