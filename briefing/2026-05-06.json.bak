@@ -8,7 +8,7 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "ACORDO EUA-IRÃ NO RADAR · ESTRUTURA AINDA PEDE PROVA · ATA ABRIU PAUSA SELIC · ANTI-NARRATIVA ATIVO",
+    "manchete": "TRÉGUA SEM CONVICÇÃO · ATA ABRIU PAUSA SELIC · DI BULL FLATTEN DO MIOLO · FILTRO ANTI-NARRATIVA ATIVO",
     "subtitulo": "DXY 98,44 (+0,1%) sem quebra · USDJPY 157,91 estável · Brent 109+ ainda pressiona · DI miolo cedeu forte (F28 −12,5bps · F29 −9,4bps) mas ponta longa caiu pouco (F33 −2,4bps) = mercado precifica PAUSA, não corte agressivo · ADP US 9h15 ALTO IMPACTO · WIN GO_CONDICIONAL long (rompimento 191.035 OU pullback profundo 188.500-189.000) · WDO GO_CONDICIONAL short com stop largo (Brent + ata abrem squeeze do real) · trade #6 WIN segue em trailing positivo (TP1 morning 190.870 não acionou)"
   },
   "contexto_macro": {
@@ -22,7 +22,7 @@
       "Ibov à vista fechou ontem 186.753,82 (+0,62%) · ATH parcial · descolamento técnico sustentado",
       "📊 Curva DI bull flatten do MIOLO: F27 −6,9bps · F28 −12,5bps · F29 −9,4bps · F31 −5,4bps · F33 −2,4bps · ponta longa caiu pouco = mercado precifica PAUSA, não dovish estrutural",
       "Ata Copom HAWKISH MODERADA · abriu espaço pra PAUSA no ciclo Selic (não corte agressivo)",
-      "Trégua tática Oriente Médio · negociação avança (Axios 07h: EUA-Irã com memorando de 1 página · Casa Branca aguarda resposta de Teerã em 48h) · estrutura ainda não confirmou · 1.500 navios travados Golfo Pérsico",
+      "Trégua tática Oriente Médio em curso · sem convicção · 1.500 navios travados Golfo",
       "Real apreciou ontem por CARRY mais atraente (não por tufão bullish global)",
       "Briefing #6: WDO short ✅ TP2 4.947,5 cravado (+25-32 pts · trade fechado) · WIN long ⏳ em trailing positivo · TP1 morning 190.870 NÃO acionou (high 190.245) · trade segue aberto, SL 187.900 não tocado",
       "🚨 ADP US 9h15 (+108k previsto vs +62k mar) ALTO IMPACTO · BC leilão swap reverso US$ 500M às 9h20 (drena USD) · Banxico 16h · Goolsbee Fed 14h · Live Bertani 20h"
@@ -83,7 +83,7 @@
       "score": 6.5,
       "veredito": "GO_CONDICIONAL",
       "viés": "short",
-      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica do WDO segue bearish: distribuição confirmada na semana, ontem fez sweep do PDL e testou o piso semanal 4.937,5 com volume secando. Macro favorável marginalmente: BC vai drenar US$ 500M no leilão swap reverso de 9h20 (bullish BRL no curto prazo), curva DI bull flatten do miolo confirma carry atraente. MAS contraindicações importantes: Brent ainda em 109+ pressionando inflação, ata Copom abriu PAUSA Selic (não corte agressivo · ponta longa DI caiu apenas 2,4bps confirmando), trégua Oriente Médio em negociação ativa (sem acordo formalizado), ADP US às 9h15 com previsão FORTE (+108k vs +62k mar) pode apreciar USD. Filtro anti-narrativa ATIVO: a narrativa unânime de 'real-forte + WDO em queda' é justamente o setup onde squeeze acontece. Setup short ainda válido mas com STOP LARGO (4.965) e cancelamento se gap up > 4.985 com força = squeeze em curso.",
+      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica do WDO segue bearish: distribuição confirmada na semana, ontem fez sweep do PDL e testou o piso semanal 4.937,5 com volume secando. Macro favorável marginalmente: BC vai drenar US$ 500M no leilão swap reverso de 9h20 (bullish BRL no curto prazo), curva DI bull flatten do miolo confirma carry atraente. MAS contraindicações importantes: Brent ainda em 109+ pressionando inflação, ata Copom abriu PAUSA Selic (não corte agressivo · ponta longa DI caiu apenas 2,4bps confirmando), trégua Oriente Médio sem convicção, ADP US às 9h15 com previsão FORTE (+108k vs +62k mar) pode apreciar USD. Filtro anti-narrativa ATIVO: a narrativa unânime de 'real-forte + WDO em queda' é justamente o setup onde squeeze acontece. Setup short ainda válido mas com STOP LARGO (4.965) e cancelamento se gap up > 4.985 com força = squeeze em curso.",
       "niveis_chave": {
         "PDH": 4985,
         "PDL": 4937.5,
