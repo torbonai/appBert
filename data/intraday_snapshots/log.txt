@@ -127,3 +127,17 @@
 [2026-05-06T16:30:40.417Z]   ✓ DI curve · 5 vertices
 [2026-05-06T16:30:40.423Z]   ✓ Saved 2026-05-06_1330.json + latest.json
 [2026-05-06T16:30:40.424Z]   · invoking publish_briefing...
+[2026-05-06T16:30:43.343Z]   ✓ Published
+[2026-05-06T16:30:43.343Z] ◀ Snapshot end · duration 41s
+[2026-05-06T17:30:01.521Z] ▶ Snapshot start · 2026-05-06T14:30:01-03:00
+[2026-05-06T17:30:09.725Z]   ✓ WIN1! · last=190595
+[2026-05-06T17:30:17.883Z]   ✓ WDO1! · last=4953.5
+[2026-05-06T17:30:21.985Z]   ✓ DXY · last=97.998
+[2026-05-06T17:30:26.063Z]   ✓ USDJPY · last=156.406
+[2026-05-06T17:30:30.148Z]   ✓ US500 · last=7346.1
+[2026-05-06T17:30:34.210Z]   ✓ NAS100 · last=28494.3
+[2026-05-06T17:30:38.274Z]   ✓ XAUUSD · last=4682.36
+[2026-05-06T17:30:38.276Z]   · fetching DI curve from Investing...
+[2026-05-06T17:30:39.315Z]   ✓ DI curve · 5 vertices
+[2026-05-06T17:30:39.319Z]   ✓ Saved 2026-05-06_1430.json + latest.json
+[2026-05-06T17:30:39.319Z]   · invoking publish_briefing...
