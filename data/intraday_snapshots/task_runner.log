@@ -185,3 +185,20 @@ Exit code: 0
 [2026-05-06T19:30:39.532Z]   ✓ DI curve · 5 vertices
 [2026-05-06T19:30:39.537Z]   ✓ Saved 2026-05-06_1630.json + latest.json
 [2026-05-06T19:30:39.537Z]   · invoking publish_briefing...
+[2026-05-06T19:30:42.973Z]   ✓ Published
+[2026-05-06T19:30:42.973Z] ◀ Snapshot end · duration 41s
+Exit code: 0 
+ 
+=== 06/05/2026 17:30:01,30 === 
+[2026-05-06T20:30:01.792Z] ▶ Snapshot start · 2026-05-06T17:30:01-03:00
+[2026-05-06T20:30:09.969Z]   ✓ WIN1! · last=4684.08
+[2026-05-06T20:30:18.065Z]   ✓ WDO1! · last=4684.08
+[2026-05-06T20:30:22.121Z]   ✓ DXY · last=4684.08
+[2026-05-06T20:30:26.161Z]   ✓ USDJPY · last=4684.08
+[2026-05-06T20:30:30.218Z]   ✓ US500 · last=4684.08
+[2026-05-06T20:30:34.252Z]   ✓ NAS100 · last=4684.08
+[2026-05-06T20:30:38.287Z]   ✓ XAUUSD · last=4684.08
+[2026-05-06T20:30:38.291Z]   · fetching DI curve from Investing...
+[2026-05-06T20:30:38.887Z]   ✓ DI curve · 5 vertices
+[2026-05-06T20:30:38.893Z]   ✓ Saved 2026-05-06_1730.json + latest.json
+[2026-05-06T20:30:38.893Z]   · invoking publish_briefing...
