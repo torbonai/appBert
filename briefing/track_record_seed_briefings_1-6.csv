@@ -1,0 +1,13 @@
+data,briefing,ativo,direcao,score,veredito,entry_zona,stop,tp1,tp2,anti_narrativa,resultado,pts_realizados,notas
+2026-04-27,1,WIN,AGUARDAR,3.5,AGUARDAR,-,-,-,-,NAO,SEM_TRADE,0,Causa em construcao 4H. Sem setup.
+2026-04-27,1,WDO,AGUARDAR,3.0,AGUARDAR,-,-,-,-,NAO,SEM_TRADE,0,Range sem direcao. Volume baixo.
+2026-04-28,2,WIN,AGUARDAR,4.5,AGUARDAR,-,-,-,-,NAO,SEM_TRADE,0,Setup imaturo. Volume sweep insuficiente.
+2026-04-28,2,WDO,SHORT,6.5,GO_CONDICIONAL,5005-5009,5013.5,4985,4980,SIM,TP1_ATINGIDO,+22,IPCA-15 0.89% (consenso 0.95%) DOVISH. Anti-Narrativa absorcao Composite Man.
+2026-04-29,3,WIN,AGUARDAR,4.5,AGUARDAR,-,-,-,-,SIM,SEM_TRADE,0,Super Quarta FOMC+Copom. Anti-Narrativa guardada pra confluencia 30/04.
+2026-04-29,3,WDO,AGUARDAR,3.8,AGUARDAR,-,-,-,-,NAO,SEM_TRADE,0,Cambio refem de FOMC + Copom noturno.
+2026-04-30,4,WIN,SHORT,5.4,AGUARDAR,188500-189000,189500,187000,185500,SIM,TP1_ATINGIDO,+1750,Capitulacao 4H 1.74x media. Pos-FOMC hawkish. Anti-Narrativa CONFIRMATORIA bear.
+2026-04-30,4,WDO,LONG,5.9,AGUARDAR,4988-4995,4982,5040,5060,NAO,TP1_ATINGIDO,+48,Spring 4975 + USD strong pos-FOMC. Vol institucional 1.27M.
+2026-05-04,5,WIN,LONG,8.0,GO,188500-189000,186800,193805,200745,NAO,TP1_ATINGIDO,+5055,QUADRUPLE confluence (Bias bull + Discount DR + EQ alvo + Spring overnight ES/NAS). Trade do metodo.
+2026-05-04,5,WDO,SHORT,5.0,AGUARDAR,4995-4999,5008,4973,4947,NAO,TP1_ATINGIDO,+24,DXY recovery contradisse local bearish.
+2026-05-05,6,WIN,LONG,6.0_INICIAL→7.5_FINAL,GO_CONTINGENTE,188000-188500,186800,190870,193805,SIM,TRADE_ABERTO_TRAILING,em_andamento,Recalibracao intraday 6.0→5.0 pos-Ata→7.5 pos-curva DI+gatilho. Anti-Narrativa caso classico (live tema). Atual ~189.745 (+1.045 a +1.445 pts dependendo da entry). Trailing HL 5m. Atualizar no Briefing #7 (quinta cedo).
+2026-05-05,6,WDO,SHORT,4.5,AGUARDAR_EXTREMOS,4970-4980,-,-,4947.5,SIM,TP2_ATINGIDO,+25_a_+32,Trade so nos extremos. Sweep 5041/4947.5 + rejeicao + MSS bearish 15m.

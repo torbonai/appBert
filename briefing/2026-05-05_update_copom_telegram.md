@@ -1,21 +1,21 @@
 ⚡ UPDATE BRIEFING #6 · TERÇA 12h15
 
 A Ata mudou o tom da manhã.
-A curva DI mudou de novo.
+A curva DI desmentiu o texto.
 Os dois trades entregaram.
 
 ━━━━━━━━━━━━━━━━━━
 
-📋 Linha do tempo
+📋 LINHA DO TEMPO
 
 🔴 08h · Ata hawkish moderada
    "Selic contracionista por mais tempo"
-   → 1ª leitura: rebaixei WIN 6,0 → 5,0
+   → 1ª leitura: WIN 6,0 → 5,0
 
 🟢 09h15 · Curva DI dovish
    F29 −5,9 bps · F31 −5,9 bps
    Bull flatten — capital alocou MAIS cortes
-   → Reativei WIN: 5,0 → 6,0
+   → Reativação WIN: 5,0 → 6,0
 
 ⭐ 10h00 · Gatilho técnico WIN
    Sweep PDL 188.195 · MSS bullish
@@ -30,7 +30,7 @@ Os dois trades entregaram.
 
 ━━━━━━━━━━━━━━━━━━
 
-📊 Status
+📊 STATUS
 
 📈 WIN long · entry 188.300-188.700
    atual 189.745 → +1.045 a +1.445 pts
@@ -42,28 +42,29 @@ Os dois trades entregaram.
 
 ━━━━━━━━━━━━━━━━━━
 
-🎯 A lição
+🎯 A LIÇÃO
 
 A Ata empurrava o trader textual pro short.
 A curva DI mostrou o oposto.
 A estrutura confirmou.
 
-Anti-Narrativa = ler o que o mercado FAZ,
+Anti-Narrativa =
+ler o que o mercado FAZ,
 não o que o comunicado DIZ.
 
 3º pilar do método. Caso clássico hoje.
 
 ━━━━━━━━━━━━━━━━━━
 
-📅 QUARTA 06/05 · 20h BRT
+📅 AMANHÃ · QUARTA 06/05 · 20h BRT
 🎥 LIVE #1 · Anti-Narrativa Wyckoff
 
 Vou desmontar o caso de hoje ao vivo:
 • Como a Ata enganaria o textual
-• Como a curva DI corrigiu
+• Como a curva DI corrigiu a leitura
 • Como o gatilho confirmou
-• Por que cap rate caindo é vento pró-índice
-   apesar do tom hawkish
+• Por que cap rate caindo é vento
+   pró-índice apesar do tom hawkish
 
 Link no canal · aberto · 60min + Q&A
 

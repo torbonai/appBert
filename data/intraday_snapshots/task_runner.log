@@ -12,3 +12,6 @@
 [2026-05-05T20:30:39.898Z]   ✓ DI curve · 5 vertices
 [2026-05-05T20:30:39.907Z]   ✓ Saved 2026-05-05_1730.json + latest.json
 [2026-05-05T20:30:39.907Z]   · invoking publish_briefing...
+[2026-05-05T20:30:43.316Z]   ✓ Published
+[2026-05-05T20:30:43.317Z] ◀ Snapshot end · duration 42s
+Exit code: 0 
