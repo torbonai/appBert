@@ -59,7 +59,7 @@
       },
       "plano": {
         "direcao": "LONG",
-        "entry_zona": "191.000-191.300 (Opção A · breakout-pullback) · alternativa Opção B 188.500-189.000 (pullback profundo)",
+        "entry_zona": "191.000-191.300 (breakout-pullback acima da PDH 191.035)",
         "stop": 190700,
         "stop_pts": 450,
         "tp1": 191700,
