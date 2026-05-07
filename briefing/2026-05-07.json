@@ -1,0 +1,284 @@
+{
+  "meta": {
+    "edicao": 8,
+    "data": "2026-05-07",
+    "dia_semana": "quinta-feira",
+    "publicado_em": "2026-05-07T08:30:00-03:00",
+    "manchete": "AGUARDAR ALINHAMENTO",
+    "submanchete": "WIN em consolidação neutra · WDO em premium com short bias",
+    "analista": "Renato Bertani",
+    "cnpi": "T 9644"
+  },
+  "contexto_macro": {
+    "resumo": "Quinta-feira SEM eventos macro de alto impacto além dos leilões B3. Semana de digestão pós-Copom · mercado aguardando direção.",
+    "highlights": [
+      "Quinta sem gatilhos macro relevantes (só leilões B3 09:00-09:25 e 17:45-17:55)",
+      "WIN em consolidação no meio do range semanal (4.500-4.833) · preço 4.684 = ~55%",
+      "WDO em premium (71% do range) com dupla rejeição em 4.964",
+      "Volume contraindo em ambos os ativos (-25% WIN, -40% WDO)",
+      "Macro global lateral · DXY sem movimento · ES/NAS sem spring relevante overnight"
+    ],
+    "globais_overnight": {
+      "DXY": "98,32 → lateral · sem movimento expressivo",
+      "USDJPY": "157,05 → lateral",
+      "ES_NAS": "Lateral · sem spring relevante overnight",
+      "XAUUSD": "4.684 → consolidação"
+    },
+    "anti_narrativa": {
+      "ativa": false,
+      "descricao": "Sem narrativa unânime clara. Mercado em modo 'wait-and-see' · ideal para aguardar setups limpos nas kill zones principais."
+    }
+  },
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "Leilão de abertura B3",
+      "fonte": "B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "recurring": true
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "Leilão de fechamento B3",
+      "fonte": "B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "recurring": true
+    }
+  ],
+  "ativos": [
+    {
+      "simbolo": "WIN1!",
+      "nome": "Índice Bovespa Mini Futuro",
+      "veredito": "AGUARDAR",
+      "score": 5.0,
+      "fase_wyckoff": "Consolidação (Fase B)",
+      "bias_estrutural": "NEUTRAL",
+      "racional": "WIN em consolidação no meio do range semanal (4.500-4.833) · preço 4.684 = ~55% (zona neutra). Volume contraindo de 26k → 19k. Sem MSS bullish ou bearish confirmado em HTF. Faltam confluências técnicas: dealing range, OB HTF, sweep líquido. Aguardar breakout com volume nas kill zones.",
+      "estrutura": {
+        "last": 4684,
+        "range_semanal": {
+          "high": 4833,
+          "low": 4500,
+          "amplitude_pts": 333,
+          "posicao_eq_pct": 55
+        },
+        "variacao_50_barras": "+2.63%",
+        "kill_zones": {
+          "ny_pm_high": 4723,
+          "ny_am": 4721,
+          "london": 4702,
+          "asian": 4652
+        },
+        "volume": {
+          "medio": 19904,
+          "ultima_barra": 19631,
+          "contracao_pct": -25,
+          "leitura": "Volume contraindo · sem expansão em pontos-chave"
+        }
+      },
+      "setup": {
+        "tipo": "Breakout condicional",
+        "direcao_primaria": "NEUTRAL",
+        "entry_long": {
+          "trigger": "Break acima 4.723 com volume >25k",
+          "entry_zone": "4.724 - 4.730",
+          "sl": 4715,
+          "tp1": 4760,
+          "tp2": 4800,
+          "rr": "1:4 / 1:8"
+        },
+        "entry_short": {
+          "trigger": "Break abaixo 4.679 com volume >25k",
+          "entry_zone": "4.678 - 4.675",
+          "sl": 4688,
+          "tp1": 4640,
+          "tp2": 4600,
+          "rr": "1:3,5 / 1:7"
+        },
+        "confluencias": [
+          "❌ Preço em meio do range (~55% EQ) - sem premium/discount claro",
+          "❌ Volume contraindo - sem expansão em pontos-chave",
+          "❌ Sem MSS bullish ou bearish confirmado em HTF",
+          "⚠️ Kill zones bem definidas (aguardar reação nesses níveis)"
+        ],
+        "invalidacao": "Operar SOMENTE com breakout + volume >25k. Sem breakout = sem trade.",
+        "kill_zones_prioritarias": [
+          "14:00-14:30 BRT · London Open",
+          "15:30-16:00 BRT · NY AM Open (preferencial)"
+        ]
+      },
+      "gestao_risco": {
+        "risco_por_trade_pct": 1,
+        "rr_minimo": 2,
+        "max_trades_dia": 2,
+        "tamanho_posicao_contratos": "Calcular com base em SL de ~10-15 pts",
+        "trailing_stop": "Após TP1, mover SL pro breakeven + 5 pts"
+      },
+      "observacoes": [
+        "Score 5 = NÃO OPERAR sem breakout claro · disciplina > FOMO",
+        "Recruta entra 'porque está perdendo o trem' · trader experiente aguarda alinhamento HTF",
+        "Melhor janela: NY AM (15:30h BRT) com liquidez e volatilidade",
+        "Consolidação pode durar várias sessões · paciência é chave"
+      ]
+    },
+    {
+      "simbolo": "WDO1!",
+      "nome": "Dólar Futuro Mini",
+      "veredito": "SHORT BIAS",
+      "score": 6.5,
+      "fase_wyckoff": "Distribuição em premium",
+      "bias_estrutural": "BEARISH LEVE",
+      "racional": "WDO em premium zone (71% do range) com dupla rejeição na resistência HTF 4.964. Suporte imediato em 4.947 bem definido. Volume contraindo -40% (22k → 13k) = possível markup final antes de queda. Setup short clássico Wyckoff: preço em premium + dupla rejeição + suporte próximo = aguardar break de 4.947 ou nova rejeição em 4.964 nas kill zones.",
+      "estrutura": {
+        "last": 4950,
+        "range_50_barras": {
+          "high": 4964,
+          "low": 4914,
+          "amplitude_ticks": 50,
+          "posicao_eq_pct": 71
+        },
+        "variacao": "+11.5 ticks (+0.23%)",
+        "kill_zones": {
+          "ny_am_high": 4964,
+          "ny_pm_low": 4947,
+          "ny_am_anterior": 4985
+        },
+        "volume": {
+          "medio": 51239,
+          "ultima_barra": 13367,
+          "contracao_pct": -40,
+          "leitura": "Volume contraindo fortemente · aguardar expansão para confirmar direção"
+        },
+        "rejeicoes": {
+          "resistencia_4964": 2,
+          "descricao": "Dupla rejeição no NY AM high · resistência HTF confirmada"
+        }
+      },
+      "setup": {
+        "tipo": "Short em premium com break de suporte",
+        "direcao_primaria": "SHORT",
+        "entry_short": {
+          "trigger_1": "Break de 4.947 (suporte) com volume >20k",
+          "trigger_2": "Rejeição em 4.964 (3ª vez) nas kill zones London/NY",
+          "entry_zone": "4.946 - 4.944 (break) OU 4.960 - 4.958 (rejeição)",
+          "sl": 4967,
+          "tp1": 4930,
+          "tp2": 4914,
+          "rr": "1:2,5 / 1:5,8"
+        },
+        "entry_long_secundario": {
+          "trigger": "Break de 4.964 com volume >25k (invalidação do short)",
+          "entry_zone": "4.965 - 4.968",
+          "sl": 4960,
+          "tp1": 4985,
+          "rr": "1:4"
+        },
+        "confluencias": [
+          "✅ Preço em PREMIUM (>70% do range) = zona de distribuição Wyckoff",
+          "✅ Resistência 4.964 não quebrada (dupla rejeição)",
+          "✅ Suporte 4.947 bem definido · break confirma short",
+          "⚠️ Volume contraindo · precisa expansão >20k para validar entry"
+        ],
+        "invalidacao": "Break sustentado acima 4.964 com volume >25k · vira long até 4.985",
+        "kill_zones_prioritarias": [
+          "14:00-14:30 BRT · London Open (rejeição 4.964)",
+          "15:30-16:00 BRT · NY AM Open (break 4.947 ou rejeição 4.964)"
+        ]
+      },
+      "gestao_risco": {
+        "risco_por_trade_pct": 1,
+        "rr_minimo": 2,
+        "max_trades_dia": 2,
+        "tamanho_posicao_contratos": "Calcular com base em SL de ~20 ticks (largo)",
+        "trailing_stop": "Após TP1, mover SL pro breakeven + 3 ticks",
+        "observacao_sl": "SL largo (20 ticks) devido à volatilidade esperada · ajustar tamanho da posição proporcionalmente"
+      },
+      "observacoes": [
+        "Score 6,5 = setup válido MAS precisa gatilho · não antecipar",
+        "Premium + dupla rejeição é setup SHORT clássico Wyckoff",
+        "Volume fraco exige confirmação nas kill zones · aguardar expansão >20k",
+        "Se romper 4.964, inverter viés imediatamente (discipline > bias)",
+        "Primeira vez no beta com SHORT BIAS claro no WDO"
+      ]
+    }
+  ],
+  "kill_zones": {
+    "limpas": [
+      {
+        "janela_brt": "14:00-14:30",
+        "sessao": "London Open",
+        "prioridade": "Media",
+        "observacao": "Volatilidade moderada · bom para rejeição WDO 4.964"
+      },
+      {
+        "janela_brt": "15:30-16:00",
+        "sessao": "NY AM Open",
+        "prioridade": "Alta",
+        "observacao": "Liquidez e volatilidade altas · kill zone prioritária para ambos ativos"
+      }
+    ],
+    "evitar": [
+      {
+        "janela_brt": "09:00-09:25",
+        "motivo": "Leilão de abertura B3 · volatilidade errática"
+      },
+      {
+        "janela_brt": "17:45-17:55",
+        "motivo": "Leilão de fechamento B3 · slippage alto"
+      }
+    ]
+  },
+  "correlacao_win_wdo": {
+    "divergencia": true,
+    "leitura": "WIN neutro (meio de range, aguardando direção) · WDO bearish leve (premium, dupla rejeição). Divergência moderada. Se WDO cair (break 4.947), WIN pode seguir bearish por correlação.",
+    "atencao": "Monitorar DXY · se subir forte, WDO sobe e pode pressionar WIN para baixo (risk-off)"
+  },
+  "gestao_risco_geral": {
+    "risco_por_trade_pct": 1,
+    "rr_minimo": 2,
+    "rr_preferivel": 3,
+    "max_trades_win": 2,
+    "max_trades_wdo": 2,
+    "max_trades_total_dia": 4,
+    "drawdown_diario_max_pct": -3,
+    "drawdown_diario_acao": "Encerra o dia operacional",
+    "drawdown_semanal_max_pct": -6,
+    "drawdown_semanal_acao": "Pausa até segunda seguinte",
+    "apos_2_losses_consecutivos": "Pausa de 2 horas antes de nova entrada",
+    "regra_ouro": "Nunca adicionar contra posição perdedora (sem martingale / averaging down)"
+  },
+  "plano_de_acao": {
+    "prioridade_1": {
+      "ativo": "WDO",
+      "setup": "SHORT",
+      "trigger": "Aguardar NY AM (15:30h BRT) · rejeição em 4.964 OU break de 4.947",
+      "entry": "4.947 (break) OU 4.960 (rejeição)",
+      "sl": 4967,
+      "tp": "4.930 / 4.914",
+      "rr": "1:2,5 / 1:5,8"
+    },
+    "prioridade_2": {
+      "ativo": "WIN",
+      "setup": "Breakout (aguardar)",
+      "trigger": "Break de 4.723 (long) ou 4.679 (short) com volume >25k",
+      "observacao": "Seguir correlação com WDO · se WDO cai, favorece WIN short"
+    },
+    "nao_operar_se": [
+      "Volume <15k (liquidez insuficiente)",
+      "Dentro dos leilões B3 (09:00-09:25 e 17:45-17:55)",
+      "Preço em meio de range sem trigger claro (WIN)",
+      "Score <6 e sem gatilho confirmado"
+    ]
+  },
+  "resumo_executivo": "Quinta sem gatilhos macro. WDO em premium com viés bearish leve (dupla rejeição em 4.964) · setup SHORT prioritário. WIN em zona neutra aguardando alinhamento HTF · score 5 = aguardar breakout. Melhor janela operacional: NY AM (15:30h BRT). Risk-off favor: short WDO primeiro, observar WIN. Disciplina > FOMO: score baixo = paciência.",
+  "compliance": {
+    "analista": "Renato Bertani",
+    "cnpi": "T 9644",
+    "cvm": "Resolução CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada de investimento. Risco em derivativos é alto. Opere por sua conta e risco."
+  }
+}

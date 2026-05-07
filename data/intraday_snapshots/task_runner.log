@@ -202,3 +202,6 @@ Exit code: 0
 [2026-05-06T20:30:38.887Z]   ✓ DI curve · 5 vertices
 [2026-05-06T20:30:38.893Z]   ✓ Saved 2026-05-06_1730.json + latest.json
 [2026-05-06T20:30:38.893Z]   · invoking publish_briefing...
+[2026-05-06T20:30:41.803Z]   ✓ Published
+[2026-05-06T20:30:41.803Z] ◀ Snapshot end · duration 40s
+Exit code: 0 
