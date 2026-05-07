@@ -33,12 +33,12 @@
     {
       "codigo": "WIN1!",
       "fase_wyckoff": "Reacumulação pendente · spring 186.865 confirmado (#6) · markup estrutural ainda aguarda confirmação via MSS bullish HTF · preço consolidando pós-ATH Nasdaq mas sem rompimento claro",
-      "score": 6.0,
+      "score": 6,
       "veredito": "GO_CONDICIONAL",
       "viés": "long",
       "racional_publico": "Versão MORNING · 08h30 BRT. Contexto macro favorável: DI miolo cedeu FORTE (F28 −21,9bps · F29 −22,3bps) · Nasdaq ATH +2,02% · S&P ATH +1,46% · DXY −0,43%. Setup estrutural long mantém (spring 186.865 intacto). MAS Brasil teimoso: Ibov modesto +0,50% · Petrobras pesou −3,77%. Score conservador 6.0 aguardando MSS bullish HTF confirmado. Filtro Anti-Narrativa ATIVO: consenso 'paz + ATH = compra fácil' tem 7 contradições (Brent ainda 101 vs pré-guerra 70-80 · autoridades iranianas chamam acordo de 'lista de desejos' · after hours já realiza Arm −6,4%). Hoje: Produção Industrial BR 09h · Pedidos Seguro-Desemprego US 09:30 (se forte = USD up) · Lula-Trump 12h (wildcard · EVITAR 11:45-12:45). Setup: long em rompimento confirmado OU pullback profundo. Sem chase no miolo.",
       "niveis_chave": {
-        "ajuste_d1": 188945,
+        "ajuste_d1": 190426,
         "PDH": 189745,
         "PDL": 187240,
         "DR_high": 200785,
@@ -47,12 +47,13 @@
         "spring_low": 186865,
         "PWH": 191035,
         "resistencia_htf": 192000,
-        "suporte_htf": 188000
+        "suporte_htf": 188000,
+        "ajuste_b3": 190426
       },
       "ajuste_b3_meta": {
-        "valor": 188945,
+        "valor": 190426,
         "data_referencia": "2026-05-06",
-        "fonte": "Estimado com base em Ibov +0,50% (187.690) e contexto macro · TV data_get_b3_settlement retornou dados incorretos (~97)"
+        "fonte": "B3 oficial confirmado por Renato editor final · close D-1 pregão 06/05"
       },
       "plano": {
         "direcao": "LONG",
@@ -82,7 +83,7 @@
       "viés": "short",
       "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica bearish mantém: premium 71% · dupla rejeição 4.964. Macro ontem favorável: DXY −0,43% · DI dovish. MAS Brasil descolou: USD/BRL +0,18% (4,9207) mesmo com DXY caindo · BC fez SWAP REVERSO US$ 500MM (primeiro em 10 anos) = piso técnico explícito curto-prazo. Setup short estrutural mantém mas STOP LARGO obrigatório (4.965) e atenção ao piso ~4,915. Hoje: Pedidos Seguro-Desemprego US 09:30 (se forte >220k = USD up · invalidaria short) · Lula-Trump 12h (wildcard midiático · Brasil quer Pix/tarifaço · EUA pode atravessar PCC/CV · vol explosiva possível · EVITAR 11:45-12:45). Filtro Anti-Narrativa ATIVO: consenso 'real forte' é justamente setup de squeeze. Operar com gestão apertada.",
       "niveis_chave": {
-        "ajuste_d1": 4927.5,
+        "ajuste_d1": 4953.05,
         "PDH": 4964,
         "PDL": 4915,
         "DR_high": 4964,
@@ -92,12 +93,13 @@
         "suporte_htf": 4915,
         "piso_bc_swap": 4915,
         "BSL_proximo": 4965,
-        "SSL_proximo": 4915
+        "SSL_proximo": 4915,
+        "ajuste_b3": 4953.05
       },
       "ajuste_b3_meta": {
-        "valor": 4927.5,
+        "valor": 4953.05,
         "data_referencia": "2026-05-06",
-        "fonte": "Estimado com base em USD/BRL +0,18% (4,9207) e BC swap reverso · TV data_get_b3_settlement retornou dados incorretos (~97)"
+        "fonte": "B3 oficial confirmado por Renato editor final · close D-1 pregão 06/05"
       },
       "plano": {
         "direcao": "SHORT",
@@ -108,7 +110,7 @@
         "tp1_rr": 1.6,
         "tp1_partial_pct": 50,
         "tp2": 4880,
-        "tp2_rr": 3.0,
+        "tp2_rr": 3,
         "tp2_partial_pct": 30,
         "tp3": 4850,
         "tp3_rr": 4.5,
@@ -117,7 +119,7 @@
         "setup": "Short na quebra de 4.915 (PDL + piso BC swap) com volume + retest fracassado 4.940-4.948 OU rejeição limpa 3ª vez em 4.964 nas kill zones. Stop LARGO (4.965 · 21pts) dado BC criou piso técnico + risco Lula-Trump. CANCELAMENTO: se Pedidos Seguro US 09:30 vier MUITO forte (>220k) e DXY reverter +0,5%, short OFF · ou se Lula-Trump gerar declaração hawkish USD (PCC/CV terroristas) · ou gap up sustentado >4.985 com força = squeeze. Gestão: trailing nos HL/LH do 5m após TP1 · break-even após TP1.",
         "kill_zone": "09:30-10:30 BRT pós-Pedidos Seguro US (risco direcional DXY) · 13:30-14:30 NY Open · EVITAR ABSOLUTO 11:45-12:45 (Lula-Trump · vol declaração imprevisível)"
       },
-      "comentario_breve": "Score 6,5. GO_CONDICIONAL short com ressalvas. BC swap reverso US$ 500MM criou piso técnico ~4,915 · stop largo 4.965 obrigatório. Cancelamento: Pedidos Seguro US >220k OU Lula-Trump hawkish USD OU gap up >4.985. Filtro Anti-Narrativa: consenso 'real forte' = setup squeeze."
+      "comentario_breve": "Score 6,5. GO_CONDICIONAL short com ressalvas. BC swap reverso US$ 500MM criou piso técnico ~4,915 · stop largo 4.965 obrigatório. Entry zone 4.940-4.948 fica próxima do ajuste B3 real 4.953,05 (±5-13 pts) = micro-zona · aguardar gatilho clear (break 4.915 com volume OU rejeição limpa 4.964). Cancelamento: Pedidos Seguro US >220k OU Lula-Trump hawkish USD OU gap up >4.985. Filtro Anti-Narrativa: consenso 'real forte' = setup squeeze."
     }
   ],
   "agenda_macro": [
