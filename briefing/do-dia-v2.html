@@ -220,6 +220,7 @@
     .agenda-meta { font-size: 11px; color: var(--muted); margin: 0; }
     .agenda-meta .imp-alto { color: var(--warn); font-weight: 700; }
     .agenda-meta .imp-medio { color: var(--gold); font-weight: 700; }
+    .agenda-meta .imp-baixo { color: #5fbf7f; font-weight: 600; }
 
     .kz-block {
       background: var(--green-soft);
@@ -485,8 +486,9 @@
           html += '<div><p class="agenda-evento">' + a.evento + '</p>';
           var meta = '';
           if (a.status === 'publicado') meta = '✅ ' + (a.resultado || 'publicado');
-          else if (a.impacto === 'ALTO') meta = '<span class="imp-alto">★★ ALTA</span> · ' + (a.janela_evitar || 'evitar janela');
+          else if (a.impacto === 'ALTO') meta = '<span class="imp-alto">★★★ ALTA</span> · ' + (a.janela_evitar || 'evitar janela');
           else if (a.impacto === 'MEDIO') meta = '<span class="imp-medio">★★ MEDIA</span> · ' + (a.janela_evitar || '');
+          else if (a.impacto === 'BAIXO') meta = '<span class="imp-baixo">★ BAIXA</span> · ' + (a.janela_evitar || '');
           else meta = a.impacto || '';
           html += '<p class="agenda-meta">' + meta + '</p></div></div>';
         });

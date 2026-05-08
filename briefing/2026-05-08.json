@@ -1,0 +1,189 @@
+{
+  "data": "2026-05-08",
+  "data_extenso": "Sexta-feira, 8 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 9,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "BRASIL DESCOLADO · DI HAWKISH VS DXY DOVISH · IPCA E PAYROLL DEFINEM DIREÇÃO",
+    "subtitulo": "Divergência macro crítica: DI futuro virou hawkish (+6,9bps no miolo F29 · +5,9bps longo F31) enquanto externo dovish (DXY −0,27% pra 97,92 · S&P +0,35% · Nasdaq +0,50%). WIN caiu forte ontem (185.735 ajuste · low 185.180 spring potencial Fase A) mas sem confirmação MSS. WDO lateralizado (ajuste 4.950 · range 4.924-4.960). Ambos aguardam eventos 09h (IPCA BR) e 09:30 (Payroll US) que vão resolver divergência. Scores baixos (WIN 2,5/10 · WDO 2/10) = não opera hoje · só observa."
+  },
+  "contexto_macro": {
+    "nivel": "VENTO_FORTE",
+    "highlights": [
+      "🔴 IPCA Brasil (abril) hoje 09h + Payroll EUA hoje 09:30 · eventos ALTO impacto simultâneos · janelas evitar 08:55-09:15 e 09:15-09:45",
+      "📊 DI futuro HAWKISH MODERADO (pre-market 07h): F27 +4,4bps (14,115%) · F29 +6,9bps (13,635%) · F31 +5,9bps (13,725%) · bear flatten = mercado precifica MENOS cortes",
+      "💵 DXY DOVISH: 97,924 (−0,27% vs 98,193 ontem) · 2º dia consecutivo caindo · USD fraco favorece WIN long estrutural MAS contradiz DI",
+      "📈 Equities US risk-on moderado: S&P 7.374,5 (+0,35%) · Nasdaq 28.762,7 (+0,50%) · 2º dia verde · momentum preservado",
+      "🛢 WTI 95,21 (queda vs ~98-101 dias anteriores) · alívio inflacionário petróleo · mas DI ignorou e abriu hawkish",
+      "🟡 Ouro estável 4.712,86 (+0,02%) · USDJPY 156,681 (−0,11%) · sem movimentos relevantes",
+      "🇧🇷 WIN ajuste B3 ontem 185.735 · caiu forte (low 185.180 · −5.005pts desde topo 192.560) · possível spring Wyckoff Fase A mas sem confirmação MSS",
+      "🇧🇷 WDO ajuste B3 ontem 4.950,404 · gap down pra 4.924 (spring potencial) + recuperação pra 4.959,5 · range estreito 36pts",
+      "⚠️ DIVERGÊNCIA MACRO: DI brasileiro puxando pra cima (hawkish) enquanto DXY caindo (dovish USD) · Brasil descolou do externo (igual briefing #8 dia 07/05)",
+      "📌 Ontem (Briefing #8 · 07/05): WIN GO_CONDICIONAL long aguardando rompimento 191.035 OU pullback 188k · não acionou · caiu pra 185k · WDO GO_CONDICIONAL short aguardando break 4.915 · também não acionou · lateralizou",
+      "🚨 Hoje é SEXTA · mercado pode antecipar fechamento semanal pós-Payroll · atenção janela 15h30-17h (liquidez cai)",
+      "🌍 Macro overnight: nenhum evento geopolítico relevante · foco total em dados econômicos (IPCA + Payroll)"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": false,
+      "descricao": "Sem narrativa dominante clara no pre-market. Mercado aguardando dados (IPCA + Payroll) pra definir direção. Divergência DI hawkish vs DXY dovish ainda não gerou consenso."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "fase_wyckoff": "Acumulação Fase A em formação · Selling Climax ontem (189.625 → 186.590 vol 4,3M) · Automatic Rally +360pts · Secondary Test em curso · spring potencial 185.180 (low absoluto) mas SEM confirmação MSS bullish ainda",
+      "score": 2.5,
+      "veredito": "AGUARDAR",
+      "viés": "lateral",
+      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura técnica em transição pós-queda forte (192.560 → 185.180 · −7.380pts em 3 dias). Padrão Wyckoff clássico de Acumulação Fase A: SC (Selling Climax) com volume 2x média · AR (Automatic Rally) +360pts · ST (Secondary Test) várias barras · spring potencial 185.180. MAS falta Sign of Strength (SOS) ou MSS bullish pra confirmar markup. Macro CONTRADITÓRIO: externo favorável (DXY −0,27% dovish · S&P/Nasdaq +0,4% risk-on) MAS Brasil hawkish (DI +6,9bps miolo = mercado precifica menos cortes Selic). Score baixo 2,5/10 por falta de confluência + eventos macro críticos hoje (IPCA 09h + Payroll 09:30) vão resolver divergência. Veredito: NÃO OPERAR hoje · só observar · aguardar dados + confirmação estrutural (MSS bullish 1H + volume ≥1,5x). Sexta-feira com liquidez reduzida pós-15h30 agrava risco. Linha vermelha 185.180 (spring) segue como referência de invalidação.",
+      "niveis_chave": {
+        "ajuste_d1": 185735,
+        "PDH": 190575,
+        "PDL": 185180,
+        "DR_high": 192560,
+        "DR_low": 185180,
+        "EQ_DR": 188870,
+        "spring_low": 185180,
+        "secondary_test_low": 185385,
+        "automatic_rally_high": 186950,
+        "PWH": 192560,
+        "resistencia_htf": 188000,
+        "suporte_htf": 185180,
+        "ajuste_b3": 185735
+      },
+      "ajuste_b3_meta": {
+        "valor": 185735,
+        "data_referencia": "2026-05-07",
+        "fonte": "B3 oficial via TradingView Daily close D-1 · pregão 07/05"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Não opera hoje · aguarda IPCA 09h + Payroll 09:30 + confirmação MSS bullish 1H com volume ≥1,5x média",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 0,
+        "setup": "Score 2,5/10 = abaixo do mínimo operacional (6,0). Estrutura Wyckoff Fase A sem confirmação. Divergência macro (DI hawkish +6,9bps vs DXY dovish −0,27%). Eventos IPCA 09h + Payroll 09:30 vão definir direção. Sexta-feira = liquidez cai pós-15h30. Aguardar: (a) IPCA vir abaixo consenso + Payroll fraco = DI cai + DXY cai = WIN long confirmado OU (b) IPCA alto + Payroll forte = DI sobe + DXY sobe = WIN short confirmado. Sem dados, sem trade. Monitorar spring 185.180 como linha vermelha de invalidação estrutural.",
+        "kill_zone": "Não opera hoje · apenas observa 09:25-10:30 pós-digestão IPCA/Payroll"
+      },
+      "comentario_breve": "Score 2,5/10. AGUARDAR. Fase A sem MSS. Divergência DI hawkish vs DXY dovish. IPCA 09h + Payroll 09:30 definem. Não opera · só observa. Spring 185.180 = linha vermelha."
+    },
+    {
+      "codigo": "WDO1!",
+      "fase_wyckoff": "Spring potencial 4.924 (gap down + swept + reversed) · recuperação pra 4.959,5 · range estreito 36pts (4.924-4.960) · sem MSS claro",
+      "score": 2,
+      "veredito": "AGUARDAR",
+      "viés": "lateral",
+      "racional_publico": "Versão MORNING · 08h30 BRT. Estrutura lateralizada com spring potencial: gap down ontem pra 4.924 (sweep do low 4.914) + reversão imediata pra 4.957 + consolidação 4.948-4.960. Fechou 4.959,5 (acima ajuste 4.950,4). Macro ALTAMENTE CONTRADITÓRIO: DI +6,9bps hawkish (favorece dólar forte = WDO long) MAS DXY −0,27% dovish (USD fraco = real forte = WDO short). Divergência sem resolução. Score 2/10 por falta de confluência + range micro (36pts) + eventos macro críticos (IPCA 09h pode vir alto = pressão real · Payroll 09:30 pode vir forte = USD up). Veredito: NÃO OPERAR hoje · aguardar dados resolverem divergência. Sexta-feira = risco adicional (liquidez cai pós-15h30 · vencimento semanal opções). Monitorar: se IPCA alto + Payroll forte = DI sobe + DXY sobe = confluência long WDO · se IPCA baixo + Payroll fraco = DI cai + DXY cai = confluência short WDO. Sem dados, sem trade.",
+      "niveis_chave": {
+        "ajuste_d1": 4950.404,
+        "PDH": 4960,
+        "PDL": 4924,
+        "DR_high": 5035.5,
+        "DR_low": 4914,
+        "EQ_DR": 4974.75,
+        "spring_low": 4924,
+        "resistencia_htf": 4960,
+        "suporte_htf": 4924,
+        "BSL_proximo": 4965,
+        "SSL_proximo": 4920,
+        "ajuste_b3": 4950.404
+      },
+      "ajuste_b3_meta": {
+        "valor": 4950.404,
+        "data_referencia": "2026-05-07",
+        "fonte": "B3 oficial via TradingView Daily close D-1 · pregão 07/05"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Não opera hoje · aguarda IPCA 09h + Payroll 09:30 resolverem divergência DI hawkish vs DXY dovish",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 0,
+        "setup": "Score 2/10 = abaixo mínimo operacional (6,0). Divergência macro sem resolução: DI +6,9bps (hawkish = dólar forte) vs DXY −0,27% (USD fraco = real forte). Range micro 36pts sem gatilho. Eventos IPCA 09h + Payroll 09:30 vão alinhar. Cenário A: IPCA alto + Payroll forte = DI sobe + DXY sobe = long WDO acima 4.965. Cenário B: IPCA baixo + Payroll fraco = DI cai + DXY cai = short WDO abaixo 4.920. Sem dados, sem confluência, sem trade. Sexta = risco adicional (liquidez cai · vencimento opções).",
+        "kill_zone": "Não opera hoje · apenas observa 09:25-10:30 pós-digestão IPCA/Payroll"
+      },
+      "comentario_breve": "Score 2/10. AGUARDAR. Divergência DI hawkish vs DXY dovish sem resolução. Range micro 36pts. IPCA 09h + Payroll 09:30 definem. Não opera · só observa."
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 🚨 IPCA Brasil (abril/2026) · CONFIRMAR DATA com IBGE",
+      "impacto": "ALTO",
+      "tag": "ipca",
+      "janela_evitar": "08:55-09:15",
+      "detalhes": "Inflação oficial BR · se alto = DI sobe (hawkish) · se baixo = DI cai (dovish) · resolve divergência vs DXY"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão de abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 🚨 Payroll EUA (abril/2026) · NFP · CONFIRMAR DATA (1ª sexta de maio)",
+      "impacto": "ALTO",
+      "tag": "nfp",
+      "janela_evitar": "09:15-10:00",
+      "detalhes": "Emprego US · se forte >300k = USD up · se fraco <200k = USD down · resolve divergência vs DI"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão de fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    "09:25-10:30 BRT · pós-digestão IPCA 09h + Payroll 09:30 · APENAS OBSERVAR hoje · não operar · aguardar confluência DI/DXY",
+    "10:30-11:30 BRT · digestão pós-dados · se confluência aparecer (DI e DXY alinhados mesma direção) + MSS confirmado = possível entry · caso contrário continuar aguardando",
+    "15:30-17:45 BRT · ⛔ EVITAR (sexta-feira · liquidez cai · vencimento opções semanal · noise sem estrutura)"
+  ],
+  "regras_do_dia": [
+    "🔴 WIN Score 2,5/10 · WDO Score 2/10 · ambos ABAIXO do mínimo operacional (6,0) · NÃO OPERAR hoje · apenas OBSERVAR",
+    "⚠️ DIVERGÊNCIA MACRO SEM RESOLUÇÃO: DI +6,9bps hawkish (Brasil precifica menos cortes) vs DXY −0,27% dovish (USD fraco) · aguardar IPCA 09h + Payroll 09:30 alinharem",
+    "🚨 IPCA 09h é gatilho #1: se alto = DI sobe mais (hawkish reforça) · se baixo = DI cai (dovish volta)",
+    "🚨 Payroll 09:30 é gatilho #2: se forte >300k = USD up (DXY reverte alta) · se fraco <200k = USD down (dovish confirma)",
+    "🟢 Cenário confluência BULLISH WIN: IPCA baixo + Payroll fraco = DI cai + DXY cai = risk-on global + Brasil dovish = long WIN acima 188k com MSS confirmado",
+    "🔴 Cenário confluência BEARISH WIN: IPCA alto + Payroll forte = DI sobe + DXY sobe = risk-off + Brasil hawkish = short WIN abaixo 185.180 (quebra spring)",
+    "🟢 Cenário confluência BULLISH WDO: IPCA alto + Payroll forte = DI sobe + DXY sobe = dólar forte global e local = long WDO acima 4.965",
+    "🔴 Cenário confluência BEARISH WDO: IPCA baixo + Payroll fraco = DI cai + DXY cai = real forte = short WDO abaixo 4.920",
+    "📊 WIN estrutura Fase A Wyckoff: SC 186.590 · AR +360pts · ST em curso · spring 185.180 · aguarda MSS bullish 1H pra confirmar markup",
+    "📊 WDO spring potencial 4.924 + recuperação pra 4.959,5 · range micro 36pts sem gatilho · aguarda break com volume",
+    "🔴 Linha vermelha WIN: 185.180 (spring) · abaixo = tese Fase A invalidada",
+    "🔴 Linha vermelha WDO: 4.914 (low absoluto) · abaixo = tese spring invalidada",
+    "⛔ Sexta-feira = risco adicional: liquidez cai pós-15h30 · vencimento opções semanal · mercado pode antecipar fechamento · noise sem estrutura após Payroll",
+    "📌 Risco fixo 1% por trade (quando voltar a operar) · máximo 2 trades por instrumento · máximo 4 totais · DD diário −3% encerra",
+    "📌 Score < 6 = NÃO OPERA (regra dura) · hoje ambos ativos < 3 = dia de observação pura"
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada. Risco em derivativos é alto."
+  }
+}
