@@ -1,7 +1,7 @@
 {
   "_meta": {
     "version": "1.1",
-    "last_updated": "2026-05-07",
+    "last_updated": "2026-05-08",
     "scope": "Calendário macro BR/US relevante para WIN/WDO. Não é exaustivo. Eventos não listados podem existir — usar como FILTRO MÍNIMO, não como verdade absoluta.",
     "review_cadence": "Renato deve atualizar mensalmente (ou quando descobrir evento não listado, como aconteceu com Ata Copom 05/05).",
     "schema": {
@@ -97,15 +97,6 @@
     ],
     "2026-05-08": [
       {
-        "hora_brt": "09:00",
-        "evento": "IPCA · Brasil · abril/2026 (CONFIRMAR DATA com IBGE)",
-        "fonte": "IBGE",
-        "impacto": "ALTO",
-        "tag": "ipca",
-        "janela_evitar": "08:30-10:00",
-        "review_required": true
-      },
-      {
         "hora_brt": "09:30",
         "evento": "Payroll EUA · abril/2026 (CONFIRMAR DATA — 1ª sexta May)",
         "fonte": "BLS",
@@ -113,6 +104,16 @@
         "tag": "nfp",
         "janela_evitar": "09:00-11:00",
         "review_required": true
+      }
+    ],
+    "2026-05-12": [
+      {
+        "hora_brt": "09:00",
+        "evento": "IPCA · Brasil · abril/2026",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "ipca",
+        "janela_evitar": "08:30-10:00"
       }
     ],
     "2026-05-07": [
