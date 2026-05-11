@@ -1,0 +1,250 @@
+{
+  "data": "2026-05-11",
+  "data_extenso": "Segunda-feira, 11 de maio de 2026",
+  "hora_publicacao": "06:30 BRT",
+  "edicao": 10,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Segunda de digestão: DXY pivotou mas Ibov não confirmou — IPCA terça é o gate",
+    "subtitulo": "NFP Goldilocks sexta levou DXY para 97,99 (abaixo de 98 estrutural) e curva DI caiu 17bps na longa (dovish forte), mas Ibov descolou -2,38% via setorial bancária. WIN no AR pós-Spring (186.786) sem volume de confirmação · WDO no low (4.915) com DXY fraco mas sem margem. Top 5 Ibov mostra 3/5 em distribuição (PETR4/ITUB4/BBDC4 vendidos) contradizendo narrativa externa. Segunda pré-IPCA terça = liquidez baixa + ambiente misto. Ambos ativos AGUARDAR · setup condicional só se estrutura confirmar."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score 5/10 · veredito AGUARDAR · viés lateral (tendendo ▲ COMPRA se MSS confirmar)",
+    "wdo_linha": "WDO1! · score 4/10 · veredito AGUARDAR · viés lateral (tendendo ▼ VENDA se breakdown)",
+    "janela_operacional": "10:30-10:45 BRT (15min antes Existing Home Sales) OU 11:30-12:30 BRT (pós-digestão)",
+    "nivel_chave": "WIN 185.000 (perda = Spring falhou · short) · WDO 4.900 (perda = markdown confirmado · short)",
+    "agenda_top1": "IPCA Brasil terça 12/05 09:00 (★★★) · hoje sem ★★★ na kill zone 09:25-10:30"
+  },
+  "contexto_macro": {
+    "nivel": "MORNO",
+    "highlights": [
+      "📌 Sexta #9: AGUARDAR puro · NFP Goldilocks (Payroll moderado · S&P +0,35% Nasdaq +0,50%) mas Ibov -2,38% descolou via bancária · WIN fechou 186.786 · WDO fechou 4.920,62 · trade não acionado = dia de observação cumprido",
+      "🇺🇸 DXY 97,99 sustenta abaixo 98 estrutural (pivô sexta confirmado) · USDJPY 157,10 estável · USD weakness continua",
+      "🇺🇸 S&P 7.398 (+0,6% overnight) · Nasdaq 29.240 (+1,2% overnight) · tech liderando global",
+      "📉 Curva DI dovish sexta: F27 -8,7bps · F29 ~-6bps · F31 -17,2bps (longa caindo forte = mercado precifica juros menores · bullish WIN estrutural / bearish WDO estrutural)",
+      "📊 Top 5 Ibov regime Wyckoff: PETR4 Distrib. A/B (49,34→45,67 -7,4% 5d) · VALE3 Acum. D (78,66→81,49 +3,6%) · ITUB4 Distrib. A/B (42,40→41,26 -2,7%) · B3SA3 Lateral B (flat) · BBDC4 Distrib. B (18,91→18,59 balanço fraco) · convergência 3/5 bearish contradiz DXY fraco/DI dovish",
+      "🛢 Brent 97,64 (-2,1% vs sexta · recuo pós-spike geopolítico) · Ouro 4.658 (+0,2% · lateralizado)",
+      "📅 Hoje: IGP-10 08:00 (★★ MEDIO anterior 2,9%) · Focus 08:25 · Leilão B3 09:00-09:25 · Existing Home Sales US 11:00 (★★★ ALTO proj 4,05M vs 3,98M · janela evitar 10:45-11:30) · Treasury 3y 14:00 (★★ MEDIO)",
+      "📅 Amanhã terça 12/05: IPCA Brasil 09:00 (★★★ ALTO) = gate da semana · surprise hawkish recoloca tese bear DI e contradiz viés long WIN",
+      "📅 Quarta 13/05 20:00: Live #2 BERTANI · Kill Zones B3 · gravação disponível no Telegram",
+      "⚠️ Filtro Anti-Narrativa ATIVO: narrativa catch-up Brasil contradita por Ibov descolado sexta + top 5 distribuição 3/5 + DI não devolvendo alta + WIN sem volume no AR"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "descricao": "Narrativa dominante: 'NFP Goldilocks · Fed pivot iminente · Brasil catch-up'. Contradições estruturais: (1) Ibov -2,38% sexta vs S&P +0,35% (descolamento Brasil vs externo) · (2) Top 5 Ibov 3/5 distribuição (PETR4/ITUB4/BBDC4 setorial bancário vendido) contradiz momentum externo positivo · (3) DI longa não devolveu alta da semana (+14bps F31 acumulado) apesar do DXY fraco · (4) WIN não confirmou AR (Automatic Rally · ressalto automático pós-Spring) com volume institucional (16,7M vs média 18M) · estrutura existe mas sem força compradora. Ambiente MISTO com liquidez baixa pré-IPCA terça reduz convicção em qualquer viés direcional hoje."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 5,
+      "vies": "lateral (tendendo ▲ COMPRA)",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Acumulação Fase C (teste secundário pós-Spring válido em 185.180)",
+      "racional_publico": "DXY 97,99 abaixo de 98 estrutural + curva DI dovish (F31 -17bps sexta) favorecem equities Brasil tecnicamente, mas top 5 Ibov mostra 3/5 em distribuição (PETR4/ITUB4/BBDC4 vendidos) contradizendo narrativa externa. WIN está em Acumulação Fase C (Secondary Test · teste secundário) após Spring (perfuração breve do suporte com recuperação) válido em 185.180 (low 07/05) e AR (Automatic Rally · ressalto automático pós-Spring) positivo para 186.786 (ajuste sexta +1.970 pts). Preço 4H atual 187.150 = +1,1% acima do AR mas SEM volume institucional de confirmação (16,7M vs média 18M). MSS (Market Structure Shift · quebra de estrutura) bullish 1H pendente. Pré-IPCA terça reduz convicção. Estrutura existe mas ambiente misto (externo bullish · doméstico bearish). Setup condicional long (compra) só válido se romper 187.500 com pullback ao FVG (Fair Value Gap · gap de preço não preenchido) 15m e volume. RR 3,0R com 1 contrato (R$ 250 risco = 0,83% banca).",
+      "niveis_chave": {
+        "ajuste_b3": 186786,
+        "pdh": 188255,
+        "pdl": 185800,
+        "spring": 185180,
+        "ar": 186786,
+        "eq": 186717
+      },
+      "ajuste_b3_meta": {
+        "valor": 186786,
+        "data_referencia": "2026-05-08",
+        "fonte": "B3 oficial via TradingView"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "187.500-188.000 (rompimento com pullback ao FVG 15m e volume >20M)",
+        "stop": 186500,
+        "stop_pts": 1250,
+        "tp1": 191500,
+        "tp1_rr": "3,0R",
+        "tp1_partial_pct": 50,
+        "tp2": 194000,
+        "tp2_rr": "5,0R",
+        "tp2_partial_pct": 30,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "Condicional long (compra) · entry mid 187.750 · SL 186.500 (-1.250pts) · TP1 191.500 (+3.750pts = 3,0R) · TP2 194.000 (+6.250pts = 5,0R) · 1 contrato = R$ 250 risco (0,83%) · Math: Risco 187.750 - 186.500 = 1.250pts · Reward TP1 191.500 - 187.750 = 3.750pts · RR 3.750/1.250 = 3,0R · Contratos R$300 ÷ (1.250pts × R$0,20) = 1,2 → arredonda 1 · Risco real 1 × 1.250 × 0,20 = R$250 (0,83%). Gatilho: rompimento 187.500 com volume >20M + pullback ao FVG 15m + defesa do Spring 185.180.",
+        "kill_zone": "10:30-10:45 BRT (pré-Existing Home Sales) OU 11:30-12:30 BRT (pós-digestão)"
+      },
+      "comentario_breve": "Score 5/10 · AGUARDAR · Acum. Fase C pós-Spring mas sem volume no AR · externo bullish vs doméstico bearish · setup condicional long só se MSS 1H confirmar com volume"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 4,
+      "vies": "lateral (tendendo ▼ VENDA)",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição em formação · sinais de PSY (Preliminary Supply · oferta preliminar) emergindo · ainda não confirmou Fase A completa",
+      "racional_publico": "DXY sustentando 97,99 abaixo de 98 estrutural desde sexta NFP + curva DI dovish (F31 -17bps) criam viés short (venda) estrutural para o dólar. OHLCV 4H mostra Distribuição em formação · sinais de PSY (Preliminary Supply · oferta preliminar) emergindo · queda 5.001 → 4.914 sem recuperação significativa (close 4.915 = no low) · ainda não confirmou Fase A completa (faltam BC + AR + ST). Diferente de Spring de Acumulação que perfura SSL (sell-side liquidity · liquidez de venda) e recupera forte, aqui o preço está estagnado no low aguardando definição. Dois cenários: (1) Breakdown abaixo 4.900 = confirma markdown distributivo → short (venda) se retest 4.935-4.945 rejeitar; (2) AR acima 4.960 = reverte para acumulação (Spring tardio) → aguardar confirmação bullish. Pré-IPCA terça reduz convicção. Top 5 Ibov 3/5 distribuição sugere real pode enfraquecer junto com equities BR (contradiz DXY fraco isolado). Setup condicional short (venda) só válido se retest rejeitar com volume. RR 1,67R com 1 contrato (R$ 300 risco = 1,0% banca exato).",
+      "niveis_chave": {
+        "ajuste_b3": 4920.622,
+        "pdh": 4942,
+        "pdl": 4914,
+        "psy": 5001,
+        "low_atual": 4914,
+        "eq": 4957.5
+      },
+      "ajuste_b3_meta": {
+        "valor": 4920.622,
+        "data_referencia": "2026-05-08",
+        "fonte": "B3 oficial via TradingView"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "4.935-4.945 (retest do low com rejeição via pin bar e volume >400k)",
+        "stop": 4970,
+        "stop_pts": 30,
+        "tp1": 4890,
+        "tp1_rr": "1,67R",
+        "tp1_partial_pct": 50,
+        "tp2": 4850,
+        "tp2_rr": "3,0R",
+        "tp2_partial_pct": 30,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "Condicional short (venda) · entry mid 4.940 · SL 4.970 (+30pts) · TP1 4.890 (-50pts = 1,67R) · TP2 4.850 (-90pts = 3,0R) · 1 contrato = R$ 300 risco (1,0%) · Math: Risco 4.970 - 4.940 = 30pts · Reward TP1 4.940 - 4.890 = 50pts · RR 50/30 = 1,67R · Contratos R$300 ÷ (30pts × R$10) = 1,0 · Risco real 1 × 30 × 10 = R$300 (1,0%). Gatilho: retest 4.935-4.945 rejeitar com candle pin bar (pavio longo superior) e volume >400k + DXY sustentando <98.",
+        "kill_zone": "10:30-10:45 BRT (pré-Existing Home Sales) OU 11:30-12:30 BRT (pós-digestão)"
+      },
+      "comentario_breve": "Score 4/10 · AGUARDAR · Distrib. formação PSY emergindo · DXY <98 favorece short mas falta confirmação · setup condicional venda só se retest rejeitar"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:00",
+      "evento": "IGP-10 Brasil maio/2026",
+      "impacto": "MEDIO",
+      "janela_evitar": "07:55-08:15",
+      "nota": "Anterior 2,9% · indicador antecedente IGP-M · move DI marginalmente"
+    },
+    {
+      "hora_brt": "08:25",
+      "evento": "Boletim Focus BCB",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "nota": "Relatório semanal expectativas mercado · IPCA/Selic/PIB/câmbio"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇺🇸 Vendas Casas Usadas EUA abril (Existing Home Sales)",
+      "impacto": "ALTO",
+      "janela_evitar": "10:45-11:30",
+      "nota": "Projeção 4,05M vs anterior 3,98M · proxy demanda doméstica US · pode mover Treasuries 10y e DXY"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇺🇸 Leilão Treasury Note 3 anos EUA",
+      "impacto": "MEDIO",
+      "janela_evitar": "13:55-14:15",
+      "nota": "Anterior yield 3,897% · bid-to-cover ratio importante · move ponta curta Treasuries"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    },
+    {
+      "hora_brt": "TER 12/05 09:00",
+      "evento": "🇧🇷 IPCA Brasil abril/2026 (★★★ GATE DA SEMANA)",
+      "impacto": "ALTO",
+      "janela_evitar": "08:30-10:00",
+      "nota": "Inflação oficial IBGE · surprise hawkish recoloca tese bear DI e contradiz viés long WIN"
+    },
+    {
+      "hora_brt": "QUA 13/05 20:00",
+      "evento": "🎥 Live #2 BERTANI · Kill Zones B3",
+      "impacto": "—",
+      "janela_evitar": null,
+      "nota": "Gravação disponível no Telegram beta testers"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "10:30-10:45 BRT",
+      "contexto": "15min antes Existing Home Sales US 11:00 · janela de posicionamento pré-evento ★★★"
+    },
+    {
+      "janela": "11:30-12:30 BRT",
+      "contexto": "Pós-digestão Existing Home Sales · estrutura define se confirma viés direcional"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "Só entrar se rompimento 187.500 com volume >20M e pullback ao FVG 15m"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Se IPCA terça surpreender hawkish amanhã, cancelar setup long (compra) imediatamente"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Trailing stop: mover para BE (breakeven · empate) se atingir +1.500 pts (+0,8%)"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Não operar na janela 10:45-11:30 (Existing Home Sales US ★★★)"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Monitorar top 5 Ibov na abertura: se 4/5 virarem acumulação, upgrade filtro para STANDBY"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Só entrar se retest 4.935-4.945 rejeitar com candle de pin bar (pavio longo superior) e volume >400k"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Monitorar DXY em tempo real: se romper 98 de volta, cancelar setup short (venda)"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Trailing stop: mover para BE (breakeven · empate) se atingir -25 pts"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Não operar na janela 10:45-11:30 (Existing Home Sales US ★★★)"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Se breakdown <4.900 confirmar com volume, aguardar retest para entrada mais segura"
+    }
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.2",
+    "gerado_em": "2026-05-11T06:30:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5)",
+    "mudancas_editoriais_estreia": [
+      "Tradução inline siglas técnicas na 1ª menção",
+      "Mini-versão resumo_30s no topo (campo novo)",
+      "Rodapé Live #2 quarta 13/05"
+    ]
+  }
+}

@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "version": "1.1",
-    "last_updated": "2026-05-08",
+    "version": "1.2",
+    "last_updated": "2026-05-11",
     "scope": "Calendário macro BR/US relevante para WIN/WDO. Não é exaustivo. Eventos não listados podem existir — usar como FILTRO MÍNIMO, não como verdade absoluta.",
     "review_cadence": "Renato deve atualizar mensalmente (ou quando descobrir evento não listado, como aconteceu com Ata Copom 05/05).",
     "schema": {
@@ -66,6 +66,35 @@
     ]
   },
   "events_by_date": {
+    "2026-05-11": [
+      {
+        "hora_brt": "08:00",
+        "evento": "IGP-10 · Brasil · maio/2026 (mensal)",
+        "fonte": "FGV",
+        "impacto": "MEDIO",
+        "tag": "igp10",
+        "janela_evitar": "07:55-08:15",
+        "nota": "Anterior 2,9% · indicador antecedente do IGP-M · move DI marginalmente · descoberto via Investing 11/05 06h22 BRT"
+      },
+      {
+        "hora_brt": "11:00",
+        "evento": "🇺🇸 Vendas de Casas Usadas · EUA · abril/2026 (anualizado + mensal)",
+        "fonte": "NAR",
+        "impacto": "ALTO",
+        "tag": "existing_home_sales_us",
+        "janela_evitar": "10:45-11:30",
+        "nota": "Projeção 4,05M (anualizado) vs anterior 3,98M · MoM anterior -3,6% · proxy de demanda doméstica US · pode mover Treasuries 10y e DXY · descoberto via Investing 11/05 06h22 BRT"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇺🇸 Leilão Treasury Note 3 anos · EUA",
+        "fonte": "US Treasury",
+        "impacto": "MEDIO",
+        "tag": "tnote_3y_auction",
+        "janela_evitar": "13:55-14:15",
+        "nota": "Anterior yield 3,897% · bid-to-cover ratio importante · pode mover ponta curta dos Treasuries e DXY"
+      }
+    ],
     "2026-05-05": [
       {
         "hora_brt": "08:00",

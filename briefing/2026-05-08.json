@@ -58,7 +58,7 @@
       "ajuste_b3_meta": {
         "valor": 185735,
         "data_referencia": "2026-05-07",
-        "fonte": "B3 oficial via TradingView Daily close D-1 · pregão 07/05"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-07)"
       },
       "plano": {
         "direcao": "AGUARDAR",
@@ -104,7 +104,7 @@
       "ajuste_b3_meta": {
         "valor": 4950.404,
         "data_referencia": "2026-05-07",
-        "fonte": "B3 oficial via TradingView Daily close D-1 · pregão 07/05"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-07)"
       },
       "plano": {
         "direcao": "AGUARDAR",
