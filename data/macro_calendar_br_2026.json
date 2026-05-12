@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "version": "1.2",
-    "last_updated": "2026-05-11",
+    "version": "1.3",
+    "last_updated": "2026-05-12",
     "scope": "Calendário macro BR/US relevante para WIN/WDO. Não é exaustivo. Eventos não listados podem existir — usar como FILTRO MÍNIMO, não como verdade absoluta.",
     "review_cadence": "Renato deve atualizar mensalmente (ou quando descobrir evento não listado, como aconteceu com Ata Copom 05/05).",
     "schema": {
@@ -137,12 +137,81 @@
     ],
     "2026-05-12": [
       {
+        "hora_brt": "06:59",
+        "evento": "🇪🇺 Discurso Frank Elderson · BCE",
+        "fonte": "BCE",
+        "impacto": "BAIXO",
+        "tag": "bce_elderson_discurso",
+        "nota": "Discurso de dirigente do BCE · impacto baixo no tape BR · descoberto via Investing 12/05 06h22 BRT · cadastrado retroativamente"
+      },
+      {
         "hora_brt": "09:00",
-        "evento": "IPCA · Brasil · abril/2026",
+        "evento": "IPCA · Brasil · abril/2026 (mensal + 12m)",
         "fonte": "IBGE",
         "impacto": "ALTO",
         "tag": "ipca",
-        "janela_evitar": "08:30-10:00"
+        "janela_evitar": "08:30-10:30",
+        "nota": "★★★ · expectativa Broadcast 0,67% mensal (vs 0,88% março) · 12m esperado 4,39% (vs 4,14% anterior) · núcleos esperados 0,43% (vs 0,40%) · gasolina/alimentos puxam alívio mas serviços resilientes · CRÍTICO: digestão combinada com CPI EUA 09:30 estende janela até 10:30+"
+      },
+      {
+        "hora_brt": "09:15",
+        "evento": "🇺🇸 Variação semanal de empregos ADP",
+        "fonte": "ADP",
+        "impacto": "MEDIO",
+        "tag": "adp_emprego_semanal_us",
+        "janela_evitar": "09:10-09:25",
+        "nota": "Anterior 39,30K · indicador antecedente · cai no leilão B3 e antecede CPI · ruído baixo mas pode mover DXY momentaneamente"
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 CPI EUA · abril/2026 (mensal + anual + núcleo)",
+        "fonte": "BLS",
+        "impacto": "ALTO",
+        "tag": "cpi_us",
+        "janela_evitar": "09:25-11:00",
+        "nota": "★★★★ · mediana 0,6% mensal (vs 0,9% março) · anual 3,3%→3,7% · núcleo mensal 0,3% (vs 0,2%) · núcleo anual 2,6%→2,7% · choque energético/gasolina +7% abril · risco persistência inflacionária pós-Fed cautious comments · DUPLO CHOQUE com IPCA 09:00 BR · janela operacional combinada 09:00-11:00"
+      },
+      {
+        "hora_brt": "13:00",
+        "evento": "🇺🇸 Relatório WASDE · USDA",
+        "fonte": "USDA",
+        "impacto": "MEDIO",
+        "tag": "wasde",
+        "nota": "World Agricultural Supply and Demand Estimates · move ativos agro/commodities · monitorar reflexo em frigoríficos/agrícolas (Minerva/JBS pré-balanço hoje)"
+      },
+      {
+        "hora_brt": "13:00",
+        "evento": "🇺🇸 Perspectiva Energética de Curto Prazo · EIA",
+        "fonte": "EIA",
+        "impacto": "MEDIO",
+        "tag": "eia_steo",
+        "janela_evitar": "12:55-13:30",
+        "nota": "STEO · MUITO RELEVANTE no contexto Brent US$104 · pode reprecificar trajetória de oferta/demanda petróleo · move WTI/Brent e por extensão Petrobras/PETR4 · indireto em CPI futuro"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇺🇸 Leilão Treasury Note 10 anos · EUA",
+        "fonte": "US Treasury",
+        "impacto": "MEDIO",
+        "tag": "tnote_10y_auction",
+        "janela_evitar": "13:55-14:15",
+        "nota": "Anterior yield 4,282% · bid-to-cover crítico no contexto Treasuries 10y já em 4,408% pós choque petróleo · resultado define se ponta longa de DI BR sobe/cede"
+      },
+      {
+        "hora_brt": "15:00",
+        "evento": "🇺🇸 Balanço Orçamentário Federal · EUA · abril/2026",
+        "fonte": "US Treasury",
+        "impacto": "MEDIO",
+        "tag": "balanco_orcamentario_fed_us",
+        "nota": "Mediana +157,2B (vs -164,0B março) · superavit abril típico por arrecadação fiscal · pode mover DXY marginalmente"
+      },
+      {
+        "hora_brt": "17:30",
+        "evento": "🇺🇸 Estoques de Petróleo Bruto Semanal · API",
+        "fonte": "API",
+        "impacto": "MEDIO",
+        "tag": "api_estoques_petroleo",
+        "nota": "Anterior -8,100M (queda forte estoque) · pós-pregão B3 · reação fica pra abertura quarta 13/05 · CRÍTICO no contexto Brent US$104 e bloqueio Estreito de Ormuz · antecede EIA oficial quarta"
       }
     ],
     "2026-05-07": [

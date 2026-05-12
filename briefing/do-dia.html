@@ -148,6 +148,7 @@
     }
     .veredito-go { background: var(--green-soft); color: var(--green); border: 1px solid var(--green); }
     .veredito-cond { background: rgba(212, 175, 55, 0.15); color: var(--gold); border: 1px solid var(--gold); }
+    .veredito-cautela { background: rgba(255, 152, 0, 0.15); color: #ff9800; border: 1px solid #ff9800; }
     .veredito-aguardar { background: var(--accent-soft); color: var(--accent); border: 1px solid var(--accent); }
     .veredito-no { background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn); }
 
@@ -601,8 +602,8 @@
       function renderAtivo(at) {
         var faseLower = at.fase_wyckoff || '';
         var scoreCls = at.score >= 7.5 ? 'high' : (at.score >= 6 ? 'mid' : 'low');
-        var verCls = ({ GO: 'veredito-go', GO_CONDICIONAL: 'veredito-cond', AGUARDAR: 'veredito-aguardar', NO_GO: 'veredito-no' })[at.veredito] || 'veredito-aguardar';
-        var verLabel = ({ GO: '🟢 GO', GO_CONDICIONAL: '🟡 GO Condicional', AGUARDAR: '🔵 Aguardar', NO_GO: '🔴 NO-GO' })[at.veredito] || at.veredito;
+        var verCls = ({ GO: 'veredito-go', GO_CONDICIONAL: 'veredito-cond', OPERAR_COM_CAUTELA: 'veredito-cautela', AGUARDAR: 'veredito-aguardar', NO_GO: 'veredito-no' })[at.veredito] || 'veredito-aguardar';
+        var verLabel = ({ GO: '🟢 GO', GO_CONDICIONAL: '🟡 GO Condicional', OPERAR_COM_CAUTELA: '🟠 Operar com Cautela', AGUARDAR: '🔵 Aguardar', NO_GO: '🔴 NO-GO' })[at.veredito] || at.veredito;
 
         var html = '<section class="ativo-card">';
         html += '<header class="ativo-header">';

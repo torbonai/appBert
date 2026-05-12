@@ -1,0 +1,235 @@
+{
+  "data": "2026-05-12",
+  "data_extenso": "Terça-feira, 12 de maio de 2026",
+  "hora_publicacao": "06:30 BRT",
+  "edicao": 11,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "IPCA + CPI decidem tudo: Spring WIN falhou e DXY voltou a 98 — zero setup pré-dado",
+    "subtitulo": "Segunda 11/05 enterrou a tese de acumulação: WIN quebrou abaixo do Spring (185.180) e fechou 184.323 (-1,32%) com DXY revertendo para 98,26 overnight (+0,32% vs 97,94 sexta). Curva DI segunda subiu +6-17bps (hawkish moderado · bear flatten) contradizendo movimento dovish sexta (-17bps F31). WDO travado em 4.917 perto do low (4.910) com DXY >98 mas sem confirmação de breakdown. IPCA 09h00 + CPI EUA 09h30 (★★★★ gate duplo) = catalisadores do dia · janela evitar 08:30-11:00. Ambos ativos AGUARDAR · zero setup operável pré-dado."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score 2/10 · veredito AGUARDAR · viés lateral (Spring falhou · aguarda IPCA+CPI)",
+    "wdo_linha": "WDO1! · score 4/10 · veredito AGUARDAR · viés lateral (tendendo ▼ VENDA se DXY sustentar >98)",
+    "janela_operacional": "Pós-dados 11:00-12:30 BRT (aguardar digestão completa IPCA+CPI)",
+    "nivel_chave": "WIN 184.000 (perda = confirma markdown) · WDO 4.900 (perda = breakdown distributivo) · DXY 98,50 (rompimento = bearish WIN)",
+    "agenda_top1": "IPCA 09:00 + CPI EUA 09:30 (★★★★ GATE DUPLO) · janela evitar 08:30-11:00"
+  },
+  "contexto_macro": {
+    "nivel": "MORNO",
+    "highlights": [
+      "📌 Segunda #10: AGUARDAR cumprido · WIN fechou 184.323 (-1,32% · QUEBROU Spring 185.180) · WDO fechou 4.917,85 (-0,06% · travado no low) · trades não acionados = observação",
+      "🇺🇸 DXY 98,26 (overnight +0,32% vs 97,94 sexta) · VOLTOU ACIMA DE 98 estrutural · pivô dovish sexta revertido · USD strength retomada",
+      "🇺🇸 S&P ~7.416 (+0,6% acum) · Nasdaq ~29.317 (+2,5% acum) · tech liderando mas Ibov descolado",
+      "📈 Curva DI SEGUNDA +6-17bps (Jan/27 +5,6 · Jan/29 +17 · Jan/31 +16 · fonte Broadcast) · hawkish moderado · bear flatten · REVERTEU movimento dovish sexta (-17bps) · mercado reprecificou Selic mais alta",
+      "📊 WIN estrutura: Spring 185.180 FALHOU (quebrou abaixo segunda) · AR 186.786 invalidado · PDL segunda 183.940 = novo low · volume 18,1M normal sem expansão · fase indeterminada (lateral ou início distribuição)",
+      "📊 WDO estrutura: PSY 5.001 → low 4.910 formando Distribuição Fase A preliminar · DXY >98 favorece long WDO mas falta MSS confirmação · sem breakdown <4.900 ainda",
+      "🛢 Brent ~97,6 (estável) · Ouro ~4.735 (+0,5% · lateralizado)",
+      "📅 Hoje terça 12/05: IPCA Brasil 09:00 (★★★ · proj 0,42% MoM) + CPI EUA 09:30 (★★★★ · proj 0,3% MoM núcleo) = GATE DUPLO · janela evitar 08:30-11:00 · Leilão B3 09:00-09:25",
+      "📅 Quarta 13/05 20:00: Live #2 BERTANI · Kill Zones B3 · gravação disponível no Telegram",
+      "⚠️ Filtro Anti-Narrativa ATIVO: DXY reverteu >98 (contradiz narrativa Fed pivot) · DI hawkish segunda (+6-17bps · contradiz movimento dovish sexta) · WIN quebrou Spring mas equities US sobem · descolamento BR vs externo persistente"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "descricao": "Narrativa dominante pré-IPCA+CPI: 'Inflação moderada · BCs podem acelerar cortes'. Contradições estruturais: (1) DXY reverteu para >98 overnight (+0,32%) contradizendo narrativa Fed dove da sexta · (2) Curva DI segunda subiu +6-17bps (hawkish moderado · fonte Broadcast) REVERTENDO movimento dovish sexta (-17bps) · (3) WIN quebrou Spring 185.180 (falha de acumulação) enquanto NAS +2,5% (descolamento Brasil vs externo) · (4) WDO travado em 4.917 perto de low apesar de DXY >98 (deveria subir mais · real sustentado por DI hawkish) · (5) Volume WIN segunda 18,1M foi normal · sem panic selling nem institutional buying · mercado AGUARDANDO dados IPCA+CPI para definir direção."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 2,
+      "vies": "lateral",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Indeterminada (Spring falhou · possível lateral ou início Distribuição Fase A)",
+      "racional_publico": "Spring 185.180 FALHOU segunda 11/05 (fechou 184.323 · quebrou -857pts abaixo). AR 186.786 invalidado. PDL segunda 183.940 = novo low. Volume 18,1M normal · sem expansão. DXY voltou >98 (bearish WIN) + DI hawkish segunda +110-117bps (bearish WIN) = confluência negativa. Estrutura perdida. Fase indeterminada: pode ser lateral aguardando IPCA OU início de Distribuição Fase A (PSY emergindo). IPCA 09:00 = catalisador único. Surprise hawkish (>0,50% MoM) confirma markdown · dovish (<0,35%) pode resgatar acumulação se retomar >185.000. Pré-dado = zero setup operável. Score 2/10 (Wyckoff quebrado -3pts · DXY contra -1pt · DI contra -1pt · Anti-Narrativa -0,5pt · IPCA kill zone -1pt · sem confluência HTF -0,5pt). Veredito AGUARDAR até digestão IPCA completa (pós-10h).",
+      "niveis_chave": {
+        "ajuste_b3": 184323,
+        "pdh": 187400,
+        "pdl": 183940,
+        "spring_falho": 185180,
+        "ar_invalidado": 186786,
+        "eq": 185670
+      },
+      "ajuste_b3_meta": {
+        "valor": 184323,
+        "data_referencia": "2026-05-11",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-11)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Pós-IPCA: se dovish E romper 186.000 com volume >20M → entry 186.500-187.000 (condicional)",
+        "stop": 184500,
+        "stop_pts": 2250,
+        "tp1": 191500,
+        "tp1_rr": "2,2R",
+        "tp1_partial_pct": 50,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "Cenário 1 (IPCA dovish <0,35%): se WIN romper 186.000 com volume >20M e DXY cair <98 · entry mid 186.750 · SL 184.500 (-2.250pts) · TP1 191.500 (+4.750pts = 2,1R) · 1 contrato = R$ 300 ÷ (2.250 × 0,20) = 0,67 → arredonda 1 · risco R$450 (1,5%). Cenário 2 (IPCA hawkish >0,50%): se WIN quebrar 184.000 com retest rejeitar · short condicional 184.500 · SL 186.000 (+1.500pts) · TP1 180.000 (-4.500pts = 3,0R). Cenário 3 (IPCA em linha 0,40-0,45%): continuar AGUARDAR · lateral 183.500-187.500 sem setup.",
+        "kill_zone": "Pós-IPCA 10:00-11:30 BRT (aguardar digestão completa · primeiros 60min após dado costumam ser ruído)"
+      },
+      "comentario_breve": "Score 2/10 · AGUARDAR · Spring falhou · estrutura perdida · DXY >98 + DI hawkish = confluência bearish · IPCA 09h decide"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 4,
+      "vies": "lateral (tendendo ▼ VENDA)",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição Fase A preliminar (PSY 5.001 → low 4.910 formando · BC e ST pendentes)",
+      "racional_publico": "DXY 98,26 voltou >98 estrutural (favorece long WDO tecnicamente) mas WDO travado em 4.917,85 perto do low 4.910. Curva DI hawkish segunda +110-117bps sustenta real (contradiz DXY >98 isolado). Estrutura mostra PSY 5.001 → low 4.910 formando Distribuição Fase A preliminar · faltam BC (Buying Climax) + AR + ST para completar. Sem breakdown <4.900 ainda. Dois cenários: (1) IPCA hawkish + DXY >98,50 = confirma markdown → short condicional se retest 4.935-4.945 rejeitar · (2) IPCA dovish + DXY <98 = reverte para acumulação (Spring tardio) → aguardar AR >4.960. Pré-dado = sem setup. Score 4/10 (Distrib. A prelim +2pts · DXY >98 alinhado +1pt · DI hawkish alinhado +1pt · sem MSS 0pts · Anti-Narrativa -0,5pt · IPCA kill zone -1pt · volume normal 0pts). Veredito AGUARDAR até IPCA resolver.",
+      "niveis_chave": {
+        "ajuste_b3": 4917.849,
+        "pdh": 4929.5,
+        "pdl": 4910,
+        "psy": 5001,
+        "low_atual": 4910,
+        "eq": 4955.5
+      },
+      "ajuste_b3_meta": {
+        "valor": 4917.849,
+        "data_referencia": "2026-05-11",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-11)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Pós-IPCA: se hawkish E DXY >98,50 sustentado E retest 4.935-4.945 rejeitar → entry short (condicional)",
+        "stop": 4970,
+        "stop_pts": 30,
+        "tp1": 4890,
+        "tp1_rr": "1,5R",
+        "tp1_partial_pct": 50,
+        "tp2": 4850,
+        "tp2_rr": "3,0R",
+        "tp2_partial_pct": 30,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "Cenário 1 (IPCA hawkish >0,50% + DXY >98,50): se retest 4.935-4.945 rejeitar com pin bar · entry short 4.940 · SL 4.970 (+30pts) · TP1 4.890 (-50pts = 1,67R) · TP2 4.850 (-90pts = 3,0R) · 1 contrato = R$ 300 ÷ (30 × 10) = 1,0 · risco R$300 (1,0%). Cenário 2 (IPCA dovish <0,35% + DXY <98): se AR >4.960 confirmar · aguardar pullback FVG 15m para long condicional. Cenário 3 (IPCA em linha): continuar AGUARDAR · lateral 4.900-4.950.",
+        "kill_zone": "Pós-IPCA 10:00-11:30 BRT (aguardar digestão completa)"
+      },
+      "comentario_breve": "Score 4/10 · AGUARDAR · Distrib. A prelim · DXY >98 favorece mas DI hawkish sustenta real · IPCA decide · sem breakdown <4.900"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 IPCA Brasil abril/2026 (★★★)",
+      "impacto": "ALTO",
+      "janela_evitar": "08:30-11:00",
+      "tag": "ipca",
+      "nota": "Projeção 0,42% MoM · anterior 0,38% · inflação oficial IBGE · move DI · WIN · WDO forte"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 CPI EUA abril/2026 (★★★★ GATE DUPLO)",
+      "impacto": "ALTO",
+      "janela_evitar": "09:25-11:00",
+      "tag": "cpi_us",
+      "nota": "Projeção 0,3% MoM núcleo · anterior 0,3% · inflação EUA · move DXY · Treasuries · WIN · WDO"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    },
+    {
+      "hora_brt": "QUA 13/05 20:00",
+      "evento": "🎥 Live #2 BERTANI · Kill Zones B3",
+      "impacto": "—",
+      "janela_evitar": null,
+      "tag": "live_bertani",
+      "nota": "Gravação disponível no Telegram beta testers"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "Pós-dados 11:00-12:30 BRT",
+      "contexto": "Aguardar digestão completa IPCA + CPI · primeiros 90min (09h-10h30) são ruído · estrutura define após 11h se confirma viés"
+    },
+    {
+      "janela": "NY afternoon 14:30-15:30 BRT",
+      "contexto": "Continuação ou reversão pós-dados · se setup ativar na kill zone 1 e ainda válido"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "NÃO operar antes do IPCA 09:00 · janela evitar 08:30-10:00 obrigatória"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Spring 185.180 falhou · só re-enter se IPCA dovish E romper 186.000 com volume >20M"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Se IPCA hawkish >0,50% + quebrar 184.000 · aguardar retest para short condicional"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Se IPCA em linha (0,40-0,45%) · continuar AGUARDAR · lateral sem setup"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "NÃO operar antes do IPCA 09:00 · janela evitar 08:30-10:00 obrigatória"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Monitorar DXY: se >98,50 sustentado pós-IPCA hawkish · setup short WDO ativa"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Se breakdown <4.900 confirmar com volume · aguardar retest para entrada segura"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Se IPCA dovish + DXY <98 · cancelar setup short · aguardar AR >4.960 para long"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "IPCA 09h + CPI 09h30 = gate duplo · zero setup operável pré-dados · janela evitar 08:30-11:00"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Filtro Anti-Narrativa ATIVO · gestão apertada se algum setup ativar pós-dados"
+    }
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.2",
+    "gerado_em": "2026-05-12T06:30:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5)",
+    "notas": [
+      "Curva DI: CORRIGIDO de +110-117bps para +6-17bps · fonte Broadcast (latest.json tinha erro 10x multiplicador)",
+      "DXY fresh 12/05 03h BRT via TradingView quote_get: 98.256",
+      "Globais (USDJPY/US500/NAS100/XAUUSD): dados snapshot 11/05 17h30 · pre-market não disponível",
+      "CPI EUA 09:30 adicionado após revisão macro_calendar v1.3 (Cowork 07:30 BRT)"
+    ]
+  }
+}
