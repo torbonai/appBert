@@ -494,14 +494,30 @@
         });
         if (b.kill_zones_recomendadas) {
           b.kill_zones_recomendadas.forEach(function (k) {
-            html += '<div class="kz-block">🟢 ' + k + '</div>';
+            // Aceita string flat (schema antigo) ou {janela, contexto} (schema novo Code 12/05)
+            var kText;
+            if (typeof k === 'object' && k !== null) {
+              kText = (k.janela || '') + (k.contexto ? ' · <span class="kz-ctx">' + k.contexto + '</span>' : '');
+            } else {
+              kText = k;
+            }
+            html += '<div class="kz-block">🟢 ' + kText + '</div>';
           });
         }
         html += '</section>';
 
         html += '<section class="panel"><h3>📜 Regras do dia</h3>';
         html += '<ul class="regra-list">';
-        b.regras_do_dia.forEach(function (r) { html += '<li>' + r + '</li>'; });
+        b.regras_do_dia.forEach(function (r) {
+          // Aceita string flat (schema antigo) ou {ativo, regra} (schema novo Code 12/05)
+          var rText;
+          if (typeof r === 'object' && r !== null) {
+            rText = (r.ativo ? '<strong class="regra-ativo">[' + r.ativo + ']</strong> ' : '') + (r.regra || JSON.stringify(r));
+          } else {
+            rText = r;
+          }
+          html += '<li>' + rText + '</li>';
+        });
         html += '</ul></section>';
 
         html += '</div></aside>';
@@ -596,25 +612,4 @@
           html += '<p class="plano-titulo" style="color: var(--muted);">⏸ Sem setup operacional hoje</p>';
           html += '<p style="color: var(--text-2); font-size: 14px; margin: 8px 0 0; line-height: 1.5;">';
           html += 'Método aguarda confirmação. Score atual ' + at.score.toFixed(1) + '/10 não passa do limiar (≥ 6.0). ';
-          html += 'Trader experiente <strong>respeita a ausência de gatilho</strong> · recruta força a entrada.';
-          html += '</p></div>';
-        }
-
-        html += '</section>';
-        return html;
-      }
-
-      function renderLockCTA() {
-        return '<div class="lock-cta">' +
-          '<h3>🔒 Conteúdo exclusivo de assinantes</h3>' +
-          '<p>O briefing diário completo (racional, plano operacional, entries, alvos e cálculos) é exclusivo do plano <strong>Briefing R$ 147</strong> ou superior. Você está em modo Demo.</p>' +
-          '<a href="../upgrade.html" class="btn btn-primary">Conhecer os planos</a>' +
-        '</div>';
-      }
-    }
-
-    bootBriefing();
-  </script>
-</body>
-</html>
-                           
+          html += 'Trader exp
