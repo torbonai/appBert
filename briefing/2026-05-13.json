@@ -58,11 +58,14 @@
         "spring_falho": 185180,
         "ar_invalidado": 186786,
         "eq": 184772,
-        "pwh": 195245,
-        "pwl": 182145,
+        "pwh": 192560,
+        "pwl": 185180,
         "suporte_psicologico": 182000,
         "target_bearish": 180000,
-        "pivot_h1_anterior": 187400
+        "pivot_h1_anterior": 187400,
+        "pivot_pwh_anterior": 195245,
+        "weekly_close": 187190,
+        "weekly_settlement": 186786
       },
       "ajuste_b3_meta": {
         "valor": 182673,
@@ -354,6 +357,23 @@
         "antes": 187400,
         "depois": 184090,
         "motivo": "PDH estava com pivot máximo do 1H (187.400 · sessão segunda 11/05) em vez da máxima real da sessão imediatamente anterior (terça 12/05 = 184.090). Valor 187.400 preservado como pivot_h1_anterior pra contexto."
+      },
+      {
+        "data": "2026-05-13",
+        "hora": "~09:35 BRT",
+        "apontado_por": "Viana (beta tester)",
+        "campos_alterados": {
+          "pwh": {
+            "antes": 195245,
+            "depois": 192560
+          },
+          "pwl": {
+            "antes": 182145,
+            "depois": 185180
+          }
+        },
+        "fonte": "Candle semanal WIN1! 04-09/05/2026 (PWH=192560 · PWL=185180)",
+        "insight": "PWL real (185.180) coincide com Spring falho citado no racional · confirma tese técnica · só o campo estava com valor errado"
       }
     ]
   }
