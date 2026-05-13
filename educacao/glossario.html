@@ -86,6 +86,25 @@
     .glos-busca-clear:hover { color: var(--text); border-color: var(--accent); }
     .glos-busca.has-text .glos-busca-clear { display: block; }
 
+    .glos-toggle-view {
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      color: var(--text-2);
+      padding: 6px 12px;
+      font-size: 13px;
+      cursor: pointer;
+      transition: all var(--t-base);
+      font-weight: 500;
+      display: inline-block;
+      margin-left: var(--s-2);
+    }
+    .glos-toggle-view:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-soft);
+    }
+
     .glos-counter {
       margin-top: var(--s-3);
       font-size: 13px;
@@ -288,6 +307,7 @@
       <p class="glos-counter">
         <strong id="glos-mostrando">70</strong> de <strong id="glos-total">70</strong> termos
         · <a href="javascript:window.print()" style="color: var(--accent); text-decoration: none;">📄 Imprimir versão completa</a>
+        <button class="glos-toggle-view" id="toggle-view-btn" onclick="toggleView()">🔤 A→Z</button>
       </p>
     </div>
   </header>
@@ -408,6 +428,18 @@
         def: 'Aglomeração de stops e ordens pendentes · zonas que o Composite Man tende a "drenar".' },
       { sigla: 'DOL',      nome: 'Draw on Liquidity · alvo de liquidez', cat: 'liquidez',
         def: 'Próximo alvo provável que o preço vai buscar · geralmente liquidez maior visível no chart.' },
+      { sigla: 'PDH',      nome: 'Previous Day High · máxima do dia anterior', cat: 'liquidez',
+        def: 'Máxima da sessão anterior · referência institucional de liquidez intraday · preço tende a testar como resistência ou alvo (buyside liquidity).' },
+      { sigla: 'PDL',      nome: 'Previous Day Low · mínima do dia anterior', cat: 'liquidez',
+        def: 'Mínima da sessão anterior · referência institucional de liquidez intraday · preço tende a testar como suporte ou alvo (sellside liquidity).' },
+      { sigla: 'PWH',      nome: 'Previous Week High · máxima da semana anterior', cat: 'liquidez',
+        def: 'Máxima da semana anterior · referência institucional de liquidez de timeframe superior · zona de absorção/rejeição mais relevante que PDH.' },
+      { sigla: 'PWL',      nome: 'Previous Week Low · mínima da semana anterior', cat: 'liquidez',
+        def: 'Mínima da semana anterior · referência institucional de liquidez HTF · zona crítica · perda costuma acionar continuação bearish.' },
+      { sigla: 'PMH',      nome: 'Previous Month High · máxima do mês anterior', cat: 'liquidez',
+        def: 'Máxima do mês anterior · referência institucional de longo prazo · alvo natural em movimentos de continuação semanal.' },
+      { sigla: 'PML',      nome: 'Previous Month Low · mínima do mês anterior', cat: 'liquidez',
+        def: 'Mínima do mês anterior · referência HTF · perda costuma marcar mudança estrutural relevante.' },
 
       // ============ ZONAS ICT ============
       { sigla: 'FVG',      nome: 'Fair Value Gap · gap de valor justo', cat: 'zonas',
@@ -554,9 +586,14 @@
     ];
 
     // ========================================================================
+    // STATE
+    // ========================================================================
+    let viewMode = localStorage.getItem('glossario_view_mode') || 'categoria';
+
+    // ========================================================================
     // RENDER
     // ========================================================================
-    function renderTermos() {
+    function renderCategorias() {
       const container = document.getElementById('glos-container');
       container.innerHTML = '';
 
@@ -600,6 +637,63 @@
 
       document.getElementById('glos-total').textContent = TERMOS.length;
       document.getElementById('glos-mostrando').textContent = TERMOS.length;
+    }
+
+    function renderAlfabetico() {
+      const container = document.getElementById('glos-container');
+      container.innerHTML = '';
+
+      const termosOrdenados = [...TERMOS].sort((a, b) => a.sigla.localeCompare(b.sigla, 'pt-BR'));
+
+      const catEl = document.createElement('section');
+      catEl.className = 'glos-categoria aberta';
+      catEl.innerHTML = `
+        <div class="glos-cat-conteudo">
+          <div class="glos-cat-conteudo-inner">
+            ${termosOrdenados.map(t => {
+              const cat = CATEGORIAS.find(c => c.id === t.cat);
+              return `
+                <div class="glos-termo" data-busca="${(t.sigla + ' ' + t.nome + ' ' + t.def).toLowerCase()}">
+                  <div class="glos-termo-header">
+                    <span class="glos-termo-sigla">${t.sigla}</span>
+                    <span class="glos-termo-nome">${t.nome}</span>
+                    <span class="glos-termo-tag">${cat.tag}</span>
+                  </div>
+                  <p class="glos-termo-def">${t.def}</p>
+                  ${t.link ? `<a href="${t.link}" class="glos-termo-link">→ ${t.linkTexto}</a>` : ''}
+                  ${t.ex ? `<p class="glos-termo-exemplo">💡 ${t.ex}</p>` : ''}
+                </div>
+              `;
+            }).join('')}
+          </div>
+        </div>
+      `;
+      container.appendChild(catEl);
+
+      document.getElementById('glos-total').textContent = TERMOS.length;
+      document.getElementById('glos-mostrando').textContent = TERMOS.length;
+    }
+
+    function renderGlossario() {
+      if (viewMode === 'alfabetico') {
+        renderAlfabetico();
+      } else {
+        renderCategorias();
+      }
+    }
+
+    function toggleView() {
+      viewMode = viewMode === 'categoria' ? 'alfabetico' : 'categoria';
+      localStorage.setItem('glossario_view_mode', viewMode);
+      renderGlossario();
+      document.getElementById('toggle-view-btn').textContent =
+        viewMode === 'categoria' ? '🔤 A→Z' : '📂 Por categoria';
+
+      // Re-apply current search filter if any
+      const input = document.getElementById('glos-busca');
+      if (input && input.value) {
+        input.dispatchEvent(new Event('input'));
+      }
     }
 
     // ========================================================================
@@ -655,8 +749,12 @@
     // INIT
     // ========================================================================
     document.addEventListener('DOMContentLoaded', function() {
-      renderTermos();
+      renderGlossario();
       setupBusca();
+
+      // Initialize toggle button text based on current view mode
+      document.getElementById('toggle-view-btn').textContent =
+        viewMode === 'categoria' ? '🔤 A→Z' : '📂 Por categoria';
     });
   </script>
 
