@@ -222,6 +222,14 @@
         Carregando o briefing do dia...
       </p>
       <span class="tier-pill tier-briefing" id="tier-indicador">📰 Briefing R$ 147</span>
+      <div style="margin-top: var(--s-4);">
+        <a href="/tutorial.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--bg-2); color: var(--text-2); border: 1px solid var(--border); font-size: 13px; text-decoration: none; transition: all 0.2s;" onmouseover="this.style.borderColor='var(--accent)'; this.style.color='var(--accent)';" onmouseout="this.style.borderColor='var(--border)'; this.style.color='var(--text-2)';">
+          📚 Primeira vez aqui? Tutorial completo · 10 min →
+        </a>
+        <a href="/educacao/glossario.html" style="display: inline-flex; align-items: center; gap: 8px; padding: 10px 16px; border-radius: 999px; background: var(--bg-2); color: var(--text-2); border: 1px solid var(--border); font-size: 13px; text-decoration: none; transition: all 0.2s; margin-left: 8px;" onmouseover="this.style.borderColor='var(--accent)'; this.style.color='var(--accent)';" onmouseout="this.style.borderColor='var(--border)'; this.style.color='var(--text-2)';">
+          📖 Glossário · 70+ termos →
+        </a>
+      </div>
     </div>
   </header>
 
@@ -383,6 +391,10 @@
           <p>Planilha auditável de todos os trades publicados. Win rate real, sem cherry-picking.</p>
         </a>
       </div>
+
+      <p style="margin-top: var(--s-4); text-align: center; font-size: 13px; color: var(--muted);">
+        Não sabe por onde começar? <a href="/tutorial.html" style="color: var(--accent); text-decoration: none;">Ver tutorial completo · 10 min →</a>
+      </p>
     </section>
 
   </main>
@@ -552,8 +564,15 @@
         if (kzEl && b.kill_zones_recomendadas && b.kill_zones_recomendadas.length) {
           var html = '';
           b.kill_zones_recomendadas.forEach(function(kz) {
+            // Aceita string flat (schema antigo) ou {janela, contexto} (schema novo Code 12/05+)
+            var kzText;
+            if (typeof kz === 'object' && kz !== null) {
+              kzText = (kz.janela || '') + (kz.contexto ? ' · <span style="color: var(--text-2); font-weight: 400;">' + kz.contexto + '</span>' : '');
+            } else {
+              kzText = kz;
+            }
             html += '<div style="background: var(--green-soft); border-radius: var(--radius-sm); padding: var(--s-3); margin-bottom: var(--s-2); border-left: 3px solid var(--green);">';
-            html += '<p style="margin: 0; font-size: 13px; color: var(--green); font-weight: 600;">🟢 ' + kz + '</p>';
+            html += '<p style="margin: 0; font-size: 13px; color: var(--green); font-weight: 600;">🟢 ' + kzText + '</p>';
             html += '</div>';
           });
           kzEl.innerHTML = html;
@@ -584,7 +603,16 @@
           html += '<div class="setup-h-aguardar-msg"><p style="font-size: 22px; color: var(--text); font-weight: 600;">' + (a.comentario_breve || 'Sem setup acionável hoje') + '</p><p>' + (a.racional_publico || 'Aguardar gatilho.') + '</p></div>';
         }
         if (b.kill_zones_recomendadas && b.kill_zones_recomendadas.length) {
-          b.kill_zones_recomendadas.forEach(function(kz){ html += '<div class="setup-h-kz">● ' + kz + '</div>'; });
+          b.kill_zones_recomendadas.forEach(function(kz){
+            // Aceita string flat (schema antigo) ou {janela, contexto} (schema novo Code 12/05+)
+            var kzText;
+            if (typeof kz === 'object' && kz !== null) {
+              kzText = (kz.janela || '') + (kz.contexto ? ' · ' + kz.contexto : '');
+            } else {
+              kzText = kz;
+            }
+            html += '<div class="setup-h-kz">● ' + kzText + '</div>';
+          });
         }
         var outros = b.ativos.filter(function(x){ return x.codigo !== a.codigo; });
         if (outros.length > 0) {
@@ -595,15 +623,4 @@
         html += '<div class="briefing-link"><a href="briefing/do-dia-v2.html" class="btn btn-primary">Ver briefing completo</a><a href="https://t.me/renato_bertani" target="_blank" class="btn">Canal Telegram</a></div>';
         heroEl.innerHTML = html;
         var resumoEl = document.getElementById('dash-resumo');
-        if (resumoEl && b.destaque) {
-          resumoEl.textContent = b._fallback ? ('Briefing mais recente: ' + b._fallback + ' · ' + (b.destaque.subtitulo || '')) : (b.destaque.subtitulo || 'Briefing carregado');
-        }
-      }
-      function renderEmpty() {
-        heroEl.innerHTML = '<div class="setup-h-aguardar-msg"><p style="font-size: 22px; color: var(--text); font-weight: 600;">📭 Briefing não publicado ainda hoje</p><p>Sai todo dia útil às 8h30 BRT. Acompanhe pelo Telegram.</p><a href="https://t.me/renato_bertani" class="btn btn-primary" target="_blank" style="margin-top: 16px;">Canal Telegram</a></div>';
-      }
-      loadBriefing(todayISO()).then(function(b){ b ? render(b) : renderEmpty(); }).catch(renderEmpty);
-    })();
-  </script>
-</body>
-</html>
+        if (resumoEl && b.desta

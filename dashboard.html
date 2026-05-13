@@ -564,8 +564,15 @@
         if (kzEl && b.kill_zones_recomendadas && b.kill_zones_recomendadas.length) {
           var html = '';
           b.kill_zones_recomendadas.forEach(function(kz) {
+            // Aceita string flat (schema antigo) ou {janela, contexto} (schema novo Code 12/05+)
+            var kzText;
+            if (typeof kz === 'object' && kz !== null) {
+              kzText = (kz.janela || '') + (kz.contexto ? ' · <span style="color: var(--text-2); font-weight: 400;">' + kz.contexto + '</span>' : '');
+            } else {
+              kzText = kz;
+            }
             html += '<div style="background: var(--green-soft); border-radius: var(--radius-sm); padding: var(--s-3); margin-bottom: var(--s-2); border-left: 3px solid var(--green);">';
-            html += '<p style="margin: 0; font-size: 13px; color: var(--green); font-weight: 600;">🟢 ' + kz + '</p>';
+            html += '<p style="margin: 0; font-size: 13px; color: var(--green); font-weight: 600;">🟢 ' + kzText + '</p>';
             html += '</div>';
           });
           kzEl.innerHTML = html;
@@ -596,7 +603,16 @@
           html += '<div class="setup-h-aguardar-msg"><p style="font-size: 22px; color: var(--text); font-weight: 600;">' + (a.comentario_breve || 'Sem setup acionável hoje') + '</p><p>' + (a.racional_publico || 'Aguardar gatilho.') + '</p></div>';
         }
         if (b.kill_zones_recomendadas && b.kill_zones_recomendadas.length) {
-          b.kill_zones_recomendadas.forEach(function(kz){ html += '<div class="setup-h-kz">● ' + kz + '</div>'; });
+          b.kill_zones_recomendadas.forEach(function(kz){
+            // Aceita string flat (schema antigo) ou {janela, contexto} (schema novo Code 12/05+)
+            var kzText;
+            if (typeof kz === 'object' && kz !== null) {
+              kzText = (kz.janela || '') + (kz.contexto ? ' · ' + kz.contexto : '');
+            } else {
+              kzText = kz;
+            }
+            html += '<div class="setup-h-kz">● ' + kzText + '</div>';
+          });
         }
         var outros = b.ativos.filter(function(x){ return x.codigo !== a.codigo; });
         if (outros.length > 0) {
