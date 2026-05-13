@@ -53,7 +53,7 @@
       "racional_publico": "Estrutura PERDIDA. Spring 185.180 falhou segunda 11/05. Terça 12/05 confirmou markdown: fechou 182.673 (-1,31%) com low intraday 182.145 (novo PDL). Sequência Lower Lows no 1H: 187.400 → 183.185 → 182.960. Volume 18,0M terça normal · sem expansão. DXY >98 estrutural (bearish WIN) + DI hawkish +6-9bps (bearish WIN) = confluência negativa mantida. Sem AR formado · sem MSS bullish. Fase indeterminada: pode ser início Distribuição Fase A (PSY 192.560 → BC potencial → markdown para 182k) OU markdown direto pós-Spring falho. Aguardar piso estrutural: suporte psicológico 182.000 · se perder, target 180.000. Score 1,5/10 (Wyckoff perdido -3pts · DXY contra -1pt · DI contra -1pt · Anti-Narrativa -0,5pt · sem confluência HTF -0,5pt · sem MSS -1pt · volume médio -0,5pt). Veredito AGUARDAR até formar piso OU romper 184.000 com volume >20M.",
       "niveis_chave": {
         "ajuste_b3": 182673,
-        "pdh": 187400,
+        "pdh": 184090,
         "pdl": 182145,
         "spring_falho": 185180,
         "ar_invalidado": 186786,
@@ -61,7 +61,8 @@
         "pwh": 195245,
         "pwl": 182145,
         "suporte_psicologico": 182000,
-        "target_bearish": 180000
+        "target_bearish": 180000,
+        "pivot_h1_anterior": 187400
       },
       "ajuste_b3_meta": {
         "valor": 182673,
@@ -343,6 +344,17 @@
       "Globais (USDJPY/US500/NAS100/XAUUSD): snapshot 13/05 05:00 BRT",
       "WIN ajuste 182.673 · WDO ajuste 4.915,913 via TradingView Daily close D-1",
       "Ambos ativos AGUARDAR · scores baixos · estrutura indeterminada WIN · lateral WDO"
+    ],
+    "correcoes_pos_publish": [
+      {
+        "data": "2026-05-13",
+        "hora": "~09:30 BRT",
+        "apontado_por": "Viana (beta tester)",
+        "campo": "ativos[WIN1!].niveis_chave.pdh",
+        "antes": 187400,
+        "depois": 184090,
+        "motivo": "PDH estava com pivot máximo do 1H (187.400 · sessão segunda 11/05) em vez da máxima real da sessão imediatamente anterior (terça 12/05 = 184.090). Valor 187.400 preservado como pivot_h1_anterior pra contexto."
+      }
     ]
   }
 }
