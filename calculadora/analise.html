@@ -291,6 +291,226 @@
     .empty-state .icon { font-size: 64px; opacity: 0.4; }
     .empty-state h2 { margin: var(--s-4) 0 var(--s-2); }
     .empty-state p { color: var(--muted); margin: 0 0 var(--s-4); }
+
+    /* ===== Analisador 3 perfis · Parte 1 UI (12/05/2026) ===== */
+    .perfil-bar {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: var(--radius);
+      padding: var(--s-4) var(--s-5);
+      margin: var(--s-4) 0 var(--s-5);
+      display: flex;
+      flex-direction: column;
+      gap: var(--s-3);
+    }
+    .perfil-header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: var(--s-3);
+      flex-wrap: wrap;
+    }
+    .perfil-titulo {
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 700;
+      margin: 0;
+    }
+    .preview-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 4px 10px;
+      border-radius: 999px;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      background: linear-gradient(135deg, rgba(212, 175, 55, 0.2), rgba(212, 175, 55, 0.08));
+      color: var(--gold);
+      border: 1px solid var(--gold);
+      text-transform: uppercase;
+      cursor: help;
+    }
+    .preview-tag::before { content: "⚙"; font-size: 12px; }
+    .perfil-segmented {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 4px;
+      background: var(--bg-2);
+      border: 1px solid var(--border);
+      border-radius: var(--radius-sm);
+      padding: 4px;
+    }
+    .perfil-btn {
+      background: transparent;
+      border: 0;
+      padding: var(--s-3) var(--s-4);
+      border-radius: calc(var(--radius-sm) - 2px);
+      color: var(--text-2);
+      font-size: 14px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.18s ease, color 0.18s ease, transform 0.12s ease;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2px;
+      text-align: center;
+      font-family: inherit;
+    }
+    .perfil-btn:hover:not(.active) {
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text);
+    }
+    .perfil-btn .perfil-icon { font-size: 18px; line-height: 1; }
+    .perfil-btn .perfil-sub {
+      font-size: 10px;
+      font-weight: 500;
+      color: var(--muted-2);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+    }
+    .perfil-btn.active {
+      background: var(--accent);
+      color: #fff;
+      box-shadow: 0 2px 8px rgba(41, 98, 255, 0.35);
+    }
+    .perfil-btn.active .perfil-sub { color: rgba(255, 255, 255, 0.85); }
+    .perfil-btn.perfil-agressivo.active {
+      background: var(--warn);
+      box-shadow: 0 2px 8px rgba(255, 23, 68, 0.35);
+    }
+    .perfil-btn.perfil-conservador.active {
+      background: var(--green);
+      box-shadow: 0 2px 8px rgba(0, 200, 83, 0.35);
+    }
+    .perfil-preferida-text {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      margin: 0;
+      line-height: 1.4;
+    }
+    .perfil-preferida-text strong { color: var(--accent); }
+
+    /* ===== Disclaimer modal (Agressivo) ===== */
+    .disclaimer-scrim {
+      position: fixed;
+      inset: 0;
+      background: rgba(11, 14, 20, 0.78);
+      backdrop-filter: blur(6px);
+      display: none;
+      align-items: center;
+      justify-content: center;
+      z-index: 9999;
+      padding: var(--s-4);
+    }
+    .disclaimer-scrim.open {
+      display: flex;
+      animation: scrimFadeIn 0.18s ease;
+    }
+    @keyframes scrimFadeIn {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+    .disclaimer-card {
+      background: var(--card);
+      border: 1px solid var(--warn);
+      border-radius: var(--radius);
+      max-width: 560px;
+      width: 100%;
+      padding: var(--s-6);
+      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5);
+      animation: cardSlideUp 0.22s ease;
+    }
+    @keyframes cardSlideUp {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+    .disclaimer-card h2 {
+      font-size: 20px;
+      margin: 0 0 var(--s-3);
+      color: var(--warn);
+      display: flex;
+      align-items: center;
+      gap: var(--s-2);
+    }
+    .disclaimer-card .stat-box {
+      background: var(--warn-soft);
+      border-left: 4px solid var(--warn);
+      padding: var(--s-4);
+      border-radius: var(--radius-sm);
+      margin: var(--s-4) 0;
+      font-size: 14px;
+      line-height: 1.55;
+      color: var(--text);
+    }
+    .disclaimer-card .stat-box strong { color: var(--warn); }
+    .disclaimer-card p {
+      font-size: 14px;
+      color: var(--text-2);
+      line-height: 1.5;
+      margin: 0 0 var(--s-3);
+    }
+    .disclaimer-card .source {
+      font-size: 11px;
+      color: var(--muted-2);
+      font-style: italic;
+      margin-top: var(--s-2);
+    }
+    .disclaimer-checkbox-row {
+      display: flex;
+      align-items: flex-start;
+      gap: var(--s-3);
+      padding: var(--s-3);
+      background: var(--bg-2);
+      border-radius: var(--radius-sm);
+      margin: var(--s-4) 0;
+      cursor: pointer;
+      border: 1px solid var(--border);
+      transition: border-color 0.15s ease;
+    }
+    .disclaimer-checkbox-row:hover { border-color: var(--border-bright); }
+    .disclaimer-checkbox-row input[type="checkbox"] {
+      width: 20px;
+      height: 20px;
+      flex-shrink: 0;
+      margin-top: 1px;
+      cursor: pointer;
+      accent-color: var(--warn);
+    }
+    .disclaimer-checkbox-row label {
+      font-size: 13px;
+      color: var(--text);
+      line-height: 1.45;
+      cursor: pointer;
+      user-select: none;
+    }
+    .disclaimer-actions {
+      display: flex;
+      gap: var(--s-3);
+      justify-content: flex-end;
+      margin-top: var(--s-4);
+      flex-wrap: wrap;
+    }
+    .disclaimer-actions .btn { min-width: 140px; }
+    .disclaimer-actions .btn-danger {
+      background: var(--warn);
+      border-color: var(--warn);
+      color: #fff;
+    }
+    .disclaimer-actions .btn-danger:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+    @media (max-width: 600px) {
+      .perfil-segmented { grid-template-columns: 1fr; }
+      .perfil-btn { flex-direction: row; justify-content: center; padding: var(--s-3); }
+      .perfil-btn .perfil-sub { margin-left: var(--s-2); }
+      .disclaimer-actions .btn { width: 100%; min-width: 0; }
+    }
   </style>
 </head>
 <body>
@@ -326,6 +546,53 @@
   </header>
 
   <main class="wrap" style="padding-bottom: var(--s-8);" id="main-content">
+
+    <!-- ============ ANALISADOR · 3 PERFIS (Parte 1 UI · 12/05/2026) ============ -->
+    <div class="perfil-bar" id="perfil-bar">
+      <div class="perfil-header">
+        <h3 class="perfil-titulo">🎚️ Perfil do Analisador</h3>
+        <span class="preview-tag" title="Os 3 perfis rodam o mesmo backend Moderado por enquanto. Backend específico Agressivo/Conservador entra quarta 13/05.">PREVIEW</span>
+      </div>
+      <div class="perfil-segmented" role="tablist" aria-label="Escolha do perfil do Analisador">
+        <button type="button" class="perfil-btn perfil-agressivo" data-perfil="agressivo" role="tab" aria-selected="false">
+          <span class="perfil-icon">⚡</span>
+          <span>Agressivo</span>
+          <span class="perfil-sub">1m / 5m / 15m</span>
+        </button>
+        <button type="button" class="perfil-btn perfil-moderado active" data-perfil="moderado" role="tab" aria-selected="true">
+          <span class="perfil-icon">🎯</span>
+          <span>Moderado</span>
+          <span class="perfil-sub">5m / 15m / 60m</span>
+        </button>
+        <button type="button" class="perfil-btn perfil-conservador" data-perfil="conservador" role="tab" aria-selected="false">
+          <span class="perfil-icon">🛡️</span>
+          <span>Conservador</span>
+          <span class="perfil-sub">15m / 60m / 240m</span>
+        </button>
+      </div>
+      <p class="perfil-preferida-text">🎯 Versão preferida do Bertani · <strong>Moderada</strong></p>
+    </div>
+
+    <!-- ============ DISCLAIMER MODAL (Agressivo) ============ -->
+    <div class="disclaimer-scrim" id="disclaimer-scrim" role="dialog" aria-modal="true" aria-labelledby="disclaimer-title">
+      <div class="disclaimer-card">
+        <h2 id="disclaimer-title">⚠️ Antes de ativar o perfil Agressivo</h2>
+        <p>O perfil Agressivo opera em micro-timeframes (1m, 5m, 15m) com janelas curtas e gestão mais apertada. É a versão de maior frequência operacional — e de maior risco.</p>
+        <div class="stat-box">
+          <strong>Estudo Barber et al. (2014):</strong> sobre uma amostra de aproximadamente <strong>20.000 day traders no Brasil</strong>, <strong>97% perderam dinheiro</strong> ao longo de 12 meses de atividade. Apenas 0,4% conseguiram render mais do que um caixa de banco no mesmo período.
+          <div class="source">Fonte: Chague, F.; De-Losso, R.; Giovannetti, B. (2014/2020) — FGV-SP · "It is just a matter of time".</div>
+        </div>
+        <p>Day trade alavancado é uma atividade estatisticamente perdedora para a esmagadora maioria. O método Bertani busca disciplina técnica, mas <strong>não promete reverter essa estatística</strong>. Use o Agressivo apenas com sizing pequeno, stops curtos e disciplina temporal.</p>
+        <label class="disclaimer-checkbox-row" for="disclaimer-accept">
+          <input type="checkbox" id="disclaimer-accept">
+          <label for="disclaimer-accept">Li, entendi e aceito que <strong>eventuais perdas serão minha responsabilidade exclusiva</strong>. O perfil Agressivo é uma ferramenta educacional, não uma recomendação de investimento.</label>
+        </label>
+        <div class="disclaimer-actions">
+          <button type="button" class="btn" id="disclaimer-cancel">Voltar ao Moderado</button>
+          <button type="button" class="btn btn-danger" id="disclaimer-confirm" disabled>Ativar Agressivo</button>
+        </div>
+      </div>
+    </div>
 
     <!-- ============ VERDICT BAR ============ -->
     <div id="verdict-container"></div>
@@ -383,6 +650,133 @@
 
   <script src="../assets/js/app.js"></script>
   <script src="../assets/js/score.js"></script>
+
+  <!-- ============ ANALISADOR · 3 PERFIS · Parte 1 UI (12/05/2026) ============ -->
+  <!-- Apenas frontend. Backend específico Agressivo/Conservador entra Parte 2 quarta 13/05. -->
+  <script>
+    (function () {
+      'use strict';
+
+      const STORAGE_KEYS = {
+        PERFIL: 'analisador_perfil_escolhido',
+        ACEITE_AGRESSIVO: 'analisador_aceite_agressivo_ts',
+        USO_LOG: 'analisador_uso_log',
+      };
+      const PERFIL_DEFAULT = 'moderado';
+      const PERFIS_VALIDOS = ['agressivo', 'moderado', 'conservador'];
+      const USO_LOG_MAX = 200;
+
+      function lsGet(key, fallback) {
+        try {
+          const v = localStorage.getItem(key);
+          return v === null ? fallback : v;
+        } catch (e) { return fallback; }
+      }
+      function lsSet(key, value) {
+        try { localStorage.setItem(key, value); } catch (e) { /* noop */ }
+      }
+      function appendLog(entry) {
+        try {
+          const raw = localStorage.getItem(STORAGE_KEYS.USO_LOG);
+          const arr = raw ? JSON.parse(raw) : [];
+          arr.push(entry);
+          const trimmed = arr.length > USO_LOG_MAX ? arr.slice(-USO_LOG_MAX) : arr;
+          localStorage.setItem(STORAGE_KEYS.USO_LOG, JSON.stringify(trimmed));
+        } catch (e) { /* noop */ }
+      }
+
+      const buttons = Array.from(document.querySelectorAll('.perfil-btn'));
+      const scrim = document.getElementById('disclaimer-scrim');
+      const acceptCheck = document.getElementById('disclaimer-accept');
+      const confirmBtn = document.getElementById('disclaimer-confirm');
+      const cancelBtn = document.getElementById('disclaimer-cancel');
+
+      if (!buttons.length || !scrim) return;
+
+      function setActivePerfil(perfil, options) {
+        options = options || {};
+        if (!PERFIS_VALIDOS.includes(perfil)) perfil = PERFIL_DEFAULT;
+        buttons.forEach(b => {
+          const active = b.dataset.perfil === perfil;
+          b.classList.toggle('active', active);
+          b.setAttribute('aria-selected', active ? 'true' : 'false');
+        });
+        lsSet(STORAGE_KEYS.PERFIL, perfil);
+        if (options.log) {
+          appendLog({
+            event: 'perfil_selected',
+            perfil: perfil,
+            ts: new Date().toISOString(),
+            page: 'analise.html',
+          });
+        }
+      }
+
+      function abrirModal() {
+        acceptCheck.checked = false;
+        confirmBtn.disabled = true;
+        scrim.classList.add('open');
+        document.body.style.overflow = 'hidden';
+        setTimeout(() => { try { acceptCheck.focus(); } catch (e) {} }, 50);
+      }
+      function fecharModal() {
+        scrim.classList.remove('open');
+        document.body.style.overflow = '';
+      }
+
+      // Initial state
+      const perfilInicial = lsGet(STORAGE_KEYS.PERFIL, PERFIL_DEFAULT);
+      setActivePerfil(perfilInicial, { log: false });
+
+      buttons.forEach(btn => {
+        btn.addEventListener('click', () => {
+          const perfil = btn.dataset.perfil;
+          if (perfil === 'agressivo') {
+            const aceiteTs = lsGet(STORAGE_KEYS.ACEITE_AGRESSIVO, null);
+            if (!aceiteTs) {
+              abrirModal();
+              return;
+            }
+            setActivePerfil('agressivo', { log: true });
+            return;
+          }
+          setActivePerfil(perfil, { log: true });
+        });
+      });
+
+      acceptCheck.addEventListener('change', () => {
+        confirmBtn.disabled = !acceptCheck.checked;
+      });
+
+      confirmBtn.addEventListener('click', () => {
+        if (!acceptCheck.checked) return;
+        const ts = new Date().toISOString();
+        lsSet(STORAGE_KEYS.ACEITE_AGRESSIVO, ts);
+        appendLog({
+          event: 'disclaimer_aceito_agressivo',
+          ts: ts,
+          page: 'analise.html',
+        });
+        setActivePerfil('agressivo', { log: true });
+        fecharModal();
+      });
+
+      cancelBtn.addEventListener('click', () => {
+        fecharModal();
+      });
+
+      scrim.addEventListener('click', (ev) => {
+        if (ev.target === scrim) fecharModal();
+      });
+
+      document.addEventListener('keydown', (ev) => {
+        if (ev.key === 'Escape' && scrim.classList.contains('open')) {
+          fecharModal();
+        }
+      });
+    })();
+  </script>
+
   <script>
     (function () {
       'use strict';

@@ -698,4 +698,29 @@
           html += '<div class="plano-grid"><div class="plano-cell"><div class="l">Entry</div><div class="v">●●●●●</div></div><div class="plano-cell"><div class="l">Stop</div><div class="v">●●●●</div></div></div>';
           html += '</div>';
         } else if (!at.plano && hasBriefing) {
-          // Caso AGUARDAR · sem 
+          // Caso AGUARDAR · sem plano operacional (briefing #3 todo AGUARDAR é exemplo)
+          html += '<div class="plano-block" style="border-color: var(--muted); background: rgba(138,149,168,0.05);">';
+          html += '<p class="plano-titulo" style="color: var(--muted);">⏸ Sem setup operacional hoje</p>';
+          html += '<p style="color: var(--text-2); font-size: 14px; margin: 8px 0 0; line-height: 1.5;">';
+          html += 'Método aguarda confirmação. Score atual ' + at.score.toFixed(1) + '/10 não passa do limiar (≥ 6.0). ';
+          html += 'Trader experiente <strong>respeita a ausência de gatilho</strong> · recruta força a entrada.';
+          html += '</p></div>';
+        }
+
+        html += '</section>';
+        return html;
+      }
+
+      function renderLockCTA() {
+        return '<div class="lock-cta">' +
+          '<h3>🔒 Conteúdo exclusivo de assinantes</h3>' +
+          '<p>O briefing diário completo (racional, plano operacional, entries, alvos e cálculos) é exclusivo do plano <strong>Briefing R$ 147</strong> ou superior. Você está em modo Demo.</p>' +
+          '<a href="../upgrade.html" class="btn btn-primary">Conhecer os planos</a>' +
+        '</div>';
+      }
+    }
+
+    bootBriefing();
+  </script>
+</body>
+</html>

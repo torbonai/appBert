@@ -1,0 +1,308 @@
+{
+  "data": "2026-05-13",
+  "data_extenso": "Quarta-feira, 13 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 12,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "GATE TRIPLO 09:00-11:30 · VAREJO BR + PPI EUA + ESTOQUES · WIN BUSCA PISO 182K",
+    "subtitulo": "Hoje quarta 13/05 traz GATE TRIPLO de eventos macro entre 08:30 e 12:00: Vendas Varejo BR 09:00 ★★★ (esp 0,0% MoM vs prior 0,6%) · PPI EUA 09:30 ★★★ (esp 0,5% MoM · 5% YoY) · Estoques Petróleo 11:30 ★★★ (esp -2,0M barris). Tarde traz Kashkari FOMC 14:15 e Lagarde BCE 16:15 ★★★. Brent $107,77 (+3,41%) ainda contamina inflação · CPI EUA terça veio 3,8% vs 3,7% esperado (acima consenso · core 2,8%). WIN fechou 182.673 (-1,31% · novo low 182.145) · Spring 185.180 falhou. WDO travado em 4.915 (Distribuição Fase A) · DXY 98,51 sustentado. Ambos AGUARDAR · WIN 1,5/10 (estrutura perdida) · WDO 3,0/10 (lateral). Janela operacional REAL: 11:30-12:30 (digestão pós gate triplo) e 13:30-14:30 (NY Open). EVITAR 08:30-12:00. Live #2 20h00 Kill Zones B3."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score 1,5/10 · veredito AGUARDAR · viés lateral bearish (estrutura perdida · aguarda piso)",
+    "wdo_linha": "WDO1! · score 3,0/10 · veredito AGUARDAR · viés lateral (aguardando DXY >98,5 OU <98)",
+    "janela_operacional": "EVITAR 08:30-12:00 (gate triplo Varejo+PPI+Estoques) · OPERAR 11:30-12:30 (digestão) e 13:30-14:30 (NY Open)",
+    "nivel_chave": "WIN 182.000 (suporte psicológico) · 180.000 (target bearish) · WDO 4.900 (breakdown) · 4.940 (resistência)",
+    "agenda_top1": "GATE TRIPLO 09:00-11:30 · Varejo BR ★★★ · PPI EUA ★★★ · Estoques ★★★ · Kashkari 14:15 · Lagarde 16:15 ★★★ · Live #2 20:00"
+  },
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "📌 Terça #11: AGUARDAR cumprido · WIN fechou 182.673 (-1,31% · NOVO LOW 182.145 intraday) · WDO fechou 4.915,91 (-0,04% · lateral) · trades não acionados = observação correta",
+      "🇺🇸 CPI EUA terça veio 3,8% YoY (vs 3,7% esp · ACIMA consenso) · core 2,8% (vs 2,7% esp) · core distancia da meta 2% · Treasuries 30y rompeu 5% · Goolsbee hawkish 'inflação indo na direção errada' · Fed CME: 40,8% prob ALTA abril/27 vs 29,8% manutenção",
+      "🇺🇸 DXY 98,51 (overnight estável vs 98,26 terça) · SUSTENTOU >98 estrutural · USD strength mantida · bearish WIN, bullish WDO técnico",
+      "🇺🇸 S&P 7.429 (+0,2% vs terça) · Nasdaq 29.338 (+0,07% · tech lateralizado) · S&P 500 caiu -0,16% terça · Nasdaq -0,71% terça (interrompeu recordes pós-CPI) · Ibov descolado continua",
+      "📈 Curva DI: hawkish marginal · Code reportou EOD 11/05 +6-9bps · Broadcast Valor reporta EOD 12/05: Jan/27 14,115% (+0,7bps · curva curta JÁ tinha precificado) · Jan/29 13,750% (+6,1bps) · Jan/31 13,815% (+5,2bps) · Jan/33 13,885% (+3,4bps) · bear steepen leve",
+      "📊 WIN estrutura: PERDIDA · Spring 185.180 falhou segunda · PDL terça 182.145 = novo low · fechou 182.673 · sequência Lower Lows 187.400 → 183.185 → 182.960 · fase indeterminada (Distribuição A ou markdown direto) · sem AR · sem MSS bullish",
+      "📊 WDO estrutura: Distribuição Fase A preliminar mantida · PSY 5.017 → low 4.910 · travado em 4.915 · DXY >98 favorece long mas DI hawkish segura real · sem breakdown <4.900 · sem confirmação direcional",
+      "🛢 Brent US$ 107,77 (+3,41% terça) · WTI US$ 102,18 (+4,19% rompeu $100) · guerra EUA-Irã contamina inflação direto · DoE reduziu projeção Brent 2026 pra US$ 95 (sinal estrutural baixista médio prazo) · AIE/Opep relatórios mensais hoje",
+      "🇧🇷 IPCA abril 0,67% MoM (vs 0,88% mar) · acumulado 12m 4,39% · MAS núcleos aceleraram 0,43→0,49 · piora qualitativa · mercado precificando 30% manutenção Copom junho (cresceu) · 70% AINDA espera corte 25bps",
+      "🇧🇷 Real RESISTE pressão DXY (+0,4%) · dólar fechou estável R$ 4,8954 (3º pregão abaixo R$ 4,90) · carry trade brasileiro intacto",
+      "📊 Braskem PNA +29,02% terça (JPMorgan overweight · alvo R$15) · sinal de stockpicking interno · risk-on seletivo · BB fechou mínima -1,02% (R$ 21,32) pré-balanço hoje",
+      "📅 HOJE quarta 13/05 GATE TRIPLO 09:00-11:30: Vendas Varejo BR 09:00 ★★★ · PPI EUA 09:30 ★★★ · Estoques Petróleo 11:30 ★★★ + Kashkari FOMC 14:15 + Fluxo Cambial BR 14:30 + Lane BCE 16:00 + Lagarde BCE 16:15 ★★★ + Live #2 BERTANI 20:00",
+      "⚠️ Filtro Anti-Narrativa ATIVO · DIVERGÊNCIA SELETIVA · 8 contradições mapeadas · ler bloco filtro_anti_narrativa abaixo"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "narrativa_dominante": "Guerra trava corte de juros · CPI/IPCA pressionam · 180k pode cair · Fed mais hawkish · risk-off generalizado",
+      "descricao": "Narrativa sell-side dominante (Broadcast/Valor): 'guerra+CPI+IPCA quali pior = Selic não corta + Fed hawkish + Ibov sob pressão'. Contradições estruturais que pedem CAUTELA com SHORT FORÇADO TARDE: (1) DI Jan/27 subiu APENAS +0,7bps (14,108→14,115) · curva curta JÁ tinha precificado · narrativa exagera magnitude. (2) Real RESISTE DXY +0,4% · dólar estável R$ 4,8954 · carry trade brasileiro intacto · não é aversão generalizada. (3) Braskem PNA +29,02% em meio ao caos · stockpicking interno funciona · risk-on SELETIVO existe · não é capitulação. (4) DoE reduziu projeção Brent 2026 pra US$ 95 · sinal estrutural baixista médio prazo · narrativa de petróleo perpétuo é míope. (5) Trump+Xi alinhamento Ormuz via Rubio-Wang Yi · diálogo de bastidor que narrativa ignora. (6) 70% mercado AINDA espera corte 25bps junho · 30% manutenção é MINORIA barulhenta. (7) DI longa (Jan/31, Jan/33) subiu MAIS que curta · bear steepen marginal = fiscal/estrutural · não 'Selic vai parar'. (8) BB mínima -1,02% pré-balanço = exhaustion + suporte técnico · narrativa amplifica fragilidade ANTES dos números. CONCLUSÃO: não é trade contrário ao bias bearish WIN · é CAUTELA com SHORT FORÇADO TARDE pós-13:30 sem confirmação."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 1.5,
+      "vies": "lateral bearish",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Indeterminada (estrutura perdida após Spring falho · possível Distribuição Fase A ou markdown direto)",
+      "racional_publico": "Estrutura PERDIDA. Spring 185.180 falhou segunda 11/05. Terça 12/05 confirmou markdown: fechou 182.673 (-1,31%) com low intraday 182.145 (novo PDL). Sequência Lower Lows no 1H: 187.400 → 183.185 → 182.960. Volume 18,0M terça normal · sem expansão. DXY >98 estrutural (bearish WIN) + DI hawkish +6-9bps (bearish WIN) = confluência negativa mantida. Sem AR formado · sem MSS bullish. Fase indeterminada: pode ser início Distribuição Fase A (PSY 192.560 → BC potencial → markdown para 182k) OU markdown direto pós-Spring falho. Aguardar piso estrutural: suporte psicológico 182.000 · se perder, target 180.000. Score 1,5/10 (Wyckoff perdido -3pts · DXY contra -1pt · DI contra -1pt · Anti-Narrativa -0,5pt · sem confluência HTF -0,5pt · sem MSS -1pt · volume médio -0,5pt). Veredito AGUARDAR até formar piso OU romper 184.000 com volume >20M.",
+      "niveis_chave": {
+        "ajuste_b3": 182673,
+        "pdh": 187400,
+        "pdl": 182145,
+        "spring_falho": 185180,
+        "ar_invalidado": 186786,
+        "eq": 184772,
+        "pwh": 195245,
+        "pwl": 182145,
+        "suporte_psicologico": 182000,
+        "target_bearish": 180000
+      },
+      "ajuste_b3_meta": {
+        "valor": 182673,
+        "data_referencia": "2026-05-12",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-12)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Nenhuma até piso confirmar OU rompimento bullish >184.000 com volume",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "Cenário 1 (piso em 182.000-182.500): se formar base com volume >20M e pin bars rejeitando low · aguardar AR >183.500 para considerar long condicional · SL abaixo de 181.500 · TP1 186.000 · RR mínimo 1,8. Cenário 2 (breakdown <182.000): se quebrar 182.000 com volume · aguardar retest para short condicional · entry 182.500 · SL 184.000 · TP1 180.000 · TP2 178.500. Cenário 3 (reversão bullish): se romper 184.000 com volume >22M e DXY <98 · entry 184.500 · SL 182.500 · TP1 187.500 (RR 1,5). CRÍTICO: não operar sem confirmação · estrutura indeterminada = risco máximo.",
+        "kill_zone": "EVITAR 08:30-12:00 BRT (gate triplo Varejo+PPI+Estoques) · OPERAR 11:30-12:30 BRT (digestão · setup limpo se confluência) · 13:30-14:30 BRT (NY Open · cuidado Kashkari 14:15) · 15:00-16:00 BRT (antes de Lane/Lagarde)"
+      },
+      "comentario_breve": "Score 1,5/10 · AGUARDAR · estrutura perdida · aguardando piso 182k OU breakdown · DXY >98 + DI hawkish = pressão bearish · gate triplo hoje obriga paciência"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 3.0,
+      "vies": "lateral",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição Fase A preliminar (PSY 5.017 → low 4.910 · aguardando BC/AR/ST ou breakdown)",
+      "racional_publico": "DXY 98,51 sustentou >98 estrutural (favorece long WDO tecnicamente) mas WDO travado em 4.915 terça (-0,04% · range 4.939-4.911). Curva DI hawkish +6-9bps EOD 11/05 sustenta real (contradiz DXY >98 isolado · deveria fazer WDO subir mais). Estrutura mantém Distribuição Fase A preliminar: PSY 5.017 → low 4.910 · faltam BC + AR + ST para completar. Sem breakdown <4.900 ainda. Consolidação lateral 4.939-4.910 aguardando catalisador. Dois cenários: (1) DXY >98,5 sustentado + retest 4.935-4.945 rejeitar = short condicional (confirmação markdown), (2) DXY <98 + AR >4.940 com volume = long condicional (reversão para Acumulação). Score 3,0/10 (Distrib. A prelim +2pts · DXY >98 alinhado +1pt · DI hawkish alinhado +1pt · sem MSS -0,5pt · Anti-Narrativa -0,5pt · sem confirmação -0,5pt · volume médio -0,5pt). Veredito AGUARDAR até DXY e estrutura definirem direção.",
+      "niveis_chave": {
+        "ajuste_b3": 4915.913,
+        "pdh": 4939,
+        "pdl": 4910,
+        "psy": 5017,
+        "low_estrutural": 4910,
+        "eq": 4963.5,
+        "resistencia": 4940,
+        "breakdown": 4900
+      },
+      "ajuste_b3_meta": {
+        "valor": 4915.913,
+        "data_referencia": "2026-05-12",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-12)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR",
+        "entry_zona": "Condicional: (1) short se retest 4.935-4.945 rejeitar com DXY >98,5 OU (2) long se AR >4.940 com DXY <98",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "Cenário 1 (breakdown bearish): se DXY sustentar >98,5 E WDO retest 4.935-4.945 rejeitar com pin bar · entry short 4.940 · SL 4.970 (+30pts) · TP1 4.890 (-50pts = 1,67R) · TP2 4.850 (-90pts = 3,0R) · 1 contrato = R$ 300 ÷ (30 × 10) = 1,0 · risco R$300 (1,0%). Cenário 2 (reversão bullish): se DXY cair <98 E WDO formar AR >4.940 com volume · aguardar pullback para FVG 15m · entry long 4.925 · SL 4.905 (-20pts) · TP1 4.965 (+40pts = 2,0R) · 1 contrato. Cenário 3 (lateral continua): sem setup · aguardar.",
+        "kill_zone": "EVITAR 08:30-12:00 BRT (PPI EUA 09:30 catalisador maior do dia pro WDO) · OPERAR 11:30-12:30 BRT (digestão · DXY pode definir) · 13:30-14:30 BRT (NY Open) · CUIDADO 16:00-17:00 BRT com Lane+Lagarde BCE (EUR/USD pode mover DXY)"
+      },
+      "comentario_breve": "Score 3,0/10 · AGUARDAR · Distrib. A prelim · lateral 4.939-4.910 · DXY >98 técnico bullish mas DI hawkish segura real · PPI 09:30 = catalisador chave"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 Vendas no Varejo BR (Mensal Mar) ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "08:45-10:00",
+      "tag": "varejo_br_mensal",
+      "nota": "Mediana 0,0% MoM vs prior 0,6% · sinal de desaceleração do consumo · se vier negativo abre espaço pra corte Selic"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 Vendas no Varejo BR (Anual Mar) ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "08:45-10:00",
+      "tag": "varejo_br_anual",
+      "nota": "Mediana 2,8% YoY vs prior 0,2% · indicador de tração do consumo · monitorar crédito + endividamento famílias"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 PPI Mensal EUA Abr ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "09:15-10:30",
+      "tag": "ppi_us_mensal",
+      "nota": "Mediana 0,5% MoM · YoY 5% · pós-CPI 3,8% que veio acima consenso · se PPI vier hawkish reforça Fed cauteloso · se dovish abre espaço pra mean reversion"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Núcleo PPI Mensal EUA Abr ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": "09:15-10:30",
+      "tag": "core_ppi_us",
+      "nota": "Mediana 0,3% MoM · 4,4% YoY · indicador de pressão inflacionária subjacente sem alimentos/energia"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "🇺🇸 Estoques Petróleo Bruto ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "11:15-12:15",
+      "tag": "estoques_petroleo",
+      "nota": "Mediana -2,000M barris vs prior -2,313M · num contexto Brent $107,77 (guerra EUA-Irã) · queda forte de estoques amplifica alta · build inesperado pode quebrar narrativa petróleo"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇺🇸 Leilão T-Bond 30y EUA ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "leilao_tbond_30y",
+      "nota": "Prior 4,876% · Treasuries 30y rompeu 5% ontem · demanda do leilão dá pista de apetite por duration"
+    },
+    {
+      "hora_brt": "14:15",
+      "evento": "🇺🇸 Discurso Kashkari (FOMC) ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": "14:10-14:30",
+      "tag": "kashkari_fomc",
+      "nota": "Membro Fed · pós-CPI hawkish · provável tom cauteloso · monitorar mudança vs último discurso"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "🇧🇷 Fluxo Cambial Estrangeiro BR ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "fluxo_cambial_br",
+      "nota": "Prior 3,307B · indicador semanal de fluxo externo · pode mover WDO se vir negativo forte"
+    },
+    {
+      "hora_brt": "16:00",
+      "evento": "🇪🇺 Pronunciamento Lane (BCE) ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "lane_bce",
+      "nota": "Economista-chefe BCE · pode dar sinais sobre próximo passo monetário europeu"
+    },
+    {
+      "hora_brt": "16:15",
+      "evento": "🇪🇺 Discurso Lagarde (Presidente BCE) ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "16:10-16:45",
+      "tag": "lagarde_bce",
+      "nota": "Lagarde em evento na Alemanha · BCE já sinalizou 25bps hike junho via Nagel · fala pode mover EUR/USD e indiretamente DXY · cuidado WDO 16:00-17:00"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    },
+    {
+      "hora_brt": "QUA 13/05 20:00",
+      "evento": "🎥 Live #2 BERTANI · Kill Zones B3",
+      "impacto": "—",
+      "janela_evitar": null,
+      "tag": "live_bertani",
+      "nota": "Gravação disponível no Telegram beta testers"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "EVITAR 08:30-12:00 BRT",
+      "contexto": "GATE TRIPLO ★★★: Varejo BR 09:00 + PPI EUA 09:30 + Estoques Petróleo 11:30 · operar dentro deste bloco = farinha de algos · risco máximo · zero edge institucional"
+    },
+    {
+      "janela": "11:30-12:30 BRT",
+      "contexto": "Digestão pós gate triplo · smart money começa a definir direção · primeiras barras com volume real · setup limpo se confluência (Wyckoff + ICT + Anti-Narrativa)"
+    },
+    {
+      "janela": "13:30-14:30 BRT (NY Open)",
+      "contexto": "Janela secundária · momentum US se setup ativou manhã · cuidado 14:00-14:30 com leilão T-Bond e Kashkari · pode mover DXY"
+    },
+    {
+      "janela": "15:00-16:00 BRT",
+      "contexto": "Continuação tendência tarde · ANTES de Lane 16:00 e Lagarde 16:15 · janela curta · evitar entrar após 16:00"
+    }
+  ],
+  "regras_do_dia": [
+    {"ativo": "WIN1!", "regra": "NÃO operar antes de piso confirmar OU breakdown <182.000 · estrutura indeterminada = risco máximo"},
+    {"ativo": "WIN1!", "regra": "Se formar base 182.000-182.500 com volume >20M · aguardar AR >183.500 para considerar long"},
+    {"ativo": "WIN1!", "regra": "Se breakdown <182.000 · aguardar retest para short condicional · SL apertado · gestão defensiva"},
+    {"ativo": "WIN1!", "regra": "Score 1,5/10 = setup fraco · preferir observação · zero FOMO"},
+    {"ativo": "WDO1!", "regra": "Aguardar DXY definir: >98,5 sustentado = short condicional · <98 = long condicional"},
+    {"ativo": "WDO1!", "regra": "Monitorar retest 4.935-4.945 · se rejeitar com pin bar + DXY >98,5 = setup short ativa"},
+    {"ativo": "WDO1!", "regra": "Se DXY <98 + AR >4.940 · aguardar pullback FVG 15m para long"},
+    {"ativo": "WDO1!", "regra": "Score 3,0/10 = lateral sem convicção · operar só com gatilho explícito"},
+    {"ativo": "GERAL", "regra": "Filtro Anti-Narrativa ATIVO · 8 contradições mapeadas · CAUTELA com SHORT FORÇADO TARDE sem confirmação"},
+    {"ativo": "GERAL", "regra": "GATE TRIPLO 08:30-12:00 · EVITAR operar dentro do bloco · esperar digestão 11:30-12:30"},
+    {"ativo": "GERAL", "regra": "PPI EUA 09:30 ★★★ é catalisador maior do dia · monitorar especialmente reação WDO"},
+    {"ativo": "GERAL", "regra": "Lagarde BCE 16:15 ★★★ pode mover EUR/USD e indiretamente DXY · evitar entrada nova 16:00-17:00"},
+    {"ativo": "GERAL", "regra": "Live #2 hoje 20h00 · Kill Zones B3 · participar se possível"}
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.2",
+    "gerado_em": "2026-05-13T08:30:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5)",
+    "corrigido_em": "2026-05-13T07:30:00-03:00",
+    "corrigido_por": "Cowork (Opus 4.7) · pre-publish review",
+    "correcoes_aplicadas": [
+      "agenda_macro: adicionados 5 eventos ★★★/★★ ausentes (Varejo BR 09:00 · PPI EUA 09:30 · Estoques Petróleo 11:30 · Kashkari 14:15 · Lagarde 16:15) · root cause: macro_calendar_br_2026.json vazio pra 13/05 (mesma classe bug Briefing #6 e #11)",
+      "kill_zones_recomendadas: '09:25-11:30 limpa' → 'EVITAR 08:30-12:00 + OPERAR 11:30-12:30 e 13:30-14:30' · gate triplo invalida janela manhã",
+      "manchete: 'Spring perdido...' → 'GATE TRIPLO 09:00-11:30 · VAREJO BR + PPI EUA + ESTOQUES · WIN BUSCA PISO 182K'",
+      "contexto_macro.nivel_vento: MORNO → ALTO",
+      "contexto_macro.highlights: adicionados CPI EUA acima consenso · Brent real $107,77 · DI bps Broadcast Valor · IPCA núcleos · Real estável vs DXY · Braskem +29% · DoE Brent 2026",
+      "filtro_anti_narrativa: enriquecido de 5 → 8 contradições · narrativa_dominante explícita · conclusão CAUTELA SHORT TARDE",
+      "ativos[0/1].plano.kill_zone: atualizadas pra refletir gate triplo + Lane/Lagarde",
+      "regras_do_dia: removida 'Macro calmo' · adicionadas 4 regras gate triplo + PPI + Lagarde"
+    ],
+    "validacoes_pendentes_pos_publish": [
+      "Atualizar macro_calendar_br_2026.json v1.4 com eventos 13/05 · adicionar assert AGENDA_NAO_VAZIA_SE_DIA_UTIL (LIÇÃO 30) no pre_publish_check",
+      "DI bps: divergência Code (+6,7bps Jan/27 EOD 11/05) vs Broadcast Valor (+0,7bps Jan/27 EOD 12/05) · confirmar pós-pregão",
+      "Brent: Code dizia $97 (símbolo errado?) · realidade $107,77 · investigar fonte"
+    ],
+    "notas": [
+      "Curva DI: EOD 11/05 via latest.json corrigido bug multiplicador 10x · +6-9bps (não +60-90bps)",
+      "DXY fresh 13/05 05:00 BRT via TradingView quote_get: 98.514",
+      "Globais (USDJPY/US500/NAS100/XAUUSD): snapshot 13/05 05:00 BRT",
+      "WIN ajuste 182.673 · WDO ajuste 4.915,913 via TradingView Daily close D-1",
+      "Ambos ativos AGUARDAR · scores baixos · estrutura indeterminada WIN · lateral WDO"
+    ]
+  }
+}

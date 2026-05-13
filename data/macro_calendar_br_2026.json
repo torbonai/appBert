@@ -1,7 +1,7 @@
 {
   "_meta": {
-    "version": "1.3",
-    "last_updated": "2026-05-12",
+    "version": "1.4",
+    "last_updated": "2026-05-13",
     "scope": "Calendário macro BR/US relevante para WIN/WDO. Não é exaustivo. Eventos não listados podem existir — usar como FILTRO MÍNIMO, não como verdade absoluta.",
     "review_cadence": "Renato deve atualizar mensalmente (ou quando descobrir evento não listado, como aconteceu com Ata Copom 05/05).",
     "schema": {
@@ -63,6 +63,20 @@
       "Pedidos Seguro-Desemprego US (semanal · quinta 09:30 BRT · agora cadastrado como recurring)",
       "Balanço Patrimonial Fed (semanal · quinta 17:30 BRT · agora cadastrado como recurring)",
       "Eventos políticos pontuais (visitas presidenciais como Lula-Trump 07/05) · cadastrar manualmente quando confirmar agenda"
+    ],
+    "changelog": [
+      {
+        "version": "1.4",
+        "date": "2026-05-13",
+        "changes": [
+          "Adicionados 10 eventos pra 13/05 (gate triplo Varejo+PPI+Estoques + Kashkari + Lagarde)",
+          "Adicionados 6 eventos pra 14/05 (Jobless Claims recorrente + H.4.1 Fed + stubs review_required)",
+          "Adicionados 6 eventos pra 15/05 (Michigan Sentiment + Empire State + Industrial Prod + Vencimento Opções B3)",
+          "Adicionado stub 16/05 (mercado fechado)",
+          "Root cause: briefing #12 13/05 saiu como 'MACRO CALMO' por calendar estar vazio pra 13/05 · LIÇÃO 30 estabelecida",
+          "Pendência: adicionar assert AGENDA_NAO_VAZIA_SE_DIA_UTIL no pre_publish_check.js (próximo pipeline_hardening)"
+        ]
+      }
     ]
   },
   "events_by_date": {
@@ -239,6 +253,216 @@
         "fonte": "MDIC",
         "impacto": "MEDIO",
         "tag": "balanca_comercial_br"
+      }
+    ],
+    "2026-05-13": [
+      {
+        "hora_brt": "09:00",
+        "evento": "🇧🇷 Vendas no Varejo · Brasil · março/2026 (mensal)",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "varejo_br_mensal",
+        "janela_evitar": "08:45-10:00",
+        "nota": "★★★ · mediana Broadcast 0,0% MoM vs prior 0,6% · sinal de desaceleração do consumo · se vier negativo abre espaço pra corte Selic · cuidado simultaneidade com PPI EUA 09:30"
+      },
+      {
+        "hora_brt": "09:00",
+        "evento": "🇧🇷 Vendas no Varejo · Brasil · março/2026 (anual)",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "varejo_br_anual",
+        "janela_evitar": "08:45-10:00",
+        "nota": "★★★ · mediana 2,8% YoY vs prior 0,2% · indicador de tração consumo · monitorar crédito + endividamento famílias"
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 PPI Mensal · EUA · abril/2026",
+        "fonte": "BLS",
+        "impacto": "ALTO",
+        "tag": "ppi_us_mensal",
+        "janela_evitar": "09:15-10:30",
+        "nota": "★★★ · mediana 0,5% MoM · YoY 5% · pós-CPI 3,8% (acima consenso 3,7%) · catalisador maior do dia pro WDO · se hawkish reforça Fed cauteloso · se dovish abre mean reversion"
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 Núcleo PPI Mensal · EUA · abril/2026",
+        "fonte": "BLS",
+        "impacto": "MEDIO",
+        "tag": "core_ppi_us",
+        "janela_evitar": "09:15-10:30",
+        "nota": "★★ · mediana 0,3% MoM · 4,4% YoY · pressão inflacionária subjacente sem alimentos/energia"
+      },
+      {
+        "hora_brt": "11:30",
+        "evento": "🇺🇸 Estoques Petróleo Bruto · EIA",
+        "fonte": "EIA",
+        "impacto": "ALTO",
+        "tag": "estoques_petroleo_us",
+        "janela_evitar": "11:15-12:15",
+        "nota": "★★★ · mediana -2,000M barris vs prior -2,313M · num contexto Brent $107,77 (guerra EUA-Irã) · queda forte amplifica alta · build inesperado pode quebrar narrativa petróleo"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇺🇸 Leilão Treasury Bond 30y · EUA",
+        "fonte": "US Treasury",
+        "impacto": "MEDIO",
+        "tag": "tbond_30y_auction",
+        "nota": "★★ · prior 4,876% · Treasuries 30y rompeu 5% terça pós-CPI · demanda do leilão dá pista de apetite por duration"
+      },
+      {
+        "hora_brt": "14:15",
+        "evento": "🇺🇸 Discurso Neel Kashkari · FOMC",
+        "fonte": "FED",
+        "impacto": "MEDIO",
+        "tag": "kashkari_fomc_discurso",
+        "janela_evitar": "14:10-14:30",
+        "nota": "★★ · membro Fed · pós-CPI hawkish + Goolsbee hawkish · provável tom cauteloso · monitorar mudança vs último discurso"
+      },
+      {
+        "hora_brt": "14:30",
+        "evento": "🇧🇷 Fluxo Cambial Estrangeiro · BCB",
+        "fonte": "BCB",
+        "impacto": "MEDIO",
+        "tag": "fluxo_cambial_br",
+        "nota": "★★ · prior 3,307B · indicador semanal fluxo externo · pode mover WDO se vir negativo forte"
+      },
+      {
+        "hora_brt": "16:00",
+        "evento": "🇪🇺 Pronunciamento Philip Lane · BCE",
+        "fonte": "BCE",
+        "impacto": "MEDIO",
+        "tag": "bce_lane_discurso",
+        "nota": "★★ · economista-chefe BCE · pode dar sinais sobre próximo passo monetário europeu"
+      },
+      {
+        "hora_brt": "16:15",
+        "evento": "🇪🇺 Discurso Christine Lagarde · Presidente BCE",
+        "fonte": "BCE",
+        "impacto": "ALTO",
+        "tag": "bce_lagarde_discurso",
+        "janela_evitar": "16:10-16:45",
+        "nota": "★★★ · Lagarde em evento na Alemanha · BCE já sinalizou 25bps hike junho via Nagel · fala pode mover EUR/USD e indiretamente DXY · cuidado WDO 16:00-17:00"
+      }
+    ],
+    "2026-05-14": [
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 Initial Jobless Claims · EUA (semanal)",
+        "fonte": "DOL",
+        "impacto": "ALTO",
+        "tag": "jobless_claims_initial",
+        "janela_evitar": "09:25-09:50",
+        "nota": "★★★ · semanal · monitorado pelo Fed pra inflação salarial · pode mover DXY/Treasuries · recorrente toda quinta",
+        "review_required": false
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 Continuing Claims · EUA (semanal)",
+        "fonte": "DOL",
+        "impacto": "MEDIO",
+        "tag": "jobless_continuing",
+        "janela_evitar": "09:25-09:50",
+        "nota": "★★ · semanal · companheiro do Initial Claims · tendência mensal mais relevante"
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 PPI Mensal final · EUA (revisão)",
+        "fonte": "BLS",
+        "impacto": "BAIXO",
+        "tag": "ppi_revisao",
+        "nota": "Revisão · normalmente sem movimento · review_required: confirmar se sai hoje ou outro dia",
+        "review_required": true
+      },
+      {
+        "hora_brt": "11:00",
+        "evento": "🇺🇸 EIA Natural Gas Storage · semanal",
+        "fonte": "EIA",
+        "impacto": "BAIXO",
+        "tag": "natgas_storage",
+        "nota": "Recorrente toda quinta · normalmente sem movimento WIN/WDO · monitorar só se rolar evento extraordinário"
+      },
+      {
+        "hora_brt": "17:30",
+        "evento": "🇺🇸 H.4.1 Weekly Balance Sheet · FED",
+        "fonte": "FED",
+        "impacto": "ALTO",
+        "tag": "fed_balance_sheet",
+        "nota": "★★★ · semanal · expansão/contração balanço Fed = sinal de liquidez global · recorrente toda quinta"
+      },
+      {
+        "hora_brt": "??:??",
+        "evento": "🔄 Eventos adicionais pendentes",
+        "fonte": "TBD",
+        "impacto": "TBD",
+        "tag": "review_required_14_05",
+        "nota": "Eventos não confirmados pra 14/05 · verificar Investing.com manhã do dia 14 pra: discursos Fed, dados industriais EUA, IGP-10 BR, etc · Cowork popula sob comando ou via scraper Parte C",
+        "review_required": true
+      }
+    ],
+    "2026-05-15": [
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 Empire State Manufacturing · NY Fed",
+        "fonte": "NY FED",
+        "impacto": "MEDIO",
+        "tag": "empire_state",
+        "janela_evitar": "09:25-09:45",
+        "nota": "★★ · indicador antecedente manufatura · mid-month · pode mover Treasuries · review_required: confirmar dia",
+        "review_required": true
+      },
+      {
+        "hora_brt": "10:15",
+        "evento": "🇺🇸 Industrial Production · EUA · abril",
+        "fonte": "FED",
+        "impacto": "MEDIO",
+        "tag": "industrial_production_us",
+        "nota": "★★ · saída mid-month · revisão IP mensal · review_required: confirmar dia exato",
+        "review_required": true
+      },
+      {
+        "hora_brt": "11:00",
+        "evento": "🇺🇸 University of Michigan Consumer Sentiment · preliminar",
+        "fonte": "U Michigan",
+        "impacto": "ALTO",
+        "tag": "michigan_sentiment_prelim",
+        "janela_evitar": "10:55-11:15",
+        "nota": "★★★ · prelim sai meio do mês · sentiment do consumidor · pós-CPI hawkish pode mostrar deterioração · review_required: confirmar dia exato"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇺🇸 Baker Hughes Rig Count · semanal",
+        "fonte": "Baker Hughes",
+        "impacto": "BAIXO",
+        "tag": "baker_hughes_rigs",
+        "nota": "Recorrente toda sexta · contagem de rigs petróleo · pouco impacto WIN/WDO direto"
+      },
+      {
+        "hora_brt": "17:45-17:55",
+        "evento": "⛔ VENCIMENTO OPÇÕES SEMANAL B3 + Leilão fechamento B3",
+        "fonte": "B3",
+        "impacto": "ALTO",
+        "tag": "vencimento_opcoes_semanal_b3",
+        "janela_evitar": "17:00-17:55",
+        "nota": "★★★ · sexta tem vencimento opções semanal · distorce 15:30-17:55 · liquidez cai cedo · NÃO operar tarde de sexta"
+      },
+      {
+        "hora_brt": "??:??",
+        "evento": "🔄 Eventos adicionais pendentes",
+        "fonte": "TBD",
+        "impacto": "TBD",
+        "tag": "review_required_15_05",
+        "nota": "Eventos não confirmados pra 15/05 · verificar Investing.com manhã do dia 15 · Cowork popula sob comando ou via scraper Parte C",
+        "review_required": true
+      }
+    ],
+    "2026-05-16": [
+      {
+        "hora_brt": "—",
+        "evento": "Mercado B3 fechado · sábado",
+        "fonte": "B3",
+        "impacto": "—",
+        "tag": "mercado_fechado_sabado",
+        "nota": "Sábado · B3 fechado · sem briefing diário · agenda apenas pra eventos US/EU eventuais (raros)"
       }
     ]
   }
