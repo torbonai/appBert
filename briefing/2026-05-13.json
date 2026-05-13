@@ -39,7 +39,8 @@
       "ativa": true,
       "narrativa_dominante": "Guerra trava corte de juros · CPI/IPCA pressionam · 180k pode cair · Fed mais hawkish · risk-off generalizado",
       "descricao": "Narrativa sell-side dominante (Broadcast/Valor): 'guerra+CPI+IPCA quali pior = Selic não corta + Fed hawkish + Ibov sob pressão'. Contradições estruturais que pedem CAUTELA com SHORT FORÇADO TARDE: (1) DI Jan/27 subiu APENAS +0,7bps (14,108→14,115) · curva curta JÁ tinha precificado · narrativa exagera magnitude. (2) Real RESISTE DXY +0,4% · dólar estável R$ 4,8954 · carry trade brasileiro intacto · não é aversão generalizada. (3) Braskem PNA +29,02% em meio ao caos · stockpicking interno funciona · risk-on SELETIVO existe · não é capitulação. (4) DoE reduziu projeção Brent 2026 pra US$ 95 · sinal estrutural baixista médio prazo · narrativa de petróleo perpétuo é míope. (5) Trump+Xi alinhamento Ormuz via Rubio-Wang Yi · diálogo de bastidor que narrativa ignora. (6) 70% mercado AINDA espera corte 25bps junho · 30% manutenção é MINORIA barulhenta. (7) DI longa (Jan/31, Jan/33) subiu MAIS que curta · bear steepen marginal = fiscal/estrutural · não 'Selic vai parar'. (8) BB mínima -1,02% pré-balanço = exhaustion + suporte técnico · narrativa amplifica fragilidade ANTES dos números. CONCLUSÃO: não é trade contrário ao bias bearish WIN · é CAUTELA com SHORT FORÇADO TARDE pós-13:30 sem confirmação."
-    }
+    },
+    "nivel": "FORTE"
   },
   "ativos": [
     {
@@ -90,7 +91,7 @@
     {
       "codigo": "WDO1!",
       "nome": "Mini Dólar",
-      "score": 3.0,
+      "score": 3,
       "vies": "lateral",
       "veredito": "AGUARDAR",
       "fase_wyckoff": "Distribuição Fase A preliminar (PSY 5.017 → low 4.910 · aguardando BC/AR/ST ou breakdown)",
@@ -256,19 +257,58 @@
     }
   ],
   "regras_do_dia": [
-    {"ativo": "WIN1!", "regra": "NÃO operar antes de piso confirmar OU breakdown <182.000 · estrutura indeterminada = risco máximo"},
-    {"ativo": "WIN1!", "regra": "Se formar base 182.000-182.500 com volume >20M · aguardar AR >183.500 para considerar long"},
-    {"ativo": "WIN1!", "regra": "Se breakdown <182.000 · aguardar retest para short condicional · SL apertado · gestão defensiva"},
-    {"ativo": "WIN1!", "regra": "Score 1,5/10 = setup fraco · preferir observação · zero FOMO"},
-    {"ativo": "WDO1!", "regra": "Aguardar DXY definir: >98,5 sustentado = short condicional · <98 = long condicional"},
-    {"ativo": "WDO1!", "regra": "Monitorar retest 4.935-4.945 · se rejeitar com pin bar + DXY >98,5 = setup short ativa"},
-    {"ativo": "WDO1!", "regra": "Se DXY <98 + AR >4.940 · aguardar pullback FVG 15m para long"},
-    {"ativo": "WDO1!", "regra": "Score 3,0/10 = lateral sem convicção · operar só com gatilho explícito"},
-    {"ativo": "GERAL", "regra": "Filtro Anti-Narrativa ATIVO · 8 contradições mapeadas · CAUTELA com SHORT FORÇADO TARDE sem confirmação"},
-    {"ativo": "GERAL", "regra": "GATE TRIPLO 08:30-12:00 · EVITAR operar dentro do bloco · esperar digestão 11:30-12:30"},
-    {"ativo": "GERAL", "regra": "PPI EUA 09:30 ★★★ é catalisador maior do dia · monitorar especialmente reação WDO"},
-    {"ativo": "GERAL", "regra": "Lagarde BCE 16:15 ★★★ pode mover EUR/USD e indiretamente DXY · evitar entrada nova 16:00-17:00"},
-    {"ativo": "GERAL", "regra": "Live #2 hoje 20h00 · Kill Zones B3 · participar se possível"}
+    {
+      "ativo": "WIN1!",
+      "regra": "NÃO operar antes de piso confirmar OU breakdown <182.000 · estrutura indeterminada = risco máximo"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Se formar base 182.000-182.500 com volume >20M · aguardar AR >183.500 para considerar long"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Se breakdown <182.000 · aguardar retest para short condicional · SL apertado · gestão defensiva"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Score 1,5/10 = setup fraco · preferir observação · zero FOMO"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Aguardar DXY definir: >98,5 sustentado = short condicional · <98 = long condicional"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Monitorar retest 4.935-4.945 · se rejeitar com pin bar + DXY >98,5 = setup short ativa"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Se DXY <98 + AR >4.940 · aguardar pullback FVG 15m para long"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Score 3,0/10 = lateral sem convicção · operar só com gatilho explícito"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Filtro Anti-Narrativa ATIVO · 8 contradições mapeadas · CAUTELA com SHORT FORÇADO TARDE sem confirmação"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "GATE TRIPLO 08:30-12:00 · EVITAR operar dentro do bloco · esperar digestão 11:30-12:30"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "PPI EUA 09:30 ★★★ é catalisador maior do dia · monitorar especialmente reação WDO"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Lagarde BCE 16:15 ★★★ pode mover EUR/USD e indiretamente DXY · evitar entrada nova 16:00-17:00"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Live #2 hoje 20h00 · Kill Zones B3 · participar se possível"
+    }
   ],
   "compliance": {
     "analista": "Renato Bertani",

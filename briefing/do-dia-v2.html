@@ -450,10 +450,12 @@
 
         // ===== Contexto macro · só pra Tela Pro (Persona B avançada) =====
         if (mostraTecnico) {
-          var macroCls = b.contexto_macro.nivel.toLowerCase();
+          // Patch defensivo: aceita nivel (schema antigo) ou nivel_vento (schema novo Code 12/05+)
+          var nivelVal = b.contexto_macro.nivel || b.contexto_macro.nivel_vento || 'MEDIO';
+          var macroCls = String(nivelVal).toLowerCase();
           html += '<section class="panel">';
           html += '<h3>🌐 Contexto macro</h3>';
-          html += '<span class="macro-pill ' + macroCls + '">' + b.contexto_macro.nivel + '</span>';
+          html += '<span class="macro-pill ' + macroCls + '">' + nivelVal + '</span>';
           html += '<ul class="macro-list">';
           b.contexto_macro.highlights.forEach(function (h) { html += '<li>' + h + '</li>'; });
           html += '</ul>';
