@@ -60,7 +60,7 @@
     {
       "codigo": "WIN1!",
       "nome": "Mini Índice",
-      "score": 3.0,
+      "score": 3,
       "vies": "bearish leve / cautela alta",
       "veredito": "AGUARDAR",
       "fase_wyckoff": "Suporte HTF (178.790) TESTOU ontem com mínima 178.800 (defesa por 10pts) · macro DI adverso · queda -2,04% no dia · aguardando Triplo 09:30 + segunda defesa OU breakdown",
@@ -114,7 +114,7 @@
       "fase_wyckoff": "Pullback técnico no MEIO da range diária 4.913-5.040 (não no suporte) · alta +2,28% ontem em risk-off · aguardando Triplo 09:30",
       "racional_publico": "WDO ajuste B3 oficial 5.008,89 (alta de +2,28% · +112pts no dia · OHLC 4.913,50/5.039,50/4.912,50/5.025,50). Está no MEIO da range diária 4.913-5.040 (não 'no suporte' como Code apurou errado). Suporte real: 4.910 (weekly low confirmado pela mínima de ontem 4.912,50). Resistência: 5.040 (máxima diária).Reage 30-60s ANTES de WIN (mais líquido). Triplo 09:30 define direção: Retail Sales FRACO (<0,3%) = FED dovish = dólar cai = WDO testa 4.913 / Retail Sales FORTE (>0,7%) = FED hawkish mantido = dólar sobe = WDO testa 5.040 e busca 5.080. Correlação INVERSA CLÁSSICA com WIN confirmada ontem (WDO +2,28% · WIN -2,04%). Score 3,5/10 (range estreito intraday +0,5pt · catalisador Retail forte +1pt · reação antes WIN +0,5pt · DI F27 hawkish curto +0,5pt · alta forte ontem em risk-off +1pt). Veredito: AGUARDAR Retail 09:30 — não operar WIN sem confirmar direção WDO primeiro (delay 30-60s).",
       "niveis_chave": {
-        "ajuste_b3": 5009,
+        "ajuste_b3": 5008.885,
         "abertura": 4914,
         "maxima": 5040,
         "minima": 4913,
@@ -126,9 +126,9 @@
         "breakdown": 4990
       },
       "ajuste_b3_meta": {
-        "valor": 5009,
-        "data_referencia": "2026-05-14",
-        "fonte": "B3 oficial · Resumo da Sessão 13/05/2026 · ajuste exato 5.008,89 (cruzado com prints Cedro pelo Renato pré-publish)"
+        "valor": 5008.885,
+        "data_referencia": "2026-05-13",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-13)"
       },
       "plano": {
         "direcao": "AGUARDAR TRIPLO 09:30",
