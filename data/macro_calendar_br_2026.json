@@ -297,7 +297,7 @@
         "evento": "🇺🇸 Estoques Petróleo Bruto · EIA",
         "fonte": "EIA",
         "impacto": "ALTO",
-        "tag": "estoques_petroleo_us",
+        "tag": "estoques_petroleo",
         "janela_evitar": "11:15-12:15",
         "nota": "★★★ · mediana -2,000M barris vs prior -2,313M · num contexto Brent $107,77 (guerra EUA-Irã) · queda forte amplifica alta · build inesperado pode quebrar narrativa petróleo"
       },
@@ -306,7 +306,7 @@
         "evento": "🇺🇸 Leilão Treasury Bond 30y · EUA",
         "fonte": "US Treasury",
         "impacto": "MEDIO",
-        "tag": "tbond_30y_auction",
+        "tag": "leilao_tbond_30y",
         "nota": "★★ · prior 4,876% · Treasuries 30y rompeu 5% terça pós-CPI · demanda do leilão dá pista de apetite por duration"
       },
       {
@@ -314,7 +314,7 @@
         "evento": "🇺🇸 Discurso Neel Kashkari · FOMC",
         "fonte": "FED",
         "impacto": "MEDIO",
-        "tag": "kashkari_fomc_discurso",
+        "tag": "kashkari_fomc",
         "janela_evitar": "14:10-14:30",
         "nota": "★★ · membro Fed · pós-CPI hawkish + Goolsbee hawkish · provável tom cauteloso · monitorar mudança vs último discurso"
       },
@@ -331,7 +331,7 @@
         "evento": "🇪🇺 Pronunciamento Philip Lane · BCE",
         "fonte": "BCE",
         "impacto": "MEDIO",
-        "tag": "bce_lane_discurso",
+        "tag": "lane_bce",
         "nota": "★★ · economista-chefe BCE · pode dar sinais sobre próximo passo monetário europeu"
       },
       {
@@ -339,7 +339,7 @@
         "evento": "🇪🇺 Discurso Christine Lagarde · Presidente BCE",
         "fonte": "BCE",
         "impacto": "ALTO",
-        "tag": "bce_lagarde_discurso",
+        "tag": "lagarde_bce",
         "janela_evitar": "16:10-16:45",
         "nota": "★★★ · Lagarde em evento na Alemanha · BCE já sinalizou 25bps hike junho via Nagel · fala pode mover EUR/USD e indiretamente DXY · cuidado WDO 16:00-17:00"
       }

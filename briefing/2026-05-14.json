@@ -1,0 +1,352 @@
+{
+  "data": "2026-05-14",
+  "data_extenso": "Quinta-feira, 14 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 13,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "TRIPLO 09:30 · RETAIL SALES DRIVER · WIN 179.050 (-260pts do suporte 178.790) · WDO 5.028 TESTAM SUPORTES",
+    "subtitulo": "Quinta 14/05 traz TRIPLO 09:30 ★★★: Retail Sales US 0,5% esp (vs 1,7% prior · desaceleração) · Core Retail 0,7% esp (vs 1,9% prior) · Jobless Claims 205K esp (vs 200K prior). Retail Sales é o DRIVER PRIMÁRIO (move DXY/SPX direto · consumo = 70% PIB US). WIN 179.050 operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low). WDO 5.028 JÁ NO SUPORTE (swing low = preço atual · testa primeiro). Curva DI: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526%) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = bearish estrutural WIN (mercado precifica ciclo cortes Selic adiado). Variação intraday -0,10% em ambos (WIN -175pts · WDO -5pts) = pullback técnico. ⚠️ Movimento sincronizado NO DIA mas NÃO indica correlação estatística (coef. típico WIN×WDO = -0,40 a -0,70 · 20+ períodos pra calcular). BIAS: bearish leve / cautela alta com Retail 09:30 podendo amenizar. EVITAR 09:00-09:50. Williams 18:45 ★★ (votante FOMC · pós-B3 · move futuros)."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score 3,0/10 · veredito AGUARDAR · viés bearish leve / cautela alta (DI bear shift adverso · suporte 178.790 crítico · Retail 09:30 pode amenizar)",
+    "wdo_linha": "WDO1! · score 3,5/10 · veredito AGUARDAR · viés lateral (NO suporte 5.028 · testa antes WIN · reage 30-60s primeiro)",
+    "janela_operacional": "EVITAR 09:00-09:50 (leilão+Triplo 09:30 Retail/Core/Jobless) · OPERAR 10:00-12:00 (digestão) · 13:30-17:00 (NY Open)",
+    "nivel_chave": "WIN 178.790 (suporte swing+weekly · confluência dupla) · 179.670 (resistência) · WDO 5.028 (NO suporte) · 5.040 (resistência)",
+    "agenda_top1": "Triplo 09:30 ★★★ (Retail driver · Core · Jobless) · GDPNow 12:30 ★★ · Williams 18:45 ★★ (votante FOMC) · ⚠️ 3 pendentes"
+  },
+  "contexto_macro": {
+    "nivel_vento": "MORNO",
+    "highlights": [
+      "📌 Briefing #13 referência sessão 13/05 (fechamento) · ajuste pré-abertura 14/05 com Triplo 09:30 ★★★ + macro adversa (DI subiu forte ontem)",
+      "💵 Curva DI bear shift FORTE: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526% · maior movimento · ciclo cortes Selic sendo adiado) · F31 14,110% (+50bps vs 13,606%) = bear steepen leve com corcunda no médio = BEARISH estrutural WIN (juros subindo forte = ações menos atraentes · pressão fiscal/inflacionária precificada)",
+      "📊 WIN 179.050 (-0,10% intraday · -175pts vs abertura 179.225) · operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low = confluência dupla MUITO FORTE)",
+      "💵 WDO 5.028 (-0,10% intraday · -5pts vs abertura 5.033) · JÁ NO SUPORTE (swing low 5.028 = preço atual) · testa ANTES de WIN (mais líquido · reage 30-60s primeiro)",
+      "🔄 Variação intraday: WIN e WDO ambos -0,10% (variação percentual idêntica NO DIA) = pullback técnico coordenado · ⚠️ NÃO confundir variação percentual com coeficiente de correlação (seriam necessários 20+ períodos pra calcular coef. · típico WIN×WDO = -0,40 a -0,70 · hoje movimento sincronizado mas não implica correlação estatística forte)",
+      "🇺🇸 Triplo 09:30 ★★★: Retail Sales US 0,5% esp (vs 1,7% prior · forte desaceleração consumo) · Core Retail 0,7% esp (vs 1,9% prior) · Jobless Claims 205K esp (vs 200K prior) — Retail Sales é o DRIVER PRIMÁRIO (move DXY e SPX direto · consumo = 70% PIB US · se fraco = FED dovish = dólar cai = WIN sobe)",
+      "🇺🇸 GDPNow Atlanta Fed 12:30 ★★: projeção Q2 (prior 3,7% · revisão em tempo real do crescimento · modelo Fed diverge de Blue Chip consensus · monitorar)",
+      "🇺🇸 Williams 18:45 ★★: presidente NY Fed · votante permanente FOMC · pós-fechamento B3 mas move futuros · tom hawkish/dovish pode redirecionar narrativa pra sexta",
+      "🇺🇸 Barr 20:00 ★★: vice-chair supervisão Fed · foco regulatório bancário · menos relevante pra política monetária mas monitorar",
+      "🇺🇸 FED H.4.1 Balance Sheet 17:30: release semanal informativo · balanço patrimonial US$ 6.710B · NÃO é trigger operacional (dado contábil · QT estrutural já precificado)",
+      "⚠️ Eventos pendentes confirmação (validate_agenda flaggeou 3): (1) review_required_14_05 (discursos Fed adicionais · dados industriais EUA · IGP-10 BR) · (2) PPI Mensal final revisão · (3) EIA Natural Gas Storage"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": false,
+      "narrativa_dominante": "",
+      "descricao": ""
+    },
+    "nivel": "MORNO"
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 3.0,
+      "vies": "bearish leve / cautela alta",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Pullback técnico · macro DI adverso (bear shift forte) · aguardando Triplo 09:30 + defesa 178.790 (breakdown possível)",
+      "racional_publico": "WIN 179.050 operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low = confluência dupla). Pullback intraday -175pts (-0,10%) da abertura 179.225 é movimento técnico normal. Curva DI bear shift: F27 +16bps · F29 +52bps · F31 +50bps (curva inteira sobe forte · F29 puxa = ciclo cortes Selic adiado) = HEADWIND estrutural WIN no médio prazo · macro contra a posição comprada. WDO 5.028 já NO suporte (testa primeiro · reage 30-60s antes) — se defender, WIN tem espaço pra reagir em 178.800-178.900 mas com cautela dobrada. Triplo 09:30 é catalisador: Retail Sales FRACO (<0,3% · desaceleração consumo) = FED dovish = dólar cai = WIN sobe APESAR do DI adverso. Score 3,0/10 (Juros BR adverso -1,5pts · suporte HTF forte +1pt · WDO correlacionado +0,5pt · -260pts buffer +0,5pt · pullback técnico +0,5pt · macro headwind -0,5pt · Retail pode amenizar +2,5pts). Veredito: AGUARDAR Retail Sales 09:30 confirmar direção · cautela redobrada.",
+      "niveis_chave": {
+        "ajuste_b3": 179050,
+        "abertura": 179225,
+        "maxima": 179260,
+        "minima": 178935,
+        "swing_high": 179670,
+        "swing_low": 178790,
+        "weekly_high": 195245,
+        "weekly_low": 178790,
+        "eq": 179230,
+        "suporte_psicologico": 180000,
+        "target_bullish_1": 179670,
+        "target_bullish_2": 180500
+      },
+      "ajuste_b3_meta": {
+        "valor": 179050,
+        "data_referencia": "2026-05-14",
+        "fonte": "TradingView quote_get intraday · movimento real mercado caiu de 182k pra 179k sessão 13/05 · suporte 178.790 crítico",
+        "nota_validacao": "Ajuste 179.050 está abaixo da faixa típica 180k-200k · movimento excepcional real · pre_publish_check pode bloquear · override manual necessário"
+      },
+      "plano": {
+        "direcao": "AGUARDAR TRIPLO 09:30",
+        "entry_zona": "Bullish: 178.800-178.900 SE Retail fraco (<0,3%) + defender 178.790 · Bearish: 178.700 SE Retail forte (>0,7%) + romper 178.790",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "TABELA CENÁRIO 09:30 | Retail Sales | Core Retail | Jobless | WDO | WIN | Ação | |---|---|---|---|---|---| | **FRACO** <0,3% | FRACO <0,5% | ALTO ≥210K | Cai de 5.028 | Sobe de 178.790 | ✅ **COMPRAR WIN** 178.800-900 · SL 178.700 (-100-200pts) · TP1 179.670 (+770-870pts · RR 1:3,8-8,7) · TP2 180.500 | | **FORTE** >0,7% | FORTE >0,9% | BAIXO ≤200K | Rompe 5.028 ↑ | Rompe 178.790 ↓ | 🔴 **VENDER WIN** 178.700 · SL 179.300 (+600pts) · TP1 178.000 (-700pts · RR 1:1,2) · TP2 177.200 | | **INLINE** 0,3-0,7% | INLINE 0,5-0,9% | INLINE 201-209K | Lateral 5.025-5.035 | Lateral 178.700-179.300 | ⏸️ **AGUARDAR** GDPNow 12:30 OU NY Open 13:30 | DRIVER: Retail Sales é o PRIMÁRIO (move DXY/SPX · consumo 70% PIB) · Jobless é coadjuvante. WDO reage 30-60s ANTES de WIN · monitorar primeiro.",
+        "kill_zone": "EVITAR 09:00-09:25 (leilão B3) e 09:25-09:50 (Triplo 09:30 + volatilidade macro extrema) · OPERAR 10:00-12:00 (digestão pós-Retail/Jobless · setup limpo se WIN defender 178.790 E WDO defender 5.028) · 13:30-17:00 (NY Open até pré-Williams) · EVITAR 17:45-17:55 (leilão fechamento)"
+      },
+      "comentario_breve": "Score 3,0/10 · AGUARDAR 09:30 Retail Sales · bearish leve / cautela alta · suporte 178.790 crítico · DI +16/+52/+50bps = headwind estrutural"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 3.5,
+      "vies": "lateral",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "NO suporte crítico (5.028 = swing low · aguardando defesa OU rompimento)",
+      "racional_publico": "WDO 5.028 JÁ NO SUPORTE (swing low = preço atual). Pullback intraday -5pts (-0,10%) da abertura 5.033. Testa ANTES de WIN (WDO mais líquido e reage 30-60s mais rápido a Retail Sales US). Swing high 5.040 apenas +12pts acima (resistência próxima · range estreito). Weekly low 4.910 (-118pts) é piso estrutural se romper. Triplo 09:30 define: Retail Sales FRACO (<0,3%) = FED dovish = dólar cai = WDO cai de 5.028 = WIN sobe / Retail Sales FORTE (>0,7%) = FED hawkish mantido = dólar sobe = WDO rompe 5.028 ↑ = WIN cai. Score 3,5/10 (NO suporte +1pt · Retail catalisador +1pt · swing range estreito +0,5pt · reação antes WIN +0,5pt · DI F27 curto hawkish segura +0,5pt). Veredito: AGUARDAR Retail 09:30 — não operar WIN sem confirmar direção WDO primeiro (delay 30-60s).",
+      "niveis_chave": {
+        "ajuste_b3": 5028,
+        "abertura": 5033,
+        "maxima": 5039,
+        "minima": 5028,
+        "swing_high": 5040,
+        "swing_low": 5028,
+        "weekly_high": 5040,
+        "weekly_low": 4910,
+        "eq": 5034,
+        "breakdown": 4990
+      },
+      "ajuste_b3_meta": {
+        "valor": 5028,
+        "data_referencia": "2026-05-14",
+        "fonte": "TradingView quote_get intraday"
+      },
+      "plano": {
+        "direcao": "AGUARDAR TRIPLO 09:30",
+        "entry_zona": "Bullish: 5.030-5.032 SE Retail fraco (<0,3%) + defender 5.028 com volume · Bearish: 5.025 SE Retail forte (>0,7%) + romper 5.028 ↓",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "CENÁRIO 1 (bullish · se Retail fraco <0,3%): Entry 5.030-5.032 (reação no suporte com volume) · SL 5.020 (-10-12pts) · TP 5.050 (+18-20pts · RR 1:1,5-2,0). CENÁRIO 2 (bearish · se Retail forte >0,7%): Entry 5.025 (rompimento 5.028 confirmado) · SL 5.045 (+17-20pts) · TP1 4.990 (-35-38pts · RR 1:1,8-2,2) · TP2 4.950. REGRA CRÍTICA: WDO reage 30-60s ANTES de WIN — não operar WIN sem confirmar WDO primeiro. Se WDO cai · WIN sobe (correlação negativa típica -0,40 a -0,70).",
+        "kill_zone": "EVITAR 09:00-09:25 (leilão) e 09:25-09:50 (Triplo 09:30 = catalisador maior · Retail driver primário DXY) · OPERAR 10:00-12:00 (digestão · DXY pode definir) · 13:30-17:00 (NY Open)"
+      },
+      "comentario_breve": "Score 3,5/10 · AGUARDAR 09:30 Retail Sales · NO suporte 5.028 · testa ANTES WIN · driver primário = Retail (não Jobless)"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Retail Sales US Mensal Abr ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "09:25-09:50",
+      "tag": "retail_sales_us",
+      "nota": "Mediana 0,5% MoM vs prior 1,7% (forte desaceleração consumo) · DRIVER PRIMÁRIO do Triplo 09:30 · move DXY e SPX direto · consumo = 70% PIB US · se fraco (<0,3%) = FED dovish = dólar cai = WIN sobe"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Core Retail Sales US Mensal Abr ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "09:25-09:50",
+      "tag": "core_retail_sales_us",
+      "nota": "Mediana 0,7% MoM vs prior 1,9% · exclui auto/gasolina/materiais construção · indicador mais limpo de consumo discricionário"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Initial Jobless Claims EUA (semanal) ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "09:25-09:50",
+      "tag": "jobless_claims_initial",
+      "nota": "Mediana 205K vs prior 200K · monitorado pelo Fed pra inflação salarial · TERCEIRO evento do Triplo 09:30 · coadjuvante (Retail é estrela)"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Continuing Claims EUA (semanal) ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": "09:25-09:50",
+      "tag": "jobless_continuing",
+      "nota": "Pedidos continuados · companheiro do Initial Claims · tendência mensal mais relevante que dado pontual"
+    },
+    {
+      "hora_brt": "12:30",
+      "evento": "🇺🇸 GDPNow Atlanta Fed (projeção Q2) ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "gdpnow_atlanta_fed",
+      "nota": "Prior 3,7% · modelo em tempo real do Atlanta Fed · revisão Q2 · monitorar divergência vs Blue Chip consensus · se cair forte pode reforçar dovish"
+    },
+    {
+      "hora_brt": "17:30",
+      "evento": "🇺🇸 FED H.4.1 Balance Sheet (semanal)",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "tag": "fed_balance_sheet",
+      "nota": "Release semanal informativo · balanço patrimonial US$ 6.710B · dado contábil · NÃO é trigger operacional (QT estrutural já precificado) · monitorar só se expansão/contração anômala"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    },
+    {
+      "hora_brt": "18:45",
+      "evento": "🇺🇸 Discurso Williams (NY Fed · FOMC votante) ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "williams_fomc",
+      "nota": "Presidente NY Fed · votante permanente FOMC · pós-fechamento B3 mas move futuros · tom hawkish/dovish pode redirecionar narrativa pra sexta · monitorar"
+    },
+    {
+      "hora_brt": "20:00",
+      "evento": "🇺🇸 Discurso Barr (Vice-Chair Supervisão Fed) ★★",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "tag": "barr_fed",
+      "nota": "Vice-chair de supervisão · foco regulatório bancário · menos relevante pra política monetária mas monitorar menções a crédito/liquidez"
+    },
+    {
+      "hora_brt": "??:??",
+      "evento": "⚠️ (1) Eventos adicionais pendentes confirmação",
+      "impacto": "TBD",
+      "janela_evitar": null,
+      "tag": "review_required_14_05",
+      "nota": "Eventos não confirmados pra 14/05: discursos Fed adicionais · dados industriais EUA · IGP-10 BR · verificar Investing.com manhã do dia 14"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "⚠️ (2) PPI Mensal final EUA (revisão)",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "tag": "ppi_revisao",
+      "nota": "Revisão · normalmente sem movimento · confirmar se sai hoje ou outro dia · validate_agenda flaggeou como pendente"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "⚠️ (3) EIA Natural Gas Storage (semanal)",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "tag": "natgas_storage",
+      "nota": "Recorrente toda quinta · normalmente sem movimento WIN/WDO · monitorar só se evento extraordinário · validate_agenda flaggeou como pendente"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "EVITAR 09:00-09:50",
+      "contexto": "Leilão B3 (09:00-09:25) + Triplo 09:30 ★★★ (Retail driver · Core · Jobless) · volatilidade macro extrema · farinha de algos · zero edge"
+    },
+    {
+      "janela": "10:00-12:00",
+      "contexto": "Digestão pós-Triplo 09:30 · setup limpo se WIN defender 178.790 E WDO defender 5.028 · GDPNow 12:30 pode dar segunda leitura · primeiras barras com volume real"
+    },
+    {
+      "janela": "13:30-17:00 (NY Open)",
+      "contexto": "Momentum US se setup ativou manhã · continuação tendência · evitar entrar após 18:30 (pré-Williams 18:45)"
+    },
+    {
+      "janela": "EVITAR 17:45-17:55",
+      "contexto": "Leilão fechamento B3 · volatilidade final do dia · Williams 18:45 pós-fechamento move futuros (não tape B3)"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "NÃO operar ANTES do Triplo 09:30 (Retail+Core+Jobless) definir direção"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Bullish SE Retail Sales fraco (≤0,3%) + WIN defender 178.790 · aguardar WDO confirmar primeiro (delay 30-60s)"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Bearish SE Retail Sales forte (≥0,7%) + romper 178.790 após WDO romper 5.028 · gestão defensiva"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Score 4,0/10 = setup mediano · operar só com gatilho explícito Retail Sales · zero FOMO"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "WDO NO SUPORTE 5.028 (swing low = preço atual) · testa ANTES de WIN · reage 30-60s primeiro"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Retail Sales é DRIVER PRIMÁRIO (não Jobless) · move DXY direto · WDO segue DXY"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Retail fraco (<0,3%) = WDO cai de 5.028 = WIN sobe · Retail forte (>0,7%) = WDO rompe 5.028 ↑ = WIN cai"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Score 3,5/10 = lateral sem convicção · operar só após Retail confirmar · não antecipar"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Curva DI bear shift: F27 +16bps (14,210%) · F29 +52bps (14,050%) · F31 +50bps (14,110%) = mercado precifica adiamento ciclo cortes = BEARISH estrutural WIN"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "EVITAR 09:00-09:50 (leilão+Triplo 09:30) · Retail Sales é o DRIVER PRIMÁRIO (consumo 70% PIB US)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Williams 18:45 ★★ (votante FOMC) pós-B3 · move futuros · tom pode redirecionar narrativa sexta"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⚠️ 3 eventos pendentes confirmação: (1) review_required_14_05 · (2) PPI revisão · (3) Natural Gas Storage · validar antes operar"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⚠️ Variação -0,10% idêntica NO DIA ≠ coeficiente correlação (típico WIN×WDO = -0,40 a -0,70 · 20+ períodos pra calcular) · não assumir correlação perfeita"
+    }
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.2",
+    "gerado_em": "2026-05-14T08:30:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5)",
+    "corrigido_em": "2026-05-14T08:45:00-03:00",
+    "corrigido_por": "Claude Code (Sonnet 4.5) · ajustes obrigatórios Renato URGENTE deadline 08:30",
+    "correcoes_aplicadas": [
+      "DI corrigido em sinal e magnitude · era inverso (bear flatten falso com valores inexistentes) · agora bear shift real (+16/+52/+50bps) · vira bias estrutural de bullish pra bearish · cruzado com prints Cedro pelo Renato",
+      "Tabela cenário 09:30 reescrita cobrindo os TRÊS eventos ★★★ simultâneos (Retail+Core+Jobless) · Retail identificado como driver primário",
+      "FED H.4.1 Balance Sheet 17:30 reclassificado como informativo (não trigger) · dado contábil semanal",
+      "Adicionado GDPNow 12:30 ★★ · Williams 18:45 ★★ (votante FOMC) · Barr 20:00 ★★",
+      "Corrigida confusão correlação vs variação percentual: -0,10% ambos NO DIA (variação) ≠ coeficiente correlação (precisa 20+ períodos · típico -0,40 a -0,70)",
+      "DI citado em bps explícitos com Δ vs settlement D-1: F27 +4bps · F29 -24bps · F31 -54bps · classificado como bear flatten",
+      "Listados nominalmente os 3 eventos pendentes: (1) review_required_14_05 · (2) PPI revisão · (3) Natural Gas Storage"
+    ],
+    "validacoes_pendentes_pos_publish": [
+      "WIN ajuste 179.050 abaixo faixa típica 180k-200k · movimento excepcional real (caiu de 182k) · pre_publish_check pode bloquear · override manual necessário",
+      "Validar 3 eventos pendentes flaggeados por validate_agenda",
+      "Confirmar DI bps via Broadcast/Valor pós-pregão",
+      "Atualizar ajustes B3 oficiais pós-fechamento (settlement WIN/WDO)"
+    ],
+    "notas": [
+      "Curva DI: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526% D-1 · maior movimento) · F31 14,110% (+50bps vs 13,606% D-1) via prints Cedro cruzados pelo Renato · bear shift com corcunda no médio · BEARISH estrutural WIN",
+      "WIN 179.050 · WDO 5.028 via TradingView quote_get intraday",
+      "Ambos AGUARDAR até Triplo 09:30 · Retail Sales driver primário · scores revisados (WIN 3,0 · WDO 3,5) pós-correção DI",
+      "Variação -0,10% idêntica NO DIA mas NÃO significa correlação estatística forte (coef. típico WIN×WDO = -0,40 a -0,70 · 20+ períodos)",
+      "Pipeline: check_macro → ajustes B3 → juros BR (DI prints Cedro · cruzados pelo Renato pré-publish) → WIN/WDO → validate_agenda → correções urgentes Renato V1→V2→V3 → tail truncado V3 reconstruído pela Cowork"
+    ],
+    "correcoes_pos_publish": []
+  }
+}
