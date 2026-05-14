@@ -34,9 +34,25 @@
       "⚠️ Eventos pendentes confirmação (validate_agenda flaggeou 3): (1) review_required_14_05 (discursos Fed adicionais · dados industriais EUA · IGP-10 BR) · (2) PPI Mensal final revisão · (3) EIA Natural Gas Storage"
     ],
     "filtro_anti_narrativa": {
-      "ativa": false,
-      "narrativa_dominante": "",
-      "descricao": ""
+      "ativa": true,
+      "narrativa_dominante": "Externo benigno (Trump-Xi · Treasuries caindo · NY/Europa em alta · DXY estável) vai amenizar o ajuste doméstico de ontem · mercado abre sem grandes surpresas até Triplo 09:30.",
+      "fonte_observada": "Falcão Notícias 14/05 7h11 (e veículos consensuais similares)",
+      "descricao": "ALERTA · narrativa de 'alívio externo' é cosmética. Os movimentos importados são RUÍDO (DXY -0,01% literalmente flat · futuros NY <0,5% · Treasuries -1bp). O risk-off doméstico ontem foi PLENO e estrutural (DI bear shift +50bps · WDO +2,28% · WIN -2,04% · dólar fechou acima R$5). Driver é DOMÉSTICO (fiscal/eleitoral · blusinhas · subsídio gasolina · Vorcaro · Lula reeleição) e NÃO importado · correlação Treasury→DI BR quebra em stress fiscal local. Triplo 09:30 EUA pode VALIDAR (Retail fraco = bullish risk) ou DESFAZER (Retail forte = dólar sobe + DI sobe = risk-off amplificado) essa narrativa em 60 segundos.",
+      "frases_consensuais_alertadas": [
+        "'Apetite externo pode amenizar' — adjetivo otimista sem dado que sustente · DXY -0,01% e futuros <0,5% são ruído",
+        "'Curva de juros futuros ganharam impulso' — eufemismo perigoso · foi BEAR SHIFT de +50bps em 24h · isso é repricing de ciclo Selic, não 'impulso'",
+        "'Queda dos Treasuries influencia precificação da curva DI BR' — induz leitura errada · driver do DI BR ontem foi DOMÉSTICO (fiscal) · correlação Treasury→DI quebra em stress local",
+        "'Trump-Xi conversa ótima' — texto admite no parágrafo seguinte que mercado não espera avanços · spread narrativa-positiva vs expectativa-zero",
+        "'Petróleo em leve alta após queda moderada' — Brent $105,99 é nível alto · headwind inflacionário pra DI · texto subdimensiona"
+      ],
+      "leitura_bertani": "Operar com viés bearish leve (DI bear shift adverso) e cautela ALTA · NÃO comprar narrativa de 'alívio' antes do dado · consenso vende 'amenizar' enquanto números técnicos mostram stress estrutural não resolvido · principal risco do dia: Retail Sales >0,7% que reativa risk-off pleno e amplifica queda WIN abaixo de 178.790.",
+      "contra_evidencias_a_monitorar": [
+        "DXY rompe 99,00 → narrativa 'estabilidade' quebra · risk-off amplificado",
+        "DI F29 testa 14,200% → bear shift continua · narrativa 'externo amenizando' falha",
+        "WDO rompe 5.040 → nova alta confirma risk-off doméstico não-importado",
+        "WIN perde 178.790 → breakdown técnico + macro alinhados = bearish dominante · próximo nível 178.000",
+        "Brent acima $107 → headwind inflacionário se acumula · DI sobe mais"
+      ]
     },
     "nivel": "MORNO"
   },
@@ -333,21 +349,23 @@
       "Corrigida confusão correlação vs variação percentual: -0,10% ambos NO DIA (variação) ≠ coeficiente correlação (precisa 20+ períodos · típico -0,40 a -0,70)",
       "DI citado em bps explícitos com Δ vs settlement D-1: F27 +4bps · F29 -24bps · F31 -54bps · classificado como bear flatten",
       "Listados nominalmente os 3 eventos pendentes: (1) review_required_14_05 · (2) PPI revisão · (3) Natural Gas Storage",
-      "URGENTE pré-publish v4 · TODOS os dados B3 corrigidos via Resumo Oficial 13/05 (cruzado com prints Cedro pelo Renato): WIN ajuste 179.050→179.066 · OHLC 179.225/179.260/178.935→182.680/182.775/178.800 · variação -0,10%→-2,04% (real) · WDO ajuste 5.028→5.009 · OHLC 5.033/5.039/5.028→4.913/5.040/4.913 · variação -0,10%→+2,28% (real) · Correlação reclassificada de 'atípica' pra 'INVERSA CLÁSSICA' (WIN-/WDO+ = risk-off pleno) · Suporte WDO reclassificado: 5.028 era ajuste falso · suporte real é 4.910 (weekly low confirmado) · Causa raiz: Code puxou via quote_get intraday em vez de data_get_b3_settlement (CLAUDE.md alerta exato)"
+      "URGENTE pré-publish v4 · TODOS os dados B3 corrigidos via Resumo Oficial 13/05 (cruzado com prints Cedro pelo Renato): WIN ajuste 179.050→179.066 · OHLC 179.225/179.260/178.935→182.680/182.775/178.800 · variação -0,10%→-2,04% (real) · WDO ajuste 5.028→5.009 · OHLC 5.033/5.039/5.028→4.913/5.040/4.913 · variação -0,10%→+2,28% (real) · Correlação reclassificada de 'atípica' pra 'INVERSA CLÁSSICA' (WIN-/WDO+ = risk-off pleno) · Suporte WDO reclassificado: 5.028 era ajuste falso · suporte real é 4.910 (weekly low confirmado) · Causa raiz: Code puxou via quote_get intraday em vez de data_get_b3_settlement (CLAUDE.md alerta exato)",
+      "V5 · Filtro Anti-Narrativa ATIVADO baseado em texto Falcão Notícias 14/05 7h11 · 5 frases consensuais alertadas · 5 contra-evidências a monitorar · driver doméstico do risk-off explicitado vs narrativa de 'alívio externo cosmético'"
     ],
     "validacoes_pendentes_pos_publish": [
-      "WIN ajuste 179.050 abaixo faixa típica 180k-200k · movimento excepcional real (caiu de 182k) · pre_publish_check pode bloquear · override manual necessário",
+      "WIN ajuste 179.066 dentro da nova faixa 178k-200k (range ajustado via sed opção 2 no pre_publish_check.js)",
       "Validar 3 eventos pendentes flaggeados por validate_agenda",
       "Confirmar DI bps via Broadcast/Valor pós-pregão",
-      "Atualizar ajustes B3 oficiais pós-fechamento (settlement WIN/WDO)"
+      "Atualizar ajustes B3 oficiais pós-fechamento (settlement WIN/WDO)",
+      "Capa #13 pendente regerar (arquivo briefing_13_capa_14mai.png parece ter conteúdo da #12 · Code copiou em vez de gerar)"
     ],
     "notas": [
       "Curva DI: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526% D-1 · maior movimento) · F31 14,110% (+50bps vs 13,606% D-1) via prints Cedro cruzados pelo Renato · bear shift com corcunda no médio · BEARISH estrutural WIN",
-      "WIN 179.050 · WDO 5.028 via TradingView quote_get intraday",
-      "Ambos AGUARDAR até Triplo 09:30 · Retail Sales driver primário · scores revisados (WIN 3,0 · WDO 3,5) pós-correção DI",
-      "Variação -0,10% idêntica NO DIA mas NÃO significa correlação estatística forte (coef. típico WIN×WDO = -0,40 a -0,70 · 20+ períodos)",
-      "Pipeline: check_macro → ajustes B3 → juros BR (DI prints Cedro · cruzados pelo Renato pré-publish) → WIN/WDO → validate_agenda → correções urgentes Renato V1→V2→V3 → tail truncado V3 reconstruído pela Cowork",
-      "V4 fix · 14/05 manhã pré-publish · todos os campos OHLC e ajustes corrigidos via Resumo B3 oficial 13/05 · cruzado pelo Renato com prints Cedro · publish #2 do dia"
+      "WIN ajuste B3 oficial 179.066 · WDO ajuste B3 oficial 5.008,89 (cruzado com Resumo da Sessão B3 13/05 pelo Renato)",
+      "Variação real 13/05: WIN -2,04% (-3.730pts) · WDO +2,28% (+112pts) = correlação INVERSA CLÁSSICA (não atípica)",
+      "Pipeline: check_macro → ajustes B3 → juros BR (DI prints Cedro · cruzados pelo Renato pré-publish) → WIN/WDO → validate_agenda → V1→V2→V3→V4 → tail truncado reconstruído pela Cowork → publish",
+      "V4 fix · 14/05 manhã pré-publish · todos os campos OHLC e ajustes corrigidos via Resumo B3 oficial 13/05 · cruzado pelo Renato com prints Cedro · publish #2 do dia",
+      "V5 · 14/05 manhã · Filtro Anti-Narrativa ativado pela primeira vez no #13 · publish #3 do dia · marca diferencial Bertani vs casas grandes"
     ],
     "correcoes_pos_publish": []
   }
