@@ -8,24 +8,24 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "TRIPLO 09:30 · RETAIL SALES DRIVER · WIN 179.050 (-260pts do suporte 178.790) · WDO 5.028 TESTAM SUPORTES",
-    "subtitulo": "Quinta 14/05 traz TRIPLO 09:30 ★★★: Retail Sales US 0,5% esp (vs 1,7% prior · desaceleração) · Core Retail 0,7% esp (vs 1,9% prior) · Jobless Claims 205K esp (vs 200K prior). Retail Sales é o DRIVER PRIMÁRIO (move DXY/SPX direto · consumo = 70% PIB US). WIN 179.050 operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low). WDO 5.028 JÁ NO SUPORTE (swing low = preço atual · testa primeiro). Curva DI: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526%) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = bearish estrutural WIN (mercado precifica ciclo cortes Selic adiado). Variação intraday -0,10% em ambos (WIN -175pts · WDO -5pts) = pullback técnico. ⚠️ Movimento sincronizado NO DIA mas NÃO indica correlação estatística (coef. típico WIN×WDO = -0,40 a -0,70 · 20+ períodos pra calcular). BIAS: bearish leve / cautela alta com Retail 09:30 podendo amenizar. EVITAR 09:00-09:50. Williams 18:45 ★★ (votante FOMC · pós-B3 · move futuros)."
+    "manchete": "TRIPLO 09:30 · RETAIL SALES DRIVER · WIN 179.066 (-276pts do suporte 178.790) · WDO 5.009 (range 4.913-5.040)",
+    "subtitulo": "Quinta 14/05 traz TRIPLO 09:30 ★★★: Retail Sales US 0,5% esp (vs 1,7% prior · desaceleração) · Core Retail 0,7% esp (vs 1,9% prior) · Jobless Claims 205K esp (vs 200K prior). Retail Sales é o DRIVER PRIMÁRIO (move DXY/SPX direto · consumo = 70% PIB US). Ajustes B3 oficiais 13/05: WIN 179.066 (-2,04% · queda forte de 3.730pts) · WDO 5.008,89 (+2,28% · alta forte de 112pts) = CORRELAÇÃO INVERSA CLÁSSICA confirmada (WIN cai · WDO sobe = padrão risk-off pleno BR). WIN 179.066 operando +276pts acima do suporte 178.790 (testou ontem · mínima 178.800 = defesa por 10pts). WDO 5.009 no MEIO da range 4.913-5.040 · suporte real 4.910 (weekly low confirmado). Curva DI bear shift FORTE: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526%) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = BEARISH estrutural WIN (mercado precifica ciclo cortes Selic adiado · risk-off macro). BIAS: bearish leve / cautela alta com Retail 09:30 podendo amenizar. EVITAR 09:00-09:50. Williams 18:45 ★★ (votante FOMC · pós-B3)."
   },
   "resumo_30s": {
-    "win_linha": "WIN1! · score 3,0/10 · veredito AGUARDAR · viés bearish leve / cautela alta (DI bear shift adverso · suporte 178.790 crítico · Retail 09:30 pode amenizar)",
-    "wdo_linha": "WDO1! · score 3,5/10 · veredito AGUARDAR · viés lateral (NO suporte 5.028 · testa antes WIN · reage 30-60s primeiro)",
+    "win_linha": "WIN1! · score 3,0/10 · veredito AGUARDAR · viés bearish leve / cautela alta (DI bear shift adverso · suporte 178.790 testou ontem por 10pts · ajuste 179.066 com -2,04% no dia)",
+    "wdo_linha": "WDO1! · score 3,5/10 · veredito AGUARDAR · viés lateral (ajuste 5.008,89 com +2,28% · range 4.913-5.040 · MEIO de range · não no suporte)",
     "janela_operacional": "EVITAR 09:00-09:50 (leilão+Triplo 09:30 Retail/Core/Jobless) · OPERAR 10:00-12:00 (digestão) · 13:30-17:00 (NY Open)",
-    "nivel_chave": "WIN 178.790 (suporte swing+weekly · confluência dupla) · 179.670 (resistência) · WDO 5.028 (NO suporte) · 5.040 (resistência)",
+    "nivel_chave": "WIN 178.790 (suporte testou ontem por 10pts) · 179.670 (resistência) · WDO 5.040 (resistência diária) · 4.910 (suporte real / weekly low)",
     "agenda_top1": "Triplo 09:30 ★★★ (Retail driver · Core · Jobless) · GDPNow 12:30 ★★ · Williams 18:45 ★★ (votante FOMC) · ⚠️ 3 pendentes"
   },
   "contexto_macro": {
     "nivel_vento": "MORNO",
     "highlights": [
-      "📌 Briefing #13 referência sessão 13/05 (fechamento) · ajuste pré-abertura 14/05 com Triplo 09:30 ★★★ + macro adversa (DI subiu forte ontem)",
+      "📌 Briefing #13 referência B3 oficial sessão 13/05 (ajustes confirmados via Resumo da Sessão) · pré-abertura 14/05 com Triplo 09:30 ★★★ + macro adversa (DI subiu forte ontem · risk-off pleno)",
       "💵 Curva DI bear shift FORTE: F27 14,210% (+16bps vs 14,051% D-1) · F29 14,050% (+52bps vs 13,526% · maior movimento · ciclo cortes Selic sendo adiado) · F31 14,110% (+50bps vs 13,606%) = bear steepen leve com corcunda no médio = BEARISH estrutural WIN (juros subindo forte = ações menos atraentes · pressão fiscal/inflacionária precificada)",
-      "📊 WIN 179.050 (-0,10% intraday · -175pts vs abertura 179.225) · operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low = confluência dupla MUITO FORTE)",
-      "💵 WDO 5.028 (-0,10% intraday · -5pts vs abertura 5.033) · JÁ NO SUPORTE (swing low 5.028 = preço atual) · testa ANTES de WIN (mais líquido · reage 30-60s primeiro)",
-      "🔄 Variação intraday: WIN e WDO ambos -0,10% (variação percentual idêntica NO DIA) = pullback técnico coordenado · ⚠️ NÃO confundir variação percentual com coeficiente de correlação (seriam necessários 20+ períodos pra calcular coef. · típico WIN×WDO = -0,40 a -0,70 · hoje movimento sincronizado mas não implica correlação estatística forte)",
+      "📊 WIN 179.066 (ajuste B3 oficial) · -2,04% no dia (-3.730pts · queda forte) · OHLC 182.680/182.775/178.800/179.020 · TESTOU o suporte crítico 178.790 por apenas 10pts (mínima 178.800) e fechou em 179.020 = defesa frágil mas válida · vol 12,36B · 68k contratos",
+      "💵 WDO 5.008,89 (ajuste B3 oficial) · +2,28% no dia (+112pts · alta forte) · OHLC 4.913,50/5.039,50/4.912,50/5.025,50 · NO MEIO da range diária (não no suporte como antes) · suporte real 4.910 (weekly low confirmado pela mínima 4.912,50) · resistência 5.040 (máxima diária) · vol 87,74B · 352k contratos",
+      "🔄 CORRELAÇÃO INVERSA CLÁSSICA confirmada 13/05: WIN -2,04% · WDO +2,28% = movimento PERFEITAMENTE NEGATIVO (não atípica · não pullback coordenado) · padrão risk-off pleno BR (DI subiu + dólar subiu + bolsa caiu) · alinhado com tese bearish estrutural · operar pareado com confiança",
       "🇺🇸 Triplo 09:30 ★★★: Retail Sales US 0,5% esp (vs 1,7% prior · forte desaceleração consumo) · Core Retail 0,7% esp (vs 1,9% prior) · Jobless Claims 205K esp (vs 200K prior) — Retail Sales é o DRIVER PRIMÁRIO (move DXY e SPX direto · consumo = 70% PIB US · se fraco = FED dovish = dólar cai = WIN sobe)",
       "🇺🇸 GDPNow Atlanta Fed 12:30 ★★: projeção Q2 (prior 3,7% · revisão em tempo real do crescimento · modelo Fed diverge de Blue Chip consensus · monitorar)",
       "🇺🇸 Williams 18:45 ★★: presidente NY Fed · votante permanente FOMC · pós-fechamento B3 mas move futuros · tom hawkish/dovish pode redirecionar narrativa pra sexta",
@@ -47,13 +47,13 @@
       "score": 3.0,
       "vies": "bearish leve / cautela alta",
       "veredito": "AGUARDAR",
-      "fase_wyckoff": "Pullback técnico · macro DI adverso (bear shift forte) · aguardando Triplo 09:30 + defesa 178.790 (breakdown possível)",
-      "racional_publico": "WIN 179.050 operando -260pts ACIMA do suporte crítico 178.790 (swing low + weekly low = confluência dupla). Pullback intraday -175pts (-0,10%) da abertura 179.225 é movimento técnico normal. Curva DI bear shift: F27 +16bps · F29 +52bps · F31 +50bps (curva inteira sobe forte · F29 puxa = ciclo cortes Selic adiado) = HEADWIND estrutural WIN no médio prazo · macro contra a posição comprada. WDO 5.028 já NO suporte (testa primeiro · reage 30-60s antes) — se defender, WIN tem espaço pra reagir em 178.800-178.900 mas com cautela dobrada. Triplo 09:30 é catalisador: Retail Sales FRACO (<0,3% · desaceleração consumo) = FED dovish = dólar cai = WIN sobe APESAR do DI adverso. Score 3,0/10 (Juros BR adverso -1,5pts · suporte HTF forte +1pt · WDO correlacionado +0,5pt · -260pts buffer +0,5pt · pullback técnico +0,5pt · macro headwind -0,5pt · Retail pode amenizar +2,5pts). Veredito: AGUARDAR Retail Sales 09:30 confirmar direção · cautela redobrada.",
+      "fase_wyckoff": "Suporte HTF (178.790) TESTOU ontem com mínima 178.800 (defesa por 10pts) · macro DI adverso · queda -2,04% no dia · aguardando Triplo 09:30 + segunda defesa OU breakdown",
+      "racional_publico": "WIN ajuste B3 oficial 179.066 (queda de -2,04% · -3.730pts no dia · OHLC 182.680/182.775/178.800/179.020). TESTOU o suporte crítico 178.790 ontem (mínima 178.800 = defesa por apenas 10pts) e fechou em 179.020 = defesa frágil mas válida. Buffer atual ajuste-suporte: +276pts (179.066 - 178.790). Curva DI bear shift: F27 +16bps · F29 +52bps · F31 +50bps (curva inteira sobe forte · F29 puxa = ciclo cortes Selic adiado) = HEADWIND estrutural WIN no médio prazo. WDO confirmou risk-off pleno: +2,28% no dia (+112pts) · correlação INVERSA CLÁSSICA com WIN (não atípica · não pullback coordenado). Triplo 09:30 é catalisador: Retail Sales FRACO (<0,3% · desaceleração consumo) = FED dovish = dólar cai = WIN sobe APESAR do DI adverso. Score 3,0/10 (DI bear shift adverso -1,5pts · suporte HTF testou e defendeu +1pt · WDO correlacionado inversa +0,5pt · buffer 276pts +0,5pt · queda forte ontem em risk-off -0,5pt · Retail pode amenizar +2,5pts · cautela tese bearish). Veredito: AGUARDAR Retail Sales 09:30 confirmar direção · cautela DOBRADA (suporte testado ontem · próximo teste pode romper).",
       "niveis_chave": {
-        "ajuste_b3": 179050,
-        "abertura": 179225,
-        "maxima": 179260,
-        "minima": 178935,
+        "ajuste_b3": 179066,
+        "abertura": 182680,
+        "maxima": 182775,
+        "minima": 178800,
         "swing_high": 179670,
         "swing_low": 178790,
         "weekly_high": 195245,
@@ -64,10 +64,10 @@
         "target_bullish_2": 180500
       },
       "ajuste_b3_meta": {
-        "valor": 179050,
+        "valor": 179066,
         "data_referencia": "2026-05-14",
-        "fonte": "TradingView quote_get intraday · movimento real mercado caiu de 182k pra 179k sessão 13/05 · suporte 178.790 crítico",
-        "nota_validacao": "Ajuste 179.050 está abaixo da faixa típica 180k-200k · movimento excepcional real · pre_publish_check pode bloquear · override manual necessário"
+        "fonte": "B3 oficial · Resumo da Sessão 13/05/2026 (cruzado com prints Cedro pelo Renato pré-publish)",
+        "nota_validacao": "Ajuste 179.066 abaixo da faixa típica 180k-200k · queda real -2,04% no dia (-3.730pts) · mercado em risk-off · pre_publish_check ajustado pra 178k (sed opção 2)"
       },
       "plano": {
         "direcao": "AGUARDAR TRIPLO 09:30",
@@ -87,7 +87,7 @@
         "setup": "TABELA CENÁRIO 09:30 | Retail Sales | Core Retail | Jobless | WDO | WIN | Ação | |---|---|---|---|---|---| | **FRACO** <0,3% | FRACO <0,5% | ALTO ≥210K | Cai de 5.028 | Sobe de 178.790 | ✅ **COMPRAR WIN** 178.800-900 · SL 178.700 (-100-200pts) · TP1 179.670 (+770-870pts · RR 1:3,8-8,7) · TP2 180.500 | | **FORTE** >0,7% | FORTE >0,9% | BAIXO ≤200K | Rompe 5.028 ↑ | Rompe 178.790 ↓ | 🔴 **VENDER WIN** 178.700 · SL 179.300 (+600pts) · TP1 178.000 (-700pts · RR 1:1,2) · TP2 177.200 | | **INLINE** 0,3-0,7% | INLINE 0,5-0,9% | INLINE 201-209K | Lateral 5.025-5.035 | Lateral 178.700-179.300 | ⏸️ **AGUARDAR** GDPNow 12:30 OU NY Open 13:30 | DRIVER: Retail Sales é o PRIMÁRIO (move DXY/SPX · consumo 70% PIB) · Jobless é coadjuvante. WDO reage 30-60s ANTES de WIN · monitorar primeiro.",
         "kill_zone": "EVITAR 09:00-09:25 (leilão B3) e 09:25-09:50 (Triplo 09:30 + volatilidade macro extrema) · OPERAR 10:00-12:00 (digestão pós-Retail/Jobless · setup limpo se WIN defender 178.790 E WDO defender 5.028) · 13:30-17:00 (NY Open até pré-Williams) · EVITAR 17:45-17:55 (leilão fechamento)"
       },
-      "comentario_breve": "Score 3,0/10 · AGUARDAR 09:30 Retail Sales · bearish leve / cautela alta · suporte 178.790 crítico · DI +16/+52/+50bps = headwind estrutural"
+      "comentario_breve": "Score 3,0/10 · AGUARDAR 09:30 Retail · suporte 178.790 TESTOU ontem (defesa frágil 10pts) · DI bear shift +50bps · WDO +2,28% confirma risk-off pleno"
     },
     {
       "codigo": "WDO1!",
@@ -95,24 +95,24 @@
       "score": 3.5,
       "vies": "lateral",
       "veredito": "AGUARDAR",
-      "fase_wyckoff": "NO suporte crítico (5.028 = swing low · aguardando defesa OU rompimento)",
-      "racional_publico": "WDO 5.028 JÁ NO SUPORTE (swing low = preço atual). Pullback intraday -5pts (-0,10%) da abertura 5.033. Testa ANTES de WIN (WDO mais líquido e reage 30-60s mais rápido a Retail Sales US). Swing high 5.040 apenas +12pts acima (resistência próxima · range estreito). Weekly low 4.910 (-118pts) é piso estrutural se romper. Triplo 09:30 define: Retail Sales FRACO (<0,3%) = FED dovish = dólar cai = WDO cai de 5.028 = WIN sobe / Retail Sales FORTE (>0,7%) = FED hawkish mantido = dólar sobe = WDO rompe 5.028 ↑ = WIN cai. Score 3,5/10 (NO suporte +1pt · Retail catalisador +1pt · swing range estreito +0,5pt · reação antes WIN +0,5pt · DI F27 curto hawkish segura +0,5pt). Veredito: AGUARDAR Retail 09:30 — não operar WIN sem confirmar direção WDO primeiro (delay 30-60s).",
+      "fase_wyckoff": "Pullback técnico no MEIO da range diária 4.913-5.040 (não no suporte) · alta +2,28% ontem em risk-off · aguardando Triplo 09:30",
+      "racional_publico": "WDO ajuste B3 oficial 5.008,89 (alta de +2,28% · +112pts no dia · OHLC 4.913,50/5.039,50/4.912,50/5.025,50). Está no MEIO da range diária 4.913-5.040 (não 'no suporte' como Code apurou errado). Suporte real: 4.910 (weekly low confirmado pela mínima de ontem 4.912,50). Resistência: 5.040 (máxima diária).Reage 30-60s ANTES de WIN (mais líquido). Triplo 09:30 define direção: Retail Sales FRACO (<0,3%) = FED dovish = dólar cai = WDO testa 4.913 / Retail Sales FORTE (>0,7%) = FED hawkish mantido = dólar sobe = WDO testa 5.040 e busca 5.080. Correlação INVERSA CLÁSSICA com WIN confirmada ontem (WDO +2,28% · WIN -2,04%). Score 3,5/10 (range estreito intraday +0,5pt · catalisador Retail forte +1pt · reação antes WIN +0,5pt · DI F27 hawkish curto +0,5pt · alta forte ontem em risk-off +1pt). Veredito: AGUARDAR Retail 09:30 — não operar WIN sem confirmar direção WDO primeiro (delay 30-60s).",
       "niveis_chave": {
-        "ajuste_b3": 5028,
-        "abertura": 5033,
-        "maxima": 5039,
-        "minima": 5028,
+        "ajuste_b3": 5009,
+        "abertura": 4914,
+        "maxima": 5040,
+        "minima": 4913,
         "swing_high": 5040,
-        "swing_low": 5028,
+        "swing_low": 4910,
         "weekly_high": 5040,
         "weekly_low": 4910,
         "eq": 5034,
         "breakdown": 4990
       },
       "ajuste_b3_meta": {
-        "valor": 5028,
+        "valor": 5009,
         "data_referencia": "2026-05-14",
-        "fonte": "TradingView quote_get intraday"
+        "fonte": "B3 oficial · Resumo da Sessão 13/05/2026 · ajuste exato 5.008,89 (cruzado com prints Cedro pelo Renato pré-publish)"
       },
       "plano": {
         "direcao": "AGUARDAR TRIPLO 09:30",
@@ -132,7 +132,7 @@
         "setup": "CENÁRIO 1 (bullish · se Retail fraco <0,3%): Entry 5.030-5.032 (reação no suporte com volume) · SL 5.020 (-10-12pts) · TP 5.050 (+18-20pts · RR 1:1,5-2,0). CENÁRIO 2 (bearish · se Retail forte >0,7%): Entry 5.025 (rompimento 5.028 confirmado) · SL 5.045 (+17-20pts) · TP1 4.990 (-35-38pts · RR 1:1,8-2,2) · TP2 4.950. REGRA CRÍTICA: WDO reage 30-60s ANTES de WIN — não operar WIN sem confirmar WDO primeiro. Se WDO cai · WIN sobe (correlação negativa típica -0,40 a -0,70).",
         "kill_zone": "EVITAR 09:00-09:25 (leilão) e 09:25-09:50 (Triplo 09:30 = catalisador maior · Retail driver primário DXY) · OPERAR 10:00-12:00 (digestão · DXY pode definir) · 13:30-17:00 (NY Open)"
       },
-      "comentario_breve": "Score 3,5/10 · AGUARDAR 09:30 Retail Sales · NO suporte 5.028 · testa ANTES WIN · driver primário = Retail (não Jobless)"
+      "comentario_breve": "Score 3,5/10 · AGUARDAR 09:30 Retail · ajuste 5.009 no MEIO range · NÃO no suporte · WDO +2,28% ontem confirma risk-off pleno · driver primário = Retail (não Jobless)"
     }
   ],
   "agenda_macro": [
@@ -278,7 +278,7 @@
     },
     {
       "ativo": "WDO1!",
-      "regra": "WDO NO SUPORTE 5.028 (swing low = preço atual) · testa ANTES de WIN · reage 30-60s primeiro"
+      "regra": "WDO ajuste 5.009 (+2,28% ontem) está no MEIO da range diária 4.913-5.040 · suporte real 4.910 (weekly low) · NÃO no suporte como antes"
     },
     {
       "ativo": "WDO1!",
@@ -332,7 +332,8 @@
       "Adicionado GDPNow 12:30 ★★ · Williams 18:45 ★★ (votante FOMC) · Barr 20:00 ★★",
       "Corrigida confusão correlação vs variação percentual: -0,10% ambos NO DIA (variação) ≠ coeficiente correlação (precisa 20+ períodos · típico -0,40 a -0,70)",
       "DI citado em bps explícitos com Δ vs settlement D-1: F27 +4bps · F29 -24bps · F31 -54bps · classificado como bear flatten",
-      "Listados nominalmente os 3 eventos pendentes: (1) review_required_14_05 · (2) PPI revisão · (3) Natural Gas Storage"
+      "Listados nominalmente os 3 eventos pendentes: (1) review_required_14_05 · (2) PPI revisão · (3) Natural Gas Storage",
+      "URGENTE pré-publish v4 · TODOS os dados B3 corrigidos via Resumo Oficial 13/05 (cruzado com prints Cedro pelo Renato): WIN ajuste 179.050→179.066 · OHLC 179.225/179.260/178.935→182.680/182.775/178.800 · variação -0,10%→-2,04% (real) · WDO ajuste 5.028→5.009 · OHLC 5.033/5.039/5.028→4.913/5.040/4.913 · variação -0,10%→+2,28% (real) · Correlação reclassificada de 'atípica' pra 'INVERSA CLÁSSICA' (WIN-/WDO+ = risk-off pleno) · Suporte WDO reclassificado: 5.028 era ajuste falso · suporte real é 4.910 (weekly low confirmado) · Causa raiz: Code puxou via quote_get intraday em vez de data_get_b3_settlement (CLAUDE.md alerta exato)"
     ],
     "validacoes_pendentes_pos_publish": [
       "WIN ajuste 179.050 abaixo faixa típica 180k-200k · movimento excepcional real (caiu de 182k) · pre_publish_check pode bloquear · override manual necessário",
@@ -345,7 +346,8 @@
       "WIN 179.050 · WDO 5.028 via TradingView quote_get intraday",
       "Ambos AGUARDAR até Triplo 09:30 · Retail Sales driver primário · scores revisados (WIN 3,0 · WDO 3,5) pós-correção DI",
       "Variação -0,10% idêntica NO DIA mas NÃO significa correlação estatística forte (coef. típico WIN×WDO = -0,40 a -0,70 · 20+ períodos)",
-      "Pipeline: check_macro → ajustes B3 → juros BR (DI prints Cedro · cruzados pelo Renato pré-publish) → WIN/WDO → validate_agenda → correções urgentes Renato V1→V2→V3 → tail truncado V3 reconstruído pela Cowork"
+      "Pipeline: check_macro → ajustes B3 → juros BR (DI prints Cedro · cruzados pelo Renato pré-publish) → WIN/WDO → validate_agenda → correções urgentes Renato V1→V2→V3 → tail truncado V3 reconstruído pela Cowork",
+      "V4 fix · 14/05 manhã pré-publish · todos os campos OHLC e ajustes corrigidos via Resumo B3 oficial 13/05 · cruzado pelo Renato com prints Cedro · publish #2 do dia"
     ],
     "correcoes_pos_publish": []
   }
