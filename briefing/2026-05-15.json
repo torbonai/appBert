@@ -22,6 +22,8 @@
     "nivel_vento": "MORNO",
     "highlights": [
       "🚨 UPDATE 9h15 BRT · BREAKDOWN BEARISH CONFIRMADO · WIN 178.245 (−1,33%) ABAIXO suporte crítico 178.790 · PMS BR Mar saiu −1,2% MoM (vs mediana −0,1% · 12× pior) MAS DI futuros SUBINDO mesmo assim = mercado precifica fiscal/inflação + Brent +3% supply shock + Vorcaro/Flávio doméstico > Selic. Narrativa Falcão de 'alívio Trump-Xi' caiu por terra · drivers reais: Brent $108 · Vale peers globais −5% · NY/Europa −1% · USDBRL pressionado",
+      "💸 FLUXO B3 confirma risk-off estrutural · estrangeiro VENDEDOR PESADO últimos 2 dias: 13/05 −R$ 1.197M · 12/05 −R$ 934M = −R$ 2,13B saída em 48h · curva acumulada estrangeiro saiu do pico R$ 55B (início março) pra R$ 45B (atual) = redução de exposição BR sustentada. Conexões: explica BRL pressionado (vende vista + envia dólar) · explica WIN bearish (outflow + Vale peers + risk-off). Quarto driver bearish do dia",
+      "📐 POSICIONAMENTO DI 14/05 (Quantzed) · estrangeiro COMPROU +173,59k contratos DI em PU (estoque +4,38M · LONG aposta em queda de juros) · institucional BR VENDEU −150,51k (estoque +5,23M · ainda comprado). PADRÃO DE HEDGE: estrangeiro vende equity vista mas mantém view dovish renda fixa via DI long. RISCO HOJE: DI subindo pós-PMS está CONTRA o long estrangeiro de ontem · se DI continuar subindo = squeeze de longs estrangeiros = amplifica risk-off (WIN cai mais · WDO sobe mais). CENÁRIO ALT: estrangeiro defende posição = alívio temporário no DI = WIN repique pra zona 179.500-180.000 = CONFIRMA setup A SHORT. Quinto driver bearish do dia",
       "📌 Briefing #14 · referência B3 oficial sessão 14/05 (ajustes confirmados via settlement EOD) · pré-abertura 15/05 SEXTA com PMS BR 09:00 ★★★ driver doméstico · overnight globals: DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71",
       "💵 Curva DI (13→14/05): bear shift forte F27 14,210% (+16bps vs 14,051%) · F29 14,050% (+52bps vs 13,526% · maior movimento) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = BEARISH estrutural WIN (juros subindo forte = ações menos atraentes · pressão fiscal precificada)",
       "📊 WIN 180.456 (ajuste B3 oficial 14/05) · +0,77% no dia (+1.390pts · recuperação técnica pós-teste suporte 13/05) · OHLC 179.055/181.550/179.055/180.456 · NO MEIO da range D-1 2.495pts (EQ 180.302 · buffer +154pts) = equilibrium zone · PDH 181.550 resistência · PDL 179.055 suporte defendido",
@@ -119,8 +121,8 @@
       "score": 2.5,
       "vies": "lateral / viés alta intraday",
       "veredito": "AGUARDAR primeiros 30min · setup pós digestão",
-      "fase_wyckoff": "Lateral HTF (D) · +0,01% no dia (lateral absoluto) · ajuste 5.009,58 ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts) · range estreita 4.992,5-5.051 (58,5pts) · aguardando PMS BR 09:00",
-      "racional_publico": "WDO ajuste B3 oficial 5.009,58 (alta de +0,01% · +0,698pts no dia · OHLC 5.026/5.051/4.992,5/5.009,58). Lateral absoluto ontem (enquanto WIN +0,77%) = correlação DESACOPLADA (digestão pós-Retail US 14/05). Está ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts). PDH 5.051 é resistência · PDL 4.992,5 é suporte · weekly low 4.910 suporte real. Reage 30-60s ANTES de WIN (mais líquido). PMS BR 09:00 define direção: PMS FORTE >0,3% = DI sobe = risk-off = WDO sobe. PMS FRACO <-0,2% = DI cai = risk-on = WDO cai. Score 2,0/10 CAP PRÉ-PMS (range estreita D-1 +0,5pt · discount zone +0,5pt · PMS driver doméstico +1pt · sexta vencimento -0,5pt · cautela estrutural +0,5pt). Veredito: AGUARDAR PMS 09:00 — operar WDO primeiro (delay 30-60s antes WIN).",
+      "fase_wyckoff": "POST-EVENTO 9h15 BRT · cenário CONTRAINTUITIVO: PMS fraco era pra ser bullish real (BRL apreciaria), mas dólar/real subindo pressionado por risk-off externo + Brent +3% supply shock + tese fiscal Vorcaro/Flávio não-resolvida. Range D-1 4.992,5-5.051 sob teste · break acima EQ D-1 5.021,75 confirma reversão da discount zone · próximo nível PDH 5.051 · supporte 4.992,5.",
+      "racional_publico": "UPDATE PÓS-PMS · 9h15 BRT · CENÁRIO CONTRAINTUITIVO. WDO ajuste B3 oficial D-1 5.009,58 · com PMS BR Mar −1,2% (vs mediana −0,1%) era ESPERADO real apreciar (PMS fraco = espaço Selic cair = risk-on = WDO cai). MAS mercado IGNOROU o PMS fraco · drivers reais: (1) Brent +2,5-3,44% a $108 = supply shock inflacionário · (2) Risk-off externo NY −1% Europa −1% = dólar global preserva força · (3) DI BR SUBINDO mesmo com PMS fraco = pricing fiscal/Vorcaro/Flávio · (4) USDBRL overnight estava −0,60% (Real apreciando) · pós-PMS provável reversão pra cima · (5) Datafolha tarde pode reabrir prêmio. WDO deve abrir acima do ajuste 5.009,58 e testar EQ D-1 5.021,75 · break acima confirma tese alta · TP1 PDH 5.051 · TP2 5.080 (psicológico). Falha em romper 5.021,75 = lateralização · WDO segue discount zone. Score 2,5/10 (BRL pressionado +1,0 · Brent supply shock +0,5 · risk-off externo +0,5 · discount zone D-1 setup +0,5 · DI subindo apesar PMS fraco +0,5 · sexta vencimento opções −0,5 · range estreita pode comprimir −0,5).",
       "niveis_chave": {
         "ajuste_b3": 5009.583,
         "abertura": 5026,
@@ -143,24 +145,24 @@
         "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-14)"
       },
       "plano": {
-        "direcao": "AGUARDAR PMS BR 09:00",
-        "entry_zona": "_PENDENTE_FASE_2_POS_PMS_",
-        "stop": null,
-        "stop_pts": null,
-        "tp1": null,
-        "tp1_rr": null,
-        "tp1_partial_pct": null,
-        "tp2": null,
-        "tp2_rr": null,
-        "tp2_partial_pct": null,
-        "tp3": null,
-        "tp3_rr": null,
-        "tp3_partial_pct": null,
-        "contratos_banca_30k_risco_1pct": null,
-        "setup": "CENÁRIO PRELIMINAR PMS: PMS FORTE >0,3% = risk-off = WDO rompe PDH 5.051 · PMS FRACO <-0,2% = risk-on = WDO cai PDL 4.992,5. _PENDENTE_FASE_2_: Setups completos pós-PMS. REGRA: WDO reage 30-60s ANTES de WIN.",
-        "kill_zone": "EVITAR 08:55-09:35 (PMS BR 09:00 driver + leilão) · OPERAR 10:30-12:00 (digestão) · 13:30-17:00 (NY Open) · EVITAR 17:00-17:55 (vencimento opções)"
+        "direcao": "LONG NO BREAK · viés alta intraday pós-PMS",
+        "entry_zona": "5.021,75-5.025 (break EQ D-1 com retest) OU 5.030+ continuação",
+        "stop": 5009.5,
+        "stop_pts": "12-20 (abaixo do ajuste D-1)",
+        "tp1": 5051,
+        "tp1_rr": "1:1,5 (PDH D-1 resistência)",
+        "tp1_partial_pct": 50,
+        "tp2": 5070,
+        "tp2_rr": "1:2,5 (psicológico)",
+        "tp2_partial_pct": 30,
+        "tp3": 5080,
+        "tp3_rr": "1:3 (extensão técnica)",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "1 contrato (R$300 risco / 12-20pts SL · WDO 10$/pt = $120-200)",
+        "setup": "🎯 SETUP A · LONG NO BREAK EQ D-1 · WDO contraintuitivo pós-PMS (PMS fraco era pra derrubar dólar, mas risk-off externo + Brent +3% + fiscal mantém compra). Entry zone 5.021,75-5.025 (break EQ D-1) · SL 5.009,5 (abaixo ajuste) · TP1 5.051 (PDH D-1 · 50%) · TP2 5.070 (30%) · TP3 5.080 (20%). R/R 1:1,5 a 1:3. Invalidação: falha em manter acima 5.021,75 + retorno ao discount zone = lateral · NÃO operar contra-trend.",
+        "kill_zone": "OPERAR 10:30-12:00 (digestão pós-PMS · WDO reage 30-60s ANTES WIN) · 13:30-17:00 (NY Power Hour) · EVITAR 17:00-17:55 (vencimento opções B3 · liquidez some 15:30)"
       },
-      "comentario_breve": "Score 2,0/10 CAP PRÉ-PMS · AGUARDAR 09:00 PMS BR · ajuste 5.009,58 discount zone D-1 · lateral absoluto ontem · sexta vencimento"
+      "comentario_breve": "Score 2,5/10 · viés alta intraday pós-PMS · WDO contraintuitivo (PMS fraco mas Brent +3% + risk-off > Selic) · LONG no break EQ D-1 5.021,75 · TP 5.051-5.080"
     }
   ],
   "agenda_macro": [
