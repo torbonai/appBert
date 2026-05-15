@@ -1,0 +1,333 @@
+{
+  "data": "2026-05-15",
+  "data_extenso": "Sexta-feira, 15 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 14,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "PMS BR 09:00 DRIVER DOMÉSTICO · WIN 180.456 EQUILIBRIUM (+0,77%) · WDO 5.010 LATERAL · DXY 99,21 · SEXTA VENCIMENTO OPÇÕES",
+    "subtitulo": "Sexta 15/05 traz PMS BR 09:00 ★★★ (DRIVER DOMÉSTICO · setor serviços Mar · prior 0,1% MoM) + Empire State 09:30 ★★ + Produção Industrial US 10:15 ★★ + Michigan Sentiment 11:00 ★★★. PMS BR é o DRIVER PRIMÁRIO (macro doméstico · se forte >0,3% = inflação serviços = DI sobe = headwind WIN). Ajustes B3 oficiais 14/05: WIN 180.456 (+0,77% · recuperação de 1.390pts) · WDO 5.009,58 (+0,01% · lateral). WIN 180.456 operando no MEIO da range D-1 (179.055-181.550 · EQ 180.302) = equilibrium. WDO 5.009,58 abaixo do EQ D-1 5.021,75 = discount zone. Curva DI _PENDENTE_FASE_2_PRINTS_DI_. BIAS PRELIMINAR: _aguardando_PMS_BR_ / cautela ALTA pré-evento doméstico. EVITAR 08:55-09:35 (PMS+leilão). Score CAP pré-09:00: agressivo 3,5 · moderado 2,5 · conservador 1,5."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score preliminar 2,5/10 CAP PRÉ-PMS · veredito AGUARDAR PMS 09:00 · viés PENDENTE (ajuste 180.456 com +0,77% · recuperação de 1.390pts · no MEIO range D-1 179.055-181.550)",
+    "wdo_linha": "WDO1! · score preliminar 2,0/10 CAP PRÉ-PMS · veredito AGUARDAR PMS 09:00 · viés lateral (ajuste 5.009,58 com +0,01% · discount zone abaixo EQ 5.021,75)",
+    "janela_operacional": "EVITAR 08:55-09:35 (PMS BR driver doméstico) · OPERAR 10:30-12:00 (digestão pós-PMS) · 13:30-17:00 (NY Open) · EVITAR 17:00-17:55 (vencimento opções semanal + leilão)",
+    "nivel_chave": "WIN 181.550 (PDH · resistência) · 179.055 (PDL · suporte) · 180.302 (EQ D-1) · WDO 5.051 (PDH · resistência) · 4.992,5 (PDL · suporte) · 4.910 (weekly low)",
+    "agenda_top1": "PMS BR 09:00 ★★★ (driver doméstico) · Empire State 09:30 ★★ · Produção Industrial US 10:15 ★★ · Michigan Sentiment 11:00 ★★★ · ⛔ Vencimento opções semanal 17:45"
+  },
+  "contexto_macro": {
+    "nivel_vento": "MORNO",
+    "highlights": [
+      "📌 Briefing #14 · referência B3 oficial sessão 14/05 (ajustes confirmados via settlement EOD) · pré-abertura 15/05 SEXTA com PMS BR 09:00 ★★★ driver doméstico · overnight globals: DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71",
+      "💵 Curva DI (13→14/05): bear shift forte F27 14,210% (+16bps vs 14,051%) · F29 14,050% (+52bps vs 13,526% · maior movimento) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = BEARISH estrutural WIN (juros subindo forte = ações menos atraentes · pressão fiscal precificada)",
+      "📊 WIN 180.456 (ajuste B3 oficial 14/05) · +0,77% no dia (+1.390pts · recuperação técnica pós-teste suporte 13/05) · OHLC 179.055/181.550/179.055/180.456 · NO MEIO da range D-1 2.495pts (EQ 180.302 · buffer +154pts) = equilibrium zone · PDH 181.550 resistência · PDL 179.055 suporte defendido",
+      "💵 WDO 5.009,58 (ajuste B3 oficial 14/05) · +0,01% no dia (+0,698pts · lateral absoluto) · OHLC 5.026/5.051/4.992,5/5.009,58 · ABAIXO do EQ D-1 5.021,75 (buffer -12,17pts) = discount zone · PDH 5.051 resistência · PDL 4.992,5 suporte · weekly low 4.910 suporte real",
+      "🔄 CORRELAÇÃO: WIN +0,77% · WDO +0,01% = movimento DESACOPLADO (não inversa clássica · não risk-off · recuperação técnica WIN enquanto WDO lateral) · padrão pós-evento (digestão Retail Sales US 14/05)",
+      "🇧🇷 PMS BR 09:00 ★★★: Pesquisa Mensal de Serviços Mar · prior 0,1% MoM e 0,5% YoY · DRIVER DOMÉSTICO PRIMÁRIO (não importado) · se forte >0,3% = setor serviços aquecido = inflação serviços = DI sobe = headwind WIN · se fraco <-0,2% = desaceleração = espaço Selic cair = DI cai = bullish WIN",
+      "🇺🇸 Empire State 09:30 ★★: mediana 7,30 vs prior 11,00 (leve desaceleração manufatura NY) · impacto MEDIO · secundário ao PMS BR",
+      "🇺🇸 Produção Industrial 10:15 ★★: mediana 0,3% MoM vs prior -0,5% (recuperação técnica IP) · YoY prior 0,74% · impacto MEDIO",
+      "🇺🇸 Michigan Sentiment 11:00 ★★★: preliminar mid-month · pós-CPI hawkish pode mostrar deterioração consumidor · impacto ALTO mas TARDIO (após PMS+Empire+IP)",
+      "🇪🇺 BCE Monthly Report 05:00 ★★: impacto MEDIO madrugada · mexe EUR/USD · indireto WIN/WDO",
+      "⛔ SEXTA VENCIMENTO OPÇÕES SEMANAL B3 17:45-17:55: liquidez cai cedo (15:30 onwards) · distorce tarde · NÃO operar pós-17:00",
+      "_PENDENTE_FASE_2_: Overnight 22h BRT - 7h BRT (DXY · USDJPY · futuros US · gold) · Pre-market WIN/WDO ~7h (gap abertura) · Re-check agenda · Filtro Anti-Narrativa atualizado com fonte MANHÃ"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "narrativa_dominante": "Mercados globais estáveis aguardam dados US (Empire State · IP · Michigan) com otimismo moderado após Retail Sales 14/05 · WIN recuperou tecnicamente (+0,77%) · pre-market tranquilo · sexta tende lateral até eventos.",
+      "fonte_observada": "Padrão consensual típico pré-abertura sexta com agenda US · overnight sem surpresas",
+      "descricao": "ALERTA · narrativa ignora o DRIVER DOMÉSTICO (PMS BR 09:00 ★★★). Consenso foca em Empire State 09:30 e Michigan 11:00 (ambos importados · secundários), mas PMS BR (setor serviços Mar) é o catalisador primário para DI/WIN/WDO. PMS forte >0,3% = inflação serviços aquecida = BC mantém Selic alta por mais tempo = DI sobe = headwind WIN (ações menos atraentes). PMS fraco <-0,2% = desaceleração doméstica = espaço para cortes Selic = DI cai = bullish WIN. Narrativa de 'estabilidade global' é cosmética · DXY 99,21 (+0,28% overnight) e futuros US laterais (<0,5%) são ruído · driver é DOMÉSTICO.",
+      "frases_consensuais_alertadas": [
+        "'Mercados aguardam dados US' — ignora PMS BR 09:00 que mexe DI direto · Empire State é secundário",
+        "'WIN recuperou tecnicamente' — adjetivo otimista sem mencionar DI bear shift adverso (+50bps ontem)",
+        "'Pre-market tranquilo' — tranquilo ≠ sem risco · PMS BR pode virar mesa em 60 segundos",
+        "'Sexta tende lateral' — viés preguiçoso · PMS BR é catalisador binário (forte = bear · fraco = bull)",
+        "'Overnight sem surpresas' — cosmético · DXY +0,28% e Oil +3,08% são movimentos notáveis mas secundários ao PMS"
+      ],
+      "leitura_bertani": "Operar com cautela DOBRADA pré-PMS 09:00 · NÃO comprar narrativa de 'lateralização sexta' · driver é doméstico e binário. Score CAP pré-evento: agressivo 3,5 · moderado 2,5 · conservador 1,5. Principal risco: PMS forte (>0,3%) reativa bear shift DI · WIN perde PDL 179.055 · correlação inversa com WDO volta (WDO rompe 5.051). Segundo risco: vencimento opções semanal 17:45 distorce tarde (liquidez cai 15:30) · NÃO operar pós-17:00.",
+      "contra_evidencias_a_monitorar": [
+        "PMS BR >0,5% → inflação serviços acelerando · DI bear shift continua · headwind WIN",
+        "PMS BR <-0,3% → desaceleração forte · espaço Selic cair · DI cai · bullish WIN",
+        "DI F29 rompe 14,200% → bear shift continua · narrativa 'estabilização' falha",
+        "WIN rompe PDH 181.550 → bullish estrutural · mudança regime pós-suporte 178.790",
+        "WDO rompe PDL 4.992,5 → risk-off retorna · correlação inversa reativa"
+      ]
+    },
+    "nivel": "_PENDENTE_FASE_2_OVERNIGHT_"
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 2.5,
+      "vies": "_PENDENTE_PMS_BR_",
+      "veredito": "AGUARDAR PMS 09:00",
+      "fase_wyckoff": "Recuperação técnica HTF (D) · +0,77% no dia (+1.390pts) após testar suporte 178.790 em 13/05 · ajuste 180.456 no MEIO da range D-1 (179.055-181.550 · EQ 180.302) = equilibrium zone · macro DI adverso (D-1 bear shift +50bps) · aguardando PMS BR 09:00 definir bias doméstico",
+      "racional_publico": "WIN ajuste B3 oficial 180.456 (alta de +0,77% · +1.390pts no dia · OHLC 179.055/181.550/179.055/180.456). Recuperação técnica após testar suporte 178.790 em 13/05 (defesa frágil 10pts). Está no MEIO da range D-1 2.495pts (EQ 180.302 · buffer +154pts acima EQ) = equilibrium zone. PDH 181.550 é resistência · PDL 179.055 é suporte defendido. Curva DI _PENDENTE_FASE_2_PRINTS_. WDO correlação DESACOPLADA ontem (+0,01% lateral enquanto WIN +0,77%) = digestão pós-Retail Sales US 14/05 (não risk-off · não inversa clássica). PMS BR 09:00 é catalisador DOMÉSTICO: PMS FORTE >0,3% = inflação serviços = DI sobe = headwind WIN. PMS FRACO <-0,2% = desaceleração = espaço Selic cair = DI cai = bullish WIN. Score 2,5/10 CAP PRÉ-PMS (DI D-1 adverso -1,5pts · equilibrium zone +0,5pt · PDH resistência próxima +0,5pt · PMS driver doméstico +1,5pts · sexta vencimento opções -0,5pt · cautela estrutural +2pts). Veredito: AGUARDAR PMS BR 09:00 confirmar direção · CAP score até evento (agressivo 3,5 · moderado 2,5 · conservador 1,5).",
+      "niveis_chave": {
+        "ajuste_b3": 180456,
+        "abertura": 179055,
+        "maxima": 181550,
+        "minima": 179055,
+        "pdh": 181550,
+        "pdl": 179055,
+        "eq_d1": 180302,
+        "swing_high": 181550,
+        "swing_low": 178790,
+        "weekly_high": 181550,
+        "weekly_low": 178790,
+        "pwh": 181550,
+        "pwl": 179055,
+        "suporte_psicologico": 180000,
+        "target_bullish_1": 181550,
+        "target_bullish_2": 182500,
+        "target_bearish_1": 179055,
+        "target_bearish_2": 178790
+      },
+      "ajuste_b3_meta": {
+        "valor": 180456,
+        "data_referencia": "2026-05-14",
+        "fonte": "B3 oficial · settlement EOD 14/05/2026 (data_get_b3_settlement TradingView Daily close)",
+        "nota_validacao": "Ajuste 180.456 dentro faixa típica 178k-200k · recuperação +0,77% no dia (+1.390pts) · no meio range D-1"
+      },
+      "plano": {
+        "direcao": "AGUARDAR PMS BR 09:00",
+        "entry_zona": "_PENDENTE_FASE_2_POS_PMS_",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "TABELA CENÁRIO PRELIMINAR PMS 09:00 | PMS MoM | Ação WIN | |---|---| | **FORTE** >0,3% | ⚠️ Inflação serviços aquecido · DI sobe · headwind WIN · aguardar defesa PDL 179.055 | | **FRACO** <-0,2% | ✅ Desaceleração · espaço Selic cair · DI cai · bullish WIN · buscar PDH 181.550 | | **INLINE** -0,2% a 0,3% | ⏸️ Lateral · aguardar Empire 09:30 + IP 10:15 pra segunda leitura | DRIVER: PMS BR é DOMÉSTICO (peso > Empire State importado). _PENDENTE_FASE_2_: Setups completos pós-PMS com entries/stops/TPs.",
+        "kill_zone": "EVITAR 08:55-09:35 (PMS BR 09:00 driver doméstico + leilão abertura 09:00-09:25) · OPERAR 10:30-12:00 (digestão pós-PMS + Empire + IP) · 13:30-17:00 (NY Open até pré-vencimento) · EVITAR 17:00-17:55 (vencimento opções semanal B3 · liquidez cai cedo)"
+      },
+      "comentario_breve": "Score 2,5/10 CAP PRÉ-PMS · AGUARDAR 09:00 PMS BR driver doméstico · ajuste 180.456 equilibrium zone D-1 · PDH 181.550 resistência · sexta vencimento opções"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 2,
+      "vies": "lateral",
+      "veredito": "AGUARDAR PMS 09:00",
+      "fase_wyckoff": "Lateral HTF (D) · +0,01% no dia (lateral absoluto) · ajuste 5.009,58 ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts) · range estreita 4.992,5-5.051 (58,5pts) · aguardando PMS BR 09:00",
+      "racional_publico": "WDO ajuste B3 oficial 5.009,58 (alta de +0,01% · +0,698pts no dia · OHLC 5.026/5.051/4.992,5/5.009,58). Lateral absoluto ontem (enquanto WIN +0,77%) = correlação DESACOPLADA (digestão pós-Retail US 14/05). Está ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts). PDH 5.051 é resistência · PDL 4.992,5 é suporte · weekly low 4.910 suporte real. Reage 30-60s ANTES de WIN (mais líquido). PMS BR 09:00 define direção: PMS FORTE >0,3% = DI sobe = risk-off = WDO sobe. PMS FRACO <-0,2% = DI cai = risk-on = WDO cai. Score 2,0/10 CAP PRÉ-PMS (range estreita D-1 +0,5pt · discount zone +0,5pt · PMS driver doméstico +1pt · sexta vencimento -0,5pt · cautela estrutural +0,5pt). Veredito: AGUARDAR PMS 09:00 — operar WDO primeiro (delay 30-60s antes WIN).",
+      "niveis_chave": {
+        "ajuste_b3": 5009.583,
+        "abertura": 5026,
+        "maxima": 5051,
+        "minima": 4992.5,
+        "pdh": 5051,
+        "pdl": 4992.5,
+        "eq_d1": 5021.75,
+        "swing_high": 5051,
+        "swing_low": 4910,
+        "weekly_high": 5051,
+        "weekly_low": 4910,
+        "pwh": 5051,
+        "pwl": 4992.5,
+        "breakdown": 4990
+      },
+      "ajuste_b3_meta": {
+        "valor": 5009.583,
+        "data_referencia": "2026-05-14",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-14)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR PMS BR 09:00",
+        "entry_zona": "_PENDENTE_FASE_2_POS_PMS_",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "CENÁRIO PRELIMINAR PMS: PMS FORTE >0,3% = risk-off = WDO rompe PDH 5.051 · PMS FRACO <-0,2% = risk-on = WDO cai PDL 4.992,5. _PENDENTE_FASE_2_: Setups completos pós-PMS. REGRA: WDO reage 30-60s ANTES de WIN.",
+        "kill_zone": "EVITAR 08:55-09:35 (PMS BR 09:00 driver + leilão) · OPERAR 10:30-12:00 (digestão) · 13:30-17:00 (NY Open) · EVITAR 17:00-17:55 (vencimento opções)"
+      },
+      "comentario_breve": "Score 2,0/10 CAP PRÉ-PMS · AGUARDAR 09:00 PMS BR · ajuste 5.009,58 discount zone D-1 · lateral absoluto ontem · sexta vencimento"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "05:00",
+      "evento": "🇪🇺 BCE Monthly Report",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "bce_monthly_report",
+      "nota": "★★ · impacto madrugada · mexe EUR/USD · indireto WIN/WDO · fonte: Investing.com confirmado 14/05 noite"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 PMS (Pesquisa Mensal de Serviços) Mar · Mensal + Anual ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": "08:55-09:35",
+      "tag": "pms_br_mar",
+      "nota": "★★★ · prior 0,1% MoM / 0,5% YoY · DRIVER DOMÉSTICO PRIMÁRIO (não importado) · se forte >0,3% = inflação serviços = DI sobe = headwind WIN · se fraco <-0,2% = desaceleração = espaço Selic cair = DI cai = bullish WIN · fonte: Investing.com confirmado 14/05 noite"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "tag": "leilao_abertura_b3",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Empire State Manufacturing · NY Fed · Mai ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "empire_state",
+      "nota": "★★ · mediana 7,30 vs prior 11,00 (leve desaceleração manufatura) · indicador antecedente · mid-month · pode mover Treasuries · SECUNDÁRIO ao PMS BR · fonte: Investing.com confirmado 14/05 noite"
+    },
+    {
+      "hora_brt": "10:15",
+      "evento": "🇺🇸 Industrial Production · EUA · Abr · Mensal + Anual ★★",
+      "impacto": "MEDIO",
+      "janela_evitar": null,
+      "tag": "industrial_production_us",
+      "nota": "★★ · mediana 0,3% MoM vs prior -0,5% (recuperação técnica IP) · YoY prior 0,74% · fonte: Investing.com confirmado 14/05 noite"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇺🇸 University of Michigan Consumer Sentiment · preliminar · Mai ★★★",
+      "impacto": "ALTO",
+      "janela_evitar": null,
+      "tag": "michigan_sentiment_prelim",
+      "nota": "★★★ · prelim mid-month · sentiment do consumidor · pós-CPI hawkish pode mostrar deterioração · TARDIO (após PMS+Empire+IP) pra primeira kill zone"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇺🇸 Baker Hughes Rig Count · semanal",
+      "impacto": "BAIXO",
+      "janela_evitar": null,
+      "tag": "baker_hughes_rigs",
+      "nota": "Recorrente toda sexta · contagem de rigs petróleo · pouco impacto WIN/WDO direto · fonte: Investing.com confirmado 14/05 noite"
+    },
+    {
+      "hora_brt": "17:00-17:55",
+      "evento": "⛔ VENCIMENTO OPÇÕES SEMANAL B3 + Leilão fechamento",
+      "impacto": "ALTO",
+      "janela_evitar": "17:00-17:55",
+      "tag": "vencimento_opcoes_semanal_b3",
+      "nota": "★★★ · sexta tem vencimento opções semanal · distorce 15:30-17:55 · liquidez cai cedo · NÃO operar tarde de sexta"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão de fechamento B3",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "tag": "leilao_fechamento_b3",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "EVITAR 08:55-09:35",
+      "contexto": "PMS BR 09:00 ★★★ (driver doméstico primário · inflação serviços) + Leilão B3 09:00-09:25 · volatilidade macro extrema"
+    },
+    {
+      "janela": "10:30-12:00",
+      "contexto": "Digestão pós-PMS · pós-Empire 09:30 · pós-IP 10:15 · setup limpo se WIN defender PDL 179.055 OU romper PDH 181.550 · Michigan 11:00 pode dar segunda leitura"
+    },
+    {
+      "janela": "13:30-17:00 (NY Open)",
+      "contexto": "Momentum US se setup ativou manhã · continuação tendência · SAIR antes 17:00 (vencimento opções semanal distorce tarde)"
+    },
+    {
+      "janela": "EVITAR 17:00-17:55",
+      "contexto": "Vencimento opções semanal B3 · liquidez cai cedo (15:30 onwards) · leilão fechamento 17:45-17:55 · sexta encerramento"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "NÃO operar ANTES do PMS BR 09:00 definir direção · driver DOMÉSTICO primário"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Bullish SE PMS fraco (≤-0,2%) + WIN romper PDH 181.550 · aguardar WDO confirmar primeiro (delay 30-60s)"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Bearish SE PMS forte (≥0,3%) + WIN perder PDL 179.055 após WDO romper PDH 5.051 · gestão defensiva"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Score 2,5/10 CAP PRÉ-PMS = setup mediano · operar só com gatilho explícito PMS BR · zero FOMO"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "WDO ajuste 5.009,58 (+0,01% ontem) ABAIXO do EQ D-1 5.021,75 = discount zone · suporte real 4.910 (weekly low)"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "PMS BR é DRIVER PRIMÁRIO (não Empire State) · PMS forte = DI sobe = WDO sobe · PMS fraco = DI cai = WDO cai"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Score 2,0/10 CAP PRÉ-PMS = lateral sem convicção · operar só após PMS confirmar · não antecipar"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Curva DI D-1: bear shift forte F27 14,210% (+16bps) · F29 14,050% (+52bps) · F31 14,110% (+50bps) = BEARISH estrutural WIN · _PENDENTE_FASE_2_ atualização 15/05"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "EVITAR 08:55-09:35 (PMS BR driver doméstico) · EVITAR 17:00-17:55 (vencimento opções semanal B3 · sexta)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Score CAP pré-PMS 09:00: agressivo 3,5 · moderado 2,5 · conservador 1,5 · NÃO operar antes evento"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⛔ SEXTA VENCIMENTO OPÇÕES: liquidez cai cedo (15:30) · distorce tarde · NÃO operar pós-17:00"
+    }
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.3",
+    "fase": "FASE 2 MANHÃ COMPLETA",
+    "fase_1_gerado_em": "2026-05-14T22:45:00-03:00",
+    "fase_2_revisado_em": "2026-05-15T07:30:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5)",
+    "gap_overnight_pct": 0.0,
+    "fase_1_invalidada": false,
+    "notas": [
+      "FASE 1 NOITE · dados de mercado FECHADO 14/05 EOD · WIN 180.456 (+0,77%) · WDO 5.009,58 (+0,01%)",
+      "WIN no MEIO range D-1 (179.055-181.550 · EQ 180.302) = equilibrium zone",
+      "WDO ABAIXO EQ D-1 (5.021,75 · discount zone -12,17pts)",
+      "Correlação DESACOPLADA 14/05 (WIN +0,77% · WDO +0,01%) = digestão pós-Retail US",
+      "Curva DI D-1 bear shift forte (+16/+52/+50bps) · atualização 15/05 pendente prints manuais",
+      "Agenda macro confirmada via Investing.com 14/05 noite · PMS BR 09:00 driver doméstico primário",
+      "Score CAP pré-PMS: agressivo 3,5 · moderado 2,5 · conservador 1,5 · NÃO operar antes evento",
+      "Sexta vencimento opções semanal B3 17:45 · liquidez cai 15:30 · NÃO operar tarde",
+      "Globais overnight (DXY/USDJPY/US500/NAS100/XAUUSD/USOIL) pendente FASE 2 MANHÃ ~7h",
+      "Pipeline FASE 1: check_macro → ajustes B3 → ICT/SMC v2 → Wyckoff HTF → bias preliminar → salvar preliminar",
+      "Pipeline FASE 2: overnight → gap → DI prints → filtro anti-narrativa → manchete final → atualizar JSON",
+      "FASE 2 MANHÃ: overnight globals coletados (DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71) · gap WIN/WDO = 0% (pre-market sem dados) · filtro anti-narrativa ativado (narrativa consensual ignora PMS BR doméstico) · manchete final incorpora overnight"
+    ],
+    "correcoes_pos_publish": []
+  }
+}
