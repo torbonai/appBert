@@ -8,12 +8,12 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "PMS BR 09:00 DRIVER DOMÉSTICO · WIN 180.456 EQUILIBRIUM (+0,77%) · WDO 5.010 LATERAL · DXY 99,21 · SEXTA VENCIMENTO OPÇÕES",
-    "subtitulo": "Sexta 15/05 traz PMS BR 09:00 ★★★ (DRIVER DOMÉSTICO · setor serviços Mar · prior 0,1% MoM) + Empire State 09:30 ★★ + Produção Industrial US 10:15 ★★ + Michigan Sentiment 11:00 ★★★. PMS BR é o DRIVER PRIMÁRIO (macro doméstico · se forte >0,3% = inflação serviços = DI sobe = headwind WIN). Ajustes B3 oficiais 14/05: WIN 180.456 (+0,77% · recuperação de 1.390pts) · WDO 5.009,58 (+0,01% · lateral). WIN 180.456 operando no MEIO da range D-1 (179.055-181.550 · EQ 180.302) = equilibrium. WDO 5.009,58 abaixo do EQ D-1 5.021,75 = discount zone. Curva DI _PENDENTE_FASE_2_PRINTS_DI_. BIAS PRELIMINAR: _aguardando_PMS_BR_ / cautela ALTA pré-evento doméstico. EVITAR 08:55-09:35 (PMS+leilão). Score CAP pré-09:00: agressivo 3,5 · moderado 2,5 · conservador 1,5."
+    "manchete": "🚨 UPDATE 9h15 · PMS −1,2% MAS DI SOBE · WIN PERDE SUPORTE 178.790 · BREAKDOWN BEARISH CONFIRMADO · OPERAR SHORT NO RETEST 179.500-180.000",
+    "subtitulo": "UPDATE PÓS-PMS 9h15 BRT: PMS BR Mar saiu −1,2% MoM (vs mediana −0,1% · 12× pior). Mercado IGNOROU PMS fraco e DI subiu mesmo assim = pricing fiscal/inflação + Brent +3% supply shock + Vorcaro/Flávio domestico fiscal. WIN 178.245 (−1,33%) JÁ ABAIXO do suporte crítico 178.790 = BREAKDOWN CONFIRMADO. Externo: NY −1% · Europa −1% · Brent $108. SETUP A: short retest 179.500-180.000 (PDL D-1 vira resistência) · SL acima 180.302 (EQ D-1) · TP1 178.790 · TP2 178.000 · TP3 177.500 (R/R 1:2-1:4). NÃO chase abaixo 178.000 (risco repique técnico). Score CAP recalibrado: WIN 1,5/1,0/0,5 · WDO 2,5/2,0/1,5. ⛔ vencimento opções 17:45 (liquidez some 15:30)."
   },
   "resumo_30s": {
-    "win_linha": "WIN1! · score preliminar 2,5/10 CAP PRÉ-PMS · veredito AGUARDAR PMS 09:00 · viés PENDENTE (ajuste 180.456 com +0,77% · recuperação de 1.390pts · no MEIO range D-1 179.055-181.550)",
-    "wdo_linha": "WDO1! · score preliminar 2,0/10 CAP PRÉ-PMS · veredito AGUARDAR PMS 09:00 · viés lateral (ajuste 5.009,58 com +0,01% · discount zone abaixo EQ 5.021,75)",
+    "win_linha": "WIN1! · score 1,5/10 · veredito SHORT NO RETEST · viés BEARISH CONFIRMADO (178.245 às 9h10 · BREAKDOWN do suporte 178.790 · PDL D-1 179.055 vira resistência · setup A: short 179.500-180.000 · SL 180.302 · TP1 178.790 · TP2 178.000)",
+    "wdo_linha": "WDO1! · score 2,5/10 · veredito AGUARDAR primeiros 30min · viés lateral/alta intraday (real pressionado pelo risk-off + Brent +3% apesar PMS fraco · discount zone D-1 5.009,58 abaixo EQ 5.021,75 segue ativa)",
     "janela_operacional": "EVITAR 08:55-09:35 (PMS BR driver doméstico) · OPERAR 10:30-12:00 (digestão pós-PMS) · 13:30-17:00 (NY Open) · EVITAR 17:00-17:55 (vencimento opções semanal + leilão)",
     "nivel_chave": "WIN 181.550 (PDH · resistência) · 179.055 (PDL · suporte) · 180.302 (EQ D-1) · WDO 5.051 (PDH · resistência) · 4.992,5 (PDL · suporte) · 4.910 (weekly low)",
     "agenda_top1": "PMS BR 09:00 ★★★ (driver doméstico) · Empire State 09:30 ★★ · Produção Industrial US 10:15 ★★ · Michigan Sentiment 11:00 ★★★ · ⛔ Vencimento opções semanal 17:45"
@@ -21,6 +21,7 @@
   "contexto_macro": {
     "nivel_vento": "MORNO",
     "highlights": [
+      "🚨 UPDATE 9h15 BRT · BREAKDOWN BEARISH CONFIRMADO · WIN 178.245 (−1,33%) ABAIXO suporte crítico 178.790 · PMS BR Mar saiu −1,2% MoM (vs mediana −0,1% · 12× pior) MAS DI futuros SUBINDO mesmo assim = mercado precifica fiscal/inflação + Brent +3% supply shock + Vorcaro/Flávio doméstico > Selic. Narrativa Falcão de 'alívio Trump-Xi' caiu por terra · drivers reais: Brent $108 · Vale peers globais −5% · NY/Europa −1% · USDBRL pressionado",
       "📌 Briefing #14 · referência B3 oficial sessão 14/05 (ajustes confirmados via settlement EOD) · pré-abertura 15/05 SEXTA com PMS BR 09:00 ★★★ driver doméstico · overnight globals: DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71",
       "💵 Curva DI (13→14/05): bear shift forte F27 14,210% (+16bps vs 14,051%) · F29 14,050% (+52bps vs 13,526% · maior movimento) · F31 14,110% (+50bps vs 13,606%) = bear shift com corcunda no médio = BEARISH estrutural WIN (juros subindo forte = ações menos atraentes · pressão fiscal precificada)",
       "📊 WIN 180.456 (ajuste B3 oficial 14/05) · +0,77% no dia (+1.390pts · recuperação técnica pós-teste suporte 13/05) · OHLC 179.055/181.550/179.055/180.456 · NO MEIO da range D-1 2.495pts (EQ 180.302 · buffer +154pts) = equilibrium zone · PDH 181.550 resistência · PDL 179.055 suporte defendido",
@@ -61,11 +62,11 @@
     {
       "codigo": "WIN1!",
       "nome": "Mini Índice",
-      "score": 2.5,
-      "vies": "_PENDENTE_PMS_BR_",
-      "veredito": "AGUARDAR PMS 09:00",
-      "fase_wyckoff": "Recuperação técnica HTF (D) · +0,77% no dia (+1.390pts) após testar suporte 178.790 em 13/05 · ajuste 180.456 no MEIO da range D-1 (179.055-181.550 · EQ 180.302) = equilibrium zone · macro DI adverso (D-1 bear shift +50bps) · aguardando PMS BR 09:00 definir bias doméstico",
-      "racional_publico": "WIN ajuste B3 oficial 180.456 (alta de +0,77% · +1.390pts no dia · OHLC 179.055/181.550/179.055/180.456). Recuperação técnica após testar suporte 178.790 em 13/05 (defesa frágil 10pts). Está no MEIO da range D-1 2.495pts (EQ 180.302 · buffer +154pts acima EQ) = equilibrium zone. PDH 181.550 é resistência · PDL 179.055 é suporte defendido. Curva DI _PENDENTE_FASE_2_PRINTS_. WDO correlação DESACOPLADA ontem (+0,01% lateral enquanto WIN +0,77%) = digestão pós-Retail Sales US 14/05 (não risk-off · não inversa clássica). PMS BR 09:00 é catalisador DOMÉSTICO: PMS FORTE >0,3% = inflação serviços = DI sobe = headwind WIN. PMS FRACO <-0,2% = desaceleração = espaço Selic cair = DI cai = bullish WIN. Score 2,5/10 CAP PRÉ-PMS (DI D-1 adverso -1,5pts · equilibrium zone +0,5pt · PDH resistência próxima +0,5pt · PMS driver doméstico +1,5pts · sexta vencimento opções -0,5pt · cautela estrutural +2pts). Veredito: AGUARDAR PMS BR 09:00 confirmar direção · CAP score até evento (agressivo 3,5 · moderado 2,5 · conservador 1,5).",
+      "score": 1.5,
+      "vies": "bearish confirmado / breakdown técnico",
+      "veredito": "SHORT NO RETEST 179.500-180.000",
+      "fase_wyckoff": "BREAKDOWN técnico confirmado 9h10 BRT · WIN 178.245 perdeu PDL D-1 179.055 E o suporte crítico 178.790 (testado 3 vezes em 3 dias · 11/05, 13/05, 15/05 = falha estrutural). Tese: distribuição confirmada no D · próxima zona de demanda 178.000 / 177.500. DI subindo apesar PMS fraco = pricing fiscal/inflação ignora desaceleração doméstica.",
+      "racional_publico": "UPDATE PÓS-PMS · 9h15 BRT · BREAKDOWN BEARISH CONFIRMADO. WIN futuro 178.245 (−1,33%) ABAIXO do suporte crítico 178.790. PMS BR Março: −1,2% MoM (vs mediana −0,1% · 12× pior) mas DI futuros SUBINDO mesmo assim = mercado preça fiscal/inflação > Selic. Drivers reais do dia: (1) Brent +2,5-3,44% ($108-$104 WTI · supply shock pós-falha negociação EUA-Irã) · (2) Vale peers globais −5% médio (Anglo −6%, Antofagasta −7,6%) · (3) Risk-off externo (NY −1%, Europa −1%) · (4) Vorcaro/Flávio fiscal segue aberto · (5) Datafolha pode reabrir prêmio à tarde. Narrativa Falcão de 'alívio Trump-Xi' caiu por terra em <30 min de pregão. SETUP A (preferido): short no retest 179.500-180.000 (PDL D-1 vira resistência) · SL acima 180.302 (EQ D-1) · TP1 178.790 (sup quebrado vira target) · TP2 178.000 (psicológico) · TP3 177.500 · R/R 1:2 a 1:4. SETUP B (continuação): short break 178.000 com SL 178.450 TP 177.500 (R/R 1:1 · limitado). ❌ NÃO CHASE abaixo 178.000 (caiu 1,33% · risco repique técnico) · ❌ NÃO comprar contra-trend (peers Vale ainda −5%). Score 1,5/10 (DI sobe mesmo com PMS fraco −1,0 · breakdown técnico −1,0 · Vale peers −5% global −0,5 · Brent supply shock −0,5 · risk-off externo −0,5 · vencimento opções tarde −0,5 · setup short R/R favorável +1,0 · suporte 178.000 psicológico +0,5 · digestão pós-evento +1,5).",
       "niveis_chave": {
         "ajuste_b3": 180456,
         "abertura": 179055,
@@ -93,31 +94,31 @@
         "nota_validacao": "Ajuste 180.456 dentro faixa típica 178k-200k · recuperação +0,77% no dia (+1.390pts) · no meio range D-1"
       },
       "plano": {
-        "direcao": "AGUARDAR PMS BR 09:00",
-        "entry_zona": "_PENDENTE_FASE_2_POS_PMS_",
-        "stop": null,
-        "stop_pts": null,
-        "tp1": null,
-        "tp1_rr": null,
-        "tp1_partial_pct": null,
-        "tp2": null,
-        "tp2_rr": null,
-        "tp2_partial_pct": null,
-        "tp3": null,
-        "tp3_rr": null,
-        "tp3_partial_pct": null,
-        "contratos_banca_30k_risco_1pct": null,
-        "setup": "TABELA CENÁRIO PRELIMINAR PMS 09:00 | PMS MoM | Ação WIN | |---|---| | **FORTE** >0,3% | ⚠️ Inflação serviços aquecido · DI sobe · headwind WIN · aguardar defesa PDL 179.055 | | **FRACO** <-0,2% | ✅ Desaceleração · espaço Selic cair · DI cai · bullish WIN · buscar PDH 181.550 | | **INLINE** -0,2% a 0,3% | ⏸️ Lateral · aguardar Empire 09:30 + IP 10:15 pra segunda leitura | DRIVER: PMS BR é DOMÉSTICO (peso > Empire State importado). _PENDENTE_FASE_2_: Setups completos pós-PMS com entries/stops/TPs.",
-        "kill_zone": "EVITAR 08:55-09:35 (PMS BR 09:00 driver doméstico + leilão abertura 09:00-09:25) · OPERAR 10:30-12:00 (digestão pós-PMS + Empire + IP) · 13:30-17:00 (NY Open até pré-vencimento) · EVITAR 17:00-17:55 (vencimento opções semanal B3 · liquidez cai cedo)"
+        "direcao": "SHORT NO RETEST · BREAKDOWN CONFIRMADO",
+        "entry_zona": "179.500-180.000 (PDL D-1 vira resistência · zona de oferta)",
+        "stop": 180302,
+        "stop_pts": "500-800 (acima EQ D-1)",
+        "tp1": 178790,
+        "tp1_rr": "1:1,4 (suporte quebrado vira target)",
+        "tp1_partial_pct": 50,
+        "tp2": 178000,
+        "tp2_rr": "1:2,5 (psicológico)",
+        "tp2_partial_pct": 25,
+        "tp3": 177500,
+        "tp3_rr": "1:4 (extensão técnica)",
+        "tp3_partial_pct": 25,
+        "contratos_banca_30k_risco_1pct": "1-2 contratos (R$300 risco / 500-800pts SL)",
+        "setup": "🚨 BREAKDOWN BEARISH CONFIRMADO 9h10 BRT · WIN 178.245 abaixo de 178.790 (suporte crítico). SETUP A (preferido): SHORT no retest 179.500-180.000 · SL acima 180.302 · TP1 178.790 (50%) · TP2 178.000 (25%) · TP3 177.500 (25%) · R/R 1:2 a 1:4. SETUP B (continuação · limitado): short break 178.000 · SL 178.450 · TP 177.500 (R/R 1:1). ❌ NÃO chase abaixo 178.000 (risco repique). ❌ NÃO comprar contra-trend (peers Vale globais −5%). Disparadores invalidação: retomada acima 180.302 (EQ D-1) anula tese curta.",
+        "kill_zone": "OPERAR 10:30-12:00 (digestão pós-PMS + Empire + IP) · 13:30-17:00 (NY Power Hour · momentum US tarde · SAIR antes 17:00) · EVITAR 17:00-17:55 (vencimento opções semanal B3 · liquidez some 15:30)"
       },
-      "comentario_breve": "Score 2,5/10 CAP PRÉ-PMS · AGUARDAR 09:00 PMS BR driver doméstico · ajuste 180.456 equilibrium zone D-1 · PDH 181.550 resistência · sexta vencimento opções"
+      "comentario_breve": "Score 1,5/10 · BREAKDOWN bearish confirmado 9h10 · WIN 178.245 perdeu 178.790 · SHORT no retest 179.500-180.000 · TP 178.000-177.500 · R/R 1:2-1:4"
     },
     {
       "codigo": "WDO1!",
       "nome": "Mini Dólar",
-      "score": 2,
-      "vies": "lateral",
-      "veredito": "AGUARDAR PMS 09:00",
+      "score": 2.5,
+      "vies": "lateral / viés alta intraday",
+      "veredito": "AGUARDAR primeiros 30min · setup pós digestão",
       "fase_wyckoff": "Lateral HTF (D) · +0,01% no dia (lateral absoluto) · ajuste 5.009,58 ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts) · range estreita 4.992,5-5.051 (58,5pts) · aguardando PMS BR 09:00",
       "racional_publico": "WDO ajuste B3 oficial 5.009,58 (alta de +0,01% · +0,698pts no dia · OHLC 5.026/5.051/4.992,5/5.009,58). Lateral absoluto ontem (enquanto WIN +0,77%) = correlação DESACOPLADA (digestão pós-Retail US 14/05). Está ABAIXO do EQ D-1 5.021,75 (discount zone · buffer -12,17pts). PDH 5.051 é resistência · PDL 4.992,5 é suporte · weekly low 4.910 suporte real. Reage 30-60s ANTES de WIN (mais líquido). PMS BR 09:00 define direção: PMS FORTE >0,3% = DI sobe = risk-off = WDO sobe. PMS FRACO <-0,2% = DI cai = risk-on = WDO cai. Score 2,0/10 CAP PRÉ-PMS (range estreita D-1 +0,5pt · discount zone +0,5pt · PMS driver doméstico +1pt · sexta vencimento -0,5pt · cautela estrutural +0,5pt). Veredito: AGUARDAR PMS 09:00 — operar WDO primeiro (delay 30-60s antes WIN).",
       "niveis_chave": {
@@ -308,7 +309,7 @@
   },
   "_meta": {
     "versao_schema": "1.3",
-    "fase": "FASE 2 MANHÃ COMPLETA",
+    "fase": "FASE 2 MANHÃ + UPDATE PÓS-PMS V1.1 (9h15 BRT)",
     "fase_1_gerado_em": "2026-05-14T22:45:00-03:00",
     "fase_2_revisado_em": "2026-05-15T07:30:00-03:00",
     "gerado_por": "Claude Code (Sonnet 4.5)",
@@ -326,7 +327,9 @@
       "Globais overnight (DXY/USDJPY/US500/NAS100/XAUUSD/USOIL) pendente FASE 2 MANHÃ ~7h",
       "Pipeline FASE 1: check_macro → ajustes B3 → ICT/SMC v2 → Wyckoff HTF → bias preliminar → salvar preliminar",
       "Pipeline FASE 2: overnight → gap → DI prints → filtro anti-narrativa → manchete final → atualizar JSON",
-      "FASE 2 MANHÃ: overnight globals coletados (DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71) · gap WIN/WDO = 0% (pre-market sem dados) · filtro anti-narrativa ativado (narrativa consensual ignora PMS BR doméstico) · manchete final incorpora overnight"
+      "FASE 2 MANHÃ: overnight globals coletados (DXY 99,21 · USDJPY 158,49 · US500 7.428 · NAS100 29.146 · Gold 4.546 · Oil 100,71) · gap WIN/WDO = 0% (pre-market sem dados) · filtro anti-narrativa ativado (narrativa consensual ignora PMS BR doméstico) · manchete final incorpora overnight",
+      "🚨 UPDATE V1.1 · 15/05/2026 9h15 BRT · PÓS-PMS: PMS BR Mar −1,2% MoM (vs mediana −0,1% · 12× pior) MAS DI futuros SUBINDO mesmo assim = mercado preça fiscal/inflação > Selic · WIN futuro 178.245 (−1,33%) BREAKDOWN do suporte crítico 178.790 confirmado · setup A short retest 179.500-180.000 · SL 180.302 · TP1 178.790 · TP2 178.000 · TP3 177.500 (R/R 1:2-1:4) · score WIN recalibrado 2,5→1,5 · viés bearish CONFIRMADO · Narrativa Falcão 'alívio Trump-Xi' caiu por terra · drivers reais: Brent +3% supply shock + Vale peers globais −5% + Vorcaro/Flávio fiscal + risk-off externo NY −1% Europa −1%",
+      "LIÇÃO 58 candidata · briefing #14 V1 ficou desatualizado em <30 min pós-PMS · justificou hot patch V1.1 · próximo briefing #15 precisa: (a) snapshot global automático 6h45 BRT · (b) viés bearish default quando peers Vale médio < −3% overnight · (c) DI bps via Falcão release CETIP (não TV PNG header)"
     ],
     "correcoes_pos_publish": []
   }
