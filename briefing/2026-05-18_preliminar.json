@@ -1,0 +1,321 @@
+{
+  "data": "2026-05-18",
+  "data_extenso": "Segunda-feira, 18 de maio de 2026",
+  "hora_publicacao": "PRELIMINAR_FASE1_NOTURNA",
+  "edicao": 15,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL",
+    "subtitulo": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL"
+  },
+  "resumo_30s": {
+    "win_linha": "WIN1! · score 3,5/10 preliminar · veredito AGUARDAR · viés bearish leve / cautela alta (DI bear steepen adverso +64bps ponta longa · suporte 177.235 testou sexta · ajuste 179.050)",
+    "wdo_linha": "WDO1! · score 4,5/10 preliminar · veredito AGUARDAR · viés lateral (ajuste 5.087,516 próximo PDH 5.101,00 · suporte semanal 4.910)",
+    "janela_operacional": "EVITAR 08:55-09:25 (IBC-Br 09:00 + leilão B3) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open) · EVITAR 17:45-17:55 (leilão fechamento)",
+    "nivel_chave": "WIN 177.235 (suporte testou sexta) · 179.385 (PDH) · WDO 5.101,00 (PDH/resistência) · 4.910 (suporte semanal)",
+    "agenda_top1": "IBC-Br Mar 09:00 ★★★ (driver doméstico) · Focus 08:25 ★★ · IGP-10 08:00 ★★"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_OVERNIGHT",
+    "highlights": [
+      "📌 Briefing #15 FASE 1 NOTURNA (domingo 17/05 20h BRT) · referência B3 EOD sexta 15/05 · dados overnight global e release Falcão CETIP segunda 7h11 _PENDENTE_FASE2_",
+      "💵 Curva DI EOD 15/05 (sexta): F27 14,235% (+18,4 bps vs 14,051% D-1) · F29 14,165% (+63,9 bps vs 13,526% · MAIOR MOVIMENTO) · F31 14,250% (+64,4 bps vs 13,606%) = **BEAR STEEPEN com corcunda no médio** = BEARISH estrutural WIN (mercado precifica adiamento ciclo cortes Selic + risco fiscal/inflacionário estrutural) · fonte: prints TV pasta canônica · VALIDAR Falcão segunda 7h11",
+      "📊 WIN 179.050 (ajuste B3 EOD sexta 15/05) · -0,71% no dia (-1.275pts vs quinta 14/05 · conforme print home broker Renato) · OHLC 15/05: 179.000/179.385/177.235/179.050 · TESTOU suporte crítico 177.235 (mínima sexta = defesa por 1.815pts do ajuste) · tendência markdown forte últimos 20d (-11,39% de 202k para 179k) · vol 17,1M",
+      "💵 WDO 5.087,516 (ajuste B3 EOD sexta 15/05) · +1,39% no dia (+69,50pts vs quinta 14/05 · conforme print home broker Renato) · OHLC 15/05: 5.041/5.101,00/5.036,50/5.087,516 · fechou PRÓXIMO da máxima (PDH 5.101,00) · suporte semanal 4.910 confirmado · tendência markup leve +2,37% últimos 20 candles 4H · vol 3,2M",
+      "🔄 CORRELAÇÃO INVERSA CLÁSSICA confirmada 15/05: WIN -0,71% · WDO +1,39% = movimento NEGATIVO típico (não atípica · não pullback coordenado) · padrão risk-off BR (DI subiu + dólar subiu + bolsa caiu)",
+      "_PENDENTE_FASE2_DXY_OVERNIGHT",
+      "_PENDENTE_FASE2_USDJPY_OVERNIGHT",
+      "_PENDENTE_FASE2_US10Y_OVERNIGHT",
+      "_PENDENTE_FASE2_EQUITIES_US_OVERNIGHT",
+      "_PENDENTE_FASE2_VALE_PEERS_GLOBAIS (LIÇÃO 58 · viés default bearish WIN se médio overnight < -3%)",
+      "🇧🇷 Agenda segunda 18/05: IBC-Br Mar 09:00 ★★★ (PIB mensal BCB · DRIVER DOMÉSTICO ÚNICO · anterior 0,60% MoM · forte = hawkish bearish WIN / bullish WDO · fraco = dovish inverso · janela_evitar 08:55-09:15 · kill zone shift 10:30-11:30 pós-digestão) · IGP-10 08:00 ★★ (inflação atacado) · Focus 08:25 ★★ · Elderson BCE 04:30 ★ (pré-mercado Europa · marginal)"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_CONSENSO_NOITE_DOMINGO",
+      "narrativa_dominante": "_PENDENTE_FASE2_",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "descricao": "_PENDENTE_FASE2_",
+      "frases_consensuais_alertadas": [],
+      "leitura_bertani": "_PENDENTE_FASE2_",
+      "contra_evidencias_a_monitorar": []
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 3.5,
+      "vies": "bearish leve / cautela alta",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição Fase D/E (markdown -11,39% últimos 20d · de 202k para 179k) · testou suporte 177.235 sexta (defesa por 1.815pts do ajuste 179.050) · DI bear steepen adverso · _PENDENTE_FASE2_OVERNIGHT",
+      "racional_publico": "WIN ajuste B3 EOD sexta 15/05: 179.050 (-0,71% vs quinta · -1.275pts conforme print home broker Renato). Testou suporte crítico 177.235 na sexta (mínima = defesa por 1.815pts do ajuste). Curva DI bear steepen: F27 +18,4 bps · F29 +63,9 bps · F31 +64,4 bps (miolo e longo subiram FORTE = mercado precifica adiamento ciclo cortes Selic + risco fiscal/inflacionário) = HEADWIND estrutural WIN médio prazo. WDO confirmou risk-off: +1,39% sexta · correlação INVERSA CLÁSSICA (WIN ↓ WDO ↑). Score preliminar 3,5/10 (Wyckoff Fase D/E +3 · DI bear steepen adverso -1,5 · suporte testado e defendido +0,5 · correlação inversa +0,5 · IBC-Br driver doméstico segunda +0,5 · _PENDENTE_FASE2_: DXY overnight · Vale peers globais). Veredito: AGUARDAR (score < 6 · macro adverso · suporte frágil · IBC-Br 09:00 pode definir direção).",
+      "niveis_chave": {
+        "ajuste_b3": 179050,
+        "PDH": 179385,
+        "PDL": 177235,
+        "EQ": 178310,
+        "abertura_sexta": 179000,
+        "maxima_sexta": 179385,
+        "minima_sexta": 177235,
+        "fechamento_sexta": 179050,
+        "range_sexta_pts": 2150,
+        "suporte_critico": 177235,
+        "buffer_ajuste_suporte_pts": 1815,
+        "weekly_high_20d": 203470,
+        "weekly_low_20d": 177235
+      },
+      "ajuste_b3_meta": {
+        "valor": 179050,
+        "data_referencia": "2026-05-15",
+        "fonte": "B3 settlement oficial via TradingView CDP · data_get_b3_settlement() · timeframe Daily",
+        "nota_validacao": "Ajuste 179.050 dentro da faixa ajustada 178k-200k (LIÇÃO 18 aplicada)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL · aguardar DXY direção + Vale peers globais (LIÇÃO 58) + agenda macro confirmada",
+        "kill_zone": "EVITAR 09:00-09:25 (leilão B3) · OPERAR 10:00-12:00 (digestão) · 13:30-17:00 (NY Open)"
+      },
+      "comentario_breve": "Score 3,5/10 preliminar · AGUARDAR · DI bear steepen adverso (+64bps longo) · suporte 177.235 testou sexta (frágil) · IBC-Br 09:00 driver doméstico · _PENDENTE_FASE2_OVERNIGHT"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 4.5,
+      "vies": "lateral",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Acumulação Fase C/D (markup +2,37% últimos 20 candles 4H) · saiu do suporte semanal 4.910 · fechou próximo PDH 5.101,5 · _PENDENTE_FASE2_OVERNIGHT",
+      "racional_publico": "WDO ajuste B3 EOD sexta 15/05: 5.087,516 (+1,39% vs quinta · +69,50pts conforme print home broker Renato). Fechou PRÓXIMO da máxima diária (PDH 5.101,00 = resistência). Suporte semanal 4.910 confirmado (testou segunda 11/05 e recuperou). DI F27 curto +18,4 bps (hawkish curto = favorece WDO marginalmente). Correlação INVERSA CLÁSSICA com WIN confirmada sexta (WDO +1,39% · WIN -0,71%). Score preliminar 4,5/10 (Wyckoff Fase C/D +2,5 · sweep 4.910 + recuperação +1,5 · DI F27 curto hawkish +0,5 · correlação inversa +0,5 · IBC-Br driver doméstico segunda +0,5 · _PENDENTE_FASE2_ DXY -0,5 · _PENDENTE_FASE2_ Vale peers -0,5). Veredito: AGUARDAR (score < 6 · range estreito 64,5pts · sem direção clara · IBC-Br 09:00 pode definir direção).",
+      "niveis_chave": {
+        "ajuste_b3": 5087.516,
+        "PDH": 5101,
+        "PDL": 5036.5,
+        "EQ": 5068.75,
+        "abertura_sexta": 5041,
+        "maxima_sexta": 5101,
+        "minima_sexta": 5036.5,
+        "fechamento_sexta": 5087.516,
+        "range_sexta_pts": 64.5,
+        "suporte_semanal": 4910,
+        "weekly_high_20d": 5101,
+        "weekly_low_20d": 4910
+      },
+      "ajuste_b3_meta": {
+        "valor": 5087.516,
+        "data_referencia": "2026-05-15",
+        "fonte": "B3 settlement oficial via TradingView CDP · data_get_b3_settlement() · timeframe Daily"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": null,
+        "stop_pts": null,
+        "tp1": null,
+        "tp1_rr": null,
+        "tp1_partial_pct": null,
+        "tp2": null,
+        "tp2_rr": null,
+        "tp2_partial_pct": null,
+        "tp3": null,
+        "tp3_rr": null,
+        "tp3_partial_pct": null,
+        "contratos_banca_30k_risco_1pct": null,
+        "setup": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL · aguardar DXY direção + agenda macro confirmada",
+        "kill_zone": "EVITAR 09:00-09:25 (leilão B3) · OPERAR 10:00-12:00 (digestão) · 13:30-17:00 (NY Open)"
+      },
+      "comentario_breve": "Score 4,5/10 preliminar · AGUARDAR · fechou próximo PDH 5.101,00 · range estreito 64,5pts · IBC-Br 09:00 driver doméstico · _PENDENTE_FASE2_OVERNIGHT"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "04:30",
+      "evento": "🇪🇺 Discurso Elderson (BCE)",
+      "impacto": "MEDIO",
+      "tag": "bce_discurso",
+      "janela_evitar": null,
+      "nota": "Pré-mercado Europa · marginal pra risk sentiment"
+    },
+    {
+      "hora_brt": "08:00",
+      "evento": "🇧🇷 IGP-10 Mai (mensal)",
+      "impacto": "MEDIO",
+      "tag": "igp10_mensal",
+      "janela_evitar": null,
+      "nota": "Inflação atacado · anterior 2,9% · marginal pra DI"
+    },
+    {
+      "hora_brt": "08:25",
+      "evento": "🇧🇷 Boletim Focus BCB (semanal · recorrente toda segunda)",
+      "impacto": "MEDIO",
+      "tag": "focus_relatorio",
+      "janela_evitar": null,
+      "nota": "Expectativas Selic/IPCA médio prazo · monitorar se houver mudança grande vs semana anterior"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 IBC-Br Mar (PIB mensal BCB)",
+      "impacto": "ALTO",
+      "tag": "ibc_br_mensal",
+      "janela_evitar": "08:55-09:15",
+      "nota": "★★★ DRIVER DOMÉSTICO ÚNICO DO DIA · anterior 0,60% MoM · forte = hawkish (BC atrasa cortes · bearish WIN / bullish WDO) · fraco = dovish (BC acelera cortes · bullish WIN / bearish WDO) · KILL ZONE SHIFT recomendada 10:30-11:30 BRT pós-digestão"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade alta formação preço abertura · não operar"
+    },
+    {
+      "hora_brt": "17:00",
+      "evento": "🇺🇸 Transações Líquidas Longo Prazo Mar (US)",
+      "impacto": "MEDIO",
+      "tag": "us_tinflows",
+      "janela_evitar": null,
+      "nota": "Pós-fechamento B3 · anterior 58,6B · zero impacto intraday"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade alta formação preço fechamento · não operar"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "EVITAR 08:55-09:25",
+      "contexto": "IBC-Br Mar 09:00 ★★★ (driver doméstico único) + leilão B3 abertura · volatilidade macro + artificial · zero edge"
+    },
+    {
+      "janela": "10:30-11:30 (SHIFT pós-IBC-Br)",
+      "contexto": "Digestão IBC-Br 09:00 + Focus 08:25 + IGP-10 08:00 · kill zone deslocada 30min pra frente · primeiras barras com volume real pós-driver doméstico · setup limpo SE direção confirmada"
+    },
+    {
+      "janela": "13:30-17:00 (NY Open)",
+      "contexto": "Momentum US · continuação tendência · evitar entrar após 17:30 (pré-leilão fechamento)"
+    },
+    {
+      "janela": "EVITAR 17:45-17:55",
+      "contexto": "Leilão fechamento B3 · volatilidade final do dia"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "NÃO operar antes de validar overnight global (DXY direção + Vale peers globais LIÇÃO 58 + equity US)"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Suporte 177.235 testou sexta (defesa frágil 1.815pts do ajuste) · próximo teste pode romper · cautela DOBRADA"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "DI bear steepen adverso (+64bps longo) = BEARISH estrutural médio prazo · operar contra DI exige gatilho MUITO forte"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Score preliminar 3,5/10 = AGUARDAR · não forçar trade sem setup"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Fechou próximo PDH 5.101,5 · resistência clara · rompimento confirma markup · rejeição volta pra EQ 5.069"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Range sexta 64,5pts = estreito · sem direção clara · aguardar confirmação overnight DXY"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Suporte semanal 4.910 confirmado · perda desse nível invalida tese bullish"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Score preliminar 4,5/10 = AGUARDAR · operar só após direção confirmada"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Correlação inversa WIN×WDO confirmada sexta (-0,71% × +1,39%) · operar pareado com confiança"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "IBC-Br Mar 09:00 BRT (★★★) = janela_evitar 08:55-09:15 · kill zone shift 10:30-11:30 pós-digestão · forte = hawkish bearish WIN / bullish WDO · fraco = dovish inverso"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "EVITAR 08:55-09:25 (IBC-Br 09:00 + leilão B3) · agenda macro segunda tem DRIVER DOMÉSTICO ÚNICO IBC-Br (ALTO impacto)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "_PENDENTE_FASE2_: validar eventos adicionais segunda manhã (Investing.com + Broadcast)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "_PENDENTE_FASE2_: validar curva DI com release Falcão CETIP segunda 7h11 (fonte primária dia D)"
+    }
+  ],
+  "compliance": {
+    "analista": "Renato Bertani",
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Este material tem caráter meramente informativo e não constitui oferta, solicitação ou recomendação de compra ou venda de qualquer ativo financeiro. As análises são baseadas em metodologia proprietária (Wyckoff + ICT 2022 + Anti-Narrativa) e refletem opiniões pessoais do analista. Operações em mercados futuros envolvem risco substancial de perda. Consulte um assessor de investimentos certificado antes de tomar decisões. Rentabilidade passada não garante resultados futuros. O investidor é responsável por suas decisões de investimento."
+  },
+  "_meta": {
+    "versao_schema": "1.2",
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "gerado_em": "2026-05-17T20:00:00-03:00",
+    "gerado_por": "Claude Code (Sonnet 4.5) · FASE 1 NOTURNA",
+    "pendencias_fase2": [
+      "Overnight global (DXY · USDJPY · US10Y · equity US · Vale peers globais)",
+      "Release Falcão CETIP segunda 7h11 (validar DI bps)",
+      "Filtro Anti-Narrativa (consenso domingo noite + BPMoney/Broadcast segunda manhã)",
+      "Manchete final (depende overnight + narrativa)",
+      "Entry/SL/TP (depende overnight + IBC-Br 09:00 + direção confirmada)"
+    ],
+    "fontes": {
+      "ajustes_b3": "TradingView CDP · data_get_b3_settlement() · timeframe Daily · EOD sexta 15/05",
+      "ohlcv": "TradingView CDP · data_get_ohlcv() · timeframes W/D/4H · últimos 20 períodos · DIVERGÊNCIA WIN/WDO vs print home broker Renato → usado print como canônico",
+      "agenda_macro_18_05": "Print Investing.com + check_macro_today.js · 7 eventos cadastrados (Elderson BCE 04:30 · IGP-10 08:00 · Focus 08:25 · IBC-Br 09:00 ★★★ · leilões B3 · US TInflows 17:00)",
+      "di_curva": "PRINTS_EOD_15MAI (pasta canônica bertani_app/data/di_curve_inputs/) · mtime validado 2026-05-17T19:50 BRT · VALIDAR_FALCAO_SEGUNDA_711",
+      "agenda_macro": "macro_calendar_br_2026.json + check_macro_today.js"
+    },
+    "notas": [
+      "FASE 1 NOTURNA executada domingo 17/05 20h BRT conforme protocolo LIÇÕES 53-60",
+      "Curva DI: F27 14,235% (+18,4bps) · F29 14,165% (+63,9bps) · F31 14,250% (+64,4bps) = BEAR STEEPEN com corcunda no médio",
+      "WIN 179.050 testou suporte 177.235 sexta (defesa 1.815pts) · WDO 5.087,516 próximo PDH 5.101,00",
+      "Correlação inversa WIN×WDO confirmada: WIN -0,71% · WDO +1,39% = risk-off padrão BR (conforme print home broker Renato)",
+      "Score preliminar: WIN 3,5/10 · WDO 4,5/10 (decomposto: +5,5 base −1,0 pendentes FASE2) · ambos AGUARDAR (< 6)",
+      "Agenda segunda 18/05 tem IBC-Br Mar 09:00 ★★★ (ALTO impacto · driver doméstico único · anterior 0,60% MoM) · janela_evitar 08:55-09:15 · kill zone shift 10:30-11:30 BRT pós-digestão · IGP-10 08:00 ★★ · Focus 08:25 ★★",
+      "Divergência OHLC TV vs home broker: WIN TV High 179.425/Low 177.220 vs Print 179.385/177.235 · WDO TV High 5.101,5/Low 5.037 vs Print 5.101,00/5.036,50 · usado print como canônico (fonte primária contrato real negociado)",
+      "PRÓXIMO PASSO: FASE 2 segunda manhã após overnight global + release Falcão 7h11 + agenda validada"
+    ],
+    "checklist_fase2": [
+      "Pull overnight global: DXY · USDJPY · US10Y · equity US (NAS/SPX) · ouro · Brent",
+      "Vale peers globais (LIÇÃO 58): se médio overnight < -3% → viés default bearish WIN",
+      "Release Falcão CETIP 7h11: validar DI bps vs prints EOD sexta",
+      "Agenda macro adicional: validar Investing.com + Broadcast + BPMoney segunda manhã",
+      "Filtro Anti-Narrativa: identificar consenso domingo noite + segunda manhã + contraindicações",
+      "Decidir manchete final (tese central do dia)",
+      "Decidir entry/SL/TP para WIN e WDO (se score >= 6 após overnight)",
+      "Atualizar _meta.fase para PRONTA_FASE1 OU manter PARCIAL se ainda houver pendências",
+      "Rodar pre_publish_check.js antes de qualquer publish"
+    ]
+  }
+}
