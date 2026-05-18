@@ -8,48 +8,48 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "FILTRO ATIVO · NARRATIVA PESSIMISTA TEM 4 FUROS · WIN AGUARDAR / WDO GO CONDICIONAL",
-    "subtitulo": "Petróleo Brent firme a $110 · juros longos brasileiros subiram pouco na sexta · mineradoras no exterior aliviaram a queda · petroleiras forte sustentam a bolsa · Lula amplia vantagem no Datafolha · IBC-Br das 9h é o evento crítico do dia · janela limpa pra operar 10:30-11:30"
+    "manchete": "HOJE: ESPERAR O MINI ÍNDICE · COMPRAR MINI DÓLAR SE O DADO DAS 9H VIER FRACO",
+    "subtitulo": "A imprensa abriu a semana pessimista, mas a estrutura mostra 4 pontos contrários. O IBC-Br das 9h é o evento que define o dia. Petrobras forte sustenta a bolsa, mineradoras aliviaram a queda no exterior, juros longos subiram pouco e Lula amplia vantagem nas pesquisas. Janela limpa pra operar: 10:30-11:30."
   },
   "resumo_30s": {
-    "win_linha": "WIN · score 4,5/10 · AGUARDAR · viés vendedor suave / cautela média (juros longos subindo desfavoráveis · mineradoras no exterior aliviam · petroleiras forte sustentam a bolsa · filtro Anti-Narrativa ativo)",
-    "wdo_linha": "WDO · score 6,0/10 · GO CONDICIONAL · viés comprador moderado (dólar fechou sexta +1,63% por fatores brasileiros · juros longos firmes · petróleo Brent firme · setup de compra no retorno após o IBC-Br)",
+    "win_linha": "MINI ÍNDICE · 4,5/10 · ESPERAR. Sem entrada antes do IBC-Br das 9h. Se o dado vier forte (acima de zero), abre setup de VENDA no retorno 179.500-180.000 · stop 180.500 · alvo 178.790.",
+    "wdo_linha": "MINI DÓLAR · 6,0/10 · COMPRAR no retorno após a abertura, se o IBC-Br vier fraco (projeção -0,30%) · entry 5.130-5.140 · stop 5.110 · alvo 5.180.",
     "janela_operacional": "EVITAR 08:55-09:25 (IBC-Br 09:00 ★★★ + leilão B3) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open) · EVITAR 17:45-17:55 (leilão fechamento)",
     "nivel_chave": "WIN 177.235 (suporte defendido sexta) · 179.385 (PDH) · WDO 5.101 (PDH/resistência) · 5.163-5.170 (abertura esperada overnight +1,51%)",
-    "agenda_top1": "IBC-Br Mar 09:00 ★★★ (driver doméstico · forte = bearish WIN / bullish WDO · fraco = inverso) · Focus 08:25 ★★ · IGP-10 08:00 ★★"
+    "agenda_top1": "IBC-Br Mar 09:00 ★★★ (evento crítico · forte = desfavorável ao Mini Índice WIN / favorável ao Mini Dólar WDO · fraco = inverso) · Focus 08:25 ★★ · IGP-10 08:00 ★★"
   },
   "contexto_macro": {
     "nivel_vento": "FORTE",
     "highlights": [
-      "💥 **USDBRL +1,51% ESPECÍFICO BR** · DXY flat -0,10% · real desvalorizou contra TODAS moedas EM (MXN/RUB/ZAR/CNY ±0,3%) · movimento DOMÉSTICO puro = WDO abertura esperada ~5.163-5.170 (ajuste 5.087,52 × 1,015) · setup LONG retest 5.130-5.140 pós-IBC-Br alta probabilidade GO se forte",
-      "💵 **Curva DI EOD 15/05 BEAR STEEPEN SUAVE** (fonte canônica: BDM/Broadcast 18/05 07h · CETIP oficial EOD 14/05→15/05): F27 14,235% (+5,5 bps vs 14,180%) · F29 14,165% (+18,9 bps vs 13,976% · MAIOR) · F31 14,250% (+19,3 bps vs 14,057%) = bear shift MODERADO uniforme + curto subindo menos = **desinversão 100pts-base spread F27-F33 em 1 dia** (era -62bps invertido 14/05 → virou +60bps positivo 15/05) = stress fiscal/inflacionário moderado · BEARISH WIN suave / BULLISH WDO",
-      "🟢 **Vale peers globais ALÍVIO vs sexta** · média overnight -0,84% (BHP -0,47% · RIO -0,73% · AAL -1,36% · ANTO -0,53% · GLEN -0,07% · MT -0,77% · Nippon -1,95% · VALE ADR -1,57%) vs sexta -5% médio = **LIÇÃO 58 NÃO ATIVA** (threshold < -3%) · WIN sem headwind massivo · Petr peers +2,85% médio COMPENSA (Shell +2,09% · BP +2,54% · Repsol +4,44% · Equinor +3,02%) · ~10% peso PETR4 IBOV offset",
-      "⚠ **Risk-off MODERADO (não pânico)** · VIX 19,21 (+4,23% · range moderado · sexta foi +9,27%) · Wall St futures -0,3 a -0,7% (US 500 -0,38% · Nasdaq 100 -0,23% · US 30 -0,65%) · Europa mixed (CAC -0,85% · DAX flat · FTSE +0,13%) · Ásia -0,9% médio (Nikkei -1,08% · Hang Seng -1,11% · Shanghai -0,09% · KOSPI +1,09% divergência) · UST yields flat (+0,1pp 2Y/10Y/30Y) = sem flight-to-safety extremo",
-      "🛢 **Brent firme +0,92%** a $110,27 (supply shock continua) · Gold -0,45% a $4.483,97 · DXY flat -0,10% a 99,19 · USDJPY +0,09% a 158,91",
-      "📌 **WIN 179.050 ajuste B3 EOD sexta 15/05** · -0,71% no dia (-1.275pts vs quinta · print home broker) · OHLC 15/05: 179.000 / 179.385 / 177.235 / 179.050 · TESTOU suporte crítico 177.235 (defesa frágil 1.815pts do ajuste) · markdown -11,39% últimos 20d (de 202k para 179k) · fase Wyckoff Distribuição D/E",
-      "💵 **WDO 5.087,516 ajuste B3 EOD sexta 15/05** · +1,39% no dia (+69,50pts vs quinta · print home broker) · OHLC 15/05: 5.041 / 5.101,00 / 5.036,50 / 5.087,516 · fechou PRÓXIMO da máxima (PDH 5.101) · suporte semanal 4.910 confirmado · markup +2,37% últimos 20 candles 4H · fase Wyckoff Acumulação D",
-      "🔄 **Correlação INVERSA CLÁSSICA** confirmada 15/05: WIN -0,71% · WDO +1,39% = padrão risk-off BR típico (DI subiu + dólar subiu + bolsa caiu)",
-      "🇧🇷 **Agenda segunda 18/05** · **IBC-Br Mar 09:00 ★★★** (PIB mensal BCB · DRIVER DOMÉSTICO ÚNICO · anterior 0,60% MoM · forte >0,40% = hawkish BC atrasa cortes = bearish WIN / bullish WDO · fraco <0,10% = dovish BC acelera cortes = inverso · janela_evitar 08:55-09:15 · kill zone shift 10:30-11:30 pós-digestão) · IGP-10 08:00 ★★ (inflação atacado · anterior 2,9%) · Focus 08:25 ★★ · Elderson BCE 04:30 ★ (pré-mercado Europa · marginal) · US TInflows 17:00 (pós-B3 · zero impacto intraday)",
-      "⚠ **NOTA IBC-Br**: divulgação 09:00 BRT (pós-abertura B3) · briefing publicado 08:30 com scores CONSERVADORES pré-IBC-Br · setups CONDICIONAIS dependem do valor divulgado · acompanhar atualização Telegram canal após 09:15"
+      "💥 Dólar fechou sexta em alta forte (+1,51% a R$ 5,07) · enquanto o índice do dólar lá fora ficou parado · movimento ligado a fatores brasileiros específicos · vento favorável forte pra continuidade do Mini Dólar",
+      "💵 Juros longos brasileiros subiram pouco na sexta (fonte CETIP oficial): F27 +5,5 pontos · F29 +18,9 pontos · F31 +19,3 pontos · movimento moderado e ordenado, sem pânico · a curva passou de invertida (curto > longo) pra normal (longo > curto) em um único pregão, sinal de stress fiscal mas sem ruptura",
+      "🟢 Mineradoras no exterior aliviaram a queda na madrugada · média -0,84% (BHP -0,47% · Rio Tinto -0,73% · Anglo American -1,36% · Antofagasta -0,53% · Glencore -0,07% · ArcelorMittal -0,77% · Nippon Steel -1,95%) · contraste com sexta quando caíram -5% · alívio para Vale",
+      "⛽ Petroleiras no exterior subiram em média +2,85% (Shell +2,09% · Repsol +4,44% · BP +2,54% · TotalEnergies +1,97% · Equinor +3,02% · Eni +3,05%) · Petrobras abre forte sustentando a bolsa brasileira",
+      "🌎 Bolsas globais mistas · Wall Street futuros queda moderada (S&P -0,38% · Nasdaq -0,23%) · Ásia mista (Nikkei -1,08% · Hang Seng -1,11% · Kospi +1,09%) · Europa mista (DAX flat · CAC -0,85% · FTSE +0,13%)",
+      "📊 Petróleo Brent firme em $110 (alta de 0,92% na madrugada) · mantém pressão inflacionária no Brasil · indicador de medo do mercado (VIX) em 19,21 · nível moderado, sem stress extremo",
+      "🇧🇷 Política BR · Lula amplia vantagem no Datafolha (38% vs Flávio 35% no primeiro turno · empate técnico no segundo turno 45% a 45%) · Atlas tracking pós-Intercept mostra Lula com 7 pontos de vantagem · crise envolvendo Flávio Bolsonaro e Daniel Vorcaro não captou impacto nos votos ainda",
+      "🛡 Status briefing #14 (sexta 15/05) · ambos os setups bateram o alvo final dentro do pregão · WIN venda pegou a mínima 177.235 (alvo final 177.500) · WDO compra pegou a máxima 5.101 (alvo final 5.080) · track record continua positivo",
+      "🇧🇷 Agenda hoje · IBC-Br Março às 9h (★★★ evento crítico · projeção -0,30% · anterior +0,60%) · Boletim Focus 8h25 · IGP-10 Maio 8h00 · evitar operar 8:55-9:25 (saída do dado + leilão de abertura) · janela limpa 10:30-11:30 (depois que o mercado digere o IBC-Br)",
+      "🛡 Filtro Anti-Narrativa ATIVO · a imprensa abriu pessimista unânime mas a estrutura mostra 4 pontos contrários · projeção fraca do IBC-Br abre espaço pra corte de Selic em vez de pausa · juros longos subiram pouco (não é pânico) · petroleiras forte (sustentam IBOV) · Lula amplia vantagem nas pesquisas"
     ],
     "filtro_anti_narrativa": {
       "ativa": true,
-      "narrativa_dominante": "Petróleo + crise eleitoral + Treasuries longos a 5% pressionam BR: DI bear shift 70bps, dólar a R$ 5,05, Selic perdendo espaço de corte (Fed pode SUBIR janeiro 60% CME) · todo mundo na defensiva",
-      "fonte_observada": "Broadcast/BDM 18/05 07h · Valor sexta · Atlas/Datafolha fim de semana",
-      "descricao": "Consenso hawkish unânime: (1) Ormuz + petróleo $110 Brent = inflação importada persistente · (2) DI bear shift 70bps na ponta longa em 1 semana = stress fiscal severo · (3) Crise Flávio/Vorcaro contamina leitura eleitoral · fluxo estrangeiro continua saindo B3 (-R$6,4B maio) · (4) Triplicou pra 60% chance Fed SUBIR juros janeiro 2027 (CME) · (5) Selic perdendo espaço corte · aposta junho cai 65%→55%",
+      "narrativa_dominante": "A imprensa abriu a semana com narrativa pessimista unânime: petróleo a $110 e crise no Estreito de Ormuz pressionando inflação, juros longos brasileiros subindo, crise eleitoral envolvendo Flávio Bolsonaro, Treasuries americanos longos atingindo 5%. O consenso é de que o Banco Central perdeu espaço pra cortar a Selic em junho e o Fed pode até subir juros em janeiro.",
+      "fonte_observada": "Bom Dia Mercado (Broadcast) · 18/05 manhã · Atlas/Datafolha fim de semana · Valor Econômico",
+      "descricao": "Filtro ativo quando a narrativa unânime da imprensa tem evidências estruturais contrárias suficientes pra invalidar a tese consensual.",
       "frases_consensuais_alertadas": [
-        "Ormuz e petróleo mantém risco inflacionário no centro das atenções",
-        "DI bear shift 70bps na ponta longa em 1 semana · stress fiscal severo",
-        "Crise Flávio/Vorcaro contamina leitura eleitoral · fluxo estrangeiro continua saindo da B3 (-R$6,4B maio)",
-        "Triplicou pra 60% chance Fed SUBIR juros janeiro 2027 (CME)",
+        "Petróleo e crise no Estreito de Ormuz mantém risco inflacionário no centro das atenções",
+        "Juros longos brasileiros subiram 70 pontos na ponta longa em uma semana · stress fiscal severo",
+        "Crise envolvendo Flávio Bolsonaro contamina a leitura eleitoral · fluxo estrangeiro continua saindo da B3 (-R$ 6,4 bilhões em maio)",
+        "Triplicou pra 60% a chance do Fed SUBIR juros em janeiro de 2027 (CME)",
         "Selic perdendo espaço de corte · aposta junho cai de 65% pra 55%"
       ],
-      "leitura_bertani": "**Mercado precifica cenário hawkish extremo mas dados mostram nuances** · gestão apertada justificada. DI longa subiu +18-19 bps sexta (movimento moderado regime shift) · IBC-Br projeção -0,30% mostra atividade desacelerando (ABRE espaço dovish BC) · Petr peers +2,85% overnight offseta Vale fraco (~10% peso IBOV) · Datafolha mostra Lula ampliando vantagem (crise eleitoral menos aguda que precificado). Risco: squeeze se dados contrariarem consenso pessimista.",
+      "leitura_bertani": "O mercado precifica um cenário muito duro mas os dados mostram nuances importantes. Os juros longos subiram pouco (cerca de 19 pontos) na sexta, movimento moderado e não pânico. A projeção do IBC-Br em -0,30% mostra atividade fraca, o que abre espaço pro Banco Central acelerar cortes em vez de pausar. As petroleiras no exterior subiram forte (+2,85%), sustentando a bolsa via Petrobras. E Lula amplia vantagem nas pesquisas (Datafolha + Atlas tracking), mostrando que a crise eleitoral não captou impacto nos votos ainda.",
       "contra_evidencias_a_monitorar": [
-        "IBC-Br Mar projeção -0,30% MoM (anterior +0,60%) · IBGE serviços Mar -1,2% (2x pior projeção) = atividade BR desacelerando · ABRE espaço pra corte Selic, não pausa · narrativa 'Selic perdendo espaço' contradiz dados",
-        "DI longa subiu +18-19 bps sexta (F29/F31) vs curto +5,5 bps (F27) · bear steepen suave típico de regime shift moderado · desinversão curva (spread F27-F33 virou positivo) indica stress fiscal mas sem pânico extremo",
-        "Petr peers globais +2,85% médio overnight (Shell +2,09% · Repsol +4,44%) + Brent $110,27 = Petrobras vai abrir forte · OFFSET concreto pro IBOV (~10% peso PETR4) · narrativa 'todo mundo na defensiva' ignora isso",
-        "Datafolha: Lula 38% vs Flávio 35% · empate segundo turno 45x45 · Atlas tracking pós-Intercept mostra Lula +7pp · crise Flávio NÃO captou voto ainda · risco eleitoral está sendo PIORADO pela narrativa · dados não confirmam"
+        "Projeção do IBC-Br em -0,30% (anterior +0,60%) · atividade brasileira desacelerando abre espaço pra corte de Selic, não pausa",
+        "Juros longos brasileiros subiram cerca de 19 pontos na sexta · movimento moderado, não os 70 pontos amplificados pela narrativa",
+        "Petroleiras no exterior subiram +2,85% em média · Petrobras abre forte sustentando a bolsa · contraste com a narrativa de aversão total ao risco",
+        "Lula amplia vantagem no Datafolha (38% vs Flávio 35% · empate técnico no segundo turno) · Atlas tracking pós-Intercept mostra Lula com 7 pontos · crise não captou impacto nos votos"
       ]
     }
   },
@@ -58,10 +58,10 @@
       "codigo": "WIN1!",
       "nome": "Mini Índice",
       "score": 4.5,
-      "vies": "vendedor suave / cautela média",
+      "vies": "esperar antes do dado das 9h",
       "veredito": "AGUARDAR",
-      "fase_wyckoff": "Distribuição Fase D/E (markdown -11,39% últimos 20d · de 202k para 179k) · testou suporte 177.235 sexta (defesa frágil 1.815pts do ajuste) · DI bear steepen adverso · Vale peers alívio overnight -0,84% (vs -5% sexta) mas Petr peers +2,85% offset",
-      "racional_publico": "WIN ajuste B3 EOD sexta 15/05: 179.050 (-0,71% · -1.275pts). Testou suporte crítico 177.235 sexta (defesa frágil 1.815pts). **Curva DI bear steepen SUAVE**: F27 +5,5 bps · F29 +18,9 bps · F31 +19,3 bps (movimento MODERADO · desinversão 100pts-base F27-F33 em 1 dia = stress fiscal/inflacionário mas sem pânico) = HEADWIND suave médio prazo. **Vale peers overnight alívio**: mean -0,84% (vs -5% sexta) = sem headwind massivo. **Petr peers +2,85%** offset (Shell +2,09% · Repsol +4,44% · ~10% peso IBOV). **USDBRL fechamento sexta +1,63%** a R$ 5,0678 (DXY flat) = risk-off doméstico. **VIX 19,21 moderado**. **Filtro Anti-Narrativa ATIVO**: mercado precifica cenário hawkish extremo mas IBC-Br projeção -0,30% mostra atividade fraca · DI longa +18-19 bps movimento típico regime shift · Petr peers forte offseta Vale · Datafolha Lula amplia. **Score 4,5/10**: Wyckoff Fase D/E +2,5 · suporte defendido +0,5 · DI bear suave adverso -0,5 · correlação inversa +0,5 · Vale peers alívio +1,0 · Petr offset +0,5 · USDBRL específico +0,5 · filtro anti-narrativa -0,5 · IBC-Br 09:00 pendente. **Veredito: AGUARDAR** (score < 6 · macro adverso · suporte frágil · IBC-Br define direção).",
+      "fase_wyckoff": "Distribuição Fase D/E (markdown -11,39% últimos 20d · de 202k para 179k) · testou suporte 177.235 sexta (defesa frágil 1.815pts do ajuste) · juros longos subindo desfavoráveis · mineradoras no exterior aliviaram na madrugada -0,84% (vs -5% sexta) mas petroleiras no exterior +2,85% offset",
+      "racional_publico": "MINI ÍNDICE · Ajuste oficial de sexta 15/05: 179.050 pontos (queda de 0,71% no dia · -1.275 pontos). Testou o suporte crítico 177.235 na sexta · defesa frágil por apenas 1.815 pontos do ajuste. \n\n**Por que a estrutura técnica é mista hoje:** Os juros longos brasileiros subiram pouco na sexta (F27 +5,5 pontos · F29 +18,9 pontos · F31 +19,3 pontos) · movimento moderado, sem pânico, mas desfavorável ao mercado acionário. As mineradoras no exterior aliviaram a queda na madrugada (média -0,84% · vs -5% sexta) · sem vento contra forte. As petroleiras no exterior subiram +2,85% em média (Shell +2,09% · Repsol +4,44%) · Petrobras abre forte sustentando a bolsa (peso de ~10% no IBOV). O dólar fechou sexta com alta forte (+1,63% a R$ 5,07) por fatores brasileiros específicos · lá fora o índice do dólar ficou parado. Indicador de medo do mercado (VIX) em 19,21 · nível moderado, sem stress extremo. \n\n**Filtro Anti-Narrativa ativo hoje:** A imprensa abriu pessimista unânime, mas a estrutura mostra 4 pontos contrários: projeção do IBC-Br -0,30% (atividade fraca abre espaço pra corte de Selic) · juros longos subiram pouco (não é pânico) · petroleiras forte (sustentando IBOV) · Lula amplia vantagem no Datafolha (crise eleitoral não captou impacto nos votos). \n\n**Score 4,5/10:** Wyckoff em fase de venda +2,5 · suporte defendido +0,5 · juros longos desfavoráveis -0,5 · correlação inversa com WDO +0,5 · mineradoras aliviaram +1,0 · petroleiras sustentam +0,5 · dólar por fatores brasileiros +0,5 · filtro Anti-Narrativa -0,5 · IBC-Br das 9h pendente. \n\n**Decisão: ESPERAR** (score abaixo de 6 · suporte frágil · IBC-Br das 9h define a direção).",
       "niveis_chave": {
         "ajuste_b3": 179050,
         "PDH": 179385,
@@ -84,7 +84,7 @@
         "nota_validacao": "Ajuste 179.050 dentro faixa ajustada 178k-200k (LIÇÃO 18 aplicada)"
       },
       "plano": {
-        "direcao": "CONDICIONAL SHORT pós-IBC-Br (se forte >0,60% confirma bearish)",
+        "direcao": "CONDICIONAL SHORT pós-IBC-Br (se forte >0,60% confirma desfavorável ao Mini Índice)",
         "entry_zona": "179.500-180.000 (retest PDH + rejeição)",
         "stop": 180500,
         "stop_pts": 500,
@@ -98,19 +98,19 @@
         "tp3_rr": "1:4.5",
         "tp3_partial_pct": 20,
         "contratos_banca_30k_risco_1pct": 1,
-        "setup": "NÃO OPERAR pré-IBC-Br 09:00 · se IBC-Br forte >0,60% MoM confirma hawkish BC = bearish WIN · aguardar retest 179.500-180.000 com rejeição (wick/engolfo baixista) · entry SHORT · SL 180.500 (+500pts) · TP1 178.790 (suporte intermediário) · TP2 178.000 (psicológico) · TP3 177.235 (suporte testado sexta) · RR mínimo 1:1.4 · se IBC-Br fraco <0,10% = dovish = pode inverter pra bullish (aguardar confirmação intraday)",
+        "setup": "NÃO OPERAR pré-IBC-Br 09:00 · se IBC-Br forte >0,60% MoM confirma duro do BC (Banco Central pode atrasar cortes da Selic) = desfavorável ao Mini Índice WIN · aguardar retest 179.500-180.000 com rejeição (wick/engolfo baixista) · entry SHORT · SL 180.500 (+500pts) · TP1 178.790 (suporte intermediário) · TP2 178.000 (psicológico) · TP3 177.235 (suporte testado sexta) · RR mínimo 1:1.4 · se IBC-Br fraco <0,10% = dovish = pode inverter pra favorável ao Mini Dólar (aguardar confirmação intraday)",
         "kill_zone": "EVITAR 08:55-09:25 (IBC-Br + leilão) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open)"
       },
-      "comentario_breve": "Score 4,5/10 · AGUARDAR · juros longos subindo desfavoráveis · mineradoras no exterior aliviaram mas Petrobras sustenta · suporte 177.235 frágil · IBC-Br 09:00 é o evento crítico · setup de venda condicional"
+      "comentario_breve": "Sem entrada antes das 9h. Suporte 177.235 está frágil. Se o IBC-Br vier forte, abre setup de venda no retorno 179.500-180.000."
     },
     {
       "codigo": "WDO1!",
       "nome": "Mini Dólar",
       "score": 6.0,
-      "vies": "comprador moderado",
+      "vies": "comprar após o dado, se vier fraco",
       "veredito": "GO_CONDICIONAL",
-      "fase_wyckoff": "Acumulação Fase D (markup +2,37% últimos 20 candles 4H) · saiu do suporte semanal 4.910 · fechou próximo PDH 5.101 · USDBRL +1,51% específico BR overnight = abertura esperada ~5.163-5.170",
-      "racional_publico": "WDO ajuste B3 EOD sexta 15/05: 5.087,516 (+1,39% · +69,50pts). Fechou PRÓXIMO da máxima (PDH 5.101 = resistência). **USDBRL fechamento sexta R$ 5,0678 (+1,63% no dia)** (DXY flat -0,1% · real fraco específico BR) = TAILWIND FORTE. **DI bear steepen SUAVE** (F29/F31 +18-19 bps · movimento moderado típico regime shift) = bullish WDO estrutural. **Brent firme +0,92%** a $110,27 mantém pressão inflacionária. **Suporte semanal 4.910 confirmado** (testou 11/05 · recuperou). **Correlação INVERSA** com WIN confirmada sexta (WDO +1,39% · WIN -0,71%). **Filtro Anti-Narrativa ATIVO**: mercado precifica cenário hawkish extremo mas IBC-Br projeção -0,30% mostra atividade fraca · DI longa +18-19 bps movimento moderado · Petr peers +2,85% offset forte. **Score 6,0/10**: Wyckoff Fase D +2,5 · sweep 4.910 + recuperação +1,5 · DI bear suave bullish +0,5 · correlação inversa +0,5 · USDBRL específico BR +1,5 · Brent firme +0,5 · filtro anti-narrativa +0,5 · Vale peers alívio -1,0. **Veredito: GO_CONDICIONAL** (score ≥ 6 · setup LONG retest pós-IBC-Br · se projeção -0,30% confirmada ou melhor = dovish suave favorece WDO).",
+      "fase_wyckoff": "Acumulação Fase D (markup +2,37% últimos 20 candles 4H) · saiu do suporte semanal 4.910 · fechou próximo PDH 5.101 · USDBRL +1,51% por fatores brasileiros overnight = abertura esperada ~5.163-5.170",
+      "racional_publico": "MINI DÓLAR · Ajuste oficial de sexta 15/05: 5.087,5 (alta de 1,39% no dia · +69,5 pontos). Fechou próximo da máxima diária (PDH 5.101 · resistência clara). \n\n**Por que a tese é de continuidade comprador:** Dólar fechou sexta com alta forte (+1,63% a R$ 5,07) · enquanto o índice do dólar lá fora ficou parado · ou seja, movimento ligado a fatores brasileiros específicos (crise eleitoral + risco fiscal) · vento favorável forte pra continuidade. Juros longos subiram pouco na sexta (F29 e F31 cerca de +19 pontos) · movimento moderado mas favorável ao dólar estruturalmente. Petróleo Brent firme em $110 (alta de 0,92% na madrugada) · mantém pressão inflacionária no Brasil · favorece o dólar. Suporte semanal em 4.910 confirmado (testou em 11/05 e recuperou). Correlação inversa com Mini Índice confirmada na sexta (WDO +1,39% · WIN -0,71%). \n\n**Filtro Anti-Narrativa ativo hoje:** A imprensa abriu pessimista unânime, mas a estrutura mostra 4 pontos contrários: projeção do IBC-Br -0,30% (atividade fraca · BC pode acelerar cortes em vez de pausar) · juros longos subiram pouco · petroleiras forte +2,85% · Lula amplia vantagem nas pesquisas. \n\n**Score 6,0/10:** Wyckoff em fase de compra +2,5 · teste do suporte 4.910 com recuperação +1,5 · juros favoráveis ao dólar +0,5 · correlação inversa com WIN +0,5 · dólar por fatores brasileiros +1,5 · petróleo firme +0,5 · filtro Anti-Narrativa +0,5 · mineradoras aliviaram -1,0. \n\n**Decisão: COMPRAR (condicional)** · score acima de 6 · setup de compra no retorno após o IBC-Br · se o dado vier perto da projeção -0,30% ou mais fraco, confirma a tese (BC pode acelerar cortes · favorece dólar).",
       "niveis_chave": {
         "ajuste_b3": 5087.516,
         "PDH": 5101,
@@ -132,7 +132,7 @@
         "fonte": "B3 settlement oficial · print home broker Renato sexta 15/05 EOD (fonte canônica LIÇÃO 53)"
       },
       "plano": {
-        "direcao": "LONG retest pós-IBC-Br (se forte >0,60% confirma bullish)",
+        "direcao": "LONG retest pós-IBC-Br (se forte >0,60% confirma favorável ao Mini Dólar)",
         "entry_zona": "5.130-5.140 (retest pós-gap abertura + suporte)",
         "stop": 5110,
         "stop_pts": 20,
@@ -146,10 +146,10 @@
         "tp3_rr": "1:5.0",
         "tp3_partial_pct": 20,
         "contratos_banca_30k_risco_1pct": 1,
-        "setup": "USDBRL +1,51% overnight = abertura esperada ~5.163-5.170 · aguardar IBC-Br 09:00 · se forte >0,60% MoM confirma hawkish BC (atrasa cortes) = bullish WDO · aguardar retest 5.130-5.140 (support zone pós-gap) com bounce (hammer/engolfo altista) · entry LONG · SL 5.110 (-20-30pts) · TP1 5.180 (+40-50pts) · TP2 5.210 (+70-80pts) · TP3 5.240 (+100-110pts) · RR mínimo 1:2.0 · se IBC-Br fraco <0,10% = dovish = pode aliviar USDBRL intraday (cautela)",
+        "setup": "USDBRL +1,51% overnight = abertura esperada ~5.163-5.170 · aguardar IBC-Br 09:00 · se forte >0,60% MoM confirma duro do BC (Banco Central pode atrasar cortes da Selic) (atrasa cortes) = favorável ao Mini Dólar WDO · aguardar retest 5.130-5.140 (support zone pós-gap) com bounce (hammer/engolfo altista) · entry LONG · SL 5.110 (-20-30pts) · TP1 5.180 (+40-50pts) · TP2 5.210 (+70-80pts) · TP3 5.240 (+100-110pts) · RR mínimo 1:2.0 · se IBC-Br fraco <0,10% = dovish = pode aliviar USDBRL intraday (cautela)",
         "kill_zone": "EVITAR 08:55-09:25 (IBC-Br + leilão) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open)"
       },
-      "comentario_breve": "Score 6,0/10 · GO CONDICIONAL · dólar fechou sexta +1,63% por fatores brasileiros = vento favorável forte · setup de compra no retorno 5.130-5.140 após IBC-Br · alta probabilidade"
+      "comentario_breve": "Comprar no retorno 5.130-5.140 após a abertura, se o IBC-Br vier fraco. Dólar fechou sexta em alta forte por fatores brasileiros · tese de continuidade."
     }
   ],
   "agenda_macro": [
@@ -183,7 +183,7 @@
       "impacto": "ALTO",
       "tag": "ibc_br_mensal",
       "janela_evitar": "08:55-09:15",
-      "nota": "★★★ DRIVER DOMÉSTICO ÚNICO DO DIA · anterior 0,60% MoM · forte >0,40% = hawkish (BC atrasa cortes · bearish WIN / bullish WDO) · fraco <0,10% = dovish (BC acelera cortes · bullish WIN / bearish WDO) · KILL ZONE SHIFT recomendada 10:30-11:30 BRT pós-digestão · SCORES BRIEFING SÃO CONSERVADORES PRÉ-IBC-BR · atualização pós-09:15 no Telegram"
+      "nota": "★★★ EVENTO CRÍTICO DO DIA DO DIA · anterior 0,60% MoM · forte >0,40% = duro (BC pode atrasar cortes da Selic · desfavorável ao Mini Índice WIN / favorável ao Mini Dólar WDO) · fraco <0,10% = dovish (BC acelera cortes · favorável ao Mini Dólar WIN / desfavorável ao Mini Índice WDO) · KILL ZONE SHIFT recomendada 10:30-11:30 BRT pós-digestão · SCORES BRIEFING SÃO CONSERVADORES PRÉ-IBC-BR · atualização pós-09:15 no Telegram"
     },
     {
       "hora_brt": "09:00-09:25",
@@ -213,11 +213,11 @@
   "kill_zones_recomendadas": [
     {
       "janela": "EVITAR 08:55-09:25",
-      "contexto": "IBC-Br Mar 09:00 ★★★ (driver doméstico único) + leilão B3 abertura · volatilidade macro + artificial · zero edge"
+      "contexto": "IBC-Br Mar 09:00 ★★★ (evento crítico do dia) + leilão B3 abertura · volatilidade macro + artificial · zero edge"
     },
     {
       "janela": "10:30-11:30 (SHIFT pós-IBC-Br)",
-      "contexto": "Digestão IBC-Br 09:00 + Focus 08:25 + IGP-10 08:00 · kill zone deslocada 30min pra frente · primeiras barras com volume real pós-driver doméstico · setup limpo SE direção confirmada"
+      "contexto": "Digestão IBC-Br 09:00 + Focus 08:25 + IGP-10 08:00 · kill zone deslocada 30min pra frente · primeiras barras com volume real pós-evento crítico · setup limpo SE direção confirmada"
     },
     {
       "janela": "13:30-17:00 (NY Open)",
@@ -231,43 +231,51 @@
   "regras_do_dia": [
     {
       "ativo": "WIN1!",
-      "regra": "Suporte 177.235 defendido sexta mas frágil (1.815pts do ajuste) · próximo teste pode romper · cautela DOBRADA"
+      "regra": "Esperar antes de operar · sem entrada antes do IBC-Br das 9h"
     },
     {
       "ativo": "WIN1!",
-      "regra": "DI bear steepen adverso (+64bps longo) = BEARISH estrutural médio prazo · operar contra DI exige gatilho MUITO forte"
+      "regra": "Juros longos subindo é desfavorável ao Mini Índice estruturalmente · operar contra essa direção exige gatilho técnico muito forte"
     },
     {
       "ativo": "WIN1!",
-      "regra": "Vale peers alívio -0,84% (vs -5% sexta) · LIÇÃO 58 NÃO ATIVA · sem headwind massivo mas Petr peers +2,85% offset IBOV"
+      "regra": "Mineradoras no exterior aliviaram a queda · sem vento contra forte como na sexta · Petrobras forte compensa (peso ~10% no IBOV)"
     },
     {
       "ativo": "WIN1!",
-      "regra": "Score 4,5/10 = AGUARDAR · não forçar trade pré-IBC-Br · setup SHORT condicional se forte >0,60%"
+      "regra": "Suporte 177.235 está frágil (defesa por apenas 1.815 pontos do ajuste 179.050) · perda desse nível abre espaço pra continuação de queda"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Score preliminar 4,5/10 · decisão AGUARDAR · não forçar trade sem setup claro"
     },
     {
       "ativo": "WDO1!",
-      "regra": "USDBRL +1,51% específico BR (DXY flat) = DRIVER-CHAVE · abertura esperada ~5.163-5.170 · setup LONG retest 5.130-5.140"
+      "regra": "Dólar +1,51% na sexta foi movimento ligado a fatores brasileiros · vento favorável forte · abertura esperada próximo de 5.163-5.170 · setup de compra no retorno 5.130-5.140"
     },
     {
       "ativo": "WDO1!",
-      "regra": "DI bear steepen (+64bps) = bullish WDO estrutural · Brent firme +0,92% mantém pressão inflacionária"
+      "regra": "Juros longos subindo é favorável ao dólar estruturalmente · petróleo firme +0,92% mantém pressão inflacionária"
     },
     {
       "ativo": "WDO1!",
-      "regra": "Suporte semanal 4.910 confirmado · perda desse nível invalida tese bullish"
+      "regra": "Suporte semanal 4.910 confirmado · perda desse nível invalida a tese de compra"
     },
     {
       "ativo": "WDO1!",
-      "regra": "Score 6,0/10 = GO_CONDICIONAL · aguardar IBC-Br forte >0,60% pra confirmar · se fraco <0,10% pode aliviar USDBRL intraday"
+      "regra": "Score preliminar 6,0/10 · decisão COMPRAR no retorno após a abertura, condicional ao IBC-Br vir fraco"
     },
     {
       "ativo": "GERAL",
-      "regra": "IBC-Br 09:00 ★★★ DEFINE DIREÇÃO · forte = bearish WIN / bullish WDO · fraco = inverso · NÃO OPERAR antes divulgação"
+      "regra": "Correlação inversa entre WIN e WDO confirmada na sexta (-0,71% vs +1,39%) · operar pareado com confiança"
     },
     {
       "ativo": "GERAL",
-      "regra": "EVITAR 08:55-09:25 (IBC-Br + leilão) · OPERAR 10:30-12:00 (digestão · kill zone shift) · setups CONDICIONAIS pós-09:00"
+      "regra": "IBC-Br das 9h define a direção do dia · se vier forte (acima de zero) é desfavorável ao Mini Índice e favorável ao Mini Dólar · se vier fraco (na linha da projeção -0,30% ou pior) é o inverso · NÃO OPERAR antes da divulgação"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Filtro Anti-Narrativa ativo · narrativa pessimista unânime exagera os riscos · 4 pontos estruturais contrários · gestão de risco apertada justificada · setups condicionais em vez de incondicionais"
     }
   ],
   "di_curva": {
@@ -281,7 +289,7 @@
     "di1f31_delta_bps": 19.3,
     "di1f31_prior": 14.057,
     "fonte": "BDM/Broadcast 18/05 07h (CETIP oficial EOD 14/05→15/05) · LIÇÃO 53 canônico",
-    "leitura": "BEAR STEEPEN SUAVE (longo +19 bps vs curto +5,5 bps) · bear shift MODERADO uniforme + desinversão 100pts-base spread F27-F33 em 1 dia (era -62bps invertido 14/05 → +60bps positivo 15/05) = stress fiscal/inflacionário moderado · BEARISH WIN suave / BULLISH WDO · magnitude típica regime shift (+18-19 bps) sem pânico extremo"
+    "leitura": "JUROS LONGOS SUBINDO POUCO (longo +19 bps vs curto +5,5 bps) · movimento moderado de alta nos juros uniforme + desinversão 100pts-base spread F27-F33 em 1 dia (era -62bps invertido 14/05 → +60bps positivo 15/05) = stress fiscal/inflacionário moderado · desfavorável ao Mini Índice suave / favorável ao Mini Dólar · magnitude típica regime shift (+18-19 bps) sem pânico extremo"
   },
   "compliance": {
     "registro": "CNPI T 9644",
