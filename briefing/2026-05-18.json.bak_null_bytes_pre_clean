@@ -8,12 +8,12 @@
     "registro": "Analista CNPI · T 9644"
   },
   "destaque": {
-    "manchete": "FILTRO ATIVO · NARRATIVA PESSIMISTA TEM 4 FUROS · WIN AGUARDAR / WDO GO CONDICIONAL",
-    "subtitulo": "Petróleo Brent firme a $110 · juros longos brasileiros subiram pouco na sexta · mineradoras no exterior aliviaram a queda · petroleiras forte sustentam a bolsa · Lula amplia vantagem no Datafolha · IBC-Br das 9h é o evento crítico do dia · janela limpa pra operar 10:30-11:30"
+    "manchete": "FILTRO ATIVO · IBC-BR DEFINE 09H · PETR PEERS +2,85% OFFSETA VALE · WIN BEAR SUAVE / WDO BULL MODERADO",
+    "subtitulo": "Petróleo a $110 + DI longa +18 bps + USDBRL R$ 5,07 (fechamento sexta) · Vale peers globais -0,84% (alívio vs sexta) · Lula amplia vantagem Datafolha · IBC-Br 09h é o driver doméstico · janela operacional 10:30-11:30 pós-digestão"
   },
   "resumo_30s": {
-    "win_linha": "WIN · score 4,5/10 · AGUARDAR · viés vendedor suave / cautela média (juros longos subindo desfavoráveis · mineradoras no exterior aliviam · petroleiras forte sustentam a bolsa · filtro Anti-Narrativa ativo)",
-    "wdo_linha": "WDO · score 6,0/10 · GO CONDICIONAL · viés comprador moderado (dólar fechou sexta +1,63% por fatores brasileiros · juros longos firmes · petróleo Brent firme · setup de compra no retorno após o IBC-Br)",
+    "win_linha": "WIN1! · score 4,5/10 · veredito AGUARDAR · viés bearish suave / cautela média (DI bear steepen SUAVE +18-19bps adverso · narrativa hawkish exagera +60bps · Vale peers alívio -0,84% · Petr offset +2,85% · filtro ATIVO)",
+    "wdo_linha": "WDO1! · score 6,0/10 · veredito GO_CONDICIONAL · viés bullish moderado (USDBRL sexta +1,63% R$ 5,07 específico BR · DI suave +18-19bps · Brent +0,92% · Petr peers forte · setup LONG retest pós-IBC-Br)",
     "janela_operacional": "EVITAR 08:55-09:25 (IBC-Br 09:00 ★★★ + leilão B3) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open) · EVITAR 17:45-17:55 (leilão fechamento)",
     "nivel_chave": "WIN 177.235 (suporte defendido sexta) · 179.385 (PDH) · WDO 5.101 (PDH/resistência) · 5.163-5.170 (abertura esperada overnight +1,51%)",
     "agenda_top1": "IBC-Br Mar 09:00 ★★★ (driver doméstico · forte = bearish WIN / bullish WDO · fraco = inverso) · Focus 08:25 ★★ · IGP-10 08:00 ★★"
@@ -58,7 +58,7 @@
       "codigo": "WIN1!",
       "nome": "Mini Índice",
       "score": 4.5,
-      "vies": "vendedor suave / cautela média",
+      "vies": "bearish suave / cautela média",
       "veredito": "AGUARDAR",
       "fase_wyckoff": "Distribuição Fase D/E (markdown -11,39% últimos 20d · de 202k para 179k) · testou suporte 177.235 sexta (defesa frágil 1.815pts do ajuste) · DI bear steepen adverso · Vale peers alívio overnight -0,84% (vs -5% sexta) mas Petr peers +2,85% offset",
       "racional_publico": "WIN ajuste B3 EOD sexta 15/05: 179.050 (-0,71% · -1.275pts). Testou suporte crítico 177.235 sexta (defesa frágil 1.815pts). **Curva DI bear steepen SUAVE**: F27 +5,5 bps · F29 +18,9 bps · F31 +19,3 bps (movimento MODERADO · desinversão 100pts-base F27-F33 em 1 dia = stress fiscal/inflacionário mas sem pânico) = HEADWIND suave médio prazo. **Vale peers overnight alívio**: mean -0,84% (vs -5% sexta) = sem headwind massivo. **Petr peers +2,85%** offset (Shell +2,09% · Repsol +4,44% · ~10% peso IBOV). **USDBRL fechamento sexta +1,63%** a R$ 5,0678 (DXY flat) = risk-off doméstico. **VIX 19,21 moderado**. **Filtro Anti-Narrativa ATIVO**: mercado precifica cenário hawkish extremo mas IBC-Br projeção -0,30% mostra atividade fraca · DI longa +18-19 bps movimento típico regime shift · Petr peers forte offseta Vale · Datafolha Lula amplia. **Score 4,5/10**: Wyckoff Fase D/E +2,5 · suporte defendido +0,5 · DI bear suave adverso -0,5 · correlação inversa +0,5 · Vale peers alívio +1,0 · Petr offset +0,5 · USDBRL específico +0,5 · filtro anti-narrativa -0,5 · IBC-Br 09:00 pendente. **Veredito: AGUARDAR** (score < 6 · macro adverso · suporte frágil · IBC-Br define direção).",
@@ -101,13 +101,13 @@
         "setup": "NÃO OPERAR pré-IBC-Br 09:00 · se IBC-Br forte >0,60% MoM confirma hawkish BC = bearish WIN · aguardar retest 179.500-180.000 com rejeição (wick/engolfo baixista) · entry SHORT · SL 180.500 (+500pts) · TP1 178.790 (suporte intermediário) · TP2 178.000 (psicológico) · TP3 177.235 (suporte testado sexta) · RR mínimo 1:1.4 · se IBC-Br fraco <0,10% = dovish = pode inverter pra bullish (aguardar confirmação intraday)",
         "kill_zone": "EVITAR 08:55-09:25 (IBC-Br + leilão) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open)"
       },
-      "comentario_breve": "Score 4,5/10 · AGUARDAR · juros longos subindo desfavoráveis · mineradoras no exterior aliviaram mas Petrobras sustenta · suporte 177.235 frágil · IBC-Br 09:00 é o evento crítico · setup de venda condicional"
+      "comentario_breve": "Score 4,5/10 · AGUARDAR · DI bear steepen adverso · Vale peers alívio mas Petr offset · suporte 177.235 frágil · IBC-Br 09:00 define · setup SHORT condicional forte"
     },
     {
       "codigo": "WDO1!",
       "nome": "Mini Dólar",
       "score": 6.0,
-      "vies": "comprador moderado",
+      "vies": "bullish moderado",
       "veredito": "GO_CONDICIONAL",
       "fase_wyckoff": "Acumulação Fase D (markup +2,37% últimos 20 candles 4H) · saiu do suporte semanal 4.910 · fechou próximo PDH 5.101 · USDBRL +1,51% específico BR overnight = abertura esperada ~5.163-5.170",
       "racional_publico": "WDO ajuste B3 EOD sexta 15/05: 5.087,516 (+1,39% · +69,50pts). Fechou PRÓXIMO da máxima (PDH 5.101 = resistência). **USDBRL fechamento sexta R$ 5,0678 (+1,63% no dia)** (DXY flat -0,1% · real fraco específico BR) = TAILWIND FORTE. **DI bear steepen SUAVE** (F29/F31 +18-19 bps · movimento moderado típico regime shift) = bullish WDO estrutural. **Brent firme +0,92%** a $110,27 mantém pressão inflacionária. **Suporte semanal 4.910 confirmado** (testou 11/05 · recuperou). **Correlação INVERSA** com WIN confirmada sexta (WDO +1,39% · WIN -0,71%). **Filtro Anti-Narrativa ATIVO**: mercado precifica cenário hawkish extremo mas IBC-Br projeção -0,30% mostra atividade fraca · DI longa +18-19 bps movimento moderado · Petr peers +2,85% offset forte. **Score 6,0/10**: Wyckoff Fase D +2,5 · sweep 4.910 + recuperação +1,5 · DI bear suave bullish +0,5 · correlação inversa +0,5 · USDBRL específico BR +1,5 · Brent firme +0,5 · filtro anti-narrativa +0,5 · Vale peers alívio -1,0. **Veredito: GO_CONDICIONAL** (score ≥ 6 · setup LONG retest pós-IBC-Br · se projeção -0,30% confirmada ou melhor = dovish suave favorece WDO).",
@@ -149,7 +149,7 @@
         "setup": "USDBRL +1,51% overnight = abertura esperada ~5.163-5.170 · aguardar IBC-Br 09:00 · se forte >0,60% MoM confirma hawkish BC (atrasa cortes) = bullish WDO · aguardar retest 5.130-5.140 (support zone pós-gap) com bounce (hammer/engolfo altista) · entry LONG · SL 5.110 (-20-30pts) · TP1 5.180 (+40-50pts) · TP2 5.210 (+70-80pts) · TP3 5.240 (+100-110pts) · RR mínimo 1:2.0 · se IBC-Br fraco <0,10% = dovish = pode aliviar USDBRL intraday (cautela)",
         "kill_zone": "EVITAR 08:55-09:25 (IBC-Br + leilão) · OPERAR 10:30-12:00 (digestão pós-IBC-Br · kill zone shift) · 13:30-17:00 (NY Open)"
       },
-      "comentario_breve": "Score 6,0/10 · GO CONDICIONAL · dólar fechou sexta +1,63% por fatores brasileiros = vento favorável forte · setup de compra no retorno 5.130-5.140 após IBC-Br · alta probabilidade"
+      "comentario_breve": "Score 6,0/10 · GO_CONDICIONAL · USDBRL +1,51% específico BR = tailwind forte · setup LONG retest 5.130-5.140 pós-IBC-Br alta probabilidade"
     }
   ],
   "agenda_macro": [
@@ -273,11 +273,11 @@
   "di_curva": {
     "di1f27_taxa": 14.235,
     "di1f27_delta_bps": 5.5,
-    "di1f27_prior": 14.18,
+    "di1f27_prior": 14.180,
     "di1f29_taxa": 14.165,
     "di1f29_delta_bps": 18.9,
     "di1f29_prior": 13.976,
-    "di1f31_taxa": 14.25,
+    "di1f31_taxa": 14.250,
     "di1f31_delta_bps": 19.3,
     "di1f31_prior": 14.057,
     "fonte": "BDM/Broadcast 18/05 07h (CETIP oficial EOD 14/05→15/05) · LIÇÃO 53 canônico",
@@ -294,16 +294,7 @@
     "criado_em": "2026-05-18T07:00:00-03:00",
     "publicado_em": "2026-05-18T08:15:00-03:00",
     "republicado_em": "2026-05-18T08:25:00-03:00",
-    "licoes_aplicadas": [
-      53,
-      54,
-      55,
-      56,
-      57,
-      58,
-      59,
-      60
-    ],
+    "licoes_aplicadas": [53, 54, 55, 56, 57, 58, 59, 60],
     "nota_tecnica": "**FIX CRÍTICO 08:25**: DI bps corrigidos via BDM/Broadcast 18/05 07h (LIÇÃO 53 canônico · PNG TV header mostrou Prior Cote Ajuste 13/05 ou 14/05 em vez de 15/05 · Falcão/Broadcast CETIP oficial). Valores corretos: F27 +5,5 bps (não +18,4) · F29 +18,9 bps (não +63,9) · F31 +19,3 bps (não +64,4) = BEAR STEEPEN SUAVE (não agressivo +60bps). Spread F27-F33 desinverteu 100pts-base em 1 dia (era -62bps invertido 14/05 → +60bps positivo 15/05) = stress fiscal/inflacionário moderado. **Filtro Anti-Narrativa ATIVO**: narrativa hawkish unânime tem 4 furos estruturais (IBC-Br projeção -0,30% abre espaço dovish · DI real +18-19 não +60 narrados · Petr peers +2,85% offset · Lula ampliando Datafolha). LIÇÃO 58 NÃO ATIVADA (Vale peers -0,84% > -3%). USDBRL fechamento sexta R$ 5,0678 (+1,63% dia 15/05 · BDM/Broadcast).",
     "overnight_snapshot_hora": "2026-05-18T10:13:00-03:00",
     "overnight_fonte": "Investing.com prints Renato + BDM/Broadcast 18/05 07h + TV CDP validação cruzada",
@@ -315,3 +306,4 @@
     }
   }
 }
+     
