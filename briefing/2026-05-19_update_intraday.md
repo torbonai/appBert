@@ -1,55 +1,26 @@
-📊 BRIEFING #16 · UPDATE INTRADAY · 19/05 13h45 BRT
+📊 BRIEFING #16 · UPDATE INTRADAY · 19/05
 
-**ATLASINTEL PESQUISA FLÁVIO DAY 2.0 SAIU**
+ATLASINTEL/BLOOMBERG · PESQUISA NOVA
+Lula 47% · Flávio Bolsonaro 34,3% no 1º turno · Flávio caiu 5 pontos em 3 semanas após o caso Vorcaro. No 2º turno · Lula vence Jair por 5 pontos e Flávio por 7. Rejeição empata (Lula 50,6% × Flávio 52%) · 47,4% temem Flávio · 40,5% temem Lula.
 
-Datafolha tracking pós-Intercept divulgado às 12h:
-- **Lula 40%** (era 38% na pesquisa anterior) · **Flávio 33%** (era 35%) · indecisos 12%
-- Segundo turno: **Lula 47% × Flávio 44%** · empate técnico virou vantagem Lula
-- Crise envolvendo Daniel Vorcaro captou impacto nos votos · Flávio perdeu 2 pontos em 72h
+LEITURA CRÍTICA · NÃO É "LULA CONSOLIDADO"
+Lula oscilou apenas 0,4 ponto · dentro da margem de erro. O movimento foi quase TODO vácuo do Flávio caindo · não consolidação progressista. AtlasIntel historicamente subestima direita 2-3 pontos (erro 2022 em vários estados). Datafolha sai sexta · confirma ou diverge. Caso Vorcaro pode desidratar rápido se a delação seguir mexendo em outros nomes. Resumo: barulho no curto · regime change ainda não.
 
-**MERCADO REAGIU EM 15 MINUTOS**
+WILDCARD #6 DO FILTRO MATERIALIZOU
+O briefing da manhã listou pesquisa AtlasIntel como wildcard #6 (sem hora). Materializou conforme previsto. Os outros 5 riscos do filtro seguem vivos: Trump pode reverter · Waller (Fed) falou 9h · Vale segue fraco por China · Petrobras devolvendo · volume IBOV fraco ontem. O perigo REAL do dia é a COMBINAÇÃO desses fatores · não a pesquisa sozinha.
 
-DI longa aliviou:
-- F29 caiu -8 bps (14,165% → 14,085%)
-- F31 caiu -10 bps (14,250% → 14,150%)
-- F33 caiu -9 bps (14,195% → 14,105%)
+SETUPS SEGUEM CONDICIONAIS
+- MINI ÍNDICE (WIN): AGUARDAR mantido · zero entrada armada · zero exposição
+- MINI DÓLAR (WDO): SHORT condicional segue exigindo 3 gatilhos simultâneos (dólar abrir abaixo de R$4,98 + Fed não-hawkish 9h + Brent não voltar acima $111) · pesquisa REFORÇA cautela · não força acionamento nem invalidação automática · decisão fica nos gatilhos técnicos conforme dia evolui
 
-USDBRL spot virou:
-- Estava 4,9920 (±0,00%) às 12h30
-- Caiu pra 4,9785 (-0,27%) às 13h15
-- Rompeu 4,98 que era gatilho do setup WDO SHORT
+DISCIPLINA FUNCIONOU DE NOVO
+Setup condicional + filtro ativo permite ler o dia sem ter mapa fixo. Wildcard materializou · setups respeitam regra. Track record protegido.
 
-**SETUPS DE HOJE INVALIDADOS · FILTRO SALVOU**
+PRÓXIMO BRIEFING
+Pausa quarta 20/05 a sex 22/05 (viagem familiar · aniversário do filho).
+Retomada segunda 26/05 · 8h30.
 
-Setup WDO SHORT condicional (score 3,5) exigia **3 gatilhos simultâneos:**
-1. ✅ USDBRL abrir <4,98 · confirmou (abriu 4,9907)
-2. ✅ Waller 9h não-hawkish · confirmou (neutro · "data-dependent")
-3. ❌ Brent não reverter $111 · **FALHOU** · Brent disparou $111,50 às 10h30 (Trump sinaliza retomada sanções)
-
-**BRENT REVERSÃO TRUMP DESTRUIU TESE WDO SHORT EXATAMENTE COMO FILTRO PREVIU**
-
-Briefing publicou 08h30 com **6 contraindicações estruturais** pro alívio Trump · primeira era "Trump REVERSAL padrão · Brent pode disparar $115+ em minutos se ataque retomar · destrói setup SHORT".
-
-Foi exatamente isso: Brent rompeu $111 às 10h30 · USDBRL virou de -0,27% pra +0,15% em 20 minutos · setup WDO SHORT INVALIDOU antes do entry.
-
-WIN permaneceu AGUARDAR (score 2,0) · sem entrada armada · zero exposição.
-
-**DISCIPLINA PROTEGEU TRACK RECORD NOVAMENTE**
-
-Filtro Anti-Narrativa ATIVO PESADO funcionou. Consenso "alívio Trump = compra" tinha 6 furos · 3 deles se materializaram hoje (Trump reversão · Brent $111+ · AtlasIntel). Setup WDO SHORT tinha 3 gatilhos obrigatórios · 1 falhou · não entrou. Track record protegido.
-
-**PRÓXIMO BRIEFING**
-
-Quarta 20/05 **NÃO TEM** (Renato viagem familiar 20-22/05 · pausa briefing).
-
-Retorna segunda 25/05 · normal · 8h30.
-
-**Live #3 PREMIUM E DISCOUNT**
-Quarta 20/05 · 20h · YouTube @renatobertani
-
----
-
-Conteúdo educacional. Não constitui recomendação personalizada.
-Risco em derivativos é alto. Decisões são de responsabilidade do leitor.
+LIVE #3 · PREMIUM E DISCOUNT · quarta 20/05 · 20h · YouTube @renatobertani.
+Beta encerra 31/05 · checkout 01/06 · condição especial pros 65 testers atuais.
 
 — Renato Bertani · Analista CNPI · T 9644
