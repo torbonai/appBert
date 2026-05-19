@@ -1,0 +1,403 @@
+{
+  "data": "2026-05-19",
+  "data_extenso": "Terça-feira, 19 de maio de 2026",
+  "hora_publicacao": "2026-05-19T08:30:00-03:00",
+  "edicao": 16,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "ALÍVIO DE UM DIA · WIN LATERAL · WDO SHORT SE BRENT NÃO REVERTER",
+    "subtitulo": "Trump adia ataque e mercado compra o alívio, mas 6 contraindicações estruturais pesam: reversão Trump pode disparar Brent $115+ em minutos · Waller (Fed) fala 9h com risco hawkish · Vale -2% + peers -1,82% por China fraco · PETR pode devolver 1-1,5% com Brent caindo · volume IBOV fraco D-1 · AtlasIntel wildcard. Filtro Anti-Narrativa ATIVO. Setups condicionais."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · 2,0/10 · AGUARDAR. Distribuição D/E (markdown -4,08% últimos 20d · testou 177.220 segunda). Volume D-1 fraco · Vale -2% + peers -1,82% · PETR pode devolver · Filtro Anti-Narrativa ATIVO. Sem setup hoje.",
+    "wdo_linha": "MINI DÓLAR · 3,5/10 · SHORT CONDICIONAL. Acumulação C/D · USDBRL furou 5,00 por 0,015 centavo D-1 · overnight 4,9907. Setup SHORT se USDBRL <4,98 + Waller não-hawkish 9h + Brent não reverter · entry 5.040-5.050 · stop 5.070 · alvo 4.990.",
+    "janela_operacional": "EVITAR 08:30-09:30 (Waller Fed 9h ★★★) · OPERAR 10:30-12:00 (pós-Waller + Galípolo CAE 10h) · 13:30-17:00 (NY Open) · EVITAR 17:45-17:55 (leilão fechamento)",
+    "nivel_chave": "WIN 177.220 (suporte testado segunda · perda invalida) · 179.550 (PDH · resistência) · WDO 4.910 (suporte semanal · não perder) · 5.072 (abertura segunda · resistência)",
+    "agenda_top1": "Waller (Fed) 9h ★★★ (hawkish risk · pode reverter alívio) · Galípolo CAE Senado 10h ★★★ (pode mexer DI longa) · AtlasIntel pesquisa (wildcard preto · sem hora) · LPR China 22h ★★★★ (afeta quarta)"
+  },
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "💥 Trump adia ataque · anunciou suspensão sanções petrolíferas Irã durante negociações · Brent recuou -1,97% overnight pra $109,89 (fechou regular $112,10 +2,59% D-1) · reversão padrão Trump · se ataque retomar, Brent volta $115+ em minutos · derruba tese inteira DI/USDBRL",
+      "💵 Juros longos BR caíram overnight (Falcão CETIP EOD 18/05): F27 -9,2 bps · F28 -15,6 bps · F29 -16,5 bps · F31 -12,6 bps · F33 -10,5 bps · BULL FLATTEN MIOLO 5 vértices · movimento raramente sustenta D+2 sem confirmação macro · Galípolo CAE 10h + Waller 9h podem reverter",
+      "💵 USDBRL fechou 4,9985 segunda (-1,37%) · furou 5,00 por 0,015 centavo · overnight 4,9907 (-1,29%) · mas DXY +0,27% overnight (fechou D-1 99,193 -0,9% pós-Trump) · UST 10y 4,615% mas BDM cita avançou 4,600% pós-Trump · ING cobra Fed mais hawkish · Waller fala 9h hoje · alívio pode reverter",
+      "🟢 Mineradoras globais pure-play média -1,82% (BHP -1,53% · RIO -2,42% · AAL -1,38% · ANTO -2,03% · GLEN -1,76%) · headwind setorial grosso · Vale -2,00% D-1 já confirmou · driver China (LPR hoje 22h · indicadores fracos) · alívio Trump não resolve · Vale 12% IBOV",
+      "⛽ Petroleiras globais mistas (SHEL +0,26% · EQNR +1,92%) · PETR +2,66% D-1 com Brent $112 · Brent agora $109,89 · pode devolver 1-1,5% hoje · PETR 13% IBOV · headwind WIN",
+      "🌎 Futuros US vermelhos (DOW -0,15% · SP -0,50% · NAS -0,80%) · tech fraco (Nvidia balanço quarta) · Europa verde (DAX +1,47% · CAC +0,68% · bancos EU) · Ásia mista (Shanghai +0,92 · Nikkei -0,44 · KOSPI -3,25% CANÁRIO SEMIS)",
+      "📊 IBOV 176.975,82 (-0,17% D-1 · giro R$24,2bi FRACO) · recuperação intraday -0,83→-0,17 SEM volume = squeeze cobertura · não estrutural · desfaz 1-2 sessões · VIX 18,18 (+2,02% · longe pânico)",
+      "🛡 Status briefing #15 (segunda 18/05) · ambos setups AGUARDAR/INVALIDADOS · WIN sem entrada armada · WDO setup compra condicional invalidado (dólar virou pra baixo) · track record protegido · disciplina funcionou",
+      "🇧🇷 Agenda hoje · Waller (Fed) 9h ★★★ (hawkish risk · pode reverter alívio) · Galípolo CAE Senado 10h ★★★ (pode mexer DI longa) · AtlasIntel pesquisa (wildcard preto · sem hora · pode mexer DI/USDBRL) · LPR China 22h ★★★★ (afeta quarta) · EVITAR 08:30-09:30",
+      "🛡 Filtro Anti-Narrativa ATIVO PESADO · narrativa dominante 'alívio Trump = WIN long' tem 6 contraindicações estruturais · reversão Trump padrão · Waller hawkish risco · Vale China-driven · PETR devolvendo · volume IBOV fraco · AtlasIntel wildcard · setups CONDICIONAIS · scores penalizados"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "narrativa_dominante": "Trump adia ataque ao Irã · suspensão temporária de sanções petrolíferas · Brent recua · dólar brasileiro fura 5,00 · juros caem 16 bps · carry trade favorecido · WIN abre em tailwind. Consenso unânime: 'alívio é compra'.",
+      "fonte_observada": "Bom Dia Mercado (Broadcast) · 19/05 manhã · Valor Econômico · Folha · Reuters · imprensa financeira unânime no framing otimista",
+      "descricao": "Filtro ativo quando a narrativa unânime tem evidências estruturais contrárias suficientes pra invalidar a tese consensual. Hoje: 6 contraindicações documentadas que tornam o 'alívio Trump' frágil e reversível em minutos.",
+      "frases_consensuais_alertadas": [
+        "Trump adia ataque · Brent recua · alívio geopolítico favorece mercados emergentes",
+        "Dólar brasileiro furou 5,00 · carry trade de volta · WIN abre em alta",
+        "Juros longos caíram 16 bps · BC tem espaço pra acelerar cortes · bolsa favorecida",
+        "Volume estrangeiro voltando · fluxo positivo após IBC-Br fraco",
+        "Petrobras sustenta IBOV · setor energético compensa Vale fraca"
+      ],
+      "leitura_bertani": "O mercado precifica alívio Trump como estrutural · mas é tático e reversível. Trump REVERSAL é padrão estatístico (suspensão ontem · retomada hoje ou amanhã destrói tese). Brent fechou regular $112,10 +2,59% D-1 · reversão Trump fez cair -1,97% · se ataque retomar, volta $115+ em minutos. NY Note 10y avançou 4,600% pós-Trump · Waller fala 9h com risco hawkish · DXY pode saltar · alívio overnight reverter. Vale -2% D-1 + peers globais -1,82% · driver China (LPR 22h · indicadores fracos) · alívio Trump não resolve. PETR +2,66% D-1 com Brent $112 · Brent agora $109,89 · pode devolver 1-1,5%. Volume IBOV R$24,2bi FRACO D-1 · recuperação intraday sem estrutura · desfaz em 1-2 sessões. AtlasIntel wildcard preto (sem hora) · pode mexer DI longa/USDBRL em qualquer direção.",
+      "contra_evidencias_a_monitorar": [
+        "Trump REVERSAL padrão · Brent pode disparar $115+ em minutos se ataque retomar · derruba tese DI/USDBRL/WIN",
+        "UST 10y avançou 4,600% pós-Trump · ING cobra Fed hawkish · Waller 9h pode reverter alívio · DXY saltar",
+        "Vale -2% D-1 + peers -1,82% médio · China fraco (LPR 22h) · alívio Trump não resolve · Vale 12% IBOV",
+        "PETR +2,66% D-1 com Brent $112 · Brent agora $109,89 · pode devolver 1-1,5% · PETR 13% IBOV",
+        "Volume IBOV R$24,2bi FRACO · recuperação intraday -0,83→-0,17 sem volume = squeeze · não estrutural",
+        "AtlasIntel pesquisa Flávio Day 2.0 HOJE · wildcard preto · pode mexer DI/USDBRL/PL em qualquer direção"
+      ]
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 2.0,
+      "vies": "lateral com sentimento bearish leve",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição Fase D/E (markdown -4,08% últimos 20c · 187k→179k) · testou suporte 177.220 segunda (sweep PDL) · bounce +2.245pts sem volume estrutural · Vale -2% + peers globais -1,82% headwind setorial grosso",
+      "racional_publico": "MINI ÍNDICE · Ajuste oficial segunda 18/05: 179.090 pontos (alta de 0,02% no dia · +40 pontos vs sexta 179.050). Testou suporte 177.220 segunda (sweep PDL) · bounce até 179.465 (+2.245 pontos) mas sem volume estrutural (R$24,2bi · fraco).\n\n**Por que a estrutura técnica é fraca hoje:** Distribuição Fase D/E em curso (markdown -4,08% últimos 20 candles 4H · de 187k pra 179k). Juros longos caíram 16,5 bps (F29) · bull flatten miolo · favorável estruturalmente ao IBOV. MAS 6 contraindicações pesadas invalidam o alívio: (1) Trump REVERSAL padrão · Brent pode disparar $115+ em minutos se ataque retomar · (2) UST 10y avançou 4,600% · Waller fala 9h com risco hawkish · (3) Vale -2% D-1 + peers globais -1,82% · driver China fraco (LPR 22h) · (4) PETR +2,66% D-1 com Brent $112 · Brent agora $109,89 · pode devolver 1-1,5% · (5) Volume IBOV R$24,2bi FRACO · recuperação intraday -0,83→-0,17 sem estrutura · squeeze cobertura · (6) AtlasIntel wildcard preto. Futuros US vermelhos (NAS -0,80% · tech fraco · Nvidia balanço quarta).\n\n**Filtro Anti-Narrativa ATIVO PESADO:** Consenso unânime 'alívio Trump = WIN long' tem 6 furos estruturais. Reversão Trump pode inverter tese em minutos. Waller 9h pode reverter DI/DXY. Vale + PETR headwinds setoriais (25% IBOV combinados) não resolvidos por alívio geopolítico.\n\n**Score 2,0/10:** Wyckoff Distribuição D/E +2,5 · sweep PDL bounce +1,5 · DI bull flatten +1,0 · volume fraco -1,0 · futuros US vermelhos -0,5 · Vale/peers headwind -1,0 · PETR devolvendo -0,5 · filtro Anti-Narrativa 6 contras -0,5 = **2,0 = NO_GO/AGUARDAR**.\n\n**Decisão: AGUARDAR** (score abaixo de 6 · 6 contraindicações estruturais · alívio Trump frágil e reversível · sem setup limpo hoje).",
+      "niveis_chave": {
+        "ajuste_b3": 179090,
+        "PDH": 179550,
+        "PDL": 177220,
+        "EQ": 178385,
+        "abertura_segunda": 179000,
+        "maxima_segunda": 179550,
+        "minima_segunda": 177220,
+        "fechamento_segunda": 179090,
+        "range_segunda_pts": 2330,
+        "suporte_critico": 177220,
+        "buffer_ajuste_suporte_pts": 1870,
+        "weekly_high_20d": 187515,
+        "weekly_low_20d": 177220
+      },
+      "ajuste_b3_meta": {
+        "valor": 179090,
+        "data_referencia": "2026-05-18",
+        "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05",
+        "nota_validacao": "Ajuste 179.090 dentro faixa 178k-200k (LIÇÃO 18 validado) · +40 pts vs sexta 179.050 = +0,02% · coerente IBOV -0,17%"
+      },
+      "plano": {
+        "direcao": "SEM SETUP HOJE (AGUARDAR)",
+        "entry_zona": "N/A",
+        "stop": "N/A",
+        "stop_pts": "N/A",
+        "tp1": "N/A",
+        "tp1_rr": "N/A",
+        "tp1_partial_pct": 50,
+        "tp2": "N/A",
+        "tp2_rr": "N/A",
+        "tp2_partial_pct": 30,
+        "tp3": "N/A",
+        "tp3_rr": "N/A",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "N/A",
+        "setup": "SEM SETUP HOJE · score 2,0/10 = AGUARDAR. Filtro Anti-Narrativa ATIVO PESADO com 6 contraindicações estruturais torna qualquer setup arriscado. Alívio Trump é tático e reversível · não estrutural. Suporte 177.220 frágil (buffer apenas 1.870 pts do ajuste) · perda invalida tese inteira. Vale -2% + PETR devolvendo = headwinds setoriais grossos (25% IBOV). Waller 9h + AtlasIntel wildcards podem inverter DI/USDBRL. NÃO FORÇAR TRADE. Aguardar confirmação técnica: rompimento 179.550 com volume OU perda 177.220 com MSS bearish 1H.",
+        "kill_zone": "N/A (sem setup hoje)"
+      },
+      "comentario_breve": "Sem entrada hoje. Filtro Anti-Narrativa ATIVO · 6 contraindicações estruturais · alívio Trump frágil e reversível · score 2,0 = AGUARDAR."
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 3.5,
+      "vies": "short condicional",
+      "veredito": "GO_CONDICIONAL",
+      "fase_wyckoff": "Acumulação Fase C/D (markup +1,66% últimos 20c 4H · saiu de 4.910) · segunda devolveu -65,5pts (-1,29% · de 5.072,5 pra 5.028,471) · USDBRL furou 5,00 por 0,015 centavo · overnight 4,9907",
+      "racional_publico": "MINI DÓLAR · Ajuste oficial segunda 18/05: 5.028,471 (queda de 1,16% no dia · -59 pontos vs sexta 5.087,516). USDBRL fechou 4,9985 (-1,37%) · furou 5,00 por 0,015 centavo · overnight 4,9907 (-1,29%).\n\n**Por que a tese é de continuidade vendedora:** USDBRL furou 5,00 psicológico · movim ento ligado a Trump alívio · mas frágil e reversível. Juros longos caíram 16,5 bps (F29) · bull flatten miolo · dovish · favorece real (WDO SHORT). Acumulação Fase C/D confirmada (testou suporte 4.910 semanas atrás · markup +1,66% últimos 20c). Correlação inversa com WIN confirmada segunda (WDO -1,16% · WIN +0,02%). DXY +0,27% overnight · mas fechou D-1 99,193 (-0,9% pós-Trump) · movimento ambíguo.\n\n**Filtro Anti-Narrativa ATIVO · 3 riscos principais WDO:** (1) Trump REVERSAL padrão · se ataque retomar, Brent dispara $115+ · USDBRL volta 5,05-5,10 em minutos · (2) UST 10y avançou 4,600% · Waller fala 9h com risco hawkish · DXY pode saltar · alívio reverter · (3) Brent -1,97% overnight ($109,89) · mas se reverter pro $112-115, pressão inflacionária volta · favorece USDBRL alta.\n\n**Score 3,5/10:** Wyckoff Acumulação C/D +2,5 · suporte 4.910 segurou +1,5 · DI bull flatten favorável +0,5 · USDBRL furou 5,00 +1,0 · correlação inversa WIN +0,5 · Brent reversão Trump risco -1,0 · UST + Waller hawkish risco -0,5 · filtro Anti-Narrativa 6 contras -0,5 = **3,5 = LOW GO_CONDICIONAL**.\n\n**Decisão: SHORT CONDICIONAL** · score marginal 3,5 · setup só aciona SE 3 gatilhos simultâneos: (1) USDBRL abrir <4,98 (confirmando continuidade) · (2) Waller 9h não-hawkish (sem reversão DXY/UST) · (3) Brent não reverter acima $111 até 10h. Se qualquer gatilho falhar, setup INVALIDA · não entra.",
+      "niveis_chave": {
+        "ajuste_b3": 5028.471,
+        "PDH": 5072.5,
+        "PDL": 5001.5,
+        "EQ": 5037,
+        "abertura_segunda": 5072.5,
+        "maxima_segunda": 5072.5,
+        "minima_segunda": 5001.5,
+        "fechamento_segunda": 5028.471,
+        "range_segunda_pts": 71,
+        "suporte_semanal": 4910,
+        "abertura_esperada_overnight": 4990,
+        "weekly_high_20d": 5101.5,
+        "weekly_low_20d": 4910
+      },
+      "ajuste_b3_meta": {
+        "valor": 5028.471,
+        "data_referencia": "2026-05-18",
+        "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05"
+      },
+      "plano": {
+        "direcao": "SHORT CONDICIONAL (3 gatilhos obrigatórios)",
+        "entry_zona": "5.040-5.050 (retest pós-gap abertura)",
+        "stop": 5070,
+        "stop_pts": 20,
+        "tp1": 4990,
+        "tp1_rr": "1:2.5",
+        "tp1_partial_pct": 50,
+        "tp2": 4960,
+        "tp2_rr": "1:4.5",
+        "tp2_partial_pct": 30,
+        "tp3": 4930,
+        "tp3_rr": "1:6.0",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "USDBRL overnight 4,9907 · abertura esperada ~4.990-5.000. SETUP SHORT CONDICIONAL · SÓ ACIONA SE 3 GATILHOS SIMULTÂNEOS: (1) USDBRL abrir <4,98 (confirmando continuidade vendedora Trump alívio) · (2) Waller (Fed) 9h NÃO-HAWKISH (sem reversão DXY/UST · sem menção 'ainda cedo pra cortar' ou 'inflação persistente') · (3) Brent NÃO reverter acima $111 até 10h (sem retomada ataque Irã). SE os 3 gatilhos confirmarem · aguardar retest 5.040-5.050 (support zone pós-gap abertura) com rejeição (wick/engolfo baixista) · entry SHORT · SL 5.070 (+20-30pts) · TP1 4.990 (-50-60pts) · TP2 4.960 (-80-90pts) · TP3 4.930 (-110-120pts) · RR mínimo 1:2.5. SE QUALQUER GATILHO FALHAR: (a) USDBRL abrir >4,98 = alívio fraco · setup INVALIDA · (b) Waller hawkish 9h = DXY salta · setup INVALIDA · (c) Brent reverter >$111 = pressão inflacionária volta · setup INVALIDA. NÃO ENTRAR SEM OS 3 GATILHOS. Perda do suporte 4.910 semanal INVALIDA tese estrutural.",
+        "kill_zone": "EVITAR 08:30-09:30 (Waller Fed 9h) · OPERAR 10:30-12:00 (pós-Waller + Galípolo CAE 10h · SE gatilhos confirmarem) · 13:30-17:00 (NY Open)"
+      },
+      "comentario_breve": "SHORT condicional · 3 gatilhos obrigatórios: USDBRL <4,98 + Waller não-hawkish 9h + Brent não reverter $111. Se falhar, não entra."
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "05:00",
+      "evento": "🇧🇷 Fipe IPC 2ª quad mai",
+      "impacto": "BAIXO",
+      "tag": "fipe_ipc",
+      "janela_evitar": null,
+      "nota": "Inflação varejo SP · pré-mercado · marginal"
+    },
+    {
+      "hora_brt": "06:00",
+      "evento": "🇪🇺 Balança Comercial Mar",
+      "impacto": "ALTO",
+      "tag": "eu_trade_balance",
+      "janela_evitar": null,
+      "nota": "★★★ JÁ SAIU · 7,8B BEAT vs 5,4B · resolvido"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 Nilton David (BC) evento Santander",
+      "impacto": "MEDIO",
+      "tag": "bc_nilton_david",
+      "janela_evitar": null,
+      "nota": "Diretor BC · marginal pra DI"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇪🇺 Philip Lane (ECB)",
+      "impacto": "MEDIO",
+      "tag": "ecb_lane",
+      "janela_evitar": null,
+      "nota": "Chief Economist ECB · marginal pra EUR/risk"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇺🇸 Christopher Waller (Fed)",
+      "impacto": "ALTO",
+      "tag": "fed_waller",
+      "janela_evitar": "08:30-09:30",
+      "nota": "★★★ EVENTO CRÍTICO · hawkish risk · pode reverter alívio DXY/UST · setup WDO SHORT DEPENDE dele não ser hawkish · observar tom inflation/cuts"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "🇺🇸 ADP Employment semanal",
+      "impacto": "MEDIO",
+      "tag": "us_adp_weekly",
+      "janela_evitar": null,
+      "nota": "Marginal pra mercado trabalho"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade formação preço · não operar"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "🇧🇷 Galípolo CAE Senado · caso Master/BRB",
+      "impacto": "ALTO",
+      "tag": "galipolo_cae",
+      "janela_evitar": null,
+      "nota": "★★★ Diretor BC indicado presidente · pode mexer DI longa se falar inflação/Selic · monitorar tom"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇺🇸 Pending Home Sales Abr",
+      "impacto": "MEDIO",
+      "tag": "us_pending_home_sales",
+      "janela_evitar": null,
+      "nota": "Marginal pra setor imobiliário US"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "🇧🇷 Lula · Move Aplicativos R$30bi (SP)",
+      "impacto": "BAIXO",
+      "tag": "lula_move_apps",
+      "janela_evitar": null,
+      "nota": "Evento político · marginal pra mercado"
+    },
+    {
+      "hora_brt": "17:30",
+      "evento": "🇺🇸 API Brent",
+      "impacto": "MEDIO",
+      "tag": "us_api_oil",
+      "janela_evitar": null,
+      "nota": "Pós-pregão B3 · inventories petróleo · zero impacto intraday"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "22:00",
+      "evento": "🇨🇳 BPC LPR Mai (Loan Prime Rate)",
+      "impacto": "ALTO",
+      "tag": "cn_lpr",
+      "janela_evitar": null,
+      "nota": "★★★★ Taxa referência BR · pós-pregão · afeta abertura quarta · driver Vale/mineradoras"
+    },
+    {
+      "hora_brt": "WILDCARD",
+      "evento": "🇧🇷 AtlasIntel pesquisa Flávio Day 2.0",
+      "impacto": "ALTO",
+      "tag": "atlasintel_pesquisa",
+      "janela_evitar": null,
+      "nota": "★★★ Sem hora definida · pode sair a qualquer momento · pode mexer DI longa/USDBRL/PL bancada · wildcard preto"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "EVITAR 08:30-09:30",
+      "contexto": "Waller (Fed) 9h ★★★ · hawkish risk pode reverter DXY/UST/DI · zero edge · aguardar digest"
+    },
+    {
+      "janela": "10:30-12:00 (CONDICIONAL)",
+      "contexto": "Pós-Waller + Galípolo CAE 10h · primeira janela limpa SE gatilhos WDO confirmarem (USDBRL <4,98 · Waller não-hawkish · Brent não reverter) · WIN sem setup"
+    },
+    {
+      "janela": "13:30-17:00 (NY Open)",
+      "contexto": "Momentum US · continuação tendência · evitar entrar após 17:30 (pré-leilão)"
+    },
+    {
+      "janela": "EVITAR 17:45-17:55",
+      "contexto": "Leilão fechamento B3 · volatilidade final"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN1!",
+      "regra": "SEM SETUP HOJE · score 2,0 = AGUARDAR · Filtro Anti-Narrativa ATIVO PESADO com 6 contraindicações estruturais"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Trump REVERSAL é padrão estatístico · alívio é tático · não estrutural · reversão ataque destrói tese em minutos"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Vale -2% + peers -1,82% · headwind setorial grosso · China fraco (LPR 22h) · alívio Trump não resolve · Vale 12% IBOV"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "PETR +2,66% D-1 com Brent $112 · Brent agora $109,89 · pode devolver 1-1,5% · PETR 13% IBOV · combinados 25% IBOV desfavoráveis"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Volume IBOV R$24,2bi FRACO D-1 · recuperação intraday -0,83→-0,17 sem estrutura · squeeze cobertura · desfaz 1-2 sessões"
+    },
+    {
+      "ativo": "WIN1!",
+      "regra": "Suporte 177.220 frágil (buffer 1.870pts) · perda invalida · NÃO FORÇAR TRADE · aguardar confirmação técnica"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "SHORT CONDICIONAL · score 3,5 = LOW GO · 3 gatilhos obrigatórios simultâneos: USDBRL <4,98 + Waller não-hawkish 9h + Brent não reverter $111"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "SE QUALQUER GATILHO FALHAR, setup INVALIDA · não entra · disciplina protege track record"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Trump REVERSAL risco · se ataque retomar, Brent dispara $115+ · USDBRL volta 5,05-5,10 em minutos · destrói setup SHORT"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Waller 9h hawkish = DXY salta · alívio reverter · setup INVALIDA · observar tom inflation/cuts"
+    },
+    {
+      "ativo": "WDO1!",
+      "regra": "Suporte semanal 4.910 não pode perder · perda invalida tese estrutural Acumulação C/D"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Filtro Anti-Narrativa ATIVO PESADO · consenso 'alívio Trump = compra' tem 6 furos estruturais · setups CONDICIONAIS · gestão apertada"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "AtlasIntel wildcard preto (sem hora) · pode mexer DI/USDBRL/PL a qualquer momento · monitorar news intraday"
+    }
+  ],
+  "di_curva": {
+    "di1f27_taxa": 14.135,
+    "di1f27_delta_bps": -9.2,
+    "di1f27_prior": 14.227,
+    "di1f28_taxa": 13.975,
+    "di1f28_delta_bps": -15.6,
+    "di1f28_prior": 14.131,
+    "di1f29_taxa": 13.995,
+    "di1f29_delta_bps": -16.5,
+    "di1f29_prior": 14.16,
+    "di1f31_taxa": 14.125,
+    "di1f31_delta_bps": -12.6,
+    "di1f31_prior": 14.251,
+    "di1f33_taxa": 14.195,
+    "di1f33_delta_bps": -10.5,
+    "di1f33_prior": 14.3,
+    "fonte": "Falcão Notícias 19/05 07h11 BRT (CETIP oficial EOD 18/05) · LIÇÃO 53 canônico · fonte primária dia D",
+    "leitura": "BULL FLATTEN MIOLO 5 vértices · F27 -9,2 bps · F28 -15,6 bps · F29 -16,5 bps (maior queda) · F31 -12,6 bps · F33 -10,5 bps = movimento dovish concentrado no miolo (2-3 anos) · mercado precifica BC acelerando cortes Selic. FILTRO: movimento 16bps em 1 sessão raramente sustenta D+2 sem confirmação macro. Galípolo CAE 10h pode reverter · Waller hawkish 9h pode reverter · AtlasIntel wildcard pode mexer longa. Desfavorável ao MINI ÍNDICE WIN estruturalmente · favorável ao MINI DÓLAR WDO estruturalmente."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "_meta": {
+    "fase": "PRONTA_PRE_PUBLISH",
+    "versao": "1.0_FASE_UNICA",
+    "criado_em": "2026-05-19T07:30:00-03:00",
+    "publicado_em": null,
+    "republicado_em": null,
+    "licoes_aplicadas": [
+      1,
+      4,
+      7,
+      12,
+      13,
+      14,
+      18,
+      21,
+      42,
+      43,
+      44,
+      46,
+      48,
+      53,
+      54,
+      55,
+      58
+    ],
+    "nota_tecnica": "Briefing #16 FASE ÚNICA executada 19/05 07h30-08h15 BRT. Cowork compilou todos os dados (Falcão CETIP EOD 18/05 · overnight global · Vale/Petr peers · agenda macro · wildcards) e passou inline pro Code. FILTRO ANTI-NARRATIVA ATIVO PESADO com 6 contraindicações estruturais documentadas. Narrativa dominante 'alívio Trump = WIN long' invalidada por: Trump REVERSAL padrão · Waller hawkish risco 9h · Vale -2% China-driven · PETR devolvendo · volume IBOV fraco · AtlasIntel wildcard. Scores penalizados: WIN 2,0 (AGUARDAR) · WDO 3,5 (GO_CONDICIONAL SHORT · 3 gatilhos obrigatórios). TV CDP teve problema (retornava dados ouro ~4581) resolvido com múltiplos sleeps + chart_set_symbol. Ajustes B3 oficiais via TV CDP data_get_ohlcv D count:3: WIN 179.090 (+40 pts vs sexta) · WDO 5.028,471 (-59 pts vs sexta). DI Falcão CETIP 19/05 07h11: bull flatten miolo 5 vértices (F27 -9,2 · F28 -15,6 · F29 -16,5 · F31 -12,6 · F33 -10,5) = dovish · mas raramente sustenta D+2 sem confirmação. Leitura honesta: WIN lateral bearish leve · WDO short condicional. NÃO LONG default (Cowork quase errou comprando consenso · filtro salvou).",
+    "overnight_snapshot_hora": "2026-05-19T07:00:00-03:00",
+    "overnight_fonte": "Cowork compilação paralela (Claude in Chrome + Investing.com + BDM/Broadcast 19/05 07h) + TV CDP WIN/WDO",
+    "fontes": {
+      "di_curva": "FALCAO_CETIP_711_19MAI2026 (fonte primária dia D · LIÇÃO 53)",
+      "usdbrl": "BDM/Broadcast fechamento 18/05: 4,9985 (-1,37%) · overnight 4,9907 (-1,29%)",
+      "vale_peers_globais": "Cowork compilação paralela · BHP -1,53% · RIO -2,42% · AAL -1,38% · ANTO -2,03% · GLEN -1,76% · média pure -1,82%",
+      "petr_peers_globais": "Cowork compilação paralela · SHEL +0,26% · EQNR +1,92% · BP +0,19% · TTEF -0,14% · REP -0,24% · ENI -0,04% · misto",
+      "filtro_anti_narrativa": "Cowork framing refez após quase comprar consenso · 6 contras estruturais documentadas"
+    }
+  }
+}
