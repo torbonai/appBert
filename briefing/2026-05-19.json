@@ -67,15 +67,15 @@
       "niveis_chave": {
         "ajuste_b3": 179090,
         "PDH": 179550,
-        "PDL": 177220,
-        "EQ": 178385,
+        "PDL": 177580,
+        "EQ": 178565,
         "abertura_segunda": 179000,
         "maxima_segunda": 179550,
-        "minima_segunda": 177220,
-        "fechamento_segunda": 179090,
-        "range_segunda_pts": 2330,
-        "suporte_critico": 177220,
-        "buffer_ajuste_suporte_pts": 1870,
+        "minima_segunda": 177580,
+        "fechamento_segunda": 179530,
+        "range_segunda_pts": 1970,
+        "suporte_critico": 177580,
+        "buffer_ajuste_suporte_pts": 1510,
         "weekly_high_20d": 187515,
         "weekly_low_20d": 177220
       },
@@ -83,7 +83,8 @@
         "valor": 179090,
         "data_referencia": "2026-05-18",
         "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05",
-        "nota_validacao": "Ajuste 179.090 dentro faixa 178k-200k (LIÇÃO 18 validado) · +40 pts vs sexta 179.050 = +0,02% · coerente IBOV -0,17%"
+        "nota_validacao": "Ajuste 179.090 dentro faixa 178k-200k (LIÇÃO 18 validado) · +40 pts vs sexta 179.050 = +0,02% · coerente IBOV -0,17%",
+        "nota_correcao": "HOTFIX 19/05 ~09h30 BRT · campos OHLC corrigidos · fechamento_segunda 179.530 (último preço negociado Cedro) separado do ajuste_b3 179.090 (settlement B3 oficial) · weekly_low_20d 177.220 não substitui mínima diária real 177.580 · LIÇÃO 61+62"
       },
       "plano": {
         "direcao": "SEM SETUP HOJE (AGUARDAR)",
@@ -121,7 +122,7 @@
         "abertura_segunda": 5072.5,
         "maxima_segunda": 5072.5,
         "minima_segunda": 5001.5,
-        "fechamento_segunda": 5028.471,
+        "fechamento_segunda": 5007.00,
         "range_segunda_pts": 71,
         "suporte_semanal": 4910,
         "abertura_esperada_overnight": 4990,
@@ -131,7 +132,8 @@
       "ajuste_b3_meta": {
         "valor": 5028.471,
         "data_referencia": "2026-05-18",
-        "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05"
+        "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05",
+        "nota_correcao": "HOTFIX 19/05 ~09h30 BRT · fechamento_segunda 5.007,00 (último preço Cedro) separado do ajuste_b3 5.028,471 (settlement B3 oficial) · LIÇÃO 61"
       },
       "plano": {
         "direcao": "SHORT CONDICIONAL (3 gatilhos obrigatórios)",
@@ -389,7 +391,7 @@
       55,
       58
     ],
-    "nota_tecnica": "Briefing #16 FASE ÚNICA executada 19/05 07h30-08h15 BRT. Cowork compilou todos os dados (Falcão CETIP EOD 18/05 · overnight global · Vale/Petr peers · agenda macro · wildcards) e passou inline pro Code. FILTRO ANTI-NARRATIVA ATIVO PESADO com 6 contraindicações estruturais documentadas. Narrativa dominante 'alívio Trump = WIN long' invalidada por: Trump REVERSAL padrão · Waller hawkish risco 9h · Vale -2% China-driven · PETR devolvendo · volume IBOV fraco · AtlasIntel wildcard. Scores penalizados: WIN 2,0 (AGUARDAR) · WDO 3,5 (GO_CONDICIONAL SHORT · 3 gatilhos obrigatórios). TV CDP teve problema (retornava dados ouro ~4581) resolvido com múltiplos sleeps + chart_set_symbol. Ajustes B3 oficiais via TV CDP data_get_ohlcv D count:3: WIN 179.090 (+40 pts vs sexta) · WDO 5.028,471 (-59 pts vs sexta). DI Falcão CETIP 19/05 07h11: bull flatten miolo 5 vértices (F27 -9,2 · F28 -15,6 · F29 -16,5 · F31 -12,6 · F33 -10,5) = dovish · mas raramente sustenta D+2 sem confirmação. Leitura honesta: WIN lateral bearish leve · WDO short condicional. NÃO LONG default (Cowork quase errou comprando consenso · filtro salvou).",
+    "nota_tecnica": "Briefing #16 FASE ÚNICA executada 19/05 07h30-08h15 BRT. Cowork compilou todos os dados (Falcão CETIP EOD 18/05 · overnight global · Vale/Petr peers · agenda macro · wildcards) e passou inline pro Code. FILTRO ANTI-NARRATIVA ATIVO PESADO com 6 contraindicações estruturais documentadas. Narrativa dominante 'alívio Trump = WIN long' invalidada por: Trump REVERSAL padrão · Waller hawkish risco 9h · Vale -2% China-driven · PETR devolvendo · volume IBOV fraco · AtlasIntel wildcard. Scores penalizados: WIN 2,0 (AGUARDAR) · WDO 3,5 (GO_CONDICIONAL SHORT · 3 gatilhos obrigatórios). TV CDP teve problema (retornava dados ouro ~4581) resolvido com múltiplos sleeps + chart_set_symbol. Ajustes B3 oficiais via TV CDP data_get_ohlcv D count:3: WIN 179.090 (+40 pts vs sexta) · WDO 5.028,471 (-59 pts vs sexta). DI Falcão CETIP 19/05 07h11: bull flatten miolo 5 vértices (F27 -9,2 · F28 -15,6 · F29 -16,5 · F31 -12,6 · F33 -10,5) = dovish · mas raramente sustenta D+2 sem confirmação. Leitura honesta: WIN lateral bearish leve · WDO short condicional. NÃO LONG default (Cowork quase errou comprando consenso · filtro salvou). **HOTFIX 19/05 ~09h30 BRT:** campos OHLC WIN/WDO corrigidos via dados Cedro EOD 18/05 (validados Renato print home broker). Code confundiu AJUSTE B3 (settlement oficial pra margin) com FECHAMENTO (último preço negociado). WIN: mínima 177.580 (não 177.220 weekly_low) · fechamento 179.530 (não 179.090 ajuste). WDO: fechamento 5.007,00 (não 5.028,47 ajuste). Ajustes B3 permanecem corretos. Lições novas: 61 (ajuste ≠ fechamento) · 62 (weekly_low não substitui mínima diária) · 63 (pre_publish_check precisa assert OHLC_COHERENCE).",
     "overnight_snapshot_hora": "2026-05-19T07:00:00-03:00",
     "overnight_fonte": "Cowork compilação paralela (Claude in Chrome + Investing.com + BDM/Broadcast 19/05 07h) + TV CDP WIN/WDO",
     "fontes": {
