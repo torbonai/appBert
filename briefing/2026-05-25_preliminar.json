@@ -1,0 +1,253 @@
+{
+  "data": "2026-05-25",
+  "data_extenso": "Segunda-feira, 25 de maio de 2026",
+  "hora_publicacao": "PRELIMINAR_FASE1_NOTURNA",
+  "edicao": 17,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL",
+    "subtitulo": "_PENDENTE_FASE2_OVERNIGHT_GLOBAL"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_ · preliminar FASE 1: MINI ÍNDICE · D-1 sexta 22/05 ajuste B3 177.777 · fechou 177.900 (-0,43% · -775 pts) · sexta perfurou o suporte 177.220 do #16 (mínima 176.330) e fechou de volta acima · markdown em curso · score/veredito _PENDENTE_FASE2_",
+    "wdo_linha": "_PENDENTE_FASE2_ · preliminar FASE 1: MINI DÓLAR · D-1 sexta 22/05 ajuste B3 5.026,72 · fechou 5.050,00 (+0,68% · +34 pts) na máxima do dia · markup leve · score/veredito _PENDENTE_FASE2_",
+    "janela_operacional": "_PENDENTE_FASE2_AGENDA",
+    "nivel_chave": "WIN 178.870 (PDH sexta) · 176.330 (PDL sexta · nova mínima) · 177.220 (suporte #16 · perfurado sexta) · WDO 5.052,00 (PDH sexta) · 5.004,00 (PDL sexta)",
+    "agenda_top1": "_PENDENTE_FASE2_AGENDA"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_OVERNIGHT",
+    "highlights": [
+      "📌 Briefing #17 FASE 1 NOTURNA (domingo 24/05/2026 · PRIMEIRA edição pós-viagem · briefing pausou qua-sex 20-22/05) · referência B3 EOD sexta 22/05 · dados overnight global + release Falcão CETIP segunda 7h11 _PENDENTE_FASE2_",
+      "📊 WIN 177.777 (ajuste B3 EOD sexta 22/05 · print home broker Renato/Cedro validado) · fechamento 177.900 (≠ ajuste · LIÇÃO 61) · -0,43% no dia (-775 pts) · OHLC 22/05: abertura 178.400 / máxima 178.870 / mínima 176.330 / fechamento 177.900 · range 2.540 pts · vol R$7,01bi / 39,47k contratos · contratos em aberto 175.338",
+      "📊 WIN sexta 22/05 PERFUROU o suporte 177.220 (mínima/weekly-low referência do #16) — mínima do dia em 176.330 — mas FECHOU de volta acima em 177.900. Evento estrutural relevante: sweep do suporte OU breakdown com pullback · _PENDENTE_FASE2_CONFIRMA_4H (Wyckoff HTF define qual)",
+      "💵 WDO 5.026,72 (ajuste B3 EOD sexta 22/05 · print home broker Renato/Cedro validado) · fechamento 5.050,00 (≠ ajuste · LIÇÃO 61) · +0,68% no dia (+34 pts) · OHLC 22/05: abertura 5.020,00 / máxima 5.052,00 / mínima 5.004,00 / fechamento 5.050,00 · range 48 pts · fechou NA máxima do dia · vol R$40,12bi / 159,67k contratos · contratos em aberto 1.047.357",
+      "🔄 CORRELAÇÃO INVERSA confirmada sexta 22/05: WIN -0,43% · WDO +0,68% = movimento risk-off BR clássico (bolsa cai + dólar sobe)",
+      "_PENDENTE_FASE2_DXY_OVERNIGHT",
+      "_PENDENTE_FASE2_USDJPY_OVERNIGHT",
+      "_PENDENTE_FASE2_US10Y_OVERNIGHT",
+      "_PENDENTE_FASE2_EQUITIES_US_OVERNIGHT",
+      "_PENDENTE_FASE2_BRENT_OVERNIGHT",
+      "_PENDENTE_FASE2_VALE_PEERS_GLOBAIS (LIÇÃO 58 · viés default bearish WIN se médio overnight < -3%)",
+      "💵 Curva DI EOD sexta 22/05 (prints TV · pasta canônica): F27 14,079% · F29 13,852% · F31 13,970% · curto e miolo subiram (+7,5 e +5,0 bps preliminares) · ponta longa cedeu (-2,0 bps) = achatamento com viés hawkish no curto · bps a confirmar no Falcão CETIP segunda 7h11 · LIÇÃO 53",
+      "_PENDENTE_FASE2_AGENDA_MACRO_SEGUNDA_25/05 (macro_calendar_br_2026.json desatualizado · cobre só até 16/05 · Renato envia print da agenda)",
+      "🛡 Status briefing #16 (terça 19/05) · WIN AGUARDAR score 2,0/10 sem entrada armada · WDO SHORT condicional score 3,5/10 (3 gatilhos: USDBRL <4,98 + Waller não-hawkish + Brent não reverter $111) · briefing pausou 20-22/05 · _PENDENTE_FASE2_OUTCOME (se algum gatilho WDO disparou entre 20-22/05 · Renato confirma)"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_CONSENSO_SEGUNDA_MANHA",
+      "narrativa_dominante": "_PENDENTE_FASE2_",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "descricao": "_PENDENTE_FASE2_",
+      "frases_consensuais_alertadas": [],
+      "leitura_bertani": "_PENDENTE_FASE2_",
+      "contra_evidencias_a_monitorar": []
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (preliminar: bearish leve · markdown em curso · sexta perfurou suporte 177.220)",
+      "veredito": "_PENDENTE_FASE2_",
+      "fase_wyckoff": "Distribuição Fase D/E (markdown -1,84% últimos 20c 4H · de 181.550 pra 175.200) · sexta 22/05 perfurou o suporte 177.220 referência briefing #16 com mínima 176.330 · fechou de volta acima em 177.900 mas sem volume estrutural de reversão · continuação do markdown em curso · PWL 175.200 testado",
+      "racional_publico": "_PENDENTE_FASE2_ · FASE 1 noturna fixou apenas os dados D-1 (sexta 22/05). Racional público completo na FASE 2, após overnight global + DI Falcão + leitura Wyckoff 4H.",
+      "niveis_chave": {
+        "ajuste_b3": 177777,
+        "PDH": 178870,
+        "PDL": 176330,
+        "EQ": 177600,
+        "abertura_sexta": 178400,
+        "maxima_sexta": 178870,
+        "minima_sexta": 176330,
+        "fechamento_sexta": 177900,
+        "range_sexta_pts": 2540,
+        "variacao_sexta_pts": -775,
+        "variacao_sexta_pct": -0.43,
+        "suporte_critico": 176330,
+        "buffer_ajuste_suporte_pts": 1447,
+        "suporte_177220_status": "PERFURADO sexta 22/05 · mínima do dia 176.330 · fechou de volta acima em 177.900",
+        "weekly_high_20d": 195430,
+        "weekly_low_20d": 175200
+      },
+      "ajuste_b3_meta": {
+        "valor": 177777,
+        "data_referencia": "2026-05-22",
+        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! · EOD sexta · validado por Renato",
+        "nota_validacao": "LIÇÃO 61 OK · ajuste 177.777 ≠ fechamento 177.900. ⚠ ALERTA: ajuste 177.777 está ABAIXO do piso WIN dos validadores (pega_ajuste_b3.js floor 180.000 · pre_publish_check.js floor 178.000) · range desatualizado · corrigir antes do publish FASE 2 · LIÇÃO 45 (atualizar o assert, não bypassar)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_AGENDA"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (preliminar: markup leve · sexta fechou na máxima)",
+      "veredito": "_PENDENTE_FASE2_",
+      "fase_wyckoff": "Acumulação Fase D (markup +1,03% últimos 20c 4H · de 4.992 pra 5.101,5) · Sign of Strength confirmado · sexta 22/05 subiu +0,68% e fechou 5.050,00 na máxima do dia 5.052,00 · força compradora · preço operando em DISCOUNT (80,7% abaixo EQ · 9,7% do range · próximo suporte 4.910)",
+      "racional_publico": "_PENDENTE_FASE2_ · FASE 1 noturna fixou apenas os dados D-1 (sexta 22/05). Racional público completo na FASE 2, após overnight global + DI Falcão + leitura Wyckoff 4H.",
+      "niveis_chave": {
+        "ajuste_b3": 5026.72,
+        "PDH": 5052.0,
+        "PDL": 5004.0,
+        "EQ": 5028.0,
+        "abertura_sexta": 5020.0,
+        "maxima_sexta": 5052.0,
+        "minima_sexta": 5004.0,
+        "fechamento_sexta": 5050.0,
+        "range_sexta_pts": 48,
+        "variacao_sexta_pts": 34,
+        "variacao_sexta_pct": 0.68,
+        "suporte_semanal": 4910,
+        "suporte_semanal_status": "_PENDENTE_FASE2_CONFIRMA · nível estrutural carregado dos briefings #15/#16",
+        "weekly_high_20d": 5101.5,
+        "weekly_low_20d": 4910
+      },
+      "ajuste_b3_meta": {
+        "valor": 5026.72,
+        "data_referencia": "2026-05-22",
+        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WDO1! · EOD sexta · validado por Renato",
+        "nota_validacao": "LIÇÃO 61 OK · ajuste 5.026,72 ≠ fechamento 5.050,00. Ajuste dentro da faixa WDO do pre_publish_check.js (4.800-5.200) · faixa do pega_ajuste_b3.js (4.800-5.050) está justa · ver alerta de range no _meta"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_AGENDA"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_"
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:25",
+      "evento": "🇧🇷 Boletim Focus",
+      "impacto": "BAIXO",
+      "tag": "focus_relatorio",
+      "janela_evitar": null,
+      "nota": "Recorrente toda segunda-feira · expectativas de mercado (Selic, IPCA, PIB, câmbio)"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade artificial de formação de preço · não operar"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "_PENDENTE",
+      "evento": "_PENDENTE_FASE2_AGENDA · agenda macro completa de segunda 25/05/2026 a popular na FASE 2",
+      "impacto": "TBD",
+      "tag": "review_required_25_05",
+      "janela_evitar": null,
+      "nota": "macro_calendar_br_2026.json está desatualizado (v1.4 · cobre só até 16/05). Renato vai enviar o print da agenda. Eventos recorrentes acima já inseridos."
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "_PENDENTE_FASE2_AGENDA",
+      "contexto": "Kill zones a definir na FASE 2 conforme agenda macro de segunda 25/05 + overnight"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "GERAL",
+      "regra": "_PENDENTE_FASE2_ · regras do dia a definir na FASE 2 após scores, vereditos e filtro anti-narrativa"
+    }
+  ],
+  "di_curva": {
+    "status": "FASE1_PRELIMINAR_PRINTS · níveis travados · bps a confirmar Falcão CETIP segunda 7h11",
+    "data_referencia": "2026-05-22",
+    "di1f27_taxa": 14.079,
+    "di1f27_fechamento": 14.115,
+    "di1f27_variacao_pct": 0.53,
+    "di1f27_delta_bps_preliminar": 7.5,
+    "di1f29_taxa": 13.852,
+    "di1f29_fechamento": 13.895,
+    "di1f29_variacao_pct": 0.36,
+    "di1f29_delta_bps_preliminar": 5.0,
+    "di1f31_taxa": 13.970,
+    "di1f31_fechamento": 14.000,
+    "di1f31_variacao_pct": -0.14,
+    "di1f31_delta_bps_preliminar": -2.0,
+    "fonte": "Prints TV da pasta canônica bertani_app/data/di_curve_inputs/ (DI1F27/F29/F31 D · gráfico daily de sexta 22/05 · prints salvos por Renato em 24/05) · FASE 1 primário · LIÇÃO 50",
+    "leitura_preliminar": "Curva DI sexta 22/05: curto (F27) e miolo (F29) SUBIRAM (+7,5 e +5,0 bps preliminares) · ponta longa (F31) levemente CEDEU (-2,0 bps) = achatamento (flattening) com viés hawkish concentrado no curto/miolo. Classificação metodológica final (bull/bear flatten) e integração ao viés WIN/WDO na FASE 2.",
+    "nota": "Taxas EOD (ajuste de sexta) lidas direto dos prints · sólidas. O delta em bps é PRELIMINAR (derivado da variação % exibida no print) · LIÇÃO 53: confirmar/cruzar com o release Falcão Notícias CETIP de segunda 25/05 ~7h11 BRT antes do publish."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "versao": "0.1_FASE1_NOTURNA",
+    "criado_em": "2026-05-24 · domingo noite BRT",
+    "criado_por": "Cowork · FASE 1 noturna manual · sessão pós-viagem",
+    "publicado_em": null,
+    "fase1_escopo": "Dados D-1 (sexta 22/05) fixados: ajuste B3, OHLC daily completo, range, variação — fonte: print home broker Renato (Cedro) 'Resumo de 22/05/2026', validado por Renato. EQ e buffers calculados. Camada estrutural completada via TV CDP domingo 24/05 noite: Wyckoff 4H confirmado (WIN Distribuição D/E markdown -1,84% · WDO Acumulação D markup +1,03%), weekly_high_20d e weekly_low_20d confirmados via data_get_ohlcv D count:20, níveis Pine detectados (PWH/PWL, suporte 4.910 WDO, nível 187.400 WIN).",
+    "fase2_pendencias": [
+      "Overnight global domingo→segunda (DXY, USDJPY, US10Y, equities US, Brent, Vale/mineradoras peers, futuros US)",
+      "Curva DI sexta 22/05 travada via prints (níveis F27/F29/F31) · FASE 2: confirmar bps no Falcão CETIP 7h11 + classificar flatten/steepen + integrar ao viés WIN/WDO",
+      "✅ Wyckoff HTF 4H COMPLETO · WIN Distribuição D/E (markdown -1,84%) · WDO Acumulação D (markup +1,03%)",
+      "Filtro anti-narrativa (consenso da imprensa segunda manhã)",
+      "nivel_vento · scores WIN/WDO · vereditos · viés final",
+      "Manchete + subtítulo + racional_publico + plano operacional completo (entry/SL/TP/contratos)",
+      "Agenda macro segunda 25/05 (Renato envia print · calendar desatualizado)",
+      "kill_zones_recomendadas · regras_do_dia",
+      "Capa #17 (último passo · template canônico capa_briefing_template.ps1 · LIÇÃO 19/65)"
+    ],
+    "licoes_aplicadas": [1, 50, 53, 54, 61, 62, 63, 64],
+    "alertas": [
+      "DATA: briefing #17 = SEGUNDA 25/05/2026 (NÃO 26/05). A segunda após a sexta 22/05 é dia 25. O CONTEXTO_MESTRE e o plano da sessão carregam um off-by-one ('retomada segunda 26/05') a corrigir.",
+      "VALIDADOR/RANGE: WIN ajuste 177.777 está abaixo do piso WIN em pega_ajuste_b3.js (linha 79 · 180.000) e pre_publish_check.js (linha 181 · 178.000). O publish da FASE 2 vai dar hard-fail sem atualização desses ranges. LIÇÃO 45 — atualizar o assert, NÃO bypassar.",
+      "DI: curva de sexta 22/05 TRAVADA via prints da pasta canônica (DI1F27/F29/F31 D · FASE 1 primário · LIÇÃO 50). Níveis sólidos · bps preliminares (derivados da variação % do print) · confirmar/cruzar no release Falcão CETIP segunda 7h11 antes do publish (LIÇÃO 53)."
+    ],
+    "fontes": {
+      "ohlc_d1": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! e WDO1! · enviado domingo 24/05",
+      "estrutura_json": "Espelhado de bertani_app/briefing/2026-05-19.json (briefing #16)"
+    }
+  }
+}

@@ -59,7 +59,7 @@
     {
       "codigo": "WIN1!",
       "nome": "Mini Índice",
-      "score": 2.0,
+      "score": 2,
       "vies": "lateral com sentimento bearish leve",
       "veredito": "AGUARDAR",
       "fase_wyckoff": "Distribuição Fase D/E (markdown -4,08% últimos 20c · 187k→179k) · testou suporte 177.220 segunda (sweep PDL) · bounce +2.245pts sem volume estrutural · Vale -2% + peers globais -1,82% headwind setorial grosso",
@@ -122,7 +122,7 @@
         "abertura_segunda": 5072.5,
         "maxima_segunda": 5072.5,
         "minima_segunda": 5001.5,
-        "fechamento_segunda": 5007.00,
+        "fechamento_segunda": 5007,
         "range_segunda_pts": 71,
         "suporte_semanal": 4910,
         "abertura_esperada_overnight": 4990,
@@ -132,8 +132,7 @@
       "ajuste_b3_meta": {
         "valor": 5028.471,
         "data_referencia": "2026-05-18",
-        "fonte": "B3 settlement oficial via TradingView CDP · data_get_ohlcv D count:3 · penúltima barra daily 18/05",
-        "nota_correcao": "HOTFIX 19/05 ~09h30 BRT · fechamento_segunda 5.007,00 (último preço Cedro) separado do ajuste_b3 5.028,471 (settlement B3 oficial) · LIÇÃO 61"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-18)"
       },
       "plano": {
         "direcao": "SHORT CONDICIONAL (3 gatilhos obrigatórios)",

@@ -1433,3 +1433,7 @@
 [2026-05-19T15:30:30.990Z] ✓ Saved: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\2026-05-19_1230.json
 [2026-05-19T15:30:30.991Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
 [2026-05-19T15:30:30.991Z]   · triggering publish_briefing.js --snapshot-only...
+[2026-05-19T15:30:34.894Z]   · publish exited with 0
+[2026-05-19T15:30:34.896Z] ◀ Snapshot done · 2026-05-19T12:30:34-03:00
+[2026-05-24T18:36:09.978Z] ▶ Snapshot start · 2026-05-24T15:36:09-03:00
+[2026-05-24T18:36:14.304Z]   ✗ WIN1! · 177730 fora da faixa [180000, 200000] · NÃO ACEITANDO

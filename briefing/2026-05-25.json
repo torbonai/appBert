@@ -1,0 +1,320 @@
+{
+  "data": "2026-05-25",
+  "data_extenso": "Segunda-feira, 25 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 17,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Filtro Anti-Narrativa ATIVO após Brent -5,4% precificar trégua EUA-Irã que ainda não foi fechada",
+    "subtitulo": "Acordo EUA-Irã NÃO fechado (Rubio + Baghaei + Trump confirmam) · Brent pode reverter $110+ se trégua falhar · WIN score 2,5 AGUARDAR (DI bear flatten +8 bps hawkish · sweep 176.330 sem volume de reversão · markdown em curso) · WDO score 2,0 AGUARDAR (premium 73% do range 20d · entrada qualidade menor) · Liquidez fina feriado US/UK/DE exagera movimentos (NQ +1,37% · ES -0,95%) · Agenda HOJE: Transações Correntes + IED 08:30 ★★★ · Galípolo coletiva BC 11:00 ★★★ (janela_evitar 10:45-11:30)"
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste B3 177.777 · fechou 177.900 (-0,43% · -775 pts sexta) · perfurou suporte 177.220 (mínima 176.330) sem volume de reversão · Distribuição D/E markdown -1,84% · score 2,5/10 · AGUARDAR",
+    "wdo_linha": "MINI DÓLAR · ajuste B3 5.026,72 · fechou 5.050,00 (+0,68% · +34 pts sexta) na máxima · Acumulação D markup +1,03% mas preço em PREMIUM 73% do range 20d · score 2,0/10 · AGUARDAR",
+    "janela_operacional": "N/A (AGUARDAR · não operar HOJE) · Filtro Anti-Narrativa ATIVO + DI bear flatten hawkish + liquidez fina feriado · monitorar Galípolo coletiva BC 11:00 (janela_evitar 10:45-11:30)",
+    "nivel_chave": "WIN 178.870 (PDH sexta) · 176.330 (PDL sexta · nova mínima) · 177.220 (suporte #16 · perfurado sexta) · WDO 5.052,00 (PDH sexta) · 5.004,00 (PDL sexta)",
+    "agenda_top1": "Galípolo coletiva BC 11:00 (janela_evitar 10:45-11:30) · Transações Correntes + IED 08:30"
+  },
+  "contexto_macro": {
+    "nivel_vento": "VENTO_MORNO",
+    "highlights": [
+      "📌 Briefing #17 FASE 1 NOTURNA (domingo 24/05/2026 · PRIMEIRA edição pós-viagem · briefing pausou qua-sex 20-22/05) · referência B3 EOD sexta 22/05",
+      "📊 WIN 177.777 (ajuste B3 EOD sexta 22/05 · print home broker Renato/Cedro validado) · fechamento 177.900 (≠ ajuste · LIÇÃO 61) · -0,43% no dia (-775 pts) · OHLC 22/05: abertura 178.400 / máxima 178.870 / mínima 176.330 / fechamento 177.900 · range 2.540 pts · vol R$7,01bi / 39,47k contratos · contratos em aberto 175.338",
+      "📊 WIN sexta 22/05 PERFUROU o suporte 177.220 (mínima/weekly-low referência do #16) — mínima do dia em 176.330 — mas FECHOU de volta acima em 177.900. Evento estrutural: sweep do suporte sem volume estrutural de reversão · markdown -1,84% últimos 20c 4H em curso · continuação bearish confirmada",
+      "💵 WDO 5.026,72 (ajuste B3 EOD sexta 22/05 · print home broker Renato/Cedro validado) · fechamento 5.050,00 (≠ ajuste · LIÇÃO 61) · +0,68% no dia (+34 pts) · OHLC 22/05: abertura 5.020,00 / máxima 5.052,00 / mínima 5.004,00 / fechamento 5.050,00 · range 48 pts · fechou NA máxima do dia · vol R$40,12bi / 159,67k contratos · contratos em aberto 1.047.357",
+      "🔄 CORRELAÇÃO INVERSA confirmada sexta 22/05: WIN -0,43% · WDO +0,68% = movimento risk-off BR clássico (bolsa cai + dólar sobe)",
+      "🌍 Feriado US/UK/DE (Memorial Day + Spring Bank Holiday) · mercados fechados · liquidez fina global · vários ativos STALE [22/05] · overnight parcial (só Ásia/Europa)",
+      "🛢 Brent 94,79 USD (-5,41% · MAIOR DRIVER OVERNIGHT) · perfurou $95 e voltou abaixo $100 · motor: avanço negociações EUA-Irã + expectativa reabertura Ormuz · MAS Rubio + Baghaei + Trump dizem acordo NÃO fechado · risco squeeze se trégua falhar",
+      "💵 DXY 99,00 (-0,24% · dólar fraco leve) · USDJPY 158,95 (flat) · Bunds -8,5 bps (juro alemão caiu) · UST 10y ~4,48% [STALE] · VIX 16,65 (-0,30% · calmo)",
+      "📊 Equities firmes: Europa (DAX +1,25% · CAC +1,53% · STOXX +0,84%) · futuros US inconsistentes [liquidez fina] (NQ +1,37% · ES -0,95%) · Ásia mista (Shanghai +0,96% · KOSPI -0,21%)",
+      "💎 Vale peers globais: maioria STALE [feriado UK] · ArcelorMittal +1,94% · Nippon +0,49% · mean ≈ flat-to-positivo · LIÇÃO 58 NÃO dispara (não < -3%) · sem headwind setorial grosso",
+      "⛽ Petroleiras seguem Brent: BP -2,48% · Total -1,60% · Repsol -2,00% · Equinor -1,40% (devolvendo)",
+      "💵 Curva DI EOD sexta 22/05 (Falcão CETIP): F27 +7,2 bps · F28 +8,3 bps · F29 +5,1 bps (curto/miolo sobem) · F31 -1,2 bps · F33 -3,5 bps (ponta longa cede) = BEAR FLATTEN (hawkish no curto · dovish no longo) · motor: Waller 'zero corte 2025' + Brent alto sexta · mas Datafolha aliviou risco eleitoral · desfavorável WIN",
+      "📅 Agenda HOJE: Transações Correntes 08:30 ★★★ · IED 08:30 ★★★ · Galípolo coletiva BC 11:00 ★★★ (market-mover · janela_evitar 10:45-11:30) · IPCA-15 quarta · PIB 1ºtri sexta",
+      "🛡 Status briefing #16 (terça 19/05) · WIN AGUARDAR score 2,0/10 · WDO SHORT condicional score 3,5/10 · briefing pausou 20-22/05 · não houve briefing na janela 20-22/05 · trade WDO não foi acionado nem monitorado"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "narrativa_dominante": "Mercado compra a trégua no Oriente Médio · avanço nas negociações EUA-Irã · expectativa de reabertura do Estreito de Ormuz · Brent desaba -5,4% · risco geopolítico recuando · WIN abre em tailwind. Motor secundário: 'efeito Dark Horse menor que o temido' · Datafolha pós-Vorcaro mantém Flávio competitivo (Lula 40×31 no 1ºT · 47×43 no 2ºT empate técnico) · risco eleitoral/fiscal aliviou · DI longa cedeu.",
+      "fonte_observada": "Falcão Notícias 25/05 manhã · Bom Dia Mercado · consensus unânime imprensa financeira · framing otimista 'trégua compra alívio'",
+      "descricao": "Filtro ATIVO quando narrativa unânime tem evidências estruturais contrárias suficientes pra invalidar tese consensual. HOJE: 5 contraindicações documentadas tornam o 'acordo EUA-Irã iminente' frágil e reversível em minutos.",
+      "frases_consensuais_alertadas": [
+        "Acordo EUA-Irã pode ser anunciado nesta segunda · Brent recua abaixo $95 · pressão inflacionária alivia",
+        "Reabertura de Ormuz iminente · risco geopolítico Oriente Médio recuando · WIN favorecido",
+        "Datafolha mostra Flávio competitivo · risco eleitoral menor que temido · DI longa cedeu · bolsa favorecida",
+        "Feriado US/UK/DE · liquidez fina favorece continuidade dos movimentos · alívio sustentável",
+        "Europa firme (+1,25% DAX) · futuros US positivos · risk-on confirmado globalmente"
+      ],
+      "leitura_bertani": "Mercado precifica acordo EUA-Irã como FECHADO (Brent -5,4% · perfurou $95) · mas os próprios negociadores dizem que NÃO está fechado. Rubio (secretário Estado EUA): 'não daria muita importância' · tom de quem não ancora expectativa. Baghaei (porta-voz Irã): 'não estamos perto de assinar' · 'mudanças posição EUA criam dificuldades'. Trump: 'ainda não foi totalmente negociado' · bloqueio 'em pleno vigor'. Netanyahu endureceu tom (Israel exige desmonte completo programa nuclear). Waller (Fed) hawkish 'zero corte 2025' mantém juro alto. Liquidez fina de feriado US/UK/DE EXAGERA movimentos (futuros US inconsistentes: NQ +1,37% · ES -0,95%). Gap claro narrativa × realidade: Brent precifica trégua fechada · fontes primárias confirmam NÃO fechada. Risco de squeeze se acordo falhar (Brent volta $110+ · risk-off · WIN derruba).",
+      "contra_evidencias_a_monitorar": [
+        "Acordo EUA-Irã NÃO fechado · Rubio + Baghaei + Trump confirmam ainda em negociação · Brent pode reverter $110+ em minutos se trégua falhar",
+        "Netanyahu endureceu tom · Israel exige desmonte nuclear completo · bloqueio diplomático Israel-Irã não resolvido",
+        "Waller (Fed) hawkish 'zero corte 2025' · juro US estruturalmente alto · favorece DXY · desfavorece WIN",
+        "Liquidez fina feriado US/UK/DE exagera movimentos · futuros inconsistentes (NQ +1,37% · ES -0,95%) · não estrutural",
+        "DI curva BEAR FLATTEN (curto +8,3 bps · hawkish) · desfavorece WIN · mercado precifica menos cortes Selic"
+      ]
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice",
+      "score": 2.5,
+      "vies": "lateral com sentimento bearish leve",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Distribuição Fase D/E (markdown -1,84% últimos 20c 4H · de 181.550 pra 175.200) · sexta 22/05 perfurou o suporte 177.220 referência briefing #16 com mínima 176.330 · fechou de volta acima em 177.900 mas sem volume estrutural de reversão · continuação do markdown em curso · PWL 175.200 testado",
+      "racional_publico": "WIN em Distribuição Fase D/E · markdown -1,84% últimos 20 candles 4H (de 181.550 pra 175.200 range 20d) · sexta perfurou o suporte 177.220 do briefing #16 com mínima 176.330 mas fechou de volta acima em 177.900 SEM volume estrutural de reversão · continuação do markdown em curso. Filtro Anti-Narrativa ATIVO com 5 contra-evidências (acordo EUA-Irã NÃO fechado · Rubio + Baghaei + Trump confirmam · Brent pode reverter $110+ se trégua falhar · gap claro narrativa × realidade). DI curva bear flatten +8,3 bps F28 hawkish no curto = desfavorável WIN (mercado precifica menos cortes Selic). Liquidez fina feriado US/UK/DE exagera movimentos (futuros inconsistentes NQ +1,37% · ES -0,95%). Score breakdown: base 10,0 − estrutura 2,0 (markdown sem reversão) − filtro 2,0 (ativo) − DI 1,5 (hawkish) − liquidez 1,0 (fina) − sweep 1,0 (sem volume) = 2,5/10 · veredito AGUARDAR.",
+      "niveis_chave": {
+        "ajuste_b3": 177777,
+        "PDH": 178870,
+        "PDL": 176330,
+        "EQ": 177600,
+        "abertura_sexta": 178400,
+        "maxima_sexta": 178870,
+        "minima_sexta": 176330,
+        "fechamento_sexta": 177900,
+        "range_sexta_pts": 2540,
+        "variacao_sexta_pts": -775,
+        "variacao_sexta_pct": -0.43,
+        "suporte_critico": 176330,
+        "buffer_ajuste_suporte_pts": 1447,
+        "suporte_177220_status": "PERFURADO sexta 22/05 · mínima do dia 176.330 · fechou de volta acima em 177.900",
+        "weekly_high_20d": 195430,
+        "weekly_low_20d": 175200
+      },
+      "ajuste_b3_meta": {
+        "valor": 177777,
+        "data_referencia": "2026-05-22",
+        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! · EOD sexta · validado por Renato",
+        "nota_validacao": "LIÇÃO 61 OK · ajuste 177.777 ≠ fechamento 177.900"
+      },
+      "plano": {
+        "direcao": "N/A",
+        "entry_zona": "N/A",
+        "stop": "N/A",
+        "stop_pts": "N/A",
+        "tp1": "N/A",
+        "tp1_rr": "N/A",
+        "tp1_partial_pct": 50,
+        "tp2": "N/A",
+        "tp2_rr": "N/A",
+        "tp2_partial_pct": 30,
+        "tp3": "N/A",
+        "tp3_rr": "N/A",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "N/A",
+        "setup": "Anti-trade (score 2,5/10 < threshold 6,0 · veredito AGUARDAR) · Filtro Anti-Narrativa ATIVO com 5 contra-evidências + DI bear flatten +8 bps hawkish curto (desfavorável WIN) + markdown sem volume de reversão no sweep 176.330 + liquidez fina feriado US/UK/DE exagera movimentos. Cancelamento do anti-trade se: (1) acordo EUA-Irã CONFIRMADO fechado por fontes primárias (Rubio + Baghaei) · Brent estabiliza < $95 · filtro DESATIVA OU (2) WIN rompe 179.500 com volume acima da média diária + DI curta cede ≥10 bps intraday.",
+        "kill_zone": "N/A (não operar HOJE · monitorar agenda: Transações Correntes 08:30 + Galípolo coletiva BC 11:00 janela_evitar 10:45-11:30)"
+      },
+      "comentario_breve": "AGUARDAR pela resolução do gap narrativa × realidade (acordo EUA-Irã) e confirmação de reversão do markdown com volume estrutural. DI hawkish + filtro ATIVO + liquidez fina = risco-retorno desfavorável."
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "score": 2,
+      "vies": "lateral",
+      "veredito": "AGUARDAR",
+      "fase_wyckoff": "Acumulação Fase D (markup +1,03% últimos 20c 4H · de 4.992 pra 5.101,5) · Sign of Strength confirmado · sexta 22/05 subiu +0,68% e fechou 5.050,00 na máxima do dia 5.052,00 · força compradora · preço operando em PREMIUM (73% do range 20d · ajuste 5.026 ≈ 61% · acima do EQ 5.005,75 · entrada de qualidade menor)",
+      "racional_publico": "WDO em Acumulação Fase D · markup +1,03% últimos 20 candles 4H (de 4.992 pra 5.101,5 range 20d) · Sign of Strength confirmado · sexta fechou 5.050 na máxima do dia 5.052 com força compradora. Porém preço operando em PREMIUM (73% do range 20d · ajuste B3 5.026,72 ≈ 61% do range · acima do EQ 5.005,75) = entrada de qualidade MENOR (ICT prega comprar em discount). DI curva bear flatten sinalização mista: curto +8,3 bps F28 hawkish (favorece dólar) MAS ponta longa -3,5 bps F33 dovish (neutraliza). Filtro Anti-Narrativa ATIVO diminui confiança estrutural (Brent -5,4% precifica acordo EUA-Irã que NÃO foi fechado · risco de reversão rápida). Liquidez fina feriado US/UK/DE exagera movimentos (futuros inconsistentes). Score breakdown: base 10,0 − premium 3,0 (zona ruim) − filtro 2,5 (ativo) − DI mista 1,5 (ambíguo) − liquidez 1,0 (fina) = 2,0/10 · veredito AGUARDAR.",
+      "niveis_chave": {
+        "ajuste_b3": 5026.72,
+        "PDH": 5052.0,
+        "PDL": 5004.0,
+        "EQ": 5028.0,
+        "abertura_sexta": 5020.0,
+        "maxima_sexta": 5052.0,
+        "minima_sexta": 5004.0,
+        "fechamento_sexta": 5050.0,
+        "range_sexta_pts": 48,
+        "variacao_sexta_pts": 34,
+        "variacao_sexta_pct": 0.68,
+        "suporte_semanal": 4910,
+        "suporte_semanal_status": "nível estrutural carregado dos briefings #15/#16",
+        "weekly_high_20d": 5101.5,
+        "weekly_low_20d": 4910
+      },
+      "ajuste_b3_meta": {
+        "valor": 5026.72,
+        "data_referencia": "2026-05-22",
+        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WDO1! · EOD sexta · validado por Renato",
+        "nota_validacao": "LIÇÃO 61 OK · ajuste 5.026,72 ≠ fechamento 5.050,00. Ajuste dentro da faixa WDO do pre_publish_check.js (4.800-5.200) · faixa do pega_ajuste_b3.js (4.800-5.200)"
+      },
+      "plano": {
+        "direcao": "N/A",
+        "entry_zona": "N/A",
+        "stop": "N/A",
+        "stop_pts": "N/A",
+        "tp1": "N/A",
+        "tp1_rr": "N/A",
+        "tp1_partial_pct": 50,
+        "tp2": "N/A",
+        "tp2_rr": "N/A",
+        "tp2_partial_pct": 30,
+        "tp3": "N/A",
+        "tp3_rr": "N/A",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "N/A",
+        "setup": "Anti-trade (score 2,0/10 < threshold 6,0 · veredito AGUARDAR) · preço em PREMIUM 73% do range 20d (entrada de qualidade menor · ICT prega comprar em discount) + Filtro Anti-Narrativa ATIVO (Brent precifica acordo EUA-Irã NÃO fechado · risco reversão rápida) + DI curva sinalização mista (curto +8 bps favorece dólar MAS ponta longa -3,5 bps neutraliza) + liquidez fina feriado. Cancelamento do anti-trade se: (1) WDO corrige pra discount < EQ 5.005,75 com volume acima da média OU (2) acordo EUA-Irã confirmado fechado + Brent retorna $110+ (risk-off) + DI curta acelera alta ≥15 bps intraday.",
+        "kill_zone": "N/A (não operar HOJE · monitorar agenda: Transações Correntes 08:30 + Galípolo coletiva BC 11:00 janela_evitar 10:45-11:30)"
+      },
+      "comentario_breve": "AGUARDAR correção pra discount (< EQ 5.005,75) pra melhorar risco-retorno. Markup confirmado mas entrada em premium diminui edge. Filtro ATIVO + sinalização DI mista + liquidez fina = prudência."
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:25",
+      "evento": "🇧🇷 Boletim Focus",
+      "impacto": "BAIXO",
+      "tag": "focus_relatorio",
+      "janela_evitar": null,
+      "nota": "Recorrente toda segunda-feira · expectativas de mercado (Selic, IPCA, PIB, câmbio)"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade artificial de formação de preço · não operar"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "08:30",
+      "evento": "🇧🇷 Transações Correntes",
+      "impacto": "ALTO",
+      "tag": "transacoes_correntes_br",
+      "janela_evitar": "08:25-08:35",
+      "nota": "Balança de pagamentos março 2026 · market-mover se houver surpresa grande (> $2bi vs consenso)"
+    },
+    {
+      "hora_brt": "08:30",
+      "evento": "🇧🇷 IED (Investimento Estrangeiro Direto)",
+      "impacto": "ALTO",
+      "tag": "ied_br",
+      "janela_evitar": "08:25-08:35",
+      "nota": "Investimento estrangeiro direto março 2026 · impacto combinado com Transações Correntes"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇧🇷 Galípolo coletiva BC",
+      "impacto": "ALTO",
+      "tag": "galipolo_coletiva_bc",
+      "janela_evitar": "10:45-11:30",
+      "nota": "Diretor de Política Monetária BC · pode sinalizar próximos passos Selic · MAIOR VOLATILIDADE esperada · evitar operar nesta janela"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "09:00-09:25 BRT (Leilão abertura B3)",
+      "contexto": "⛔ EVITAR · volatilidade artificial de formação de preço · não operar. HOJE especialmente: ambos AGUARDAR (WIN score 2,5 · WDO score 2,0) + Filtro Anti-Narrativa ATIVO + liquidez fina feriado US/UK/DE."
+    },
+    {
+      "janela": "10:45-11:30 BRT (Galípolo coletiva BC)",
+      "contexto": "⛔ EVITAR · evento-chave do dia · Galípolo (diretor Política Monetária BC) pode sinalizar próximos passos Selic · MAIOR volatilidade esperada. Monitorar discurso MAS não operar reação imediata. Reavaliação pós-evento: se acordo EUA-Irã confirmado fechado + Brent estabiliza < $95 · filtro DESATIVA."
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "GERAL",
+      "regra": "🚫 NÃO OPERAR HOJE · WIN score 2,5 + WDO score 2,0 = ambos AGUARDAR (< threshold 6,0) · risco-retorno desfavorável"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "Filtro Anti-Narrativa ATIVO (Brent -5,4% precifica acordo EUA-Irã NÃO fechado · Rubio + Baghaei + Trump confirmam · risco reversão rápida se trégua falhar)"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "DI curva bear flatten +8,3 bps F28 hawkish no curto = desfavorável WIN (mercado precifica menos cortes Selic)"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "Markdown -1,84% últimos 20c 4H · sexta perfurou suporte 177.220 com mínima 176.330 mas fechou 177.900 SEM volume estrutural de reversão · continuação bearish em curso"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "Preço em PREMIUM 73% do range 20d (ajuste 5.026 ≈ 61%) · entrada de qualidade MENOR (ICT prega comprar em discount · aguardar correção < EQ 5.005,75)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Liquidez fina feriado US/UK/DE (Memorial Day + Spring Bank Holiday) exagera movimentos · futuros inconsistentes (NQ +1,37% · ES -0,95%) · volatilidade não estrutural"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⛔ EVITAR janelas de volatilidade: 08:25-08:35 (Transações Correntes + IED) · 09:00-09:25 (leilão abertura B3) · 10:45-11:30 (Galípolo coletiva BC · MAIOR volatilidade) · 17:45-17:55 (leilão fechamento B3)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "📊 Galípolo coletiva BC 11:00 é o evento-chave do dia · pode sinalizar próximos passos Selic · monitorar discurso mas NÃO operar reação imediata"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "Reavaliação: (1) acordo EUA-Irã CONFIRMADO fechado · Brent estabiliza < $95 · filtro DESATIVA OU (2) WIN rompe 179.500 com volume acima da média + DI curta cede ≥10 bps intraday"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "Reavaliação: (1) WDO corrige pra discount < EQ 5.005,75 com volume OU (2) acordo EUA-Irã confirmado + Brent retorna $110+ (risk-off) + DI curta acelera alta ≥15 bps"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "Se você operar fora do briefing: risco 1% da banca · stop obrigatório · RR mínimo 1:2 · tamanho reduzido pela metade (liquidez fina)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "🛡 Disciplina PRIMEIRO · edge estrutural SEGUNDO · retorno TERCEIRO · preservação de capital em dia desfavorável é vitória"
+    }
+  ],
+  "di_curva": {
+    "di1f27_taxa": 14.115,
+    "di1f27_delta_bps": 7.2,
+    "di1f27_prior": 14.043,
+    "di1f28_taxa": 13.885,
+    "di1f28_delta_bps": 8.3,
+    "di1f28_prior": 13.802,
+    "di1f29_taxa": 13.895,
+    "di1f29_delta_bps": 5.1,
+    "di1f29_prior": 13.844,
+    "di1f31_taxa": 14.000,
+    "di1f31_delta_bps": -1.2,
+    "di1f31_prior": 14.012,
+    "di1f33_taxa": 14.085,
+    "di1f33_delta_bps": -3.5,
+    "di1f33_prior": 14.120,
+    "fonte": "Falcão Notícias segunda 25/05 manhã (CETIP EOD sexta 22/05) · LIÇÃO 53 fonte primária dia D",
+    "leitura": "BEAR FLATTEN EOD sexta 22/05 · curto/miolo SOBE (+7,2/+8,3/+5,1 bps F27/F28/F29) · ponta longa CEDE (-1,2/-3,5 bps F31/F33) = achatamento com viés hawkish no curto (mercado precifica menos cortes Selic). Motor: Waller (Fed) hawkish 'zero corte 2025' + Brent ainda alto sexta ~$103,5 · mas ponta longa cedeu (risco eleitoral Datafolha aliviou). Desfavorável WIN (hawkish = cap rate sobe) · ambíguo WDO (DI subindo deveria favorecer USDBRL · mas ponta longa dovish compensa)."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "versao": "1.0_FASE2_COMPLETA",
+    "criado_em": "2026-05-24 · domingo noite BRT",
+    "criado_por": "Cowork · FASE 1 noturna manual · sessão pós-viagem",
+    "fase2_completo_em": "2026-05-25 · domingo noite BRT · sessão continuada após compactação de contexto",
+    "publicado_em": null,
+    "fase1_escopo": "Dados D-1 (sexta 22/05) fixados: ajuste B3, OHLC daily completo, range, variação — fonte: print home broker Renato (Cedro) 'Resumo de 22/05/2026', validado por Renato. EQ e buffers calculados. Camada estrutural completada via TV CDP domingo 24/05 noite: Wyckoff 4H confirmado (WIN Distribuição D/E markdown -1,84% · WDO Acumulação D markup +1,03%), weekly_high_20d e weekly_low_20d confirmados via data_get_ohlcv D count:20, níveis Pine detectados (PWH/PWL, suporte 4.910 WDO, nível 187.400 WIN).",
+    "fase2_escopo": "✅ COMPLETO · Overnight global preenchido (feriado US/UK/DE, Brent -5,41%, DXY, VIX, equities Europa, Vale peers, petroleiras) · Curva DI confirmada Falcão CETIP (5 vértices F27/F28/F29/F31/F33 · bear flatten +8 bps curto / -3 bps longo) · Filtro Anti-Narrativa ATIVO (5 frases consensuais + 5 contra-evidências · acordo EUA-Irã NÃO fechado) · nivel_vento VENTO_MORNO · Scores WIN 2,5 WDO 2,0 · Vereditos AGUARDAR (ambos < threshold 6,0) · Manchete + subtítulo + racional_publico completos · Planos operacionais completos (N/A + anti-trade + cancelamento) · Agenda macro (3 eventos ALTO impacto HOJE) · Kill zones (N/A · não operar) · Regras do dia (12 bullets) · Resumo_30s atualizado.",
+    "fase2_pendencias_restantes": [],
+    "licoes_aplicadas": [1, 7, 50, 53, 54, 58, 61, 62, 63, 64],
+    "alertas": [
+      "✅ RESOLVIDO: DATA briefing #17 = SEGUNDA 25/05/2026 confirmada.",
+      "✅ RESOLVIDO: DI curva confirmada Falcão CETIP EOD sexta 22/05 · 5 vértices integrados ao JSON."
+    ],
+    "fontes": {
+      "ohlc_d1": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! e WDO1! · enviado domingo 24/05",
+      "estrutura_json": "Espelhado de bertani_app/briefing/2026-05-19.json (briefing #16)"
+    }
+  }
+}
