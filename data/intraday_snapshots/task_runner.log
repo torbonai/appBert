@@ -2704,3 +2704,33 @@ Exit code: 0
 [2026-05-25T11:30:30.579Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
 [2026-05-25T11:30:30.580Z]   · triggering publish_briefing.js --snapshot-only...
 [publish] PUBLISH
+[publish]   data/intraday_snapshots: 4 copied, 94 skipped
+[publish] git status...
+[publish] Changes:
+M data/intraday_snapshots/latest.json
+ M data/intraday_snapshots/log.txt
+ M data/intraday_snapshots/task_runner.log
+?? data/intraday_snapshots/2026-05-25_0830.json
+[publish] git add...
+[publish] git commit -m "Intraday snapshot 2026-05-25 08:30"...
+[publish] git push...
+[publish] ✅ Publish OK
+[2026-05-25T11:30:33.055Z]   · publish exited with 0
+[2026-05-25T11:30:33.056Z] ◀ Snapshot done · 2026-05-25T08:30:33-03:00
+Exit code: 0 
+ 
+=== 25/05/2026  9:30:00,59 === 
+[2026-05-25T12:30:00.740Z] ▶ Snapshot start · 2026-05-25T09:30:00-03:00
+[2026-05-25T12:30:04.852Z]   ✗ WIN1! · 179060 fora da faixa [180000, 200000] · NÃO ACEITANDO
+[2026-05-25T12:30:12.977Z]   ✓ WDO1! · last=5004
+[2026-05-25T12:30:17.030Z]   ✓ DXY · last=98.971
+[2026-05-25T12:30:21.224Z]   ✓ USDJPY · last=158.915
+[2026-05-25T12:30:25.433Z]   ✓ US500 · last=7552.4
+[2026-05-25T12:30:29.640Z]   ✓ NAS100 · last=29911.1
+[2026-05-25T12:30:33.826Z]   ✓ XAUUSD · last=4560.03
+[2026-05-25T12:30:33.828Z]   · fetching DI curve from Investing...
+[2026-05-25T12:30:34.583Z]   ✓ DI curve · 5 vertices
+[2026-05-25T12:30:34.588Z] ✓ Saved: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\2026-05-25_0930.json
+[2026-05-25T12:30:34.589Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
+[2026-05-25T12:30:34.589Z]   · triggering publish_briefing.js --snapshot-only...
+[publish] PUBLISH
