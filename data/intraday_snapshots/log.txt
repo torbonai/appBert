@@ -1705,3 +1705,18 @@
 [2026-05-26T18:30:35.562Z] ✓ Saved: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\2026-05-26_1530.json
 [2026-05-26T18:30:35.563Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
 [2026-05-26T18:30:35.563Z]   · triggering publish_briefing.js --snapshot-only...
+[2026-05-26T18:30:38.468Z]   · publish exited with 0
+[2026-05-26T18:30:38.468Z] ◀ Snapshot done · 2026-05-26T15:30:38-03:00
+[2026-05-26T19:30:02.201Z] ▶ Snapshot start · 2026-05-26T16:30:02-03:00
+[2026-05-26T19:30:06.411Z]   ✗ WIN1! · 177295 fora da faixa [180000, 200000] · NÃO ACEITANDO
+[2026-05-26T19:30:14.622Z]   ✓ WDO1! · last=5037
+[2026-05-26T19:30:18.791Z]   ✓ DXY · last=99.166
+[2026-05-26T19:30:22.952Z]   ✓ USDJPY · last=159.317
+[2026-05-26T19:30:27.142Z]   ✓ US500 · last=7518.8
+[2026-05-26T19:30:31.376Z]   ✗ NAS100 · 30007.1 fora da faixa [22000, 30000] · NÃO ACEITANDO
+[2026-05-26T19:30:35.614Z]   ✓ XAUUSD · last=4501.8
+[2026-05-26T19:30:35.616Z]   · fetching DI curve from Investing...
+[2026-05-26T19:30:36.753Z]   ✓ DI curve · 5 vertices
+[2026-05-26T19:30:36.764Z] ✓ Saved: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\2026-05-26_1630.json
+[2026-05-26T19:30:36.765Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
+[2026-05-26T19:30:36.766Z]   · triggering publish_briefing.js --snapshot-only...
