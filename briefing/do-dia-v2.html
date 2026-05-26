@@ -577,9 +577,10 @@
           var planoCls = at.plano.direcao === 'SHORT' ? 'short' : 'long';
           var dirIcon = at.plano.direcao === 'SHORT' ? '▼' : '▲';
           var dirCol = at.plano.direcao === 'SHORT' ? 'warn' : 'ok';
+          var dirLabel = at.plano.direcao === 'SHORT' ? 'VENDA' : 'COMPRA';
 
           html += '<div class="plano-block ' + planoCls + '">';
-          html += '<p class="plano-titulo ' + planoCls + '">🎯 Plano operacional · ' + dirIcon + ' ' + at.plano.direcao + '</p>';
+          html += '<p class="plano-titulo ' + planoCls + '">🎯 Plano operacional · ' + dirIcon + ' ' + dirLabel + '</p>';
           html += '<div class="plano-grid">';
           html += '<div class="plano-cell"><div class="l">Entry</div><div class="v ' + dirCol + '">' + (at.plano.entry_zona || at.plano.entry) + '</div><div class="s">zona de retest</div></div>';
           html += '<div class="plano-cell"><div class="l">Stop Loss</div><div class="v warn">' + fmtPts(at.plano.stop) + '</div><div class="s">' + at.plano.stop_pts + ' pts além do extremo</div></div>';
@@ -631,8 +632,4 @@
       }
     }
 
-    bootBriefing();
-  </script>
-</body>
-</html>
-                           
+    boo
