@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Entrar · Bertani App</title>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <style>
+    body {
+      background: var(--bg);
+      color: var(--text);
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      padding: 24px;
+    }
+    .login-card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 48px 40px;
+      max-width: 440px;
+      width: 100%;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.4);
+    }
+    .login-card h1 {
+      font-size: 28px;
+      margin: 0 0 8px;
+      color: var(--text);
+      font-weight: 700;
+    }
+    .login-card .subtitle {
+      color: var(--text-2);
+      font-size: 14px;
+      margin: 0 0 32px;
+      line-height: 1.5;
+    }
+    .login-card label {
+      display: block;
+      font-size: 13px;
+      color: var(--text-2);
+      margin-bottom: 8px;
+      font-weight: 600;
+      letter-spacing: 0.02em;
+    }
+    .login-card input[type="email"] {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--bg);
+      border: 1px solid var(--border-bright);
+      border-radius: 10px;
+      color: var(--text);
+      font-size: 15px;
+      box-sizing: border-box;
+      transition: border-color 0.2s;
+    }
+    .login-card input[type="email"]:focus {
+      outline: none;
+      border-color: var(--accent);
+    }
+    .login-card button {
+      width: 100%;
+      padding: 14px 16px;
+      background: var(--accent);
+      color: #fff;
+      border: none;
+      border-radius: 10px;
+      font-size: 15px;
+      font-weight: 700;
+      cursor: pointer;
+      margin-top: 16px;
+      transition: background 0.2s;
+    }
+    .login-card button:hover { background: var(--accent-light, #5A91FF); }
+    .login-card button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .login-card .helper {
+      font-size: 13px;
+      color: var(--muted);
+      margin-top: 20px;
+      line-height: 1.6;
+      text-align: center;
+    }
+    .login-card .helper a { color: var(--accent-light, #5A91FF); text-decoration: none; }
+    .feedback {
+      margin-top: 20px;
+      padding: 14px;
+      border-radius: 10px;
+      font-size: 14px;
+      line-height: 1.5;
+      display: none;
+    }
+    .feedback.success {
+      background: rgba(0,200,83,0.1);
+      border: 1px solid var(--green);
+      color: var(--green);
+    }
+    .feedback.error {
+      background: rgba(255,23,68,0.1);
+      border: 1px solid var(--warn);
+      color: var(--warn);
+    }
+    .brand {
+      text-align: center;
+      margin-bottom: 28px;
+    }
+    .brand-logo {
+      font-size: 12px;
+      letter-spacing: 0.2em;
+      color: var(--muted);
+      font-weight: 600;
+    }
+    .brand-name {
+      font-size: 24px;
+      font-weight: 700;
+      color: var(--text);
+      margin-top: 4px;
+    }
+    .footer-mini {
+      text-align: center;
+      margin-top: 24px;
+      font-size: 11px;
+      color: var(--muted);
+      line-height: 1.5;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="login-card">
+    <div class="brand">
+      <div class="brand-logo">BERTANI</div>
+      <div class="brand-name">Bertani App</div>
+    </div>
+
+    <h1>Entrar</h1>
+    <p class="subtitle">Sem senha. Digite seu email e a gente envia um link de acesso direto pra você.</p>
+
+    <form id="loginForm">
+      <label for="email">E-mail da sua assinatura</label>
+      <input type="email" id="email" name="email" placeholder="voce@exemplo.com" required autocomplete="email" autofocus>
+      <button type="submit" id="loginBtn">Receber link de acesso</button>
+    </form>
+
+    <div id="feedback" class="feedback"></div>
+
+    <p class="helper">
+      Primeira vez? Acesso liberado automaticamente após compra na <a href="https://app.renatobertani.com.br" target="_blank">página de planos</a>.<br>
+      Dúvidas? <a href="mailto:contato@renatobertani.com.br">contato@renatobertani.com.br</a>
+    </p>
+
+    <p class="footer-mini">
+      Renato Bertani · Analista CNPI · T 9644<br>
+      Conteúdo educacional · CVM 20 · risco em derivativos é alto
+    </p>
+  </div>
+
+  <script src="/assets/js/app.js"></script>
+  <script>
+    // Se já logado, redireciona pra appHome
+    (function() {
+      if (window.BertaniApp && window.BertaniApp.auth.isLoggedIn()) {
+        const params = new URLSearchParams(window.location.search);
+        const returnTo = params.get('return_to') || window.BertaniApp.config.appHome;
+        window.location.href = returnTo;
+      }
+    })();
+
+    document.getElementById('loginForm').addEventListener('submit', async function(e) {
+      e.preventDefault();
+      const email = document.getElementById('email').value.trim().toLowerCase();
+      const btn = document.getElementById('loginBtn');
+      const fb = document.getElementById('feedback');
+
+      if (!email || email.indexOf('@') < 0) {
+        fb.className = 'feedback error';
+        fb.textContent = 'Email inválido. Verifica e tenta de novo.';
+        fb.style.display = 'block';
+        return;
+      }
+
+      btn.disabled = true;
+      btn.textContent = 'Enviando link...';
+      fb.style.display = 'none';
+
+      const res = await window.BertaniApp.auth.requestLogin(email);
+
+      btn.disabled = false;
+      btn.textContent = 'Receber link de acesso';
+
+      if (res.ok) {
+        fb.className = 'feedback success';
+        fb.innerHTML = '<strong>Link enviado.</strong><br>' + (res.message || 'Verifica sua caixa em até 1 min. Não esquece de checar o spam.');
+        fb.style.display = 'block';
+        document.getElementById('email').value = '';
+      } else {
+        fb.className = 'feedback error';
+        fb.textContent = res.error || 'Não foi possível enviar agora. Tenta de novo em alguns segundos.';
+        fb.style.display = 'block';
+      }
+    });
+  </script>
+</body>
+</html>

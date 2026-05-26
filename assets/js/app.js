@@ -1,8 +1,10 @@
 /* ================================================================
-   BERTANI APP — Core JavaScript v1.0
+   BERTANI APP — Core JavaScript v2.0 (26/05/2026)
    Responsabilidades:
-   - Gerenciamento de acesso (Briefing R$ 147 vs Tela Pro)
-   - Navegação entre páginas
+   - Auth real via magic link (substitui ?key= legacy)
+   - Sessão server-side (Google Apps Script · validada via session_id)
+   - Analytics de uso (pageview · briefing_open · logout)
+   - Compat layer pra ?key=TP_BETA_xxx (testers legacy · 30 dias de tolerância)
    - Helpers comuns (formatação, fetch, storage)
    ================================================================ */
 
@@ -13,23 +15,141 @@
   const APP = window.BertaniApp = {};
 
   APP.config = {
-    storageKey: 'bertani_access_key',
-    sheetsEndpoint: 'https://script.google.com/macros/s/AKfycbxpwJIJyvtpQWXdMULZ-W-ABN2jQGp5obBSZusU3mtJPZPHPRiU7Ip_hlEmI3OM6Hui/exec',
+    sessionKey: 'bertani_session',           // novo · JSON {session_id, email, tier, ...}
+    legacyKey:  'bertani_access_key',        // antigo · só pra compat layer
+    sheetsEndpoint: 'https://script.google.com/macros/s/AKfycbyIq1sh5z5pxE5fDEBvxJ2XqDwhgBWZsscDlhETqkU3xmswSCTliPFib4I9XjSY_jY5/exec',
     sheetsToken: 'brt2026kzm9x7q',
     trackRecordPublic: 'https://docs.google.com/spreadsheets/d/11vdDac-OgllCYSCKaRyc9_SlfBH_sifAZHdSaGBjwPM/',
     telegramPublic: 'https://t.me/renato_bertani',
     instagram: 'https://instagram.com/renatobertanioficial',
+    loginUrl: '/login.html',
+    verifyUrl: '/verify.html',
+    appHome: '/briefing/do-dia.html'
   };
 
-  // ============== ACESSO (tier gating) ==============
+  // ============== AUTH ==============
   /*
-   * MVP simplificado:
-   * - URL com `?key=BR_xxx` → camada Briefing R$ 147
-   * - URL com `?key=TP_xxx` → camada Tela Pro
-   * - Sem key → modo demo (alguns recursos visíveis, calculadora bloqueada)
-   *
-   * V2: integração TurboCloud webhook → liberação automática
+   * Fluxo:
+   * 1. Cliente vai pra /login.html · digita email
+   * 2. APP.auth.requestLogin(email) → GAS /login_request → email com magic link
+   * 3. Cliente clica no link · vai pra /verify.html?token=xxx
+   * 4. APP.auth.verifyToken(token) → GAS /verify → recebe session JSON
+   * 5. APP.auth.saveSession(sess) → salva em localStorage
+   * 6. Redirect pra appHome
+   * 7. Em cada page-load, APP.auth.getSession() pega do localStorage
+   * 8. Tier do session destrava conteúdo via APP.access.has(tier)
    */
+  APP.auth = {
+    /** Solicita magic link · cliente fornece email */
+    async requestLogin(email) {
+      const params = new URLSearchParams({
+        token: APP.config.sheetsToken,
+        action: 'login_request',
+        email: email
+      });
+      const url = `${APP.config.sheetsEndpoint}?${params.toString()}`;
+      try {
+        const res = await fetch(url, { method: 'GET' });
+        return await res.json();
+      } catch (e) {
+        return { ok: false, error: 'rede indisponivel · tente de novo' };
+      }
+    },
+
+    /** Valida magic link token · recebe sessão · salva */
+    async verifyToken(token) {
+      const params = new URLSearchParams({
+        token: APP.config.sheetsToken,
+        action: 'verify',
+        token_link: token,
+        url: window.location.href
+      });
+      const url = `${APP.config.sheetsEndpoint}?${params.toString()}`;
+      try {
+        const res = await fetch(url, { method: 'GET' });
+        const json = await res.json();
+        if (json.ok && json.session) this.saveSession(json.session);
+        return json;
+      } catch (e) {
+        return { ok: false, error: 'rede indisponivel · tente de novo' };
+      }
+    },
+
+    /** Salva sessão no localStorage */
+    saveSession(session) {
+      try {
+        localStorage.setItem(APP.config.sessionKey, JSON.stringify(session));
+      } catch (e) { console.warn('saveSession falhou:', e); }
+    },
+
+    /** Pega sessão atual do localStorage · null se ausente/expirada */
+    getSession() {
+      try {
+        const raw = localStorage.getItem(APP.config.sessionKey);
+        if (!raw) return null;
+        const sess = JSON.parse(raw);
+        if (sess.expires_at && new Date(sess.expires_at) < new Date()) {
+          this.logout();
+          return null;
+        }
+        return sess;
+      } catch (e) { return null; }
+    },
+
+    /** Valida session server-side (renova last_seen) · não-bloqueante */
+    async refreshSession() {
+      const sess = this.getSession();
+      if (!sess || !sess.session_id) return null;
+      const params = new URLSearchParams({
+        token: APP.config.sheetsToken,
+        action: 'session_check',
+        session_id: sess.session_id
+      });
+      try {
+        const res = await fetch(`${APP.config.sheetsEndpoint}?${params.toString()}`);
+        const json = await res.json();
+        if (json.ok && json.session) {
+          this.saveSession(json.session);
+          return json.session;
+        } else if (json.error === 'sessao expirada') {
+          this.logout();
+        }
+      } catch (e) { /* offline · usa cache */ }
+      return sess;
+    },
+
+    /** Logout · limpa local + redireciona pro login */
+    logout() {
+      const sess = this.getSession();
+      if (sess) APP.analytics.track('logout', { email: sess.email });
+      try { localStorage.removeItem(APP.config.sessionKey); } catch (e) {}
+      try { localStorage.removeItem(APP.config.legacyKey); } catch (e) {}
+      window.location.href = APP.config.loginUrl;
+    },
+
+    /** Está logado? */
+    isLoggedIn() {
+      return this.getSession() !== null;
+    },
+
+    /** Redireciona pra login se não estiver logado */
+    requireLogin(opts) {
+      opts = opts || {};
+      if (this.isLoggedIn()) return true;
+      // Compat layer · se URL tem ?key=XX_xxx (legacy tester), tolera mas avisa
+      const urlKey = new URLSearchParams(window.location.search).get('key');
+      if (urlKey && opts.allowLegacyKey !== false) {
+        try { localStorage.setItem(APP.config.legacyKey, urlKey); } catch (e) {}
+        return true;
+      }
+      // Senão, redireciona
+      const returnTo = encodeURIComponent(window.location.pathname + window.location.search);
+      window.location.href = APP.config.loginUrl + '?return_to=' + returnTo;
+      return false;
+    }
+  };
+
+  // ============== ACESSO (tier gating · agora baseado em session) ==============
   APP.access = {
     TIER_DEMO: 'demo',
     TIER_BRIEFING: 'briefing',
@@ -37,41 +157,31 @@
     TIER_ELITE: 'elite',
     TIER_ADMIN: 'admin',
 
-    /**
-     * Captura key da URL (se presente) e armazena. Senão, usa armazenada.
-     * Retorna o tier atual.
-     */
-    init() {
-      const params = new URLSearchParams(window.location.search);
-      const urlKey = params.get('key');
-      if (urlKey) {
-        try {
-          localStorage.setItem(APP.config.storageKey, urlKey);
-          // Limpa a URL pra não vazar a key em compartilhamentos
+    /** Lê tier da sessão atual · fallback pra legacy key · fallback demo */
+    getCurrentTier() {
+      const sess = APP.auth.getSession();
+      if (sess && sess.tier) return sess.tier;
+
+      // Compat layer · key legacy na URL ou localStorage
+      let key = '';
+      try {
+        const urlKey = new URLSearchParams(window.location.search).get('key');
+        if (urlKey) {
+          localStorage.setItem(APP.config.legacyKey, urlKey);
+          // Limpa URL pra não vazar
           const cleanUrl = window.location.pathname + window.location.hash;
           window.history.replaceState({}, '', cleanUrl);
-        } catch (e) {
-          console.warn('localStorage indisponível, key fica em sessão apenas');
+          key = urlKey;
+        } else {
+          key = localStorage.getItem(APP.config.legacyKey) || '';
         }
-      }
-      return this.getCurrentTier();
-    },
+      } catch (e) {}
 
-    getStoredKey() {
-      try {
-        return localStorage.getItem(APP.config.storageKey) || '';
-      } catch (e) {
-        return '';
-      }
-    },
-
-    getCurrentTier() {
-      const k = this.getStoredKey();
-      if (!k) return this.TIER_DEMO;
-      if (k.startsWith('ADMIN_')) return this.TIER_ADMIN;
-      if (k.startsWith('EL_')) return this.TIER_ELITE;
-      if (k.startsWith('TP_')) return this.TIER_TELAPRO;
-      if (k.startsWith('BR_')) return this.TIER_BRIEFING;
+      if (!key) return this.TIER_DEMO;
+      if (key.startsWith('ADMIN_'))    return this.TIER_ADMIN;
+      if (key.startsWith('EL_'))       return this.TIER_ELITE;
+      if (key.startsWith('TP_'))       return this.TIER_TELAPRO;
+      if (key.startsWith('BR_'))       return this.TIER_BRIEFING;
       return this.TIER_DEMO;
     },
 
@@ -81,165 +191,182 @@
         [this.TIER_BRIEFING]: 1,
         [this.TIER_TELAPRO]: 2,
         [this.TIER_ELITE]: 3,
-        [this.TIER_ADMIN]: 99,
+        [this.TIER_ADMIN]: 99
       };
       const current = this.getCurrentTier();
       return tierRank[current] >= tierRank[requiredTier];
     },
 
-    /** Atalho · só ADMIN tem acesso */
     isAdmin() {
       return this.getCurrentTier() === this.TIER_ADMIN;
     },
 
-    requireOrLock(requiredTier, $elements) {
-      // Se não tem o tier requerido, aplica visual de lock
-      if (this.has(requiredTier)) return true;
-      $elements.forEach(el => {
-        el.classList.add('tier-locked');
-        const lockEl = document.createElement('div');
-        lockEl.className = 'tier-lock';
-        const tierLabel = requiredTier === this.TIER_TELAPRO ? 'TELA PRO' : 'BRIEFING';
-        lockEl.innerHTML = `
-          <div class="blur">${el.innerHTML}</div>
-          <div class="upgrade-cta">
-            <p class="muted">Esse recurso é exclusivo da camada <strong>${tierLabel}</strong>.</p>
-            <a href="/upgrade.html" class="btn btn-primary mt-3">Saber mais</a>
-          </div>
-        `;
-        el.replaceWith(lockEl);
-      });
-      return false;
-    },
-
-    logout() {
-      try { localStorage.removeItem(APP.config.storageKey); } catch (e) { /* noop */ }
-      window.location.href = '/';
-    },
+    /** Compat com versão antiga · alias pra auth.logout */
+    logout() { APP.auth.logout(); }
   };
 
-  // ============== HELPERS ==============
+  // ============== ANALYTICS ==============
+  APP.analytics = {
+    /** Registra evento de uso · fire-and-forget · não bloqueia render */
+    track(evento, extras) {
+      const sess = APP.auth.getSession();
+      const params = new URLSearchParams({
+        token: APP.config.sheetsToken,
+        action: 'track',
+        evento: evento,
+        url: window.location.pathname + window.location.search,
+        extras: extras ? JSON.stringify(extras) : ''
+      });
+      if (sess && sess.session_id) params.append('session_id', sess.session_id);
+      else if (sess && sess.email) params.append('email', sess.email);
+
+      // Usa sendBeacon se disponível (não bloqueia · não exige resposta)
+      const url = `${APP.config.sheetsEndpoint}?${params.toString()}`;
+      try {
+        if (navigator.sendBeacon) {
+          const blob = new Blob([''], { type: 'text/plain' });
+          navigator.sendBeacon(url, blob);
+        } else {
+          fetch(url, { method: 'GET', keepalive: true }).catch(() => {});
+        }
+      } catch (e) { /* silencioso */ }
+    },
+
+    /** Auto-track pageview no init · evento especial pra briefing */
+    autoTrack() {
+      const path = window.location.pathname;
+      if (path.indexOf('/briefing/do-dia') >= 0) {
+        this.track('briefing_open', { path: path });
+      } else {
+        this.track('pageview', { path: path });
+      }
+    }
+  };
+
+  // ============== HELPERS (mantidos do v1) ==============
   APP.fmt = {
-    /** Formata número como ponto BR (194500 → "194.500") */
     pts(n) {
       if (n == null) return '—';
       return Number(n).toLocaleString('pt-BR', { maximumFractionDigits: 0 });
     },
-    /** Formata número decimal BR (4985.5 → "4.985,5") */
     decimal(n, casas = 1) {
       if (n == null) return '—';
       return Number(n).toLocaleString('pt-BR', {
         minimumFractionDigits: casas,
-        maximumFractionDigits: casas,
+        maximumFractionDigits: casas
       });
     },
-    /** R$ formatado */
     brl(n) {
       if (n == null) return '—';
       return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
     },
-    /** Calcula resultado em R$ pra WIN (R$ 0,20/pt) */
-    winBRL(pts, contratos = 1) {
-      return pts * 0.20 * contratos;
-    },
-    /** Calcula resultado em R$ pra WDO (R$ 10/pt) */
-    wdoBRL(pts, contratos = 1) {
-      return pts * 10.00 * contratos;
-    },
-    /** Data BR (Date → "DD/MM/YYYY") */
+    winBRL(pts, contratos = 1) { return pts * 0.20 * contratos; },
+    wdoBRL(pts, contratos = 1) { return pts * 10.00 * contratos; },
     dataBR(d) {
       const dt = d instanceof Date ? d : new Date(d);
       return dt.toLocaleDateString('pt-BR');
     },
-    /** Hora BRT (Date → "HH:MM") */
     horaBRT(d) {
       const dt = d instanceof Date ? d : new Date(d);
       return dt.toLocaleTimeString('pt-BR', { hour: '2-digit', minute: '2-digit' });
-    },
+    }
   };
 
-  // ============== SHEETS API (track record) ==============
+  // ============== SHEETS (track record · mantido v1) ==============
   APP.sheets = {
-    /**
-     * Append novo trade no Sheets (BR público).
-     * @param {object} dados - {data, hora_brt, ativo, direcao, ...}
-     */
     async appendTrade(dados) {
       const params = new URLSearchParams({
         token: APP.config.sheetsToken,
         action: 'append',
-        ...dados,
+        ...dados
       });
       const url = `${APP.config.sheetsEndpoint}?${params.toString()}`;
       try {
         const res = await fetch(url, { method: 'GET' });
-        const json = await res.json();
-        return json;
+        return await res.json();
       } catch (e) {
         console.error('Erro ao registrar trade no Sheets:', e);
         return { ok: false, error: e.message };
       }
-    },
+    }
   };
 
   // ============== UI HELPERS ==============
   APP.ui = {
-    /** Mostra toast simples no topo direito */
     toast(msg, tipo = 'info', duracao = 3000) {
       const el = document.createElement('div');
       el.className = `toast toast-${tipo}`;
       el.textContent = msg;
       Object.assign(el.style, {
-        position: 'fixed',
-        top: '80px',
-        right: '24px',
-        zIndex: '999',
-        padding: '12px 20px',
-        borderRadius: '10px',
-        background: 'var(--card)',
-        border: '1px solid var(--border-bright)',
-        color: 'var(--text)',
-        boxShadow: 'var(--shadow-md)',
-        maxWidth: '320px',
-        fontSize: '14px',
+        position: 'fixed', top: '80px', right: '24px', zIndex: '999',
+        padding: '12px 20px', borderRadius: '10px',
+        background: 'var(--card)', border: '1px solid var(--border-bright)',
+        color: 'var(--text)', boxShadow: 'var(--shadow-md)',
+        maxWidth: '320px', fontSize: '14px'
       });
       if (tipo === 'success') el.style.borderColor = 'var(--green)';
-      if (tipo === 'error') el.style.borderColor = 'var(--warn)';
+      if (tipo === 'error')   el.style.borderColor = 'var(--warn)';
       document.body.appendChild(el);
       setTimeout(() => el.remove(), duracao);
     },
 
-    /** Highlight item ativo no nav baseado em pathname */
     activeNav() {
       const path = window.location.pathname;
       document.querySelectorAll('nav.app-nav .nav-links a').forEach(a => {
         const href = a.getAttribute('href');
-        if (path === href || (href !== '/' && path.startsWith(href))) {
-          a.classList.add('active');
-        }
+        if (path === href || (href !== '/' && path.startsWith(href))) a.classList.add('active');
       });
     },
 
-    /** Esconde links técnicos do nav pra tier Briefing/Demo (só Tela Pro+ vê) */
     applyNavGate() {
       const isTelaPro = APP.access.has(APP.access.TIER_TELAPRO);
       if (isTelaPro) return;
       const techPatterns = ['calculadora', 'educacao', 'historico', 'checklist', 'novo-trade'];
       document.querySelectorAll('nav.app-nav .nav-links a').forEach(a => {
         const href = (a.getAttribute('href') || '').toLowerCase();
-        if (techPatterns.some(p => href.indexOf(p) >= 0)) {
-          a.style.display = 'none';
-        }
+        if (techPatterns.some(p => href.indexOf(p) >= 0)) a.style.display = 'none';
       });
     },
+
+    /** Adiciona botão de logout no nav (se logado · senão botão de login) */
+    renderAuthButton() {
+      const nav = document.querySelector('nav.app-nav .nav-links');
+      if (!nav) return;
+      const sess = APP.auth.getSession();
+
+      // Remove existente se houver
+      const existing = nav.querySelector('.auth-action');
+      if (existing) existing.remove();
+
+      const a = document.createElement('a');
+      a.className = 'auth-action';
+      if (sess) {
+        a.href = '#';
+        a.textContent = '↪ Sair';
+        a.title = sess.email + ' · ' + sess.tier;
+        a.addEventListener('click', function(e) { e.preventDefault(); APP.auth.logout(); });
+      } else {
+        a.href = APP.config.loginUrl;
+        a.textContent = '↳ Entrar';
+      }
+      nav.appendChild(a);
+    }
   };
 
   // ============== INIT ==============
-  APP.init = function () {
-    APP.access.init();
+  APP.init = function (opts) {
+    opts = opts || {};
     const onReady = () => {
       APP.ui.activeNav();
       APP.ui.applyNavGate();
+      APP.ui.renderAuthButton();
+      // Auto-track pageview (exceto na própria login/verify)
+      const path = window.location.pathname;
+      if (path.indexOf('/login') < 0 && path.indexOf('/verify') < 0) {
+        APP.analytics.autoTrack();
+        // Tenta refresh de session em background (atualiza last_seen)
+        APP.auth.refreshSession();
+      }
     };
     if (document.readyState === 'loading') {
       document.addEventListener('DOMContentLoaded', onReady);

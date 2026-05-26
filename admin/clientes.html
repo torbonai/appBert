@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin · Clientes · Bertani App</title>
+  <link rel="stylesheet" href="/assets/css/app.css">
+  <style>
+    body { background: var(--bg); color: var(--text); font-family: 'Inter', sans-serif; padding: 24px; margin: 0; }
+    .wrap { max-width: 1400px; margin: 0 auto; }
+    h1 { font-size: 28px; margin: 0 0 4px; }
+    .subtitle { color: var(--text-2); font-size: 14px; margin: 0 0 24px; }
+    .stats { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 28px; }
+    .stat-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 20px; }
+    .stat-card .label { font-size: 12px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.08em; font-weight: 600; }
+    .stat-card .value { font-size: 28px; font-weight: 800; margin-top: 6px; }
+    .stat-card .value.ok { color: var(--green); }
+    .stat-card .value.warn { color: var(--warn); }
+
+    .filters { display: flex; gap: 12px; margin-bottom: 16px; flex-wrap: wrap; }
+    .filters input, .filters select {
+      background: var(--card); color: var(--text); border: 1px solid var(--border-bright);
+      padding: 8px 12px; border-radius: 8px; font-size: 13px;
+    }
+
+    table { width: 100%; border-collapse: collapse; background: var(--card); border-radius: 12px; overflow: hidden; }
+    th, td { padding: 12px 16px; text-align: left; border-bottom: 1px solid var(--border); font-size: 13px; }
+    th { background: var(--bg-2, #111722); font-weight: 700; color: var(--text-2); text-transform: uppercase; letter-spacing: 0.04em; font-size: 11px; }
+    tr:hover td { background: rgba(41,98,255,0.04); }
+    td.email { font-family: var(--mono, 'Consolas'); color: var(--text); }
+    .tier-badge { display: inline-block; padding: 3px 8px; border-radius: 6px; font-size: 11px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; }
+    .tier-demo    { background: rgba(138,149,168,0.2); color: var(--muted); }
+    .tier-briefing{ background: rgba(41,98,255,0.2); color: var(--accent-light, #5A91FF); }
+    .tier-telapro { background: rgba(0,200,83,0.2); color: var(--green); }
+    .tier-elite   { background: rgba(212,175,55,0.2); color: var(--gold, #D4AF37); }
+    .tier-admin   { background: rgba(255,23,68,0.2); color: var(--warn); }
+    .churn-alert { color: var(--warn); font-weight: 700; }
+    .briefing-yes { color: var(--green); font-weight: 700; }
+    .briefing-no { color: var(--muted); }
+    .loader, .error-box { text-align: center; padding: 40px; color: var(--text-2); font-size: 14px; }
+    .error-box { color: var(--warn); border: 1px solid var(--warn); border-radius: 12px; }
+  </style>
+</head>
+<body>
+
+  <div class="wrap">
+    <h1>Admin · Clientes</h1>
+    <p class="subtitle" id="subtitle">Carregando...</p>
+
+    <div class="stats" id="stats" style="display:none;">
+      <div class="stat-card"><div class="label">Total</div><div class="value" id="stat-total">—</div></div>
+      <div class="stat-card"><div class="label">Briefing</div><div class="value" id="stat-briefing">—</div></div>
+      <div class="stat-card"><div class="label">Tela Pro</div><div class="value" id="stat-telapro">—</div></div>
+      <div class="stat-card"><div class="label">Abriram hoje</div><div class="value ok" id="stat-hoje">—</div></div>
+      <div class="stat-card"><div class="label">Alerta churn (14d+)</div><div class="value warn" id="stat-churn">—</div></div>
+    </div>
+
+    <div class="filters" id="filters" style="display:none;">
+      <input type="text" id="filterEmail" placeholder="Filtrar por email/nome...">
+      <select id="filterTier">
+        <option value="">Todos os tiers</option>
+        <option value="demo">Demo</option>
+        <option value="briefing">Briefing</option>
+        <option value="telapro">Tela Pro</option>
+        <option value="elite">Elite</option>
+        <option value="admin">Admin</option>
+      </select>
+      <select id="filterChurn">
+        <option value="">Todos</option>
+        <option value="active">Ativos (login últimos 7 dias)</option>
+        <option value="risk">Em risco (8-13 dias)</option>
+        <option value="churn">Churn (14d+)</option>
+        <option value="never">Nunca logaram</option>
+      </select>
+    </div>
+
+    <div id="content" class="loader">Carregando lista de clientes...</div>
+  </div>
+
+  <script src="/assets/js/app.js"></script>
+  <script>
+    (async function() {
+      // Gate · só admin entra
+      if (!window.BertaniApp.access.isAdmin()) {
+        document.getElementById('content').className = 'error-box';
+        document.getElementById('content').innerHTML = '⛔ Acesso restrito a admin.<br><a href="/login.html" style="color: var(--accent-light)">Fazer login</a>';
+        return;
+      }
+
+      const sess = window.BertaniApp.auth.getSession();
+      const params = new URLSearchParams({
+        token: window.BertaniApp.config.sheetsToken,
+        action: 'admin_clientes',
+        session_id: sess.session_id
+      });
+
+      let res;
+      try {
+        const r = await fetch(`${window.BertaniApp.config.sheetsEndpoint}?${params.toString()}`);
+        res = await r.json();
+      } catch (e) {
+        document.getElementById('content').className = 'error-box';
+        document.getElementById('content').textContent = 'Erro de rede: ' + e.message;
+        return;
+      }
+
+      if (!res.ok) {
+        document.getElementById('content').className = 'error-box';
+        document.getElementById('content').textContent = res.error || 'Erro desconhecido';
+        return;
+      }
+
+      const clientes = res.clientes || [];
+      window._clientes = clientes;  // expor pra filtros
+
+      // Stats
+      document.getElementById('subtitle').textContent = 'Última sincronização: agora · ' + clientes.length + ' clientes';
+      document.getElementById('stat-total').textContent = clientes.length;
+      document.getElementById('stat-briefing').textContent = clientes.filter(c => c.tier === 'briefing').length;
+      document.getElementById('stat-telapro').textContent = clientes.filter(c => c.tier === 'telapro').length;
+      document.getElementById('stat-hoje').textContent = clientes.filter(c => c.abriu_briefing_hoje).length;
+      document.getElementById('stat-churn').textContent = clientes.filter(c => c.alerta_churn).length;
+      document.getElementById('stats').style.display = '';
+      document.getElementById('filters').style.display = '';
+
+      renderTable(clientes);
+
+      // Filtros
+      ['filterEmail', 'filterTier', 'filterChurn'].forEach(id => {
+        document.getElementById(id).addEventListener('input', applyFilters);
+        document.getElementById(id).addEventListener('change', applyFilters);
+      });
+    })();
+
+    function applyFilters() {
+      const q = document.getElementById('filterEmail').value.toLowerCase();
+      const tier = document.getElementById('filterTier').value;
+      const churn = document.getElementById('filterChurn').value;
+      let out = window._clientes;
+      if (q) out = out.filter(c => (c.email + ' ' + c.nome).toLowerCase().indexOf(q) >= 0);
+      if (tier) out = out.filter(c => c.tier === tier);
+      if (churn === 'active') out = out.filter(c => c.dias_sem_login !== null && c.dias_sem_login <= 7);
+      else if (churn === 'risk') out = out.filter(c => c.dias_sem_login !== null && c.dias_sem_login >= 8 && c.dias_sem_login <= 13);
+      else if (churn === 'churn') out = out.filter(c => c.alerta_churn);
+      else if (churn === 'never') out = out.filter(c => c.last_login === null);
+      renderTable(out);
+    }
+
+    function renderTable(clientes) {
+      if (clientes.length === 0) {
+        document.getElementById('content').innerHTML = '<div class="loader">Nenhum cliente com esses filtros.</div>';
+        return;
+      }
+      let html = '<table><thead><tr>' +
+        '<th>Email</th><th>Nome</th><th>Tier</th><th>Plano</th><th>Status</th>' +
+        '<th>Source</th><th>Criado em</th><th>Último login</th><th>Dias s/ login</th>' +
+        '<th>Briefing hoje?</th>' +
+        '</tr></thead><tbody>';
+      clientes.forEach(c => {
+        const lastLogin = c.last_login ? new Date(c.last_login).toLocaleDateString('pt-BR') : '—';
+        const created = c.created_at ? new Date(c.created_at).toLocaleDateString('pt-BR') : '—';
+        const dias = c.dias_sem_login !== null ? c.dias_sem_login : 'nunca';
+        const diasCls = c.alerta_churn ? 'churn-alert' : '';
+        const briefing = c.abriu_briefing_hoje ? '<span class="briefing-yes">✓ Sim</span>' : '<span class="briefing-no">—</span>';
+        html += '<tr>' +
+          '<td class="email">' + escapeHtml(c.email) + '</td>' +
+          '<td>' + escapeHtml(c.nome || '—') + '</td>' +
+          '<td><span class="tier-badge tier-' + c.tier + '">' + c.tier + '</span></td>' +
+          '<td>' + escapeHtml(c.plano || '—') + '</td>' +
+          '<td>' + escapeHtml(c.status || '—') + '</td>' +
+          '<td>' + escapeHtml(c.source || '—') + '</td>' +
+          '<td>' + created + '</td>' +
+          '<td>' + lastLogin + '</td>' +
+          '<td class="' + diasCls + '">' + dias + '</td>' +
+          '<td>' + briefing + '</td>' +
+          '</tr>';
+      });
+      html += '</tbody></table>';
+      const content = document.getElementById('content');
+      content.className = '';
+      content.innerHTML = html;
+    }
+
+    function escapeHtml(s) {
+      if (s == null) return '';
+      return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+    }
+  </script>
+</body>
+</html>
