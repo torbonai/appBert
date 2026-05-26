@@ -88,8 +88,7 @@
       "ajuste_b3_meta": {
         "valor": 177777,
         "data_referencia": "2026-05-22",
-        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! · EOD sexta · validado por Renato",
-        "nota_validacao": "LIÇÃO 61 OK · ajuste 177.777 ≠ fechamento 177.900"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-22)"
       },
       "plano": {
         "direcao": "N/A",
@@ -120,14 +119,14 @@
       "fase_wyckoff": "Acumulação Fase D (markup +1,03% últimos 20c 4H · de 4.992 pra 5.101,5) · Sign of Strength confirmado · sexta 22/05 subiu +0,68% e fechou 5.050,00 na máxima do dia 5.052,00 · força compradora · preço operando em PREMIUM (73% do range 20d · ajuste 5.026 ≈ 61% · acima do EQ 5.005,75 · entrada de qualidade menor)",
       "racional_publico": "WDO em Acumulação Fase D · markup +1,03% últimos 20 candles 4H (de 4.992 pra 5.101,5 range 20d) · Sign of Strength confirmado · sexta fechou 5.050 na máxima do dia 5.052 com força compradora. Porém preço operando em PREMIUM (73% do range 20d · ajuste B3 5.026,72 ≈ 61% do range · acima do EQ 5.005,75) = entrada de qualidade MENOR (ICT prega comprar em discount). DI curva bear flatten sinalização mista: curto +8,3 bps F28 hawkish (favorece dólar) MAS ponta longa -3,5 bps F33 dovish (neutraliza). Filtro Anti-Narrativa ATIVO diminui confiança estrutural (Brent -5,4% precifica acordo EUA-Irã que NÃO foi fechado · risco de reversão rápida). Liquidez fina feriado US/UK/DE exagera movimentos (futuros inconsistentes). Score breakdown: base 10,0 − premium 3,0 (zona ruim) − filtro 2,5 (ativo) − DI mista 1,5 (ambíguo) − liquidez 1,0 (fina) = 2,0/10 · veredito AGUARDAR.",
       "niveis_chave": {
-        "ajuste_b3": 5026.72,
-        "PDH": 5052.0,
-        "PDL": 5004.0,
-        "EQ": 5028.0,
-        "abertura_sexta": 5020.0,
-        "maxima_sexta": 5052.0,
-        "minima_sexta": 5004.0,
-        "fechamento_sexta": 5050.0,
+        "ajuste_b3": 5026.718,
+        "PDH": 5052,
+        "PDL": 5004,
+        "EQ": 5028,
+        "abertura_sexta": 5020,
+        "maxima_sexta": 5052,
+        "minima_sexta": 5004,
+        "fechamento_sexta": 5050,
         "range_sexta_pts": 48,
         "variacao_sexta_pts": 34,
         "variacao_sexta_pct": 0.68,
@@ -137,10 +136,9 @@
         "weekly_low_20d": 4910
       },
       "ajuste_b3_meta": {
-        "valor": 5026.72,
+        "valor": 5026.718,
         "data_referencia": "2026-05-22",
-        "fonte": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WDO1! · EOD sexta · validado por Renato",
-        "nota_validacao": "LIÇÃO 61 OK · ajuste 5.026,72 ≠ fechamento 5.050,00. Ajuste dentro da faixa WDO do pre_publish_check.js (4.800-5.200) · faixa do pega_ajuste_b3.js (4.800-5.200)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-22)"
       },
       "plano": {
         "direcao": "N/A",
@@ -283,12 +281,12 @@
     "di1f29_taxa": 13.895,
     "di1f29_delta_bps": 5.1,
     "di1f29_prior": 13.844,
-    "di1f31_taxa": 14.000,
+    "di1f31_taxa": 14,
     "di1f31_delta_bps": -1.2,
     "di1f31_prior": 14.012,
     "di1f33_taxa": 14.085,
     "di1f33_delta_bps": -3.5,
-    "di1f33_prior": 14.120,
+    "di1f33_prior": 14.12,
     "fonte": "Falcão Notícias segunda 25/05 manhã (CETIP EOD sexta 22/05) · LIÇÃO 53 fonte primária dia D",
     "leitura": "BEAR FLATTEN EOD sexta 22/05 · curto/miolo SOBE (+7,2/+8,3/+5,1 bps F27/F28/F29) · ponta longa CEDE (-1,2/-3,5 bps F31/F33) = achatamento com viés hawkish no curto (mercado precifica menos cortes Selic). Motor: Waller (Fed) hawkish 'zero corte 2025' + Brent ainda alto sexta ~$103,5 · mas ponta longa cedeu (risco eleitoral Datafolha aliviou). Desfavorável WIN (hawkish = cap rate sobe) · ambíguo WDO (DI subindo deveria favorecer USDBRL · mas ponta longa dovish compensa)."
   },
@@ -307,7 +305,18 @@
     "fase1_escopo": "Dados D-1 (sexta 22/05) fixados: ajuste B3, OHLC daily completo, range, variação — fonte: print home broker Renato (Cedro) 'Resumo de 22/05/2026', validado por Renato. EQ e buffers calculados. Camada estrutural completada via TV CDP domingo 24/05 noite: Wyckoff 4H confirmado (WIN Distribuição D/E markdown -1,84% · WDO Acumulação D markup +1,03%), weekly_high_20d e weekly_low_20d confirmados via data_get_ohlcv D count:20, níveis Pine detectados (PWH/PWL, suporte 4.910 WDO, nível 187.400 WIN).",
     "fase2_escopo": "✅ COMPLETO · Overnight global preenchido (feriado US/UK/DE, Brent -5,41%, DXY, VIX, equities Europa, Vale peers, petroleiras) · Curva DI confirmada Falcão CETIP (5 vértices F27/F28/F29/F31/F33 · bear flatten +8 bps curto / -3 bps longo) · Filtro Anti-Narrativa ATIVO (5 frases consensuais + 5 contra-evidências · acordo EUA-Irã NÃO fechado) · nivel_vento VENTO_MORNO · Scores WIN 2,5 WDO 2,0 · Vereditos AGUARDAR (ambos < threshold 6,0) · Manchete + subtítulo + racional_publico completos · Planos operacionais completos (N/A + anti-trade + cancelamento) · Agenda macro (3 eventos ALTO impacto HOJE) · Kill zones (N/A · não operar) · Regras do dia (12 bullets) · Resumo_30s atualizado.",
     "fase2_pendencias_restantes": [],
-    "licoes_aplicadas": [1, 7, 50, 53, 54, 58, 61, 62, 63, 64],
+    "licoes_aplicadas": [
+      1,
+      7,
+      50,
+      53,
+      54,
+      58,
+      61,
+      62,
+      63,
+      64
+    ],
     "alertas": [
       "✅ RESOLVIDO: DATA briefing #17 = SEGUNDA 25/05/2026 confirmada.",
       "✅ RESOLVIDO: DI curva confirmada Falcão CETIP EOD sexta 22/05 · 5 vértices integrados ao JSON."

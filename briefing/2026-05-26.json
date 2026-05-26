@@ -1,0 +1,455 @@
+{
+  "data": "2026-05-26",
+  "data_extenso": "Terça-feira, 26 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 18,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Apareceram vendedores nos juros futuros BR · WIN ganha tração após respeitar suporte sem sweep",
+    "subtitulo": "Juros futuros BR (curva DI) cederam em todos os vértices (F29 lidera -14,1 bps · F31 -13,0 · F33 -13,3) revertendo o tom comprador de sexta — INVERSÃO total do clima hawkish do #17. WIN não furou o PDL crítico 176.330 (mínima 177.845) e fechou +0,79% sobre o ajuste D-1 em 179.310: Reacumulação Fase B com Secondary Test do suporte. WDO testou e respeitou 5.000 psicológico mas Brent devolve +2,69% (após -6,78% ontem) complica o trade short do real. NY REABRE hoje (Memorial Day passou) com US500/NQ futuros +0,71%/+1,01% e Treasuries caindo forte (US10Y -1,66%) = risk-on global confirmado. Janela quente 08:30: Transações Correntes + IDP. 11:00 Confiança do Consumidor CB EUA. Filtro Anti-Narrativa MODERADO: Rubio 'aberto de uma forma OU DE OUTRA' + ataques americanos noturnos no Irã mantêm risco-headline overhang."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste B3 179.259 (seg 25/05) · close 179.310 (+0,79% · +1.533 pts) · OHLC: O 179.270 / H 180.275 / L 177.845 (não furou PDL 176.330) / C 179.310 · Reacumulação Fase B · score 6,5/10 · GO_CONDICIONAL · viés bullish leve",
+    "wdo_linha": "MINI DÓLAR · ajuste B3 5.021,61 (seg 25/05) · close 5.016,50 (-0,66% · -33,5 pts) · OHLC: O 5.022,5 / H 5.027,5 / L 5.000 (psicológico TESTADO e RESPEITADO) / C 5.016,5 · Acumulação Fase B · score 4,5/10 · AGUARDAR · viés lateral",
+    "janela_operacional": "Pós-digestão 08:30-09:00 (T.Correntes+IDP) → kill zone WIN preferencial 09:30-10:55 e 11:30-12:30 BRT · evitar 08:25-08:35 · 09:00-09:25 · 10:55-11:15 · 17:45-17:55",
+    "nivel_chave": "WIN 180.275 (PDH seg) · 179.310 (close seg) · 179.259 (ajuste B3) · 177.845 (PDL seg · acima do 176.330 do #17) · 176.330 (suporte crítico) · 175.200 (low semanal) · WDO 5.027,5 (PDH seg) · 5.021,61 (ajuste B3) · 5.016,50 (close seg) · 5.000 (psicológico TESTADO) · 4.992 (low semanal)",
+    "agenda_top1": "08:30 Transações Correntes + IDP BR ★★★ · 11:00 Confiança do Consumidor CB EUA ★★★"
+  },
+  "contexto_macro": {
+    "nivel_vento": "VENTO_MORNO",
+    "highlights": [
+      "📌 Briefing #18 FASE 2 (terça 26/05/2026 · pós Falcão CETIP juros futuros BR definitivos 07:11 · pós Bom Dia Mercado · NY reabre hoje após Memorial Day) · cross-check #17 → #18 dispara INVERSÃO de viés",
+      "📊 WIN ajuste B3 segunda 25/05 179.259 (settlement oficial · LIÇÃO 61) · close 179.310 (+0,79% · +1.533 pts vs ajuste qui) · OHLC seg: O 179.270 / H 180.275 / L 177.845 / C 179.310 · range 2.430 pts · MÍNIMA 177.845 NÃO FUROU PDL crítico 176.330 (sem sweep · invalida markdown bearish do #17)",
+      "📊 Cross-check estrutural #17 → #18: o markdown -1,84% bearish do #17 FALHOU · WIN reverteu sem sweepar critical support · Fase Wyckoff muda de Distribuição D/E (markdown) pra Reacumulação Fase B (Secondary Test do suporte 177.845)",
+      "💵 WDO ajuste B3 segunda 25/05 5.021,61 (settlement oficial · LIÇÃO 61) · close 5.016,50 (-0,66% · -33,5 pts vs ajuste qui) · OHLC seg: O 5.022,5 / H 5.027,5 / L 5.000 / C 5.016,5 · range 27,5 pts · PSICOLÓGICO 5.000 TESTADO E RESPEITADO · saiu de PREMIUM 73% (#17) pra zona EQ/discount",
+      "💵 Juros futuros BR EOD segunda 25/05 (Falcão CETIP confirmado 07:11) · VIRARAM VENDEDORES FORTE: F27 14,025% (-5,2 bps) · F28 13,725% (-11,0) · F29 13,710% (-14,1 LIDEROU) · F31 13,840% (-13,0) · F33 13,930% (-13,3) · sanity max 14,1 bps < 80 (LIÇÃO 23 OK) · INVERSÃO total do tom comprador +8 bps de sexta · FAVORÁVEL WIN · FAVORÁVEL SHORT WDO",
+      "🌍 NY REABRE hoje (Memorial Day passou) · liquidez global normaliza · ESM26 +0,71% · NQM26 +1,01% (US500 7.526,8 · NAS100 29.857,75) · Europa mista (FTSE +0,66% · DAX -0,56% · CAC -0,99% · STOXX -0,26%) · KOSPI +3,02% (Coreia liderando Ásia) · Nikkei -0,29%",
+      "💵 Treasuries CAINDO PESADO em todos vértices: US2Y 4,062% (-1,57%) · US10Y 4,497% (-1,66%) · US30Y 5,011% (-1,40%) · Bunds estáveis · mercado precifica dovish surprise pré-PCE (quinta) · BULLISH EQUITIES estrutural",
+      "💵 DXY 99,04 (+0,07% · neutro) · EUR/USD 0,8590 (+0,02% · euro estável) · USD/JPY 159,15 (+0,15% · iene cede apesar Himino BoJ falar de apertar) · USDBRL 5,0166 (-0,41% · real se beneficiando · furou 5,00 intraday segunda)",
+      "🛢 Brent 95,93 (+2,69% · DEVOLVENDO parte da queda -6,78% de ontem) · Ouro 4.583,85 (+0,16%) · VIX 16,67 (+0,48% · baixo) · Vale ADR +0,06% (estável) · peers mineração positivos (Rio Tinto +2,04% · BHP +1,85% · Glencore +2,11% · Anglo +1,36%)",
+      "🚨 RUBIO/ORMUZ (Falcão 06:59 BRT · WSJ): 'Estreito de Ormuz será aberto de uma forma OU DE OUTRA' · negociação 25/05 no Catar confirmada · 'estruturação do documento inicial em alguns dias' · MAS ataques americanos noite passada no sul do Irã (barcos com minas + plataformas) · Trump: 'bom acordo ou nenhum acordo' · headline-risk overhang persiste",
+      "📅 Agenda HOJE: 08:30 Transações Correntes BR (proj -0,20B · ant -6,04B · Broadcast: melhor desde out/23 · pode ter superávit) + IDP (proj 5,30B · ant 6,04B) ★★★ · 09:30 Fed Chicago Activity Index ★★ · 11:00 Confiança do Consumidor CB EUA (proj 91,9 · ant 92,8) ★★★ · 21:00 Painel Kashkari (Fed Minneapolis) + Ueda (BoJ) · 22:30 Lucro Industrial China",
+      "🔄 Fluxo B3 (20-21/05 snapshot): estrangeiro vendeu -R$ 1,28 bi à vista em 2 dias · institucional contraparte +R$ 1,93 bi · HEADWIND ESTRUTURAL pro WIN persiste apesar da reversão técnica de segunda · monitorar reaceleração ou inversão na abertura",
+      "🛡 Status #17 (segunda 25/05): WIN AGUARDAR 2,5/10 · WDO AGUARDAR 2,0/10 · filtro Anti-Narrativa ATIVO · briefing publicado 08:30 BRT · WIN markdown bearish FALHOU (close 179.310 ficou só 190 pts abaixo do gatilho 179.500 do #17) · juros BR viraram de comprador pra vendedor · score WIN sobe 4 pontos no cross-check"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "MODERADO",
+      "narrativa_dominante": "Mercado precifica acordo EUA-Irã como iminente e quase certo · Brent normalizou após -6,78% ontem · risk-on global confirmado pela queda forte dos Treasuries (-1,66% no 10Y) · futuros US positivos · narrativa do 'céu-de-brigadeiro' geopolítico segue dominante na imprensa financeira. Motor secundário: Galípolo na coletiva ontem disse que 'política monetária está funcionando' = leitura vendedora que combinou com Selic Focus 2027/2028 ancoradas em 4,01%/3,65%.",
+      "fonte_observada": "Falcão Notícias terça 26/05 manhã (06:59 BRT WSJ Rubio · 07:11 BRT CETIP juros futuros BR · 07:21 BRT Investing snapshot) · Bom Dia Mercado · framing imprensa: 'estruturação do documento inicial em alguns dias' tratado como assinatura virtual · consensus risk-on",
+      "descricao": "Filtro DOWNGRADE de ALTO (#17) pra MODERADO (#18) · gap narrativa × realidade fechou parcialmente (Brent devolveu 40% da queda · Rubio confirmou negociação no Catar · cronograma de documento divulgado) MAS persistem evidências estruturais que contradizem o consenso de assinatura iminente · monitorar Brent intraday como termômetro do filtro.",
+      "frases_consensuais_alertadas": [
+        "Acordo EUA-Irã iminente · documento inicial em dias · risco geopolítico Oriente Médio recuando",
+        "Treasuries caindo forte (-1,66% no 10Y) precificam dovish surprise pré-PCE quinta · risk-on global confirmado",
+        "WIN ganha tração após juros futuros BR virarem vendedores · -14 bps no F29 lidera · cenário estrutural favorável",
+        "NY reabre normalizando liquidez · futuros US500 +0,71% / NQ +1,01% · sentimento global construtivo",
+        "Brent estabiliza após queda · acordo virou 'cenário base' do mercado · pressão inflacionária alivia"
+      ],
+      "contra_evidencias": [
+        "Rubio (WSJ 26/05 madrugada): 'Estreito de Ormuz será aberto de uma forma OU DE OUTRA' = explicitamente militar se preciso · não é tom de quem fechou paz",
+        "Forças americanas atacaram instalações no sul do Irã na noite passada (barcos com minas + plataformas de mísseis) · ação militar ATIVA enquanto mercado precifica paz",
+        "Trump: 'vai fazer um bom acordo ou nenhum acordo' · framing condicional · sem garantia de fechamento",
+        "Brent devolvendo +2,69% hoje após -6,78% ontem · mercado já reativo a qualquer sinal de retorno do prêmio de risco · squeeze rápido pra $110+ se trégua falhar",
+        "Fluxo B3 estrangeiro vendedor -R$ 1,28bi 20-21/05 sugere posicionamento defensivo não alinhado com narrativa risk-on"
+      ],
+      "leitura_bertani": "Mercado abre operando 'céu-de-brigadeiro' (Treasuries -1,66% · futuros US +0,7-1,0% · KOSPI +3% · juros futuros BR viraram VENDEDORES forte -14 bps no miolo) MAS o ruído militar não parou: ataques americanos na noite passada + Rubio falando em 'de uma forma OU DE OUTRA' + Trump deixando aberto 'nenhum acordo'. O gap narrativa × realidade FECHOU PARCIALMENTE vs #17 (que estava em ALTA intensidade) mas ainda existe · downgrade pra MODERADO. Prático: viés bullish WIN segue válido com a virada dos juros, mas reduzir tamanho de posição e operar com stops apertados na zona quente 08:30 + monitorar Brent como gauge intraday. Se Brent rompe $100 = filtro re-ESCALA pra ALTO e cancela setup.",
+      "contra_evidencias_a_monitorar": [
+        "Rubio (WSJ 26/05 madrugada): 'Estreito de Ormuz será aberto de uma forma OU DE OUTRA' = explicitamente militar se preciso · não é tom de quem fechou paz",
+        "Forças americanas atacaram instalações no sul do Irã na noite passada (barcos com minas + plataformas de mísseis) · ação militar ATIVA enquanto mercado precifica paz",
+        "Trump: 'vai fazer um bom acordo ou nenhum acordo' · framing condicional · sem garantia de fechamento",
+        "Brent devolvendo +2,69% hoje após -6,78% ontem · mercado já reativo a qualquer sinal de retorno do prêmio de risco · squeeze rápido pra $110+ se trégua falhar",
+        "Fluxo B3 estrangeiro vendedor -R$ 1,28bi 20-21/05 sugere posicionamento defensivo não alinhado com narrativa risk-on"
+      ]
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Reacumulação Fase B · Secondary Test (ST) do suporte em 177.845 ficou ACIMA do PDL crítico 176.330 (sem sweep) · invalida markdown bearish do #17 · close 179.310 acima do ajuste 179.259 confirma defesa · falta Sign of Strength acima de 180.300 (high seg) pra confirmar transição Fase C/D · juros futuros BR vendedores forte (-14,1 bps F29) ratificam leitura de reacumulação",
+      "score": 6.5,
+      "veredito": "GO_CONDICIONAL",
+      "vies": "bullish leve",
+      "racional_publico": "WIN em Reacumulação Fase B · Secondary Test do suporte em 177.845 ficou acima do PDL crítico 176.330 = sweep falhou · markdown -1,84% do briefing #17 invalidado. Close 179.310 (+0,79%) acima do ajuste 179.259 confirma defesa estrutural. Juros futuros BR (curva DI) VIRARAM VENDEDORES FORTE EOD segunda (Falcão CETIP terça 07:11): F29 -14,1 bps lidera · F31 -13,0 · F33 -13,3 = INVERSÃO total do tom comprador +8 bps de sexta · FAVORÁVEL WIN (juro caindo = bolsa sobe). NY reabre hoje (Memorial Day passou) com US500/NQ futuros +0,71%/+1,01% e Treasuries caindo forte (US10Y -1,66%) = risk-on global confirmado. Filtro Anti-Narrativa MODERADO (downgrade do ALTO do #17): gap narrativa × realidade fechou parcialmente mas Rubio 'de uma forma OU DE OUTRA' + ataques americanos noturnos no Irã mantêm headline-risk overhang. Score breakdown: base 10,0 + Wyckoff reversão (+1,5) + juros BR vendedor forte (+1,5) + risk-on global (+1,0) + respeito ao suporte (+1,0) − fluxo estrangeiro vendedor (−1,0) − filtro Anti-Narrativa MODERADO (−1,0) − headline risk Irã/Brent (−1,0) − aguarda confirmação volume break 180.300 (−1,5) − liquidez de transição NY reabre (−1,0) = 6,5/10. Veredito GO_CONDICIONAL.",
+      "niveis_chave": {
+        "ajuste_b3": 179259,
+        "ajuste_b3_data": "2026-05-25",
+        "fechamento_anterior": 179310,
+        "PDH": 180275,
+        "PDL": 177845,
+        "maxima_anterior": 180275,
+        "minima_anterior": 177845,
+        "abertura_anterior": 179270,
+        "range_anterior_pts": 2430,
+        "variacao_anterior_pts": 1533,
+        "variacao_anterior_pct": 0.79,
+        "EQ": 179060,
+        "weekly_high_20d": 180355,
+        "weekly_low_20d": 175200,
+        "suporte_critico": 176330,
+        "suporte_critico_status": "NÃO TESTADO segunda · mínima 177.845 ficou 1.515 pts acima · sweep do #17 falhou",
+        "resistencia_critica": 180300,
+        "buffer_ajuste_suporte_pts": 2929,
+        "_nota": "Ajuste B3 D-1 = segunda 25/05 settlement oficial (preliminar usava qui 22/05 · atualizado pós Falcão)"
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-25",
+        "fonte": "Ajuste oficial B3 segunda 25/05 via Falcão CETIP + Bom Dia Mercado · cross-check com TradingView Daily close",
+        "validacao": "WIN 179.259 · faixa 170k-200k OK · fonte SEM estimado"
+      },
+      "plano": {
+        "direcao": "LONG",
+        "entry_zona": "179.400 (zona pullback 179.300-179.500 acima do close · ponto operacional 179.400) OU 180.400 breakout (rompimento confirmado do PDH 180.275 com volume acima da média intraday)",
+        "stop": 178600,
+        "stop_pts": 800,
+        "tp1": 180600,
+        "tp1_rr": 1.5,
+        "tp1_partial_pct": 50,
+        "tp2": 181800,
+        "tp2_rr": 3.0,
+        "tp2_partial_pct": 30,
+        "tp3": 183000,
+        "tp3_rr": 4.5,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "LONG na confluência: (1) Secondary Test do suporte 177.845 sem sweepar PDL 176.330 valida Reacumulação Fase B · (2) juros futuros BR vendedores forte (-14,1 bps F29) ratificam viés altista · (3) Treasuries caindo + futuros US positivos = risk-on global confluente. Entrada preferencial pullback 179.300-179.500 com defesa visível em 4H · entrada alternativa breakout 180.400 com volume acima da média intraday. Stop 178.600 (abaixo do EQ 179.060 com folga · cobre re-teste sem violação do bias). TP1 180.600 (RR 1,5 · saída 50% pra cobrir custo + 1% banca). TP2 181.800 (RR 3,0 · saída 30%). TP3 183.000 (RR 4,5 · saída 20% pra capturar continuação se Fase C/D destravar).",
+        "kill_zone": "09:30-10:55 BRT (pós-digestão T.Correntes/IDP 08:30) · 11:30-12:30 BRT (pós-digestão Conf.Cons.CB EUA 11:00) · evitar 08:25-08:35 · 09:00-09:25 · 10:55-11:15 · 17:45-17:55",
+        "gatilho": "Confirmação de entry preferencial: pullback pra 179.300-179.500 + defesa de 4H + juros futuros BR mantêm queda ≤−5 bps intraday (F29 não devolve). Confirmação de entry alternativa: rompimento de 180.300 com candle 15m de fechamento ACIMA + volume comparativo > média 20 períodos.",
+        "anti_trade": "Short abaixo de 178.500 sem retrace prévio (vai contra fluxo de reversão + juros BR vendedor) · Long em ROMPIMENTO de 180.300 SEM volume (alta probabilidade de fakeout em zona de PDH)",
+        "cancelamento": "(1) Gap aberto abaixo de 177.800 (sweep PDL invertido) · (2) juros futuros BR reverterem pra comprador ≥+10 bps intraday · (3) Brent rompe $100 com headline geopolítica adversa (filtro Anti-Narrativa re-ESCALA pra ALTO) · (4) Fluxo estrangeiro acelera venda >R$1bi à vista na abertura"
+      },
+      "comentario_breve": "Reversão técnica + juros BR vendedor forte + risk-on global = setup LONG GO_CONDICIONAL. Cuidado com headline-risk Irã (Brent é o gauge intraday). Fluxo estrangeiro vendedor segue headwind estrutural · monitorar inversão na abertura.",
+      "_score_breakdown": {
+        "wyckoff_reversao_st_acima_pdl": 1.5,
+        "juros_br_vendedor_forte": 1.5,
+        "risk_on_global_treasuries_futures": 1.0,
+        "respeito_ao_suporte_177845": 1.0,
+        "fluxo_b3_estrangeiro_vendedor": -1.0,
+        "filtro_anti_narrativa_moderado": -1.0,
+        "headline_risk_ira_brent_overhang": -1.0,
+        "aguarda_confirmacao_volume_break_180300": -1.5,
+        "liquidez_transicao_ny_reabre": -1.0,
+        "base": 10.0,
+        "total": 6.5
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B · range lateral compresso 4.992-5.073 (81 pts) · Secondary Test (ST) do suporte psicológico 5.000 (touch e respeito intraday segunda) confirma defesa local · sem Spring · sem Sign of Strength · stuck no miolo do range · juros futuros BR vendedores -14 bps F29 favorecem short mas DXY estável (+0,07%) não confirma · Brent devolvendo +2,69% complica o trade short do real (Brasil exportador petróleo)",
+      "score": 4.5,
+      "veredito": "AGUARDAR",
+      "vies": "lateral",
+      "racional_publico": "WDO em Acumulação Fase B · range lateral compresso 4.992-5.073 (81 pts) · Secondary Test do psicológico 5.000 (touch intraday segunda e respeito) confirma defesa local. SAIU da zona de PREMIUM 73% do #17 e operando agora em EQ/discount (ajuste 5.021,61 ≈ 38% do range 20d). Juros futuros BR (curva DI) VIRARAM VENDEDORES FORTE EOD segunda (-14,1 bps F29 · -13,0 F31 · -13,3 F33) = FAVORÁVEL SHORT WDO estrutural (mercado precifica menos aperto Selic · USDBRL pressionado pra baixo). PORÉM: (1) DXY estável (+0,07% · não cede) · (2) Brent devolvendo +2,69% após queda -6,78% ontem complica o trade short do real (Brasil exportador petróleo) · (3) Fluxo neutro WDO. Filtro Anti-Narrativa MODERADO. Score breakdown: base 10,0 + juros BR vendedor (+1,5) + respeito ao psicológico 5.000 (+0,5) + saiu de premium pra EQ/discount (+0,5) − range tight sem direção clara (−1,0) − Brent devolvendo +2,69% (BR exportadora · complica short USDBRL) (−1,5) − DXY estável não confirma (−1,0) − fluxo neutro (−0,5) − filtro Anti-Narrativa moderado (−1,0) − headline risk Irã (−1,0) − sem catalisador direcional claro (−1,5) = 4,5/10 · AGUARDAR (< threshold 6,0).",
+      "niveis_chave": {
+        "ajuste_b3": 5021.61,
+        "ajuste_b3_data": "2026-05-25",
+        "fechamento_anterior": 5016.5,
+        "PDH": 5027.5,
+        "PDL": 5000,
+        "maxima_anterior": 5027.5,
+        "minima_anterior": 5000,
+        "abertura_anterior": 5022.5,
+        "range_anterior_pts": 27.5,
+        "variacao_anterior_pts": -33.5,
+        "variacao_anterior_pct": -0.66,
+        "EQ": 5013.75,
+        "weekly_high_20d": 5073,
+        "weekly_low_20d": 4992,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "TESTADO e RESPEITADO intraday segunda · psicológico defendido · saiu de PREMIUM 73% (#17) pra zona EQ/discount",
+        "resistencia_critica": 5052,
+        "buffer_ajuste_suporte_pts": 21.61,
+        "_nota": "Ajuste B3 D-1 = segunda 25/05 settlement oficial (preliminar usava qui 22/05 · atualizado pós Falcão)"
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-25",
+        "fonte": "Ajuste oficial B3 segunda 25/05 via Falcão CETIP + Bom Dia Mercado · cross-check com TradingView Daily close",
+        "validacao": "WDO 5.021,61 · faixa 4.8-5.2 OK · fonte SEM estimado"
+      },
+      "plano": {
+        "direcao": "AGUARDAR (setup short condicional documentado)",
+        "entry_zona": "5.022-5.025 (pullback pra ajuste/EQ com rejeição) · CONDICIONAL: ativar apenas se DXY ceder + Brent reverter < $94",
+        "stop": 5035,
+        "stop_pts": 13,
+        "tp1": 5001,
+        "tp1_rr": 1.6,
+        "tp1_partial_pct": 50,
+        "tp2": 4985,
+        "tp2_rr": 2.85,
+        "tp2_partial_pct": 30,
+        "tp3": 4965,
+        "tp3_rr": 4.38,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 2,
+        "setup": "AGUARDAR formal (score 4,5/10 < threshold 6,0) · setup SHORT documentado como referência condicional. Confluência parcial: (1) juros futuros BR vendedores forte (-14,1 bps F29) são FAVORÁVEIS SHORT WDO estrutural · (2) Saiu de premium pra EQ/discount = entry melhor que #17 · (3) Psicológico 5.000 testado e respeitado intraday segunda. MAS Brent devolvendo +2,69% (BR exportadora) + DXY estável não confirmam o direcional. Setup SHORT ativável APENAS na confluência: DXY rompe 99,20 pra baixo + Brent reverte <$94 + WDO testa 5.022-5.025 com rejeição clara em 15m. Stop 5.035 acima do EQ + buffer. TP1 5.001 (RR 1,6 · saída 50%). TP2 4.985 (RR 2,85 · 30%). TP3 4.965 (RR 4,38 · 20%).",
+        "kill_zone": "N/A (AGUARDAR · não operar até confluência) · monitorar reaceleração dos juros BR vendedor + Brent + DXY pra reavaliar viés",
+        "gatilho": "Ativar setup SHORT condicional APENAS se: (1) DXY rompe 99,20 pra baixo · (2) Brent reverte <$94 com headline favorável (acordo Catar avança) · (3) WDO testa 5.022-5.025 com rejeição 15m clara",
+        "anti_trade": "Long acima de 5.040 sem catalisador (vai contra juros BR vendedor + USDBRL em queda) · Short em 5.000 sem confirmação (psicológico já defendido · risco de Spring)",
+        "cancelamento": "(1) Brent retorna >$100 (BR exportadora favorecida ao contrário · short USDBRL invalida) · (2) Ataques no Irã escalam · risk-off retorna · (3) juros futuros BR reverterem pra comprador · (4) DXY rompe 99,50 pra cima"
+      },
+      "comentario_breve": "AGUARDAR · setup SHORT só ativa com confluência DXY + Brent. Juros BR vendedor ajuda mas Brent devolvendo e DXY estável tiram o edge direcional. Range tight sem catalisador claro.",
+      "_score_breakdown": {
+        "juros_br_vendedor": 1.5,
+        "respeito_psicologico_5000": 0.5,
+        "saiu_de_premium_pra_eq_discount": 0.5,
+        "range_tight_sem_direcao": -1.0,
+        "brent_devolvendo_complica_short_brl": -1.5,
+        "dxy_estavel_nao_confirma": -1.0,
+        "fluxo_neutro_wdo": -0.5,
+        "filtro_anti_narrativa_moderado": -1.0,
+        "headline_risk_ira": -1.0,
+        "sem_catalisador_direcional": -1.5,
+        "base": 10.0,
+        "total": 4.5
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:00",
+      "evento": "🇧🇷 FGV IPC-S Capitais + Sondagem Construção + INCC-M",
+      "impacto": "BAIXO",
+      "tag": "fgv_indicadores_br",
+      "janela_evitar": null,
+      "nota": "Indicadores secundários FGV (inflação capitais + construção civil)"
+    },
+    {
+      "hora_brt": "08:30",
+      "evento": "🇧🇷 Transações Correntes (BCB)",
+      "impacto": "ALTO",
+      "tag": "transacoes_correntes_br",
+      "janela_evitar": "08:25-08:35",
+      "nota": "Setor externo abril · projeção -0,20B · anterior -6,04B · Broadcast aponta melhor resultado desde out/23 · mercado fala em possível superávit · market-mover se houver surpresa grande"
+    },
+    {
+      "hora_brt": "08:30",
+      "evento": "🇧🇷 IDP (Investimento Direto no País)",
+      "impacto": "ALTO",
+      "tag": "idp_br",
+      "janela_evitar": "08:25-08:35",
+      "nota": "Investimento estrangeiro direto abril · projeção 5,30B · anterior 6,04B · Broadcast: entrada líquida US$ 5,55B · impacto combinado com T.Correntes"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade artificial de formação de preço · não operar"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "🇺🇸 Fed Chicago National Activity Index",
+      "impacto": "MEDIO",
+      "tag": "chicago_fed_activity",
+      "janela_evitar": null,
+      "nota": "Indicador composto atividade econômica EUA · impacto moderado se surpresa grande"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "🇺🇸 Preços de Imóveis S&P/CS Composto-20",
+      "impacto": "MEDIO",
+      "tag": "case_shiller_eua",
+      "janela_evitar": null,
+      "nota": "Mensal Mar ant 0,4% · anual Mar proj 1,0% ant 0,9% · proxy real estate health"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇺🇸 Confiança do Consumidor CB",
+      "impacto": "ALTO",
+      "tag": "conf_consumidor_cb_eua",
+      "janela_evitar": "10:55-11:15",
+      "nota": "Conference Board Maio · projeção 91,9 · anterior 92,8 · market-mover se surpresa · evitar operar nesta janela"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "🇧🇷 Tesouro leilão LFT + NTN-B",
+      "impacto": "BAIXO",
+      "tag": "tesouro_leilao",
+      "janela_evitar": null,
+      "nota": "Leilão recorrente · impacto operacional baixo nos futuros"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇺🇸 Leilão Note 2 anos",
+      "impacto": "MEDIO",
+      "tag": "leilao_note_2y_eua",
+      "janela_evitar": null,
+      "nota": "Anterior 3,812% · termômetro de demanda por duration curta · pode mover Treasuries intraday"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "21:00",
+      "evento": "🌏 Painel Kashkari (Fed Minneapolis) + Ueda (BoJ) no Japão",
+      "impacto": "MEDIO",
+      "tag": "painel_kashkari_ueda",
+      "janela_evitar": null,
+      "nota": "Discurso conjunto Fed/BoJ · pode mexer USDJPY e Treasuries overnight · monitorar pré-abertura quarta"
+    },
+    {
+      "hora_brt": "22:30",
+      "evento": "🇨🇳 Lucro industrial China (abril)",
+      "impacto": "MEDIO",
+      "tag": "lucro_industrial_china",
+      "janela_evitar": null,
+      "nota": "Proxy demanda commodities · pode mover Vale ADR e DXY overnight"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "09:30-10:55 BRT",
+      "contexto": "WIN kill zone preferencial · pós-digestão T.Correntes/IDP 08:30 · pré-Conf.Cons.CB EUA 11:00 · liquidez de qualidade pra setup LONG · entry zona 179.300-179.500 com defesa visível em 4H ou breakout 180.400 com volume"
+    },
+    {
+      "janela": "11:30-12:30 BRT",
+      "contexto": "WIN kill zone secundária · pós-digestão Conf.Cons.CB EUA 11:00 · janela limpa antes de almoço NY · ideal pra entry alternativa se gatilho não disparou na primeira janela"
+    },
+    {
+      "janela": "⛔ 08:25-08:35 BRT",
+      "contexto": "EVITAR · Transações Correntes + IDP simultâneos · janela quente BR · qualquer surpresa (positiva ou negativa) gera volatilidade artificial"
+    },
+    {
+      "janela": "⛔ 09:00-09:25 BRT",
+      "contexto": "EVITAR · Leilão abertura B3 · volatilidade artificial de formação de preço"
+    },
+    {
+      "janela": "⛔ 10:55-11:15 BRT",
+      "contexto": "EVITAR · Confiança Consumidor CB EUA 11:00 · market-mover se surpresa · monitorar mas não operar reação imediata"
+    },
+    {
+      "janela": "⛔ 17:45-17:55 BRT",
+      "contexto": "EVITAR · Leilão fechamento B3 · volatilidade final do dia"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "WIN",
+      "regra": "GO_CONDICIONAL 6,5/10 · entry zona 179.300-179.500 (pullback) OU 180.400 (breakout do PDH 180.275 com volume) · stop 178.600 (800 pts) · TP1 180.600 (RR 1,5 · saída 50%) · TP2 181.800 (RR 3,0 · 30%) · TP3 183.000 (RR 4,5 · 20%) · 1 contrato banca 30k @ 0,53% risco"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "GATILHO de entry preferencial: pullback pra 179.300-179.500 com defesa visível em 4H + juros futuros BR mantêm queda ≤−5 bps intraday (F29). Gatilho de entry alternativa: rompimento de 180.300 com candle 15m fechando ACIMA + volume comparativo > média 20 períodos"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "ANTI-TRADE: short abaixo de 178.500 sem retrace prévio (vai contra fluxo) · long em rompimento de 180.300 SEM volume (fakeout em PDH)"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "CANCELAMENTO: gap aberto < 177.800 (sweep PDL invertido) · juros futuros BR reverterem pra comprador ≥+10 bps intraday · Brent rompe $100 com headline geopolítica adversa · fluxo estrangeiro acelera venda >R$1bi à vista na abertura"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "AGUARDAR formal (4,5/10 < threshold 6,0) · setup SHORT documentado: entry 5.022-5.025 · stop 5.035 (13 pts) · TP1 5.001 (RR 1,6 · 50%) · TP2 4.985 (RR 2,85 · 30%) · TP3 4.965 (RR 4,38 · 20%) · 2 contratos banca 30k @ 0,87% risco"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "Setup SHORT ATIVA APENAS na confluência: DXY rompe 99,20 pra baixo + Brent reverte <$94 + WDO testa 5.022-5.025 com rejeição 15m clara"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "ANTI-TRADE: long acima de 5.040 sem catalisador · short em 5.000 sem confirmação (psicológico já defendido · risco de Spring)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "📊 Filtro Anti-Narrativa MODERADO (downgrade do ALTO do #17) · gap narrativa × realidade fechou parcialmente mas Rubio 'de uma forma OU DE OUTRA' + ataques americanos noturnos no Irã mantêm headline-risk · monitorar Brent intraday como termômetro"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⛔ EVITAR janelas: 08:25-08:35 (T.Correntes+IDP) · 09:00-09:25 (leilão B3 abertura) · 10:55-11:15 (Conf.Cons.CB EUA) · 17:45-17:55 (leilão B3 fechamento)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "🛡 Fluxo estrangeiro vendedor -R$1,28bi 20-21/05 é headwind ESTRUTURAL pro WIN · reduz tamanho · monitorar reaceleração ou inversão na abertura"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "📈 Risk-on global confirmado: Treasuries -1,66% (US10Y) · ESM26 +0,71% · NQM26 +1,01% · KOSPI +3,02% · NY reabre normalizando liquidez · favorece tese LONG WIN"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "🛡 Se operar fora do briefing: risco 1% da banca · stop obrigatório · RR mínimo 1:2 · disciplina PRIMEIRO · edge estrutural SEGUNDO · preservação de capital TERCEIRO"
+    }
+  ],
+  "di_curva": {
+    "di1f27_taxa": 14.025,
+    "di1f27_delta_bps": -5.2,
+    "di1f27_prior": 14.077,
+    "di1f28_taxa": 13.725,
+    "di1f28_delta_bps": -11.0,
+    "di1f28_prior": 13.835,
+    "di1f29_taxa": 13.71,
+    "di1f29_delta_bps": -14.1,
+    "di1f29_prior": 13.851,
+    "di1f31_taxa": 13.84,
+    "di1f31_delta_bps": -13.0,
+    "di1f31_prior": 13.97,
+    "di1f33_taxa": 13.93,
+    "di1f33_delta_bps": -13.3,
+    "di1f33_prior": 14.063,
+    "fonte": "Falcão Notícias terça 26/05 manhã (CETIP EOD segunda 25/05 · release 07:11 BRT) · LIÇÃO 53 fonte primária dia D · cross-check Bom Dia Mercado §4",
+    "leitura": "JUROS FUTUROS BR VIRARAM VENDEDORES FORTE EOD segunda 25/05 · queda em todos os 5 vértices · curto cede leve (F27 -5,2 bps) · miolo/longo lidera (F29 -14,1 bps · F33 -13,3 bps) = achatamento da curva com viés VENDEDOR consolidado (mercado precifica MAIS cortes de Selic ou alívio estrutural). Sanity max delta 14,1 bps < 80 (LIÇÃO 23 OK). INVERSÃO TOTAL do tom comprador +8 bps de sexta (#17). Motor: Galípolo na coletiva domingo disse 'política monetária está funcionando' + Selic Focus 2027/2028 ancoradas em 4,01%/3,65% + Treasuries US caindo -1,66% (US10Y) puxam juros BR pra baixo. FAVORÁVEL WIN (juros caindo · bolsa sobe) · FAVORÁVEL SHORT WDO (USDBRL pressionado pra baixo)."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "versao": "1.0_FASE2_COMPLETA",
+    "fase_1_concluida_em": "2026-05-25 23:45 BRT",
+    "fase_2_concluida_em": "2026-05-26 07:50 BRT (pós Falcão CETIP 07:11)",
+    "criado_em": "2026-05-25 · segunda noite BRT (FASE 1)",
+    "criado_por": "Cowork · FASE 1 noturna + FASE 2 terça manhã · sessão pós inputs Falcão",
+    "publicado_em": null,
+    "fase1_escopo": "Dados D-1 (quinta 22/05) fixados como referência inicial. Juros futuros BR (curva DI) inferidos via prints PNG da pasta canônica (F27/F29/F31 EOD segunda 25/05). Globais via TradingView CDP overnight. Fluxo B3 estrangeiro 20-21/05.",
+    "fase2_escopo": "✅ COMPLETO · Juros futuros BR (curva DI) definitivos confirmados via Falcão CETIP terça 07:11 (5 vértices F27/F28/F29/F31/F33 · VENDEDORES -14 bps F29 LIDERA) · OHLC settlement segunda 25/05 atualizados (WIN 179.259 · WDO 5.021,61) · Cross-check #17 → #18 invalidou markdown bearish do WIN (sem sweep do PDL) · Fase Wyckoff reclassificada (Reacumulação B WIN · Acumulação B WDO) · Scores subiram 4 pontos WIN (2,5→6,5) e 2,5 pontos WDO (2,0→4,5) · Vereditos GO_CONDICIONAL WIN + AGUARDAR WDO · Filtro Anti-Narrativa downgrade ALTO→MODERADO · Manchete + subtítulo + racional_publico + planos operacionais completos + agenda macro expandida (12 eventos) + kill zones (6) + regras_do_dia (12) · Editorial Renato: linguagem leiga 'juros futuros BR' + 'vendedor' aplicada em manchete/subtitulo/racional/capa/telegram.",
+    "fase2_pendencias_restantes": [],
+    "licoes_aplicadas": [
+      1,
+      6,
+      7,
+      21,
+      23,
+      42,
+      43,
+      44,
+      46,
+      50,
+      53,
+      54,
+      58,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "alertas": [
+      "✅ RESOLVIDO: Juros futuros BR (curva DI) definitivos Falcão CETIP integrados (5 vértices · vendedores -14 bps F29 lidera)",
+      "✅ RESOLVIDO: cross-check #17→#18 atualizou ajuste B3, OHLC, fase Wyckoff e scores",
+      "✅ RESOLVIDO: Filtro Anti-Narrativa MODERADO documentado com narrativa dominante + 5 frases consensuais + 5 contra-evidências",
+      "⚠ Headline-risk Irã/Brent overhang · monitorar Brent intraday como termômetro · se rompe $100 = filtro re-ESCALA pra ALTO"
+    ],
+    "fontes": {
+      "ajuste_b3": "Falcão CETIP terça 26/05 07:11 BRT (settlement oficial segunda 25/05) · cross-check Bom Dia Mercado",
+      "di_curva": "Falcão Notícias terça 26/05 07:11 BRT (CETIP EOD segunda 25/05) · 5 vértices",
+      "globais": "Investing.com snapshot terça 26/05 07:21 BRT · pré-abertura NY",
+      "fluxo_b3": "fluxo_b3.md snapshot 20-21/05 (estrangeiro -R$ 1,28bi à vista)",
+      "headlines": "Falcão Notícias 06:59 BRT (WSJ · Rubio/Ormuz) + Bom Dia Mercado completo"
+    }
+  }
+}

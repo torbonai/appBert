@@ -1,0 +1,232 @@
+{
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "fase_1_concluida_em": "2026-05-25 23:45 BRT",
+    "fase_2_prevista": "2026-05-26 07:30 BRT (pós-release Falcão CETIP 07:11)",
+    "notas": [
+      "FASE 1 NOTURNA segunda 25/05 · dados B3 EOD qui 22/05 travados (sexta 23/05 não houve pregão)",
+      "DI bps lidos de prints PNG EOD segunda 25/05 (F27 -9,0 / F29 -18,5 / F31 -16,0) · AGUARDAR validação Falcão CETIP 07:11",
+      "Globais: feriado US segunda 25/05 (Memorial Day) · timestamps são de sexta 23/05 EOD + overnight asiático 26/05",
+      "Scores e viés preliminares · podem mudar na FASE 2 após PMS (09:00) e contexto overnight final"
+    ],
+    "fontes": {
+      "ajuste_b3": "TradingView Daily close D-1 (qui 22/05) via CDP",
+      "di_curva": "Prints PNG pasta canônica di_curve_inputs/ EOD segunda 25/05 · F27/F29/F31 · _VALIDAR_FALCAO_SEGUNDA_711",
+      "globais": "TradingView quote_get 26/05 madrugada · DXY/USDJPY/US500/NAS100/XAU/USOIL",
+      "fluxo_b3": "fluxo_b3.md snapshot 20-21/05 (estrangeiro -R$1,28bi à vista)"
+    },
+    "pendentes_fase2": [
+      "_PENDENTE_FALCAO_CETIP_DI_DEFINITIVO",
+      "_PENDENTE_PMS_CONFIRMACAO_VIES_WIN",
+      "_PENDENTE_MANCHETE_FINAL",
+      "_PENDENTE_SETUPS_DETALHADOS_ENTRY_SL_TP",
+      "_PENDENTE_FILTRO_ANTI_NARRATIVA_DEFINITIVO",
+      "_PENDENTE_AGENDA_MACRO_CROSS_CHECK"
+    ]
+  },
+  "data": "2026-05-26",
+  "data_extenso": "Terça-feira, 26 de maio de 2026",
+  "hora_publicacao": "_PENDENTE_FASE2_08:30_BRT",
+  "edicao": 18,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_MANCHETE_FINAL",
+    "subtitulo": "_PENDENTE_FASE2_SUBTITULO_3_5_LINHAS"
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste B3 177.777 · _PENDENTE_FASE2_FECHAMENTO_E_VARIACOES · Reacumulação C/D · score 6,5/10 preliminar · GO_CONDICIONAL · viés lateral → bullish leve",
+    "wdo_linha": "MINI DÓLAR · ajuste B3 5.026,72 · _PENDENTE_FASE2_FECHAMENTO_E_VARIACOES · Acumulação B · score 4,0/10 preliminar · AGUARDAR · viés lateral",
+    "janela_operacional": "_PENDENTE_FASE2_DEFINIR_KILL_ZONES",
+    "nivel_chave": "WIN 180.275 (high seg) · 178.910 (PDH qui) · 176.310 (PDL qui) · 175.200 (low semanal) · WDO 5.052 (PDH qui) · 5.003,5 (PDL qui) · 5.000 (psicológico) · 4.992 (low semanal)",
+    "agenda_top1": "Agenda limpa · apenas leilões recorrentes B3 (09:00-09:25 abertura · 17:45-17:55 fechamento)"
+  },
+  "contexto_macro": {
+    "nivel_vento": "VENTO_MORNO",
+    "highlights": [
+      "📌 Briefing #18 FASE 1 NOTURNA (segunda 25/05/2026 23:45 BRT) · referência B3 EOD qui 22/05 (sexta 23/05 não houve pregão)",
+      "📊 WIN 177.777 (ajuste B3 EOD qui 22/05 · validado via TradingView CDP D close) · OHLC qui 22/05: O 178.495 / H 178.910 (PDH) / L 176.310 (PDL) / C 177.777 · range 2.600 pts · vol 15,7M contratos",
+      "📊 WIN segunda 25/05 (intraday capturado): O 179.270 / H 180.275 / L 177.845 / C ~179.425 (4H close) · recuperando +1.648 pts vs ajuste qui · rompeu resistência 179.000",
+      "💵 WDO 5.026,72 (ajuste B3 EOD qui 22/05 · validado via TradingView CDP D close) · OHLC qui 22/05: O 5.022 / H 5.052 (PDH) / L 5.003,5 (PDL) / C 5.026,72 · range 48,5 pts · vol 2,0M contratos",
+      "💵 WDO segunda 25/05 (intraday capturado): O 5.022,5 / H 5.027,5 / L 5.000 / C ~5.016,5 (4H close) · lateralizando tight · testou 5.000 psicológico",
+      "💵 Curva DI EOD segunda 25/05 (prints PNG · _VALIDAR_FALCAO_CETIP_711): F27 (Jan/27) 14,025% (-9,0 bps) · F29 (Jan/29) 13,710% (-18,5 bps LIDEROU) · F31 (Jan/31) 13,840% (-16,0 bps) = BULL FLATTEN DO MIOLO · mercado precifica menos aperto ou mais cortes Selic · favorece WIN long / WDO short",
+      "🌍 Feriado tríplice US/UK/DE segunda 25/05 (Memorial Day + Spring Bank Holiday) · mercados fechados · liquidez fina · timestamps globais são de sexta 23/05 EOD + overnight asiático 26/05",
+      "💵 DXY 99,036 (+0,06% vs segunda 17:30) · USDJPY 158,999 (+0,05%) · estáveis · sem direção clara",
+      "📊 Equities US leve negativo: S&P 7.525 (-0,37%) · Nasdaq 29.757 (-0,51%) · mas feriado segunda reduziu liquidez",
+      "💎 Ouro 4.543 USD (-0,60%) · risk-on leve ou profit-taking",
+      "🛢 WTI 91,77 USD · _PENDENTE_FASE2_VARIACAO_VS_ANTERIOR",
+      "🔄 Fluxo B3 (20-21/05): estrangeiro vendeu -R$ 1,28 bi à vista em 2 dias (saída sustentada) · institucional contraparte +R$ 1,93 bi · HEADWIND estrutural WIN",
+      "📅 Agenda HOJE: agenda limpa · apenas leilões recorrentes B3 (09:00-09:25 abertura · 17:45-17:55 fechamento) · sem eventos macro BR/US de alto impacto",
+      "🛡 Status briefing #17 (segunda 25/05) · WIN score 2,5/10 AGUARDAR · WDO score 2,0/10 AGUARDAR · filtro Anti-Narrativa ATIVO (acordo EUA-Irã frágil · Brent -5,4%) · briefing publicado 08:30 BRT"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": false,
+      "narrativa_dominante": "_PENDENTE_FASE2_NARRATIVA_SE_SURGIR",
+      "fonte_observada": "_PENDENTE_FASE2",
+      "descricao": "Filtro em formação · aguardando PMS e contexto manhã terça 26/05 para identificar narrativa dominante",
+      "frases_consensuais_alertadas": [],
+      "contra_evidencias": [],
+      "nota_tecnica": "FASE 1 noturna não captura narrativa em tempo real · avaliar na FASE 2 manhã (07:30-08:30) se consenso imprensa contradiz estrutura técnica"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Reacumulação Fase C/D · testou suporte 176.310 (PDL qui) sem quebrar critical support 175.200 · hoje rompendo resistência 179.000 · buscando 180.000+ · volume fraco hoje (12M vs média 17M) · falta confirmação institucional",
+      "score": 6.5,
+      "veredito": "GO_CONDICIONAL",
+      "vies": "Lateral → bullish leve",
+      "racional_publico": "_PENDENTE_FASE2_RACIONAL_3_6_LINHAS_PUBLICO",
+      "niveis_chave": {
+        "ajuste_b3": 177777,
+        "ajuste_b3_data": "2026-05-22",
+        "fechamento_anterior": 177777,
+        "PDH": 178910,
+        "PDL": 176310,
+        "maxima_anterior": 178910,
+        "minima_anterior": 176310,
+        "abertura_anterior": 178495,
+        "range_anterior_pts": 2600,
+        "EQ": 177610,
+        "weekly_high_20d": 180355,
+        "weekly_low_20d": 175200,
+        "suporte_critico": 175200,
+        "resistencia_critica": 180355,
+        "buffer_ajuste_suporte_pts": 2577,
+        "_nota": "Dados de qui 22/05 EOD (sexta 23/05 não houve pregão)"
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-22",
+        "fonte": "Ajuste oficial B3 via TradingView Daily close D-1 · pregão de quinta 22/05/2026",
+        "validacao": "WIN 177.777 · faixa 170k-200k OK · fonte SEM estimado"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_LONG_OU_SHORT",
+        "entry_zona": "_PENDENTE_FASE2",
+        "stop": "_PENDENTE_FASE2",
+        "stop_pts": "_PENDENTE_FASE2",
+        "tp1": "_PENDENTE_FASE2",
+        "tp1_rr": "_PENDENTE_FASE2",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2",
+        "tp2_rr": "_PENDENTE_FASE2",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2",
+        "tp3_rr": "_PENDENTE_FASE2",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2",
+        "setup": "_PENDENTE_FASE2_SETUP_COMPLETO_DESCRICAO",
+        "kill_zone": "_PENDENTE_FASE2",
+        "gatilho": "_PENDENTE_FASE2_CONDICIONAL_SE_X",
+        "anti_trade": "_PENDENTE_FASE2",
+        "cancelamento": "_PENDENTE_FASE2"
+      },
+      "comentario_breve": "Estrutura de reacumulação em curso · DI bull flatten favorece long · mas fluxo B3 estrangeiro vendedor (-R$1,28bi) é headwind. Volume hoje fraco aguarda confirmação institucional. GO condicional acima 180.000 com volume.",
+      "_score_breakdown": {
+        "wyckoff_fase_c_d": 2.5,
+        "sweep_pdl_recente": 1.5,
+        "di_alinhada_bull_flatten": 1.0,
+        "volume_fraco_hoje": -0.5,
+        "feriado_us_liquidez_fina": -0.5,
+        "fluxo_b3_estrangeiro_vendedor": -0.5,
+        "filtro_anti_narrativa_em_formacao": -0.5,
+        "total": 6.5
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B · range lateral tight 4.992-5.073 (81 pts) · compressão sem direção clara · sem Spring visível · sem gatilho direcional · stuck no meio do range",
+      "score": 4.0,
+      "veredito": "AGUARDAR",
+      "vies": "Lateral",
+      "racional_publico": "_PENDENTE_FASE2_RACIONAL_3_6_LINHAS_PUBLICO",
+      "niveis_chave": {
+        "ajuste_b3": 5026.718,
+        "ajuste_b3_data": "2026-05-22",
+        "fechamento_anterior": 5026.718,
+        "PDH": 5052,
+        "PDL": 5003.5,
+        "maxima_anterior": 5052,
+        "minima_anterior": 5003.5,
+        "abertura_anterior": 5022,
+        "range_anterior_pts": 48.5,
+        "EQ": 5027.75,
+        "weekly_high_20d": 5073,
+        "weekly_low_20d": 4992,
+        "suporte_critico": 5000,
+        "resistencia_critica": 5052,
+        "buffer_ajuste_suporte_pts": 26.718,
+        "_nota": "Dados de qui 22/05 EOD (sexta 23/05 não houve pregão)"
+      },
+      "ajuste_b3_meta": {
+        "data_referencia": "2026-05-22",
+        "fonte": "Ajuste oficial B3 via TradingView Daily close D-1 · pregão de quinta 22/05/2026",
+        "validacao": "WDO 5.026,72 · faixa 4.8-5.2 OK · fonte SEM estimado"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2",
+        "entry_zona": "_PENDENTE_FASE2",
+        "stop": "_PENDENTE_FASE2",
+        "stop_pts": "_PENDENTE_FASE2",
+        "tp1": "_PENDENTE_FASE2",
+        "tp1_rr": "_PENDENTE_FASE2",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2",
+        "tp2_rr": "_PENDENTE_FASE2",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2",
+        "tp3_rr": "_PENDENTE_FASE2",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2",
+        "setup": "_PENDENTE_FASE2",
+        "kill_zone": "_PENDENTE_FASE2",
+        "anti_trade": "_PENDENTE_FASE2",
+        "cancelamento": "_PENDENTE_FASE2"
+      },
+      "comentario_breve": "Range lateral tight sem gatilho direcional · DI bull flatten favorece short WDO mas DXY estável (+0,06%) não confirma. Aguardar break de 5.000 (short) ou 5.052 (long) com volume.",
+      "_score_breakdown": {
+        "wyckoff_fase_b_sem_spring": 0.5,
+        "range_tight_sem_direcao": -1.0,
+        "di_alinhada_bull_flatten_short": 1.0,
+        "dxy_estavel_nao_favorece_direcional": -0.5,
+        "fluxo_b3_neutro_wdo": 0,
+        "volume_baixo": -0.5,
+        "falta_confluencia_htf": -0.5,
+        "total": 4.0
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "Leilão de abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Recorrente · volatilidade artificial"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "Leilão de fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Recorrente"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_DEFINIR_KILL_ZONES"
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_10_13_BULLETS_EXECUCAO"
+  ],
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20",
+    "disclaimer": "Conteúdo educacional. Não constitui recomendação personalizada. Risco em derivativos é alto. Decisões são de responsabilidade do leitor. Operações sugeridas são exemplos didáticos de aplicação da metodologia Wyckoff + ICT + Anti-Narrativa."
+  }
+}
