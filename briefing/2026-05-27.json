@@ -1,0 +1,512 @@
+{
+  "data": "2026-05-27",
+  "data_extenso": "Quarta-feira, 27 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 19,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "Juros futuros BR voltam a subir no miolo · IPCA-15 às 9h decide o tom · WIN aguarda, WDO no radar LONG estrutural",
+    "subtitulo": "Falcão CETIP terça (EOD 26/05) confirmou INVERSÃO da curva DI: F27 +5,9 bps · F28 +13,7 · F29 +14,1 (lidera) · F31 +9,4 · F33 +7,1 = bear steepen do miolo (mercado precifica MAIS Selic alta por mais tempo). Citi elevou Selic 2026 13,25→13,75% + IPCA 2027 3,7→3,9% · Kashkari (Fed) lembra que 'série de altas pode voltar à mesa'. WIN fechou ajuste 177.775 (-0,83% terça) com mínima 176.765 ACIMA do suporte crítico 176.330 sem sweep (435 pts de buffer). WDO 5.035,457 (+0,28%) é o 6º pregão acima de R$ 5,00 · saiu do PREMIUM e testa zona EQ. IPCA-15 sai 9h ★★★ projeção Broadcast 0,56% mensal (vs 0,89% abr) · 12m 4,59% acima teto meta · MARKET MOVER PRINCIPAL · janela_evitar 09:00-10:00 OBRIGATÓRIA. Filtro Anti-Narrativa MODERADO: narrativa BDM 'JURO COMPRA GUERRA · tudo hawkish' parcialmente furada por Brent overnight $93,48 (-3,30%) + UST queda (US10Y -0,65%) + VIX 16,9 baixo + ES/NQ futuros firmes. Agenda densa: PEC 6x1 vota comissão 10h + 2 pesquisas eleitorais (Jota/Indexa) 10h + Fluxo Cambial + Tesouro Dívida 14h30 + 4 falas Fed/BCE/BoE conferência BoJ + BoK decisão 22h. Live #4 'Trading é Matemática' HOJE 20h YouTube · Founding Member janela fecha sexta 30/05."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste B3 177.775 (ter 26/05) · close estimado 177.770 (-0,83% · -1.484 pts) · OHLC: O 178.910 / H 179.235 / L 176.765 (435 pts ACIMA do suporte crítico 176.330 · sem sweep) / C 177.770 · Reacumulação Fase B (transição B/A potencial se sweep PDL hoje) · score 3,0/10 · AGUARDAR · sem viés direcional · 2 setups condicionais pós-IPCA",
+    "wdo_linha": "MINI DÓLAR · ajuste B3 5.035,46 (ter 26/05) · close estimado 5.035,00 (+0,28% · +13,85 pts) · OHLC: O 5.027 / H 5.043 / L 5.008 / C 5.035 · 6º pregão consecutivo acima de R$ 5,00 · Acumulação Fase B (Spring potencial em 5,050) · score 5,5/10 borderline · AGUARDAR · viés bullish leve · setup LONG documentado condicional",
+    "janela_operacional": "Pré-09:00 NÃO operar (IPCA-15 ★★★) · pós-digestão 10:30-11:30 BRT primeira janela limpa · 11:30-12:30 BRT (pós-PEC 6x1 + pesquisas) janela secundária · 14:30-15:30 BRT (NY open + Fluxo Cambial BR + Tesouro Dívida Pública) terceira janela · evitar 09:00-10:00 (IPCA) · 09:00-09:25 (leilão B3) · 09:55-10:15 (PEC + pesquisas) · 17:45-17:55 (leilão fechamento)",
+    "nivel_chave": "WIN 179.235 (PDH ter) · 177.775 (ajuste/close ter) · 178.000 (EQ) · 176.765 (PDL ter · próximo de 176.330 suporte crítico) · 176.330 (suporte crítico · 435 pts abaixo da mínima) · 175.200 (low semanal) · WDO 5.043 (PDH ter) · 5.035,46 (ajuste ter) · 5.025,5 (EQ) · 5.050 (resistência LONG gatilho) · 5.008 (PDL ter) · 5.000 (psicológico defendido segunda #18)",
+    "agenda_top1": "09:00 IPCA-15 maio BR ★★★ proj 0,56% mensal vs 0,89% ant · 12m 4,59% acima teto meta · 10:00 PEC 6x1 votação comissão Câmara ★★ + 2 pesquisas eleitorais Jota/Indexa ★★"
+  },
+  "contexto_macro": {
+    "nivel_vento": "VENTO_MORNO",
+    "highlights": [
+      "📌 Briefing #19 FASE 2 (quarta 27/05/2026 · pós Falcão CETIP juros futuros BR definitivos 06:46 · pós Bom Dia Mercado · NY já reabriu terça com recordes IA · IPCA-15 9h ★★★ MARKET MOVER PRINCIPAL DO DIA)",
+      "📊 WIN ajuste B3 terça 26/05 177.775 (settlement oficial · LIÇÃO 61) · close estimado 177.770 (-0,83% · -1.484 pts vs ajuste seg 179.259) · OHLC ter: O 178.910 / H 179.235 / L 176.765 / C estimado 177.770 · range 2.470 pts · MÍNIMA 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (SEM sweep · invalida tese markdown imediato)",
+      "📊 Cross-check estrutural #18 → #19: setup LONG GO_CONDICIONAL do #18 NÃO foi acionado (preço não voltou pra zona 179.300-500 com defesa nem rompeu 180.400 com volume) · trade não armou · resultado neutro · WIN caiu -0,83% mas SEM sweepar suporte crítico · Fase Wyckoff mantém Reacumulação B (transição B/A potencial se sweep 176.330 hoje)",
+      "💵 WDO ajuste B3 terça 26/05 5.035,457 (settlement oficial · LIÇÃO 61) · close estimado 5.035,00 (+0,28% · +13,85 pts vs ajuste seg 5.021,61) · OHLC ter: O 5.027 / H 5.043 / L 5.008 / C estimado 5.035 · range 35 pts · 6º PREGÃO CONSECUTIVO acima de R$ 5,00 · saiu PREMIUM testa zona EQ (5.025,5)",
+      "💵 Juros futuros BR EOD terça 26/05 (Falcão CETIP confirmado 06:46) · VIRARAM COMPRADORES DE NOVO: F27 14,065% (+5,9 bps) · F28 13,835% (+13,7) · F29 13,815% (+14,1 LIDEROU) · F31 13,895% (+9,4) · F33 13,970% (+7,1) · sanity max 14,1 bps < 80 (LIÇÃO 23 OK) · BEAR STEEPEN MIOLO moderado · mercado precifica MAIS Selic alta por mais tempo · DESFAVORÁVEL WIN estrutural · FAVORÁVEL WDO LONG estrutural",
+      "🚨 IPCA-15 (MAIO) SAI HOJE 09:00 BRT ★★★ · MARKET MOVER PRINCIPAL DO DIA · projeção Broadcast 0,56% mensal vs 0,89% ant · 12m 4,59% (acima do teto da meta 4,50%) · descompressão esperada em Transportes (gasolina) MAS pressão persistente em serviços/alimentação/itens intensivos em mão de obra · média núcleos só desacelera 0,47→0,46 (qualitativamente desconfortável pro Copom) · janela_evitar 09:00-10:00 OBRIGATÓRIA",
+      "🏛 Citi elevou Selic 2026 13,25% → 13,75% + IPCA 2027 3,7% → 3,9% · Copom abril elevou tom hawkish + sinalizou desancoragem expectativas longas · Kashkari (Fed Minneapolis): 'série de altas de juros pode voltar à mesa se guerra pressionar inflação global' · narrativa hawkish-irreversível precificada na semana",
+      "🌍 Globais overnight terça noite 26/05 → quarta 27/05 07:00-07:40 BRT: ES +0,25% 7.559 (NY firme · sem risk-off) · NQ +0,42% 30.200 · US30 +0,51% 50.719 (recordes IA terça · Micron +19,29% UBS triplicou alvo $1.625 · Qualcomm +4,48% deal TikTok) · VIX 16,93 -0,47% (baixo estável) · DXY 99,07 -0,08% · USDBRL futuro 5,0342 (+0,35% vs spot ontem 5,0274) · UST queda US2Y 4,019% (-0,77%) · US10Y 4,483% (-0,65%) · US30Y 5,004% (-0,42%)",
+      "🛢 Brent (LCO) overnight $93,48 -3,30% DEVOLVEU todo o ganho de terça ($99,58 +3,58%) · narrativa 'petróleo sustentado perto $100' já furada às 07:00 · alívio inflacionário potencial se sustentar · Gold 4.520,45 -0,32% · sem refúgio geopolítico se mantendo · peers mineradoras positivos (BHP +1,28% · AAL +1,15%) · peers petroleiras NEGATIVOS (Shell -2,21% · BP -1,19% · TTEF -3,03% · REP -2,07% · EQNR -2,83%)",
+      "📅 Agenda HOJE quarta 27/05: 08:00 FGV Confiança Indústria ★★ · 09:00 IPCA-15 maio ★★★ · 10:00 PEC 6x1 votação comissão Câmara + Pesquisa Jota + Pesquisa Indexa ★★ · 12:00 BC oferta R$ 5bi compromissadas 3m ★ · 14:30 Fluxo Cambial BR semanal + Tesouro Relatório Mensal Dívida Pública abril ★★ · 16:55 Lisa Cook (Fed) Stanford ★★ · 21:00 Jefferson (Fed) + Lane (BCE) conferência BoJ ★★ · 22:00 BoK decisão juros ★★ · 23:25 Goolsbee (Fed) + Lombardelli (BoE) conferência BoJ ★★",
+      "🇪🇺 Conferência BoJ Tóquio reúne dirigentes Fed/BCE/BoE/FMI · Ueda (BoJ) ontem alertou: 'choques de energia podem se espalhar pela inflação subjacente · impacto inicial temporário pode virar duradouro' · 3 semanas antes da próxima decisão BoJ · USDJPY 159,36 estável overnight mas pressão persistente",
+      "🇧🇷 BRB & Banco Master · STF avança acordo R$5bi com FGC + sindicato bancos · sem aval direto União · BRB tem até 29/05 (sexta) pra apresentar recomposição patrimonial ao BC · risco sistêmico bancário moderado mas vigilância CAE Senado · pode mover bancos intraday se headline ruim",
+      "📊 NY ontem terça 26/05 (Memorial Day passou): S&P 500 +0,61% 7.519,12 (recorde) · NQ +1,19% 26.656,18 (recorde) · Dow -0,23% 50.461,68 (acima de 50k) · IBOV CASH -0,69% 176.589,03 (giro R$22,4bi) · bancos BR pesados (BB ON -2,49% · Bradesco PN -1,27% · Itaú PN -0,64% · Santander -1,16% · BTG -0,72%) · Vale ON -0,62% (minério -1,95%) · Petrobras suportando (ON +0,41% · PN +0,09%)",
+      "🛡 Status #18 (terça 26/05): WIN GO_CONDICIONAL 6,5/10 setup LONG não armou (não voltou zona entry nem rompeu PDH com volume) · WDO AGUARDAR 4,5/10 setup SHORT não ativou · briefing publicado 08:30 BRT · trade neutro · cross-check confirma DI INVERSÃO terça (vendedor -14 bps F29 do #18 → comprador +14,1 bps F29 do #19 = ida e volta em 24h · volatilidade alta de regime)"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "MODERADO",
+      "narrativa_dominante": "Mercado precifica 'JURO COMPRA GUERRA · tudo hawkish irreversível' como cenário base: Brent perto de US$ 100 sustentado, Selic terminal subindo, Fed pode antecipar alta, câmbio acima de R$5 'deixou de funcionar' como aliado da inflação. Citi elevou Selic 2026 pra 13,75% + IPCA 2027 pra 3,9% reforçando o tom. Kashkari Fed 'série de altas pode voltar à mesa'. Economistas BR convergem na tese de inflação qualitativamente desconfortável pro Copom com núcleos pressionados em serviços/mão de obra. Narrativa precificada na semana inteira sem contestação.",
+      "fonte_observada": "Bom Dia Mercado Broadcast quarta 27/05 (íntegro) · Falcão Notícias 06:46 BRT (Tatiana Tribiolli agenda + DI EOD CETIP) · framing imprensa: 'IPCA-15 testa limites do BC' · 'JURO COMPRA GUERRA' · 'câmbio deixou de funcionar' (Sichel/Porto Asset) · 'subsídios não reduzem tendência inflação acima da meta no médio/longo prazo' (Citi)",
+      "descricao": "Filtro MANTIDO em MODERADO (mesma intensidade do #18) · não escalou pra ALTO porque narrativa hawkish é REAL (Citi/Kashkari/Copom não são alucinações de mercado) · mas há contra-evidências overnight materiais que sugerem narrativa parcialmente furada · gap fechou com Brent voltando pra perto de $100 ontem MAS reabriu agora com Brent -3,30% overnight $93,48 · IPCA-15 9h é o gatilho que confirma ou reverte a leitura · monitorar como termômetro intraday.",
+      "frases_consensuais_alertadas": [
+        "JURO COMPRA GUERRA · Brent sustentado perto $100 · Selic mais alta por mais tempo · acordo EUA-Irã trava · Fed antecipa alta dezembro",
+        "Citi elevou Selic 2026 13,25%→13,75% + IPCA 2027 3,7%→3,9% · cenário hawkish-irreversível precificado",
+        "Câmbio acima R$5 deixou de funcionar como aliado da inflação · 6º pregão consecutivo · pressão fiscal + petróleo + risco geopolítico",
+        "Núcleos qualitativamente desconfortáveis pro Copom · serviços/alimentação fora domicílio/intensivos mão de obra pressionados · ciclo flexibilização travado",
+        "Curva DI confirma bear steepen miolo (+14 bps F29) · juros futuros BR voltam a comprar guerra · mercado precifica inflação persistente"
+      ],
+      "contra_evidencias": [
+        "Brent (LCO) OVERNIGHT $93,48 -3,30% DEVOLVEU todo ganho de terça +3,58% · tese 'petróleo sustentado $100' furada às 07:00 quarta · se sustentar < $94 alivia IPCA-15 maio E muda narrativa",
+        "Treasuries US OVERNIGHT em QUEDA: US2Y -0,77% · US10Y -0,65% · US30Y -0,42% · mercado externo NÃO precifica 'Fed antecipa alta dezembro' · contradiz tese hawkish global",
+        "VIX 16,93 -0,47% baixo estável + ES/NQ futuros +0,25%/+0,42% + DOW +0,51% (recordes IA) = SEM risk-off externo · mercado global ignora narrativa guerra",
+        "USDBRL futuro só +0,35% overnight (vs spot ontem 5,0274) · DXY estável (99,07 -0,08%) · sem disparada cambial que confirme tese fiscal-inflação acelerando",
+        "DI Falcão movimentou +5 a +14 bps · moderado · não +30 a +50 bps de pânico real · mercado precifica calibragem, NÃO surto inflacionário · espaço pra IPCA <0,50% causar realização parcial do call hawkish"
+      ],
+      "leitura_bertani": "Mercado externo abre LIMPO (Treasuries em queda + futuros US firmes + VIX baixo + Brent aliviando), MAS narrativa doméstica BR está 100% calibrada pro lado hawkish (Citi, Kashkari, Sichel/Porto, BDM inteiro). Esse desacoplamento é o ponto: se o IPCA-15 9h vier ALINHADO (proj 0,56%) ou ABAIXO + Brent confirma alívio sustentado < $94, a narrativa hawkish começa a furar e WIN tem janela de bounce técnico (alvo 178.500-179.000) · WDO perde edge LONG estrutural. Se IPCA vier ACIMA (>0,60%) + Brent reverte pra cima de $95, narrativa se confirma · WDO ganha gatilho LONG no break 5,050 + WIN risco de sweep do suporte crítico 176.330. Filtro MODERADO porque a narrativa NÃO é alucinação (Citi tem razão estrutural · Copom realmente está mais hawkish) · mas a precificação SEMANAL completa do cenário hawkish-irreversível pode estar oferecendo edge contrário pra quem espera digestão. Prático: ZERO entrada pré-09:00 · aguardar IPCA + reação inicial 5-15min · só armar setup pós-digestão completa (10:30+).",
+      "contra_evidencias_a_monitorar": [
+        "Brent (LCO) intraday · se sustentar < $94 = narrativa fura · se recuperar > $98 = narrativa confirma",
+        "USDBRL spot intraday · se rompe 5,050 com volume institucional = WDO LONG ativa · se devolve pra < 5,020 = real ainda funciona",
+        "Curva DI intraday Falcão updates · F29 devolve queda (< +5 bps) = mercado relaxa · F29 amplia (> +25 bps) = narrativa hawkish escala",
+        "ES/NQ + VIX · se ES quebra suporte intraday + VIX > 19 = risk-off externo entra · se ES sustenta acima 7.550 + VIX < 17 = ambiente externo segura WIN",
+        "PEC 6x1 votação comissão 10h · APROVADA com presa de força = risco fiscal/empresarial pro IBOV · TRAVADA = alívio bancos/varejo"
+      ]
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Reacumulação Fase B (transição B/A potencial) · Secondary Test do suporte ontem em 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (sem sweep · invalida markdown imediato) · MAS contexto macro inverteu vs #18: juros futuros BR viraram COMPRADORES bear steepen miolo (+14,1 bps F29) + narrativa hawkish dominante + IPCA-15 9h ★★★ tudo desfavorável · se mercado sweepar 176.765 hoje com volume = entra Fase A descendente novo range mais baixo · se respeitar + IPCA <0,50% = Reacumulação B mantém com tentativa SOS acima de 179.235",
+      "score": 3.0,
+      "veredito": "AGUARDAR",
+      "vies": "sem viés direcional (aguarda IPCA-15)",
+      "racional_publico": "WIN em Reacumulação Fase B com transição B/A potencial · mínima de ontem 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (sem sweep · invalida markdown imediato), MAS o contexto macro INVERTEU vs briefing #18 de ontem: juros futuros BR (curva DI) VIRARAM COMPRADORES bear steepen miolo segundo Falcão CETIP terça (F29 +14,1 bps LIDERA · F28 +13,7 · F31 +9,4 · F27 +5,9 · F33 +7,1) = mercado precifica MAIS Selic alta por mais tempo · Citi elevou Selic 2026 pra 13,75% + IPCA 2027 pra 3,9% · Kashkari (Fed) 'série de altas pode voltar à mesa'. Todo o desfavorecimento estrutural pro WIN. PORÉM: contra-evidências overnight materiais (Brent -3,30% $93,48 · UST em queda · VIX 16,9 baixo · ES/NQ +0,25-0,42% recordes IA terça) sugerem narrativa hawkish parcialmente furada. **IPCA-15 9h ★★★ é o gatilho do dia** (proj Broadcast 0,56% mensal vs 0,89% abr · 12m 4,59%) · até a digestão completar (10:30+) ZERO entrada. Filtro Anti-Narrativa MODERADO mantém apertando gestão. Score breakdown: base 10,0 + Reacumulação B sem sweep PDL (+1,0) + Brent overnight aliviando contra-narrativa (+0,5) + risk-on externo VIX baixo + futuros US firmes (+0,5) − DI bear steepen miolo desfavorável (−1,5) − narrativa hawkish dominante Citi/Kashkari/Copom (−1,0) − IPCA-15 9h MARKET MOVER pré-mercado (−1,5) − sem gatilho técnico imediato + transição B/A potencial (−1,5) − filtro Anti-Narrativa MODERADO apertado (−1,0) − headline risk persistente Irã/Ormuz (−0,5) − fluxo estrangeiro vendedor headwind estrutural (−1,0) = 3,0/10 · AGUARDAR claro · sem viés direcional pré-IPCA. Dois setups condicionais documentados pós-IPCA.",
+      "niveis_chave": {
+        "ajuste_b3": 177775,
+        "ajuste_b3_data": "2026-05-26",
+        "fechamento_anterior": 177770,
+        "PDH": 179235,
+        "PDL": 176765,
+        "maxima_anterior": 179235,
+        "minima_anterior": 176765,
+        "abertura_anterior": 178910,
+        "range_anterior_pts": 2470,
+        "variacao_anterior_pts": -1484,
+        "variacao_anterior_pct": -0.83,
+        "EQ": 178000,
+        "weekly_high_20d": 180355,
+        "weekly_low_20d": 175200,
+        "suporte_critico": 176330,
+        "suporte_critico_status": "NÃO TESTADO terça · mínima 176.765 ficou 435 pts acima · buffer reduzido vs #18 (era 2.929 pts) · vigília alta intraday",
+        "resistencia_critica": 179500,
+        "buffer_ajuste_suporte_pts": 1445,
+        "_nota": "Ajuste B3 D-1 = terça 26/05 settlement oficial via TV CDP. Fechamento_anterior estimado dentro tolerância B3 normal (LIÇÃO 64 awareness · cross-check Cedro pós-publish recomendado)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 177775,
+        "data_referencia": "2026-05-26",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-26)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR (2 setups condicionais documentados pós-IPCA-15)",
+        "entry_zona": "AGUARDAR · pré-09:00 NÃO operar (IPCA-15 ★★★ janela_evitar 09:00-10:00) · pós-digestão 10:30+ avaliar 2 setups condicionais: SETUP A LONG 178.300-178.500 (pullback pós-IPCA SE IPCA ≤ 0,50% mensal + Brent sustenta < $94) · SETUP B SHORT 177.500-177.700 (rejeição pós-sweep SE IPCA > 0,60% + rompe mínima 176.765 com 4 critérios LIÇÃO 66 confirmados)",
+        "stop": 176200,
+        "stop_pts": 800,
+        "tp1": 179500,
+        "tp1_rr": 1.5,
+        "tp1_partial_pct": 50,
+        "tp2": 180300,
+        "tp2_rr": 2.5,
+        "tp2_partial_pct": 30,
+        "tp3": 181500,
+        "tp3_rr": 4.0,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "AGUARDAR formal (score 3,0/10 < threshold 6,0) · 2 setups condicionais documentados pós-IPCA-15. **SETUP A LONG**: ativa SE (1) IPCA-15 vier ≤ 0,50% mensal (alívio surpresa) E (2) Brent sustenta < $94 (confirma alívio inflação) E (3) WIN pullback pra 178.300-178.500 com defesa visível 4H. Entry zona 178.300-178.500 · stop 176.200 (800 pts · abaixo do suporte crítico 176.330 com folga) · TP1 179.500 (RR 1,6 · saída 50%) · TP2 180.300 (RR 2,9 · 30%) · TP3 181.500 (RR 4,4 · 20%). **SETUP B SHORT** (anti-setup do A · cobre cenário inverso): ativa SE (1) IPCA-15 > 0,60% (confirma narrativa hawkish) E (2) WIN sweepa mínima 176.765 com volume + 4 critérios LIÇÃO 66 falsificados (default = trap continuação bearish) · entry 177.500-177.700 (retest pós-sweep) · stop 178.200 (700 pts) · TP1 176.300 (RR 1,5 · 50%) · TP2 175.500 (RR 2,9 · 30%) · TP3 174.500 (RR 4,7 · 20%).",
+        "kill_zone": "10:30-11:30 BRT (primeira janela pós-IPCA digestão completa) · 11:30-12:30 BRT (pós-PEC 6x1 + pesquisas) · 14:30-15:30 BRT (NY open + Fluxo Cambial + Tesouro Dívida) · evitar 09:00-10:00 (IPCA) · 09:00-09:25 (leilão B3) · 09:55-10:15 (PEC + pesquisas) · 17:45-17:55 (leilão fechamento)",
+        "gatilho": "SETUP A LONG: IPCA-15 ≤ 0,50% mensal + Brent < $94 + WIN pullback 178.300-500 com defesa 4H + DI F29 ALIVIA intraday (devolve queda < +5 bps). SETUP B SHORT: IPCA-15 > 0,60% + sweep 176.765 com volume + 4 critérios LIÇÃO 66 falsificados (volume institucional vendendo no bounce) + DI F29 amplia > +25 bps intraday.",
+        "anti_trade": "Long pré-IPCA-15 (entra cego no MARKET MOVER PRINCIPAL · violação janela_evitar 09:00-10:00) · Short cego em 176.765 sem confirmação dos 4 critérios LIÇÃO 66 (risco Spring real se IPCA surpreender baixo) · qualquer setup acima de 179.300 sem IPCA confirmado alívio (vai contra DI hawkish + narrativa Citi)",
+        "cancelamento": "(1) Gap aberto > 179.500 (acima da resistência crítica · setup A LONG perde entry ótimo · setup B SHORT invalidado) · (2) DI F29 dispara > +30 bps intraday pós-IPCA (regime change · ambos setups suspensos) · (3) Brent rompe $100 com headline geopolítica adversa (filtro Anti-Narrativa re-ESCALA pra ALTO · suspende setups) · (4) BRB/Banco Master headline negativa intraday (risco sistêmico bancário · suspende WIN)"
+      },
+      "comentario_breve": "Score 3,0 AGUARDAR claro · pré-IPCA-15 9h zero operação. Pós-digestão (10:30+) avaliar 2 setups condicionais documentados (LONG se alívio + SHORT se sweep). DI bear steepen + narrativa hawkish desfavorável estrutural · contra-evidências overnight (Brent -3,3% + UST queda + VIX baixo) abrem janela contra-narrativa se IPCA cooperar.",
+      "_score_breakdown": {
+        "reacumulacao_b_sem_sweep_pdl": 1.0,
+        "brent_overnight_aliviando_contra_narrativa": 0.5,
+        "risk_on_externo_vix_baixo_futuros_us": 0.5,
+        "di_bear_steepen_miolo_desfavoravel": -1.5,
+        "narrativa_hawkish_dominante_citi_kashkari_copom": -1.0,
+        "ipca15_market_mover_pre_mercado": -1.5,
+        "sem_gatilho_tecnico_imediato_transicao_potencial": -1.5,
+        "filtro_anti_narrativa_moderado_apertado": -1.0,
+        "headline_risk_persistente_ira_ormuz": -0.5,
+        "fluxo_estrangeiro_vendedor_headwind": -1.0,
+        "base": 10.0,
+        "total": 3.0
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B · Spring potencial em 5,050 (resistência LONG gatilho · 7 pts acima do PDH ter 5.043) · 6º pregão consecutivo acima do psicológico R$ 5,00 = construção de base estrutural · saiu PREMIUM #17 testa zona EQ (5.025,5) · ajuste 5.035,46 = ~50% do range 20d · contexto macro FAVORÁVEL LONG (juros futuros BR bear steepen +14 bps F29 + narrativa BDM 'câmbio deixou de funcionar' Sichel/Porto + Citi Selic 13,75%) MAS gatilho técnico ainda não disparou (precisa romper 5,050 com volume institucional)",
+      "score": 5.5,
+      "veredito": "AGUARDAR",
+      "vies": "bullish leve (setup LONG documentado condicional)",
+      "racional_publico": "WDO em Acumulação Fase B com Spring potencial · 6º pregão consecutivo acima do psicológico R$ 5,00 = construção de base estrutural confirmada. Ajuste 5.035,46 (+0,28% ter) saiu da zona PREMIUM do #17 e testa EQ. Contexto macro FORTEMENTE FAVORÁVEL LONG: (1) Juros futuros BR (curva DI) VIRARAM COMPRADORES bear steepen miolo segundo Falcão CETIP terça (F29 +14,1 bps · F28 +13,7 · F31 +9,4) = mercado precifica MAIS Selic alta por mais tempo · USDBRL pressionado pra cima estrutural · (2) Citi elevou Selic 2026 13,25→13,75% + IPCA 2027 3,7→3,9% · (3) Sichel (Porto Asset) BDM: 'câmbio já não está performando · dólar acima de R$ 5 deixa de ser fator positivo' · narrativa estrutural reforçando LONG · (4) USDBRL futuro overnight 5,0342 +0,35% confirma pressão. PORÉM 4 contra-evidências mantém score borderline: (a) DXY estável 99,07 (-0,08% · não cede pra confirmar dólar global forte) · (b) Brent overnight $93,48 -3,30% devolveu ganho terça (BR exportador petróleo favorecido = real teoricamente apoiado) · (c) ES/NQ +0,25-0,42% futuros US firmes (risk-on histórico favorece BRL) · (d) IPCA-15 9h surpresa baixista pode reverter narrativa hawkish e aliviar BRL. Filtro Anti-Narrativa MODERADO mantém gestão apertada. Setup LONG documentado mas AGUARDAR formal (score 5,5/10 < threshold 6,0 GO_CONDICIONAL) · ativa SE confluência completa pós-IPCA. Score breakdown: base 10,0 + Acumulação B Spring potencial 5,050 (+1,0) + DI bear steepen miolo favorável LONG (+1,5) + narrativa Sichel/Citi confluência (+1,0) + 6º pregão > R$5 base estrutural (+0,5) + USDBRL futuro overnight +0,35% (+0,5) − DXY estável sem confirmação forte (−0,5) − Brent overnight -3,30% BR exportador favorecido (−1,0) − IPCA-15 surpresa baixista pode reverter (−1,0) − filtro Anti-Narrativa MODERADO (−0,5) − sem gatilho técnico imediato precisa break 5,050 (−1,0) − headline risk Irã/Brent imprevisível (−0,5) − risk-on externo histórico favorece BRL (−0,5) = 5,5/10 borderline AGUARDAR · setup LONG documentado.",
+      "niveis_chave": {
+        "ajuste_b3": 5035.457,
+        "ajuste_b3_data": "2026-05-26",
+        "fechamento_anterior": 5035.0,
+        "PDH": 5043,
+        "PDL": 5008,
+        "maxima_anterior": 5043,
+        "minima_anterior": 5008,
+        "abertura_anterior": 5027,
+        "range_anterior_pts": 35,
+        "variacao_anterior_pts": 13.85,
+        "variacao_anterior_pct": 0.28,
+        "EQ": 5025.5,
+        "weekly_high_20d": 5073,
+        "weekly_low_20d": 4992,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "Psicológico 5.000 defendido segunda #18 (mínima 5.000 e respeito) · 6º pregão consecutivo acima · base estrutural construída",
+        "resistencia_critica": 5050,
+        "buffer_ajuste_suporte_pts": 35.46,
+        "_nota": "Ajuste B3 D-1 = terça 26/05 settlement oficial via TV CDP. Fechamento_anterior estimado dentro tolerância B3 normal (LIÇÃO 64 awareness · cross-check Cedro pós-publish recomendado)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5035.457,
+        "data_referencia": "2026-05-26",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-26)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR (setup LONG documentado condicional · ativa pós-IPCA)",
+        "entry_zona": "5.040-5.045 (pullback pra zona acima do EQ com defesa 15m pós-IPCA) · CONDICIONAL ativar APENAS se (1) IPCA-15 ≥ proj 0,56% (confirma narrativa hawkish) E (2) WDO rompe 5,050 com volume institucional + retest 5,040-5,045 E (3) DXY sustenta 99,00 E (4) Brent não recupera > $98",
+        "stop": 5022,
+        "stop_pts": 23,
+        "tp1": 5060,
+        "tp1_rr": 1.5,
+        "tp1_partial_pct": 50,
+        "tp2": 5073,
+        "tp2_rr": 2.2,
+        "tp2_partial_pct": 30,
+        "tp3": 5085,
+        "tp3_rr": 2.8,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 1,
+        "setup": "AGUARDAR formal (score 5,5/10 borderline · abaixo threshold 6,0 GO_CONDICIONAL) · setup LONG documentado pós-IPCA-15. Confluência completa exigida: (1) IPCA-15 ≥ proj 0,56% mensal (confirma narrativa hawkish · não vem surpresa baixista) · (2) WDO rompe resistência crítica 5,050 com volume institucional (acima do PDH 5.043 + 7 pts) · (3) retest 5.040-5.045 com defesa visível em 15m · (4) DXY sustenta 99,00 (não cede pra < 98,80) · (5) Brent não recupera > $98 (mantém alívio overnight). Entry zona 5.040-5.045 · stop 5.022 (23 pts · abaixo do EQ com folga) · TP1 5.060 (RR 1,5 · saída 50% · cobre custo + 0,8% banca) · TP2 5.073 (RR 2,2 · 30% · alvo weekly high 20d) · TP3 5.085 (RR 2,8 · 20% · expansão fora do range). 1 contrato banca 30k @ 0,77% risco. Setup INVERSO (SHORT) NÃO documentado pra hoje: contexto macro fortemente desfavorável short USDBRL · seria operar contra DI hawkish + narrativa Citi/Sichel.",
+        "kill_zone": "10:30-11:30 BRT (primeira janela pós-IPCA digestão completa · prioridade) · 14:30-15:30 BRT (NY open + Fluxo Cambial BR semanal pode confirmar saída cambial estrangeira) · evitar 09:00-10:00 (IPCA) · 09:00-09:25 (leilão B3) · 17:45-17:55 (leilão fechamento)",
+        "gatilho": "Confluência completa: IPCA-15 ≥ 0,56% + WDO break 5,050 com volume + retest 5.040-5.045 + DXY sustenta 99,00 + Brent não recupera > $98. PROIBIDO armar sem TODOS os 5 ítens · pular qualquer condição = trade contra checklist = veto disciplinar.",
+        "anti_trade": "Long acima de 5.050 sem retest (FOMO em break · risco fakeout · LIÇÃO 66 sweep externo + filtro contrário) · Short em 5.000 sem confirmação (psicológico defendido 6 pregões consecutivos · risco Spring real) · qualquer entrada pré-IPCA-15 (viola janela_evitar 09:00-10:00)",
+        "cancelamento": "(1) IPCA-15 vier ≤ 0,50% mensal (surpresa baixista invalida narrativa hawkish · setup LONG suspende) · (2) Brent recupera > $98 com headline favorável (BR exportadora favorecida · USDBRL pressão alivia) · (3) DXY rompe < 98,80 com força (dólar global cede · WDO perde edge) · (4) DI F29 ALIVIA intraday < +5 bps (mercado relaxa narrativa hawkish · setup invalidado) · (5) Risk-off externo agudo (VIX > 19 · ES quebra suporte · pode levar BRL paradoxalmente forte por desova posicionamento)"
+      },
+      "comentario_breve": "Score 5,5 borderline AGUARDAR · setup LONG documentado pós-IPCA · ativa só com confluência completa (5 ítens). DI bear steepen + Citi/Sichel/Kashkari narrativa fortemente FAVORÁVEL · contra-evidências overnight (Brent -3,3% · DXY estável · risk-on) freiam edge. 6º pregão acima R$5 = base estrutural · break 5,050 é o gatilho.",
+      "_score_breakdown": {
+        "acumulacao_b_spring_potencial_5050": 1.0,
+        "di_bear_steepen_miolo_favoravel_long": 1.5,
+        "narrativa_sichel_citi_confluencia": 1.0,
+        "6_pregao_acima_5000_base_estrutural": 0.5,
+        "usdbrl_futuro_overnight_pressao": 0.5,
+        "dxy_estavel_sem_confirmacao_forte": -0.5,
+        "brent_overnight_negativo_br_exportador_favorecido": -1.0,
+        "ipca15_surpresa_baixista_pode_reverter": -1.0,
+        "filtro_anti_narrativa_moderado": -0.5,
+        "sem_gatilho_tecnico_imediato_precisa_break_5050": -1.0,
+        "headline_risk_ira_brent_imprevisivel": -0.5,
+        "risk_on_externo_historico_favorece_brl": -0.5,
+        "base": 10.0,
+        "total": 5.5
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:00",
+      "evento": "🇧🇷 FGV Índice de Confiança da Indústria",
+      "impacto": "MEDIO",
+      "tag": "fgv_confianca_industria_br",
+      "janela_evitar": null,
+      "nota": "★★ · indicador antecedente atividade industrial · proxy sentimento empresarial · impacto moderado IBOV"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "🇧🇷 IPCA-15 maio (IBGE)",
+      "impacto": "ALTO",
+      "tag": "ipca15_maio_br",
+      "janela_evitar": "09:00-10:00",
+      "nota": "★★★ MARKET MOVER PRINCIPAL DO DIA · projeção Broadcast 0,56% mensal (vs 0,89% abr) · 12m 4,59% acima teto meta 4,50% · descompressão Transportes (gasolina) MAS pressão serviços/alimentação/intensivos mão obra · média núcleos só 0,47→0,46 · move DI forte"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade artificial de formação de preço · não operar"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "🇧🇷 PEC 6x1 votação comissão especial Câmara",
+      "impacto": "MEDIO",
+      "tag": "pec_6x1_comissao_br",
+      "janela_evitar": "09:55-10:15",
+      "nota": "★★ · presidente comissão Alencar Santana (PT-SP) confirmou votação hoje 10h · Hugo Motta indicou plenário potencial amanhã · pressão setor produtivo (Fiesp/Skaf) · pode mover bancos/varejo/industriais"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "🇧🇷 Pesquisa eleitoral Jota + Indexa",
+      "impacto": "MEDIO",
+      "tag": "pesquisas_eleitorais_br",
+      "janela_evitar": "09:55-10:15",
+      "nota": "★★ · 2 pesquisas simultâneas presidencial 2026 · pós-encontro Flávio Bolsonaro × Trump Casa Branca · pode mover prêmio de risco político BR (DI longa + USDBRL)"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "🇧🇷 Broadcast publica pesquisa eleitoral Indexa",
+      "impacto": "MEDIO",
+      "tag": "broadcast_indexa_br",
+      "janela_evitar": null,
+      "nota": "★★ · agendada Tatiana Tribiolli · cruza com Jota mesma janela"
+    },
+    {
+      "hora_brt": "12:00",
+      "evento": "🇧🇷 BC oferta R$ 5 bi compromissadas 3 meses",
+      "impacto": "BAIXO",
+      "tag": "bc_compromissadas_3m_br",
+      "janela_evitar": null,
+      "nota": "★ · operação rotineira liquidez · impacto operacional baixo nos futuros"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "🇧🇷 Fluxo Cambial Estrangeiro semanal (BCB)",
+      "impacto": "MEDIO",
+      "tag": "fluxo_cambial_br",
+      "janela_evitar": null,
+      "nota": "★★ · semanal · move WDO se saída forte estrangeira confirmada · cruzar com tese narrativa hawkish"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "🇧🇷 Tesouro Relatório Mensal Dívida Pública (abril)",
+      "impacto": "MEDIO",
+      "tag": "tesouro_divida_publica_br",
+      "janela_evitar": null,
+      "nota": "★★ · mensal · move DI longa se composição da dívida pressionar · termômetro fiscal"
+    },
+    {
+      "hora_brt": "16:55",
+      "evento": "🇺🇸 Lisa Cook (Fed) fórum em Stanford",
+      "impacto": "MEDIO",
+      "tag": "lisa_cook_stanford_fed",
+      "janela_evitar": null,
+      "nota": "★★ · dovish member · pode mover Treasuries + DXY intraday"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "20:00",
+      "evento": "🎥 Live #4 BERTANI · Trading é Matemática (YouTube)",
+      "impacto": "—",
+      "tag": "bertani_live4",
+      "janela_evitar": null,
+      "nota": "Conteúdo educacional · 7 fórmulas que separam quem ganha de quem perde · Premiere e-book como material de aula"
+    },
+    {
+      "hora_brt": "21:00",
+      "evento": "🌏 Philip Jefferson (Fed) + Philip Lane (BCE) conferência BoJ",
+      "impacto": "MEDIO",
+      "tag": "jefferson_lane_boj",
+      "janela_evitar": null,
+      "nota": "★★ · painel conjunto Fed/BCE no Japão · pode mexer USDJPY + Treasuries overnight"
+    },
+    {
+      "hora_brt": "22:00",
+      "evento": "🇰🇷 BoK decisão de política monetária (Coreia do Sul)",
+      "impacto": "MEDIO",
+      "tag": "bok_decisao_juros",
+      "janela_evitar": null,
+      "nota": "★★ · pode mover KRW + Ásia abertura quinta · KOSPI já fez +3,79% terça"
+    },
+    {
+      "hora_brt": "23:25",
+      "evento": "🌏 Austan Goolsbee (Fed Chicago) + Clare Lombardelli (BoE) conferência BoJ",
+      "impacto": "MEDIO",
+      "tag": "goolsbee_lombardelli_boj",
+      "janela_evitar": null,
+      "nota": "★★ · painel conjunto Fed/BoE no Japão · Goolsbee historicamente dovish"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "10:30-11:30 BRT",
+      "contexto": "Primeira janela limpa pós-IPCA-15 digestão completa · prioritária pra ambos ativos · avaliar setups condicionais WIN (LONG se IPCA ≤ 0,50% / SHORT se IPCA > 0,60% + sweep) e WDO (LONG se confluência 5 ítens completa)"
+    },
+    {
+      "janela": "11:30-12:30 BRT",
+      "contexto": "Janela secundária pós-PEC 6x1 + pesquisas eleitorais · monitor reação política · qualidade liquidez decente · ideal pra setups que não armaram na primeira janela"
+    },
+    {
+      "janela": "14:30-15:30 BRT",
+      "contexto": "NY open + Fluxo Cambial BR semanal + Tesouro Dívida Pública · janela terciária · prioridade WDO (fluxo confirma ou nega tese LONG) · WIN secundário"
+    },
+    {
+      "janela": "⛔ 09:00-10:00 BRT",
+      "contexto": "EVITAR · IPCA-15 ★★★ MARKET MOVER PRINCIPAL · janela_evitar OBRIGATÓRIA · qualquer entrada antes ou durante essa janela é veto disciplinar"
+    },
+    {
+      "janela": "⛔ 09:00-09:25 BRT",
+      "contexto": "EVITAR · Leilão abertura B3 · volatilidade artificial de formação de preço"
+    },
+    {
+      "janela": "⛔ 09:55-10:15 BRT",
+      "contexto": "EVITAR · PEC 6x1 votação comissão + 2 pesquisas eleitorais simultâneas (Jota/Indexa) · janela política intensa"
+    },
+    {
+      "janela": "⛔ 17:45-17:55 BRT",
+      "contexto": "EVITAR · Leilão fechamento B3 · volatilidade final do dia"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "GERAL",
+      "regra": "🚨 IPCA-15 09:00 ★★★ MARKET MOVER PRINCIPAL DO DIA · janela_evitar 09:00-10:00 OBRIGATÓRIA · NÃO operar até digestão completa (10:30+) · qualquer entrada antes = veto disciplinar"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⛔ EVITAR janelas: 09:00-10:00 (IPCA-15) · 09:00-09:25 (leilão B3 abertura) · 09:55-10:15 (PEC 6x1 + pesquisas eleitorais) · 17:45-17:55 (leilão B3 fechamento)"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "AGUARDAR formal (3,0/10) · 2 setups condicionais documentados pós-IPCA-15. SETUP A LONG ativa SE IPCA ≤ 0,50% + Brent < $94 + pullback 178.300-500 com defesa 4H · entry 178.300-500 · stop 176.200 (800 pts · abaixo suporte crítico) · TP1 179.500 (RR 1,6 · 50%) · TP2 180.300 (RR 2,9 · 30%) · TP3 181.500 (RR 4,4 · 20%) · 1 contrato banca 30k @ 0,53% risco"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "SETUP B SHORT (anti-setup do A · cobre cenário oposto) ativa SE IPCA > 0,60% + sweep mínima 176.765 + 4 critérios LIÇÃO 66 falsificados (default = trap continuação) · entry 177.500-177.700 (retest pós-sweep) · stop 178.200 (700 pts) · TP1 176.300 (RR 1,5 · 50%) · TP2 175.500 (RR 2,9 · 30%) · TP3 174.500 (RR 4,7 · 20%) · 1 contrato banca 30k @ 0,47% risco"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "ANTI-TRADE: long pré-IPCA (viola janela_evitar) · short cego em 176.765 sem 4 critérios LIÇÃO 66 (risco Spring real) · qualquer entrada acima de 179.300 sem IPCA confirmando alívio (vai contra DI hawkish)"
+    },
+    {
+      "ativo": "WIN",
+      "regra": "CANCELAMENTO: gap > 179.500 · DI F29 > +30 bps intraday pós-IPCA (regime change · suspende ambos setups) · Brent rompe $100 com headline adversa (filtro re-ESCALA pra ALTO) · BRB/Master headline negativa (risco bancário sistêmico)"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "AGUARDAR formal (5,5/10 borderline · abaixo threshold 6,0) · setup LONG documentado pós-IPCA-15. Entry 5.040-5.045 · stop 5.022 (23 pts) · TP1 5.060 (RR 1,5 · 50%) · TP2 5.073 (RR 2,2 · 30%) · TP3 5.085 (RR 2,8 · 20%) · 1 contrato banca 30k @ 0,77% risco"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "GATILHO LONG = confluência completa 5 ítens OBRIGATÓRIA: (1) IPCA ≥ proj 0,56% · (2) WDO rompe 5,050 com volume · (3) retest 5.040-5.045 defesa 15m · (4) DXY sustenta 99,00 · (5) Brent não recupera > $98. PROIBIDO armar sem TODOS"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "ANTI-TRADE: long acima 5,050 sem retest (FOMO break · risco fakeout LIÇÃO 66) · short em 5.000 sem confirmação (psicológico defendido 6 pregões · risco Spring) · qualquer entrada pré-IPCA"
+    },
+    {
+      "ativo": "WDO",
+      "regra": "CANCELAMENTO: IPCA ≤ 0,50% (surpresa baixista invalida narrativa) · Brent > $98 com headline favorável · DXY < 98,80 com força · DI F29 ALIVIA < +5 bps · risk-off externo agudo (VIX > 19)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "📊 Filtro Anti-Narrativa ATIVO MODERADO · narrativa BDM 'JURO COMPRA GUERRA tudo hawkish' real (Citi/Kashkari/Copom) mas precificação semanal completa pode estar oferecendo edge contrário · monitorar Brent + DXY + DI F29 intraday como termômetros"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "🛡 Se operar fora do briefing: risco máximo 1% da banca · stop obrigatório · RR mínimo 1:2 · disciplina PRIMEIRO · edge estrutural SEGUNDO · preservação de capital TERCEIRO"
+    }
+  ],
+  "di_curva": {
+    "di1f27_taxa": 14.065,
+    "di1f27_delta_bps": 5.9,
+    "di1f27_prior": 14.006,
+    "di1f28_taxa": 13.835,
+    "di1f28_delta_bps": 13.7,
+    "di1f28_prior": 13.698,
+    "di1f29_taxa": 13.815,
+    "di1f29_delta_bps": 14.1,
+    "di1f29_prior": 13.674,
+    "di1f31_taxa": 13.895,
+    "di1f31_delta_bps": 9.4,
+    "di1f31_prior": 13.801,
+    "di1f33_taxa": 13.97,
+    "di1f33_delta_bps": 7.1,
+    "di1f33_prior": 13.899,
+    "fonte": "Falcão Notícias quarta 27/05 manhã (Tatiana Tribiolli 06:46 BRT · CETIP EOD terça 26/05) · LIÇÃO 53 fonte primária dia D · cross-check Bom Dia Mercado §'TODO DIA ELE FAZ TUDO SEMPRE IGUAL' · prints PNG pasta noturna FASE 1 (que indicavam bull flatten -61,9 bps F29) descartados pela LIÇÃO 53 + LIÇÃO 64 · investigação root cause pós-publish",
+    "leitura": "JUROS FUTUROS BR VIRARAM COMPRADORES EOD terça 26/05 · BEAR STEEPEN MIOLO MODERADO · F29 +14,1 bps lidera · F28 +13,7 · F31 +9,4 · F27 +5,9 · F33 +7,1 · sanity max 14,1 bps < 80 (LIÇÃO 23 OK). INVERSÃO total do tom vendedor -14 bps F29 de segunda (#18). Motor: Brent perto de $100 ontem (+3,58%) + Citi elevou Selic 2026 13,25→13,75% + IPCA 2027 3,7→3,9% + Copom abril hawkish + Kashkari (Fed) 'série de altas pode voltar à mesa' + Ueda (BoJ) 'choques energia podem se espalhar inflação subjacente' · mercado precifica MAIS Selic alta por mais tempo. DESFAVORÁVEL WIN estrutural (juros sobem · bolsa cai). FAVORÁVEL WDO LONG estrutural (USDBRL pressionado pra cima por DI hawkish). MAS contra-evidências overnight: Brent -3,30% $93,48 (devolveu) · UST queda · VIX baixo · ES/NQ firmes · IPCA-15 9h é o gatilho que confirma ou reverte narrativa."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "proximos_eventos_bertani": [
+    {
+      "data": "2026-05-27",
+      "hora": "20:00 BRT",
+      "tipo": "Live YouTube",
+      "titulo": "Live #4 · Trading é Matemática",
+      "subtitulo": "7 fórmulas que separam quem ganha de quem perde",
+      "link": "https://www.youtube.com/@renatobertani",
+      "nota": "Premiere usando e-book como material de aula · módulo Matemática Aplicada Day Trade BR"
+    },
+    {
+      "data": "2026-05-30",
+      "hora": "23:59 BRT",
+      "tipo": "Campanha",
+      "titulo": "Founding Member · Janela Fecha",
+      "subtitulo": "Preço fundador Briefing R$ 97/mês · Tela Pro R$ 397/mês",
+      "link": "https://app.renatobertani.com.br",
+      "nota": "61 testers beta condição especial até sexta 30/05"
+    }
+  ],
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "versao": "1.0_FASE2_COMPLETA",
+    "fase_1_concluida_em": "2026-05-26 21:30 BRT (terça noite)",
+    "fase_2_concluida_em": "2026-05-27 07:50 BRT (quarta manhã pós Falcão CETIP 06:46)",
+    "criado_em": "2026-05-26 21:30 BRT · terça noite (FASE 1)",
+    "criado_por": "Cowork · FASE 1 noturna + FASE 2 quarta manhã · sessão pós inputs Falcão Tatiana + Investing watchlists + BDM Broadcast",
+    "publicado_em": null,
+    "fase1_escopo": "Dados EOD terça 26/05 travados: ajustes B3 WIN/WDO via TV CDP · OHLC daily · DI curva lida dos prints PNG pasta canônica (resultado: bull flatten INTENSO −61,9 bps F29 = LEITURA INCORRETA · INVALIDADA NA FASE 2 pelo Falcão CETIP) · globais overnight capturados · agenda macro 27/05 preliminar.",
+    "fase2_escopo": "✅ COMPLETO · Juros futuros BR (curva DI) definitivos confirmados via Falcão CETIP quarta 06:46 (5 vértices F27/F28/F29/F31/F33 · COMPRADORES +14,1 bps F29 LIDERA bear steepen miolo · INVERTEU prints PNG noturnos) · agenda macro corrigida (Tatiana definitiva: FGV 08h + IPCA 09h + PEC 10h + Indexa 10h + BC 12h + Fluxo/Tesouro 14h30 + Cook 16h55 + Jefferson/Lane 21h + BoK 22h + Goolsbee 23h25 · descartados Lagarde 14h e ADP 09h15 que estavam errados na FASE 1) · Cross-check #18 → #19 setup LONG não armou trade neutro · Filtro Anti-Narrativa MODERADO documentado com narrativa dominante + 5 frases consensuais + 5 contra-evidências + leitura Bertani + 5 termômetros intraday · Scores definitivos WIN 3,0/10 AGUARDAR (sem viés direcional) + WDO 5,5/10 borderline AGUARDAR (viés bullish leve) · 2 setups condicionais WIN (LONG/SHORT pós-IPCA) + 1 setup LONG documentado WDO · Manchete + subtítulo + racional_publico + planos operacionais completos + kill zones (7) + regras_do_dia (12).",
+    "fase2_pendencias_restantes": [],
+    "licoes_aplicadas": [
+      1,
+      6,
+      7,
+      9,
+      12,
+      19,
+      21,
+      23,
+      42,
+      43,
+      44,
+      46,
+      50,
+      53,
+      54,
+      58,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "alertas": [
+      "✅ RESOLVIDO: conflito DI FASE 1 noturna (prints PNG -61,9 bps F29) vs Falcão CETIP (+14,1 bps F29) · LIÇÃO 53 aplicada · Falcão definitivo · prints PNG marcados pra investigação root cause pós-publish",
+      "✅ RESOLVIDO: IPCA-15 horário corrigido (FASE 1 dizia 08:00 errado · Tatiana + BDM confirmam 09:00) · janela_evitar atualizada 09:00-10:00 · agenda Lagarde/ADP descartadas pelo cross-check Tatiana",
+      "⚠ LIÇÃO 64 awareness: fechamento_anterior WIN (177.770) e WDO (5.035) estimados dentro tolerância B3 normal vs ajuste oficial · cross-check Cedro home broker pós-publish recomendado (não bloqueante)",
+      "⚠ Headline risk Irã/Brent: monitorar Brent intraday como termômetro · se rompe $100 = filtro re-ESCALA ALTO + suspende setups · se sustenta < $94 = narrativa hawkish fura + WIN tem janela bounce",
+      "⚠ Pendência operacional pós-publish: investigar root cause prints PNG da pasta noturna (símbolo errado? data errada? leitura minha?) pra evitar repetição"
+    ],
+    "fontes": {
+      "ajuste_b3": "TV CDP EOD terça 26/05 · WIN 177.775 · WDO 5.035,457 · settlement oficial D-1",
+      "di_curva": "Falcão Notícias quarta 27/05 06:46 BRT (Tatiana Tribiolli · CETIP EOD terça 26/05) · 5 vértices F27/F28/F29/F31/F33",
+      "globais": "Investing.com watchlists quarta 27/05 07:00-07:40 BRT · pré-abertura BR · ES/NQ/DOW/VIX/DXY/Gold/UST/Brent/peers",
+      "agenda_macro": "Falcão Notícias Tatiana Tribiolli 06:46 BRT (definitiva) + Bom Dia Mercado Broadcast",
+      "headlines": "Bom Dia Mercado Broadcast quarta 27/05 (íntegro) · framing 'IPCA-15 testa limites do BC · JURO COMPRA GUERRA'",
+      "proximos_eventos": "Live #4 20h YouTube quarta 27/05 · Campanha Founding Member janela fecha sexta 30/05"
+    }
+  }
+}

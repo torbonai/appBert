@@ -96,9 +96,9 @@
         "_nota": "Ajuste B3 D-1 = segunda 25/05 settlement oficial (preliminar usava qui 22/05 · atualizado pós Falcão)"
       },
       "ajuste_b3_meta": {
+        "valor": 179259,
         "data_referencia": "2026-05-25",
-        "fonte": "Ajuste oficial B3 segunda 25/05 via Falcão CETIP + Bom Dia Mercado · cross-check com TradingView Daily close",
-        "validacao": "WIN 179.259 · faixa 170k-200k OK · fonte SEM estimado"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-25)"
       },
       "plano": {
         "direcao": "LONG",
@@ -109,7 +109,7 @@
         "tp1_rr": 1.5,
         "tp1_partial_pct": 50,
         "tp2": 181800,
-        "tp2_rr": 3.0,
+        "tp2_rr": 3,
         "tp2_partial_pct": 30,
         "tp3": 183000,
         "tp3_rr": 4.5,
@@ -125,14 +125,14 @@
       "_score_breakdown": {
         "wyckoff_reversao_st_acima_pdl": 1.5,
         "juros_br_vendedor_forte": 1.5,
-        "risk_on_global_treasuries_futures": 1.0,
-        "respeito_ao_suporte_177845": 1.0,
-        "fluxo_b3_estrangeiro_vendedor": -1.0,
-        "filtro_anti_narrativa_moderado": -1.0,
-        "headline_risk_ira_brent_overhang": -1.0,
+        "risk_on_global_treasuries_futures": 1,
+        "respeito_ao_suporte_177845": 1,
+        "fluxo_b3_estrangeiro_vendedor": -1,
+        "filtro_anti_narrativa_moderado": -1,
+        "headline_risk_ira_brent_overhang": -1,
         "aguarda_confirmacao_volume_break_180300": -1.5,
-        "liquidez_transicao_ny_reabre": -1.0,
-        "base": 10.0,
+        "liquidez_transicao_ny_reabre": -1,
+        "base": 10,
         "total": 6.5
       }
     },
@@ -166,9 +166,9 @@
         "_nota": "Ajuste B3 D-1 = segunda 25/05 settlement oficial (preliminar usava qui 22/05 · atualizado pós Falcão)"
       },
       "ajuste_b3_meta": {
+        "valor": 5021.61,
         "data_referencia": "2026-05-25",
-        "fonte": "Ajuste oficial B3 segunda 25/05 via Falcão CETIP + Bom Dia Mercado · cross-check com TradingView Daily close",
-        "validacao": "WDO 5.021,61 · faixa 4.8-5.2 OK · fonte SEM estimado"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-25)"
       },
       "plano": {
         "direcao": "AGUARDAR (setup short condicional documentado)",
@@ -196,14 +196,14 @@
         "juros_br_vendedor": 1.5,
         "respeito_psicologico_5000": 0.5,
         "saiu_de_premium_pra_eq_discount": 0.5,
-        "range_tight_sem_direcao": -1.0,
+        "range_tight_sem_direcao": -1,
         "brent_devolvendo_complica_short_brl": -1.5,
-        "dxy_estavel_nao_confirma": -1.0,
+        "dxy_estavel_nao_confirma": -1,
         "fluxo_neutro_wdo": -0.5,
-        "filtro_anti_narrativa_moderado": -1.0,
-        "headline_risk_ira": -1.0,
+        "filtro_anti_narrativa_moderado": -1,
+        "headline_risk_ira": -1,
         "sem_catalisador_direcional": -1.5,
-        "base": 10.0,
+        "base": 10,
         "total": 4.5
       }
     }
@@ -387,13 +387,13 @@
     "di1f27_delta_bps": -5.2,
     "di1f27_prior": 14.077,
     "di1f28_taxa": 13.725,
-    "di1f28_delta_bps": -11.0,
+    "di1f28_delta_bps": -11,
     "di1f28_prior": 13.835,
     "di1f29_taxa": 13.71,
     "di1f29_delta_bps": -14.1,
     "di1f29_prior": 13.851,
     "di1f31_taxa": 13.84,
-    "di1f31_delta_bps": -13.0,
+    "di1f31_delta_bps": -13,
     "di1f31_prior": 13.97,
     "di1f33_taxa": 13.93,
     "di1f33_delta_bps": -13.3,

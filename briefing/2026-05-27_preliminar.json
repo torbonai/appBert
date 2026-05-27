@@ -1,0 +1,376 @@
+{
+  "data": "2026-05-27",
+  "data_extenso": "Quarta-feira, 27 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 19,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FALCAO_CETIP_711_QUARTA · Juros futuros BR seguem vendedores intensos · WIN perdeu −0,83% terça · IPCA-15 08:00 hoje define tom pré-abertura",
+    "subtitulo": "_PENDENTE_FALCAO_CETIP_711_QUARTA · Curva DI EOD terça 26/05 segue VENDEDORA INTENSA (F29 −61,9 bps lidera · F27 −26,2 · F31 −46,2 bps) = bull flatten pesado · mercado precifica MAIS cortes Selic estrutural. WIN ajuste B3 177.775 (−1.484 pts · −0,83% terça) tocou 176.765 (mínima) próximo do suporte crítico 176.330 do #18 sem sweepar. WDO ajuste 5.035,457 (+13,85 pts · +0,28%) em zona EQ. IPCA-15 (Mai) SAI HOJE 08:00 ★★★ (proj 4,55% vs 4,37% ant) · janela_evitar 08:00-09:00 OBRIGATÓRIA pré-abertura · MARKET MOVER PRINCIPAL. Globais overnight: DXY 99.089 estável · USDJPY 159.227 estável · US500 7.533 (+0,08%) · NQ 30.065 (+0,70%) · Gold −1,44%. Live #4 'Trading é Matemática' HOJE 20h YouTube. Campanha Founding Member janela fecha sexta 30/05."
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2 · MINI ÍNDICE · ajuste B3 177.775 (terça 26/05) · close 177.775 (−0,83% · −1.484 pts) · OHLC: O 178.910 / H 179.235 / L 176.765 / C 177.775 · range 2.470 pts · mínima 176.765 próxima do suporte crítico 176.330 (#18) sem sweep · Wyckoff preliminar aguarda FASE 2 · score preliminar aguarda FASE 2",
+    "wdo_linha": "_PENDENTE_FASE2 · MINI DÓLAR · ajuste B3 5.035,457 (terça 26/05) · close 5.035,457 (+0,28% · +13,85 pts) · OHLC: O 5.027 / H 5.043 / L 5.008 / C 5.035,457 · range 35 pts · zona EQ · Wyckoff preliminar aguarda FASE 2 · score preliminar aguarda FASE 2",
+    "janela_operacional": "_PENDENTE_FASE2 · IPCA-15 08:00 hoje ★★★ janela_evitar 08:00-09:00 OBRIGATÓRIA · pós-digestão + kill zones a definir na FASE 2",
+    "nivel_chave": "_PENDENTE_FASE2 · WIN 179.235 (PDH ter) · 177.775 (ajuste/close ter) · 176.765 (PDL ter · próximo de 176.330 suporte crítico #18) · WDO 5.043 (PDH ter) · 5.035,457 (ajuste/close ter) · 5.008 (PDL ter) · 5.000 (psicológico testado segunda #18)",
+    "agenda_top1": "08:00 IPCA-15 (Mai) BR ★★★ proj 4,55% vs 4,37% ant · 14:00 Lagarde BCE coletiva ★★★ · 14:30 Fluxo Cambial BR ★★"
+  },
+  "contexto_macro": {
+    "nivel_vento": "VENTO_MORNO",
+    "highlights": [
+      "📌 Briefing #19 FASE 1 NOTURNA (terça 26/05 noite · 21:30 BRT) · dados EOD terça 26/05 travados · DI curva lida dos prints PNG pasta canônica · globais overnight capturados · ajustes B3 oficiais via TV CDP · FASE 2 gatilho quarta 27/05 ~07:30 BRT pós Falcão CETIP 07:11",
+      "📊 WIN ajuste B3 terça 26/05 177.775 (settlement oficial · LIÇÃO 61) · close 177.775 (−0,83% · −1.484 pts vs ajuste segunda 179.259) · OHLC ter: O 178.910 / H 179.235 / L 176.765 / C 177.775 · range 2.470 pts · MÍNIMA 176.765 PRÓXIMA do suporte crítico 176.330 (#18) SEM SWEEP",
+      "📊 Cross-check estrutural #18 → #19: WIN caiu −0,83% terça mas mínima 176.765 NÃO furou suporte crítico 176.330 (435 pts de buffer) · aguarda Wyckoff HTF + viés definitivo na FASE 2 pós Falcão",
+      "💵 WDO ajuste B3 terça 26/05 5.035,457 (settlement oficial · LIÇÃO 61) · close 5.035,457 (+0,28% · +13,85 pts vs ajuste segunda 5.021,61) · OHLC ter: O 5.027 / H 5.043 / L 5.008 / C 5.035,457 · range 35 pts · zona EQ",
+      "💵 Juros futuros BR EOD terça 26/05 (prints PNG pasta canônica · LIÇÃO 50 + LIÇÃO 53 fonte primária FASE 1): F27 13,795% (−26,2 bps) · F29 13,180% (−61,9 bps LIDERA) · F31 13,445% (−46,2 bps) · BULL FLATTEN INTENSO · mercado precifica MAIS cortes Selic estrutural · FAVORÁVEL WIN (juros caindo · bolsa sobe) · FAVORÁVEL SHORT WDO",
+      "🌍 Globais overnight (terça 26/05 noite · 21:30 BRT captura): DXY 99.089 (+0,05% vs #18 · estável) · USDJPY 159.227 (+0,05% · estável) · US500 7.533,1 (+0,08%) · NAS100 30.065,5 (+0,70%) · WTI $93,16 (Brent #18 estava $95,93) · Gold 4.518,04 (−1,44%)",
+      "🚨 IPCA-15 (Mai) SAI HOJE 08:00 BRT ★★★ · MARKET MOVER PRINCIPAL DO DIA · projeção 4,55% vs anterior 4,37% · prévia da inflação mensal · move DI forte · janela_evitar 08:00-09:00 OBRIGATÓRIA pré-abertura B3",
+      "📅 Agenda HOJE quarta 27/05: 08:00 IPCA-15 ★★★ · 09:15 ADP semanal US ★★ · 14:00 Lagarde BCE coletiva ★★★ · 14:30 Fluxo Cambial BR ★★ · 17:30 Estoques Petróleo API ★★ · 21:00 Lane BCE pronunciamento ★★ · agenda DENSA mas sem FOMC/NFP/Copom",
+      "🎥 Live #4 'Trading é Matemática · 7 fórmulas que separam quem ganha de quem perde' HOJE 20h YouTube · Premiere usando e-book como material · módulo Matemática Aplicada Day Trade BR",
+      "💰 Campanha Founding Member · janela fecha SEXTA 30/05 · preço fundador Briefing R$ 97/mês · Tela Pro R$ 397/mês · 61 testers beta condição especial",
+      "🔄 Status #18 (terça 26/05): WIN AGUARDAR (score não publicado · queda −0,83%) · WDO AGUARDAR (+0,28%) · filtro Anti-Narrativa MODERADO · DI bull flatten intenso (F29 −61,9 bps) ratificou viés altista estrutural mas WIN não ativou setup"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": false,
+      "intensidade": "_PENDENTE_FASE2",
+      "narrativa_dominante": "_PENDENTE_FASE2 · aguarda release Falcão CETIP quarta 07:11 + Bom Dia Mercado + cross-check IPCA-15 08:00 pra calibrar narrativa vs estrutura",
+      "fonte_observada": "_PENDENTE_FASE2",
+      "descricao": "_PENDENTE_FASE2 · FASE 1 noturna não tem acesso a news overnight fresh · Falcão 07:11 + BDM definem se filtro ATIVA ou STANDBY",
+      "frases_consensuais_alertadas": [],
+      "contra_evidencias": [],
+      "leitura_bertani": "_PENDENTE_FASE2",
+      "contra_evidencias_a_monitorar": []
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2 · mínima terça 176.765 NÃO furou suporte crítico 176.330 (#18) · queda −0,83% mas SEM sweep · aguarda análise HTF 4H definitiva FASE 2",
+      "score": 0,
+      "veredito": "_PENDENTE_FASE2",
+      "vies": "_PENDENTE_FASE2",
+      "racional_publico": "_PENDENTE_FASE2 · WIN caiu −0,83% terça (ajuste 177.775) mas mínima 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (#18) · sem sweep PDL · DI curva segue VENDEDORA INTENSA (F29 −61,9 bps terça) = bull flatten pesado favorece WIN estrutural. IPCA-15 08:00 hoje ★★★ (proj 4,55% vs 4,37% ant) define tom pré-abertura. Análise Wyckoff HTF + score + setup + viés aguardam FASE 2 quarta manhã pós Falcão CETIP 07:11.",
+      "niveis_chave": {
+        "ajuste_b3": 177775,
+        "ajuste_b3_data": "2026-05-26",
+        "fechamento_anterior": 177775,
+        "PDH": 179235,
+        "PDL": 176765,
+        "maxima_anterior": 179235,
+        "minima_anterior": 176765,
+        "abertura_anterior": 178910,
+        "range_anterior_pts": 2470,
+        "variacao_anterior_pts": -1484,
+        "variacao_anterior_pct": -0.83,
+        "EQ": 178000,
+        "weekly_high_20d": 180355,
+        "weekly_low_20d": 175200,
+        "suporte_critico": 176330,
+        "suporte_critico_status": "NÃO TESTADO terça · mínima 176.765 ficou 435 pts acima · aguarda evolução quarta",
+        "resistencia_critica": 179500,
+        "buffer_ajuste_suporte_pts": 1445,
+        "_nota": "Ajuste B3 EOD terça 26/05 · FASE 1 noturna · FASE 2 atualiza com Falcão + análise definitiva"
+      },
+      "ajuste_b3_meta": {
+        "valor": 177775,
+        "data_referencia": "2026-05-26",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-26)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2",
+        "entry_zona": "_PENDENTE_FASE2",
+        "stop": 0,
+        "stop_pts": 0,
+        "tp1": 0,
+        "tp1_rr": 0,
+        "tp1_partial_pct": 50,
+        "tp2": 0,
+        "tp2_rr": 0,
+        "tp2_partial_pct": 30,
+        "tp3": 0,
+        "tp3_rr": 0,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 0,
+        "setup": "_PENDENTE_FASE2 · aguarda Wyckoff HTF + viés + confluências macro",
+        "kill_zone": "_PENDENTE_FASE2 · pós-digestão IPCA-15 08:00",
+        "gatilho": "_PENDENTE_FASE2",
+        "anti_trade": "_PENDENTE_FASE2",
+        "cancelamento": "_PENDENTE_FASE2"
+      },
+      "comentario_breve": "_PENDENTE_FASE2 · DI vendedor intenso favorece WIN estrutural · mas queda −0,83% terça + IPCA-15 08:00 hoje exige cautela · aguarda FASE 2",
+      "_score_breakdown": {
+        "_PENDENTE_FASE2": "Aguarda análise completa pós Falcão CETIP 07:11 quarta"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2 · WDO +0,28% terça (ajuste 5.035,457) em zona EQ · aguarda análise HTF 4H definitiva FASE 2",
+      "score": 0,
+      "veredito": "_PENDENTE_FASE2",
+      "vies": "_PENDENTE_FASE2",
+      "racional_publico": "_PENDENTE_FASE2 · WDO subiu +0,28% terça (ajuste 5.035,457) em zona EQ. DI curva VENDEDORA INTENSA (F29 −61,9 bps) favorece SHORT WDO estrutural (mercado precifica menos aperto Selic · USDBRL pressionado). DXY 99.089 estável · USDJPY 159.227 estável. IPCA-15 08:00 hoje ★★★ define tom. Análise Wyckoff HTF + score + setup + viés aguardam FASE 2 quarta manhã pós Falcão.",
+      "niveis_chave": {
+        "ajuste_b3": 5035.457,
+        "ajuste_b3_data": "2026-05-26",
+        "fechamento_anterior": 5035.457,
+        "PDH": 5043,
+        "PDL": 5008,
+        "maxima_anterior": 5043,
+        "minima_anterior": 5008,
+        "abertura_anterior": 5027,
+        "range_anterior_pts": 35,
+        "variacao_anterior_pts": 13.85,
+        "variacao_anterior_pct": 0.28,
+        "EQ": 5025.5,
+        "weekly_high_20d": 5073,
+        "weekly_low_20d": 4992,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "Psicológico 5.000 testado segunda #18 e respeitado · terça mínima 5.008 ficou 8 pts acima",
+        "resistencia_critica": 5052,
+        "buffer_ajuste_suporte_pts": 35.46,
+        "_nota": "Ajuste B3 EOD terça 26/05 · FASE 1 noturna · FASE 2 atualiza com Falcão + análise definitiva"
+      },
+      "ajuste_b3_meta": {
+        "valor": 5035.457,
+        "data_referencia": "2026-05-26",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-26)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2",
+        "entry_zona": "_PENDENTE_FASE2",
+        "stop": 0,
+        "stop_pts": 0,
+        "tp1": 0,
+        "tp1_rr": 0,
+        "tp1_partial_pct": 50,
+        "tp2": 0,
+        "tp2_rr": 0,
+        "tp2_partial_pct": 30,
+        "tp3": 0,
+        "tp3_rr": 0,
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": 0,
+        "setup": "_PENDENTE_FASE2 · aguarda Wyckoff HTF + viés + confluências DXY/Brent",
+        "kill_zone": "_PENDENTE_FASE2 · pós-digestão IPCA-15 08:00",
+        "gatilho": "_PENDENTE_FASE2",
+        "anti_trade": "_PENDENTE_FASE2",
+        "cancelamento": "_PENDENTE_FASE2"
+      },
+      "comentario_breve": "_PENDENTE_FASE2 · DI vendedor favorece SHORT WDO estrutural · DXY/USDJPY estáveis · aguarda FASE 2",
+      "_score_breakdown": {
+        "_PENDENTE_FASE2": "Aguarda análise completa pós Falcão CETIP 07:11 quarta"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "05:00",
+      "evento": "🇪🇺 Análise Estabilidade Financeira · BCE",
+      "impacto": "MEDIO",
+      "tag": "bce_estabilidade_financeira",
+      "janela_evitar": null,
+      "nota": "Financial Stability Review · impacto moderado EUR/USD"
+    },
+    {
+      "hora_brt": "08:00",
+      "evento": "🇧🇷 IPCA-15 · Brasil · maio/2026",
+      "impacto": "ALTO",
+      "tag": "ipca15",
+      "janela_evitar": "08:00-09:00",
+      "nota": "★★★ MARKET MOVER PRINCIPAL · proj 4,55% vs 4,37% ant · prévia inflação · move DI forte"
+    },
+    {
+      "hora_brt": "09:00-09:25",
+      "evento": "⛔ Leilão abertura B3",
+      "impacto": "ALTO",
+      "tag": "leilao_abertura_b3",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Volatilidade artificial de formação de preço · não operar"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "🇺🇸 ADP Variação semanal empregos",
+      "impacto": "MEDIO",
+      "tag": "adp_emprego_semanal_us",
+      "janela_evitar": "09:10-09:25",
+      "nota": "★★ · indicador antecedente · pode mover DXY"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇺🇸 Leilão Treasury Note 5 anos",
+      "impacto": "MEDIO",
+      "tag": "tnote_5y_auction",
+      "janela_evitar": "13:55-14:15",
+      "nota": "★★ · bid-to-cover importante · pode mover Treasuries miolo"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "🇪🇺 Coletiva Christine Lagarde · BCE",
+      "impacto": "ALTO",
+      "tag": "lagarde_coletiva_bce",
+      "janela_evitar": "13:55-14:45",
+      "nota": "★★★ · coletiva de imprensa · move EUR/USD e DXY/WDO"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "🇧🇷 Fluxo Cambial Estrangeiro · BCB",
+      "impacto": "MEDIO",
+      "tag": "fluxo_cambial_br",
+      "janela_evitar": null,
+      "nota": "★★ · semanal · move WDO se negativo forte"
+    },
+    {
+      "hora_brt": "17:30",
+      "evento": "🇺🇸 Estoques Petróleo API",
+      "impacto": "MEDIO",
+      "tag": "api_estoques_petroleo",
+      "janela_evitar": null,
+      "nota": "★★ · pós-pregão · reação quinta · antecede EIA"
+    },
+    {
+      "hora_brt": "17:45-17:55",
+      "evento": "⛔ Leilão fechamento B3",
+      "impacto": "ALTO",
+      "tag": "leilao_fechamento_b3",
+      "janela_evitar": "17:45-17:55",
+      "nota": "Volatilidade final do dia · não operar"
+    },
+    {
+      "hora_brt": "20:00",
+      "evento": "🎥 Live #4 BERTANI · Trading é Matemática (YouTube)",
+      "impacto": "—",
+      "tag": "bertani_live4",
+      "janela_evitar": null,
+      "nota": "Conteúdo educacional · 7 fórmulas que separam quem ganha de quem perde · Premiere e-book"
+    },
+    {
+      "hora_brt": "21:00",
+      "evento": "🇪🇺 Pronunciamento Philip Lane · BCE",
+      "impacto": "MEDIO",
+      "tag": "lane_bce_pronunciamento",
+      "janela_evitar": null,
+      "nota": "★★ · economista-chefe BCE · overnight · sinais próximo passo monetário"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    {
+      "janela": "_PENDENTE_FASE2",
+      "contexto": "Aguarda definição pós IPCA-15 08:00 + Falcão CETIP 07:11"
+    }
+  ],
+  "regras_do_dia": [
+    {
+      "ativo": "GERAL",
+      "regra": "🚨 IPCA-15 08:00 ★★★ · janela_evitar 08:00-09:00 OBRIGATÓRIA · não operar até digestão completa"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "⛔ EVITAR janelas: 08:00-09:00 (IPCA-15) · 09:00-09:25 (leilão B3) · 13:55-14:45 (Lagarde BCE) · 17:45-17:55 (leilão fechamento)"
+    },
+    {
+      "ativo": "GERAL",
+      "regra": "_PENDENTE_FASE2 · Regras detalhadas WIN/WDO aguardam análise completa FASE 2"
+    }
+  ],
+  "di_curva": {
+    "di1f27_taxa": 13.795,
+    "di1f27_delta_bps": -26.2,
+    "di1f27_prior": 14.057,
+    "di1f29_taxa": 13.180,
+    "di1f29_delta_bps": -61.9,
+    "di1f29_prior": 13.799,
+    "di1f31_taxa": 13.445,
+    "di1f31_delta_bps": -46.2,
+    "di1f31_prior": 13.907,
+    "fonte": "Prints PNG pasta canônica terça 26/05 EOD · LIÇÃO 50 + LIÇÃO 53 fonte primária FASE 1 noturna · Falcão CETIP quarta 07:11 é fonte primária FASE 2",
+    "leitura": "JUROS FUTUROS BR SEGUEM VENDEDORES INTENSOS EOD terça 26/05 · F29 LIDERA −61,9 bps · F27 −26,2 bps · F31 −46,2 bps = BULL FLATTEN PESADO · mercado precifica MAIS cortes Selic estrutural. Sanity max delta 61,9 bps < 80 (LIÇÃO 23 OK). DI segue tendência vendedora de segunda (F29 −14,1 bps) ACELERANDO terça (−61,9 bps). FAVORÁVEL WIN (juros caindo · bolsa sobe) · FAVORÁVEL SHORT WDO (USDBRL pressionado). IPCA-15 08:00 hoje pode reverter ou confirmar tendência · aguarda FASE 2."
+  },
+  "compliance": {
+    "registro": "CNPI T 9644",
+    "resolucao": "CVM 20 (análise técnica)",
+    "disclaimer": "Este material é uma análise técnica educacional e não constitui oferta ou recomendação de investimento. Derivativos possuem alto risco e podem causar perdas superiores ao capital investido. Consulte seu analista credenciado antes de operar."
+  },
+  "proximos_eventos_bertani": [
+    {
+      "data": "2026-05-27",
+      "hora": "20:00 BRT",
+      "tipo": "Live YouTube",
+      "titulo": "Live #4 · Trading é Matemática",
+      "subtitulo": "7 fórmulas que separam quem ganha de quem perde",
+      "link": "https://www.youtube.com/@renatobertani",
+      "nota": "Premiere usando e-book como material de aula · módulo Matemática Aplicada Day Trade BR"
+    },
+    {
+      "data": "2026-05-30",
+      "hora": "23:59 BRT",
+      "tipo": "Campanha",
+      "titulo": "Founding Member · Janela Fecha",
+      "subtitulo": "Preço fundador Briefing R$ 97/mês · Tela Pro R$ 397/mês",
+      "link": "https://app.renatobertani.com.br",
+      "nota": "61 testers beta condição especial até sexta 30/05"
+    }
+  ],
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "versao": "1.0_FASE1_NOTURNA",
+    "fase_1_concluida_em": "2026-05-26 21:30 BRT (terça noite)",
+    "fase_2_gatilho": "2026-05-27 ~07:30 BRT (quarta manhã pós Falcão CETIP 07:11)",
+    "criado_em": "2026-05-26 21:30 BRT · terça noite (FASE 1)",
+    "criado_por": "Code · FASE 1 noturna",
+    "publicado_em": null,
+    "fase1_escopo": "Dados EOD terça 26/05 travados: ajustes B3 WIN/WDO via TV CDP · OHLC daily · DI curva (F27/F29/F31) lida dos prints PNG pasta canônica · globais overnight capturados · agenda macro 27/05 expandida (8 eventos + leilões B3). IPCA-15 08:00 ★★★ identificado como market mover principal. Live #4 + Campanha Founding Member adicionados em proximos_eventos_bertani.",
+    "fase2_escopo": "_PENDENTE · Falcão CETIP quarta 07:11 (juros futuros BR 5 vértices definitivos F27/F28/F29/F31/F33) · Bom Dia Mercado · cross-check IPCA-15 08:00 · análise Wyckoff HTF WIN/WDO · scores · vereditos · setups completos · manchete definitiva · filtro Anti-Narrativa calibrado · kill zones · regras_do_dia expandidas",
+    "fase2_pendencias_restantes": [
+      "Falcão CETIP 07:11 quarta · juros futuros BR 5 vértices definitivos",
+      "Bom Dia Mercado · headlines + narrativa dominante",
+      "IPCA-15 08:00 cross-check · impacto real vs projeção",
+      "Wyckoff HTF WIN/WDO · fase + viés + confluências",
+      "Scores WIN/WDO · breakdown completo",
+      "Setups detalhados · entry/stop/TP1/TP2/TP3 + gatilhos + anti-trade + cancelamento",
+      "Filtro Anti-Narrativa · narrativa dominante vs contra-evidências",
+      "Manchete definitiva + subtítulo ajustado",
+      "Kill zones específicas pós-digestão IPCA-15",
+      "Regras_do_dia expandidas WIN/WDO"
+    ],
+    "licoes_aplicadas": [
+      1,
+      6,
+      7,
+      21,
+      23,
+      42,
+      43,
+      44,
+      46,
+      50,
+      53,
+      54,
+      58,
+      61,
+      62,
+      63,
+      64,
+      65,
+      66
+    ],
+    "alertas": [
+      "✅ DI curva EOD terça 26/05 lida dos prints PNG pasta canônica (LIÇÃO 50 fonte primária FASE 1)",
+      "✅ Ajustes B3 WIN/WDO oficial via TV CDP · validação ranges OK (WIN 170-200k · WDO 4,8-5,2)",
+      "✅ Agenda macro quarta 27/05 expandida · IPCA-15 08:00 ★★★ identificado como market mover principal",
+      "⚠ FASE 2 aguarda Falcão CETIP quarta 07:11 (juros definitivos 5 vértices) + Bom Dia Mercado + IPCA-15 08:00 cross-check",
+      "⚠ Manchete + scores + setups + filtro Anti-Narrativa marcados _PENDENTE_FASE2 · aguarda análise completa quarta manhã"
+    ],
+    "fontes": {
+      "ajuste_b3": "TV CDP EOD terça 26/05 · WIN 177.775 · WDO 5.035,457 · settlement oficial D-1",
+      "di_curva": "Prints PNG pasta canônica terça 26/05 EOD · F27 13,795% (−26,2 bps) · F29 13,180% (−61,9 bps) · F31 13,445% (−46,2 bps) · LIÇÃO 50 primário FASE 1",
+      "globais": "TV CDP terça 26/05 noite 21:30 BRT · DXY 99.089 · USDJPY 159.227 · US500 7.533,1 · NQ 30.065,5 · WTI $93,16 · Gold 4.518,04",
+      "agenda_macro": "macro_calendar_br_2026.json atualizado com 8 eventos 27/05 (IPCA-15 ★★★ + Lagarde BCE + ADP + Fluxo Cambial + API + Lane BCE + leilões recorrentes)",
+      "proximos_eventos": "Live #4 20h YouTube quarta 27/05 · Campanha Founding Member janela fecha sexta 30/05"
+    }
+  }
+}
