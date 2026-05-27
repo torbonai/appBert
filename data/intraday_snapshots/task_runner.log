@@ -3274,3 +3274,17 @@ Exit code: 0
 [2026-05-26T20:30:36.080Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
 [2026-05-26T20:30:36.081Z]   · triggering publish_briefing.js --snapshot-only...
 [publish] PUBLISH
+[publish]   data/intraday_snapshots: 4 copied, 113 skipped
+[publish] git status...
+[publish] Changes:
+M data/intraday_snapshots/latest.json
+ M data/intraday_snapshots/log.txt
+ M data/intraday_snapshots/task_runner.log
+?? data/intraday_snapshots/2026-05-26_1730.json
+[publish] git add...
+[publish] git commit -m "Intraday snapshot 2026-05-26 17:30"...
+[publish] git push...
+[publish] ✅ Publish OK
+[2026-05-26T20:30:39.731Z]   · publish exited with 0
+[2026-05-26T20:30:39.732Z] ◀ Snapshot done · 2026-05-26T17:30:39-03:00
+Exit code: 0 

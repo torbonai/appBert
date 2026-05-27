@@ -232,4 +232,22 @@
       "Overnight global domingo→segunda (DXY, USDJPY, US10Y, equities US, Brent, Vale/mineradoras peers, futuros US)",
       "Curva DI sexta 22/05 travada via prints (níveis F27/F29/F31) · FASE 2: confirmar bps no Falcão CETIP 7h11 + classificar flatten/steepen + integrar ao viés WIN/WDO",
       "✅ Wyckoff HTF 4H COMPLETO · WIN Distribuição D/E (markdown -1,84%) · WDO Acumulação D (markup +1,03%)",
-      "Filtro anti-narrativa (con
+      "Filtro anti-narrativa (consenso da imprensa segunda manhã)",
+      "nivel_vento · scores WIN/WDO · vereditos · viés final",
+      "Manchete + subtítulo + racional_publico + plano operacional completo (entry/SL/TP/contratos)",
+      "Agenda macro segunda 25/05 (Renato envia print · calendar desatualizado)",
+      "kill_zones_recomendadas · regras_do_dia",
+      "Capa #17 (último passo · template canônico capa_briefing_template.ps1 · LIÇÃO 19/65)"
+    ],
+    "licoes_aplicadas": [1, 50, 53, 54, 61, 62, 63, 64],
+    "alertas": [
+      "DATA: briefing #17 = SEGUNDA 25/05/2026 (NÃO 26/05). A segunda após a sexta 22/05 é dia 25. O CONTEXTO_MESTRE e o plano da sessão carregam um off-by-one ('retomada segunda 26/05') a corrigir.",
+      "VALIDADOR/RANGE: WIN ajuste 177.777 está abaixo do piso WIN em pega_ajuste_b3.js (linha 79 · 180.000) e pre_publish_check.js (linha 181 · 178.000). O publish da FASE 2 vai dar hard-fail sem atualização desses ranges. LIÇÃO 45 — atualizar o assert, NÃO bypassar.",
+      "DI: curva de sexta 22/05 TRAVADA via prints da pasta canônica (DI1F27/F29/F31 D · FASE 1 primário · LIÇÃO 50). Níveis sólidos · bps preliminares (derivados da variação % do print) · confirmar/cruzar no release Falcão CETIP segunda 7h11 antes do publish (LIÇÃO 53)."
+    ],
+    "fontes": {
+      "ohlc_d1": "Print home broker Renato (Cedro) · 'Resumo de 22/05/2026' WIN1! e WDO1! · enviado domingo 24/05",
+      "estrutura_json": "Espelhado de bertani_app/briefing/2026-05-19.json (briefing #16)"
+    }
+  }
+}

@@ -1735,3 +1735,5 @@
 [2026-05-26T20:30:36.080Z] ✓ Saved: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\2026-05-26_1730.json
 [2026-05-26T20:30:36.080Z] ✓ Updated: C:\Users\HP\tradingview-mcp-jackson\bertani_app\data\intraday_snapshots\latest.json
 [2026-05-26T20:30:36.081Z]   · triggering publish_briefing.js --snapshot-only...
+[2026-05-26T20:30:39.731Z]   · publish exited with 0
+[2026-05-26T20:30:39.732Z] ◀ Snapshot done · 2026-05-26T17:30:39-03:00

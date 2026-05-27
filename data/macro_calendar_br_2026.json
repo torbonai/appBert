@@ -464,6 +464,76 @@
         "tag": "mercado_fechado_sabado",
         "nota": "Sábado · B3 fechado · sem briefing diário · agenda apenas pra eventos US/EU eventuais (raros)"
       }
+    ],
+    "2026-05-27": [
+      {
+        "hora_brt": "05:00",
+        "evento": "🇪🇺 Análise Estabilidade Financeira · BCE",
+        "fonte": "BCE",
+        "impacto": "MEDIO",
+        "tag": "bce_estabilidade_financeira",
+        "nota": "★★ · Financial Stability Review · impacto moderado no EUR/USD e indireto no DXY"
+      },
+      {
+        "hora_brt": "08:00",
+        "evento": "🇧🇷 IPCA-15 · Brasil · maio/2026 (prévia mensal)",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "ipca15",
+        "janela_evitar": "08:00-09:00",
+        "nota": "★★★ · MARKET MOVER PRINCIPAL DO DIA · projeção 4,55% vs anterior 4,37% · prévia da inflação mensal · move DI forte · janela_evitar cobre pré-abertura B3 OBRIGATÓRIA"
+      },
+      {
+        "hora_brt": "09:15",
+        "evento": "🇺🇸 Variação semanal de empregos ADP",
+        "fonte": "ADP",
+        "impacto": "MEDIO",
+        "tag": "adp_emprego_semanal_us",
+        "janela_evitar": "09:10-09:25",
+        "nota": "★★ · indicador antecedente · pode mover DXY momentaneamente"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇺🇸 Leilão Treasury Note 5 anos · EUA",
+        "fonte": "US Treasury",
+        "impacto": "MEDIO",
+        "tag": "tnote_5y_auction",
+        "janela_evitar": "13:55-14:15",
+        "nota": "★★ · bid-to-cover ratio importante · pode mover Treasuries miolo da curva"
+      },
+      {
+        "hora_brt": "14:00",
+        "evento": "🇪🇺 Coletiva Christine Lagarde · Presidente BCE",
+        "fonte": "BCE",
+        "impacto": "ALTO",
+        "tag": "lagarde_coletiva_bce",
+        "janela_evitar": "13:55-14:45",
+        "nota": "★★★ · coletiva de imprensa · pode mover EUR/USD e indiretamente DXY/WDO"
+      },
+      {
+        "hora_brt": "14:30",
+        "evento": "🇧🇷 Fluxo Cambial Estrangeiro · BCB",
+        "fonte": "BCB",
+        "impacto": "MEDIO",
+        "tag": "fluxo_cambial_br",
+        "nota": "★★ · indicador semanal fluxo externo · pode mover WDO se vir negativo forte"
+      },
+      {
+        "hora_brt": "17:30",
+        "evento": "🇺🇸 Estoques de Petróleo Bruto Semanal · API",
+        "fonte": "API",
+        "impacto": "MEDIO",
+        "tag": "api_estoques_petroleo",
+        "nota": "★★ · pós-pregão B3 · reação fica pra abertura quinta · antecede EIA oficial"
+      },
+      {
+        "hora_brt": "21:00",
+        "evento": "🇪🇺 Pronunciamento Philip Lane · BCE",
+        "fonte": "BCE",
+        "impacto": "MEDIO",
+        "tag": "lane_bce_pronunciamento",
+        "nota": "★★ · economista-chefe BCE · overnight · pode dar sinais sobre próximo passo monetário europeu"
+      }
     ]
   }
 }
