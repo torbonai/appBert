@@ -71,7 +71,7 @@
       "codigo": "WIN1!",
       "nome": "Mini Índice Bovespa",
       "fase_wyckoff": "Reacumulação Fase B (transição B/A potencial) · Secondary Test do suporte ontem em 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (sem sweep · invalida markdown imediato) · MAS contexto macro inverteu vs #18: juros futuros BR viraram COMPRADORES bear steepen miolo (+14,1 bps F29) + narrativa hawkish dominante + IPCA-15 9h ★★★ tudo desfavorável · se mercado sweepar 176.765 hoje com volume = entra Fase A descendente novo range mais baixo · se respeitar + IPCA <0,50% = Reacumulação B mantém com tentativa SOS acima de 179.235",
-      "score": 3.0,
+      "score": 3,
       "veredito": "AGUARDAR",
       "vies": "sem viés direcional (aguarda IPCA-15)",
       "racional_publico": "WIN em Reacumulação Fase B com transição B/A potencial · mínima de ontem 176.765 ficou 435 pts ACIMA do suporte crítico 176.330 (sem sweep · invalida markdown imediato), MAS o contexto macro INVERTEU vs briefing #18 de ontem: juros futuros BR (curva DI) VIRARAM COMPRADORES bear steepen miolo segundo release CETIP oficial EOD terça (F29 +14,1 bps LIDERA · F28 +13,7 · F31 +9,4 · F27 +5,9 · F33 +7,1) = mercado precifica MAIS Selic alta por mais tempo · Citi elevou Selic 2026 pra 13,75% + IPCA 2027 pra 3,9% · Kashkari (Fed) 'série de altas pode voltar à mesa'. Todo o desfavorecimento estrutural pro WIN. PORÉM: contra-evidências overnight materiais (Brent -3,30% $93,48 · UST em queda · VIX 16,9 baixo · ES/NQ +0,25-0,42% recordes IA terça) sugerem narrativa hawkish parcialmente furada. **IPCA-15 9h ★★★ é o gatilho do dia** (proj Broadcast 0,56% mensal vs 0,89% abr · 12m 4,59%) · até a digestão completar (10:30+) ZERO entrada. Filtro Anti-Narrativa MODERADO mantém apertando gestão. Score breakdown: base 10,0 + Reacumulação B sem sweep PDL (+1,0) + Brent overnight aliviando contra-narrativa (+0,5) + risk-on externo VIX baixo + futuros US firmes (+0,5) − DI bear steepen miolo desfavorável (−1,5) − narrativa hawkish dominante Citi/Kashkari/Copom (−1,0) − IPCA-15 9h MARKET MOVER pré-mercado (−1,5) − sem gatilho técnico imediato + transição B/A potencial (−1,5) − filtro Anti-Narrativa MODERADO apertado (−1,0) − headline risk persistente Irã/Ormuz (−0,5) − fluxo estrangeiro vendedor headwind estrutural (−1,0) = 3,0/10 · AGUARDAR claro · sem viés direcional pré-IPCA. Dois setups condicionais documentados pós-IPCA.",
@@ -113,7 +113,7 @@
         "tp2_rr": 2.5,
         "tp2_partial_pct": 30,
         "tp3": 181500,
-        "tp3_rr": 4.0,
+        "tp3_rr": 4,
         "tp3_partial_pct": 20,
         "contratos_banca_30k_risco_1pct": 1,
         "setup": "AGUARDAR formal (score 3,0/10 < threshold 6,0) · 2 setups condicionais documentados pós-IPCA-15. **SETUP A LONG**: ativa SE (1) IPCA-15 vier ≤ 0,50% mensal (alívio surpresa) E (2) Brent sustenta < $94 (confirma alívio inflação) E (3) WIN pullback pra 178.300-178.500 com defesa visível 4H. Entry zona 178.300-178.500 · stop 176.200 (800 pts · abaixo do suporte crítico 176.330 com folga) · TP1 179.500 (RR 1,6 · saída 50%) · TP2 180.300 (RR 2,9 · 30%) · TP3 181.500 (RR 4,4 · 20%). **SETUP B SHORT** (anti-setup do A · cobre cenário inverso): ativa SE (1) IPCA-15 > 0,60% (confirma narrativa hawkish) E (2) WIN sweepa mínima 176.765 com volume + 4 critérios LIÇÃO 66 falsificados (default = trap continuação bearish) · entry 177.500-177.700 (retest pós-sweep) · stop 178.200 (700 pts) · TP1 176.300 (RR 1,5 · 50%) · TP2 175.500 (RR 2,9 · 30%) · TP3 174.500 (RR 4,7 · 20%).",
@@ -124,18 +124,18 @@
       },
       "comentario_breve": "Score 3,0 AGUARDAR claro · pré-IPCA-15 9h zero operação. Pós-digestão (10:30+) avaliar 2 setups condicionais documentados (LONG se alívio + SHORT se sweep). DI bear steepen + narrativa hawkish desfavorável estrutural · contra-evidências overnight (Brent -3,3% + UST queda + VIX baixo) abrem janela contra-narrativa se IPCA cooperar.",
       "_score_breakdown": {
-        "reacumulacao_b_sem_sweep_pdl": 1.0,
+        "reacumulacao_b_sem_sweep_pdl": 1,
         "brent_overnight_aliviando_contra_narrativa": 0.5,
         "risk_on_externo_vix_baixo_futuros_us": 0.5,
         "di_bear_steepen_miolo_desfavoravel": -1.5,
-        "narrativa_hawkish_dominante_citi_kashkari_copom": -1.0,
+        "narrativa_hawkish_dominante_citi_kashkari_copom": -1,
         "ipca15_market_mover_pre_mercado": -1.5,
         "sem_gatilho_tecnico_imediato_transicao_potencial": -1.5,
-        "filtro_anti_narrativa_moderado_apertado": -1.0,
+        "filtro_anti_narrativa_moderado_apertado": -1,
         "headline_risk_persistente_ira_ormuz": -0.5,
-        "fluxo_estrangeiro_vendedor_headwind": -1.0,
-        "base": 10.0,
-        "total": 3.0
+        "fluxo_estrangeiro_vendedor_headwind": -1,
+        "base": 10,
+        "total": 3
       }
     },
     {
@@ -149,7 +149,7 @@
       "niveis_chave": {
         "ajuste_b3": 5035.457,
         "ajuste_b3_data": "2026-05-26",
-        "fechamento_anterior": 5035.0,
+        "fechamento_anterior": 5035,
         "PDH": 5043,
         "PDL": 5008,
         "maxima_anterior": 5043,
@@ -195,19 +195,19 @@
       },
       "comentario_breve": "Score 5,5 borderline AGUARDAR · setup LONG documentado pós-IPCA · ativa só com confluência completa (5 ítens). DI bear steepen + Citi/Sichel/Kashkari narrativa fortemente FAVORÁVEL · contra-evidências overnight (Brent -3,3% · DXY estável · risk-on) freiam edge. 6º pregão acima R$5 = base estrutural · break 5,050 é o gatilho.",
       "_score_breakdown": {
-        "acumulacao_b_spring_potencial_5050": 1.0,
+        "acumulacao_b_spring_potencial_5050": 1,
         "di_bear_steepen_miolo_favoravel_long": 1.5,
-        "narrativa_sichel_citi_confluencia": 1.0,
+        "narrativa_sichel_citi_confluencia": 1,
         "6_pregao_acima_5000_base_estrutural": 0.5,
         "usdbrl_futuro_overnight_pressao": 0.5,
         "dxy_estavel_sem_confirmacao_forte": -0.5,
-        "brent_overnight_negativo_br_exportador_favorecido": -1.0,
-        "ipca15_surpresa_baixista_pode_reverter": -1.0,
+        "brent_overnight_negativo_br_exportador_favorecido": -1,
+        "ipca15_surpresa_baixista_pode_reverter": -1,
         "filtro_anti_narrativa_moderado": -0.5,
-        "sem_gatilho_tecnico_imediato_precisa_break_5050": -1.0,
+        "sem_gatilho_tecnico_imediato_precisa_break_5050": -1,
         "headline_risk_ira_brent_imprevisivel": -0.5,
         "risk_on_externo_historico_favorece_brl": -0.5,
-        "base": 10.0,
+        "base": 10,
         "total": 5.5
       }
     }
