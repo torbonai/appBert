@@ -106,7 +106,7 @@
       "ajuste_b3_meta": {
         "valor": 176141,
         "data_referencia": "2026-05-28",
-        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-28)"
       },
       "plano": {
         "direcao": "CONDICIONAL_SHORT_OU_LONG",
@@ -138,21 +138,21 @@
       "codigo": "WDO1!",
       "nome": "Mini Dólar",
       "fase_wyckoff": "Acumulação Fase B · fragilizada",
-      "score": 3.0,
+      "score": 3,
       "veredito": "AGUARDAR",
       "vies": "Lateral com tendência teste 5.000 · DXY cedeu · Brent caiu · setup LONG não ativa",
       "racional_publico": "WDO 7º pregão >R$ 5,00 · base construída · MAS testou piso 5.025,5 · teste 5.000 provável. Setup LONG #20 NÃO ativou (5.077 sem volume). Acumulação Fase B · fragilizada mantida ENQUANTO 5.000 segurar. Overnight BAIXISTA WDO: Brent -1,74% (alívio inflação reduz pressão USDBRL) · DXY -0,09% · USDBRL -0,40% (5,0223 real recuperou) · fluxo contra LONG. Tailwinds parciais: DI bear shift +6,7 bps F29 (juros sobem · diferencial favorece real ambíguo) · wildcard EUA-PCC/CV (risco bancos · spike USDBRL potencial). Score 3.0/10 AGUARDAR · teste 5.000 cenário base · LONG só DXY >99,50 + PIB <+0,8% · SHORT só sweep 5.000 breakdown. PIB decide: <+0,8% fraco = LONG ressurge · >+1,3% forte = SHORT ativa. Primeira janela 10:45-11:45.",
       "niveis_chave": {
-        "ajuste_b3": 5032.73,
+        "ajuste_b3": 5032.735,
         "ajuste_b3_data": "2026-05-28",
         "fechamento_anterior": 5044.5,
-        "PDH": 5077.0,
+        "PDH": 5077,
         "PDL": 5025.5,
-        "maxima_anterior": 5077.0,
+        "maxima_anterior": 5077,
         "minima_anterior": 5025.5,
-        "abertura_anterior": 5070.0,
+        "abertura_anterior": 5070,
         "range_anterior_pts": 51.5,
-        "variacao_anterior_pts": -20.0,
+        "variacao_anterior_pts": -20,
         "variacao_anterior_pct": -0.39,
         "EQ": 5005.75,
         "weekly_high_20d": 5101.5,
@@ -165,9 +165,9 @@
         "_nota": "OHLC fonte home broker Cedro. 7º pregão >5k mas teste piso iminente."
       },
       "ajuste_b3_meta": {
-        "valor": 5032.73,
+        "valor": 5032.735,
         "data_referencia": "2026-05-28",
-        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-28)"
       },
       "plano": {
         "direcao": "CONDICIONAL_LONG_OU_SHORT",
@@ -192,13 +192,13 @@
       },
       "comentario_breve": "WDO testou 5.025 · Acumulação Fase B · fragilizada · 3.0/10 AGUARDAR · teste 5.000 provável · PIB decide",
       "_score_breakdown": {
-        "total": 3.0
+        "total": 3
       }
     }
   ],
   "agenda_macro": [
     {
-      "hora": "08:30",
+      "hora_brt": "08:30",
       "evento": "Primário setor público (BC)",
       "pais": "BR",
       "impacto": "ALTO",
@@ -207,7 +207,7 @@
       "janela_evitar": "08:25-08:45"
     },
     {
-      "hora": "09:00",
+      "hora_brt": "09:00",
       "evento": "PIB BR Q1 (IBGE)",
       "pais": "BR",
       "impacto": "ALTO",
@@ -216,7 +216,7 @@
       "janela_evitar": "09:00-10:45"
     },
     {
-      "hora": "09:00-09:25",
+      "hora_brt": "09:00-09:25",
       "evento": "Leilão abertura B3",
       "pais": "BR",
       "impacto": "ALTO",
@@ -225,7 +225,7 @@
       "janela_evitar": "09:00-09:25"
     },
     {
-      "hora": "10:10",
+      "hora_brt": "10:10",
       "evento": "Bowman (Fed) Reykjavik",
       "pais": "EUA",
       "impacto": "MEDIO",
@@ -234,7 +234,7 @@
       "janela_evitar": "10:00-10:45"
     },
     {
-      "hora": "16:00",
+      "hora_brt": "16:00",
       "evento": "Aneel bandeira junho",
       "pais": "BR",
       "impacto": "MEDIO",
@@ -243,7 +243,7 @@
       "janela_evitar": "15:55-16:15"
     },
     {
-      "hora": "17:45-17:55",
+      "hora_brt": "17:45-17:55",
       "evento": "Leilão fechamento B3",
       "pais": "BR",
       "impacto": "ALTO",
@@ -268,7 +268,7 @@
       "titulo": "ÚLTIMO DIA · Founding fecha AMANHÃ sábado 30/05 23h59",
       "descricao": "ÚLTIMO dia travar fundador · Briefing R$ 97 vitalício vs R$ 147 mensal = R$ 600/ano · Tela Pro R$ 397 vs R$ 697 = R$ 3.600/ano · acesso Lives · comunidade Private",
       "data": "2026-05-30",
-      "hora": "23:59 BRT",
+      "hora_brt": "23:59 BRT",
       "link": "https://app.renatobertani.com.br",
       "banner": "banner_2"
     }
