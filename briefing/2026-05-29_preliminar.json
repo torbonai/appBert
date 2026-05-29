@@ -1,0 +1,270 @@
+{
+  "data": "2026-05-29",
+  "data_extenso": "Sexta-feira, 29 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 21,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_POS_FALCAO_711_SEXTA",
+    "subtitulo": "_PENDENTE_FASE2_POS_FALCAO_711_SEXTA_LEITURA_DI_DEFINITIVA"
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste 176141 (qui 28/05 -0.76%) · O 175990 / H 177975 / L 175455 / C 175455 · range 2520 pts · FECHOU NA MÍNIMA · _PENDENTE_FASE2_WYCKOFF_SCORE_VEREDITO",
+    "wdo_linha": "MINI DÓLAR · ajuste 5032.73 (qui 28/05 -0.39%) · O 5070.0 / H 5077.0 / L 5025.5 / C 5044.5 · 7º pregão >R$ 5,00 · _PENDENTE_FASE2_WYCKOFF_SCORE_VEREDITO",
+    "janela_operacional": "_PENDENTE_FASE2_AGENDA_SEXTA_29_CROSS_CHECK",
+    "nivel_chave": "WIN 177975 PDH · 176141 ajuste · 175455 PDL · WDO 5077.0 PDH · 5032.73 ajuste · 5025.5 PDL",
+    "agenda_top1": "_PENDENTE_FASE2_AGENDA_SEXTA_29"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_NIVEL_VENTO",
+    "highlights": [
+      "📌 Briefing #21 FASE 1 noturna (quinta 28/05 ~23h15 BRT · ÚLTIMO briefing antes fechamento Founding sábado 30/05 23h59)",
+      "📊 WIN ajuste B3 quinta 28/05: 176141 (-1335 pts / -0.76%) · OHLC qui: O 175990 / H 177975 / L 175455 / C 175455 · range 2520 pts · FECHOU NA MÍNIMA 175455 · STRONG BEARISH CLOSE · ROMPEU suporte crítico 176.310 do briefing #20",
+      "💵 WDO ajuste B3 quinta 28/05: 5032.73 (-20.0 pts / -0.39%) · OHLC qui: O 5070.0 / H 5077.0 / L 5025.5 / C 5044.5 · range 51.5 pts · 7º pregão >R$ 5,00 mas com teste PISO 5.025,50",
+      "📊 Cross-check #20 → #21: briefing #20 (28/05 manhã) WIN AGUARDAR 3,0/10 (setup A LONG não ativou · setup B SHORT potencialmente ATIVOU intraday · mínima 175.455 ROMPEU suporte crítico 176.310) + WDO GO_CONDICIONAL 6,0/10 (setup LONG break 5.074 NÃO ativou formalmente · faltou volume follow-through) · _PENDENTE_FASE2_LEITURA_COMPLETA_STATUS_TRADES",
+      "💵 Juros futuros BR EOD quinta 28/05: _PENDENTE_FALCAO_CETIP_SEXTA_711_RELEASE_OFICIAL · prints pasta 26/05 stale (2d atrás) · curva DI definitiva vem release oficial CETIP sexta 07:11 · FASE 1 aguarda",
+      "🌍 Globais overnight quinta→sexta (~23h-01h BRT): DXY 99.023 (-0.31% vs close qui 99,34 · cedendo) · USDJPY 159.31 (-0.06%) · ES 7567.6 (+0.63% · subindo pós-digestão PCE) · NQ 30201 (+0.14%) · WTI $88.36 (-2.42% · caindo forte) · Gold $4494.19 (+1.57% · recuperando)",
+      "🛢 Petróleo CAIU FORTE: WTI $88.36 (-2.42% overnight) · Brent provavelmente similar · _PENDENTE_FASE2_LEITURA_PETROLEO_COMPLETA_BRENT",
+      "📈 PCE abril QUINTA 28/05: _PENDENTE_FASE2_PCE_RELEASE_REAL_09H30_QUINTA · market mover principal · confirmou hawkish ou aliviou · impacto WIN/WDO estrutural · validar release manhã",
+      "🇧🇷 Agenda sexta 29/05 CLUSTER PESADO MANHÃ: 08h00 IGP-M ★★★ · 08h30 Superávit Orçamentário + Dívida Bruta/PIB ★★★ · 09h00 PIB BR Q1 ★★★ (1,8% anual / 1,0% trimestral proj) · 14h30 CAGED ★★★ (230k vagas) · mais leve que SUPERQUINTA mas com PIB BR Q1 driver estrutural",
+      "🎯 CAMPANHA FOUNDING MEMBER CRESCENDO: briefing #21 sexta 29/05 = ÚLTIMO antes do fechamento SÁBADO 30/05 23h59 · diferença permanente R$ 97 vitalício Founding vs R$ 147 mensal regular = R$ 600/ano · próximos ~36h finais",
+      "_PENDENTE_FASE2_HIGHLIGHTS_ADICIONAIS_POS_LEITURA_COMPLETA"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_",
+      "intensidade": "_PENDENTE_FASE2_",
+      "narrativa_dominante": "_PENDENTE_FASE2_CROSS_CHECK_NEWS_MANHÃ",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "descricao": "_PENDENTE_FASE2_",
+      "frases_consensuais_alertadas": [],
+      "contra_evidencias": [],
+      "leitura_bertani": "_PENDENTE_FASE2_",
+      "contra_evidencias_a_monitorar": []
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_PROVAVEL_TRANSICAO_REACUM_B_PARA_DISTRIBUICAO_A",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_BEARISH_MODERADO_ATE_PROVA_CONTRARIO",
+      "racional_publico": "_PENDENTE_FASE2_COMPLETO",
+      "niveis_chave": {
+        "ajuste_b3": 176141,
+        "ajuste_b3_data": "2026-05-28",
+        "fechamento_anterior": 175455,
+        "PDH": 177975,
+        "PDL": 175455,
+        "maxima_anterior": 177975,
+        "minima_anterior": 175455,
+        "abertura_anterior": 175990,
+        "range_anterior_pts": 2520,
+        "variacao_anterior_pts": -1335,
+        "variacao_anterior_pct": -0.76,
+        "EQ": "_PENDENTE_FASE2_CALCULO_DEALING_RANGE_20D",
+        "weekly_high_20d": "_PENDENTE_FASE2_",
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": 175200,
+        "suporte_critico_status": "176.310 ROMPIDO · novo suporte 175.200 (low semanal anterior) · próximo 174.500 estrutural",
+        "resistencia_critica": 176310,
+        "resistencia_critica_status": "Suporte 176.310 do #20 virou RESISTÊNCIA · pull-back potencial sexta",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "OHLC fonte home broker Cedro EOD 28/05 (primário inputs_pre_briefing_21.md). Ajuste B3 176.141. FECHOU NA MÍNIMA 175.455 = bearish strong close. ROMPEU 176.310 suporte crítico do briefing #20."
+      },
+      "ajuste_b3_meta": {
+        "valor": 176141,
+        "data_referencia": "2026-05-28",
+        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3 (primário inputs_pre_briefing_21.md)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_PROVAVEL_SHORT_PULL_BACK_OU_LONG_SWEEP_REVERSAL",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_COMPLETO",
+        "kill_zone": "_PENDENTE_FASE2_AGENDA_CROSS_CHECK",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_ACUMULACAO_B_FRAGIL",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_LATERAL_TENDENCIA_TESTE_5000",
+      "racional_publico": "_PENDENTE_FASE2_COMPLETO",
+      "niveis_chave": {
+        "ajuste_b3": 5032.73,
+        "ajuste_b3_data": "2026-05-28",
+        "fechamento_anterior": 5044.5,
+        "PDH": 5077.0,
+        "PDL": 5025.5,
+        "maxima_anterior": 5077.0,
+        "minima_anterior": 5025.5,
+        "abertura_anterior": 5070.0,
+        "range_anterior_pts": 51.5,
+        "variacao_anterior_pts": -20.0,
+        "variacao_anterior_pct": -0.39,
+        "EQ": "_PENDENTE_FASE2_",
+        "weekly_high_20d": "_PENDENTE_FASE2_",
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": 5000,
+        "suporte_critico_status": "7º pregão >R$ 5,00 mas TESTOU 5.025,50 · próximo teste 5.000 provável se DXY ceder",
+        "resistencia_critica": 5074,
+        "resistencia_critica_status": "Setup LONG #20 NÃO ativou (máxima 5.077 sem volume follow-through)",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "OHLC fonte home broker Cedro EOD 28/05 (primário inputs_pre_briefing_21.md). Ajuste B3 5.032,73. 7º pregão >5k mas testou piso 5.025,50."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5032.73,
+        "data_referencia": "2026-05-28",
+        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3 (primário inputs_pre_briefing_21.md)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 30,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 40,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_COMPLETO",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "08:00",
+      "evento": "IGP-M (Mensal) Mai",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "0,80%",
+      "anterior": "2,73%",
+      "janela_evitar": "08:55-09:25"
+    },
+    {
+      "hora": "08:30",
+      "evento": "Superávit Orçamentário Abr + Dívida Bruta/PIB + Balanço",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "— cluster fiscal",
+      "anterior": "—",
+      "janela_evitar": "08:30-09:00"
+    },
+    {
+      "hora": "09:00",
+      "evento": "PIB BR Q1 (Anual 1,8% / Trimestral 1,0%) + Desemprego Abr",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "1,8% anual / 1,0% trim",
+      "anterior": "1,8% anual / 0,1% trim",
+      "janela_evitar": "08:55-09:45"
+    },
+    {
+      "hora": "14:30",
+      "evento": "CAGED Abr",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "230k vagas",
+      "anterior": "228,21k",
+      "janela_evitar": "14:25-14:45"
+    }
+  ],
+  "regras_do_dia": [
+    "Stop físico OBRIGATÓRIO em todos os trades · sem exceção",
+    "Risco máximo 1% banca por trade (banca R$ 30k = R$ 300 máximo)",
+    "Trailing stop: BE após TP1 acionado (50% parcial)",
+    "Janelas operacionais limpas: 10:30-11:30 BRT (primeira pós-cluster macro BR) · 11:30-12:30 BRT (segunda) · 15:00-16:00 BRT (terceira pós-CAGED)",
+    "ZERO entrada antes de agenda ★★★ digerir (mínimo 10min pós-release)",
+    "_PENDENTE_FASE2_REGRAS_ADICIONAIS_CONTEXTO_SEXTA"
+  ],
+  "eventos_bertani": [
+    {
+      "tipo": "CAMPANHA_FOUNDING",
+      "titulo": "FOUNDING MEMBER FECHA SÁBADO 30/05 23h59",
+      "descricao": "ÚLTIMO DIA pra travar fundador · Briefing R$ 97 vitalício vs R$ 147 mensal regular = diferença R$ 600/ano permanente · Tela Pro R$ 397 vitalício vs R$ 697 mensal = R$ 3.600/ano · acesso todas Lives futuras · comunidade Private · suporte prioritário",
+      "data": "2026-05-30",
+      "hora": "23:59 BRT",
+      "link": "https://app.renatobertani.com.br",
+      "banner": "banner_2"
+    }
+  ],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-05-28 23:15 BRT",
+    "fase_1_noturna_completa_em": "2026-05-28 23:15 BRT",
+    "fase_2_aguarda": "sexta 29/05 ~07:25 BRT · release oficial CETIP 07:11 + agenda macro cross-check + globais manhã snapshot",
+    "pendentes_fase_2": {
+      "DI_curva_oficial": "release oficial CETIP sexta 07:11 · prints pasta 26/05 stale 2d",
+      "agenda_macro": "validar PIB BR Q1 real vs proj · CAGED vs proj · IGP-M vs proj",
+      "globais_manha": "snapshot 06:45-07:30 BRT · DXY/USDJPY/Brent/ES/VIX definitivos",
+      "Wyckoff_score_veredito": "WIN provável Distribuição A · WDO Acumulação B frágil · análise completa",
+      "manchete_subtitulo": "framing editorial pós-leitura DI + PIB BR + filtro",
+      "filtro_anti_narrativa": "cross-check news manhã + contra-evidências estruturais",
+      "plano_operacional": "setups entry/SL/TP com RR ≥1,5 · kill zones · gatilhos",
+      "status_trades_20": "confirmar se setup B SHORT WIN do #20 ativou formalmente · validar com Renato audiência paga"
+    },
+    "licoes_aplicadas": [
+      "LIÇÃO 50/53: DI prints pasta primário FASE 1 · release oficial CETIP primário FASE 2",
+      "LIÇÃO 54: fase PARCIAL honesta · pendentes explícitos melhor que COMPLETA com gaps",
+      "LIÇÃO 61/62: ajuste B3 ≠ fechamento · PDL ≠ weekly_low · OHLC fonte home broker Cedro primário",
+      "LIÇÃO 67: ZERO menção fontes upstream em campos públicos · usar release oficial CETIP genérico",
+      "LIÇÃO 68: JSON via script Python separado · validar parse UTF-8",
+      "LIÇÃO 69: capa + telegram QI 85 · sem jargão técnico",
+      "LIÇÃO 70: telegram aberto SEM entry/SL/alvos numéricos · canon paywall matriz · CRÍTICO sexta último dia Founding"
+    ],
+    "fontes": {
+      "ajuste_b3_win": "Home broker Cedro EOD 28/05 (primário inputs_pre_briefing_21.md · 176.141)",
+      "ajuste_b3_wdo": "Home broker Cedro EOD 28/05 (primário inputs_pre_briefing_21.md · 5.032,73)",
+      "OHLC_daily": "Home broker Cedro EOD 28/05 (primário inputs_pre_briefing_21.md)",
+      "globais_overnight": "TradingView CDP quote_get ~23h-01h BRT (DXY/USDJPY/ES/NQ/WTI/Gold)",
+      "di_curva": "PENDENTE release oficial CETIP sexta 07:11 · prints pasta 26/05 stale",
+      "agenda_macro": "Investing.com economic calendar sexta 29/05 (validado inputs_pre_briefing_21.md)"
+    },
+    "nota_founding": "Briefing #21 sexta 29/05 = ÚLTIMO antes fechamento Founding sábado 30/05 23h59 · tom CRESCENDO banners/eventos · diferença permanente R$ 600/ano Briefing + R$ 3.600/ano Tela Pro · frase canônica paywall LIÇÃO 70 presente",
+    "nota_critica_win": "WIN fechou NA MÍNIMA 175.455 · ROMPEU suporte crítico 176.310 do briefing #20 · setup B SHORT #20 potencialmente ATIVOU · validar formalmente na FASE 2 com Renato · ponto de credibilidade metodológica",
+    "nota_critica_wdo": "WDO testou piso 5.025,50 · setup LONG #20 NÃO ativou formalmente (máxima 5.077 sem volume follow-through) · 7º pregão >5k mas frágil"
+  }
+}

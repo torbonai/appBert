@@ -1,0 +1,308 @@
+{
+  "data": "2026-05-29",
+  "data_extenso": "Sexta-feira, 29 de maio de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 21,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "WIN rompeu suporte · WDO testa piso R$ 5,00 · PIB BR Q1 hoje decide",
+    "subtitulo": "WIN fechou quinta na mínima 175.455 · rompeu 176.310 do briefing anterior · nova área mais baixa se formando. WDO segura R$ 5,00 pelo 7º dia mas testou 5.025 · próximo teste do piso provável. Petróleo caiu forte (-1,74% pra $90,70 · acordo EUA-Irã ganhando força) · dólar global cedeu (-0,09%) · real recuperou (-0,40%). PIB BR Q1 hoje 09h (projeção +1,1% trimestral · driver doméstico) pode definir direção. Juros futuros BR subiram leve no miolo. Founding fecha amanhã sábado 30/05 23h59."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste 176.141 (qui -0,76%) · O 175.990 / H 177.975 / L 175.455 / C 175.455 · FECHOU NA MÍNIMA · Distribuição Fase A · início · score 3.5/10 · GO_CONDICIONAL · Bearish moderado · rompeu suporte 176.310 · aguarda pull-back ou sweep reversal",
+    "wdo_linha": "MINI DÓLAR · ajuste 5.032,73 (qui -0,39%) · O 5.070 / H 5.077 / L 5.025,5 / C 5.044,5 · 7º pregão >R$ 5,00 · Acumulação Fase B · fragilizada · score 3.0/10 · AGUARDAR · Lateral com tendência teste 5.000 · DXY cedeu · Brent caiu · setup LONG não ativa",
+    "janela_operacional": "10:45-11:45 BRT (primeira pós-PIB) · 13:00-14:30 BRT (segunda) · 15:00-16:00 BRT (terceira) · evitar 08:25-08:45 · 08:55-09:25 · 10:00-10:45 · 17:45-17:55",
+    "nivel_chave": "WIN 177.975 PDH · 176.141 ajuste · 175.455 PDL · 176.310 ex-suporte virou resistência · 175.200 suporte crítico · WDO 5.077 PDH · 5.032,73 ajuste · 5.025,5 PDL · 5.000 psicológico",
+    "agenda_top1": "08h30 Primário BC ★★★ · 09h PIB BR Q1 ★★★ · 16h Aneel bandeira"
+  },
+  "kill_zones_recomendadas": [
+    "10:45-11:45 BRT · primeira janela limpa pós-PIB BR Q1 digestão",
+    "13:00-14:30 BRT · segunda janela limpa sem eventos ★★★",
+    "15:00-16:00 BRT · terceira janela antes Aneel + fim semana"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "VENTO_FORTE",
+    "highlights": [
+      "📌 Briefing #21 FASE 2 (sexta 29/05/2026 08:30 BRT · ÚLTIMO briefing antes fechamento Founding sábado 30/05 23h59)",
+      "📊 WIN ajuste B3 quinta 28/05: 176.141 (-1.335 pts / -0,76%) · OHLC O 175.990 / H 177.975 / L 175.455 / C 175.455 · FECHOU NA MÍNIMA · STRONG BEARISH CLOSE · ROMPEU suporte 176.310 do #20",
+      "💵 WDO ajuste B3 quinta 28/05: 5.032,73 (-20,0 pts / -0,39%) · OHLC O 5.070 / H 5.077 / L 5.025,5 / C 5.044,5 · 7º pregão >R$ 5,00 mas teste PISO 5.025,5",
+      "💵 Juros futuros BR EOD quinta 28/05 (release CETIP oficial 07:09 sexta): F27 +4,3 · F28 +5,7 · F29 +6,7 (LIDER) · F31 +5,1 · F33 +4,8 bps · bear shift leve concentrado miolo · sanity OK (max 6,7 < 80)",
+      "🛢 Petróleo CAIU FORTE overnight: Brent $90,70 (-1,74%) · memorando Axios EUA-Irã 60d cessar-fogo + reabertura Ormuz · ALÍVIO inflação importada",
+      "🌍 Globais overnight POSITIVOS MODERADOS: ES +0,09% · Nikkei +2,53% · KOSPI +4,13% · DXY 98,96 (-0,09% cedeu) · USDBRL 5,0223 (-0,40% real recuperou) · UST 10y 4,434%",
+      "📊 Wall St QUINTA 3 RECORDES: Nasdaq +0,91% 26.917 · S&P +0,58% 7.563 · Dow +0,05% 50.668 · Dell +39% AH (IA boom)",
+      "🇧🇷 Caged QUINTA 85,9k vagas (proj 211k · piso 130k MUITO ABAIXO) · menor abril desde 2017 · DESACELERAÇÃO brutal mercado trabalho · DOVISH potencial",
+      "🇧🇷 Agenda sexta 29/05: 08h30 Primário BC ★★★ (proj +R$ 23,2 bi) · 09h PIB BR Q1 ★★★ (proj +1,1% trim vs +0,1% ant) · 16h Aneel bandeira",
+      "🇺🇸 PCE quinta: +0,4% mensal (proj +0,5%) · YoY 3,8% em linha · ALIVIOU expectativa Fed",
+      "⚠️ WILDCARD EUA designa PCC/CV terroristas (vigência 5/jun) · risco bancos BR · precedente México 2025",
+      "📈 Mineral Dalian: set/26 +0,45% ($115,56) · jan/27 +0,53% ($112,9) · POSITIVO Vale (12% Ibov) + WIN",
+      "🎯 ÚLTIMO DIA Founding · fecha AMANHÃ sábado 30/05 23h59 · R$ 97 vitalício vs R$ 147 = R$ 600/ano"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "MODERADO_PESADO",
+      "narrativa_dominante": "WIN vai cair mais · rompeu 176k suporte · juros BR subiram (bear shift miolo) · Nilton David BC hawkish · WDO vai romper R$ 5,00 · teste 4,95-4,90 inevitável · dólar forte estrutural",
+      "fonte_observada": "Broadcast Bom Dia Mercado sexta 29/05 + expectativa pré-PIB BR Q1",
+      "descricao": "Filtro MODERADO PESADO porque narrativa bearish quinta É REAL (WIN rompeu 176.310 · DI bear shift miolo · Nilton David hawkish) · mas CONTRA-EVIDÊNCIAS fortes overnight: Petróleo -1,74% (alívio inflação) · Caged 85,9k DOVISH brutal · Wall St 3 recordes · DXY cedeu · USDBRL cedeu · Nikkei +2,53% KOSPI +4,13% (risk-on Ásia) · Dalian +0,45%/+0,53% (positivo Vale). PIB BR Q1 09h termômetro.",
+      "frases_consensuais_alertadas": [
+        "WIN rompeu 176k · vai cair pra 174k-173k · estrutura bearish confirmada",
+        "WDO vai romper R$ 5,00 · teste 4,95 inevitável · dólar forte estrutural",
+        "Juros BR subiram bear shift · BC hawkish irreversível · Selic 13,50%+",
+        "Caged fraco confirma desaceleração · desemprego vai subir · recessão",
+        "EUA designa PCC/CV · dólar vai disparar · bancos BR proibidos transações"
+      ],
+      "contra_evidencias": [
+        "Petróleo CAINDO FORTE: Brent $90,70 (-1,74%) · acordo EUA-Irã · alívio inflação BR estrutural",
+        "Caged 85,9k vs 211k proj (DOVISH BRUTAL) · menor abr 2017 · desaceleração = BC não sobe tanto",
+        "Wall St 3 RECORDES: Nasdaq 26.917 · S&P 7.563 · Dow 50.668 · liquidez global forte",
+        "DXY cedeu -0,09% · USDBRL -0,40% (5,0223 real recuperou) · dólar global não explodindo",
+        "Nikkei +2,53% KOSPI +4,13% (risk-on Ásia) · sentimento positivo emergentes",
+        "Dalian +0,45%/+0,53% (Vale 12% Ibov) · demanda estrutural mantém",
+        "PCE +0,4% ABAIXO proj +0,5% · Fed não piorou · PIB EUA +1,6% ABAIXO proj"
+      ],
+      "leitura_bertani": "Rompimento 176.310 É REAL · WIN transição Distribuição A factual · mas velocidade queda pode ser MENOR que consenso. Overnight CONSTRUTIVO (Brent -1,74% · Caged DOVISH · DXY cedeu · Wall St recordes) contrasta estrutura BEARISH quinta. Cenário provável: gap-up testar 176.310 ex-suporte → reação define. SHORT pull-back 176.300-800 trade direto 65%. LONG sweep 175.455 reversal 35% contrarian. WDO teste 5.000 provável. PIB BR Q1 09h DECIDE: ≥+1,1% = narrativa fraca fura · <+0,8% = confirma. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
+      "contra_evidencias_a_monitorar": [
+        "PIB BR Q1 09h · ≥+1,1% = narrativa fraca fura · <+0,8% = confirma",
+        "Brent intraday · <$92 EOD = alívio confirmado · >$94 = pressão retorna",
+        "WIN · gap-up rejeita 176.310 volume >250k = SHORT · sweep 175.455 reversal MSS = LONG",
+        "WDO · rompe 5.020 breakdown = SHORT · DXY >99,50 = LONG ressurge",
+        "DI EOD sexta · F28/F29 caem >-5 bps = relaxa · sobem >+5 bps = hawkish confirma"
+      ]
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Distribuição Fase A · início",
+      "score": 3.5,
+      "veredito": "GO_CONDICIONAL",
+      "vies": "Bearish moderado · rompeu suporte 176.310 · aguarda pull-back ou sweep reversal",
+      "racional_publico": "WIN fechou quinta NA MÍNIMA 175.455 · strong bearish close · ROMPEU 176.310 #20 · transição Reacumulação B → Distribuição Fase A · início provável. Range descendente 175k-177k · suporte 175.200 · ex-suporte 176.310 virou resistência. Overnight CONSTRUTIVO: Brent -1,74% · Caged 85,9k DOVISH · DXY -0,09% · USDBRL -0,40% · Wall St 3 recordes · Nikkei +2,53% KOSPI +4,13% · Dalian +0,45%/+0,53%. Estrutura BEARISH quinta mantida: fechou mínima · rompeu suporte · DI bear shift +6,7 bps F29. Contraste overnight vs estrutura = gap-up testar 176.310 → reação define. Score 3.5/10 GO_CONDICIONAL · 2 setups: SHORT pull-back 176.300-800 (65%) · LONG sweep 175.455 reversal MSS (35%). PIB BR Q1 09h decide. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
+      "niveis_chave": {
+        "ajuste_b3": 176141,
+        "ajuste_b3_data": "2026-05-28",
+        "fechamento_anterior": 175455,
+        "PDH": 177975,
+        "PDL": 175455,
+        "maxima_anterior": 177975,
+        "minima_anterior": 175455,
+        "abertura_anterior": 175990,
+        "range_anterior_pts": 2520,
+        "variacao_anterior_pts": -1335,
+        "variacao_anterior_pct": -0.76,
+        "EQ": 183880,
+        "weekly_high_20d": 192560,
+        "weekly_low_20d": 175200,
+        "suporte_critico": 175200,
+        "resistencia_critica": 176310,
+        "suporte_critico_status": "176.310 ROMPIDO · novo suporte 175.200 · próximo 174.500",
+        "resistencia_critica_status": "Ex-suporte 176.310 virou RESISTÊNCIA · pull-back provável abertura",
+        "buffer_ajuste_suporte_pts": 941,
+        "_nota": "OHLC fonte home broker Cedro. FECHOU NA MÍNIMA 175.455 bearish strong close. EQ 20d = (192.560+175.200)/2."
+      },
+      "ajuste_b3_meta": {
+        "valor": 176141,
+        "data_referencia": "2026-05-28",
+        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_SHORT_OU_LONG",
+        "entry_zona": "SHORT: 176.300-176.800 pull-back · LONG: sweep 175.200 reversal MSS",
+        "stop": "SHORT: 177.400 (−600-1.000 pts) · LONG: 174.800 (−400 pts)",
+        "stop_pts": "SHORT: 600-1000 · LONG: 400",
+        "tp1": "SHORT: 174.500 (+1.800-2.300 · RR 1,8-2,3) · LONG: 176.800 (+1.600 · RR 4,0)",
+        "tp1_rr": "SHORT: 1,8-2,3 · LONG: 4,0",
+        "tp1_partial_pct": 50,
+        "tp2": "SHORT: 173.500 (+2.800-3.300 · RR 2,8-3,3) · LONG: 178.300 (+3.100 · RR 7,75)",
+        "tp2_rr": "SHORT: 2,8-3,3 · LONG: 7,75",
+        "tp2_partial_pct": 30,
+        "tp3": "SHORT: 172.000 (+4.300-4.800 · RR 4,3-4,8) · LONG: 180.000 (+4.800 · RR 12,0)",
+        "tp3_rr": "SHORT: 4,3-4,8 · LONG: 12,0",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "SHORT: 1 contrato (R$ 120-200 risco) · LONG: 1 contrato (R$ 80 risco)",
+        "setup": "Setup A SHORT (65%): gap-up 176.300-800 + rejeição + confluência (1) candle 15min wick >300 pts (2) volume >250k (3) DXY >99,00 (4) PIB ≤+1,0% (5) ES <7.570. Setup B LONG (35% contrarian): sweep 175.200 + reversal + confluência (1) candle 15min MSS bullish >175.600 (2) volume >300k exaustão (3) PIB >+1,3% (4) Brent <$90 (5) DXY <99,00.",
+        "kill_zone": "10:45-11:45 BRT (primeira pós-PIB) · 13:00-14:30 BRT (segunda) · 15:00-16:00 BRT (terceira)",
+        "gatilho": "SHORT: candle 15min <176.200 segunda tentativa · LONG: candle 15min >175.600 pós-sweep volume >300k",
+        "anti_trade": "NÃO operar 08:25-08:45 (primário BC) · 08:55-09:25 (leilão + PIB) · 09:00-10:45 (PIB + digestão) · 17:45-17:55 (leilão)",
+        "cancelamento": "SHORT cancela se PIB >+1,3% + WIN >177.000 volume · LONG cancela se WIN <175.200 sem reação volume <150k"
+      },
+      "comentario_breve": "WIN rompeu 176.310 · Distribuição Fase A · início · 3.5/10 GO_CONDICIONAL · 2 setups (SHORT 65% · LONG 35%) · PIB 09h decide",
+      "_score_breakdown": {
+        "total": 3.5
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B · fragilizada",
+      "score": 3.0,
+      "veredito": "AGUARDAR",
+      "vies": "Lateral com tendência teste 5.000 · DXY cedeu · Brent caiu · setup LONG não ativa",
+      "racional_publico": "WDO 7º pregão >R$ 5,00 · base construída · MAS testou piso 5.025,5 · teste 5.000 provável. Setup LONG #20 NÃO ativou (5.077 sem volume). Acumulação Fase B · fragilizada mantida ENQUANTO 5.000 segurar. Overnight BAIXISTA WDO: Brent -1,74% (alívio inflação reduz pressão USDBRL) · DXY -0,09% · USDBRL -0,40% (5,0223 real recuperou) · fluxo contra LONG. Tailwinds parciais: DI bear shift +6,7 bps F29 (juros sobem · diferencial favorece real ambíguo) · wildcard EUA-PCC/CV (risco bancos · spike USDBRL potencial). Score 3.0/10 AGUARDAR · teste 5.000 cenário base · LONG só DXY >99,50 + PIB <+0,8% · SHORT só sweep 5.000 breakdown. PIB decide: <+0,8% fraco = LONG ressurge · >+1,3% forte = SHORT ativa. Primeira janela 10:45-11:45.",
+      "niveis_chave": {
+        "ajuste_b3": 5032.73,
+        "ajuste_b3_data": "2026-05-28",
+        "fechamento_anterior": 5044.5,
+        "PDH": 5077.0,
+        "PDL": 5025.5,
+        "maxima_anterior": 5077.0,
+        "minima_anterior": 5025.5,
+        "abertura_anterior": 5070.0,
+        "range_anterior_pts": 51.5,
+        "variacao_anterior_pts": -20.0,
+        "variacao_anterior_pct": -0.39,
+        "EQ": 5005.75,
+        "weekly_high_20d": 5101.5,
+        "weekly_low_20d": 4910,
+        "suporte_critico": 5000,
+        "resistencia_critica": 5074,
+        "suporte_critico_status": "7º pregão >5k mas TESTOU 5.025,5 · teste 5.000 provável",
+        "resistencia_critica_status": "Setup LONG #20 5.074 NÃO ativou",
+        "buffer_ajuste_suporte_pts": 32.73,
+        "_nota": "OHLC fonte home broker Cedro. 7º pregão >5k mas teste piso iminente."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5032.73,
+        "data_referencia": "2026-05-28",
+        "fonte": "Home broker Cedro EOD 28/05 · settlement oficial B3"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_LONG_OU_SHORT",
+        "entry_zona": "LONG: 5.074-5.080 re-teste · SHORT: sweep 5.000 breakdown",
+        "stop": "LONG: 5.033 (−41-47 pts) · SHORT: 5.055 (−55 pts)",
+        "stop_pts": "LONG: 41-47 · SHORT: 55",
+        "tp1": "LONG: 5.136 (+56-62 · RR 1,2-1,5) · SHORT: 4.945 (−55 · RR 1,0)",
+        "tp1_rr": "LONG: 1,2-1,5 · SHORT: 1,0",
+        "tp1_partial_pct": 30,
+        "tp2": "LONG: 5.160 (+80-86 · RR 1,7-2,1) · SHORT: 4.900 (−100 · RR 1,8)",
+        "tp2_rr": "LONG: 1,7-2,1 · SHORT: 1,8",
+        "tp2_partial_pct": 40,
+        "tp3": "LONG: 5.200 (+120-126 · RR 2,6-3,1) · SHORT: 4.850 (−150 · RR 2,7)",
+        "tp3_rr": "LONG: 2,6-3,1 · SHORT: 2,7",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "LONG: 6 contratos (R$ 282 risco) · SHORT: 5 contratos (R$ 275 risco)",
+        "setup": "Setup A LONG (40%): 5.074-080 + confluência (1) DXY >99,50 (2) PIB <+0,8% (3) candle 15min >5.078 volume >40k (4) Brent <$90. Setup B SHORT (60%): sweep 5.000 + confluência (1) candle 15min <4.998 (2) volume >50k (3) DXY <99,00 (4) PIB >+1,3%.",
+        "kill_zone": "10:45-11:45 BRT · 13:00-14:30 BRT · 15:00-16:00 BRT",
+        "gatilho": "LONG: candle 15min >5.078 · SHORT: candle 15min <4.998",
+        "anti_trade": "Mesmas janelas WIN",
+        "cancelamento": "LONG cancela se DXY <99,00 · SHORT cancela se DXY >99,60"
+      },
+      "comentario_breve": "WDO testou 5.025 · Acumulação Fase B · fragilizada · 3.0/10 AGUARDAR · teste 5.000 provável · PIB decide",
+      "_score_breakdown": {
+        "total": 3.0
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "08:30",
+      "evento": "Primário setor público (BC)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "+R$ 23,2 bi",
+      "anterior": "-R$ 80,7 bi",
+      "janela_evitar": "08:25-08:45"
+    },
+    {
+      "hora": "09:00",
+      "evento": "PIB BR Q1 (IBGE)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "+1,1% trim vs +0,1% Q4",
+      "anterior": "+0,1%",
+      "janela_evitar": "09:00-10:45"
+    },
+    {
+      "hora": "09:00-09:25",
+      "evento": "Leilão abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25"
+    },
+    {
+      "hora": "10:10",
+      "evento": "Bowman (Fed) Reykjavik",
+      "pais": "EUA",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "10:00-10:45"
+    },
+    {
+      "hora": "16:00",
+      "evento": "Aneel bandeira junho",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "15:55-16:15"
+    },
+    {
+      "hora": "17:45-17:55",
+      "evento": "Leilão fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    }
+  ],
+  "regras_do_dia": [
+    "Stop físico OBRIGATÓRIO · sem exceção",
+    "Risco máximo 1% banca (R$ 30k = R$ 300 máximo)",
+    "Trailing BE após TP1 (50% WIN · 30% WDO)",
+    "Janelas limpas: 10:45-11:45 · 13:00-14:30 · 15:00-16:00 BRT",
+    "ZERO entrada antes PIB 09h digerir (mínimo 10min)",
+    "Setup exige confluência MÍNIMA 4/5 itens · sem confluência sem entrada",
+    "LONG WIN sweep reversal exige volume exaustão >300k",
+    "Cancelamento automático se condição inversa bater ANTES entry"
+  ],
+  "eventos_bertani": [
+    {
+      "tipo": "CAMPANHA_FOUNDING",
+      "titulo": "ÚLTIMO DIA · Founding fecha AMANHÃ sábado 30/05 23h59",
+      "descricao": "ÚLTIMO dia travar fundador · Briefing R$ 97 vitalício vs R$ 147 mensal = R$ 600/ano · Tela Pro R$ 397 vs R$ 697 = R$ 3.600/ano · acesso Lives · comunidade Private",
+      "data": "2026-05-30",
+      "hora": "23:59 BRT",
+      "link": "https://app.renatobertani.com.br",
+      "banner": "banner_2"
+    }
+  ],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "criado_em": "2026-05-28 23:15 BRT",
+    "fase_1_noturna_completa_em": "2026-05-28 23:15 BRT",
+    "fase_2_aguarda": "sexta 29/05 ~07:25 BRT · release oficial CETIP 07:11 + agenda macro cross-check + globais manhã snapshot",
+    "pendentes_fase_2": {},
+    "licoes_aplicadas": [
+      "LIÇÃO 70 paywall",
+      "LIÇÃO 67 zero menção upstream",
+      "LIÇÃO 69 QI 85 zero jargão",
+      "LIÇÃO 21 coerência Wyckoff",
+      "LIÇÃO 54 fase PRONTA grep vazio",
+      "LIÇÃO 50/53 DI CETIP oficial",
+      "LIÇÃO 23 DI sanity OK"
+    ],
+    "fontes": {
+      "ajuste_b3": "Home broker Cedro inputs_pre_briefing_21.md",
+      "OHLC": "Home broker Cedro EOD 28/05",
+      "di_curva": "Release CETIP oficial 07:09 sexta (F27 +4,3 · F28 +5,7 · F29 +6,7 · F31 +5,1 · F33 +4,8)",
+      "globais": "Principais agências internacionais 07:13 BRT + Broadcast Bom Dia Mercado",
+      "agenda": "Release CETIP oficial + inputs_FASE2.md"
+    },
+    "nota_founding": "Briefing #21 ÚLTIMO antes Founding fecha sábado 30/05 23h59 · R$ 600/ano permanente",
+    "nota_critica_win": "WIN fechou NA MÍNIMA 175.455 · ROMPEU 176.310 #20 · overnight CONSTRUTIVO (Brent -1,74% · Caged DOVISH · DXY cedeu) vs estrutura BEARISH · gap-up testar 176.310 ex-suporte provável · reação define dia",
+    "nota_critica_wdo": "WDO testou piso 5.025,50 · setup LONG #20 NÃO ativou formalmente (máxima 5.077 sem volume follow-through) · 7º pregão >5k mas frágil",
+    "fase_2_completa_em": "2026-05-29 08:15 BRT"
+  }
+}
