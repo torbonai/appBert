@@ -9,10 +9,10 @@
   },
   "destaque": {
     "manchete": "WIN rompeu suporte · WDO testa piso R$ 5,00 · PIB BR Q1 hoje decide",
-    "subtitulo": "WIN fechou quinta na mínima 175.455 · rompeu 176.310 do briefing anterior · nova área mais baixa se formando. WDO segura R$ 5,00 pelo 7º dia mas testou 5.025 · próximo teste do piso provável. Petróleo caiu forte (-1,74% pra $90,70 · acordo EUA-Irã ganhando força) · dólar global cedeu (-0,09%) · real recuperou (-0,40%). PIB BR Q1 hoje 09h (projeção +1,1% trimestral · driver doméstico) pode definir direção. Juros futuros BR subiram leve no miolo. Founding fecha amanhã sábado 30/05 23h59."
+    "subtitulo": "WIN no 15min em Acumulação Fase B · range 175.235-179.275 ativo · quinta foi ST mais um no suporte (DENTRO do range · não rompeu estrutural). WDO segura R$ 5,00 pelo 7º dia mas testou 5.025 · próximo teste do piso provável. Petróleo caiu forte (-1,74% pra $90,70 · acordo EUA-Irã ganhando força) · dólar global cedeu · real recuperou. PIB BR Q1 hoje 09h (projeção +1,1% trimestral · driver doméstico) pode definir direção. Juros futuros BR subiram leve no miolo. Founding fecha amanhã sábado 30/05 23h59."
   },
   "resumo_30s": {
-    "win_linha": "MINI ÍNDICE · ajuste 176.141 (qui -0,76%) · O 175.990 / H 177.975 / L 175.455 / C 175.455 · FECHOU NA MÍNIMA · Distribuição Fase A · início · score 3.5/10 · GO_CONDICIONAL · Bearish moderado · rompeu suporte 176.310 · aguarda pull-back ou sweep reversal",
+    "win_linha": "MINI ÍNDICE · ajuste 176.141 (qui -0,76%) · O 175.990 / H 177.975 / L 175.455 / C 175.455 · Acumulação Fase B (15min · range 175.235-179.275 ativo) · ST mais um no suporte · score 3.5/10 · GO_CONDICIONAL · Setup LONG sweep primário 60% · SHORT break <175.000 contrarian 40%",
     "wdo_linha": "MINI DÓLAR · ajuste 5.032,73 (qui -0,39%) · O 5.070 / H 5.077 / L 5.025,5 / C 5.044,5 · 7º pregão >R$ 5,00 · Acumulação Fase B · fragilizada · score 3.0/10 · AGUARDAR · Lateral com tendência teste 5.000 · DXY cedeu · Brent caiu · setup LONG não ativa",
     "janela_operacional": "10:45-11:45 BRT (primeira pós-PIB) · 13:00-14:30 BRT (segunda) · 15:00-16:00 BRT (terceira) · evitar 08:25-08:45 · 08:55-09:25 · 10:00-10:45 · 17:45-17:55",
     "nivel_chave": "WIN 177.975 PDH · 176.141 ajuste · 175.455 PDL · 176.310 ex-suporte virou resistência · 175.200 suporte crítico · WDO 5.077 PDH · 5.032,73 ajuste · 5.025,5 PDL · 5.000 psicológico",
@@ -45,7 +45,7 @@
       "intensidade": "MODERADO_PESADO",
       "narrativa_dominante": "WIN vai cair mais · rompeu 176k suporte · juros BR subiram (bear shift miolo) · Nilton David BC hawkish · WDO vai romper R$ 5,00 · teste 4,95-4,90 inevitável · dólar forte estrutural",
       "fonte_observada": "Broadcast Bom Dia Mercado sexta 29/05 + expectativa pré-PIB BR Q1",
-      "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"WIN vai continuar caindo · juros subiram · BC firme · queda confirmada\". ⚠️ 3 FATOS DE MADRUGADA DESMONTAM essa narrativa: (1) PETRÓLEO CAIU FORTE -1,74% (acordo Irã-EUA avançando · alívio direto na inflação brasileira) · (2) Emprego no Brasil veio 60% ABAIXO do esperado (85,9 mil vagas vs 211 mil projetadas · BC ganha margem pra cortar mais Selic adiante) · (3) Bolsas dos EUA fecharam em RECORDE quinta + dólar global cedeu + real recuperou. ✅ LEITURA BERTANI · DIREÇÃO CRAVADA: gap-up no open testa o suporte rompido 176.310 → rejeição provável → cai de novo · MAS SEM romper 174.500 com força hoje. Viés do dia continua VENDA, porém com alvo MODESTO (não vai pra 173k como o consenso espera). COMPRA contra-tendência só com gatilho muito claro pós-sweep. PIB Brasil 9h é o juiz: acima de +1% trimestral confirma a leitura Bertani (queda menor) · abaixo de +0,8% confirma o consenso pessimista (queda maior).",
+      "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"WIN vai continuar caindo · juros subiram · BC firme · queda confirmada\". ⚠️ 3 FATOS DE MADRUGADA DESMONTAM essa narrativa: (1) PETRÓLEO CAIU FORTE -1,74% (acordo Irã-EUA avançando · alívio direto na inflação brasileira) · (2) Emprego no Brasil veio 60% ABAIXO do esperado (85,9 mil vagas vs 211 mil projetadas · BC ganha margem pra cortar mais Selic adiante) · (3) Bolsas dos EUA fecharam em RECORDE quinta + dólar global cedeu + real recuperou. ✅ LEITURA BERTANI · ESTRUTURA TÉCNICA: WIN no 15min/1H está em ACUMULAÇÃO FASE B (range 175.235-179.275 ativo desde 19/05). Quinta foi mais um teste do suporte 175.235 (não rompeu nada estrutural · o 176.310 era operacional do briefing anterior). Cenário próximo: pode até cair mais um pouco no open testando o suporte real 175.235 · SE segurar lá + reversão forte (Spring Wyckoff) = LONG primário pra topo do range. SE romper 175.000 com volume estrutural · breakdown e SHORT. PIB Brasil 9h é o juiz: acima de +1% trimestral confirma a estrutura de Acumulação e fura a narrativa pessimista · abaixo de +0,8% pressiona pro Spring forçado ou breakdown do range.",
       "frases_consensuais_alertadas": [
         "WIN rompeu 176k · vai cair pra 174k-173k · estrutura bearish confirmada",
         "WDO vai romper R$ 5,00 · teste 4,95 inevitável · dólar forte estrutural",
@@ -62,7 +62,7 @@
         "Dalian +0,45%/+0,53% (Vale 12% Ibov) · demanda estrutural mantém",
         "PCE +0,4% ABAIXO proj +0,5% · Fed não piorou · PIB EUA +1,6% ABAIXO proj"
       ],
-      "leitura_bertani": "Rompimento 176.310 É REAL · WIN transição Distribuição A factual · mas velocidade queda pode ser MENOR que consenso. Overnight CONSTRUTIVO (Brent -1,74% · Caged DOVISH · DXY cedeu · Wall St recordes) contrasta estrutura BEARISH quinta. Cenário provável: gap-up testar 176.310 ex-suporte → reação define. SHORT pull-back 176.300-800 trade direto 65%. LONG sweep 175.455 reversal 35% contrarian. WDO teste 5.000 provável. PIB BR Q1 09h DECIDE: ≥+1,1% = narrativa fraca fura · <+0,8% = confirma. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
+      "leitura_bertani": "WIN no 15min está em ACUMULAÇÃO FASE B clássica · range 175.235-179.275 ativo desde 19/05 · quinta caiu pra 175.455 = ST mais um no suporte (DENTRO do range · NÃO rompeu nada estrutural). O 176.310 do #20 era operacional do dia, não suporte HTF. Cenário Wyckoff próximo: Spring (sweep abaixo 175.235 + reversal forte) → LPS → SOS pra cima. Overnight CONSTRUTIVO (Brent -1,74% · Caged DOVISH · DXY cedeu · Wall St recordes · Dalian sobe) REFORÇA viés Acumulação. Setup LONG sweep + reversal MSS é PRIMÁRIO (60%) · SHORT só com break confirmado <175.000 volume estrutural (40% contrarian). WDO teste 5.000 provável. PIB BR Q1 09h DECIDE: ≥+1,1% trim = Acumulação valida + narrativa pessimista fura · <+0,8% = pressão pra Spring forçado ou breakdown. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
       "contra_evidencias_a_monitorar": [
         "PIB BR Q1 09h · ≥+1,1% = narrativa fraca fura · <+0,8% = confirma",
         "Brent intraday · <$92 EOD = alívio confirmado · >$94 = pressão retorna",
@@ -76,11 +76,11 @@
     {
       "codigo": "WIN1!",
       "nome": "Mini Índice Bovespa",
-      "fase_wyckoff": "Distribuição Fase A · início",
+      "fase_wyckoff": "Acumulação Fase B (15min-1H · range 175.235-179.275 ativo desde 19/05)",
       "score": 3.5,
       "veredito": "GO_CONDICIONAL",
-      "vies": "Bearish moderado · rompeu suporte 176.310 · aguarda pull-back ou sweep reversal",
-      "racional_publico": "WIN fechou quinta NA MÍNIMA 175.455 · strong bearish close · ROMPEU 176.310 #20 · transição Reacumulação B → Distribuição Fase A · início provável. Range descendente 175k-177k · suporte 175.200 · ex-suporte 176.310 virou resistência. Overnight CONSTRUTIVO: Brent -1,74% · Caged 85,9k DOVISH · DXY -0,09% · USDBRL -0,40% · Wall St 3 recordes · Nikkei +2,53% KOSPI +4,13% · Dalian +0,45%/+0,53%. Estrutura BEARISH quinta mantida: fechou mínima · rompeu suporte · DI bear shift +6,7 bps F29. Contraste overnight vs estrutura = gap-up testar 176.310 → reação define. Score 3.5/10 GO_CONDICIONAL · 2 setups: SHORT pull-back 176.300-800 (65%) · LONG sweep 175.455 reversal MSS (35%). PIB BR Q1 09h decide. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
+      "vies": "Lateral em range · ST mais um no suporte estrutural 175.235 · Spring potencial pré-LPS · viés neutro com tilt LONG sweep",
+      "racional_publico": "WIN no 15min/1H está em ACUMULAÇÃO FASE B clássica · range bem definido entre 175.235 (suporte estrutural · linha inferior) e 179.275-180.000 (resistência superior) ativo desde 19/05. Quinta caiu pra 175.455 = ST (Secondary Test) mais um no suporte · DENTRO do range · NÃO rompeu nada estrutural. O 176.310 do briefing #20 era nível operacional do dia, não suporte HTF. Múltiplos STs no suporte 175.235 segurando há ~12 pregões. Cenário Wyckoff próximo: Spring (sweep abaixo 175.235 + reversal forte) → LPS (Last Point of Support) → SOS rompendo 179.275 pra cima. Overnight CONSTRUTIVO (Brent -1,74% · Caged DOVISH · DXY cedeu · Wall St 3 recordes · Dalian +0,45/+0,53%) REFORÇA viés Acumulação. Score 3.5/10 GO_CONDICIONAL · 2 setups: LONG sweep 175.235 + reversal MSS bullish (60% trade primário · Spring Wyckoff clássico) · SHORT só com close 15min <175.000 + volume estrutural (40% contrarian · Spring falha = breakdown range). PIB BR Q1 09h decide. ZERO entrada pré-09h · primeira janela 10:45-11:45.",
       "niveis_chave": {
         "ajuste_b3": 176141,
         "ajuste_b3_data": "2026-05-28",
@@ -96,12 +96,12 @@
         "EQ": 183880,
         "weekly_high_20d": 192560,
         "weekly_low_20d": 175200,
-        "suporte_critico": 175200,
-        "resistencia_critica": 176310,
-        "suporte_critico_status": "176.310 ROMPIDO · novo suporte 175.200 · próximo 174.500",
-        "resistencia_critica_status": "Ex-suporte 176.310 virou RESISTÊNCIA · pull-back provável abertura",
-        "buffer_ajuste_suporte_pts": 941,
-        "_nota": "OHLC fonte home broker Cedro. FECHOU NA MÍNIMA 175.455 bearish strong close. EQ 20d = (192.560+175.200)/2."
+        "suporte_critico": 175235,
+        "resistencia_critica": 179275,
+        "suporte_critico_status": "Suporte estrutural 15min 175.235 · ATIVO · segurou múltiplos STs desde 19/05 · quinta foi ST mais um (mínima 175.455 ficou acima)",
+        "resistencia_critica_status": "Topo do range 179.275-180.000 · Acumulação Fase B · próximo objetivo Wyckoff pós-Spring",
+        "buffer_ajuste_suporte_pts": 906,
+        "_nota": "OHLC fonte home broker Cedro. FECHOU em 175.455 = ST adicional no suporte estrutural 175.235 (DENTRO do range Acum B 15min). 176.310 era operacional do #20, NÃO suporte HTF. Range Wyckoff Acum B ativo 15min/1H. Spring potencial: sweep <175.235 + reversal MSS."
       },
       "ajuste_b3_meta": {
         "valor": 176141,
@@ -109,8 +109,8 @@
         "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-28)"
       },
       "plano": {
-        "direcao": "CONDICIONAL_SHORT_OU_LONG",
-        "entry_zona": "SHORT: 176.300-176.800 pull-back · LONG: sweep 175.200 reversal MSS",
+        "direcao": "CONDICIONAL_LONG_PRIMARIO_OU_SHORT_BREAK_CONFIRMADO",
+        "entry_zona": "LONG (PRIMÁRIO 60%): sweep abaixo 175.235 + reversal MSS bullish (Spring Wyckoff) · SHORT (40% contrarian): close 15min <175.000 + volume estrutural (breakdown range)",
         "stop": "SHORT: 177.400 (−600-1.000 pts) · LONG: 174.800 (−400 pts)",
         "stop_pts": "SHORT: 600-1000 · LONG: 400",
         "tp1": "SHORT: 174.500 (+1.800-2.300 · RR 1,8-2,3) · LONG: 176.800 (+1.600 · RR 4,0)",
@@ -123,13 +123,13 @@
         "tp3_rr": "SHORT: 4,3-4,8 · LONG: 12,0",
         "tp3_partial_pct": 20,
         "contratos_banca_30k_risco_1pct": "SHORT: 1 contrato (R$ 120-200 risco) · LONG: 1 contrato (R$ 80 risco)",
-        "setup": "Setup A SHORT (65%): gap-up 176.300-800 + rejeição + confluência (1) candle 15min wick >300 pts (2) volume >250k (3) DXY >99,00 (4) PIB ≤+1,0% (5) ES <7.570. Setup B LONG (35% contrarian): sweep 175.200 + reversal + confluência (1) candle 15min MSS bullish >175.600 (2) volume >300k exaustão (3) PIB >+1,3% (4) Brent <$90 (5) DXY <99,00.",
+        "setup": "Setup A LONG SWEEP (PRIMÁRIO 60% · Spring Wyckoff Acumulação B): sweep abaixo 175.235 + reversal forte + confluência (1) candle 15min MSS bullish >175.600 (2) volume exaustão >300k no sweep (3) DXY ≤99,00 (4) PIB ≥+1,0% trim (5) Brent ≤$92. Setup B SHORT BREAK (40% contrarian · Spring falha = breakdown range): close 15min <175.000 + volume estrutural >250k + (1) DXY >99,50 (2) PIB <+0,8% (3) Brent >$94 (4) ES <7.550 (5) Vale <-1%.",
         "kill_zone": "10:45-11:45 BRT (primeira pós-PIB) · 13:00-14:30 BRT (segunda) · 15:00-16:00 BRT (terceira)",
-        "gatilho": "SHORT: candle 15min <176.200 segunda tentativa · LONG: candle 15min >175.600 pós-sweep volume >300k",
+        "gatilho": "LONG: candle 15min >175.600 pós-sweep volume >300k (Spring confirmado) · SHORT: close 15min <175.000 volume estrutural >250k (breakdown range)",
         "anti_trade": "NÃO operar 08:25-08:45 (primário BC) · 08:55-09:25 (leilão + PIB) · 09:00-10:45 (PIB + digestão) · 17:45-17:55 (leilão)",
-        "cancelamento": "SHORT cancela se PIB >+1,3% + WIN >177.000 volume · LONG cancela se WIN <175.200 sem reação volume <150k"
+        "cancelamento": "LONG cancela se sweep 175.235 sem reação · volume <200k · OU PIB <+0,8% · SHORT cancela se PIB >+1,3% + WIN segura >175.600 com volume"
       },
-      "comentario_breve": "WIN rompeu 176.310 · Distribuição Fase A · início · 3.5/10 GO_CONDICIONAL · 2 setups (SHORT 65% · LONG 35%) · PIB 09h decide",
+      "comentario_breve": "WIN em Acumulação Fase B (15min · range 175.235-179.275 ativo) · ST mais um no suporte · 3.5/10 GO_CONDICIONAL · 2 setups (LONG sweep 60% primário · SHORT break 40% contrarian) · PIB 09h decide",
       "_score_breakdown": {
         "total": 3.5
       }
