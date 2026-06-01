@@ -1,0 +1,254 @@
+{
+  "_meta": {
+    "version": "1.0",
+    "criado_em": "2026-05-30",
+    "fonte": "Estimativas baseadas em calendário canônico EUA · validar com Investing.com / ForexFactory antes de cada release",
+    "fuso": "Horários em BRT (GMT-3) considerando horário verão EUA (março-novembro)",
+    "schema": {
+      "data": "YYYY-MM-DD",
+      "hora_brt": "HH:MM",
+      "evento": "Nome do indicador",
+      "tipo": "MACRO | FED | EARNINGS | PMI | EMPLOYMENT",
+      "impacto": "ALTO | MEDIO | BAIXO",
+      "projecao": "string (proj de mercado · pode ser vazia)",
+      "anterior": "string (release anterior · pode ser vazia)",
+      "janela_evitar": "HH:MM-HH:MM (janela kill zone antes/depois)",
+      "ativo_principal": "NQ1! / SP500 / outro · indica qual sente mais"
+    },
+    "notas": [
+      "NFP: sempre primeira sexta-feira do mês · 09:30 BRT (verão) / 10:30 BRT (inverno)",
+      "FOMC: ~8x/ano · datas oficiais Fed · 15:00 BRT decisão + 15:30 BRT Powell coletiva",
+      "CPI: ~10º-15º dia útil do mês seguinte (ex: CPI de maio sai junho) · 09:30 BRT",
+      "PCE: ~último dia útil do mês seguinte · 09:30 BRT (preferido do Fed)",
+      "GDP: trimestral · primeira leitura ~mês 1 do trimestre seguinte · 09:30 BRT"
+    ]
+  },
+  "eventos": [
+    {
+      "data": "2026-06-04",
+      "hora_brt": "09:30",
+      "evento": "Initial Jobless Claims (semanal)",
+      "tipo": "EMPLOYMENT",
+      "impacto": "MEDIO",
+      "projecao": "215k",
+      "anterior": "220k",
+      "janela_evitar": "09:25-09:45",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-06-06",
+      "hora_brt": "09:30",
+      "evento": "NFP (Non-Farm Payrolls) Maio",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "180k",
+      "anterior": "175k",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!",
+      "_nota": "★★★ MARKET MOVER · primeira sexta do mês"
+    },
+    {
+      "data": "2026-06-06",
+      "hora_brt": "09:30",
+      "evento": "Unemployment Rate Maio",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "3.9%",
+      "anterior": "3.9%",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-06-06",
+      "hora_brt": "09:30",
+      "evento": "Average Hourly Earnings YoY Maio",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "4.0%",
+      "anterior": "3.9%",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!",
+      "_nota": "Salário sobe forte = hawkish · derruba NQ"
+    },
+    {
+      "data": "2026-06-11",
+      "hora_brt": "09:30",
+      "evento": "CPI (Consumer Price Index) Maio",
+      "tipo": "MACRO",
+      "impacto": "ALTO",
+      "projecao": "3.3% YoY",
+      "anterior": "3.4% YoY",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!",
+      "_nota": "★★★ MARKET MOVER · inflação"
+    },
+    {
+      "data": "2026-06-11",
+      "hora_brt": "09:30",
+      "evento": "Core CPI Maio",
+      "tipo": "MACRO",
+      "impacto": "ALTO",
+      "projecao": "3.6% YoY",
+      "anterior": "3.6% YoY",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-06-12",
+      "hora_brt": "15:00",
+      "evento": "FOMC Statement (Decisão Fed)",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "Manter taxa em 5.25-5.50%",
+      "anterior": "5.25-5.50%",
+      "janela_evitar": "14:55-16:00",
+      "ativo_principal": "NQ1!",
+      "_nota": "★★★★ MOVIMENTO ESPETACULAR · NQ pode oscilar 200-400 pts"
+    },
+    {
+      "data": "2026-06-12",
+      "hora_brt": "15:30",
+      "evento": "Powell Press Conference",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "15:30-16:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-06-13",
+      "hora_brt": "09:30",
+      "evento": "Retail Sales Maio",
+      "tipo": "MACRO",
+      "impacto": "MEDIO",
+      "projecao": "0.3% MoM",
+      "anterior": "0.0% MoM",
+      "janela_evitar": "09:25-10:00",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-06-27",
+      "hora_brt": "09:30",
+      "evento": "Core PCE Maio",
+      "tipo": "MACRO",
+      "impacto": "ALTO",
+      "projecao": "2.7% YoY",
+      "anterior": "2.8% YoY",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!",
+      "_nota": "★★★ inflação preferida do Fed"
+    },
+    {
+      "data": "2026-07-03",
+      "hora_brt": "09:30",
+      "evento": "NFP Junho",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-07-10",
+      "hora_brt": "09:30",
+      "evento": "CPI Junho",
+      "tipo": "MACRO",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-07-30",
+      "hora_brt": "15:00",
+      "evento": "FOMC Statement",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "14:55-16:00",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-08-07",
+      "hora_brt": "09:30",
+      "evento": "NFP Julho",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-08-13",
+      "hora_brt": "09:30",
+      "evento": "CPI Julho",
+      "tipo": "MACRO",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-09-04",
+      "hora_brt": "09:30",
+      "evento": "NFP Agosto",
+      "tipo": "EMPLOYMENT",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-10:30",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-09-17",
+      "hora_brt": "15:00",
+      "evento": "FOMC Statement",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "14:55-16:00",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-11-05",
+      "hora_brt": "15:00",
+      "evento": "FOMC Statement",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "14:55-16:00",
+      "ativo_principal": "NQ1!"
+    },
+    {
+      "data": "2026-12-17",
+      "hora_brt": "15:00",
+      "evento": "FOMC Statement (última do ano)",
+      "tipo": "FED",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "14:55-16:00",
+      "ativo_principal": "NQ1!"
+    }
+  ],
+  "earnings_relevantes": {
+    "_nota": "Earnings dos MAG7 movem NQ fortemente · publicar after hours geralmente · checar próximo de cada release",
+    "q2_2026": [
+      {"ticker": "NVDA", "data_estimada": "2026-08-21", "hora_brt": "17:00 (after hours)"},
+      {"ticker": "AAPL", "data_estimada": "2026-07-31", "hora_brt": "17:30 (after hours)"},
+      {"ticker": "MSFT", "data_estimada": "2026-07-23", "hora_brt": "17:30 (after hours)"},
+      {"ticker": "GOOG", "data_estimada": "2026-07-23", "hora_brt": "17:00 (after hours)"},
+      {"ticker": "AMZN", "data_estimada": "2026-07-31", "hora_brt": "17:00 (after hours)"},
+      {"ticker": "META", "data_estimada": "2026-07-30", "hora_brt": "17:00 (after hours)"},
+      {"ticker": "TSLA", "data_estimada": "2026-07-23", "hora_brt": "17:00 (after hours)"}
+    ]
+  }
+}

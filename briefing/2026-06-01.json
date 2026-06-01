@@ -1,0 +1,427 @@
+{
+  "data": "2026-06-01",
+  "data_extenso": "Segunda-feira, 1 de junho de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 22,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "WIN fechou abaixo do piso · WDO firme · juros curtos sobem leve · ISM define",
+    "subtitulo": "WIN quebrou 175.235 sexta e fechou 174.725 sem reconquista · estrutura Acumulação B ameaçada · Spring×breakdown resolve com abertura segunda + volume. WDO 8º pregão >5k · FLAT dia (−0,06%) · juros BR curtos/miolo +3,7/+8,6 bps (longa cede) + DXY subiu leve overnight suportam firme. Globais: US500 +0,33% · NAS +0,35% · ouro −0,90% · Brent +3,09% (reescalada). Agenda pesada: PMI US 10:45 ★★★ + ISM Manufatura 11:00 ★★★ definem tom · janela 10:30-11:30 contaminada."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste 175.171 (sex −0,42%) · O 176.065 / H 176.315 / L 173.690 / C 174.725 · breakdown preliminar · fechou ABAIXO piso 175.235 (−510 pts) · score 2.5/10 · AGUARDAR · SHORT 40% se rejeição confirma · LONG 20% só Spring reconquista 175.235+ volume >250k",
+    "wdo_linha": "MINI DÓLAR · ajuste 5.078,50 (sex FLAT −0,06%) · O 5.073,5 / H 5.107,5 / L 5.066,5 / C 5.075,50 · 8º pregão >5k · base firme · score 4.5/10 · AGUARDAR · LONG 60% se ISM <48,5 · DI bear + DXY suportam · SHORT 20% só breakdown <5.000",
+    "janela_operacional": "11:30-13:00 BRT (pós-digestão ISM ★★★) · 13:30-15:00 BRT (NY open + follow-through) · 15:30-16:30 BRT (terceira) · evitar 09:00-09:25 · 09:25-10:00 · 10:00-11:30 · 17:45-17:55",
+    "nivel_chave": "WIN 176.315 PDH · 175.235 piso (quebrado) · 174.725 fechamento · 173.690 PDL · 175.500 resistência crítica · WDO 5.107,5 PDH · 5.078,50 ajuste · 5.066,5 PDL · 5.000 piso psicológico · 5.100 resistência operacional",
+    "agenda_top1": "US PMI Industrial 10:45 ★★★ + ISM Manufatura 11:00 ★★★ (kill zone contaminada 10:30-11:30 · primeira entrada 11:30+)"
+  },
+  "kill_zones_recomendadas": [
+    "11:30-13:00 BRT · primeira janela limpa pós-digestão ISM Manufatura 11:00 ★★★ · setup primário ambos ativos",
+    "13:30-15:00 BRT · NY Open + follow-through pós-ISM · segunda janela operacional",
+    "15:30-16:30 BRT · terceira janela · menor probabilidade · só com setup óbvio confirmado"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "VENTO_FORTE",
+    "highlights": [
+      "📌 Briefing #22 FASE 1 noturna (domingo 31/05/2026 ~22h BRT · preliminar pra segunda 01/06 · 1º briefing de junho · 1º pós-fechamento Founding)",
+      "📊 WIN ajuste B3 sexta 29/05: 175.171 · OHLC O 176.065 / H 176.315 / L 173.690 / C 174.725 · var dia −730 pts / −0,42% · range 2.625 pts · LOW 173.690 varreu ABAIXO do piso 175.235 e FECHOU 174.725 AINDA ABAIXO do piso · sweep profundo com repique sem reconquista",
+      "💵 WDO ajuste B3 sexta 29/05: 5.078,50 · OHLC O 5.073,5 / H 5.107,5 / L 5.066,5 / C 5.075,50 · var REAL do dia −3,00 pts / −0,06% (FLAT) · 8º pregão acima de R$ 5,00 · atenção: salto de nível vs quinta é em parte ROLAGEM de contrato, não fluxo comprador",
+      "💵 Juros futuros BR · fechamento oficial CETIP sexta 29/05 (ajuste vs ajuste ant.): bear flattening/twist · curtas e miolo sobem moderado (Jan/27 +3,7 · Jan/28 +8,6 · Jan/29 +5,5 bps) e ponta longa CEDE (Jan/31 −1,0 · Jan/33 −2,7 bps) · curtas consolidando ~14% (ciclo de corte mais curto pós-PIB 1T forte) · longa caindo descarta prêmio fiscal explodindo",
+      "✅ CONFLITO DI×DXY RESOLVIDO: front/miolo DI bear leve (+3,7/+8,6 bps · longa cede) desfavorece WIN levemente / suporta WDO no curto + DXY subiu +0,11% overnight (99,034) também suporta WDO = CONVERGÊNCIA · cenário levemente BEARISH WIN / NEUTRO-FIRME WDO",
+      "🌍 Globais overnight domingo→segunda 01/06 ~07:30 BRT: DXY 99,034 (+0,11% · subiu leve) · USDJPY 159,462 (+0,12%) · US500 7.606 (+0,33% · construtivo) · NAS 30.448 (+0,35%) · Ouro 4.501 (−0,90% · cedeu)",
+      "🛢 Petróleo overnight: Brent +3,09% (93,94 vs 91,12 sexta) reagindo à reescalada Israel-Irã/Líbano no fim de semana sem acordo US-Irã · prêmio geopolítico voltando · risco de reaceleração inflação = tensão macro do dia",
+      "🇧🇷 Herança #21 (sexta 29/05): WIN GO_CONDICIONAL 3,5 (lateral range 175.235-179.275 Acum B 15min · tilt long sweep no suporte) · WDO AGUARDAR 3,0 (testando piso 5.000) · resultado: WIN varreu low 173.690 sem reconquista · WDO flat ZERO entrada",
+      "📊 Founding Member FECHOU sábado 30/05 23h59 — #22 volta ao modelo padrão · CTA: app pago mensal R$ 147 disponível em app.renatobertani.com.br",
+      "🎯 Score baixo WIN 2,5/10 + WDO 4,5/10 = dia de paciência · aguardar ISM 11:00 definir · estruturas técnicas comprometidas sexta mas Spring/Long ainda possíveis com gatilhos específicos"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "MODERADO",
+      "narrativa_dominante": "WIN vai cair mais · quebrou 175k · juros BR subiram · BC hawkish · estrutura bearish confirmada · teste 173k-172k inevitável · WDO vai romper 5k · dólar forte estrutural com manufatura US forte",
+      "fonte_observada": "Broadcast Bom Dia Mercado segunda 01/06 + expectativa pré-ISM Manufatura",
+      "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"WIN confirmou breakdown · quebrou 175k sexta · juros BR curtos subiram · BC vai manter Selic alta · queda pra 173k-172k é questão de tempo · WDO vai romper R$ 5,00 com manufatura US forte\". ⚠️ 3 FATOS DESMONTAM essa narrativa linear: (1) WIN fechou 174.725 mas SWEEP 173.690 foi com REPIQUE · Spring Wyckoff ainda possível se reconquista 175.235 com volume >250k (manufatura US FRACA <48,5 vira tese dovish Fed) · (2) WDO mantém 8º pregão >5k · juros BR curtos/miolo bear leve (+3,7/+8,6 bps · longa CEDE −1/−2,7) NA VERDADE suporta WDO no curto (diferencial USDBRL favorece carry real) · breakdown <5k exigiria ISM >51,5 + DXY >99,50 simultaneamente (improvável) · (3) Equities US +0,33%/+0,35% overnight + ouro −0,90% = risk-on moderado · MAS Brent +3,09% na reescalada é o contraponto: prêmio do petróleo pode ter sido desmontado cedo demais. ✅ LEITURA BERTANI · ESTRUTURA TÉCNICA: WIN breakdown preliminar mas Spring ainda vivo (20% probabilidade com reconquista + ISM fraco). WDO base firme >5k · tailwinds convergentes (DI bear + DXY leve alta). Cenário próximo: ISM Manufatura 11:00 é juiz · <48,5 = dovish Fed reabre Spring WIN + confirma LONG WDO · >50,5 = risk-off confirma breakdown WIN.",
+      "frases_consensuais_alertadas": [
+        "WIN quebrou 175k · vai cair pra 173k-172k · breakdown confirmado",
+        "Juros BR subiram = BC hawkish irreversível · Selic 13,50% mínimo",
+        "WDO vai romper 5k · dólar forte estrutural · teste 4,95-4,90 inevitável",
+        "Manufatura US forte = Fed hawkish · WIN/WDO sofrem risk-off",
+        "WIN fechou na mínima sexta · tendência bearish clara"
+      ],
+      "contra_evidencias": [
+        "WIN sweep 173.690 teve REPIQUE (não foi breakdown limpo) · Spring Wyckoff ainda possível com reconquista 175.235",
+        "WDO 8º pregão >5k · base FIRME · breakdown <5k exige ISM >51,5 + DXY >99,50 (improvável)",
+        "Juros BR curtos/miolo bear leve (+3,7/+8,6 bps · longa CEDE −1/−2,7) NA VERDADE suporta WDO no curto (diferencial USDBRL favorece carry real · não pressiona)",
+        "Equities US +0,33%/+0,35% overnight · Ouro −0,90% = risk-on moderado formando (contradiz narrativa risk-off)",
+        "DXY subiu apenas +0,11% overnight (99,034 · leve alta · não explosão estrutural)",
+        "Brent reverteu +3,09% (93,94 vs 91,12 sexta) na reescalada Israel-Irã — prêmio do petróleo pode ter sido desmontado cedo demais · RISCO de reaceleração inflação (monitorar · não é alívio)",
+        "ISM Manufatura consenso 50,0 · se vier <48,5 FRACO = dovish Fed reabre Spring WIN + confirma LONG WDO"
+      ],
+      "leitura_bertani": "WIN breakdown preliminar (fechou 174.725 abaixo piso 175.235) mas sweep 173.690 teve repique · Spring Wyckoff ainda vivo (20%) se reconquista 175.235+ com volume >250k + ISM <48,5 (fraco manufatura US). Setup SHORT breakdown 40% primário se rejeição confirma. WDO base firme 8º pregão >5k · tailwinds juros BR curtos/miolo bear leve +3,7/+8,6 bps (diferencial favorece real · longa cede) + DXY +0,11% (ambos suportam firmeza). Setup LONG 60% primário se ISM <48,5 + DXY <99,00. ZERO entrada pré-11:30 · aguardar digestão ISM. Narrativa consensual \"WIN/WDO vão cair\" ignora: (1) Spring WIN ainda vivo (2) DI bear SUPORTA WDO não pressiona (3) risk-on moderado overnight.",
+      "contra_evidencias_a_monitorar": [
+        "ISM Manufatura 11:00 · <48,5 fraco = narrativa bearish fura · >50,5 forte = confirma",
+        "WIN abertura segunda · reconquista 175.235 volume >250k = Spring reabre · rejeição <174.900 = breakdown confirma",
+        "WDO · segura >5.080 pós-ISM volume firme = LONG ativa · break <5.000 volume >50k = SHORT (improvável)",
+        "DXY EOD segunda · <99,00 = suporta WDO LONG · >99,50 = pressiona breakdown",
+        "DI EOD segunda · miolo mantém/amplia bear (>+5 bps adicional) = pressão WIN continua · estabiliza ou cede = alívio reabre Spring"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear flattening / twist · fechamento oficial CETIP 29/05: curtas e miolo sobem moderado (Jan/27 +3,7 · Jan/28 +8,6 · Jan/29 +5,5 bps) e ponta longa CEDE (Jan/31 −1,0 · Jan/33 −2,7 bps) · curtas consolidando ~14% precificando ciclo de corte mais curto pós-PIB 1T forte · longa caindo não valida prêmio fiscal explodindo",
+      "vertices_bps": {
+        "1y": 3.7,
+        "2y": 8.6,
+        "3y": 5.5,
+        "5y": -1,
+        "10y": -2.7
+      },
+      "yields_eod": {
+        "1y": 14.09,
+        "2y": 13.91,
+        "3y": 13.86,
+        "5y": 13.885,
+        "10y": 13.965
+      },
+      "fonte": "Fechamento oficial CETIP 29/05 (Broadcast/Bom Dia Mercado · ajuste vs ajuste anterior) · vértices DI1 Jan/27·Jan/28·Jan/29·Jan/31·Jan/33",
+      "implicacao": "front/miolo bear leve = levemente contra-WIN / pró-WDO no curto, porém bem mais brando que +10/+11 · longa cedendo descarta tese de prêmio fiscal explodindo"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Acumulação Fase B AMEAÇADA (range 175.235-179.275 do #21 quebrado) · sexta varreu 173.690 e fechou 174.725 abaixo do piso · breakdown preliminar · Spring só com reconquista 175.235+ e volume >250k",
+      "score": 2.5,
+      "veredito": "AGUARDAR",
+      "vies": "Breakdown preliminar · aguardar ISM 11:00 + abertura segunda · reconquista 175.235 reabre Spring long · sem reconquista confirma short breakdown",
+      "racional_publico": "WIN quebrou o piso 175.235 do range Acumulação B na sexta: LOW 173.690 varreu −1.545 pts abaixo e fechou 174.725 (−510 pts abaixo do piso) sem reconquista. Estrutura 15min/1H comprometida. Juros BR curtos/miolo subiram leve (+3,7/+8,6 bps · longa cede) + DXY subiu leve overnight reforçam viés bearish brando. Cenário base: breakdown em curso · próximo suporte 173.690 (low sexta) e depois 172.000 estrutural. Cenário alternativo (20%): Spring falso se abertura segunda reconquistar 175.235 com volume >250k + ISM <48,5 (fraco manufatura) gera reversão long. Score 2,5/10 AGUARDAR: estrutura rompida + juros contra + agenda pesada (PMI 10:45 ★★★ · ISM 11:00 ★★★). NÃO operar pré-11:30 · aguardar digestão dos dados.",
+      "niveis_chave": {
+        "ajuste_b3": 175171,
+        "ajuste_b3_data": "2026-05-29",
+        "fechamento_anterior": 174725,
+        "PDH": 176315,
+        "PDL": 173690,
+        "maxima_anterior": 176315,
+        "minima_anterior": 173690,
+        "abertura_anterior": 176065,
+        "range_anterior_pts": 2625,
+        "variacao_anterior_pts": -730,
+        "variacao_anterior_pct": -0.42,
+        "EQ": 177250,
+        "weekly_high_20d": 179275,
+        "weekly_low_20d": 173690,
+        "suporte_critico": 175235,
+        "suporte_critico_status": "Piso do range Acum B 175.235 · sexta fechou 174.725 ABAIXO (−510 pts) · próximo estrutural 174.500 / 173.690 (low sexta)",
+        "resistencia_critica": 176310,
+        "resistencia_critica_status": "176.310 (suporte rompido do #20) é resistência · reconquista de 175.235+ com volume reabre tese de Spring/range",
+        "buffer_ajuste_suporte_pts": 64,
+        "_nota": "OHLC fonte print home broker Cedro oficial sexta 29/05 (LIÇÃO 61/62). Ajuste B3 175.171; fechamento 174.725 (LIÇÃO 61: fechamento != ajuste). LOW 173.690 varreu abaixo do piso 175.235 e fechou ainda abaixo = sem reconquista. var dia −730/−0,42%."
+      },
+      "ajuste_b3_meta": {
+        "valor": 175171,
+        "data_referencia": "2026-05-29",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-05-29)"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_SHORT_BREAKDOWN_40PCT_OU_LONG_SPRING_20PCT",
+        "entry_zona": "SHORT (40% primário): rejeição 174.900-175.235 com volume <200k (breakdown confirma) · LONG (20% contrarian): reconquista 175.500+ com volume >250k (Spring)",
+        "stop": "SHORT: 175.500 (265 pts acima entry 175.235) · LONG: 174.500 (1.000 pts abaixo entry 175.500)",
+        "stop_pts": "SHORT: 265 pts · LONG: 1.000 pts",
+        "tp1": "SHORT: 173.690 (−1.545 pts · RR 1:5,8) · LONG: 177.000 (+1.500 pts · RR 1:1,5)",
+        "tp1_rr": "SHORT: 5,8R · LONG: 1,5R",
+        "tp1_partial_pct": 50,
+        "tp2": "SHORT: 172.500 (−2.735 pts · RR 1:10,3) · LONG: 178.500 (+3.000 pts · RR 1:3,0)",
+        "tp2_rr": "SHORT: 10,3R · LONG: 3,0R",
+        "tp2_partial_pct": 30,
+        "tp3": "SHORT: 171.000 (−4.235 pts · RR 1:16,0) · LONG: 179.275 (+3.775 pts · RR 1:3,8)",
+        "tp3_rr": "SHORT: 16,0R · LONG: 3,8R",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "SHORT: 5 contratos (R$ 265 risco) · LONG: 1 contrato (R$ 200 risco)",
+        "setup": "Setup A SHORT BREAKDOWN (40% primário · breakdown confirma): rejeição 174.900-175.235 com volume <200k + (1) ISM >50,5 (manufatura forte pressiona risk-off) (2) DXY >99,20 (3) candle 15min <174.900 (4) ES <7.580 (5) DI mantém >+8 bps. Setup B LONG SPRING (20% contrarian · Spring falso): reconquista 175.500+ com volume >250k + (1) ISM <48,5 (fraco gera dovish Fed) (2) DXY <98,80 (3) candle 15min >175.600 MSS bullish (4) ES >7.620 (5) ouro >4.520.",
+        "kill_zone": "11:30-13:00 BRT (pós-digestão ISM) · 13:30-15:00 BRT (NY open + follow-through) · 15:30-16:30 BRT (terceira janela)",
+        "gatilho": "SHORT: candle 15min <174.900 volume <200k pós-ISM · LONG: candle 15min >175.600 volume >250k + MSS bullish",
+        "anti_trade": "NÃO operar 09:00-09:25 (leilão) · 09:25-10:00 (Waller Fed) · 10:00-11:30 (PMI BR + PMI/ISM US ★★★ digestão) · 17:45-17:55 (leilão)",
+        "cancelamento": "SHORT cancela se reconquista 175.500 com volume >250k · LONG cancela se rompe 174.500 breakdown confirmado"
+      },
+      "comentario_breve": "WIN breakdown preliminar · fechou 174.725 abaixo piso 175.235 · 2,5/10 AGUARDAR · SHORT 40% se rejeição confirma · LONG 20% só Spring com reconquista + volume",
+      "_score_breakdown": {
+        "total": 2.5,
+        "wyckoff_fase": -1,
+        "sweep_liquidity": 0.5,
+        "mss_confirmado": 0,
+        "volume": 0,
+        "confluencia_htf": 0.5,
+        "di_alinhada": -1,
+        "dxy_direcional": -0.5,
+        "kill_zone": 0,
+        "anti_narrativa_inativa": 0,
+        "evento_alto_impacto": -1,
+        "divergencia_4h_1h": -0.5,
+        "fechou_abaixo_piso": -1.5,
+        "nota": "Breakdown preliminar · estrutura comprometida · aguardar ISM"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B (15min) consolidada · 8º pregão >R$ 5,00 · base firme construída · tailwinds: juros BR curtos/miolo +3,7/+8,6 bps (diferencial favorece real · longa cede) + DXY subiu leve +0,11% (ambíguo mas não desmancha) · teto leve de Brent +3% (BRL-positivo marginal)",
+      "score": 4.5,
+      "veredito": "AGUARDAR",
+      "vies": "Lateral firme >5.000 · DI bear + DXY leve alta = suportam firmeza · aguardar ISM 11:00 + PMI definir entrada · setup LONG se dados fracos US (<48,5 ISM) · SHORT só breakdown <5.000 volume estrutural",
+      "racional_publico": "WDO mantém 8º pregão consecutivo >R$ 5,00 · sexta FLAT −3,00 pts / −0,06% (fechamento 5.075,50 · ajuste 5.078,50). Base construída. Tailwinds convergentes: (1) juros BR curtos/miolo +3,7/+8,6 bps sexta (diferencial USDBRL favorece carry real · longa cede −1/−2,7) + (2) DXY subiu leve +0,11% overnight 99,034 (ambíguo mas não pressiona breakdown). Overnight construtivo: equities US +0,33%/+0,35% · ouro −0,90% (risk-on moderado) · Brent +3,09% dá teto leve (BRL-positivo marginal). Estrutura 15min Acumulação B consolidada · piso 5.000 seguro (+66,5 pts margem). Score 4,5/10 AGUARDAR: estrutura OK mas agenda pesada (ISM Manufatura 11:00 ★★★) define tom. Setup LONG preferencial se ISM <48,5 (fraco) + DXY <99,00 gera entrada 5.080-5.100 pós-digestão. SHORT só se break <5.000 volume estrutural (improvável dado tailwinds).",
+      "niveis_chave": {
+        "ajuste_b3": 5078.5,
+        "ajuste_b3_data": "2026-05-29",
+        "fechamento_anterior": 5075.5,
+        "PDH": 5107.5,
+        "PDL": 5066.5,
+        "maxima_anterior": 5107.5,
+        "minima_anterior": 5066.5,
+        "abertura_anterior": 5073.5,
+        "range_anterior_pts": 41,
+        "variacao_anterior_pts": -3,
+        "variacao_anterior_pct": -0.06,
+        "variacao_ajuste_aparente_pts": 45.77,
+        "EQ": 5100,
+        "weekly_high_20d": 5107.5,
+        "weekly_low_20d": 5000,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "Piso psicológico R$ 5,00 · LOW sexta 5.066,5 (+66,5 acima) · mantém distância",
+        "resistencia_critica": 5074,
+        "resistencia_critica_status": "5.074 resistência #20/#21 · HIGH sexta 5.107,5 superou, mas parte do nível é rolagem de contrato (não fluxo comprador) · validar follow-through",
+        "buffer_ajuste_suporte_pts": 78.5,
+        "_nota": "OHLC fonte print home broker Cedro oficial sexta 29/05 (LIÇÃO 61/62). Ajuste B3 5.078,50; fechamento 5.075,50 (LIÇÃO 61: fechamento != ajuste). Variação REAL do dia −3,00 pts / −0,06% FLAT (close 5.075,50 vs close D-1). O +45,77 pts aparente no ajuste é ROLAGEM de contrato (WDO1! para o novo vencimento), não compra real."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5078.5,
+        "data_referencia": "2026-05-29",
+        "fonte": "Home broker Cedro EOD 29/05 · settlement oficial B3"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_LONG_60PCT_OU_SHORT_BREAK_20PCT",
+        "entry_zona": "LONG (60% primário): 5.080-5.100 re-teste pós-ISM se ISM <48,5 + DXY <99,00 · SHORT (20% contrarian): breakdown <4.995 volume >50k",
+        "stop": "LONG: 5.040 (60 pts abaixo entry 5.100) · SHORT: 5.040 (45 pts acima entry 4.995)",
+        "stop_pts": "LONG: 60 pts · SHORT: 45 pts",
+        "tp1": "LONG: 5.190 (+90 pts · RR 1:1,5) · SHORT: 4.925 (−70 pts · RR 1:1,55)",
+        "tp1_rr": "LONG: 1,5R · SHORT: 1,55R",
+        "tp1_partial_pct": 30,
+        "tp2": "LONG: 5.250 (+150 pts · RR 1:2,5) · SHORT: 4.860 (−135 pts · RR 1:3,0)",
+        "tp2_rr": "LONG: 2,5R · SHORT: 3,0R",
+        "tp2_partial_pct": 40,
+        "tp3": "LONG: 5.310 (+210 pts · RR 1:3,5) · SHORT: 4.815 (−180 pts · RR 1:4,0)",
+        "tp3_rr": "LONG: 3,5R · SHORT: 4,0R",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "LONG: 5 contratos (R$ 300 risco) · SHORT: 6 contratos (R$ 270 risco)",
+        "setup": "Setup A LONG (60% primário · tailwinds DI bear + DXY): 5.080-5.100 re-teste + (1) ISM <48,5 (fraco manufatura US = dovish Fed) (2) DXY <99,00 (3) candle 15min >5.100 volume >40k (4) ES >7.600 (5) WTI <90,00 (alívio petróleo). Setup B SHORT (20% contrarian · breakdown piso): <4.995 + (1) volume >50k estrutural (2) DXY >99,50 (3) ISM >51,5 (forte = hawkish Fed) (4) ES <7.550 (5) DI EOD segunda >+5 bps adicional.",
+        "kill_zone": "11:30-13:00 BRT (pós-ISM) · 13:30-15:00 BRT (NY open) · 15:30-16:30 BRT (terceira)",
+        "gatilho": "LONG: candle 15min >5.100 volume >40k pós-ISM <48,5 · SHORT: candle 15min <4.995 volume >50k",
+        "anti_trade": "Mesmas janelas WIN · NÃO operar pré-11:30",
+        "cancelamento": "LONG cancela se DXY >99,50 ou ISM >50,5 · SHORT cancela se segura >5.020 com volume fraco"
+      },
+      "comentario_breve": "WDO 8º pregão >5k · base firme · 4,5/10 AGUARDAR · LONG 60% se ISM fraco <48,5 · DI bear + DXY suportam · SHORT 20% só breakdown <5.000",
+      "_score_breakdown": {
+        "total": 4.5,
+        "wyckoff_fase": 1.5,
+        "base_8d_acima_5k": 1,
+        "di_alinhada": 1,
+        "dxy_ambiguo": 0,
+        "confluencia_htf": 0.5,
+        "kill_zone": 0,
+        "evento_alto_impacto": -1,
+        "flat_dia_anterior": 0.5,
+        "ouro_cedeu": 0.5,
+        "equities_us_positivos": 0.5,
+        "nota": "Firme · aguardar ISM definir entrada"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "05:00",
+      "evento": "PMI Industrial Mai (Zona Euro)",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "51,4",
+      "anterior": "51,4",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "06:00",
+      "evento": "Taxa de Desemprego Abr (Zona Euro)",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "6,2%",
+      "anterior": "6,2%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "08:25",
+      "evento": "Boletim Focus BCB",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25"
+    },
+    {
+      "hora": "09:30",
+      "evento": "Discurso de Waller (Fed)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:25-09:45"
+    },
+    {
+      "hora": "10:00",
+      "evento": "PMI Industrial S&P Global Mai",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "52,6",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "10:45",
+      "evento": "PMI Industrial Mai (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "55,3",
+      "anterior": "55,3",
+      "janela_evitar": "10:40-11:00"
+    },
+    {
+      "hora": "11:00",
+      "evento": "ISM Manufatura Mai (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "53,3",
+      "anterior": "52,7",
+      "janela_evitar": "10:55-11:30"
+    },
+    {
+      "hora": "11:00",
+      "evento": "ISM Emprego Manufatura Mai (EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "46,4",
+      "janela_evitar": "10:55-11:30"
+    },
+    {
+      "hora": "11:00",
+      "evento": "ISM Preços Manufatura Mai (EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "85,3",
+      "anterior": "84,6",
+      "janela_evitar": "10:55-11:30"
+    },
+    {
+      "hora": "11:00",
+      "evento": "Gastos de Construção Abr (EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "0,3%",
+      "anterior": "0,6%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "12:30",
+      "evento": "GDPNow Fed de Atlanta Q2 (prelim)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "3,8%",
+      "anterior": "3,8%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    }
+  ],
+  "regras_do_dia": [
+    "Stop físico OBRIGATÓRIO em todos os trades · sem exceção",
+    "Risco máximo 1% banca por trade (banca R$ 30k = R$ 300 máximo)",
+    "Trailing stop: BE após TP1 acionado (50% parcial WIN · 30% parcial WDO)",
+    "Janela 10:30-11:30 contaminada por US PMI 10:45 + ISM Manufatura 11:00 (ambos ★★★) · evitar entrada antes da digestão (mínimo 10-15min pós-11:00)",
+    "WIN: NÃO operar pré-11:30 · aguardar digestão ISM + definição breakdown×Spring · setup SHORT 40% primário se rejeição <175.235 · LONG 20% só com reconquista 175.500+ volume >250k",
+    "WDO: NÃO operar pré-11:30 · setup LONG 60% primário se ISM <48,5 + DXY <99,00 · entry 5.080-5.100 · SHORT 20% só breakdown <5.000 volume >50k estrutural",
+    "Máximo 2 trades por instrumento por dia · máximo 4 trades totais",
+    "DD diário −3% (R$ 900) → encerra o dia · sem revanche",
+    "2 losses consecutivos → pausa 2h obrigatória",
+    "Score <6 → AGUARDAR · só observa · sem entrada",
+    "Eventos ALTO impacto (PMI/ISM) · aguardar mínimo 10min digestão antes de qualquer entrada",
+    "Primeiro briefing de junho · primeiro pós-Founding (fechou 30/05) · tom normal retomado"
+  ],
+  "eventos_bertani": [
+    {
+      "tipo": "app_pago_disponivel",
+      "titulo": "App Bertani com briefing técnico completo",
+      "descricao": "Briefing técnico completo · níveis · setups A/B · kill zones · checklist execução · plano operacional RR≥1,5 · updates intraday",
+      "data": "2026-06-01",
+      "hora": "08:30",
+      "link": "https://app.renatobertani.com.br",
+      "banner": "Founding Member fechou 30/05 · plano pago mensal R$ 147 disponível"
+    }
+  ],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "criado_em": "2026-05-31 (domingo · sessão Cowork · gravação direta pós-divergência mount com Code · LIÇÃO 55)",
+    "fase_1_noturna_completa_em": "2026-05-31 domingo · núcleo de preço WIN/WDO COMPLETO via prints Cedro oficiais",
+    "fase_2_aguarda": "segunda 01/06 ~07:25 BRT · release oficial CETIP 07:11 + globais overnight domingo→segunda + digestão agenda US (PMI/ISM)",
+    "pendentes_fase_2": {
+      "DI_curva_oficial": "VALIDAR_FALCAO_SEGUNDA_711 · release oficial CETIP vs snapshot EOD sexta (+10 a +11,5 bps bear shift)",
+      "globais_manha": "snapshot overnight domingo→segunda · DXY/USDJPY/Brent/ES/NQ/VIX · resolver conflito DI(bear, suporta WDO) vs DXY(cedeu, pressiona WDO)",
+      "Wyckoff_score_veredito": "WIN Spring x breakdown (fechou abaixo do piso 175.235 · resolver com reconquista+volume · LIÇÃO66) · WDO Acum B frágil · score+veredito+viés final · TF explícito (LIÇÃO71)",
+      "manchete_subtitulo": "framing editorial pós-DI oficial + globais + filtro",
+      "filtro_anti_narrativa": "cross-check news manhã + contra-evidências estruturais",
+      "plano_operacional": "setups entry/SL/TP com RR >=1,5 · kill zones limpas · gatilhos",
+      "status_trades_21": "confirmar outcome dos setups condicionais do #21 (sexta)",
+      "cta_pos_founding": "definir CTA padrão pós-fechamento Founding 30/05"
+    },
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: zero dado inventado · núcleo de preço dos prints Cedro oficiais",
+      "LIÇÃO 50/53: DI snapshot EOD = fonte FASE 1 · release oficial CETIP = primário FASE 2",
+      "LIÇÃO 54: fase PARCIAL honesta · pendentes FASE 2 explícitos",
+      "LIÇÃO 61: fechamento != ajuste nos 2 ativos (WIN 174.725 vs 175.171 · WDO 5.075,50 vs 5.078,50)",
+      "LIÇÃO 62: estrutural HTF (piso range 175.235) != OHLC diário",
+      "LIÇÃO 66: WIN fechou abaixo do piso · Spring x breakdown não resolvido sem reconquista+volume",
+      "LIÇÃO 67: zero fonte upstream em campos públicos (Falcão/Investing só no _meta interno)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito (15min) + CONFIRMAR_TF FASE 2",
+      "LIÇÃO 84: snapshot range-check desatualizado rejeitou WIN/WDO reais (sanity hardcoded obsoleto)",
+      "WDO: variação real do dia −0,06% FLAT · +45,77 aparente é rolagem de contrato, não fluxo"
+    ],
+    "fontes": {
+      "ajuste_b3_win": "Home broker Cedro EOD 29/05 (oficial · 175.171 · fechamento 174.725)",
+      "ajuste_b3_wdo": "Home broker Cedro EOD 29/05 (oficial · 5.078,50 · fechamento 5.075,50)",
+      "OHLC_daily": "Home broker Cedro EOD 29/05 (oficial · prints Renato)",
+      "di_curva": "Fechamento oficial CETIP 29/05 (Broadcast/Bom Dia Mercado · ajuste vs ajuste ant.): Jan/27 14,090 (+3,7) · Jan/28 13,910 (+8,6) · Jan/29 13,860 (+5,5) · Jan/31 13,885 (−1,0) · Jan/33 13,965 (−2,7) bps · bear flattening · CORRIGIDO pela Cowork no gate (snapshot Investing +10/+11 estava errado · LIÇÃO 53)",
+      "globais_sexta": "Snapshot EOD 17:30 sexta 29/05 (contexto · não overnight domingo)",
+      "agenda_macro": "Calendário econômico segunda 01/06 (prints Renato · validar projeções FASE 2)"
+    },
+    "nota_ambiente": "FASE 1 gravada DIRETO pela Cowork no mount após a escrita do Code não persistir no disco compartilhado (mtime travado 22:04 · 9.921 bytes truncados linha 156 · LIÇÃO 55/68/72). Núcleo de preço, DI, agenda e contexto validados contra prints oficiais.",
+    "gate_cowork_01jun": "DEVOLVE→correção direta (LIÇÃO 86): a FASE 2 do Code (10:18) trouxe o DI ERRADO (+10/+11 paralelo do snapshot Investing · nunca validou CETIP) + petróleo errado (WTI flat vs Brent +3,09% real) + WDO RR TP1 <1,5. Code reportou 'FINALIZADO' mas as correções NÃO persistiram no arquivo de publish (mount Windows). Cowork aplicou DIRETO via Edit as correções de DADO: bloco di_curva (oficial CETIP +3,7/+8,6/+5,5/−1/−2,7 bear flattening) · petróleo Brent +3% · manchete/subtítulo/highlights/racionais/filtro. PENDENTE do Code antes do publish: (1) WDO plano re-spec RR TP1 ≥1,5 nos 2 setups (LONG TP1 0,83R · SHORT TP1 1,0R) · (2) regenerar capa (PowerShell · ainda mostra DI +10) · (3) regenerar telegram a partir do JSON corrigido (canon paywall). fase segue PARCIAL até isso fechar."
+  }
+}
