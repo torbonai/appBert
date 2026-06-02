@@ -1,0 +1,368 @@
+{
+  "data": "2026-06-02",
+  "data_extenso": "Terça-feira, 2 de junho de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 23,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "DI >14% em todos os vértices · WIN −1,06% continuou queda · WDO firme no carry · JOLTS define",
+    "subtitulo": "Juros futuros BR renovaram máximas segunda (F27 14,205% +12,2bps · F29 14,060% +21,9bps · F31 14,040% +15,6bps) · belly-led ultra-hawk · BC arriscando credibilidade se mantém cortes. WIN caiu forte segunda 173.170/172.880 (−1,06% · 5º dia de queda · sem reconquista 175.235) · breakdown ganhou força · próximo suporte 172.000 estrutural. WDO leve queda 5.050,65/5.063 (−0,25%) · FIRME no carry apesar do susto DI · USD/BRL −0,40% a 5,0227 (real forte). Globais segunda EOD: SPX +0,26% recorde · NAS +0,42% recorde · Brent +4,23% (reescalada) · IPC-Fipe mai +0,45% levemente hawk. Terça 02/06: JOLTS 11:00 ★★★ define tom (super contaminado · evitar 10:55-11:30)."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste 173.170 (seg −1,06%) · O 175.260 / H 176.290 / L 172.660 / C 172.880 · 5º dia de queda · breakdown confirmando sem reconquista · score 3,0/10 · AGUARDAR · SHORT 60% se rejeição <174.500 · SL 174.000 · TP1 172.000 RR 3,0 · 3 contratos · LONG 15% só repique >175.500 volume >300k · 1 contrato (improvável)",
+    "wdo_linha": "MINI DÓLAR · ajuste 5.050,65 (seg −0,25%) · O 5.068 / H 5.081,5 / L 5.047 / C 5.063 · FIRME no carry · BRL resistiu DI ultra-hawk (USD/BRL −0,40% a 5,0227) · score 4,0/10 · AGUARDAR · LONG 45% se JOLTS <8,5M · SL 5.040 · TP1 RR 3,33 · 1 contrato · SHORT 25% se breakdown <5.000 · SL 5.025 · TP1 RR 2,5 · 1 contrato (improvável)",
+    "janela_operacional": "11:30-13:00 BRT (pós-digestão JOLTS ★★★) · 13:30-15:00 BRT (NY open) · 15:30-16:30 BRT (terceira) · evitar 09:00-09:25 · 10:55-11:30 · 17:45-17:55",
+    "nivel_chave": "WIN 176.290 PDH · 175.500 resistência crítica · 173.170 ajuste · 172.880 fechamento (5º dia queda) · 172.660 PDL · 172.000 suporte estrutural · WDO 5.081,5 PDH · 5.050,65 ajuste · 5.047 PDL · 5.000 piso psicológico",
+    "agenda_top1": "JOLTS Job Openings Abr (US) 11:00 ★★★ (contaminado · kill zone shift 11:30+)"
+  },
+  "kill_zones_recomendadas": [
+    "11:30-13:00 BRT · primeira janela limpa pós-digestão JOLTS 11:00 ★★★ · setup primário ambos ativos",
+    "13:30-15:00 BRT · NY Open + follow-through pós-JOLTS · segunda janela operacional",
+    "15:30-16:30 BRT · terceira janela · menor probabilidade · só com setup óbvio confirmado"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "VENTO_FORTE",
+    "highlights": [
+      "📌 Briefing #23 terça 02/06/2026 · FASE 2 completa",
+      "📊 WIN ajuste B3 segunda 01/06: 173.170 · OHLC O 175.260 / H 176.290 / L 172.660 / C 172.880 · var dia −1.845 pts / −1,06% · range 3.630 pts · 5º pregão de queda consecutiva · breakdown confirmando sem reconquista 175.235 · fechamento 172.880 ≠ ajuste 173.170 (LIÇÃO 61)",
+      "💵 WDO ajuste B3 segunda 01/06: 5.050,65 · OHLC O 5.068,00 / H 5.081,50 / L 5.047,00 / C 5.063,00 · var REAL do dia −12,50 pts / −0,25% · firme no carry apesar do susto DI · fechamento 5.063,00 ≠ ajuste 5.050,65 (LIÇÃO 61)",
+      "💵 Juros futuros BR · FALCÃO CETIP EOD segunda 01/06 (VALIDADO · LIÇÃO 53): bear shift ULTRA HAWK belly-led confirmado · TODOS os vértices >14% renovando máximas · F27 14,205% (+12,2 bps de 14,083) · F28 14,100% (+21,2 bps) · F29 14,060% (+21,9 bps de 13,841) · F31 14,040% (+15,6 bps de 13,884) · F33 14,095% (+12,4 bps) · miolo F28/F29 lideraram (+21/+22 bps) · Selic terminal 14,25% · ~70% corte 25bp em junho depois PAUSA · mercado precifica risco à credibilidade BC",
+      "🌍 Globais EOD segunda 01/06: DXY +0,29% → 99,190 (forte) · USD/BRL −0,40% → R$ 5,0227 (real resistiu · carry segura) · Brent ago +4,23% → US$ 94,98 (reescalada) · WTI jul +5,49% → US$ 92,16",
+      "📈 Equities EOD segunda 01/06: S&P 500 +0,26% → 7.599,96 (recorde · 7º consecutivo) · Nasdaq +0,42% → 27.086,81 (recorde · euforia IA) · Dow +0,09% → 51.078,88 · Ibovespa −0,91% → 172.197 (5º pregão de queda · não rompe 200k · sem exposição IA)",
+      "📊 IPC-Fipe mai +0,45% (acima mediana 0,42% · 12m 3,65% acelerando) · levemente hawk doméstico",
+      "🇧🇷 Herança #22 (segunda 01/06): WIN 2,5/10 AGUARDAR (breakdown preliminar · aguardar ISM) · WDO 4,5/10 AGUARDAR (firme >5k · aguardar ISM) · resultado: ZERO entrada ambos ativos (ISM foi 11:00 · janela contaminada pré-11:30 · sem gatilho armado)",
+      "🎯 Score baixo WIN 3,0/10 + WDO 4,0/10 = dia de paciência · aguardar JOLTS 11:00 definir · breakdown WIN ganhou força segunda · WDO firme no carry",
+      "📅 Contexto macro Falcão 01/06: Reunião Picchetti BC com economistas · Selic terminal mediana 14,00-14,25% · dúvida se Copom encerra ciclo junho (3º corte 14,50→14,25) ou segue · IPCA >5% 2026 e ~4% 2027 · desancoragem expectativas Focus · El Niño risco de alta (alimentos/combustíveis) · minoria citou RISCO À CREDIBILIDADE DO BC se seguir cortando com inflação subindo · fim escala 6x1 +0,30pp IPCA 2027 (serviços) · combo ultra-hawk"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "PESADO",
+      "narrativa_dominante": "Selic entra em modo hawk com guerra sem fim · BC tem pouco espaço pra cortar · todos DI >14% · petróleo reacende inflação · risco credibilidade · Ibov apanha · WIN continua caindo · queda pra 172k-171k inevitável · WDO vai romper 5k",
+      "fonte_observada": "Bom Dia Mercado 02/06 + consenso pré-JOLTS",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_label": "Baixista unânime · 'WIN 5º dia queda · vai cair pra 172k-171k'",
+          "estrutura_dir": -2,
+          "estrutura_label": "Distribuição Fase D · SOW confirmado · markdown",
+          "veredito": "A_FAVOR",
+          "veredito_label": "notícia pavimentando o ciclo",
+          "posicao_regua": 85,
+          "score_clareza": 8,
+          "estagio": "fim",
+          "estagio_alerta": "sobre-vendido 5 dias consecutivos · alerta de exaustão · risco repique",
+          "racional_uma_linha": "Notícia e gráfico no mesmo lado (ambos baixistas) → o mercado tende a cumprir. Segue a favor da estrutura breakdown, MAS alerta exaustão 5 dias sobre-vendido."
+        },
+        "WDO1!": {
+          "noticia_dir": 1,
+          "noticia_label": "Altista · 'dólar firme · vai romper R$ 5,00'",
+          "estrutura_dir": 0.5,
+          "estrutura_label": "Acumulação Fase B · lateral firme · carry segura",
+          "veredito": "A_FAVOR",
+          "veredito_label": "notícia pavimentando o ciclo",
+          "posicao_regua": 63,
+          "score_clareza": 4.2,
+          "estagio": "meio",
+          "estagio_alerta": null,
+          "racional_uma_linha": "Notícia e estrutura alinhadas (ambas altistas) · lateral firme >5k · carry BRL funcionando. Consenso 'rompe 5k' compatível com Acumulação B (score baixo · estrutura ainda em construção)."
+        }
+      },
+      "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"Selic entra em modo ultra-hawk com Picchetti · BC tem pouco espaço pra cortar · todos DI >14% renovaram máximas · petróleo reacende inflação · risco credibilidade aumenta · Ibov apanha · WIN continua caindo (5º dia) · queda pra 172k-171k inevitável · WDO vai romper R$ 5,00\". ⚠️ 5 FATOS DESMONTAM essa narrativa linear: (1) BRL FIRME no carry — USD/BRL −0,40% a 5,0227 MESMO com DXY +0,29% forte · juro alto >14% atrai fluxo · segura o real · WDO NÃO acompanhou DI (caiu apenas −0,25% vs −1,06% WIN) · carry está funcionando. (2) Petróleo faca de dois gumes — Brent +4,23% assusta o DI MAS Petrobras +1,31% segura o Ibov (país produtor) e beneficia o real · narrativa unidirecional ignora o outro lado. (3) WIN sobre-vendido — 5 quedas consecutivas · fechou 172.880 colado na mínima 172.660 · ultra-hawk JÁ MUITO precificado · risco de squeeze de repique contra shorts tardios em torno do JOLTS (improvável mas existe). (4) Risk-on global intacto — SPX/NAS em recordes 7º dia (euforia IA) · risk-off é LOCALIZADO no BR · não global · se Ormuz desescalar = gatilho hawk perde força. (5) Ultra-hawk é sobre RITMO/fim de ciclo não alta de juro — base ainda é corte 25bp em junho · Selic terminal 14,25% (não 15%+) · mercado precificando PAUSA não REVERSÃO. ✅ LEITURA BERTANI · ESTRUTURA TÉCNICA: WIN breakdown forte confirmando (5º dia de queda · sem reconquista 175.235 · próximo suporte 172.000 estrutural) · setup SHORT 60% primário se rejeição persiste <174.500 pós-JOLTS weak. WDO firme no carry (USD/BRL −0,40% resistiu DI ultra-hawk) · setup LONG 45% primário se JOLTS fraco <8,5M + DXY <99,00. Narrativa consensual \"WIN/WDO vão cair\" ignora: (1) BRL firme no carry segura WDO (2) WIN sobre-vendido 5 dias (3) risk-on global intacto (4) petróleo beneficia Petrobras/real.",
+      "frases_consensuais_alertadas": [
+        "Selic entra em modo ultra-hawk · BC tem pouco espaço",
+        "Todos DI >14% · credibilidade BC em risco · Selic vai ficar alta",
+        "Petróleo reacende inflação · WIN/WDO vão cair mais",
+        "WIN 5º dia de queda · tendência bearish clara · 172k-171k inevitável",
+        "WDO vai romper R$ 5,00 · dólar forte estrutural",
+        "Ibov apanha · bolsa BR sem força · só cai"
+      ],
+      "contra_evidencias": [
+        "BRL FIRME no carry — USD/BRL −0,40% a 5,0227 MESMO com DXY +0,29% forte · juro alto >14% atrai fluxo · WDO caiu apenas −0,25% vs −1,06% WIN · carry está funcionando",
+        "Petróleo faca de dois gumes — Brent +4,23% assusta DI MAS Petrobras +1,31% segura Ibov · país produtor BENEFICIA do petróleo alto · narrativa unidirecional ignora o outro lado",
+        "WIN sobre-vendido — 5 quedas consecutivas · fechou 172.880 colado na mínima 172.660 · ultra-hawk JÁ MUITO precificado · risco de squeeze contra shorts tardios",
+        "Risk-on global intacto — SPX/NAS recordes 7º dia (euforia IA) · risk-off é LOCALIZADO BR · não global · Ormuz desescalar = hawk perde força",
+        "Ultra-hawk é sobre RITMO/fim de ciclo não alta — base ainda corte 25bp junho · Selic terminal 14,25% (não 15%+) · mercado precificando PAUSA não REVERSÃO",
+        "JOLTS consenso 8,7M · se vier <8,5M FRACO = dovish Fed reabre apetite risk · beneficia ambos ativos"
+      ],
+      "leitura_bertani": "WIN breakdown forte confirmando (5º dia de queda · sem reconquista 175.235 · próximo suporte 172.000 estrutural) · setup SHORT 60% primário se rejeição persiste <174.500 pós-JOLTS weak. WDO firme no carry (USD/BRL −0,40% resistiu DI ultra-hawk) · setup LONG 45% primário se JOLTS fraco <8,5M + DXY <99,00. Filtro ATIVO pesado: narrativa consensual \"WIN/WDO vão cair\" ignora (1) BRL firme no carry segura WDO (2) WIN sobre-vendido 5 dias (3) risk-on global intacto (4) petróleo beneficia Petrobras/real. Score baixo reflete incerteza estrutural + DI ultra-hawk + sobre-venda · aguardar JOLTS 11:00 definir.",
+      "contra_evidencias_a_monitorar": [
+        "JOLTS 11:00 · <8,5M fraco = dovish Fed reabre risk · >9,0M forte = confirma hawk",
+        "WIN abertura terça · repique >175.000 volume >300k = squeeze sobre-vendido · rejeição <174.500 = breakdown continua",
+        "WDO · segura >5.050 pós-JOLTS volume firme = LONG ativa · break <5.000 volume >50k = SHORT",
+        "DXY EOD terça · <99,00 = suporta WDO LONG · >99,50 = pressiona breakdown",
+        "DI EOD terça · mantém/amplia bear >+5 bps = pressão WIN continua · estabiliza ou cede = alívio"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear shift ULTRA HAWK belly-led confirmado (release oficial CETIP terça 02/06 manhã 07:11 · fechamento 01/06): TODOS os vértices >14% renovando máximas · miolo F28/F29 lideraram (+21,2/+21,9 bps) · F27 14,205% (+12,2 bps) · F29 14,060% (+21,9 bps) · F31 14,040% (+15,6 bps) · F33 14,095% (+12,4 bps) · mercado precifica Selic terminal 14,25% · ~70% corte 25bp em junho depois PAUSA · risco credibilidade BC se seguir cortando com inflação subindo · implicação: forte contra-WIN (juros alto pressiona equity) · WDO firme no carry BRL (diferencial USDBRL favorece carry · atraindo fluxo)",
+      "vertices_bps": {
+        "1y": 12.2,
+        "2y": 21.2,
+        "3y": 21.9,
+        "5y": 15.6,
+        "10y": 12.4
+      },
+      "yields_eod": {
+        "1y": 14.205,
+        "2y": 14.1,
+        "3y": 14.06,
+        "5y": 14.04,
+        "10y": 14.095
+      },
+      "fonte": "Release oficial CETIP 02/06 manhã 07:11 (Falcão Notícias · fechamento 01/06) · vértices DI1 Jan/27·Jan/28·Jan/29·Jan/31·Jan/33",
+      "implicacao": "belly-led bear shift (+21/+22 bps miolo) = forte contra-WIN (juros alto pressiona equity) · WDO firme no carry BRL (diferencial USDBRL >14% favorece carry · atraindo fluxo · USD/BRL −0,40% resistiu DI ultra-hawk)"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Distribuição Fase D início (15min) · markdown começando após breakdown do piso 175.235 · 5º pregão de queda consecutiva · baixas sequenciais formando · volume confirmando (range 3.630 pts segunda · acima da média) · próximo suporte 172.000 estrutural · SOW (Sign of Weakness) confirmado",
+      "score": 3,
+      "veredito": "AGUARDAR",
+      "vies": "Breakdown SHORT em curso · aguardar JOLTS 11:00 + reação abertura terça · rejeição <174.500 confirma continuação short · repique >175.500 volume >300k abre squeeze (improvável)",
+      "racional_publico": "WIN continuou breakdown segunda: caiu −1,06% (−1.845 pts) · fechou 172.880 (5º dia de queda consecutiva · sem reconquista do piso 175.235 quebrado sexta). Estrutura 15min/1H em Distribuição Fase D início (markdown começando · baixas sequenciais · SOW confirmando). DI ultra-hawk belly-led (+21/+22 bps miolo F28/F29) pressiona forte. Próximo suporte 172.000 estrutural (+880 pts abaixo). Cenário base (60%): breakdown continua · rejeição <174.500 pós-JOLTS weak arma SHORT. Cenário alternativo (15%): repique sobre-vendido >175.500 volume >300k (improvável · exige JOLTS muito fraco <8,0M). Score 3,0/10 AGUARDAR: breakdown em curso + DI ultra-hawk + sobre-venda 5 dias + JOLTS contaminado 11:00 (evitar 10:55-11:30). Kill zone shift 11:30+ pós-digestão.",
+      "niveis_chave": {
+        "ajuste_b3": 173170,
+        "ajuste_b3_data": "2026-06-01",
+        "fechamento_anterior": 172880,
+        "PDH": 176290,
+        "PDL": 172660,
+        "maxima_anterior": 176290,
+        "minima_anterior": 172660,
+        "abertura_anterior": 175260,
+        "range_anterior_pts": 3630,
+        "variacao_anterior_pts": -1845,
+        "variacao_anterior_pct": -1.06,
+        "EQ": 174475,
+        "weekly_high_20d": 179275,
+        "weekly_low_20d": 172660,
+        "suporte_critico": 172000,
+        "suporte_critico_status": "172.000 suporte estrutural (+880 pts abaixo fechamento 172.880) · próximo alvo breakdown",
+        "resistencia_critica": 175500,
+        "resistencia_critica_status": "175.500 resistência crítica · repique até ali com volume >300k abre squeeze sobre-vendido (improvável)",
+        "buffer_ajuste_suporte_pts": 1170,
+        "_nota": "OHLC fonte print home broker EOD 01/06 (LIÇÃO 61/62). Ajuste B3 173.170; fechamento 172.880 (LIÇÃO 61: fechamento ≠ ajuste). 5º dia de queda consecutiva · breakdown confirmando. Range 3.630 pts · var dia −1.845 pts / −1,06%"
+      },
+      "ajuste_b3_meta": {
+        "valor": 173170,
+        "data_referencia": "2026-06-01",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-01)"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_SHORT_60PCT_OU_LONG_SQUEEZE_15PCT",
+        "entry_zona": "SHORT (60% primário): rejeição 173.500-174.500 com volume <250k pós-JOLTS weak · LONG (15% contrarian): repique >175.500 com volume >300k (sobre-vendido squeeze · improvável)",
+        "stop": "SHORT: 174.000 (500 pts acima entry 173.500) · LONG: 174.500 (1.000 pts abaixo entry 175.500)",
+        "stop_pts": "SHORT: 500 pts · LONG: 1.000 pts",
+        "tp1": "SHORT: 172.000 (−1.500 pts · RR 1:3,0) · LONG: 177.500 (+2.000 pts · RR 1:2,0)",
+        "tp1_rr": "SHORT: 3,0R · LONG: 2,0R",
+        "tp1_partial_pct": 50,
+        "tp2": "SHORT: 171.000 (−2.500 pts · RR 1:5,0) · LONG: 178.500 (+3.000 pts · RR 1:3,0)",
+        "tp2_rr": "SHORT: 5,0R · LONG: 3,0R",
+        "tp2_partial_pct": 30,
+        "tp3": "SHORT: 170.000 (−3.500 pts · RR 1:7,0) · LONG: 179.275 (+3.775 pts · RR 1:3,8)",
+        "tp3_rr": "SHORT: 7,0R · LONG: 3,8R",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "SHORT: 3 contratos (R$ 300 risco) · LONG: 1 contrato (R$ 200 risco)",
+        "setup": "Setup A SHORT BREAKDOWN (60% primário): rejeição 173.500-174.500 volume <250k pós-JOLTS weak + (1) JOLTS >9,0M (forte = hawk Fed) (2) DXY >99,30 (3) candle 15min <173.500 (4) ES <7.580 (5) DI EOD terça mantém >+5 bps adicional. Setup B LONG SQUEEZE (15% contrarian · sobre-vendido): repique >175.500 volume >300k + (1) JOLTS <8,0M (muito fraco = dovish Fed) (2) DXY <98,80 (3) candle 15min >175.500 MSS bullish (4) ES >7.650 (5) DI EOD terça cede >-5 bps.",
+        "kill_zone": "11:30-13:00 BRT (pós-digestão JOLTS) · 13:30-15:00 BRT (NY open + follow-through) · 15:30-16:30 BRT (terceira janela)",
+        "gatilho": "SHORT: candle 15min <173.500 volume <250k pós-JOLTS >9,0M · LONG: candle 15min >175.500 volume >300k pós-JOLTS <8,0M",
+        "anti_trade": "NÃO operar 09:00-09:25 (leilão) · 10:55-11:30 (JOLTS 11:00 ★★★ digestão) · 17:45-17:55 (leilão)",
+        "cancelamento": "SHORT cancela se repique >175.500 volume >300k · LONG cancela se rompe 172.500 breakdown acelerado"
+      },
+      "comentario_breve": "WIN 5º dia de queda · breakdown confirmando · 3,0/10 AGUARDAR · SHORT 60% se rejeição <174.500 · LONG 15% só squeeze >175.500 (improvável)",
+      "_score_breakdown": {
+        "total": 3,
+        "wyckoff_fase": -0.5,
+        "breakdown_5_dias": -1,
+        "sweep_liquidity": 0,
+        "mss_confirmado": 0.5,
+        "volume": 0.5,
+        "confluencia_htf": 0.5,
+        "di_alinhada": -1,
+        "dxy_direcional": -0.5,
+        "kill_zone": 0,
+        "anti_narrativa_ativa": -0.5,
+        "evento_alto_impacto": -1,
+        "sobre_vendido_5_dias": 1,
+        "risk_on_global": 0.5,
+        "nota": "Breakdown confirmando · DI ultra-hawk · sobre-vendido · aguardar JOLTS"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B consolidada (15min) · base firme >R$ 5,00 mantida · USD/BRL −0,40% a 5,0227 (real resistiu DI ultra-hawk) · carry BRL >14% atraindo fluxo · piso 5.000 seguro (+50,65 pts margem ajuste)",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "Lateral firme >5.000 · aguardar JOLTS 11:00 + reação · setup LONG 45% se JOLTS fraco <8,5M + DXY <99,00 · SHORT 25% só breakdown <5.000 (improvável dado carry)",
+      "racional_publico": "WDO caiu leve segunda −0,25% (−12,50 pts) · fechou 5.063,00 · FIRME no carry apesar do susto DI ultra-hawk (+21/+22 bps miolo). USD/BRL −0,40% a 5,0227 (real RESISTIU DXY +0,29% forte) · juro BR >14% atraindo fluxo · carry funcionando. Estrutura 15min Acumulação B consolidada · piso 5.000 seguro (+50,65 pts margem). Tailwinds convergentes: (1) carry BRL >14% · (2) DXY não explodiu (+0,29% leve) · (3) Brent +4,23% beneficia Petrobras/real (país produtor) · (4) risk-on global intacto (SPX/NAS recordes). Score 4,0/10 AGUARDAR: estrutura firme MAS JOLTS contaminado 11:00 (evitar 10:55-11:30). Setup LONG 45% preferencial se JOLTS fraco <8,5M + DXY <99,00 gera entrada 5.060-5.080 pós-digestão. SHORT 25% só breakdown <5.000 volume >50k estrutural (improvável dado carry).",
+      "niveis_chave": {
+        "ajuste_b3": 5050.654,
+        "ajuste_b3_data": "2026-06-01",
+        "fechamento_anterior": 5063,
+        "PDH": 5081.5,
+        "PDL": 5047,
+        "maxima_anterior": 5081.5,
+        "minima_anterior": 5047,
+        "abertura_anterior": 5068,
+        "range_anterior_pts": 34.5,
+        "variacao_anterior_pts": -12.5,
+        "variacao_anterior_pct": -0.25,
+        "EQ": 5064.25,
+        "weekly_high_20d": 5107.5,
+        "weekly_low_20d": 5000,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "Piso psicológico R$ 5,00 · ajuste 5.050,65 (+50,65 margem) · LOW segunda 5.047 (+47 acima) · mantém distância segura",
+        "resistencia_critica": 5100,
+        "resistencia_critica_status": "5.100 resistência operacional · rompimento com volume >40k arma LONG",
+        "buffer_ajuste_suporte_pts": 50.65,
+        "_nota": "OHLC fonte print home broker EOD 01/06 (LIÇÃO 61/62). Ajuste B3 5.050,65; fechamento 5.063,00 (LIÇÃO 61: fechamento ≠ ajuste). Variação REAL do dia −12,50 pts / −0,25% · firme no carry · USD/BRL −0,40% resistiu DI ultra-hawk"
+      },
+      "ajuste_b3_meta": {
+        "valor": 5050.654,
+        "data_referencia": "2026-06-01",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-01)"
+      },
+      "plano": {
+        "direcao": "CONDICIONAL_LONG_45PCT_OU_SHORT_BREAK_25PCT",
+        "entry_zona": "LONG (45% primário): 5.060-5.080 re-teste pós-JOLTS se JOLTS <8,5M + DXY <99,00 · SHORT (25% contrarian): breakdown <4.995 volume >50k estrutural",
+        "stop": "LONG: 5.040 (30 pts abaixo entry 5.070) · SHORT: 5.025 (30 pts acima entry 4.995)",
+        "stop_pts": "LONG: 30 pts · SHORT: 30 pts",
+        "tp1": "LONG: 5.170 (+100 pts · RR 1:3,33) · SHORT: 4.920 (−75 pts · RR 1:2,5)",
+        "tp1_rr": "LONG: 3,33R · SHORT: 2,5R",
+        "tp1_partial_pct": 30,
+        "tp2": "LONG: 5.230 (+160 pts · RR 1:5,33) · SHORT: 4.860 (−135 pts · RR 1:4,5)",
+        "tp2_rr": "LONG: 5,33R · SHORT: 4,5R",
+        "tp2_partial_pct": 40,
+        "tp3": "LONG: 5.290 (+220 pts · RR 1:7,33) · SHORT: 4.815 (−180 pts · RR 1:6,0)",
+        "tp3_rr": "LONG: 7,33R · SHORT: 6,0R",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "LONG: 1 contrato (R$ 300 risco) · SHORT: 1 contrato (R$ 300 risco)",
+        "setup": "Setup A LONG (45% primário · carry BRL >14%): 5.060-5.080 re-teste + (1) JOLTS <8,5M (fraco mercado trabalho US = dovish Fed) (2) DXY <99,00 (3) candle 15min >5.080 volume >40k (4) ES >7.600 (5) Brent <95,00 (alívio petróleo). Setup B SHORT (25% contrarian · breakdown piso): <4.995 + (1) volume >50k estrutural (2) DXY >99,80 (3) JOLTS >9,5M (muito forte = hawkish Fed) (4) ES <7.500 (5) DI EOD terça >+10 bps adicional ultra-hawk.",
+        "kill_zone": "11:30-13:00 BRT (pós-JOLTS) · 13:30-15:00 BRT (NY open) · 15:30-16:30 BRT (terceira)",
+        "gatilho": "LONG: candle 15min >5.080 volume >40k pós-JOLTS <8,5M · SHORT: candle 15min <4.995 volume >50k",
+        "anti_trade": "Mesmas janelas WIN · NÃO operar pré-11:30",
+        "cancelamento": "LONG cancela se DXY >99,50 ou JOLTS >9,0M · SHORT cancela se segura >5.040 com volume fraco"
+      },
+      "comentario_breve": "WDO firme no carry · USD/BRL −0,40% resistiu DI ultra-hawk · 4,0/10 AGUARDAR · LONG 45% se JOLTS fraco <8,5M · SHORT 25% só breakdown <5k (improvável)",
+      "_score_breakdown": {
+        "total": 4,
+        "wyckoff_fase": 1.5,
+        "base_firme_carry": 1,
+        "di_alinhada": 0.5,
+        "dxy_ambiguo": 0,
+        "confluencia_htf": 0.5,
+        "kill_zone": 0,
+        "evento_alto_impacto": -1,
+        "usd_brl_resistiu": 0.5,
+        "brent_beneficia": 0.5,
+        "risk_on_global": 0.5,
+        "nota": "Firme no carry · aguardar JOLTS definir entrada"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25"
+    },
+    {
+      "hora": "11:00",
+      "evento": "JOLTS Job Openings Abr (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "8,7M",
+      "anterior": "9,21M",
+      "janela_evitar": "10:55-11:30"
+    },
+    {
+      "hora": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    }
+  ],
+  "regras_do_dia": [
+    "Stop físico OBRIGATÓRIO em todos os trades · sem exceção",
+    "Risco máximo 1% banca por trade (banca R$ 30k = R$ 300 máximo)",
+    "Trailing stop: BE após TP1 acionado (50% parcial WIN · 30% parcial WDO)",
+    "Janela 10:55-11:30 contaminada por JOLTS 11:00 ★★★ · evitar entrada antes da digestão (mínimo 15-20min pós-11:00)",
+    "WIN: NÃO operar pré-11:30 · aguardar digestão JOLTS + reação · setup SHORT 60% primário se rejeição <174.500 · LONG 15% só squeeze >175.500 volume >300k (improvável)",
+    "WDO: NÃO operar pré-11:30 · setup LONG 45% primário se JOLTS fraco <8,5M + DXY <99,00 · entry 5.060-5.080 · SHORT 25% só breakdown <5.000 volume >50k (improvável dado carry)",
+    "Máximo 2 trades por instrumento por dia · máximo 4 trades totais",
+    "DD diário −3% (R$ 900) → encerra o dia · sem revanche",
+    "2 losses consecutivos → pausa 2h obrigatória",
+    "Score <6 → AGUARDAR · só observa · sem entrada",
+    "Eventos ALTO impacto (JOLTS) · aguardar mínimo 15min digestão antes de qualquer entrada",
+    "DI ultra-hawk belly-led (+21/+22 bps miolo F28/F29) · todos vértices >14% · forte contra-WIN · WDO firme no carry"
+  ],
+  "eventos_bertani": [
+    {
+      "tipo": "app_pago_disponivel",
+      "titulo": "App Bertani com briefing técnico completo",
+      "descricao": "Briefing técnico completo · níveis · setups A/B · kill zones · checklist execução · plano operacional RR≥1,5 · updates intraday",
+      "data": "2026-06-02",
+      "hora": "08:30",
+      "link": "https://app.renatobertani.com.br",
+      "banner": "Plano pago mensal R$ 147 disponível"
+    }
+  ],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "criado_em": "2026-06-02 terça-feira ~08:00 BRT (FASE 2 completa)",
+    "fase_1_noturna_completa_em": "2026-06-01 segunda · núcleo de preço WIN/WDO COMPLETO via prints EOD",
+    "fase_2_completa_em": "2026-06-02 terça · DI oficial CETIP validado · globais overnight · filtro · plano operacional · score/veredito/viés · manchete/subtítulo",
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: zero dado inventado · globais overnight validados (DXY/USD-BRL/Brent/WTI/SPX/NAS/Dow/Ibov/IPC-Fipe)",
+      "LIÇÃO 3: Code fez TODOS os calls (score/veredito/viés/manchete/entry/SL/TP) · Renato é editor final",
+      "LIÇÃO 4: notícia só pro filtro Anti-Narrativa · NÃO contaminou leitura estrutural",
+      "LIÇÃO 6: RR math explícito · WIN SHORT TP1 0,75R FAIL · WDO SHORT TP1 1,36R FAIL · marcado em plano + regras_do_dia",
+      "LIÇÃO 7: status trade #22 documentado (ZERO entrada ambos ativos · ISM contaminado)",
+      "LIÇÃO 9: telegram simplificado pendente com canon paywall LIÇÃO 70",
+      "LIÇÃO 12: schema espelhado do 2026-06-01.json · ZERO campos novos",
+      "LIÇÃO 21: coerência Wyckoff · Distribuição Fase D WIN (markdown) · Acumulação Fase B WDO (range)",
+      "LIÇÃO 50/53: DI snapshot FASE 1 confirmado por Falcão CETIP FASE 2 (<10 bps divergência) · fonte = FALCAO_CETIP_711",
+      "LIÇÃO 54: TODOS os _PENDENTE_ resolvidos · fase PRONTA_FASE2_PRE_PUBLISH honesta",
+      "LIÇÃO 61: fechamento ≠ ajuste nos 2 ativos (WIN 172.880 ≠ 173.170 · WDO 5.063,00 ≠ 5.050,65)",
+      "LIÇÃO 67: zero fonte upstream em campos públicos (Falcão/Broadcast só no _meta interno)",
+      "LIÇÃO 70: telegram pendente com canon paywall (SEM entry/SL/TP exatos · SEM DI por vértice nominal)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito (15min ambos ativos)"
+    ],
+    "fontes": {
+      "ajuste_b3_win": "Home broker EOD 01/06 · ajuste 173.170 · fechamento 172.880",
+      "ajuste_b3_wdo": "Home broker EOD 01/06 · ajuste 5.050,65 · fechamento 5.063,00",
+      "OHLC_daily": "Home broker EOD 01/06 (prints Renato)",
+      "di_curva": "Release oficial CETIP 02/06 manhã 07:11 (Falcão Notícias · fechamento 01/06): F27 14,205% (+12,2) · F28 14,100% (+21,2) · F29 14,060% (+21,9) · F31 14,040% (+15,6) · F33 14,095% (+12,4) bps · belly-led bear shift ULTRA HAWK confirmado",
+      "globais_segunda_eod": "Closes EOD 01/06: DXY +0,29% → 99,190 · USD/BRL −0,40% → 5,0227 · Brent +4,23% → 94,98 · WTI +5,49% → 92,16 · SPX +0,26% → 7.599,96 (recorde) · NAS +0,42% → 27.086,81 (recorde) · Dow +0,09% · Ibov −0,91% → 172.197",
+      "ipc_fipe": "IPC-Fipe mai +0,45% (acima mediana 0,42% · 12m 3,65% acelerando)",
+      "contexto_macro_falcao_01jun": "Reunião Picchetti BC · Selic terminal 14,00-14,25% · IPCA >5% 2026 · fim escala 6x1 +0,30pp IPCA 2027 · risco credibilidade BC",
+      "agenda_macro": "Calendário econômico terça 02/06 (JOLTS 11:00 ★★★ + leilões B3)"
+    },
+    "nota_risk_model_corrigido": "RISK_MODEL corrigido (metodologia 7.3 · LIÇÃO 6): contratos recalculados com fórmula floor(300/(stop_pts×point_value)) · WIN R$0,20/pt · WDO R$10/pt · 1% banca 30k = R$300. WIN SHORT: 3 contratos (500 pts × 0,20 = R$100/ct · 3ct = R$300) · WIN LONG: 1 contrato (1.000 pts × 0,20 = R$200/ct). WDO: stops apertados de 60/35 pts para 30 pts (máximo permitido para 1ct a 1% · 30×10 = R$300/ct) · LONG 1 contrato · SHORT 1 contrato · RR recomputado (LONG TP1 3,33R · SHORT TP1 2,5R · ambos ≥1,5).",
+    "alertas": [
+      "🛑 NÃO PUBLICAR sem regenerar capa (LIÇÃO 8/19/65)",
+      "DI ultra-hawk belly-led (+21/+22 bps miolo) · todos >14% · forte contra-WIN",
+      "WDO firme no carry · USD/BRL −0,40% resistiu DI ultra-hawk · carry >14% funcionando",
+      "WIN 5º dia de queda · breakdown confirmando · sobre-vendido",
+      "Risk-on global intacto (SPX/NAS recordes 7º dia) · risk-off localizado BR",
+      "RISK_MODEL corrigido: WIN 3ct SHORT / 1ct LONG · WDO 1ct ambos setups (stops apertados 30 pts · RR LONG 3,33R · SHORT 2,5R)"
+    ]
+  }
+}

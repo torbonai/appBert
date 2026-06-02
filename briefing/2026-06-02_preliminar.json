@@ -1,0 +1,320 @@
+{
+  "data": "2026-06-02",
+  "data_extenso": "Terça-feira, 2 de junho de 2026",
+  "hora_publicacao": "_PENDENTE_FASE2_",
+  "edicao": 23,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_",
+    "wdo_linha": "_PENDENTE_FASE2_",
+    "janela_operacional": "_PENDENTE_FASE2_",
+    "nivel_chave": "_PENDENTE_FASE2_",
+    "agenda_top1": "_PENDENTE_FASE2_"
+  },
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_",
+    "highlights": [
+      "📌 Briefing #23 FASE 1 noturna (segunda 01/06/2026 ~23h BRT · preliminar pra terça 02/06)",
+      "📊 WIN ajuste B3 segunda 01/06: 173.170 · OHLC O 175.260 / H 176.290 / L 172.660 / C 172.880 · var dia −1.845 pts / −1,06% · range 3.630 pts · fechamento 172.880 ≠ ajuste 173.170 (LIÇÃO 61)",
+      "💵 WDO ajuste B3 segunda 01/06: 5.050,65 · OHLC O 5.068,00 / H 5.081,50 / L 5.047,00 / C 5.063,00 · var REAL do dia −12,50 pts / −0,25% · fechamento 5.063,00 ≠ ajuste 5.050,65 (LIÇÃO 61)",
+      "💵 Juros futuros BR · snapshot EOD segunda 01/06 (VALIDAR_FALCAO_TERCA_711): bear shift ULTRA HAWK · todos os vértices >14% renovaram máximas · concentração no miolo: Jan/27 ~14,20% (+12 bps de 14,083 ajuste ant.) · Jan/29 ~14,06% (+22 bps de 13,841) · Jan/31 ~14,04% (+16 bps de 13,884) · cenário preliminar = juros disparando contra-WIN · BRL firme no carry (WDO caiu leve apesar do susto)",
+      "_PENDENTE_FASE2_GLOBAIS_OVERNIGHT_",
+      "_PENDENTE_FASE2_STATUS_TRADE_22_",
+      "_PENDENTE_FASE2_CONTEXTO_MACRO_ADICIONAL_"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_",
+      "intensidade": "_PENDENTE_FASE2_",
+      "narrativa_dominante": "_PENDENTE_FASE2_",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "descricao": "_PENDENTE_FASE2_",
+      "frases_consensuais_alertadas": [
+        "_PENDENTE_FASE2_"
+      ],
+      "contra_evidencias": [
+        "_PENDENTE_FASE2_"
+      ],
+      "leitura_bertani": "_PENDENTE_FASE2_",
+      "contra_evidencias_a_monitorar": [
+        "_PENDENTE_FASE2_"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear shift ULTRA HAWK preliminar (snapshot EOD 01/06 · VALIDAR Falcão CETIP terça 07:11): todos os vértices >14% renovando máximas · miolo concentrado Jan/27 ~14,20% (+12 bps) · Jan/29 ~14,06% (+22 bps) · Jan/31 ~14,04% (+16 bps) · mercado precifica risco BC pausa cortes OU reverte · implicação preliminar contra-WIN (juros alto pressiona equity) · WDO firme no carry BRL apesar do susto",
+      "vertices_bps": {
+        "1y": 12,
+        "2y": 22,
+        "3y": 22,
+        "5y": 16,
+        "10y": 16
+      },
+      "yields_eod": {
+        "1y": 14.2,
+        "2y": 14.06,
+        "3y": 14.06,
+        "5y": 14.04,
+        "10y": 14.04
+      },
+      "fonte": "Snapshot EOD 01/06 (prints manuais · VALIDAR Falcão CETIP terça 07:11)",
+      "implicacao": "_PENDENTE_FASE2_APOS_VALIDACAO_FALCAO_"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 173170,
+        "ajuste_b3_data": "2026-06-01",
+        "fechamento_anterior": 172880,
+        "PDH": 176290,
+        "PDL": 172660,
+        "maxima_anterior": 176290,
+        "minima_anterior": 172660,
+        "abertura_anterior": 175260,
+        "range_anterior_pts": 3630,
+        "variacao_anterior_pts": -1845,
+        "variacao_anterior_pct": -1.06,
+        "EQ": "_PENDENTE_FASE2_",
+        "weekly_high_20d": "_PENDENTE_FASE2_",
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": "_PENDENTE_FASE2_",
+        "suporte_critico_status": "_PENDENTE_FASE2_",
+        "resistencia_critica": "_PENDENTE_FASE2_",
+        "resistencia_critica_status": "_PENDENTE_FASE2_",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "OHLC fonte print home broker EOD 01/06 (núcleo fornecido por Renato · LIÇÃO 61/62). Ajuste B3 173.170; fechamento 172.880 (LIÇÃO 61: fechamento ≠ ajuste). Range 3.630 pts · var dia −1.845 pts / −1,06%"
+      },
+      "ajuste_b3_meta": {
+        "valor": 173170,
+        "data_referencia": "2026-06-01",
+        "fonte": "Home broker EOD 01/06 (pregão segunda-feira)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_",
+        "nota": "_PENDENTE_FASE2_"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 5050.65,
+        "ajuste_b3_data": "2026-06-01",
+        "fechamento_anterior": 5063,
+        "PDH": 5081.5,
+        "PDL": 5047,
+        "maxima_anterior": 5081.5,
+        "minima_anterior": 5047,
+        "abertura_anterior": 5068,
+        "range_anterior_pts": 34.5,
+        "variacao_anterior_pts": -12.5,
+        "variacao_anterior_pct": -0.25,
+        "EQ": "_PENDENTE_FASE2_",
+        "weekly_high_20d": "_PENDENTE_FASE2_",
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": "_PENDENTE_FASE2_",
+        "suporte_critico_status": "_PENDENTE_FASE2_",
+        "resistencia_critica": "_PENDENTE_FASE2_",
+        "resistencia_critica_status": "_PENDENTE_FASE2_",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "OHLC fonte print home broker EOD 01/06 (núcleo fornecido por Renato · LIÇÃO 61/62). Ajuste B3 5.050,65; fechamento 5.063,00 (LIÇÃO 61: fechamento ≠ ajuste). Variação REAL do dia −12,50 pts / −0,25%"
+      },
+      "ajuste_b3_meta": {
+        "valor": 5050.65,
+        "data_referencia": "2026-06-01",
+        "fonte": "Home broker EOD 01/06 (pregão segunda-feira)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 30,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 40,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_",
+        "nota": "_PENDENTE_FASE2_"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "02:50",
+      "evento": "Discurso de Kashkari (Fed · FOMC)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "06:00",
+      "evento": "CPI Zona do Euro (Anual · Mai)",
+      "pais": "EU",
+      "impacto": "ALTO",
+      "projecao": "3,3%",
+      "anterior": "3,0%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "06:00",
+      "evento": "CPI núcleo Zona do Euro (Anual · Mai)",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "2,4%",
+      "anterior": "2,2%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "06:00",
+      "evento": "IPC-Fipe (Mensal · Mai)",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "0,40%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25"
+    },
+    {
+      "hora": "11:00",
+      "evento": "JOLTS · Ofertas de Emprego (Abr · EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "6,870M",
+      "anterior": "6,866M",
+      "janela_evitar": "10:55-11:30"
+    },
+    {
+      "hora": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    },
+    {
+      "hora": "22:45",
+      "evento": "PMI Serviços Caixin (Mai · China)",
+      "pais": "CN",
+      "impacto": "MEDIO",
+      "projecao": "52,3",
+      "anterior": "52,6",
+      "janela_evitar": "—"
+    }
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-01 segunda-feira ~23h BRT (FASE 1 noturna)",
+    "fase_1_noturna_completa_em": "2026-06-01 segunda · núcleo de preço WIN/WDO COMPLETO via prints EOD",
+    "fase_2_aguarda": "terça 02/06 ~07:25 BRT · release oficial CETIP 07:11 + globais overnight segunda→terça + cross-check news",
+    "pendentes_fase_2": [
+      "DI_curva_oficial: VALIDAR_FALCAO_TERCA_711 · release oficial CETIP vs snapshot EOD segunda (~14,20% / ~14,06% / ~14,04% todos >14%)",
+      "globais_overnight: snapshot overnight segunda→terça · DXY/USDJPY/Brent/ES/NQ/VIX/Ouro · contexto macro adicional",
+      "Wyckoff_score_veredito: WIN caiu forte −1,06% segunda (breakdown continuou de sexta) · WDO caiu leve −0,25% · fase Wyckoff com TF explícito (LIÇÃO 71) · score+veredito+viés final",
+      "manchete_subtitulo: framing editorial pós-DI oficial + globais + filtro",
+      "filtro_anti_narrativa: cross-check news manhã terça + contra-evidências estruturais vs consenso",
+      "plano_operacional: setups entry/SL/TP com RR ≥1,5 · kill zones limpas · gatilhos",
+      "status_trades_22: confirmar outcome dos setups condicionais do #22 (segunda)",
+      "agenda_macro: popular eventos terça 02/06 (se houver além dos leilões B3)"
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: zero dado inventado · núcleo de preço dos prints EOD fornecidos por Renato",
+      "LIÇÃO 50/53: DI snapshot EOD = fonte FASE 1 · release oficial CETIP = primário FASE 2 · marcar VALIDAR_FALCAO_TERCA_711",
+      "LIÇÃO 54: fase PARCIAL_AGUARDANDO_FASE2 honesta · pendentes FASE 2 explícitos · NÃO declarar PRONTA sem grep _PENDENTE_ vazio",
+      "LIÇÃO 61: fechamento ≠ ajuste nos 2 ativos (WIN 172.880 ≠ 173.170 · WDO 5.063,00 ≠ 5.050,65)",
+      "LIÇÃO 67: zero fonte upstream em campos públicos (Falcão só no _meta interno)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito pendente FASE 2"
+    ],
+    "fontes": {
+      "ajuste_b3_win": "Home broker EOD 01/06 · ajuste 173.170 · fechamento 172.880",
+      "ajuste_b3_wdo": "Home broker EOD 01/06 · ajuste 5.050,65 · fechamento 5.063,00",
+      "OHLC_daily": "Home broker EOD 01/06 (prints Renato)",
+      "di_curva": "Snapshot EOD 01/06 · vértices ~14,20% / ~14,06% / ~14,04% (+12/+22/+16 bps preliminar · VALIDAR Falcão CETIP terça 07:11)",
+      "globais_segunda": "Contexto macro Falcão 01/06 (reunião Picchetti BC · Selic terminal 14,00-14,25% · IPCA >5% 2026 · fim escala 6x1 +0,30pp IPCA 2027 · petróleo/Oriente Médio · ceticismo Selic)",
+      "agenda_macro": "Calendário econômico terça 02/06 (prints Renato · COMPLETADO no gate Cowork · LIÇÃO 15): ★★★ CPI Zona Euro 06:00 + JOLTS EUA 11:00 (kill zone) · ★★ Kashkari 02:50, IPC-Fipe BR 06:00, CPI núcleo EU 06:00, Caixin Serviços 22:45. JOLTS 11:00 é o evento da janela operacional · cross-check projeções na FASE 2."
+    },
+    "nota_contexto_macro_falcao_01jun": "Reunião Picchetti (BC) com economistas segunda 01/06: Selic terminal mediana 14,00-14,25% · dúvida se Copom encerra ciclo já em junho (3º corte 14,50→14,25) ou segue. IPCA >5% 2026 e ~4% 2027 · desancoragem das expectativas no Focus · El Niño risco de alta (alimentos/combustíveis). Minoria citou RISCO À CREDIBILIDADE DO BC se seguir cortando com inflação subindo. Fim da escala 6x1 → estimativa +0,30 pp no IPCA 2027 (serviços). Combo ultra hawk: Focus pior + petróleo/Oriente Médio + ceticismo sobre Selic.",
+    "alertas": [
+      "NÃO publicar · NÃO gerar capa nem telegram (é só FASE 1)",
+      "Juros BR EOD segunda >14% em TODOS os vértices · bear shift mais forte que o do briefing #21 e #22 · implicação preliminar contra-WIN forte",
+      "WIN caiu forte segunda (−1,06% · breakdown continuou de sexta 173.690) · fechou 172.880 · próximo suporte 172.000?",
+      "WDO caiu leve (−0,25%) · firme no carry apesar do susto juros"
+    ]
+  }
+}
