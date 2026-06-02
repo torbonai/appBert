@@ -65,7 +65,7 @@
           "veredito_label": "notícia induzindo ao erro",
           "posicao_regua": 23,
           "score_clareza": 5.0,
-          "estagio": "meio",
+          "estagio": "inicio",
           "estagio_alerta": null,
           "racional_uma_linha": "Notícia confiante na alta ('rompe 5,00'), mas o gráfico só mostra base firme/lateral (fase B, em construção) — não confirma rompimento. Consenso à frente da estrutura → risco de armadilha. Desconfia."
         }

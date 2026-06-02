@@ -132,6 +132,51 @@
       border-top: 1px dashed var(--border); font-size: 11px; color: var(--muted);
     }
 
+    /* ========== Glossário Filtro v2 ========== */
+    .filtro-glossario {
+      margin-top: var(--s-5); padding: var(--s-4); background: var(--bg-2);
+      border: 1px solid var(--border); border-radius: var(--radius-sm);
+    }
+    .filtro-glossario-titulo {
+      font-size: 14px; font-weight: 700; color: var(--text);
+      margin: 0 0 var(--s-3); text-transform: uppercase; letter-spacing: 0.06em;
+    }
+    .filtro-glossario-secao {
+      margin-bottom: var(--s-3); padding-bottom: var(--s-3);
+      border-bottom: 1px dashed var(--border);
+    }
+    .filtro-glossario-secao:last-of-type { border-bottom: 0; margin-bottom: 0; }
+    .filtro-glossario-secao p {
+      font-size: 13px; line-height: 1.5; color: var(--text-2); margin: 0 0 8px;
+    }
+    .filtro-glossario-secao p:last-child { margin-bottom: 0; }
+    .filtro-glossario-secao strong { color: var(--text); }
+    .filtro-glossario-subtitulo {
+      font-weight: 700; color: var(--text); margin-bottom: 6px !important;
+    }
+    .filtro-glossario-badge {
+      display: inline-block; padding: 2px 8px; border-radius: 4px;
+      font-size: 11px; font-weight: 700; margin-right: 6px;
+    }
+    .filtro-glossario-badge.favor {
+      background: var(--green-soft); color: var(--green); border: 1px solid var(--green);
+    }
+    .filtro-glossario-badge.contra {
+      background: var(--warn-soft); color: var(--warn); border: 1px solid var(--warn);
+    }
+    .filtro-glossario-hoje {
+      background: rgba(212, 175, 55, 0.08); border-left: 3px solid var(--gold);
+      padding: var(--s-3); border-radius: 4px; margin-top: var(--s-3);
+    }
+    .filtro-glossario-hoje-titulo {
+      font-size: 12px; font-weight: 700; color: var(--gold); margin: 0 0 8px;
+    }
+    .filtro-glossario-hoje p {
+      font-size: 12px; line-height: 1.4; color: var(--text-2); margin: 0 0 6px;
+    }
+    .filtro-glossario-hoje p:last-child { margin-bottom: 0; }
+    .filtro-glossario-hoje strong { color: var(--text); }
+
     /* ========== Ativo card ========== */
     .ativo-card {
       background: var(--card); border: 1px solid var(--border);
@@ -534,6 +579,33 @@
           html += '<span>🟠 Contra = induzindo ao erro</span>';
           html += '<span>🟢 A favor = pavimentando o ciclo</span>';
           html += '</div>';
+
+          // Glossário fixo (educacional)
+          html += '<div class="filtro-glossario">';
+          html += '<h4 class="filtro-glossario-titulo">Como ler este quadro</h4>';
+          html += '<div class="filtro-glossario-secao">';
+          html += '<p><strong>• Notícia</strong> = o que a imprensa e o consenso dizem sobre o ativo.</p>';
+          html += '<p><strong>• Estrutura</strong> = o que o gráfico realmente mostra (análise técnica · fase de Wyckoff).</p>';
+          html += '</div>';
+          html += '<div class="filtro-glossario-secao">';
+          html += '<p class="filtro-glossario-subtitulo">A régua cruza as duas:</p>';
+          html += '<p><span class="filtro-glossario-badge favor">🟢 A favor</span> <strong>Pavimentando o ciclo</strong> — notícia e gráfico no mesmo lado. O movimento tem respaldo → opera a favor, com gestão.</p>';
+          html += '<p><span class="filtro-glossario-badge contra">🟠 Contra</span> <strong>Induzindo ao erro</strong> — a notícia briga com o gráfico, ou está confiante demais. Risco de armadilha → desconfia do consenso.</p>';
+          html += '<p><strong>• Clareza 0–10</strong> = quão forte e nítido é o sinal. Maior = mais confiável.</p>';
+          html += '</div>';
+          html += '<div class="filtro-glossario-secao">';
+          html += '<p class="filtro-glossario-subtitulo">Estágio do ciclo (selo no marcador):</p>';
+          html += '<p><strong>• INÍCIO</strong> = movimento começando, muito espaço pela frente.</p>';
+          html += '<p><strong>• MEIO</strong> = movimento em curso, tendência ativa.</p>';
+          html += '<p><strong>• FIM</strong> = movimento esticado/maduro, risco de exaustão. Mesmo a favor, não persiga; espere o recuo.</p>';
+          html += '</div>';
+          html += '<div class="filtro-glossario-hoje">';
+          html += '<p class="filtro-glossario-hoje-titulo">📌 Hoje, na prática:</p>';
+          html += '<p><strong>WIN</strong> a favor mas no FIM (queda de 5 dias esticada) → segue com cuidado, risco de repique.</p>';
+          html += '<p><strong>WDO</strong> contra (a alta do dólar que a mídia prevê não tem respaldo no gráfico) → desconfia.</p>';
+          html += '</div>';
+          html += '</div>';
+
           html += '</div>';
         } else {
           // fallback: texto (briefings antigos)
