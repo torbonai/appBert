@@ -61,13 +61,13 @@
           "noticia_label": "Altista · 'dólar firme · vai romper R$ 5,00'",
           "estrutura_dir": 0.5,
           "estrutura_label": "Acumulação Fase B · lateral firme · carry segura",
-          "veredito": "A_FAVOR",
-          "veredito_label": "notícia pavimentando o ciclo",
-          "posicao_regua": 63,
-          "score_clareza": 4.2,
+          "veredito": "CONTRA",
+          "veredito_label": "notícia induzindo ao erro",
+          "posicao_regua": 23,
+          "score_clareza": 5.0,
           "estagio": "meio",
           "estagio_alerta": null,
-          "racional_uma_linha": "Notícia e estrutura alinhadas (ambas altistas) · lateral firme >5k · carry BRL funcionando. Consenso 'rompe 5k' compatível com Acumulação B (score baixo · estrutura ainda em construção)."
+          "racional_uma_linha": "Notícia confiante na alta ('rompe 5,00'), mas o gráfico só mostra base firme/lateral (fase B, em construção) — não confirma rompimento. Consenso à frente da estrutura → risco de armadilha. Desconfia."
         }
       },
       "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"Selic entra em modo ultra-hawk com Picchetti · BC tem pouco espaço pra cortar · todos DI >14% renovaram máximas · petróleo reacende inflação · risco credibilidade aumenta · Ibov apanha · WIN continua caindo (5º dia) · queda pra 172k-171k inevitável · WDO vai romper R$ 5,00\". ⚠️ 5 FATOS DESMONTAM essa narrativa linear: (1) BRL FIRME no carry — USD/BRL −0,40% a 5,0227 MESMO com DXY +0,29% forte · juro alto >14% atrai fluxo · segura o real · WDO NÃO acompanhou DI (caiu apenas −0,25% vs −1,06% WIN) · carry está funcionando. (2) Petróleo faca de dois gumes — Brent +4,23% assusta o DI MAS Petrobras +1,31% segura o Ibov (país produtor) e beneficia o real · narrativa unidirecional ignora o outro lado. (3) WIN sobre-vendido — 5 quedas consecutivas · fechou 172.880 colado na mínima 172.660 · ultra-hawk JÁ MUITO precificado · risco de squeeze de repique contra shorts tardios em torno do JOLTS (improvável mas existe). (4) Risk-on global intacto — SPX/NAS em recordes 7º dia (euforia IA) · risk-off é LOCALIZADO no BR · não global · se Ormuz desescalar = gatilho hawk perde força. (5) Ultra-hawk é sobre RITMO/fim de ciclo não alta de juro — base ainda é corte 25bp em junho · Selic terminal 14,25% (não 15%+) · mercado precificando PAUSA não REVERSÃO. ✅ LEITURA BERTANI · ESTRUTURA TÉCNICA: WIN breakdown forte confirmando (5º dia de queda · sem reconquista 175.235 · próximo suporte 172.000 estrutural) · setup SHORT 60% primário se rejeição persiste <174.500 pós-JOLTS weak. WDO firme no carry (USD/BRL −0,40% resistiu DI ultra-hawk) · setup LONG 45% primário se JOLTS fraco <8,5M + DXY <99,00. Narrativa consensual \"WIN/WDO vão cair\" ignora: (1) BRL firme no carry segura WDO (2) WIN sobre-vendido 5 dias (3) risk-on global intacto (4) petróleo beneficia Petrobras/real.",
