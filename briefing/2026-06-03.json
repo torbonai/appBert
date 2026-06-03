@@ -1,0 +1,431 @@
+{
+  "data": "2026-06-03",
+  "data_extenso": "Quarta-feira, 3 de junho de 2026",
+  "hora_publicacao": "08:30 BRT",
+  "edicao": 24,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "O TARIFAÇO GRITA, O PREÇO SUSSURRA",
+    "subtitulo": "Juros longos subiram terça (Jan/31 14,035% +7,5bps · Jan/29 +3,5bps) precificando 'Selic parada após junho' + prêmio fiscal pela ameaça de tarifa extra 25% EUA ao Brasil. WIN reverteu FORTE (+1,32% · 175.187 ajuste · tocou 175.835 topo) recuperando o breakdown de segunda (de 172.880) — MAS fechamento próximo do topo sem reconquista estrutural → sweep de liquidez + MSS (change of character). WDO −0,43% (5.045,20 ajuste · real apreciou pra 5,0055 overnight −0,42%) seguiu firme/lateral apesar da cauda da tarifa. Globais terça→quarta: Brent +3,08% 3º dia (Ormuz) · DXY +0,16% · ES/NQ mixed · Ibov +1,16% alívio aço 25→15% · gringo −R$14,9bi maio (maior saída mar/2020). Quarta 03/06: ADP 09:15 ★★★ (kill zone B3) · ISM Serviços 11:00 ★★★ · Produção Industrial BR 09:00 ★★★ · Estoques Petróleo 11:30."
+  },
+  "resumo_30s": {
+    "win_linha": "MINI ÍNDICE · ajuste 175.187 (terça +1,32%) · O 173.005 / H 175.835 / L 172.905 / C 175.160 · REPIQUE forte recuperou o breakdown de segunda · MAS fechou no topo sem reconquista estrutural (sweep liquidez comprador + MSS) · score 5,0/10 · AGUARDAR · SHORT 55% se rejeição <175.800 pós-ADP com volume fraco · SL 176.300 · TP1 174.200 RR 2,0 · 2 contratos · LONG 20% improvável (só repique válido >177.000 · carry risk alto)",
+    "wdo_linha": "MINI DÓLAR · ajuste 5.045,20 (terça −0,43%) · O 5.048,50 / H 5.057,00 / L 5.034,00 / C 5.041,00 · FIRME/lateral · real apreciou pra 5,0055 overnight (−0,42%) apesar da cauda tarifa 25% EUA · score 4,5/10 · AGUARDAR · SHORT 40% se rejeição PREMIUM 5.050 · SL 5.058 · TP1 5.038 RR 1,5 · 3 contratos · sem LONG (squeeze de tarifa = ficar de fora · não comprar em premium)",
+    "janela_operacional": "09:45-10:50 BRT (pós-digestão ADP 09:15) · 11:30-12:30 BRT (pós-ISM 11:00) · 13:30-15:00 BRT (NY open + Balança 15:00) · evitar 09:00-09:25 · 09:10-09:45 · 10:55-11:30 · 17:45-17:55",
+    "nivel_chave": "WIN 176.300 resistência sweep · 175.835 PDH/topo terça · 175.187 ajuste · 175.160 fechamento · 174.370 EQ (PDH+PDL)/2 · 174.200 TP1 SHORT · 172.905 PDL · WDO 5.058 resistência · 5.057 PDH · 5.050 PREMIUM entry SHORT · 5.045,50 EQ · 5.045,20 ajuste · 5.038 TP1 SHORT (PDL próximo) · 5.034 PDL · 5.020 TP2 SHORT · 5.000 TP3/piso psicológico",
+    "agenda_top1": "ADP Empregos Privados Mai (US) 09:15 ★★★ · ISM Serviços Mai (US) 11:00 ★★★ · Produção Industrial BR Abr 09:00 ★★★"
+  },
+  "kill_zones_recomendadas": [
+    "09:45-10:50 BRT · primeira janela limpa pós-ADP 09:15 ★★★ (evitar 09:10-09:45 pré-digestão) · setup primário WIN SHORT se rejeição topo",
+    "11:30-12:30 BRT · pós-ISM Serviços 11:00 ★★★ · segunda janela operacional · confirmar direção pós-evento",
+    "13:30-15:00 BRT · NY Open + Balança Comercial BR 15:00 · terceira janela · menor probabilidade · só com setup óbvio"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "VENTO_FORTE",
+    "highlights": [
+      "📌 Briefing #24 quarta 03/06/2026 · FASE 2 completa",
+      "📊 WIN ajuste B3 terça 02/06: 175.187 · OHLC O 173.005 / H 175.835 / L 172.905 / C 175.160 · var dia +2.280 pts / +1,32% · range 2.930 pts · DIA DE ALTA FORTE (repique · recuperou o breakdown de segunda 172.880) MAS fechamento 175.160 próximo do topo 175.835 sem reconquista estrutural (sweep de liquidez comprador + MSS preliminar) · fechamento 175.160 ≠ ajuste 175.187 (LIÇÃO 61)",
+      "💵 WDO ajuste B3 terça 02/06: 5.045,20 · OHLC O 5.048,50 / H 5.057,00 / L 5.034,00 / C 5.041,00 · var REAL do dia −22,00 pts / −0,43% · fechamento 5.041,00 ≠ ajuste 5.045,20 (LIÇÃO 61) · real seguiu firme/apreciando (USD/BRL overnight 5,0055 −0,42%) apesar da cauda da tarifa 25% EUA",
+      "💵 Juros futuros BR · FALCÃO CETIP EOD terça 02/06 (validado): BEAR STEEPEN · curto cedeu leve, longo subiu · Jan/27 14,16% (−1,5 bps de 14,175) · Jan/28 14,035% (−1,0 bps) · Jan/29 14,015% (+3,5 bps de 13,98) · Jan/31 14,035% (+7,5 bps de 13,96) · Jan/33 14,10% (+7,4 bps) · longo liderou +7,5bp · tema 'Selic parada após junho' (BTG/UBS pausam em 14,25%) + ameaça de tarifa extra 25% EUA pressionando ponta longa (prêmio fiscal/inflação)",
+      "🌍 Globais overnight terça→quarta: DXY 99,37 (+0,16%) · USD/JPY 159,83 (−0,04% flat) · USD/BRL 5,0055 (−0,42% real apreciando) · Brent 98,96 (+3,08% · 3º dia · Ormuz/Irã×EUA) · WTI 93,76 (+1,74%) · ES −0,11% · NQ +0,16% · VIX 16,09 (+2% · baixo) · Ouro −1,06% · US10Y +3bps",
+      "📈 Equities terça 02/06: Ibov +1,16% → 174.197 (alívio aço 25→15% Seção 232 · siderurgia/mineração puxaram) · SPX/NAS mixed overnight · DAX −1,05% · Nikkei +2,61% · fluxo estrangeiro BR maio −R$14,9bi (maior saída desde mar/2020)",
+      "🎯 Herança #23 (terça 02/06): WIN 3,0/10 AGUARDAR SHORT em discount (breakdown 5º dia queda) · veredito: setup NÃO ARMOU (WIN reverteu FORTE +1,32% · tese de continuação baixa FALHOU · shorts apanharam no repique até 175.835). WDO 4,0/10 AGUARDAR (CONTRA · notícia confiante alta sem respaldo) · veredito: NÃO ARMOU (real apreciou · carry segurou). Honestidade radical: breakdown de segunda NÃO seguiu · terça foi repique (LIÇÃO 7/54)",
+      "🎯 Score WIN 5,0/10 + WDO 4,5/10 = dia de paciência pós-repique · aguardar ADP 09:15 e ISM 11:00 definirem · sweep do topo WIN 175.835 + rejeição = setup SHORT condicional · WDO cautela squeeze (tarifa cauda)",
+      "📅 Contexto macro quarta 03/06: Bear steepen DI (longo +7,5bp) + tarifa 25% EUA assombra (prêmio fiscal) + real apreciando −0,42% (carry resistiu) + Brent +3% 3º dia (Ormuz) + gringo −R$14,9bi maio + alívio aço 25→15% (Ibov setorial) · WIN reverteu mas sem reconquista estrutural (sweep + MSS) · eventos ★★★: ADP 09:15 (kill zone B3) · Produção Industrial BR 09:00 · ISM Serviços 11:00"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "PESADO",
+      "narrativa_dominante": "Tarifa 25% EUA vai derrubar o real e explodir o dólar · WIN só cai (breakdown confirmado) · juros longos +7,5bp = risco fiscal enorme · Selic vai ficar alta por anos · Ibov apanha sem parar · saída de gringo R$14,9bi maio = fuga de capital estrutural · WIN vai pra 172k-170k inevitável · WDO rompe R$ 5,10",
+      "fonte_observada": "Bom Dia Mercado 03/06 + consenso pré-ADP/ISM",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_label": "Baixista unânime · 'breakdown confirmado · WIN só cai'",
+          "estrutura_dir": -1,
+          "estrutura_label": "Distribuição preliminar · MAS repique forte terça · MSS",
+          "veredito": "CONTRA",
+          "veredito_label": "notícia induzindo ao erro",
+          "posicao_regua": 28,
+          "score_clareza": 6.5,
+          "estagio": "meio",
+          "estagio_alerta": null,
+          "racional_uma_linha": "Notícia diz 'breakdown confirmado só cai', mas WIN subiu FORTE +1,32% terça (repique até 175.835 · recuperou o breakdown). Estrutura mostra sweep de liquidez + MSS (não confirmação baixista). Consenso à frente da estrutura → desconfia."
+        },
+        "WDO1!": {
+          "noticia_dir": 2,
+          "noticia_label": "Altista forte · 'tarifa 25% explode o dólar · rompe 5,10'",
+          "estrutura_dir": -0.5,
+          "estrutura_label": "Lateral firme · real apreciando (carry resistiu)",
+          "veredito": "CONTRA",
+          "veredito_label": "notícia induzindo ao erro",
+          "posicao_regua": 18,
+          "score_clareza": 7.0,
+          "estagio": "inicio",
+          "estagio_alerta": null,
+          "racional_uma_linha": "Notícia apocalíptica 'tarifa explode dólar', mas real APRECIOU −0,42% overnight (carry resistiu · WDO caiu −0,43%). Estrutura lateral firme sem confirmação de alta. Consenso em pânico → desconfia (risco de squeeze se tarifa não vier)."
+        }
+      },
+      "descricao": "🟠 O QUE A MÍDIA DIZ HOJE: \"Tarifa 25% EUA vai derrubar o real e explodir o dólar · WIN só cai (breakdown confirmado de segunda) · juros longos +7,5bp = risco fiscal enorme · Selic vai ficar alta por anos · Ibov apanha sem parar · saída de gringo R$14,9bi maio = fuga de capital estrutural · WIN vai pra 172k-170k inevitável · WDO rompe R$ 5,10\". ⚠️ 5 FATOS DESMONTAM essa narrativa linear: (1) WIN REVERTEU FORTE terça (+1,32% · de 172.880 segunda pra 175.835 topo terça) — breakdown NÃO seguiu · repique forte recuperou a queda · consenso 'só cai' apanhou no repique. (2) REAL APRECIOU overnight (USD/BRL 5,0055 −0,42%) MESMO com ameaça de tarifa 25% EUA — carry +14% resistiu · WDO caiu −0,43% (não subiu) · pânico da tarifa NÃO se materializou no câmbio. (3) Saída de gringo R$14,9bi maio é FLUXO, não estrutural — Brasil teve superávit comercial mai R$ 7,65B (Balança sai 15h hoje · confirmar) · entrada de comércio exterior compensa parcialmente saída financeira. (4) Ibov SUBIU +1,16% terça (alívio aço 25→15% Seção 232 · siderurgia/mineração puxaram) — setorial não é 'apanha sem parar' · mercado precificou ALÍVIO parcial da tarifa. (5) Bear steepen DI (longo +7,5bp) é sobre RITMO de corte Selic (pausa após junho em 14,25%) não reversão de ciclo — BTG/UBS pausam · não sobem · base ainda é juro alto MAS não ultra-hawk estrutural. ✅ LEITURA BERTANI · ESTRUTURA TÉCNICA: WIN sweep de liquidez comprador no topo 175.835 + fechamento próximo do topo 175.160 sem reconquista estrutural (MSS preliminar · change of character) · setup SHORT 55% primário se rejeição <175.800 pós-ADP com volume fraco · aguardar confirmação. WDO lateral firme (real apreciando · carry resistiu) · setup SHORT 40% se rejeição PREMIUM 5.050 com volume fraco · cautela squeeze se tarifa não vier. Narrativa consensual 'WIN só cai / dólar explode' ignora: (1) WIN reverteu forte terça (2) real apreciou apesar da tarifa (3) Ibov subiu setorial (4) bear steepen é pausa não reversão (5) saída gringo é fluxo compensado parcialmente por comercial.",
+      "frases_consensuais_alertadas": [
+        "Tarifa 25% EUA vai derrubar o real · dólar explode · rompe 5,10",
+        "WIN só cai · breakdown confirmado de segunda · vai pra 172k-170k",
+        "Saída de gringo R$14,9bi maio = fuga de capital estrutural · mercado BR acabou",
+        "Juros longos +7,5bp = risco fiscal enorme · Selic vai ficar alta por anos",
+        "Ibov apanha sem parar · siderurgia/mineração derretendo",
+        "Breakdown de segunda seguiu · tendência baixista clara"
+      ],
+      "contra_evidencias": [
+        "WIN reverteu FORTE terça +1,32% (de 172.880 segunda pra 175.835 topo terça) — breakdown NÃO seguiu",
+        "Real APRECIOU overnight −0,42% (USD/BRL 5,0055) MESMO com ameaça tarifa 25% — carry resistiu",
+        "WDO CAIU −0,43% terça (não subiu) — pânico da tarifa não se materializou no câmbio",
+        "Ibov SUBIU +1,16% terça (alívio aço 25→15% · siderurgia/mineração PUXARAM não derreteram)",
+        "Bear steepen DI é PAUSA Selic após junho (14,25% BTG/UBS) não reversão de ciclo — base ainda é corte"
+      ],
+      "leitura_bertani": "WIN: sweep de liquidez comprador no topo 175.835 + MSS preliminar (fechamento próximo do topo sem reconquista) · setup SHORT 55% se rejeição <175.800 pós-ADP. WDO: lateral firme · real apreciou (carry resistiu tarifa) · cautela squeeze · SHORT 40% se rejeição PREMIUM 5.050.",
+      "contra_evidencias_a_monitorar": [
+        "Se WIN reconquistar 176.000+ com volume (reversão de alta confirmada · invalida MSS)",
+        "Se WDO romper 5.060+ com DXY >99,50 (tarifa pressionando · invalida carry)",
+        "Se Balança Comercial mai sair <R$ 5B (piora estrutural fluxo · valida fuga gringo)",
+        "Se ADP/ISM fortes (>120K / >54,0) empurrarem ES/NQ pra recorde (risk-on global invalida breakdown WIN)",
+        "Se Brent romper 100+ 4º dia (Ormuz escalando · pressão inflação invalida pausa Selic)"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear steepen (CETIP EOD terça 02/06 validado): curto cedeu leve (Jan/27 14,16% −1,5 bps · corte junho ainda no preço) e longo subiu forte (Jan/31 14,035% +7,5 bps · Jan/33 14,10% +7,4 bps · longo liderou). Mercado precifica 'Selic parada após junho' (BTG/UBS projetam pausa em 14,25% fim de ano) + prêmio de risco fiscal na ponta longa pela ameaça de tarifa extra 25% EUA. Implicação: desfavorece WIN no médio prazo (juro alto estrutural) · WDO sensível à tarifa (MAS real apreciou terça · carry resistiu por ora).",
+      "vertices_bps": {
+        "1y": -1.5,
+        "2y": -1.0,
+        "3y": 3.5,
+        "5y": 7.5,
+        "7y": 7.4
+      },
+      "yields_eod": {
+        "1y": 14.16,
+        "2y": 14.035,
+        "3y": 14.015,
+        "5y": 14.035,
+        "7y": 14.10
+      },
+      "fonte": "Falcão Notícias 18:50 BRT · CETIP fechamento 02/06 (EOD validado)",
+      "implicacao": "Bear steepen desfavorece WIN médio prazo (juro alto estrutural) · WDO sensível tarifa MAS carry resistiu (real apreciou). Setup: vender repique WIN (sweep topo) · cautela WDO (squeeze se tarifa não vier)."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Fase C · UTAD/upthrust no topo 175.835 (Daily) · sweep liquidez + MSS (change of character)",
+      "score": 5.0,
+      "veredito": "AGUARDAR",
+      "vies": "short",
+      "racional_publico": "WIN reverteu FORTE terça (+1,32% · 175.187 ajuste · tocou 175.835 topo) recuperando o breakdown de segunda 172.880 — MAS fechamento 175.160 próximo do topo sem reconquista estrutural (sweep de liquidez comprador + MSS preliminar · change of character). Bear steepen DI (longo +7,5bp) + ameaça tarifa 25% EUA (risco fiscal) pressionam médio prazo. Setup SHORT 55%: aguardar rejeição <175.800 pós-ADP 09:15 com volume fraco (confirma sweep falhado) · entry 175.500-175.700 (PREMIUM acima EQ 174.370) · SL 176.300 (acima resistência sweep) · TP1 174.200 RR 2,0 (suporte intraday) · 2 contratos banca 30k @ 1%. LONG 20% improvável: só repique válido >177.000 com volume >250k (carry risk alto · juro +7,5bp desfavorece). Score 5,0/10 (estrutura ambígua · sweep vs reversão · AGUARDAR confirmação ADP/ISM). Evitar 09:10-09:45 (ADP) · 10:55-11:30 (ISM).",
+      "niveis_chave": {
+        "ajuste_b3": 175187,
+        "ajuste_b3_data": "2026-06-02",
+        "fechamento_anterior": 175160,
+        "PDH": 175835,
+        "PDL": 172905,
+        "maxima_anterior": 175835,
+        "minima_anterior": 172905,
+        "abertura_anterior": 173005,
+        "range_anterior_pts": 2930,
+        "variacao_anterior_pts": 2280,
+        "variacao_anterior_pct": 1.32,
+        "EQ": 174370,
+        "weekly_high_20d": 178800,
+        "weekly_low_20d": 172660,
+        "suporte_critico": 172000,
+        "suporte_critico_status": "não testado (mínima 172.660 segunda · terça reverteu)",
+        "resistencia_critica": 176300,
+        "resistencia_critica_status": "não rompida (máxima 175.835 terça · sweep preliminar)",
+        "buffer_ajuste_suporte_pts": 1187,
+        "_nota": "OHLC fonte print home broker EOD 02/06. Ajuste B3 175.187; fechamento 175.160. DIA DE ALTA: var +2.280 pts / +1,32%. EQ = (PDH 175.835 + PDL 172.905) / 2 = 174.370 (LIÇÃO premium/discount ICT)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 175187,
+        "data_referencia": "2026-06-02",
+        "fonte": "Home broker EOD 02/06 (pregão terça-feira)"
+      },
+      "plano": {
+        "direcao": "VENDA (short) condicional 55% · COMPRA 20% improvável",
+        "entry_zona": "175.500-175.700 (PREMIUM acima EQ 174.370 · aguardar rejeição <175.800 pós-ADP)",
+        "stop": "176.300 (700 pts acima)",
+        "stop_pts": "SHORT: 700 pts · LONG: 900 pts",
+        "tp1": "174.200 (TP1 SHORT · suporte intraday)",
+        "tp1_rr": "SHORT: 2,0R · LONG: 2,0R (improvável)",
+        "tp1_partial_pct": 50,
+        "tp2": "173.500 (TP2 SHORT · suporte D-1)",
+        "tp2_rr": "SHORT: 3,0R",
+        "tp2_partial_pct": 30,
+        "tp3": "172.500 (TP3 SHORT · suporte estrutural)",
+        "tp3_rr": "SHORT: 4,4R",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "SHORT: 2 contratos (floor(300/(700×0,20))=2) · LONG: 1 contrato (floor(300/(900×0,20))=1)",
+        "setup": "Sweep de liquidez comprador no topo 175.835 + MSS preliminar (fechamento próximo do topo 175.160 sem reconquista estrutural · change of character). Aguardar rejeição <175.800 pós-ADP 09:15 com volume fraco (confirma sweep falhado) · entry PREMIUM 175.500-175.700 (acima EQ 174.370 · LIÇÃO ICT) · SL 176.300 (acima resistência sweep) · TP1 174.200 RR 2,0 (suporte intraday) · BE em +1R (175.600-700=174.900). Contexto: bear steepen DI +7,5bp longo (juro alto desfavorece WIN médio prazo) + ameaça tarifa 25% EUA (risco fiscal). LONG 20% improvável: só repique válido >177.000 com volume >250k (carry risk alto).",
+        "kill_zone": "09:45-10:50 BRT (pós-ADP 09:15 ★★★) · 11:30-12:30 BRT (pós-ISM 11:00 ★★★)",
+        "gatilho": "SHORT: rejeição <175.800 pós-ADP 09:15 com volume <200k · candle de rejeição 15m confirmado · entry 175.500-175.700 (PREMIUM). LONG: romper 177.000 com volume >250k + candle engulfing 15m confirmado (improvável).",
+        "anti_trade": "NÃO vender em DISCOUNT (abaixo EQ 174.370) · NÃO comprar em PREMIUM. NÃO operar dentro de 09:10-09:45 (ADP) · 10:55-11:30 (ISM). NÃO perseguir se WIN reconquistar 176.000+ com volume (reversão confirmada · invalida MSS).",
+        "cancelamento": "SHORT cancelado se: WIN romper 176.300 (SL) · ou reconquistar 176.000+ com volume >250k antes da entry (reversão alta confirmada). LONG cancelado se: WIN quebrar 174.000 antes de armar (breakdown retoma)."
+      },
+      "comentario_breve": "Repique forte terça (+1,32% · sweep topo 175.835) MAS sem reconquista estrutural · aguardar rejeição pós-ADP pra vender o topo",
+      "_score_breakdown": {
+        "total": 5.0,
+        "nota": "Estrutura ambígua: repique forte terça (+1,32%) recuperou breakdown de segunda MAS fechamento próximo do topo 175.160 sem reconquista estrutural (sweep liquidez + MSS preliminar). Bear steepen DI +7,5bp longo (juro alto desfavorece WIN). Score 5,0/10 (neutro · aguardar ADP/ISM definirem: sweep falhado → SHORT válido · reversão confirmada → LONG)."
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Acumulação Fase B (Daily) · lateral firme · real apreciando (carry resistiu tarifa)",
+      "score": 4.5,
+      "veredito": "AGUARDAR",
+      "vies": "lateral",
+      "racional_publico": "WDO lateral firme terça (−0,43% · 5.045,20 ajuste) · real APRECIOU overnight pra 5,0055 (−0,42%) apesar da ameaça de tarifa 25% EUA — carry +14% resistiu por ora. Bear steepen DI (longo +7,5bp) + Brent +3,08% 3º dia (Ormuz) pressionam · MAS USD/BRL recuou (carry segura). Setup SHORT 40% condicional: rejeição PREMIUM 5.050 (acima EQ 5.045,50 · LIÇÃO ICT) com volume fraco · SL 5.058 · TP1 5.038 RR 1,5 (PDL próximo) · 3 contratos banca 30k @ 1%. SEM LONG: real apreciando desfavorece compra · se WDO romper 5.060 com força (DXY >99,50) = squeeze de tarifa · ficar de fora (não comprar em premium · LIÇÃO 89). Score 4,5/10 (lateral · aguardar ADP/ISM · cautela squeeze). Evitar 09:10-09:45 (ADP) · 10:55-11:30 (ISM).",
+      "niveis_chave": {
+        "ajuste_b3": 5045.20,
+        "ajuste_b3_data": "2026-06-02",
+        "fechamento_anterior": 5041.00,
+        "PDH": 5057.00,
+        "PDL": 5034.00,
+        "maxima_anterior": 5057.00,
+        "minima_anterior": 5034.00,
+        "abertura_anterior": 5048.50,
+        "range_anterior_pts": 23.00,
+        "variacao_anterior_pts": -22.00,
+        "variacao_anterior_pct": -0.43,
+        "EQ": 5045.50,
+        "weekly_high_20d": 5081.50,
+        "weekly_low_20d": 5034.00,
+        "suporte_critico": 5000,
+        "suporte_critico_status": "não testado (mínima 5.034 terça)",
+        "resistencia_critica": 5060,
+        "resistencia_critica_status": "não rompida (máxima 5.057 terça)",
+        "buffer_ajuste_suporte_pts": 45.20,
+        "_nota": "OHLC fonte print home broker EOD 02/06. Ajuste B3 5.045,20; fechamento 5.041,00. Variação REAL do dia −22,00 pts / −0,43%. EQ = (PDH 5.057 + PDL 5.034) / 2 = 5.045,50 (LIÇÃO premium/discount ICT)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5045.20,
+        "data_referencia": "2026-06-02",
+        "fonte": "Home broker EOD 02/06 (pregão terça-feira)"
+      },
+      "plano": {
+        "direcao": "VENDA (short) condicional 40% · sem COMPRA (squeeze = ficar de fora)",
+        "entry_zona": "5.050 (PREMIUM acima EQ 5.045,50 · aguardar rejeição pós-ADP)",
+        "stop": "5.058 (8 pts acima do PDH 5.057)",
+        "stop_pts": "8 pts",
+        "tp1": "5.038 (PDL próximo)",
+        "tp1_rr": "1,5R",
+        "tp1_partial_pct": 30,
+        "tp2": "5.020 (piso intraday)",
+        "tp2_rr": "3,8R",
+        "tp2_partial_pct": 40,
+        "tp3": "5.000 (piso psicológico)",
+        "tp3_rr": "6,3R",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "3 contratos (floor(300/(8×10))=3)",
+        "setup": "Lateral firme · real apreciou overnight 5,0055 (−0,42%) apesar da ameaça tarifa 25% EUA (carry +14% resistiu). SHORT 40% condicional: rejeição PREMIUM 5.050 (acima EQ 5.045,50 · LIÇÃO ICT) com volume fraco · SL 5.058 (acima PDH 5.057) · TP1 5.038 RR 1,5 (PDL próximo) · 3 contratos · BE em +1R (5.050-8=5.042). SEM LONG: real apreciando desfavorece compra · um long de squeeze cairia em PREMIUM (viola LIÇÃO 89) · se WDO romper 5.060 com força (DXY >99,50) = squeeze de tarifa · ficar de fora. Contexto: bear steepen DI +7,5bp (sensível tarifa) + Brent +3% 3º dia (Ormuz) MAS real firme (carry resistiu).",
+        "kill_zone": "09:45-10:50 BRT (pós-ADP 09:15 ★★★) · 11:30-12:30 BRT (pós-ISM 11:00 ★★★)",
+        "gatilho": "SHORT: rejeição PREMIUM 5.050 com volume fraco pós-ADP + candle rejeição 15m confirmado. Sem gatilho de compra: se romper 5.060 com força é squeeze de tarifa · não perseguir.",
+        "anti_trade": "NÃO vender em DISCOUNT (abaixo EQ 5.045,50) · NÃO comprar em PREMIUM (acima EQ 5.045,50). NÃO operar dentro de 09:10-09:45 (ADP) · 10:55-11:30 (ISM). Se WDO romper 5.060 com força (DXY >99,50) = squeeze de tarifa · ficar de fora (não comprar em premium · LIÇÃO 89).",
+        "cancelamento": "SHORT cancelado se: WDO romper 5.060 com DXY >99,50 (tarifa pressionando · invalida carry · vira squeeze · ficar de fora) · ou perder 5.034 (PDL) antes de armar a rejeição do topo."
+      },
+      "comentario_breve": "Lateral firme · real apreciou apesar da tarifa · vender só na rejeição do topo (premium) · squeeze = ficar de fora",
+      "_score_breakdown": {
+        "total": 4.5,
+        "nota": "Lateral firme · real apreciou overnight −0,42% (carry resistiu tarifa). Bear steepen DI +7,5bp + Brent +3% pressionam MAS USD/BRL recuou. Score 4,5/10 (lateral · aguardar ADP/ISM + cautela squeeze se tarifa não vier)."
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "05:00",
+      "evento": "PMI Setor de Serviços (Mai)",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "46,4",
+      "anterior": "47,6",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "05:00",
+      "evento": "PMI Composto S&P Global (Mai)",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "47,5",
+      "anterior": "48,8",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "Produção Industrial (Mensal · Abr)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "0,4%",
+      "anterior": "0,1%",
+      "janela_evitar": "09:00-09:25",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "Produção Industrial (Anual · Abr)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "1,7%",
+      "anterior": "4,3%",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "ADP · Variação de Empregos Privados (Mai · EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "116K",
+      "anterior": "109K",
+      "janela_evitar": "09:10-09:45",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "PMI Setor de Serviços S&P Global (Mai)",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "52,3",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "10:45",
+      "evento": "PMI Setor de Serviços S&P Global (Mai · EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "50,9",
+      "anterior": "51,0",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "ISM Não-Manufatura / Serviços (Mai · EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "53,7",
+      "anterior": "53,6",
+      "janela_evitar": "10:55-11:30",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "Encomendas à Indústria (Mensal · Abr · EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "4,6%",
+      "anterior": "1,5%",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "Estoques de Petróleo Bruto (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "-3.327M",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "Fluxo Cambial Estrangeiro",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "-3,648B",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "15:00",
+      "evento": "Balança Comercial (Mai)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "7,65B",
+      "anterior": "10,54B",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "15:00",
+      "evento": "Livro Bege (Fed)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "status": "pendente"
+    },
+    {
+      "hora_brt": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55",
+      "status": "pendente"
+    }
+  ],
+  "regras_do_dia": [
+    "[WIN/WDO] NÃO vender em DISCOUNT (abaixo EQ) · NÃO comprar em PREMIUM (acima EQ) · LIÇÃO ICT premium/discount",
+    "[WIN/WDO] NÃO operar dentro de 09:10-09:45 (ADP ★★★) · 10:55-11:30 (ISM ★★★) · aguardar digestão",
+    "[WIN] SHORT só se rejeição <175.800 pós-ADP com volume fraco (confirma sweep falhado) · NÃO perseguir se reconquistar 176.000+",
+    "[WDO] Sem LONG (squeeze de tarifa = ficar de fora · não comprar em premium · LIÇÃO 89) · SHORT só na rejeição do topo (premium 5.050) com volume fraco",
+    "[WIN/WDO] BE em +1R obrigatório (volatilidade eventos ★★★) · proteção capital",
+    "[WIN] Cancelar SHORT se reconquistar 176.000+ com volume >250k (reversão alta confirmada · invalida MSS)"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA_FASE2_PRE_PUBLISH",
+    "criado_em": "2026-06-02 terça-feira ~21h BRT (FASE 1 noturna)",
+    "fase_2_completa_em": "2026-06-03 quarta-feira ~08:30 BRT (FASE 2 completa · gate Cowork hot-patch: WDO short de premium + sem LONG + RRs WIN/WDO recalculados)",
+    "decisoes_tecnicas_code": {
+      "WIN_score": "5,0/10 (estrutura ambígua · sweep vs reversão · aguardar ADP/ISM definirem)",
+      "WIN_veredito": "AGUARDAR (score 5,0 · repique forte +1,32% MAS sem reconquista estrutural · MSS preliminar)",
+      "WIN_setup": "SHORT 55% se rejeição <175.800 pós-ADP · entry PREMIUM 175.500-175.700 · SL 176.300 (700 pts) · TP1 174.200 RR 2,0 · 2 contratos",
+      "WDO_score": "4,5/10 (lateral · carry resistiu tarifa · cautela squeeze)",
+      "WDO_veredito": "AGUARDAR (score 4,5 · lateral firme · real apreciou · aguardar breakdown ou Brent+DXY fortes)",
+      "WDO_setup": "SHORT 40% se rejeição PREMIUM 5.050 com volume fraco · SL 5.058 (8 pts) · TP1 5.038 RR 1,5 · 3 contratos. Sem LONG (squeeze de tarifa = ficar de fora · não comprar em premium · LIÇÃO 89)",
+      "manchete": "O TARIFAÇO GRITA, O PREÇO SUSSURRA",
+      "filtro_anti_narrativa_ativo": "SIM (WIN CONTRA score 6,5 · WDO CONTRA score 7,0 · consenso apocalíptico vs estrutura resistindo)",
+      "nivel_vento": "VENTO_FORTE (bear steepen DI +7,5bp longo + tarifa 25% ameaça + gringo −R$14,9bi + Brent +3% MAS real apreciou + Ibov subiu setorial)"
+    },
+    "licoes_aplicadas": [
+      "LIÇÃO 6: RR TP1 ≥1,5 (WIN SHORT 2,0R · WDO SHORT 1,5R · sem LONG)",
+      "LIÇÃO 7/54: honestidade radical (WIN reverteu +1,32% · tese breakdown #23 FALHOU · documentar)",
+      "LIÇÃO 12: schema imutável · regua_por_ativo aditiva (não remove campos antigos)",
+      "LIÇÃO 61: fechamento ≠ ajuste (WIN 175.160 ≠ 175.187 · WDO 5.041 ≠ 5.045,20)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito (WIN Fase C UTAD (Daily) · WDO Acumulação B (Daily))",
+      "LIÇÃO 89: GUARD premium/discount ICT (WIN SHORT entry PREMIUM >174.370 · WDO SHORT entry PREMIUM >5.045,50 · sem LONG)",
+      "LIÇÃO 89: risk model 1% banca 30k (WIN 2 contratos · WDO 3 contratos · floor(300/(stop_pts × point_value)))"
+    ],
+    "alertas": [
+      "🛑 NÃO PUBLICAR (comando explícito usuário)",
+      "WIN reverteu forte +1,32% terça (breakdown #23 FALHOU · shorts apanharam · honestidade LIÇÃO 7)",
+      "ADP 09:15 ★★★ cai DENTRO kill zone B3 (09:25-10:30) · evitar 09:10-09:45 · shift pós-digestão",
+      "WDO cautela squeeze (consenso pânico tarifa 25% MAS real apreciou · se tarifa não vier = squeeze shorts)",
+      "Bear steepen DI longo +7,5bp (risco fiscal tarifa · desfavorece WIN médio prazo)"
+    ]
+  }
+}
