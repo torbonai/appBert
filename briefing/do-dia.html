@@ -523,6 +523,29 @@
         if (n == null) return '—';
         return Number(n).toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' });
       }
+      // Plano: campos podem vir como número (schema antigo) OU string descritiva
+      // "176.300 (700 pts acima)" (schema atual). Estes helpers extraem sem dar NaN.
+      function planoNum(v) {
+        if (v == null) return '—';
+        if (typeof v === 'number') return fmtPts(v);
+        var m = String(v).match(/-?\d[\d.,]*\d|\d/);
+        return m ? m[0] : String(v);
+      }
+      function planoEntry(v) {
+        if (v == null) return '—';
+        var s = String(v), i = s.indexOf('(');
+        return (i > 0 ? s.slice(0, i) : s).trim();
+      }
+      function planoNota(v) {
+        if (typeof v !== 'string') return '';
+        var m = v.match(/\(([^)]+)\)/);
+        return m ? m[1] : '';
+      }
+      function planoRR(v) {
+        if (v == null) return '';
+        var s = String(v);
+        return /r/i.test(s) ? s : s + 'R';
+      }
 
       function loadIntradaySnap(briefingDate) {
         var el = document.getElementById('intraday-snap');
@@ -649,6 +672,10 @@
         // ===== Snapshot Intraday (auto-atualizado a cada hora) =====
         html += '<div id="intraday-snap"></div>';
 
+        // ===== PLACAR · Filtro Anti-Narrativa (sobe pro topo · fácil primeiro · visível a todos) =====
+        var placarHtml = renderFiltroAntiNarrativa(b.contexto_macro && b.contexto_macro.filtro_anti_narrativa);
+        if (placarHtml) { html += '<section class="panel">' + placarHtml + '</section>'; }
+
         // ===== Contexto macro · só pra Tela Pro (Persona B avançada) =====
         if (mostraTecnico) {
           // Patch defensivo: aceita nivel (schema antigo) ou nivel_vento (schema novo Code 12/05+)
@@ -660,8 +687,6 @@
           html += '<ul class="macro-list">';
           b.contexto_macro.highlights.forEach(function (h) { html += '<li>' + h + '</li>'; });
           html += '</ul>';
-          // Filtro Anti-Narrativa: v2 com régua se disponível, fallback texto
-          html += renderFiltroAntiNarrativa(b.contexto_macro.filtro_anti_narrativa);
           html += '</section>';
         }
 
@@ -781,14 +806,15 @@
           html += '<div class="plano-block ' + planoCls + '">';
           html += '<p class="plano-titulo ' + planoCls + '">🎯 Plano operacional · ' + dirIcon + ' ' + dirLabel + ' <span style="font-size: 0.7em; color: var(--muted); font-weight: 400;">' + dirSubtle + '</span></p>';
           html += '<div class="plano-grid">';
-          html += '<div class="plano-cell"><div class="l">Entry</div><div class="v ' + dirCol + '">' + (at.plano.entry_zona || at.plano.entry) + '</div><div class="s">zona de retest</div></div>';
-          html += '<div class="plano-cell"><div class="l">Stop Loss</div><div class="v warn">' + fmtPts(at.plano.stop) + '</div><div class="s">' + at.plano.stop_pts + ' pts além do extremo</div></div>';
+          var entryRaw = at.plano.entry_zona || at.plano.entry;
+          html += '<div class="plano-cell"><div class="l">Entry</div><div class="v ' + dirCol + '">' + planoEntry(entryRaw) + '</div><div class="s">' + (planoNota(entryRaw) || 'zona de retest') + '</div></div>';
+          html += '<div class="plano-cell"><div class="l">Stop Loss</div><div class="v warn">' + planoNum(at.plano.stop) + '</div><div class="s">' + (planoNota(at.plano.stop) || at.plano.stop_pts || '') + '</div></div>';
           html += '</div>';
 
           html += '<div class="tps-line">';
-          html += '<div class="tp-cell"><div class="l">TP1 · ' + (at.plano.tp1_partial_pct || 50) + '%</div><div class="v">' + fmtPts(at.plano.tp1) + '</div><div class="s">' + at.plano.tp1_rr + 'R</div></div>';
-          html += '<div class="tp-cell"><div class="l">TP2 · ' + (at.plano.tp2_partial_pct || 25) + '%</div><div class="v">' + fmtPts(at.plano.tp2) + '</div><div class="s">' + at.plano.tp2_rr + 'R</div></div>';
-          html += '<div class="tp-cell"><div class="l">TP3 · ' + (at.plano.tp3_partial_pct || 25) + '%</div><div class="v">' + fmtPts(at.plano.tp3) + '</div><div class="s">' + at.plano.tp3_rr + 'R</div></div>';
+          html += '<div class="tp-cell"><div class="l">TP1 · ' + (at.plano.tp1_partial_pct || 50) + '%</div><div class="v">' + planoNum(at.plano.tp1) + '</div><div class="s">' + planoRR(at.plano.tp1_rr) + '</div></div>';
+          html += '<div class="tp-cell"><div class="l">TP2 · ' + (at.plano.tp2_partial_pct || 25) + '%</div><div class="v">' + planoNum(at.plano.tp2) + '</div><div class="s">' + planoRR(at.plano.tp2_rr) + '</div></div>';
+          html += '<div class="tp-cell"><div class="l">TP3 · ' + (at.plano.tp3_partial_pct || 25) + '%</div><div class="v">' + planoNum(at.plano.tp3) + '</div><div class="s">' + planoRR(at.plano.tp3_rr) + '</div></div>';
           html += '</div>';
 
           if (hasTelaPro && at.plano.contratos_banca_30k_risco_1pct) {
