@@ -46,6 +46,34 @@
       "intensidade": "ALTA",
       "narrativa_dominante": "Payroll quente + Fed higher-for-longer + DI nas máximas + dólar rompendo = WIN sem chão e dólar só pra cima",
       "fonte_observada": "Consenso pós-payroll (Broadcast/BDM/Falcão)",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_label": "Baixista unânime · 'WIN sem chão · juros e dólar enterram a bolsa · 8ª semana só cai'",
+          "estrutura_dir": -0.5,
+          "estrutura_label": "Markdown maduro · fechou em discount · 8ª semana de queda · sobrevendido (risco Spring na mínima 169.100)",
+          "veredito": "CONTRA",
+          "veredito_label": "notícia induz a perseguir baixa esticada",
+          "posicao_regua": 30,
+          "score_clareza": 6.0,
+          "estagio": "fim",
+          "estagio_alerta": "Narrativa baixista em estágio avançado (8 semanas) · risco de exaustão/Spring na mínima 169.100 · não shortar o fundo",
+          "racional_uma_linha": "Mídia prega 'WIN só cai', mas o índice está em DISCOUNT após 8 semanas de queda e tocou possível Spring em 169.100 — perseguir a baixa esticada é trap de continuação (LIÇÃO 66). Vender só no repique premium (≥ EQ 170.358), não no fundo."
+        },
+        "WDO1!": {
+          "noticia_dir": 2,
+          "noticia_label": "Altista forte · 'dólar rompeu e não tem mais resistência · R$5,20 · DXY>100'",
+          "estrutura_dir": 0.5,
+          "estrutura_label": "Markup · fechou em premium perto da máxima (+2,14%) · esticado",
+          "veredito": "A_FAVOR",
+          "veredito_label": "tese alinhada com a estrutura",
+          "posicao_regua": 70,
+          "score_clareza": 7.0,
+          "estagio": "meio",
+          "estagio_alerta": "Direção tem lastro (DXY>100 · juros em alta · risk-off), mas comprar só em pullback (discount ≤ EQ 5.146) · teto do petróleo (OPEP+ +188k bpd / Fitch superávit set) é o risco da tese",
+          "racional_uma_linha": "Mídia diz 'dólar não tem resistência' e a estrutura concorda (DXY>100, juros em alta, dia +2,14%) — tese A FAVOR. Mas o preço está esticado em PREMIUM: comprar só no pullback (≤ EQ 5.146), não no rompimento."
+        }
+      },
       "descricao": "Narrativa dominante prega tendência intacta sem limites. Filtro ATIVO identifica contra-evidências estruturais.",
       "frases_consensuais_alertadas": [
         "WIN sem chão · tendência intacta",
@@ -97,8 +125,8 @@
           "bid": 14.71,
           "ask": 14.72,
           "posicao": "PREMIUM",
-          "acima_eq_pct": 68.0,
-          "pct_range": 84.0
+          "acima_eq_pct": 68,
+          "pct_range": 84
         },
         "_fonte": "Prints TV CDP daily fornecidos por Renato na sessão 07/06 (DI EOD sexta 05/06) · tickers DI1F2027 / DI1F2029 / DI1F2031",
         "_curva": "Corcunda no miolo (F29 topo) · belly-led · 3 vértices em PREMIUM"
@@ -125,7 +153,7 @@
         "abertura_anterior": 171165,
         "range_anterior_pts": 2515,
         "variacao_anterior_pts": -1200,
-        "variacao_anterior_pct": -0.70,
+        "variacao_anterior_pct": -0.7,
         "EQ": 170358,
         "weekly_high_20d": 176971,
         "weekly_low_20d": 169100,
@@ -139,7 +167,7 @@
       "ajuste_b3_meta": {
         "valor": 169395,
         "data_referencia": "2026-06-05",
-        "fonte": "B3 oficial via prints home broker EOD sexta 05/06 (fornecidos por Renato)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-05)"
       },
       "plano": {
         "direcao": "AGUARDAR (venda condicional em premium OU compra em Spring confirmado)",
@@ -179,21 +207,21 @@
       "niveis_chave": {
         "ajuste_b3": 5181.79,
         "ajuste_b3_data": "2026-06-05",
-        "fechamento_anterior": 5200.00,
-        "PDH": 5207.50,
-        "PDL": 5085.00,
-        "maxima_anterior": 5207.50,
-        "minima_anterior": 5085.00,
-        "abertura_anterior": 5085.50,
-        "range_anterior_pts": 122.50,
-        "variacao_anterior_pts": 109.00,
+        "fechamento_anterior": 5200,
+        "PDH": 5207.5,
+        "PDL": 5085,
+        "maxima_anterior": 5207.5,
+        "minima_anterior": 5085,
+        "abertura_anterior": 5085.5,
+        "range_anterior_pts": 122.5,
+        "variacao_anterior_pts": 109,
         "variacao_anterior_pct": 2.14,
         "EQ": 5146.25,
-        "weekly_high_20d": 5207.50,
-        "weekly_low_20d": 5085.00,
-        "suporte_critico": 5085.00,
+        "weekly_high_20d": 5207.5,
+        "weekly_low_20d": 5085,
+        "suporte_critico": 5085,
         "suporte_critico_status": "aguardando",
-        "resistencia_critica": 5207.50,
+        "resistencia_critica": 5207.5,
         "resistencia_critica_status": "testada",
         "buffer_ajuste_suporte_pts": 96.79,
         "_nota": "EOD sexta 05/06: abertura 5.085,50, máxima (PDH) 5.207,50, mínima (PDL) 5.085,00, fechamento 5.200,00, ajuste B3 5.181,79. Variação +109,00pts (+2,14%), range 122,50pts. EQ = (5.207,50 + 5.085,00) / 2 = 5.146,25. Fechou em PREMIUM (5.200 > EQ 5.146,25). Dia forte (+2,14%, fechou perto da máxima) — confirma dólar firme (spot +1,78% R$5,1572 · DXY >100)."
@@ -201,7 +229,7 @@
       "ajuste_b3_meta": {
         "valor": 5181.79,
         "data_referencia": "2026-06-05",
-        "fonte": "B3 oficial via prints home broker EOD sexta 05/06 (fornecidos por Renato)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-05)"
       },
       "plano": {
         "direcao": "AGUARDAR pullback (compra condicional em discount)",
@@ -233,7 +261,7 @@
   ],
   "agenda_macro": [
     {
-      "hora": "08:25",
+      "hora_brt": "08:25",
       "evento": "Boletim Focus (BCB)",
       "pais": "BR",
       "impacto": "BAIXO",
@@ -243,7 +271,7 @@
       "nota": "Recorrente toda segunda-feira (events_recurring · macro_calendar). Foco em expectativas Selic terminal / IPCA / câmbio pós-payroll quente."
     },
     {
-      "hora": "09:00",
+      "hora_brt": "09:00",
       "evento": "Leilão de abertura B3",
       "pais": "BR",
       "impacto": "ALTO",
@@ -253,7 +281,7 @@
       "nota": "Recorrente. 1ª segunda pós-payroll quente + tremor tech global = abertura provavelmente volátil."
     },
     {
-      "hora": "17:45",
+      "hora_brt": "17:45",
       "evento": "Leilão de fechamento B3",
       "pais": "BR",
       "impacto": "ALTO",
@@ -262,7 +290,7 @@
       "janela_evitar": "17:45-17:55"
     },
     {
-      "hora": "semana",
+      "hora_brt": "semana",
       "evento": "SEMANA DE INFLAÇÃO: CPI EUA quarta · PPI EUA quinta · IPCA BR sexta · China inflação/setor externo terça · BCE decide quinta",
       "pais": "US/BR/EU/CN",
       "impacto": "ALTO",
