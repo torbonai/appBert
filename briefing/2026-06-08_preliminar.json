@@ -1,0 +1,316 @@
+{
+  "data": "2026-06-08",
+  "data_extenso": "Segunda-feira, 8 de junho de 2026",
+  "hora_publicacao": "_PENDENTE_FASE2_",
+  "edicao": 25,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_",
+    "wdo_linha": "_PENDENTE_FASE2_",
+    "janela_operacional": "_PENDENTE_FASE2_",
+    "nivel_chave": "_PENDENTE_FASE2_",
+    "agenda_top1": "_PENDENTE_FASE2_"
+  },
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_",
+    "highlights": [
+      "📌 Briefing #25 FASE 1 noturna (domingo 07/06/2026 · sessão Cowork · preliminar pra segunda 08/06 · volta ao normal após a sexta-ponte SEM briefing 05/06 e o feriado de Corpus Christi 04/06)",
+      "📊 WIN núcleo EOD sexta 05/06: _PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · ajuste B3 + OHLC daily oficiais NÃO disponíveis nesta sessão Cowork (sem TV CDP · sem print Cedro/home broker de sexta). REFERÊNCIA INDICATIVA (NÃO oficial · Analisador WIN1! intraday 16:30 BRT sexta): último ~169.740 · range intraday tocou mínima 169.545 (= mínima semanal) · markdown de 6-7 fechamentos em queda (176.971 → ~169.740 ≈ −4,1% na semana). USAR SÓ COMO ORIENTAÇÃO · ajuste/fechamento oficiais entram na FASE 2.",
+      "💵 WDO núcleo EOD sexta 05/06: _PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · SEM dado de WDO na sexta (o Analisador rodou só WIN1! o dia todo na live). Real seguiu firme/suportado no contexto (payroll quente + Fed higher-for-longer). Ajuste B3 + OHLC oficiais pendentes FASE 2.",
+      "💵 Juros futuros BR · curva DI EOD sexta 05/06 (NÍVEIS dos prints Renato · TV CDP daily): F27 ~14,43% · F29 ~14,81% · F31 ~14,72% · corcunda no miolo (F29 no topo · belly-led) · os 3 vértices em PREMIUM (juros elevados/perto do topo do range) · F29 extremo (93,7% do range). Bear shift confirmado / novas máximas. Δbps vs ajuste anterior PENDENTE (prints não trazem prior ajuste) → FASE 2. Aplicar 4 lentes (LIÇÃO 93): premium extremo pede leitura exaustão × continuação.",
+      "🇺🇸 PAYROLL EUA QUENTE (sexta 05/06): 172k vs 85k mediana (estourou o teto 125k) · revisões PRA CIMA (abril 115k→179k · março 185k→214k) · salário +0,32% m/m / +3,45% a/a · 2Y subiu pra máxima do dia 4,106%. Leitura: Fed HIGHER-FOR-LONGER. Hawkish puro (LIÇÃO 20: payroll forte + salário hawkish). Pressiona WIN; sustenta WDO.",
+      "🌏 TREMOR GLOBAL EM TECH/IA (sexta 05/06): Kospi −6% (Samsung/SK Hynix) · Broadcom −12,6% · Nasdaq futuro no vermelho · giro de tech pra bancos/value. Headwind pra WIN via correlação com NAS/SPX (metodologia 5.5).",
+      "🌎 FLUXO ESTRANGEIRO: comprado em índice mas REDUZINDO na sexta (−8,31% no dia). Lente 3 da DI (LIÇÃO 93): DI subindo + gringo ainda não saindo forte = checar se é estrutural ou técnico na FASE 2.",
+      "🛢️ PETRÓLEO: Brent estabilizou perto de US$ 95 após cair ~3% (quinta) · alívio frágil ligado à narrativa Trump de encerrar guerra. Brent <100 = alívio inflacionário marginal (metodologia 5.4) mas DI não cedeu — risco fiscal/tarifa domina.",
+      "_PENDENTE_FALCAO_GLOBAIS_OVERNIGHT_07PARA08JUN_",
+      "_PENDENTE_FALCAO_STATUS_TRADE_05JUN_E_24_",
+      "_PENDENTE_FASE2_CONTEXTO_MACRO_ADICIONAL_"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_",
+      "intensidade": "_PENDENTE_FASE2_",
+      "narrativa_dominante": "_PENDENTE_FASE2_",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "descricao": "_PENDENTE_FASE2_",
+      "frases_consensuais_alertadas": [
+        "_PENDENTE_FASE2_"
+      ],
+      "contra_evidencias": [
+        "_PENDENTE_FASE2_"
+      ],
+      "leitura_bertani": "_PENDENTE_FASE2_",
+      "contra_evidencias_a_monitorar": [
+        "_PENDENTE_FASE2_"
+      ]
+    },
+    "di_curva": {
+      "leitura": "NÍVEIS dos prints fornecidos pelo Renato (TV CDP · DI EOD sexta 05/06 · daily): F27 (Jan/2027) ~14,43% (14,425/14,430 · PREMIUM 26,3% acima EQ · 63,2% do range) · F29 (Jan/2029) ~14,81% (14,805/14,810 · PREMIUM 87,4% acima EQ · 93,7% do range · perto do TOPO do range) · F31 (Jan/2031) ~14,72% (14,710/14,720 · PREMIUM ~68% acima EQ · ~84% do range). FORMATO DA CURVA: corcunda no MIOLO (F29 14,81 > F31 14,72 > F27 14,43) · belly-led · todos os 3 vértices em PREMIUM pelos Bertani Tools (juros elevados, perto do topo). Δbps vs ajuste anterior NÃO calculável dos prints (não mostram 'Prior Cote Ajuste') → PENDENTE FASE 2 (header do print OU release CETIP segunda 07:11). Aplicar as 4 LENTES (LIÇÃO 93) na FASE 2: lente 1 (Wyckoff do ciclo de juro · premium = juro no topo do range = possível distribuição/exaustão OU continuação de alta de juro) · lente 2 (sweep × displacement do disparo) · lente 3 (fluxo gringo confirmador) · lente 4 (matriz de convicção). Premium extremo no F29 (93,7% do range) merece leitura de exaustão vs continuação.",
+      "vertices_bps": {
+        "1y_F27": "_PENDENTE_FASE2_DELTA_BPS_ (nível 14,43 dos prints · falta prior ajuste)",
+        "3y_F29": "_PENDENTE_FASE2_DELTA_BPS_ (nível 14,81 dos prints · falta prior ajuste)",
+        "5y_F31": "_PENDENTE_FASE2_DELTA_BPS_ (nível 14,72 dos prints · falta prior ajuste)"
+      },
+      "fonte": "Prints TV CDP (DI1F2027/DI1F2029/DI1F2031 · daily · EOD sexta 05/06 · fornecidos por Renato 07/06). Δbps pendente prior ajuste (FASE 2: header print OU release CETIP segunda 07:11).",
+      "implicacao": "_PENDENTE_FASE2_APOS_DELTA_BPS_E_4_LENTES_",
+      "niveis_eod_prints": {
+        "F27_jan2027": {
+          "yield_pct": 14.43,
+          "bid": 14.425,
+          "ask": 14.43,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 26.3,
+          "pct_range": 63.2
+        },
+        "F29_jan2029": {
+          "yield_pct": 14.81,
+          "bid": 14.805,
+          "ask": 14.81,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 87.4,
+          "pct_range": 93.7
+        },
+        "F31_jan2031": {
+          "yield_pct": 14.72,
+          "bid": 14.71,
+          "ask": 14.72,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 68.0,
+          "pct_range": 84.0
+        },
+        "_fonte": "Prints TV CDP daily fornecidos por Renato na sessão 07/06 (DI EOD sexta 05/06) · tickers DI1F2027 / DI1F2029 / DI1F2031",
+        "_curva": "Corcunda no miolo (F29 topo) · belly-led · 3 vértices em PREMIUM"
+      }
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "ajuste_b3_data": "2026-06-05",
+        "fechamento_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "PDH": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "PDL": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "maxima_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "minima_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "abertura_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "range_anterior_pts": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "variacao_anterior_pts": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "variacao_anterior_pct": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "EQ": "_PENDENTE_FASE2_",
+        "weekly_high_20d": 176971,
+        "weekly_low_20d": 169545,
+        "suporte_critico": "_PENDENTE_FASE2_",
+        "suporte_critico_status": "_PENDENTE_FASE2_",
+        "resistencia_critica": "_PENDENTE_FASE2_",
+        "resistencia_critica_status": "_PENDENTE_FASE2_",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "NÚCLEO DE PREÇO OFICIAL PENDENTE (LIÇÃO 1/64 · zero invenção). Sem TV CDP nesta sessão Cowork e sem print Cedro/home broker de sexta 05/06. REFERÊNCIA INDICATIVA da leitura intraday do Analisador (WIN1! contínuo · última às 16:30 BRT sexta · NÃO é ajuste B3, NÃO é fechamento oficial): último ~169.740 · mínima do dia/semana 169.545 · PDH intraday de referência ~171.675 · markdown estrutural de 6-7 fechamentos (weekly high 176.971 → ~169.740 ≈ −4,1% na semana). weekly_high_20d/weekly_low_20d preenchidos do range trabalhado semanal do Analisador. Ajuste B3 + OHLC daily oficiais + fechamento entram na FASE 2 (LIÇÃO 61: fechamento ≠ ajuste)."
+      },
+      "ajuste_b3_meta": {
+        "valor": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "data_referencia": "2026-06-05",
+        "fonte": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ (print home broker/Cedro EOD sexta 05/06 OU pull TV CDP via Code na FASE 2)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_",
+        "nota": "_PENDENTE_FASE2_"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "ajuste_b3_data": "2026-06-05",
+        "fechamento_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "PDH": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "PDL": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "maxima_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "minima_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "abertura_anterior": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "range_anterior_pts": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "variacao_anterior_pts": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "variacao_anterior_pct": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "EQ": "_PENDENTE_FASE2_",
+        "weekly_high_20d": "_PENDENTE_FASE2_",
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": "_PENDENTE_FASE2_",
+        "suporte_critico_status": "_PENDENTE_FASE2_",
+        "resistencia_critica": "_PENDENTE_FASE2_",
+        "resistencia_critica_status": "_PENDENTE_FASE2_",
+        "buffer_ajuste_suporte_pts": "_PENDENTE_FASE2_",
+        "_nota": "NÚCLEO DE PREÇO OFICIAL PENDENTE (LIÇÃO 1/64 · zero invenção). SEM nenhum dado de WDO na sexta 05/06: o Analisador rodou só WIN1! o dia inteiro na live. Não há referência intraday de WDO. Ajuste B3 + OHLC daily + fechamento oficiais de sexta entram 100% na FASE 2 (print Renato ou pull TV CDP via Code). Contexto: real suportado/firme (payroll quente + Fed higher-for-longer + tarifaço ao fundo)."
+      },
+      "ajuste_b3_meta": {
+        "valor": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_",
+        "data_referencia": "2026-06-05",
+        "fonte": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ (print home broker/Cedro EOD sexta 05/06 OU pull TV CDP via Code na FASE 2)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 30,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 40,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": {
+        "total": "_PENDENTE_FASE2_",
+        "nota": "_PENDENTE_FASE2_"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora": "08:25",
+      "evento": "Boletim Focus (BCB)",
+      "pais": "BR",
+      "impacto": "BAIXO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Recorrente toda segunda-feira (events_recurring · macro_calendar). Foco em expectativas Selic terminal / IPCA / câmbio pós-payroll quente."
+    },
+    {
+      "hora": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Recorrente. 1ª segunda pós-payroll quente + tremor tech global = abertura provavelmente volátil."
+    },
+    {
+      "hora": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    },
+    {
+      "hora": "_PENDENTE_RENATO_CONFIRMAR_AGENDA_08JUN_",
+      "evento": "_PENDENTE_RENATO_CONFIRMAR_AGENDA_08JUN_ · macro_calendar_br_2026.json está DESATUALIZADO (last_updated 05/05/2026 · sem entradas para a semana de 08/06). LIÇÃO 15: não classificar 'macro calmo'. Confirmar na FASE 2 eventos ★★★ de segunda (ex.: leituras de inflação/atividade BR e EUA, falas Fed/BCB pós-payroll). Atualizar o calendário canônico.",
+      "pais": "—",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    }
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-07 domingo (sessão Cowork noturna · FASE 1 noturna · prompt PROMPT_DOMINGO_07JUN.md)",
+    "fase_1_noturna_completa_em": "2026-06-07 domingo · FASE 1 PARCIAL: núcleo de preço EOD sexta 05/06 NÃO disponível nesta sessão (sem TV CDP / sem print Cedro) · DI prints de sexta ausentes na pasta · contexto macro de sexta carregado · agenda com recorrentes + pendência de confirmação",
+    "fase_2_aguarda": "segunda 08/06 ~07:25 BRT · núcleo de preço oficial EOD sexta 05/06 (print Renato OU pull TV CDP via Code) + DI oficial (print sexta OU release CETIP 07:11) + globais overnight domingo→segunda + agenda macro confirmada + cross-check news",
+    "pendentes_fase_2": [
+      "PRECO_EOD_05JUN: _PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · ajuste B3 + OHLC daily (O/H/L/C) + fechamento de WIN E WDO de sexta 05/06. CRÍTICO: sem isso não há núcleo. Fonte = print home broker/Cedro do Renato OU pull TV CDP via Code (chart_set_symbol WIN1!/WDO1! · D · data_get_b3_settlement + data_get_ohlcv). LIÇÃO 61: fechamento ≠ ajuste.",
+      "DI_curva: NÍVEIS já capturados dos prints Renato (F27 14,43 · F29 14,81 · F31 14,72 · corcunda miolo · premium nos 3). FALTA: Δbps vs ajuste anterior (prior cote ajuste do header do print OU release CETIP segunda 07:11 · VALIDAR_FALCAO_SEGUNDA_711) + as 4 LENTES (LIÇÃO 93) pra virar viés. NÃO traduzir nível em viés sem as lentes.",
+      "globais_overnight: _PENDENTE_FALCAO_GLOBAIS_OVERNIGHT_ · snapshot domingo noite→segunda manhã · DXY/USDJPY/Brent/ES/NQ/VIX/Ouro/2Y · vale-peers globais (LIÇÃO 58 · gatilho viés bearish WIN se média < −3%). Payroll quente de sexta + tremor tech podem ter continuação no overnight.",
+      "Wyckoff_score_veredito: WIN em markdown estrutural (weekly 176.971 → ~169.740 ≈ −4,1% · Distribuição Fase D-E no diário pela leitura do Analisador) MAS Spring intraday potencial em 169.545 (varredura SSL não confirmada por MSS na sexta). Resolver na FASE 2 com preço oficial: continuação de baixa × repique técnico. Fase Wyckoff com TF explícito (LIÇÃO 71). WDO: definir do zero (sem dado sexta).",
+      "premium_discount_guard: aplicar LIÇÃO 89 nos setups (vender só em premium ≥ EQ · comprar só em discount ≤ EQ). Recalcular RR pelo MEIO da zona (LIÇÃO 91) · TP1 ≥1,5 (LIÇÃO 6) · checar direção do stop (LIÇÃO 90).",
+      "manchete_subtitulo: framing editorial pós-preço/DI/globais · QI 85 sem jargão (LIÇÃO 69) · sem fonte upstream (LIÇÃO 67).",
+      "filtro_anti_narrativa: cross-check news segunda manhã + contra-evidências estruturais vs consenso (narrativa provável: 'Fed higher-for-longer + DI nas máximas = WIN sem suporte').",
+      "status_trade: documentar honesto (LIÇÃO 7) · sexta 05/06 = SEM call de WIN (experimento sem briefing + registro 14:01 contraditório a ser excluído na auditoria APIMEC) · #24 (03/06) era o último briefing publicado · retomar continuidade.",
+      "agenda_macro: _PENDENTE_RENATO_CONFIRMAR_AGENDA_08JUN_ · calendário canônico desatualizado (05/05) sem semana de 08/06 · confirmar eventos ★★★ de segunda + ATUALIZAR macro_calendar_br_2026.json (LIÇÃO 15)."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: ZERO dado inventado · núcleo de preço oficial e Δbps DI marcados _PENDENTE explicitamente (não há print/TV CDP nesta sessão Cowork)",
+      "LIÇÃO 50/53: prints DI da pasta = fonte FASE 1 · ausentes para sexta 05/06 → _PENDENTE_RENATO_COLAR_DI · fallback release CETIP segunda 07:11 (VALIDAR_FALCAO_SEGUNDA_711)",
+      "LIÇÃO 54: fase PARCIAL_AGUARDANDO_FASE2 honesta · pendentes FASE 2 explícitos · campos _PENDENTE_FALCAO_* / _PENDENTE_RENATO_* marcados · NÃO declarar PRONTA com grep _PENDENTE_ não-vazio",
+      "LIÇÃO 61: fechamento ≠ ajuste (lembrete pra FASE 2 nos 2 ativos)",
+      "LIÇÃO 15: agenda NÃO classificada como calmo · recorrentes (Focus segunda 08:25 · leilões B3) + pendência de confirmação ★★★ · calendário canônico precisa de revisão",
+      "LIÇÃO 20: payroll lido em 3 eixos (172k forte + salário +0,32%/+3,45% hawkish = hawkish puro · Fed higher-for-longer)",
+      "LIÇÃO 58/93: vale-peers + fluxo estrangeiro marcados pra cruzar no overnight/FASE 2 · DI com 4 lentes",
+      "LIÇÃO 67: zero fonte upstream em campos públicos (referências operacionais só no _meta interno)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito pendente FASE 2"
+    ],
+    "fontes": {
+      "preco_eod_win": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · referência indicativa intraday Analisador WIN1! 16:30 BRT sexta (~169.740 · mín 169.545 · NÃO oficial)",
+      "preco_eod_wdo": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · sem dado de WDO na sexta (Analisador rodou só WIN)",
+      "OHLC_daily": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ (print Renato OU pull TV CDP via Code na FASE 2)",
+      "di_curva": "Prints TV CDP daily Renato (DI1F2027/DI1F2029/DI1F2031 · EOD sexta 05/06): F27 14,43 · F29 14,81 · F31 14,72 · premium nos 3 · corcunda miolo. Δbps pendente FASE 2.",
+      "contexto_macro_sexta": "RESUMO 05/06 do CONTEXTO_MESTRE + Leitura de Mercado 05/06 + leitura intraday Analisador: payroll 172k vs 85k (revisões pra cima · 2Y 4,106%) · DI novas máximas · tremor tech (Kospi −6% · Broadcom −12,6%) · gringo comprado mas reduzindo (−8,31%) · Brent ~US$95",
+      "agenda_macro": "Recorrentes (macro_calendar events_recurring: Focus segunda 08:25 · leilões B3 09:00 e 17:45) · eventos ★★★ específicos de 08/06 _PENDENTE_RENATO_CONFIRMAR (calendário canônico desatualizado 05/05)"
+    },
+    "nota_contexto_macro_sexta_05jun": "Sexta 05/06 foi sexta-ponte (Corpus Christi quinta 04/06) com experimento SEM briefing (só 'Leitura de Mercado' no Telegram). O dia foi dominado pelo payroll EUA quente (172k vs 85k mediana · revisões pra cima · salário hawkish · 2Y na máxima 4,106%) = Fed higher-for-longer. DI BR em novas máximas (bear shift continua · F29 ~14,43 · F31 ~14,40). WIN sob pressão dupla (DI + Fed · markdown semanal −4,1% · weekly low 169.545). WDO suportado. Tremor global em tech/IA (Kospi −6% · Broadcom −12,6%). Estrangeiro comprado em índice mas reduzindo (−8,31% no dia). A venda do Analisador 14:01 (registro contraditório · direção VENDA velha × decisão COMPRA por discount extremo) é objeto da auditoria APIMEC desta sessão (sexta = SEM call de WIN).",
+    "alertas": [
+      "NÃO publicar · NÃO gerar capa nem telegram (é só FASE 1 · FASE 2 + publish é segunda de manhã)",
+      "NÚCLEO DE PREÇO OFICIAL AUSENTE nesta sessão Cowork (sem TV CDP / sem print Cedro sexta) · WIN e WDO ajuste B3/OHLC = _PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · CRÍTICO pra FASE 2",
+      "DI: níveis dos prints Renato OK (F27 14,43 · F29 14,81 · F31 14,72 · premium/corcunda miolo) · FALTA Δbps (prior ajuste) + 4 lentes na FASE 2 · NÃO inventar Δbps",
+      "WDO sem nenhum dado de sexta (Analisador rodou só WIN o dia todo) · definir do zero na FASE 2",
+      "macro_calendar_br_2026.json desatualizado (05/05 · sem semana 08/06) · LIÇÃO 15 · confirmar ★★★ e atualizar calendário",
+      "Contexto: payroll quente + Fed higher-for-longer + DI nas máximas pressionam WIN; WDO suportado · resolver Wyckoff/score com preço oficial na FASE 2",
+      "Markdown WIN avançado (−4,1% semana · weekly low 169.545) + Spring intraday potencial não confirmado (169.545) · cuidado com trap de continuação (LIÇÃO 66) e premium/discount (LIÇÃO 89) na FASE 2"
+    ]
+  }
+}
