@@ -1,0 +1,226 @@
+{
+  "data": "2026-06-09",
+  "data_extenso": "Terça-feira, 9 de junho de 2026",
+  "hora_publicacao": "_PENDENTE_FASE2_",
+  "edicao": 26,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_",
+    "wdo_linha": "_PENDENTE_FASE2_",
+    "janela_operacional": "_PENDENTE_FASE2_",
+    "nivel_chave": "_PENDENTE_FASE2_",
+    "agenda_top1": "_PENDENTE_FASE2_"
+  },
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_ (base: evitar leilão abertura 09:00-09:25 · cluster de dados EUA 09:30-12:30 na kill zone NY · operar COM gatilho na zona certa)"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_ (base: FORTE herdado do #25 · confirmar com DI EOD + overnight)",
+    "highlights": [
+      "📌 Briefing #26 FASE 1 noturna (segunda 08/06/2026 noite · sessão Cowork · preliminar pra terça 09/06 · núcleo de preço EOD segunda colado pelo Renato · DI EOD pendente)",
+      "📊 WIN EOD segunda 08/06 (prints home broker): abertura 170.380, máxima/PDH 170.380 (amplitude 1.730 confirma · print OCR mostrou 170.330), mínima/PDL 168.650, fechamento 169.500, ajuste B3 169.101, variação −10pts (−0,01% vs fech sexta), amplitude 1.730, OI 179.204. EQ ≈ 169.515 → fechou praticamente NO EQUILÍBRIO (leve discount). Abriu na máxima, vendeu até 168.650 (nova mínima do movimento) e recuperou metade no fechamento. Ajuste caiu de 169.395 (sexta) pra 169.101.",
+      "💵 WDO EOD segunda 08/06 (prints home broker): abertura 5.180,50, máxima/PDH 5.232,00, mínima/PDL 5.162,50, fechamento 5.224,00, ajuste B3 5.211,97, variação +24pts (+0,46%), amplitude 69,50, OI 859.408. EQ 5.197,25 → fechou em PREMIUM (perto da máxima). Dólar seguiu firme (2º dia de alta · ajuste subiu de 5.181,79 pra 5.211,97).",
+      "💵 DI EOD segunda 08/06: _PENDENTE_FALCAO_7H11_OU_DI_LIVE_EOD_. REFERÊNCIA INTRADAY (di_live 10:36 · NÃO é EOD): F27 14,395 (−3,5bps vs ajuste sexta), F29 14,77 (−4,0bps), F31 14,66 (−5,0bps) = DOVISH leve (juros cederam do topo do bear shift de sexta). SE confirmar no EOD: alívio marginal → levemente a favor do WIN / contra o WDO. Aplicar 4 lentes na FASE 2.",
+      "🧭 HERANÇA #25 (segunda 08/06 · publicado): WIN score 4 AGUARDAR (discount/markdown 8 semanas), WDO score 5 AGUARDAR (premium/dólar forte), DI bear shift belly-led (F29 93,7% range), filtro ATIVO. AMBOS AGUARDAR · nenhum trade armado (placar 0 ops segunda) → sem operação aberta pra carregar.",
+      "🇺🇸 RESSACA DO PAYROLL: Fed higher-for-longer carimbado (172k sexta · 2Y 4,106%). Mercado ~80% de alta de juro até dezembro. A semana é decisiva pra calibrar isso, com o CPI EUA na quarta como market mover.",
+      "🛢️ Petróleo + Oriente Médio (curinga): escalada Israel↔Irã no FDS, Brent >US$96 na madrugada de segunda. MAS OPEP+ +188k bpd julho + Fitch superávit set = teto estrutural. Monitorar continuidade overnight pra terça.",
+      "🇧🇷 Bolsa BR: 8ª semana de queda (maior desde início do Real). DXY >100. Câmbio pressionado pelo carry. WIN em markdown maduro · WDO sustentado.",
+      "_PENDENTE_FALCAO_GLOBAIS_OVERNIGHT_08PARA09JUN_ (DXY/USDJPY/Brent/ES/NQ/VIX/Ouro/2Y + Ásia · China comércio 00:00 dá o tom)",
+      "_PENDENTE_FASE2_CONTEXTO_MACRO_ADICIONAL_"
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": "_PENDENTE_FASE2_ (base: ATIVO no #25 · narrativa 'WIN sem chão / dólar só sobe' · reconfirmar com overnight)",
+      "intensidade": "_PENDENTE_FASE2_",
+      "narrativa_dominante": "_PENDENTE_FASE2_",
+      "fonte_observada": "_PENDENTE_FASE2_",
+      "regua_por_ativo": "_PENDENTE_FASE2_ (preencher WIN1!/WDO1! com noticia_dir/estrutura_dir/veredito/relacao/posicao_regua/score_clareza · 3 estados a favor/cuidado/conflito)",
+      "descricao": "_PENDENTE_FASE2_"
+    },
+    "di_curva": {
+      "leitura": "_PENDENTE_FASE2_ · DI EOD segunda pendente (Falcão 7h11 OU di_live EOD). Referência intraday 10:36 DOVISH leve (F27 −3,5 / F29 −4 / F31 −5 bps vs ajuste sexta) = juros cederam um pouco do topo do bear shift. Confirmar EOD + 4 lentes (LIÇÃO 93) antes de virar viés.",
+      "vertices_bps": {
+        "F27": "_PENDENTE_FASE2_DELTA_BPS_EOD_ (intraday ref −3,5)",
+        "F29": "_PENDENTE_FASE2_DELTA_BPS_EOD_ (intraday ref −4,0)",
+        "F31": "_PENDENTE_FASE2_DELTA_BPS_EOD_ (intraday ref −5,0)"
+      },
+      "fonte": "_PENDENTE_FASE2_ (Falcão CETIP 7h11 OU di_live.js EOD · prints da pasta di_curve_inputs não atualizados pra 08/06)",
+      "implicacao": "_PENDENTE_FASE2_APOS_DELTA_BPS_EOD_E_4_LENTES_"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_ (base: markdown diário · segunda fechou ~no EQ após varrer nova mínima 168.650 e recuperar metade)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 169101,
+        "ajuste_b3_data": "2026-06-08",
+        "fechamento_anterior": 169500,
+        "PDH": 170380,
+        "PDL": 168650,
+        "maxima_anterior": 170380,
+        "minima_anterior": 168650,
+        "abertura_anterior": 170380,
+        "range_anterior_pts": 1730,
+        "variacao_anterior_pts": -10,
+        "variacao_anterior_pct": -0.01,
+        "EQ": 169515,
+        "weekly_high_20d": 176971,
+        "weekly_low_20d": 168650,
+        "suporte_critico": "_PENDENTE_FASE2_ (candidatos: 168.650 nova mínima / PDL)",
+        "resistencia_critica": "_PENDENTE_FASE2_ (candidatos: EQ 169.515 / PDH 170.380)",
+        "_nota": "Núcleo oficial dos prints home broker EOD segunda 08/06 (Renato). PDH/máxima = 170.380 (amplitude 1.730 = 170.380−168.650 confirma · OCR do print mostrou 170.330 · confirmar abertura/máxima se possível). Fechou 169.500 ~no EQ 169.515 (leve discount) após abrir na máxima, varrer 168.650 (nova mínima do movimento) e recuperar metade. LIÇÃO 61: fechamento (169.500) ≠ ajuste (169.101)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 169101,
+        "data_referencia": "2026-06-08",
+        "fonte": "Print home broker EOD segunda 08/06 (Renato · Resumo de 08/06/2026)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 50,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 30,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": { "total": "_PENDENTE_FASE2_", "nota": "_PENDENTE_FASE2_" }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_COM_TF_EXPLICITO_LIÇÃO71_ (base: markup · 2º dia de alta · fechou em premium perto da máxima)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 5211.97,
+        "ajuste_b3_data": "2026-06-08",
+        "fechamento_anterior": 5224.00,
+        "PDH": 5232.00,
+        "PDL": 5162.50,
+        "maxima_anterior": 5232.00,
+        "minima_anterior": 5162.50,
+        "abertura_anterior": 5180.50,
+        "range_anterior_pts": 69.50,
+        "variacao_anterior_pts": 24.00,
+        "variacao_anterior_pct": 0.46,
+        "EQ": 5197.25,
+        "weekly_high_20d": 5232.00,
+        "weekly_low_20d": "_PENDENTE_FASE2_",
+        "suporte_critico": "_PENDENTE_FASE2_ (candidatos: EQ 5.197,25 / PDL 5.162,50)",
+        "resistencia_critica": "_PENDENTE_FASE2_ (candidato: PDH 5.232)",
+        "_nota": "Núcleo oficial dos prints home broker EOD segunda 08/06 (Renato). Amplitude 69,50 = 5.232−5.162,50 (consistente). Fechou 5.224 em PREMIUM (EQ 5.197,25), perto da máxima · 2º dia de alta · dólar firme. LIÇÃO 61: fechamento (5.224) ≠ ajuste (5.211,97)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5211.97,
+        "data_referencia": "2026-06-08",
+        "fonte": "Print home broker EOD segunda 08/06 (Renato · Resumo de 08/06/2026)"
+      },
+      "plano": {
+        "direcao": "_PENDENTE_FASE2_",
+        "entry_zona": "_PENDENTE_FASE2_",
+        "stop": "_PENDENTE_FASE2_",
+        "stop_pts": "_PENDENTE_FASE2_",
+        "tp1": "_PENDENTE_FASE2_",
+        "tp1_rr": "_PENDENTE_FASE2_",
+        "tp1_partial_pct": 30,
+        "tp2": "_PENDENTE_FASE2_",
+        "tp2_rr": "_PENDENTE_FASE2_",
+        "tp2_partial_pct": 40,
+        "tp3": "_PENDENTE_FASE2_",
+        "tp3_rr": "_PENDENTE_FASE2_",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "_PENDENTE_FASE2_",
+        "setup": "_PENDENTE_FASE2_",
+        "kill_zone": "_PENDENTE_FASE2_",
+        "gatilho": "_PENDENTE_FASE2_",
+        "anti_trade": "_PENDENTE_FASE2_",
+        "cancelamento": "_PENDENTE_FASE2_"
+      },
+      "comentario_breve": "_PENDENTE_FASE2_",
+      "_score_breakdown": { "total": "_PENDENTE_FASE2_", "nota": "_PENDENTE_FASE2_" }
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "00:00", "evento": "Balança Comercial (USD) Mai", "pais": "CN", "impacto": "ALTO", "projecao": "88,70B", "anterior": "84,80B", "janela_evitar": "—", "nota": "Overnight · dá o tom da Ásia/commodities pra abertura BR." },
+    { "hora_brt": "00:00", "evento": "Exportações/Importações Anual Mai", "pais": "CN", "impacto": "MEDIO", "projecao": "exp 15,0% / imp 25,0%", "anterior": "exp 14,1% / imp 25,3%", "janela_evitar": "—" },
+    { "hora_brt": "08:00", "evento": "IGP-DI (Mensal) Mai", "pais": "BR", "impacto": "MEDIO", "projecao": "—", "anterior": "2,41%", "janela_evitar": "—", "nota": "Termômetro de inflação no atacado · pré-abertura." },
+    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "09:00-09:25", "nota": "Recorrente." },
+    { "hora_brt": "09:30", "evento": "Balança Comercial Abr", "pais": "US", "impacto": "ALTO", "projecao": "−55,20B", "anterior": "−60,30B", "janela_evitar": "09:25-10:00", "nota": "Na kill zone de abertura." },
+    { "hora_brt": "11:00", "evento": "Vendas de Casas Usadas Mai", "pais": "US", "impacto": "ALTO", "projecao": "4,08M", "anterior": "4,02M", "janela_evitar": "10:55-11:15", "nota": "Na kill zone NY." },
+    { "hora_brt": "12:30", "evento": "GDPNow Fed Atlanta (Q2, prelim)", "pais": "US", "impacto": "ALTO", "projecao": "3,0%", "anterior": "3,0%", "janela_evitar": "—" },
+    { "hora_brt": "13:30", "evento": "Discurso de Christine Lagarde (BCE)", "pais": "EU", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Véspera da decisão do BCE (quinta)." },
+    { "hora_brt": "17:30", "evento": "Estoques de Petróleo (API)", "pais": "US", "impacto": "MEDIO", "projecao": "—", "anterior": "−6,750M", "janela_evitar": "—" },
+    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "17:45-17:55", "nota": "Recorrente." },
+    { "hora_brt": "22:30", "evento": "IPC + IPP China Anual Mai", "pais": "CN", "impacto": "ALTO", "projecao": "IPC 1,3% / IPP 3,8%", "anterior": "IPC 1,2% / IPP 2,8%", "janela_evitar": "—", "nota": "Após o fechamento BR → impacta a abertura de QUARTA (mesmo dia do CPI EUA, o market mover da semana)." }
+  ],
+  "regras_do_dia": [ "_PENDENTE_FASE2_" ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-08 segunda noite (sessão Cowork · FASE 1 noturna · núcleo de preço EOD colado pelo Renato)",
+    "fase_2_aguarda": "terça 09/06 ~07:25 BRT · DI EOD segunda (Falcão 7h11 OU di_live EOD) + globais overnight 08→09 + score/veredito/setups + manchete/subtítulo + filtro régua + kill zones + regras",
+    "pendentes_fase_2": [
+      "DI_EOD_08JUN: pegar do Falcão CETIP 7h11 OU rodar di_live.js no fechamento. Referência intraday 10:36 = DOVISH leve (F27 −3,5 / F29 −4 / F31 −5). Calcular Δbps EOD vs ajuste sexta + 4 lentes (LIÇÃO 93). NÃO virar viés sem isso.",
+      "globais_overnight: DXY/USDJPY/Brent/ES/NQ/VIX/Ouro/2Y + Ásia · China Balança Comercial 00:00 dá o tom · vale-peers (LIÇÃO 58).",
+      "score_veredito_setups: WIN fechou ~no EQ (169.515) após varrer nova mínima 168.650 e recuperar — resolver continuação de baixa × repique. WDO em premium (2º dia de alta) — comprar só em discount/pullback (LIÇÃO 89). RR≥1,5 (LIÇÃO 6) · direção do stop (LIÇÃO 90) · RR pelo meio da zona (LIÇÃO 91).",
+      "manchete_subtitulo: framing pós-DI/overnight · QI 85 sem jargão (LIÇÃO 69).",
+      "filtro_anti_narrativa: cross-check news terça + régua por ativo (3 estados).",
+      "agenda: confirmada dos prints Investing (terça 09/06) · atualizar macro_calendar_br_2026.json (LIÇÃO 15)."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: zero invenção · preço oficial dos prints · DI EOD marcado _PENDENTE (só ref intraday)",
+      "LIÇÃO 61: fechamento ≠ ajuste (WIN 169.500≠169.101 · WDO 5.224≠5.211,97)",
+      "LIÇÃO 15: agenda real dos prints Investing (terça densa: China comércio + cluster EUA + China IPC/IPP noite)",
+      "LIÇÃO 89/90/91/6: lembrete pros setups da FASE 2 (premium/discount · stop · RR)",
+      "LIÇÃO 7: status trade herdado honesto (#25 ambos AGUARDAR · 0 ops · sem trade pra carregar)"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker Resumo de 08/06/2026 (Renato): ajuste 169.101 · fech 169.500 · O 170.380 · H 170.380 · L 168.650 · var −10 · ampl 1.730",
+      "preco_eod_wdo": "Print home broker Resumo de 08/06/2026 (Renato): ajuste 5.211,97 · fech 5.224 · O 5.180,50 · H 5.232 · L 5.162,50 · var +24 · ampl 69,50",
+      "di_curva": "_PENDENTE_ EOD · ref intraday di_live 10:36 (dovish leve)",
+      "agenda_macro": "Prints Investing.com (terça 09/06) colados pelo Renato",
+      "heranca": "Briefing #25 publicado (08/06): ambos AGUARDAR · 0 ops"
+    },
+    "alertas": [
+      "NÃO publicar · NÃO gerar capa/telegram (é FASE 1 · FASE 2 + publish é terça de manhã)",
+      "DI EOD segunda PENDENTE · só referência intraday dovish · pegar Falcão 7h11 ou di_live EOD",
+      "WIN fechou ~no equilíbrio (169.515) — mudou de discount (sexta) pra neutro · cuidado trap de continuação (LIÇÃO 66) e premium/discount (LIÇÃO 89) na FASE 2",
+      "WDO em premium 2º dia · não perseguir alta esticada (LIÇÃO 89)",
+      "Confirmar abertura/máxima do WIN se possível (OCR do print ambíguo · amplitude confirma PDH 170.380)",
+      "Semana de inflação: terça é build-up · CPI EUA quarta é o market mover"
+    ]
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "lido_em": "2026-06-08 10:36",
+  "gerado_unix": 1780925780,
+  "direcao": "DOVISH",
+  "conviccao": "MEDIA",
+  "sinal": "COMPRA_WIN / VENDA_WDO",
+  "delta_score_win": 1,
+  "delta_score_wdo": -1,
+  "nota": "Líder F2029 Δ=-4bps (DOWN) · vértices DOWN=3 UP=0 · regra: dovish=compra WIN/venda WDO · hawkish=venda WIN/compra WDO · peso capado ±2 · LOCALIZAÇÃO ainda manda na entrada (LIÇÃO 89)",
+  "vertices": [
+    {
+      "key": "F2027",
+      "papel": "curto",
+      "ajuste_d1": 14.43,
+      "data_d1": "2026-06-05",
+      "live": 14.395,
+      "delta_bps": -3.5,
+      "pct_range": 92,
+      "posicao": "PREMIUM",
+      "last_time": 1780920000,
+      "trade_age_min": 96
+    },
+    {
+      "key": "F2029",
+      "papel": "miolo",
+      "ajuste_d1": 14.81,
+      "data_d1": "2026-06-05",
+      "live": 14.77,
+      "delta_bps": -4,
+      "pct_range": 96,
+      "posicao": "PREMIUM",
+      "last_time": 1780920000,
+      "trade_age_min": 96
+    },
+    {
+      "key": "F2031",
+      "papel": "longo",
+      "ajuste_d1": 14.71,
+      "data_d1": "2026-06-05",
+      "live": 14.66,
+      "delta_bps": -5,
+      "pct_range": 92,
+      "posicao": "PREMIUM",
+      "last_time": 1780920000,
+      "trade_age_min": 96
+    }
+  ],
+  "fonte": "TV CDP direto (DI1F2027/2029/2031) · MVP di_live.js",
+  "_regra_consumo": "WIN/WDO Analisador LÊ este arquivo (não troca gráfico). Aplica delta_score capado ±2. Se direção do DI conflita com a estrutura do próprio ativo → zera o peso e marca divergência. Se !fresco (>15min) ou evento macro disparou → re-puxar antes de aplicar. Entrada ainda só em zona (premium/discount · LIÇÃO 89)."
+}
