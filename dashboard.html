@@ -336,7 +336,7 @@
           <p class="muted" id="filtro-anti-narrativa" style="font-size: 13px; margin-bottom: var(--s-3);">
             Carregando filtro anti-narrativa...
           </p>
-          <a href="briefing/do-dia-v2.html" class="btn btn-primary btn-block">Ver briefing completo</a>
+          <a href="briefing/do-dia.html" class="btn btn-primary btn-block">Ver briefing completo</a>
         </div>
       </section>
 
@@ -365,7 +365,7 @@
           <p>16 modelos ICT × Wyckoff catalogados com probabilidade calibrada e diagrama representativo.</p>
         </a>
 
-        <a href="briefing/do-dia-v2.html" class="atalho-card">
+        <a href="briefing/do-dia.html" class="atalho-card">
           <div class="atalho-card-icon">📊</div>
           <h3>Briefing do dia</h3>
           <p>Setup operacional WIN/WDO atualizado, com zona, stop e alvos progressivos.</p>
@@ -620,7 +620,7 @@
           var m = ({ GO: ['🟢 GO', 'var(--green)'], GO_CONDICIONAL: ['🟡 GO Cond.', 'var(--gold)'], AGUARDAR: ['🔵 Aguardar', 'var(--accent)'], NO_GO: ['🔴 NO-GO', 'var(--warn)'] })[o.veredito] || ['Aguardar', 'var(--accent)'];
           html += '<div style="margin-top: var(--s-5); padding-top: var(--s-4); border-top: 1px solid var(--border); display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px;"><div><span style="font-family: var(--mono); font-weight: 700; font-size: 18px;">' + o.codigo + '</span> <span style="color: var(--muted); margin-left: 8px;">' + (o.comentario_breve || '') + '</span></div><span style="padding: 4px 12px; border-radius: 999px; background: var(--bg-2); color: ' + m[1] + '; border: 1px solid ' + m[1] + '; font-size: 12px; font-weight: 700;">' + m[0] + '</span></div>';
         }
-        html += '<div class="briefing-link"><a href="briefing/do-dia-v2.html" class="btn btn-primary">Ver briefing completo</a><a href="https://t.me/renato_bertani" target="_blank" class="btn">Canal Telegram</a></div>';
+        html += '<div class="briefing-link"><a href="briefing/do-dia.html" class="btn btn-primary">Ver briefing completo</a><a href="https://t.me/renato_bertani" target="_blank" class="btn">Canal Telegram</a></div>';
         heroEl.innerHTML = html;
         var resumoEl = document.getElementById('dash-resumo');
         if (resumoEl && b.destaque) {
