@@ -1,0 +1,307 @@
+{
+  "data": "2026-06-09",
+  "data_extenso": "Terça-feira, 9 de junho de 2026",
+  "hora_publicacao": "2026-06-09T07:45:00-03:00",
+  "edicao": 26,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "JUROS DISPARAM RUMO A 15% E O DÓLAR NA MÁXIMA — MAS A BOLSA SEGUROU NO FUNDO",
+    "subtitulo": "Os juros futuros subiram pelo 2º dia seguido e a curva já embute Selic perto de 15% (mercado vê o Banco Central parado, talvez subindo); o dólar bateu R$5,18, o maior valor desde março. Mas a bolsa, que varreu uma nova mínima (168.650) e recuperou metade no fechamento, deu sinal de absorção no fundo — e o exterior aliviou na virada (techs nos EUA recuperaram, China exportou forte, trégua frágil no Oriente Médio derrubou o petróleo). Dia de não perseguir preço esticado: vender índice só no repique, comprar dólar só no recuo. A semana é de inflação, com o CPI dos EUA na quarta como o grande teste."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN fechou ~no equilíbrio (169.500 ≈ EQ 169.515) após varrer nova mínima 168.650 e recuperar metade (absorção) · vender SÓ em premium (≥ 169.515) COM gatilho · score 4 AGUARDAR",
+    "wdo_linha": "WDO fechou em premium (5.224 > EQ 5.197) · 2º dia de alta · comprar SÓ em pullback discount (≤ 5.197) COM gatilho · score 5 AGUARDAR",
+    "janela_operacional": "Evitar abertura (09:00–09:25) · operar após leilão (09:25–10:00) OU confluência NY (14:00–15:30) · atenção ao leilão do Tesouro 11h · entrar COM gatilho na zona certa",
+    "nivel_chave": "WIN EQ 169.515 (linha premium/discount) · nova mínima 168.650 · WDO EQ 5.197 · DI F29 14,945 nova máxima (premium extremo)",
+    "agenda_top1": "Semana de inflação: IGP-DI 08:00 · leilão Tesouro 11:00 · balança EUA 09:30 · China CPI/PPI 22:30 → abre quarta com CPI EUA (market mover)"
+  },
+  "kill_zones_recomendadas": [
+    "09:00–09:25 (leilão de abertura B3 · EVITAR · terça após 2 dias de disparo do DI)",
+    "09:25–10:00 (pós-leilão · janela setup WIN/WDO COM gatilho na zona certa)",
+    "11:00–11:30 (leilão do Tesouro · pode mexer juros e dólar · atenção)",
+    "14:00–15:30 (confluência NY · janela setup WIN/WDO COM gatilho)"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "📌 Briefing #26 FASE 1 noturna (segunda 08/06/2026 noite · sessão Cowork · preliminar pra terça 09/06 · núcleo de preço EOD segunda colado pelo Renato · DI EOD pendente)",
+      "📊 WIN EOD segunda 08/06 (prints home broker): abertura 170.380, máxima/PDH 170.380 (amplitude 1.730 confirma · print OCR mostrou 170.330), mínima/PDL 168.650, fechamento 169.500, ajuste B3 169.101, variação −10pts (−0,01% vs fech sexta), amplitude 1.730, OI 179.204. EQ ≈ 169.515 → fechou praticamente NO EQUILÍBRIO (leve discount). Abriu na máxima, vendeu até 168.650 (nova mínima do movimento) e recuperou metade no fechamento. Ajuste caiu de 169.395 (sexta) pra 169.101.",
+      "💵 WDO EOD segunda 08/06 (prints home broker): abertura 5.180,50, máxima/PDH 5.232,00, mínima/PDL 5.162,50, fechamento 5.224,00, ajuste B3 5.211,97, variação +24pts (+0,46%), amplitude 69,50, OI 859.408. EQ 5.197,25 → fechou em PREMIUM (perto da máxima). Dólar seguiu firme (2º dia de alta · ajuste subiu de 5.181,79 pra 5.211,97).",
+      "💵 DI EOD segunda 08/06 (Falcão 'No fechamento' vs ajuste sexta 05/06): F27 +12,8bps (14,520 vs 14,392), F29 +20,4bps (14,945 vs 14,741 ← topo), F31 +17,0bps (14,820 vs 14,650). Bear shift 2º dia consecutivo, belly-led, curva embute Selic ~15% (14,80% fim-26 / 15,10% mar-27). ⚠️ O di_live intraday 10:36 marcou DOVISH (−3,5/−4/−5) e o EOD reverteu pra forte alta — lição: intraday DI engana, EOD manda.",
+      "🧭 HERANÇA #25 (segunda 08/06 · publicado): WIN score 4 AGUARDAR (discount/markdown 8 semanas), WDO score 5 AGUARDAR (premium/dólar forte), DI bear shift belly-led (F29 93,7% range), filtro ATIVO. AMBOS AGUARDAR · nenhum trade armado (placar 0 ops segunda) → sem operação aberta pra carregar.",
+      "🇺🇸 RESSACA DO PAYROLL: Fed higher-for-longer carimbado (172k sexta · 2Y 4,106%). Mercado ~80% de alta de juro até dezembro. A semana é decisiva pra calibrar isso, com o CPI EUA na quarta como market mover.",
+      "🛢️ Petróleo + Oriente Médio (curinga): escalada Israel↔Irã no FDS, Brent >US$96 na madrugada de segunda. MAS OPEP+ +188k bpd julho + Fitch superávit set = teto estrutural. Monitorar continuidade overnight pra terça.",
+      "🇧🇷 Bolsa BR: 8ª semana de queda (maior desde início do Real). DXY >100. Câmbio pressionado pelo carry. WIN em markdown maduro · WDO sustentado.",
+      "🛢️ Oriente Médio · TRÉGUA FRÁGIL: Israel/Irã suspenderam ataques após pressão de Trump; Brent recuou ~2% na manhã de terça mas segue >US$94. Fitch elevou projeção Brent (US$100–110) e mudou a perspectiva soberana global pra 'em deterioração'. Alívio tático, não estrutural.",
+      "🇺🇸 EUA (fech segunda): Nasdaq +0,86% (25.929), S&P +0,30% (7.405), Dow −0,16%. Techs recuperaram (Intel +11%, Micron +9,9%, Nvidia +1,7%; Apple −1,9%) → tailwind leve pra WIN. Europa terça de manhã no positivo (Stoxx 600 +0,54%, bancos +1,2%).",
+      "🇨🇳 China comércio (00:00): exportações +19,4% (cons 15%) e importações +27,4% (cons 25%), superávit US$105,4bi (est 86,5bi) — beat forte. MAS minério em Dalian −0,20% (US$112,04). Vale-peers misto → não aciona gatilho bearish (LIÇÃO 58).",
+      "💵 Câmbio/juros: dólar à vista +0,45% R$5,1803 (máxima desde 30/mar) com DXY de lado (100,03) = pressão idiossincrática BR (carry/fiscal). Focus segunda piorou: IPCA-26 5,06→5,11% · Selic fim-26 13,25→13,50%. Curva já embute Selic ~15%.",
+      "📌 Status trade #N-1: #25 (08/06) saiu com WIN e WDO ambos AGUARDAR · 0 ops armadas → nada pra carregar."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "ALTA",
+      "narrativa_dominante": "Juros rumo a 15%, dólar nas máximas, bolsa sem chão",
+      "fonte_observada": "Consenso pós-payroll + reprecificação Selic (Broadcast/BMG/Falcão/Valor).",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_desc": "Baixista unânime · 'juros a 15%, dólar voando, bolsa sem chão'",
+          "estrutura_dir": 0,
+          "estrutura_desc": "Varreu nova mínima 168.650 e recuperou metade → possível absorção · fechou ~no EQ 169.515 (neutro)",
+          "veredito": "CUIDADO",
+          "veredito_label": "alinhado, mas o fundo absorveu",
+          "relacao": "A notícia te empurra a vender o fundo, mas o índice acabou de varrer a mínima e voltar pro equilíbrio — sinal de absorção. Vender embaixo é erro de timing, não de direção (LIÇÃO 66).",
+          "posicao_regua": 45,
+          "score_clareza": 5.5,
+          "estagio": "fim",
+          "estagio_alerta": "Narrativa baixista madura (8+ semanas) + absorção na mínima 168.650 → não shortar o fundo · vender só no repique premium (≥ EQ 169.515)",
+          "racional_uma_linha": "Mídia prega 'bolsa sem chão', mas o WIN absorveu na nova mínima (168.650) e voltou pro equilíbrio. Vender o fundo é trap de continuação — vender só no repique premium."
+        },
+        "WDO1!": {
+          "noticia_dir": 2,
+          "noticia_desc": "Altista forte · 'dólar na máxima desde março, sem resistência'",
+          "estrutura_dir": 0.5,
+          "estrutura_desc": "Markup · premium 2º dia, perto da máxima",
+          "veredito": "A_FAVOR",
+          "veredito_label": "tese alinhada, mas esticada e com drivers globais enfraquecendo",
+          "relacao": "Notícia e estrutura concordam (dólar firme, carry, risk-off), mas DXY está de lado (100,03) e o petróleo recuou — a alta ficou mais idiossincrática (BR/carry) do que global. Lastro real, cuidado de localização.",
+          "posicao_regua": 62,
+          "score_clareza": 6.5,
+          "estagio": "meio",
+          "estagio_alerta": "Direção tem lastro (USDBRL R$5,18 máx desde mar · DI hawk), mas comprar só em pullback (discount ≤ EQ 5.197) · DXY de lado + Brent recuando = drivers globais mais fracos que ontem",
+          "racional_uma_linha": "Mídia diz 'dólar sem resistência' e a estrutura concorda, mas o DXY parou e o petróleo recuou — comprar só no recuo (≤ EQ 5.197), não no esticado."
+        }
+      },
+      "contra_evidencias": "WIN varreu 168.650 e recuperou metade (absorção) · DI F29 premium extremo/nova máxima (exaustão possível) · disparo do DI lido como técnico ('toalha jogada') · overnight aliviou (Nasdaq +0,86%, China exp +19,4%, trégua ME, Brent −2% terça manhã) · DXY de lado.",
+      "leitura_bertani": "Respeitar a tendência (DI/Fed pesam) SEM perseguir preço esticado — vender WIN só em premium/repique (≥ EQ 169.515), comprar dólar só em discount/pullback (≤ EQ 5.197). LIÇÃO 89 dura nos dois.",
+      "frases_consensuais_alertadas": [
+        "Juros a 15%, bolsa sem chão (mas WIN absorveu na mínima 168.650)",
+        "Dólar sem resistência, vai subir sem parar (mas DXY de lado 100,03)",
+        "Bear shift confirma queda iminente (mas juro em premium extremo com cheiro técnico)"
+      ],
+      "contradicoes_estruturais": [
+        "Narrativa diz 'vender WIN no fundo' mas estrutura mostra absorção (varreu 168.650 e recuperou metade)",
+        "Narrativa diz 'comprar WDO no rompimento' mas DXY de lado + Brent recuando = drivers globais enfraquecendo",
+        "DI bear shift (hawk) mas gestores leem como 'toalha jogada / desmonte técnico' (componente técnico forte)",
+        "Ibov volume R$20,7bi (abaixo média R$27bi) = cautela, não distribuição agressiva como narrativa sugere"
+      ],
+      "contra_evidencias_a_monitorar": [
+        "WIN absorção na mínima 168.650 (Spring em teste)",
+        "DI F29 premium extremo 14,945 nova máxima (exaustão possível)",
+        "DXY de lado 100,03 enquanto USDBRL sobe (pressão idiossincrática BR)",
+        "Brent recuou −2% terça manhã (trégua ME frágil)",
+        "Overnight aliviou: Nasdaq +0,86%, China exp +19,4%"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear shift 2º dia (EOD segunda 08/06 · Falcão fechamento): F27 +12,8bps (14,520), F29 +20,4bps (14,945 ← topo), F31 +17,0bps (14,820). Belly-led, curva embute Selic ~15% (14,80% fim-26 / 15,10% mar-27). F29 fez NOVA máxima vs sexta (14,810) → premium extremo mantém/aprofunda. 4 LENTES: (1) Wyckoff do juro: F29 nova máxima = juro no topo do range (premium extremo), sem reversão ainda → pressão WIN / sustenta WDO, mas vigiar exaustão. (2) Sweep × displacement: manhã varreu o lado de baixo (dovish −4bps às 10:36 = sweep) e a tarde foi displacement de alta (vértices fecharam nas máximas). MAS gestores (Inter/Oby Capital, via Valor) leem como 'toalha jogada / desmonte técnico de carteiras / espelho da curva americana, não piora doméstica' → componente técnico forte embutido. (3) Fluxo: Ibov −0,21% com volume R$20,7bi (abaixo da média R$27bi) = cautela, não distribuição agressiva. (4) Convicção MÉDIA: bear shift confirma viés (− WIN / + WDO), MAS WIN sobrevendido 8+ semanas + juro em premium extremo + disparo com cheiro técnico → não inverte nada do #25: vender WIN só no repique (não no fundo), comprar WDO só no pullback (não no rompimento).",
+      "vertices_bps": {
+        "F27": "+12,8bps (14,520 vs 14,392)",
+        "F29": "+20,4bps (14,945 vs 14,741 ← topo)",
+        "F31": "+17,0bps (14,820 vs 14,650)"
+      },
+      "fonte": "Release Falcão (Bom Dia Mercado · 'No fechamento' segunda 08/06 · traz prior ajuste = sexta 05/06).",
+      "implicacao": "Bear shift confirma tendência (pressão WIN / a favor WDO), mas convicção MÉDIA por juro em premium extremo + disparo técnico + WIN sobrevendido. Vender WIN só em premium/repique (≥ EQ 169.515), comprar WDO só em discount/pullback (≤ EQ 5.197). Não inverte decisões do #25."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Markdown Phase C (TF daily) — 8ª+ semana; varreu nova mínima 168.650 e recuperou metade (absorção/Spring em teste)",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "VENDA condicional (só em PREMIUM ≥ EQ 169.515) OU COMPRA em Spring confirmado",
+      "racional_publico": "Macro baixista (DI bear shift 2º dia · F29 nova máxima 14,945), mas fundo absorveu (varreu 168.650 e recuperou metade). Vender só no repique premium (≥ 169.515), não no fundo. LIÇÃO 66: trap de continuação.",
+      "niveis_chave": {
+        "ajuste_b3": 169101,
+        "ajuste_b3_data": "2026-06-08",
+        "fechamento_anterior": 169500,
+        "PDH": 170380,
+        "PDL": 168650,
+        "maxima_anterior": 170380,
+        "minima_anterior": 168650,
+        "abertura_anterior": 170380,
+        "range_anterior_pts": 1730,
+        "variacao_anterior_pts": -10,
+        "variacao_anterior_pct": -0.01,
+        "EQ": 169515,
+        "weekly_high_20d": 176971,
+        "weekly_low_20d": 168650,
+        "suporte_critico": "168.650 (nova mínima · PDL · possível Spring)",
+        "resistencia_critica": "169.515 (EQ · linha premium/discount) / 170.380 (PDH)",
+        "_nota": "Núcleo oficial dos prints home broker EOD segunda 08/06 (Renato). PDH/máxima = 170.380 (amplitude 1.730 = 170.380−168.650 confirma · OCR do print mostrou 170.330 · confirmar abertura/máxima se possível). Fechou 169.500 ~no EQ 169.515 (leve discount) após abrir na máxima, varrer 168.650 (nova mínima do movimento) e recuperar metade. LIÇÃO 61: fechamento (169.500) ≠ ajuste (169.101)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 169101,
+        "data_referencia": "2026-06-08",
+        "fonte": "Print home broker EOD segunda 08/06 (Renato · Resumo de 08/06/2026)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR (venda condicional em premium OU compra em Spring confirmado)",
+        "cenarios": [
+          {
+            "tipo": "VENDA",
+            "entry_zona": "170.000–170.380 (premium, até PDH)",
+            "stop": 170600,
+            "stop_pts": 410,
+            "tp1": 169515,
+            "tp1_rr": 1.65,
+            "tp1_partial_pct": 50,
+            "tp2": 168650,
+            "tp2_rr": 3.76,
+            "tp2_partial_pct": 30,
+            "tp3": 167800,
+            "tp3_rr": 5.83,
+            "tp3_partial_pct": 20,
+            "contratos_banca_30k_risco_1pct": 3,
+            "racional_contratos": "410 pts × R$0,20 = R$82 × 3 = R$246 ≤ R$300 (1% de R$30k)"
+          },
+          {
+            "tipo": "COMPRA",
+            "entry_zona": "168.650–168.900 (discount/nova mínima · Spring confirmado)",
+            "stop": 168300,
+            "stop_pts": 475,
+            "tp1": 169515,
+            "tp1_rr": 1.56,
+            "tp1_partial_pct": 50,
+            "tp2": 170380,
+            "tp2_rr": 3.38,
+            "tp2_partial_pct": 30,
+            "tp3": 171000,
+            "tp3_rr": 4.68,
+            "tp3_partial_pct": 20,
+            "contratos_banca_30k_risco_1pct": 3,
+            "racional_contratos": "475 pts × R$0,20 = R$95 × 3 = R$285 ≤ R$300 (baixa prob no contexto macro)"
+          }
+        ],
+        "setup": "AGUARDAR. Vender só em premium (≥ EQ 169.515) COM gatilho (rejeição + MSS). Comprar só se Spring 168.650 confirmar com MSS (baixa prob no contexto).",
+        "kill_zone": "09:25–10:00 OU 14:00–15:30",
+        "gatilho": "VENDA: repique pra 170.000–170.380 + rejeição (pavio/engolfo) + MSS. COMPRA: sweep do 168.650 + reversal bar + MSS.",
+        "anti_trade": "Não vender no discount/no fundo (< EQ 169.515). Não perseguir a baixa na abertura. Não comprar sem Spring confirmado.",
+        "cancelamento": "VENDA cancela se romper 170.700. COMPRA cancela se perder 168.300."
+      },
+      "comentario_breve": "Macro baixista mas fundo absorveu (varreu 168.650 e voltou pro EQ). Vender só no repique premium com gatilho, não perseguir o fundo.",
+      "_score_breakdown": { "total": 4, "nota": "AGUARDAR — macro baixista mas fundo absorveu · vender só no repique premium" }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Markup Phase D (TF daily) — 2º dia de alta, fechou em premium perto da máxima",
+      "score": 5,
+      "veredito": "AGUARDAR",
+      "vies": "COMPRA condicional (só em DISCOUNT/pullback ≤ EQ 5.197)",
+      "racional_publico": "Tese de alta com lastro (DI hawk · carry · USDBRL máx desde março), mas esticada (2º dia de premium). Comprar só no pullback discount (≤ EQ 5.197), não perseguir o esticado. DXY de lado + Brent recuando = drivers globais enfraquecendo.",
+      "niveis_chave": {
+        "ajuste_b3": 5211.97,
+        "ajuste_b3_data": "2026-06-08",
+        "fechamento_anterior": 5224.00,
+        "PDH": 5232.00,
+        "PDL": 5162.50,
+        "maxima_anterior": 5232.00,
+        "minima_anterior": 5162.50,
+        "abertura_anterior": 5180.50,
+        "range_anterior_pts": 69.50,
+        "variacao_anterior_pts": 24.00,
+        "variacao_anterior_pct": 0.46,
+        "EQ": 5197.25,
+        "weekly_high_20d": 5232.00,
+        "weekly_low_20d": 5162.50,
+        "suporte_critico": "5.197,25 (EQ · linha premium/discount) / 5.162,50 (PDL)",
+        "resistencia_critica": "5.232 (PDH · perto da máxima)",
+        "_nota": "Núcleo oficial dos prints home broker EOD segunda 08/06 (Renato). Amplitude 69,50 = 5.232−5.162,50 (consistente). Fechou 5.224 em PREMIUM (EQ 5.197,25), perto da máxima · 2º dia de alta · dólar firme. LIÇÃO 61: fechamento (5.224) ≠ ajuste (5.211,97)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5211.97,
+        "data_referencia": "2026-06-08",
+        "fonte": "Print home broker EOD segunda 08/06 (Renato · Resumo de 08/06/2026)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR pullback (compra condicional em discount)",
+        "entry_zona": "5.175–5.197 (discount · ≤ EQ 5.197,25)",
+        "stop": 5156,
+        "stop_pts": 30,
+        "tp1": 5232,
+        "tp1_rr": 1.53,
+        "tp1_partial_pct": 30,
+        "tp2": 5258,
+        "tp2_rr": 2.40,
+        "tp2_partial_pct": 40,
+        "tp3": 5290,
+        "tp3_rr": 3.47,
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": 1,
+        "racional_contratos": "30 pts × R$10 = R$300 = 1% de R$30k (1 contrato)",
+        "setup": "AGUARDAR pullback à zona discount 5.175–5.197 (≤ EQ 5.197). NÃO comprar no premium (5.224 atual). Entrar só COM gatilho (sweep do PDL 5.162,50 + reversal + MSS).",
+        "kill_zone": "09:25–10:00 OU 14:00–15:30",
+        "gatilho": "Preço recuar pra 5.175–5.197 + pullback confirmado (sweep do PDL 5.162,50 OU reteste EQ com rejeição) + MSS.",
+        "anti_trade": "Não comprar no premium (> EQ 5.197). Não perseguir o esticado. Não entrar sem pullback.",
+        "cancelamento": "Cancela se perder 5.156 (pullback invalidado)."
+      },
+      "comentario_breve": "Tese de alta com lastro (DI hawk · carry · USDBRL máx), mas esticada. Comprar só no pullback discount, não perseguir.",
+      "_score_breakdown": { "total": 5, "nota": "AGUARDAR pullback — tese de alta com lastro (DI hawk · carry · USDBRL máx) mas comprar só em discount; DXY de lado/Brent recuando enfraqueceram o lado global" }
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "05:00", "evento": "IPC-Fipe 1ª quadrissemana junho", "pais": "BR", "impacto": "MEDIO", "projecao": "+0,45% (repetiu maio)", "anterior": "—", "janela_evitar": "—", "nota": "Já divulgado" },
+    { "hora_brt": "08:00", "evento": "IGP-DI (FGV)", "pais": "BR", "impacto": "MEDIO", "projecao": "+0,74%", "anterior": "+2,41%", "janela_evitar": "—" },
+    { "hora_brt": "08:00", "evento": "IPC-S Capitais 1ª quadri junho (FGV)", "pais": "BR", "impacto": "BAIXO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
+    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "09:00-09:25", "nota": "Evitar 09:00-09:25" },
+    { "hora_brt": "09:30", "evento": "Balança Comercial abr (EUA)", "pais": "US", "impacto": "ALTO", "projecao": "−55,5B", "anterior": "−56B", "janela_evitar": "09:25-10:00", "nota": "Evitar 09:25-10:00" },
+    { "hora_brt": "09:30", "evento": "Estoques no atacado abr (EUA)", "pais": "US", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
+    { "hora_brt": "11:00", "evento": "Leilão do Tesouro (LFT 2032 + NTN-B 2031/2037/2045)", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Termômetro do apetite pós-disparo dos juros" },
+    { "hora_brt": "11:00", "evento": "Vendas de Casas Usadas / NAHB (EUA)", "pais": "US", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "10:55-11:15" },
+    { "hora_brt": "11:30", "evento": "BC swap cambial rolagem (até 50k)", "pais": "BR", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
+    { "hora_brt": "12:00", "evento": "BC compromissadas 3m (até R$5bi)", "pais": "BR", "impacto": "BAIXO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
+    { "hora_brt": "13:30", "evento": "Christine Lagarde (BCE) jantar informal", "pais": "EU", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Véspera da decisão do BCE (quinta)" },
+    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "17:45-17:55" },
+    { "hora_brt": "22:30", "evento": "China CPI + PPI mai", "pais": "CN", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Após o fechamento BR → impacta a abertura de QUARTA (mesmo dia do CPI EUA, o market mover da semana)" }
+  ],
+  "regras_do_dia": [
+    "Não operar colado na abertura (09:00–09:25)",
+    "Respeitar a tendência mas não perseguir preço esticado: vender índice só em premium/repique · comprar dólar só em pullback/discount",
+    "Atenção ao leilão do Tesouro 11h — termômetro do apetite pós-disparo dos juros (pode mexer DI e dólar)",
+    "Stop físico sempre · risco 1% da banca por trade (banca 30k)",
+    "Semana de inflação: CPI EUA quarta + IPCA BR sexta podem virar o viés — terça é build-up",
+    "Oriente Médio/petróleo segue curinga — trégua frágil, choque de manchete mexe dólar e bolsa fora de hora"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA",
+    "criado_em": "2026-06-08 segunda noite (sessão Cowork · FASE 1 noturna · núcleo de preço EOD colado pelo Renato)",
+    "fase_2_completa_em": "2026-06-09 terça manhã (sessão Cowork FASE 2 + sessão Code publish)",
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: zero invenção · preço oficial dos prints · DI EOD do Falcão (bear shift +12,8/+20,4/+17,0bps)",
+      "LIÇÃO 61: fechamento ≠ ajuste (WIN 169.500≠169.101 · WDO 5.224≠5.211,97)",
+      "LIÇÃO 15: agenda real dos prints Investing (terça densa: China comércio + cluster EUA + China IPC/IPP noite + leilão Tesouro 11h)",
+      "LIÇÃO 89: premium/discount rígido (WIN vender só ≥ EQ 169.515 · WDO comprar só ≤ EQ 5.197)",
+      "LIÇÃO 93: 4 lentes DI (Wyckoff juro · sweep×displacement · fluxo · convicção MÉDIA)",
+      "LIÇÃO 66: trap de continuação (WIN absorveu na mínima 168.650 · não vender o fundo)",
+      "LIÇÃO 70: paywall canon (telegram aberto NÃO entrega plano operacional completo)",
+      "NOVA LIÇÃO: DI intraday (di_live 10:36 DOVISH) REVERTEU pra bear shift forte no EOD — usar sempre o fechamento Falcão, nunca o intraday, pra virar viés."
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker Resumo de 08/06/2026 (Renato): ajuste 169.101 · fech 169.500 · O 170.380 · H 170.380 · L 168.650 · var −10 · ampl 1.730",
+      "preco_eod_wdo": "Print home broker Resumo de 08/06/2026 (Renato): ajuste 5.211,97 · fech 5.224 · O 5.180,50 · H 5.232 · L 5.162,50 · var +24 · ampl 69,50",
+      "di_curva": "Release Falcão (Bom Dia Mercado · 'No fechamento' segunda 08/06 · prior ajuste sexta 05/06): F27 +12,8bps (14,520), F29 +20,4bps (14,945), F31 +17,0bps (14,820)",
+      "overnight": "EUA fech segunda: Nasdaq +0,86%, S&P +0,30%, Dow −0,16%. China comércio 00:00: exp +19,4% imp +27,4% (beat forte). Brent −2% terça manhã (trégua ME frágil). DXY de lado 100,03.",
+      "agenda_macro": "Prints Investing.com + Falcão (terça 09/06)",
+      "heranca": "Briefing #25 publicado (08/06): ambos AGUARDAR · 0 ops"
+    },
+    "decisoes_tecnicas": {
+      "win": "Markdown Phase C · score 4 · AGUARDAR · venda em premium (≥ 169.515) OU compra em Spring confirmado",
+      "wdo": "Markup Phase D · score 5 · AGUARDAR · compra em pullback discount (≤ 5.197)",
+      "filtro": "ATIVO ALTA · WIN CUIDADO (absorção no fundo) · WDO A_FAVOR (mas esticado)",
+      "vento": "FORTE (DI bear shift 2º dia + dólar máx + CPI EUA quarta build-up)"
+    }
+  }
+}

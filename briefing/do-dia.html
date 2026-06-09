@@ -464,7 +464,8 @@
       }, 8000);
 
       function fetchJSON(url) {
-        return fetch(url, { cache: 'no-cache' })
+        var bust = (url.indexOf('?') >= 0 ? '&' : '?') + 'ts=' + Date.now();
+        return fetch(url + bust, { cache: 'no-cache' })
           .then(function (r) {
             if (!r.ok) {
               console.warn('[briefing] fetch falhou:', url, 'status', r.status);
