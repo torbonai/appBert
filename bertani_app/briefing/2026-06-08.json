@@ -1,0 +1,363 @@
+{
+  "data": "2026-06-08",
+  "data_extenso": "Segunda-feira, 8 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 25,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "DÓLAR DISPARA, JUROS NAS MÁXIMAS E A BOLSA NA 8ª SEMANA DE QUEDA",
+    "subtitulo": "Payroll quente carimbou Fed parado/higher-for-longer; dólar saltou +2% (rompeu R$5,20 na máxima) com DXY acima de 100; juros futuros dispararam de novo (miolo liderando, Copom 14,50% vira aposta majoritária); bolsa amarga a 8ª semana seguida de queda — a maior sequência desde o início do Real; guerra no Oriente Médio reacende e empurra o petróleo; tech derrete lá fora (Kospi −8%). Semana decisiva de inflação (CPI EUA qua + IPCA BR sex). Dia de operar no gatilho e na zona certa, não na manchete."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN fechou em discount (169.510 < EQ 170.358) · 8ª semana de queda · vender SÓ em premium (≥ 170.358) COM gatilho · score 4 AGUARDAR",
+    "wdo_linha": "WDO fechou em premium (5.200 > EQ 5.146) · +2,14% · comprar SÓ em pullback discount (≤ 5.146) COM gatilho · score 5 AGUARDAR",
+    "janela_operacional": "Evitar abertura (09:00–09:25) · operar após leilão (09:25–10:00) OU confluência NY (14:00–15:30) · entrar COM gatilho na zona certa",
+    "nivel_chave": "WIN EQ 170.358 (linha premium/discount) · WDO EQ 5.146 (linha premium/discount) · DI F29 93,7% do range (premium extremo)",
+    "agenda_top1": "Semana de inflação: Focus seg 08:25 · CPI EUA qua · IPCA BR sex · BCE qui · leilão abertura 09:00–09:25 (ALTO impacto 1ª segunda pós-payroll)"
+  },
+  "kill_zones_recomendadas": [
+    "09:00–09:25 (leilão de abertura B3 · EVITAR · 1ª segunda pós-payroll + tremor tech = abertura volátil)",
+    "09:25–10:00 (pós-leilão abertura · janela setup WIN/WDO COM gatilho na zona certa)",
+    "14:00–15:30 (confluência NY · janela setup WIN/WDO COM gatilho)"
+  ],
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "📌 Briefing #25 FASE 1 noturna (domingo 07/06/2026 · sessão Cowork · preliminar pra segunda 08/06 · volta ao normal após a sexta-ponte SEM briefing 05/06 e o feriado de Corpus Christi 04/06)",
+      "📊 WIN EOD sexta 05/06 (prints home broker oficial): abertura 171.165, máxima (PDH) 171.615, mínima (PDL) 169.100, fechamento 169.510, ajuste B3 169.395, variação −1.200pts (−0,70%), range 2.515pts. Fechou em DISCOUNT (EQ 170.358). Mínima 169.100 = nova mínima do movimento (atualiza weekly_low_20d). 8ª semana consecutiva de queda — maior sequência desde o início do Real (jul/1994). Fraco estruturalmente.",
+      "💵 WDO EOD sexta 05/06 (prints home broker oficial): abertura 5.085,50, máxima (PDH) 5.207,50, mínima (PDL) 5.085,00, fechamento 5.200,00, ajuste B3 5.181,79, variação +109,00pts (+2,14%), range 122,50pts. Fechou em PREMIUM (EQ 5.146,25). Dia forte, fechou perto da máxima — confirma dólar firme (spot +1,78% R$5,1572 · DXY >100).",
+      "💵 Juros futuros BR (release CETIP 7h11 · fechamento EOD sexta 05/06): F27 14,430 (ajuste anterior 14,295 · +13,5bps), F28 14,725 (+35,0bps), F29 14,810 (+38,3bps ← topo), F31 14,710 (+30,1bps), F33 14,710 (+25,8bps). Bear shift forte, belly-led (F29 no topo), corcunda no miolo, os 3 vértices canônicos em PREMIUM (F29 93,7% do range). Curva passou a precificar 68% de manutenção Selic 14,50% (era corte). Payroll quente foi o gatilho (Carlos Lopes/BV).",
+      "🇺🇸 PAYROLL EUA QUENTE (sexta 05/06): 172k vs 85k mediana (estourou o teto 125k) · revisões PRA CIMA (abril 115k→179k · março 185k→214k) · salário +0,32% m/m / +3,45% a/a · 2Y subiu pra máxima do dia 4,106%. Leitura: Fed HIGHER-FOR-LONGER. Hawkish puro (LIÇÃO 20: payroll forte + salário hawkish). Pressiona WIN; sustenta WDO.",
+      "🌏 TREMOR GLOBAL EM TECH/IA (sexta 05/06): Kospi −6% (Samsung/SK Hynix) · Broadcom −12,6% · Nasdaq futuro no vermelho · giro de tech pra bancos/value. Headwind pra WIN via correlação com NAS/SPX (metodologia 5.5).",
+      "🌎 FLUXO ESTRANGEIRO: comprado em índice mas REDUZINDO na sexta (−8,31% no dia). Lente 3 da DI (LIÇÃO 93): DI subindo + gringo ainda não saindo forte = checar se é estrutural ou técnico na FASE 2.",
+      "🛢️ PETRÓLEO: Brent estabilizou perto de US$ 95 após cair ~3% (quinta) · alívio frágil ligado à narrativa Trump de encerrar guerra. Brent <100 = alívio inflacionário marginal (metodologia 5.4) mas DI não cedeu — risco fiscal/tarifa domina.",
+      "🌏 Tech rout global: segunda Kospi −8,29% (Samsung −11%, SK Hynix −10%), Nikkei −3,85%, Hang Seng −1,22%, Taiex −3,48%, Xangai −1,70%, Shenzhen −3,14%. Europa manhã levemente negativa (Stoxx 600 −0,51%). Headwind pra WIN via correlação tech.",
+      "🛢️ Petróleo + Oriente Médio: escalada no FDS (Israel↔Irã voltaram a trocar mísseis após cessar-fogo de abril; 3ª onda iraniana segunda; houthis miraram Israel; Trump pressiona Netanyahu publicamente). Brent ago >US$96 (+4% madrugada). MAS OPEP+ eleva produção +188 mil bpd em julho e Fitch vê superávit voltando em setembro (excedente ~4mi bpd no 4T se Ormuz reabrir) → teto estrutural no petróleo. Sexta Brent caiu −2,04% (US$93,09).",
+      "🇧🇷 Bolsa BR: sexta Ibov −0,77% (169.019,12), giro R$26,4bi; semana −2,74%; 8ª semana seguida de queda — maior sequência desde início do Real (jul/1994). CSN −10,18% liderou perdas; Embraer +3,82%. DXY fechou >100 (100,043) — 1ª vez desde abril.",
+      "⛏️ Minério (Dalian) set/26 −0,78% a US$112,18/t → pressão em Vale (sexta Vale ON −3,78%).",
+      "🗓️ Semana de inflação: Focus seg 08:25 · CPI EUA qua · PPI EUA qui · IPCA BR sex · China inflação/setor externo ter · BCE decide qui. Inflação volta ao centro pós-payroll.",
+      "📌 Status trade #N-1: último briefing publicado foi #24 (03/06). Sexta 05/06 = experimento SEM briefing (só Leitura de Mercado) → sem call de WIN/WDO pra herdar."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "ALTA",
+      "narrativa_dominante": "Payroll quente + Fed higher-for-longer + DI nas máximas + dólar rompendo = WIN sem chão e dólar só pra cima",
+      "fonte_observada": "Consenso pós-payroll (Broadcast/BDM/Falcão)",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_label": "Baixista unânime · 'WIN sem chão · juros e dólar enterram a bolsa · 8ª semana só cai'",
+          "estrutura_dir": -0.5,
+          "estrutura_label": "Markdown maduro · fechou em discount · 8ª semana de queda · sobrevendido (risco Spring na mínima 169.100)",
+          "veredito": "CUIDADO",
+          "veredito_label": "alinhado, mas esticado",
+          "relacao": "Apontam o mesmo lado (ambas pra baixo), mas o movimento já está exausto após 8 semanas no fundo. A notícia te empurra a vender o fundo — erro de timing, não de direção.",
+          "posicao_regua": 50,
+          "score_clareza": 6.0,
+          "estagio": "fim",
+          "estagio_alerta": "Narrativa baixista em estágio avançado (8 semanas) · risco de exaustão/Spring na mínima 169.100 · não shortar o fundo",
+          "racional_uma_linha": "Mídia prega 'WIN só cai', mas o índice está em DISCOUNT após 8 semanas de queda e tocou possível Spring em 169.100 — perseguir a baixa esticada é trap de continuação (LIÇÃO 66). Vender só no repique premium (≥ EQ 170.358), não no fundo."
+        },
+        "WDO1!": {
+          "noticia_dir": 2,
+          "noticia_label": "Altista forte · 'dólar rompeu e não tem mais resistência · R$5,20 · DXY>100'",
+          "estrutura_dir": 0.5,
+          "estrutura_label": "Markup · fechou em premium perto da máxima (+2,14%) · esticado",
+          "veredito": "A_FAVOR",
+          "veredito_label": "tese alinhada com a estrutura",
+          "relacao": "Notícia e estrutura concordam e o ciclo confirma — a tese de alta tem lastro de verdade. O cuidado é só de localização: o preço está esticado.",
+          "posicao_regua": 70,
+          "score_clareza": 7.0,
+          "estagio": "meio",
+          "estagio_alerta": "Direção tem lastro (DXY>100 · juros em alta · risk-off), mas comprar só em pullback (discount ≤ EQ 5.146) · teto do petróleo (OPEP+ +188k bpd / Fitch superávit set) é o risco da tese",
+          "racional_uma_linha": "Mídia diz 'dólar não tem resistência' e a estrutura concorda (DXY>100, juros em alta, dia +2,14%) — tese A FAVOR. Mas o preço está esticado em PREMIUM: comprar só no pullback (≤ EQ 5.146), não no rompimento."
+        }
+      },
+      "descricao": "Narrativa dominante prega tendência intacta sem limites. Filtro ATIVO identifica contra-evidências estruturais.",
+      "frases_consensuais_alertadas": [
+        "WIN sem chão · tendência intacta",
+        "Dólar rompeu e não tem mais resistência",
+        "DI só vai pra cima · Selic não cai mais",
+        "Perseguir a baixa no índice"
+      ],
+      "contra_evidencias": [
+        "WIN em 8ª semana de queda (−2,74% na semana, ~−4% acumulado recente) = sobrevendido/risco de exaustão e Spring na mínima semanal 169.545",
+        "DI em premium extremo (F29 93,7% do range) = juro perto do topo histórico do range → repique de exaustão possível",
+        "OPEP+ +188k bpd + Fitch superávit set = teto no petróleo → limita o lado de cima do dólar e do prêmio inflacionário",
+        "Brent recuou na sexta apesar da guerra (mercado não comprando escalada permanente)"
+      ],
+      "leitura_bertani": "Dia de respeitar a tendência (DI/Fed pesam), mas SEM perseguir preço esticado — vender WIN só em PREMIUM (retorno à zona ≥ EQ), comprar dólar só em DISCOUNT/pullback (não no rompimento esticado). LIÇÃO 89 dura nos dois.",
+      "contra_evidencias_a_monitorar": [
+        "Exaustão no DI (F29 premium extremo) pode virar repique técnico",
+        "WIN Spring na mínima 169.100 com MSS = setup de compra estrutural",
+        "Petróleo testando teto estrutural (OPEP+ produção) = dólar pode perder driver"
+      ]
+    },
+    "di_curva": {
+      "leitura": "Bear shift forte EOD sexta 05/06 (release CETIP 7h11): F27 14,430 (+13,5bps), F28 14,725 (+35,0bps), F29 14,810 (+38,3bps ← topo), F31 14,710 (+30,1bps), F33 14,710 (+25,8bps). Belly-led (F29 liderando), corcunda no miolo. Os 3 vértices canônicos (F27/F29/F31) em PREMIUM: F27 63,2% do range, F29 93,7% (extremo), F31 84,0%. Curva passou a precificar 68% de manutenção Selic 14,50% no próximo Copom (era corte antes). Payroll quente foi o gatilho (Carlos Lopes/BV). 4 LENTES: (1) Wyckoff do juro: premium extremo no F29 = juro perto do topo do range → ler exaustão × continuação; (2) sweep×displacement: displacement de alta no disparo pós-payroll (não foi só sweep) → continuação tem lastro; (3) fluxo gringo: estrangeiro comprado em índice mas reduzindo (−8,31% sexta) — DI subindo sem saída forte ainda; (4) convicção: DI hawk pressiona WIN, sustenta WDO.",
+      "vertices_bps": {
+        "1y_F27": "+13,5bps (fechou 14,430 vs ajuste anterior 14,295)",
+        "3y_F29": "+38,3bps (fechou 14,810 vs ajuste anterior 14,427 ← topo)",
+        "5y_F31": "+30,1bps (fechou 14,710 vs ajuste anterior 14,409)"
+      },
+      "fonte": "Release Falcão CETIP 7h11 (fechamento EOD sexta 05/06 · traz prior ajuste). Confere com prints Renato.",
+      "implicacao": "Bear shift forte, belly-led (F29 topo +38,3bps), corcunda no miolo. 4 LENTES: (1) Wyckoff do juro: premium extremo no F29 (93,7% do range) = juro perto do topo → ler exaustão × continuação; (2) sweep×displacement: displacement de alta no disparo pós-payroll (não foi só sweep) → continuação tem lastro; (3) fluxo gringo: estrangeiro comprado em índice mas reduzindo (−8,31% sexta) — DI subindo sem saída forte ainda; (4) convicção: DI hawk pressiona WIN, sustenta WDO.",
+      "niveis_eod_prints": {
+        "F27_jan2027": {
+          "yield_pct": 14.43,
+          "bid": 14.425,
+          "ask": 14.43,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 26.3,
+          "pct_range": 63.2
+        },
+        "F29_jan2029": {
+          "yield_pct": 14.81,
+          "bid": 14.805,
+          "ask": 14.81,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 87.4,
+          "pct_range": 93.7
+        },
+        "F31_jan2031": {
+          "yield_pct": 14.72,
+          "bid": 14.71,
+          "ask": 14.72,
+          "posicao": "PREMIUM",
+          "acima_eq_pct": 68,
+          "pct_range": 84
+        },
+        "_fonte": "Prints TV CDP daily fornecidos por Renato na sessão 07/06 (DI EOD sexta 05/06) · tickers DI1F2027 / DI1F2029 / DI1F2031",
+        "_curva": "Corcunda no miolo (F29 topo) · belly-led · 3 vértices em PREMIUM"
+      }
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Markdown Phase C (TF daily) — 8ª semana de queda, mínima 169.100 pode ser Spring",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "VENDA condicional (só em PREMIUM ≥ EQ 170.358)",
+      "racional_publico": "WIN fechou em DISCOUNT (169.510 < EQ 170.358), perto da mínima, em markdown de 8 semanas. Vender no discount é proibido (LIÇÃO 89). Contexto macro pesado (DI hawk + Fed higher-for-longer + tech rout) sustenta viés baixista, mas preço esticado. Setup = AGUARDAR repique pra zona premium (≥ EQ 170.358, idealmente 170.600–171.600 onde está PDH/abertura) pra vender COM gatilho (rejeição, MSS). Comprar só se confirmar Spring na mínima 169.100 com MSS (baixa probabilidade no contexto).",
+      "niveis_chave": {
+        "ajuste_b3": 169395,
+        "ajuste_b3_data": "2026-06-05",
+        "fechamento_anterior": 169510,
+        "PDH": 171615,
+        "PDL": 169100,
+        "maxima_anterior": 171615,
+        "minima_anterior": 169100,
+        "abertura_anterior": 171165,
+        "range_anterior_pts": 2515,
+        "variacao_anterior_pts": -1200,
+        "variacao_anterior_pct": -0.7,
+        "EQ": 170358,
+        "weekly_high_20d": 176971,
+        "weekly_low_20d": 169100,
+        "suporte_critico": 169100,
+        "suporte_critico_status": "testado (mínima do dia/semana · candidato Spring)",
+        "resistencia_critica": 170358,
+        "resistencia_critica_status": "aguardando (EQ · linha premium/discount)",
+        "buffer_ajuste_suporte_pts": 295,
+        "_nota": "EOD sexta 05/06: abertura 171.165, máxima (PDH) 171.615, mínima (PDL) 169.100, fechamento 169.510, ajuste B3 169.395. Variação −1.200pts (−0,70%), range 2.515pts. EQ = (171.615 + 169.100) / 2 = 170.358. Fechou em DISCOUNT (169.510 < EQ 170.358). Mínima 169.100 = nova mínima do movimento (atualiza weekly_low_20d 169.545 → 169.100; weekly_high_20d 176.971 mantém). Fechou perto da mínima = estruturalmente fraco. 8ª semana consecutiva de queda — maior sequência desde início do Real (jul/1994)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 169395,
+        "data_referencia": "2026-06-05",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-05)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR (venda condicional em premium OU compra em Spring confirmado)",
+        "entry_zona": "VENDA: 170.600–171.600 (premium · EQ 170.358 + buffer); COMPRA: 169.000–169.200 (confirmação Spring na mínima 169.100)",
+        "stop": "VENDA: 172.200 (acima PDH 171.615); COMPRA: 168.800 (abaixo mínima 169.100)",
+        "stop_pts": "VENDA: ~1.100pts; COMPRA: ~300pts",
+        "tp1": "VENDA: 169.400 (ajuste); COMPRA: 170.300 (EQ)",
+        "tp1_rr": "VENDA: ~1.7R; COMPRA: ~3.7R",
+        "tp1_partial_pct": 50,
+        "tp2": "VENDA: 168.500 (mínima anterior); COMPRA: 171.500 (PDH)",
+        "tp2_rr": "VENDA: ~2.6R; COMPRA: ~7.7R",
+        "tp2_partial_pct": 30,
+        "tp3": "VENDA: 167.500 (extensão); COMPRA: 172.500 (extensão)",
+        "tp3_rr": "VENDA: ~3.6R; COMPRA: ~11R",
+        "tp3_partial_pct": 20,
+        "contratos_banca_30k_risco_1pct": "VENDA: 1 contrato (1.100pts × R$0,20 = R$220 ≤ R$300); COMPRA: 2 contratos (300pts × R$0,20 = R$60 × 2 = R$120 ≤ R$300)",
+        "setup": "AGUARDAR confirmação · NÃO entrar na abertura. Venda só em premium (≥ EQ 170.358) COM gatilho (rejeição, MSS). Compra só se Spring 169.100 confirmar com MSS.",
+        "kill_zone": "09:25–10:00 (após leilão abertura) OU 14:00–15:30 (confluência NY)",
+        "gatilho": "VENDA: preço retornar à zona premium 170.600–171.600 + rejeição (pavio/engolfo) + MSS 4H. COMPRA: preço tocar 169.000–169.200 + Spring confirmado (sweep da mínima 169.100 + reversal bar + MSS 4H).",
+        "anti_trade": "Não vender no discount (< EQ 170.358). Não perseguir a baixa na abertura. Não comprar sem confirmação de Spring.",
+        "cancelamento": "VENDA cancela se romper 172.200 (invalidação). COMPRA cancela se perder 168.800 (Spring falhou)."
+      },
+      "comentario_breve": "WIN em discount · 8ª semana de queda · aguardar repique pra vender OU Spring pra comprar · score 4",
+      "_score_breakdown": {
+        "total": 4,
+        "nota": "AGUARDAR — contexto baixista mas preço esticado · vender só em premium COM gatilho"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Markup Phase D (TF daily) — rompimento estrutural, fechou em premium",
+      "score": 5,
+      "veredito": "AGUARDAR",
+      "vies": "COMPRA condicional (só em DISCOUNT/pullback ≤ EQ 5.146)",
+      "racional_publico": "WDO fechou em PREMIUM (5.200 > EQ 5.146,25), perto da máxima, dia +2,14%. Tese de alta é forte (DXY>100, risk-off, DI hawk, guerra). MAS comprar no premium é proibido (LIÇÃO 89) — esperar pullback à zona discount (≤ EQ 5.146, idealmente 5.120–5.146) pra comprar. Risco da tese = teto do petróleo (OPEP+ +188k bpd / Fitch superávit set) + dólar esticado.",
+      "niveis_chave": {
+        "ajuste_b3": 5181.79,
+        "ajuste_b3_data": "2026-06-05",
+        "fechamento_anterior": 5200,
+        "PDH": 5207.5,
+        "PDL": 5085,
+        "maxima_anterior": 5207.5,
+        "minima_anterior": 5085,
+        "abertura_anterior": 5085.5,
+        "range_anterior_pts": 122.5,
+        "variacao_anterior_pts": 109,
+        "variacao_anterior_pct": 2.14,
+        "EQ": 5146.25,
+        "weekly_high_20d": 5207.5,
+        "weekly_low_20d": 5085,
+        "suporte_critico": 5085,
+        "suporte_critico_status": "aguardando",
+        "resistencia_critica": 5207.5,
+        "resistencia_critica_status": "testada",
+        "buffer_ajuste_suporte_pts": 96.79,
+        "_nota": "EOD sexta 05/06: abertura 5.085,50, máxima (PDH) 5.207,50, mínima (PDL) 5.085,00, fechamento 5.200,00, ajuste B3 5.181,79. Variação +109,00pts (+2,14%), range 122,50pts. EQ = (5.207,50 + 5.085,00) / 2 = 5.146,25. Fechou em PREMIUM (5.200 > EQ 5.146,25). Dia forte (+2,14%, fechou perto da máxima) — confirma dólar firme (spot +1,78% R$5,1572 · DXY >100)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5181.79,
+        "data_referencia": "2026-06-05",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-05)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR pullback (compra condicional em discount)",
+        "entry_zona": "5.120–5.146 (discount · EQ 5.146,25 – buffer)",
+        "stop": "5.080 (abaixo PDL 5.085)",
+        "stop_pts": 53,
+        "tp1": "5.182 (ajuste)",
+        "tp1_rr": "1.7R",
+        "tp1_partial_pct": 30,
+        "tp2": "5.208 (PDH)",
+        "tp2_rr": "2.9R",
+        "tp2_partial_pct": 40,
+        "tp3": "5.250 (extensão)",
+        "tp3_rr": "4.2R",
+        "tp3_partial_pct": 30,
+        "contratos_banca_30k_risco_1pct": "6 contratos (53pts × R$10 = R$530 × 6 = ~R$318 ... arredondando 5 contratos = R$265 ≤ R$300)",
+        "setup": "AGUARDAR pullback à zona discount 5.120–5.146 (≤ EQ 5.146,25). NÃO comprar no premium (5.200 atual). Entrar só COM gatilho (sweep do PDL + reversal bar + MSS 4H).",
+        "kill_zone": "09:25–10:00 (após leilão abertura) OU 14:00–15:30 (confluência NY)",
+        "gatilho": "Preço retornar à zona discount 5.120–5.146 + pullback confirmado (sweep do PDL 5.085 OU reteste EQ 5.146 com rejeição pra baixo) + MSS 4H.",
+        "anti_trade": "Não comprar no premium (> EQ 5.146). Não perseguir o rompimento esticado. Não entrar sem pullback.",
+        "cancelamento": "Cancela se perder 5.080 (invalidação do pullback · tendência quebrada)."
+      },
+      "comentario_breve": "WDO em premium · tese de alta forte mas comprar só em pullback discount · score 5",
+      "_score_breakdown": {
+        "total": 5,
+        "nota": "AGUARDAR pullback — tese de alta intacta (DXY>100 · DI hawk · risk-off) mas comprar só em discount COM gatilho"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "08:25",
+      "evento": "Boletim Focus (BCB)",
+      "pais": "BR",
+      "impacto": "BAIXO",
+      "projecao": "pós-payroll · olhar Selic terminal / IPCA / câmbio",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Recorrente toda segunda-feira (events_recurring · macro_calendar). Foco em expectativas Selic terminal / IPCA / câmbio pós-payroll quente."
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Recorrente. 1ª segunda pós-payroll quente + tremor tech global = abertura provavelmente volátil."
+    },
+    {
+      "hora_brt": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    },
+    {
+      "hora_brt": "semana",
+      "evento": "SEMANA DE INFLAÇÃO: CPI EUA quarta · PPI EUA quinta · IPCA BR sexta · China inflação/setor externo terça · BCE decide quinta",
+      "pais": "US/BR/EU/CN",
+      "impacto": "ALTO",
+      "projecao": "Inflação volta ao centro pós-payroll",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Semana decisiva de inflação. macro_calendar_br_2026.json desatualizado (sem 08/06) — atualizar calendário canônico (LIÇÃO 15)."
+    }
+  ],
+  "regras_do_dia": [
+    "Não operar nos minutos colados na abertura (09:00–09:25) — 1ª segunda pós-payroll + tremor tech",
+    "Respeitar a tendência, mas não perseguir preço esticado (vender índice só em zona premium · comprar dólar só em pullback)",
+    "Stop físico sempre · risco 1% da banca por trade (banca 30k)",
+    "Olho na semana de inflação (CPI EUA qua · IPCA BR sex) — evento pode virar o viés",
+    "Petróleo/Oriente Médio é o curinga do dia — choque de manchete pode mexer dólar e bolsa fora de hora"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Rentabilidade divulgada não é líquida de impostos. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA",
+    "criado_em": "2026-06-07 domingo (sessão Cowork noturna · FASE 1 noturna · prompt PROMPT_DOMINGO_07JUN.md)",
+    "fase_1_noturna_completa_em": "2026-06-07 domingo · FASE 1 PARCIAL: núcleo de preço EOD sexta 05/06 NÃO disponível nesta sessão (sem TV CDP / sem print Cedro) · DI prints de sexta ausentes na pasta · contexto macro de sexta carregado · agenda com recorrentes + pendência de confirmação",
+    "fase_2_completa_em": "2026-06-08 segunda 07:45 BRT (sessão Code) · núcleo de preço oficial EOD sexta 05/06 preenchido (prints home broker Renato) + DI oficial (release CETIP 7h11) + globais overnight (Oriente Médio escalada + tech rout Kospi −8,29%) + agenda macro (semana inflação) + filtro anti-narrativa ATIVO + plano operacional WIN/WDO fechado (ambos AGUARDAR · WIN vender só em premium · WDO comprar só em pullback)",
+    "pendentes_fase_2_resolvidos": [
+      "PRECO_EOD_05JUN: _PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · ajuste B3 + OHLC daily (O/H/L/C) + fechamento de WIN E WDO de sexta 05/06. CRÍTICO: sem isso não há núcleo. Fonte = print home broker/Cedro do Renato OU pull TV CDP via Code (chart_set_symbol WIN1!/WDO1! · D · data_get_b3_settlement + data_get_ohlcv). LIÇÃO 61: fechamento ≠ ajuste.",
+      "DI_curva: NÍVEIS já capturados dos prints Renato (F27 14,43 · F29 14,81 · F31 14,72 · corcunda miolo · premium nos 3). FALTA: Δbps vs ajuste anterior (prior cote ajuste do header do print OU release CETIP segunda 07:11 · VALIDAR_FALCAO_SEGUNDA_711) + as 4 LENTES (LIÇÃO 93) pra virar viés. NÃO traduzir nível em viés sem as lentes.",
+      "globais_overnight: _PENDENTE_FALCAO_GLOBAIS_OVERNIGHT_ · snapshot domingo noite→segunda manhã · DXY/USDJPY/Brent/ES/NQ/VIX/Ouro/2Y · vale-peers globais (LIÇÃO 58 · gatilho viés bearish WIN se média < −3%). Payroll quente de sexta + tremor tech podem ter continuação no overnight.",
+      "Wyckoff_score_veredito: WIN em markdown estrutural (weekly 176.971 → ~169.740 ≈ −4,1% · Distribuição Fase D-E no diário pela leitura do Analisador) MAS Spring intraday potencial em 169.545 (varredura SSL não confirmada por MSS na sexta). Resolver na FASE 2 com preço oficial: continuação de baixa × repique técnico. Fase Wyckoff com TF explícito (LIÇÃO 71). WDO: definir do zero (sem dado sexta).",
+      "premium_discount_guard: aplicar LIÇÃO 89 nos setups (vender só em premium ≥ EQ · comprar só em discount ≤ EQ). Recalcular RR pelo MEIO da zona (LIÇÃO 91) · TP1 ≥1,5 (LIÇÃO 6) · checar direção do stop (LIÇÃO 90).",
+      "manchete_subtitulo: framing editorial pós-preço/DI/globais · QI 85 sem jargão (LIÇÃO 69) · sem fonte upstream (LIÇÃO 67).",
+      "filtro_anti_narrativa: cross-check news segunda manhã + contra-evidências estruturais vs consenso (narrativa provável: 'Fed higher-for-longer + DI nas máximas = WIN sem suporte').",
+      "status_trade: documentar honesto (LIÇÃO 7) · sexta 05/06 = SEM call de WIN (experimento sem briefing + registro 14:01 contraditório a ser excluído na auditoria APIMEC) · #24 (03/06) era o último briefing publicado · retomar continuidade.",
+      "agenda_macro: _PENDENTE_RENATO_CONFIRMAR_AGENDA_08JUN_ · calendário canônico desatualizado (05/05) sem semana de 08/06 · confirmar eventos ★★★ de segunda + ATUALIZAR macro_calendar_br_2026.json (LIÇÃO 15)."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: ZERO dado inventado · núcleo de preço oficial e Δbps DI marcados _PENDENTE explicitamente (não há print/TV CDP nesta sessão Cowork)",
+      "LIÇÃO 50/53: prints DI da pasta = fonte FASE 1 · ausentes para sexta 05/06 → _PENDENTE_RENATO_COLAR_DI · fallback release CETIP segunda 07:11 (VALIDAR_FALCAO_SEGUNDA_711)",
+      "LIÇÃO 54: fase PARCIAL_AGUARDANDO_FASE2 honesta · pendentes FASE 2 explícitos · campos _PENDENTE_FALCAO_* / _PENDENTE_RENATO_* marcados · NÃO declarar PRONTA com grep _PENDENTE_ não-vazio",
+      "LIÇÃO 61: fechamento ≠ ajuste (lembrete pra FASE 2 nos 2 ativos)",
+      "LIÇÃO 15: agenda NÃO classificada como calmo · recorrentes (Focus segunda 08:25 · leilões B3) + pendência de confirmação ★★★ · calendário canônico precisa de revisão",
+      "LIÇÃO 20: payroll lido em 3 eixos (172k forte + salário +0,32%/+3,45% hawkish = hawkish puro · Fed higher-for-longer)",
+      "LIÇÃO 58/93: vale-peers + fluxo estrangeiro marcados pra cruzar no overnight/FASE 2 · DI com 4 lentes",
+      "LIÇÃO 67: zero fonte upstream em campos públicos (referências operacionais só no _meta interno)",
+      "LIÇÃO 71: fase Wyckoff com TF explícito pendente FASE 2"
+    ],
+    "fontes": {
+      "preco_eod_win": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · referência indicativa intraday Analisador WIN1! 16:30 BRT sexta (~169.740 · mín 169.545 · NÃO oficial)",
+      "preco_eod_wdo": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ · sem dado de WDO na sexta (Analisador rodou só WIN)",
+      "OHLC_daily": "_PENDENTE_RENATO_COLAR_PRECO_EOD_05JUN_ (print Renato OU pull TV CDP via Code na FASE 2)",
+      "di_curva": "Prints TV CDP daily Renato (DI1F2027/DI1F2029/DI1F2031 · EOD sexta 05/06): F27 14,43 · F29 14,81 · F31 14,72 · premium nos 3 · corcunda miolo. Δbps pendente FASE 2.",
+      "contexto_macro_sexta": "RESUMO 05/06 do CONTEXTO_MESTRE + Leitura de Mercado 05/06 + leitura intraday Analisador: payroll 172k vs 85k (revisões pra cima · 2Y 4,106%) · DI novas máximas · tremor tech (Kospi −6% · Broadcom −12,6%) · gringo comprado mas reduzindo (−8,31%) · Brent ~US$95",
+      "agenda_macro": "Recorrentes (macro_calendar events_recurring: Focus segunda 08:25 · leilões B3 09:00 e 17:45) · eventos ★★★ específicos de 08/06 _PENDENTE_RENATO_CONFIRMAR (calendário canônico desatualizado 05/05)"
+    },
+    "nota_contexto_macro_sexta_05jun": "Sexta 05/06 foi sexta-ponte (Corpus Christi quinta 04/06) com experimento SEM briefing (só 'Leitura de Mercado' no Telegram). O dia foi dominado pelo payroll EUA quente (172k vs 85k mediana · revisões pra cima · salário hawkish · 2Y na máxima 4,106%) = Fed higher-for-longer. DI BR em novas máximas (bear shift continua · F29 ~14,43 · F31 ~14,40). WIN sob pressão dupla (DI + Fed · markdown semanal −4,1% · weekly low 169.545). WDO suportado. Tremor global em tech/IA (Kospi −6% · Broadcom −12,6%). Estrangeiro comprado em índice mas reduzindo (−8,31% no dia). A venda do Analisador 14:01 (registro contraditório · direção VENDA velha × decisão COMPRA por discount extremo) é objeto da auditoria APIMEC desta sessão (sexta = SEM call de WIN).",
+    "fase_2_decisoes": {
+      "win": "Score 4 AGUARDAR · fechou em discount (169.510 < EQ 170.358) · 8ª semana de queda · vender SÓ em premium (≥ 170.358) COM gatilho (rejeição, MSS). Comprar só se confirmar Spring na mínima 169.100 com MSS (baixa probabilidade). LIÇÃO 89 aplicada.",
+      "wdo": "Score 5 AGUARDAR · fechou em premium (5.200 > EQ 5.146) · +2,14% · comprar SÓ em pullback discount (≤ 5.146) COM gatilho (sweep/reteste + MSS). LIÇÃO 89 aplicada.",
+      "nivel_vento": "FORTE (não TUFÃO) · DI bear shift +30/+38 no miolo + tech rout global (Kospi −8%) + DXY>100 + geopolítica/petróleo",
+      "filtro_anti_narrativa": "ATIVO (intensidade ALTA) · narrativa dominante 'WIN sem chão e dólar só pra cima' · contra-evidências: WIN sobrevendido (8 semanas), DI premium extremo (F29 93,7% range), OPEP+ produção = teto petróleo",
+      "manchete": "DÓLAR DISPARA, JUROS NAS MÁXIMAS E A BOLSA NA 8ª SEMANA DE QUEDA",
+      "macro_calendar_nota": "Calendário desatualizado (05/05 · sem semana 08/06) — agenda preenchida com recorrentes + semana inflação (CPI EUA qua · IPCA BR sex). LIÇÃO 15 registrada para atualizar calendário canônico."
+    }
+  }
+}
