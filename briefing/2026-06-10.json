@@ -1,0 +1,439 @@
+{
+  "data": "2026-06-10",
+  "data_extenso": "Quarta-feira, 10 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 27,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "O DIA INTEIRO SE DECIDE ÀS 9H30 — NÃO OPERE ANTES DA INFLAÇÃO AMERICANA",
+    "subtitulo": "EUA e Irã trocaram ataques de novo durante a noite, mas o petróleo não entrou em pânico e o dólar ficou parado. A bolsa brasileira segurou o fundo pelo 3º dia seguido — tem comprador lá embaixo. Às 9h30 sai a inflação dos EUA, o número mais importante da semana: se vier acima de 4,2%, o medo volta (bolsa cai, dólar sobe); se vier abaixo, abre espaço pra alívio. Nos dois casos, deixe o número sair, espere o mercado digerir (até ~10h) e só então procure entrada. A guerra segue como curinga — manchete forte muda tudo fora de hora."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN segurou o fundo pelo 3º dia (não fez nova mínima · fechou 170.000 ~no equilíbrio 169.943) · dia binário: decisão só DEPOIS do CPI 9h30 · score 4 AGUARDAR",
+    "wdo_linha": "WDO respirou (fechou 5.203,50 ~no equilíbrio 5.199) · dólar parado apesar da guerra · comprar só em recuo E só se o CPI confirmar · score 4,5 AGUARDAR",
+    "janela_operacional": "NÃO operar 09:15–10:00 (CPI 09:30) · janela principal 10:00–11:00 pós-digestão COM gatilho · NY 14:00–15:30 secundária",
+    "nivel_chave": "WIN EQ 169.943 · PDH 171.170 · fundo 168.715/168.650 | WDO EQ 5.199 · PDH 5.221 · PDL 5.177,5 | DI parou (ponta longa até cedeu)",
+    "agenda_top1": "🇺🇸 CPI EUA (Mai) 09:30 — MARKET MOVER · proj mensal 0,5% · anual 4,2% (ant 3,8% = aceleração) · núcleo 0,3%/2,9% · define Fed, Copom e o tom do dia"
+  },
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "🛢️🔥 ORIENTE MÉDIO: EUA atacaram radares e defesas aéreas no sul do Irã (Centcom: 'proporcional' · Bandar Abbas, Minab, Qeshm, Sirik) · IRGC promete 'resposta pesada' e desloca drones · Irã diz reavaliar negociações MAS nega ter derrubado o Apache deliberadamente e reafirma diálogo · Vance admite que acordo pode levar meses. Guerra de verdade + negociação de verdade = curinga do dia.",
+      "🛢️ PETRÓLEO SEM PÂNICO: terça Brent fechou −2,97% (US$91,45) e WTI −3,40% (US$88,20) com Trump prevendo acordo · repicou ~1% à noite pós-ataques · manhã de quarta: Brent praticamente estável ~US$92 (recuava ~0,7% na madrugada). Mercado leu a retaliação como limitada.",
+      "🌏 ÁSIA: liquidação de TECNOLOGIA (não guerra): Kospi −4,52% (Samsung −6% · SK Hynix −7,5%), Nikkei −1,89% (SoftBank −8,3%), Taiex −3,31%, HSI −0,64% · eco do Nasdaq −0,97% (correção IA · China prepara US$295bi em data centers). Austrália +0,57% na contramão. Europa −0,4% à espera do CPI (BCE decide amanhã).",
+      "🇺🇸 NY terça: S&P −0,26% · Nasdaq −0,97% (Marvell −7,6% · Apple −3,6% · AMD −3%) · Dow +0,17% (consumo). Futuros recuavam ~0,4% à noite pós-ataques.",
+      "🇨🇳 China: CPI mai +1,2% a/a (abaixo da proj 1,3% · mensal −0,2%) · PPI +3,9% (acima · choque de energia da guerra no atacado). Minério Dalian +1,51% (US$113,92) → suporte Vale.",
+      "💵 Câmbio: dólar à vista DE LADO (R$5,1775 · −0,05%) após +3,3% em 3 dias · DXY parado (99,97). Ibov +0,68% (169.813) giro R$25bi · gringo −R$1,8bi em junho.",
+      "🗳️ Genial/Quaest (7h): Lula 44% × 38% Flávio no 2º turno (ampliou · 2ª seguida à frente) · rejeição Flávio 56% · 1º turno Lula 39% × 29%. Leitura de mercado: polarização cristalizada + continuidade provável = prêmio de risco mantido, cautela inalterada. Não é driver intraday hoje — o CPI é.",
+      "🇧🇷 Resposta à gasolina: Câmara pode votar hoje o PLP que usa arrecadação extra do petróleo pra cortar tributo de combustíveis + governo destravou etanol 30%→32% (desinflação na margem) · CCJ do Senado vota a PEC 65 da autonomia do BC ('Dia D' · BC conta 15 votos) · pautas-bomba R$270bi no radar (Alcolumbre × Lula).",
+      "📊 WIN EOD terça 09/06 (print): abertura 169.800, máxima (PDH) 171.170, mínima (PDL) 168.715, fechamento 170.000, ajuste B3 170.155, variação +500pts (+0,30%), amplitude 2.455, contratos 43,00k, contratos em aberto 177.739. EQ = (171.170+168.715)/2 = 169.943. Fechou ~no EQ / leve PREMIUM (170.000 > 169.943). Recuperou da mínima 168.715 e fechou positivo — 3º dia firmando após o markdown (absorção do fundo confirmando). NÃO fez nova mínima (168.715 > mínima de ontem 168.650).",
+      "💵 WDO EOD terça 09/06 (print): abertura 5.195,00, máxima (PDH) 5.221,00, mínima (PDL) 5.177,50, fechamento 5.203,50, ajuste B3 5.197,09, variação −20,50pts (−0,39%), amplitude 43,50, contratos 195,26k, contratos em aberto 866.487. EQ = (5.221+5.177,5)/2 = 5.199,25. Fechou ~no EQ / leve premium (5.203,50 > 5.199,25). Lateral/leve baixa — dólar respirou.",
+      "📌 Status #26 (terça): WIN e WDO saíram AGUARDAR · o Analisador pegou 1 compra WIN que bateu alvo (+1.282 · placar honesto) — a tese de absorção/recuperação do WIN confirmou intraday."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "ALTA",
+      "narrativa_dominante": "Guerra + inflação americana acelerando = risk-off: bolsa cai, dólar e petróleo sobem",
+      "fonte_observada": "Falcão / Bom Dia Mercado / consenso pós-ataques EUA-Irã + véspera CPI",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -2,
+          "noticia_label": "Baixista: 'guerra + CPI quente = bolsa sem chão'",
+          "estrutura_dir": 0.5,
+          "estrutura_label": "3º dia de absorção no fundo · higher low 168.715 > 168.650 · fechou positivo ~no EQ 169.943",
+          "veredito": "CONFLITO",
+          "veredito_label": "notícia vende, estrutura compra — o CPI desempata",
+          "relacao": "A manchete manda vender, mas tem comprador absorvendo o fundo há 3 dias (não fez nova mínima e fechou positivo). Dia binário: quem entra antes do número das 9h30 está apostando, não operando.",
+          "posicao_regua": 38,
+          "score_clareza": 4,
+          "estagio": "fim",
+          "estagio_alerta": "Narrativa baixista madura (9ª semana) + absorção tripla no fundo → não vender embaixo (LIÇÃO 66) · decisão só pós-CPI",
+          "racional_uma_linha": "Mídia prega risk-off, mas o índice segurou o fundo 3 dias seguidos. O número das 9h30 decide — antes dele, nada."
+        },
+        "WDO1!": {
+          "noticia_dir": 1.5,
+          "noticia_label": "Altista: guerra/petróleo + CPI quente sustentam o dólar",
+          "estrutura_dir": 0,
+          "estrutura_label": "Lateral · fechou ~no EQ 5.199 · respirou após +3,3% em 3 dias",
+          "veredito": "CUIDADO",
+          "veredito_label": "tese de alta com lastro, mas sem momentum novo",
+          "relacao": "Notícia favorece o dólar, mas o petróleo não entrou em pânico (Brent estável ~92), o DXY está parado (~100) e o dólar BR ficou de lado mesmo com a guerra — comprar só em recuo E só se o CPI confirmar.",
+          "posicao_regua": 55,
+          "score_clareza": 5,
+          "estagio": "meio",
+          "estagio_alerta": "Drivers globais esfriaram (petróleo estável · DXY parado) · alta nova exige CPI quente OU escalada real no ME",
+          "racional_uma_linha": "Dólar tem tese, mas parou de subir apesar da guerra — sem recuo e sem CPI quente, não há trade."
+        }
+      },
+      "contradicoes": [
+        "WIN segurou o fundo 3 dias seguidos (168.650 → higher low 168.715 · fechou positivo ~EQ) — não está em queda livre",
+        "DI parou E a ponta longa cedeu (F31 −1,9 · F33 −3,3 bps) — prêmio devolvendo na margem",
+        "Petróleo SEM pânico apesar da troca de ataques: Brent ~92 estável de manhã · Ásia leu retaliação como limitada · Ormuz fluindo",
+        "O tombo da Ásia é de TECNOLOGIA/IA (Kospi −4,52% Samsung −6% · SoftBank −8,3% · pós-Nasdaq −0,97%), não de Brasil — minério SUBIU +1,51% e o dólar BR ficou parado",
+        "Trump derrubou e puxou o petróleo no MESMO dia (acordo '2-3 dias' de manhã · retaliação à noite) — manchete dele é ruído, não tendência",
+        "CPI projetado já É feio (4,2%): vir 'em linha' pode já estar no preço — a reação manda, não o número"
+      ],
+      "leitura_bertani": "Dia binário decidido às 9h30. NÃO operar pré-CPI. Depois da digestão (≥10h): vender WIN só em premium com rejeição · comprar WIN só em discount com CPI benigno · comprar WDO só em recuo com CPI quente. Guerra é o curinga que invalida tudo fora de hora — stop físico sempre."
+    },
+    "di_curva": {
+      "leitura": "DI EOD terça 09/06 zero a zero com twist: F27 +0,7bps (14,480), F29 −0,8bps (14,920), F31 −1,9bps (14,755) · F33 −3,3. A disparada de 2 dias PAROU e a ponta longa devolveu prêmio na margem. Curva segue ~15% e refém do CPI EUA de hoje.",
+      "vertices_bps": {
+        "1y_F27": "+0,7bps (14,480 vs 14,473)",
+        "3y_F29": "−0,8bps (14,920 vs 14,928)",
+        "5y_F31": "−1,9bps (14,755 vs 14,774 · longa cedeu)"
+      },
+      "fonte": "Bom Dia Mercado/Broadcast · fechamento terça 09/06 (DI jan27/29/31)",
+      "implicacao": "Wyckoff do juro: F29 14,920 NÃO renovou a máxima de segunda (14,945) → premium extremo SEM displacement novo = primeiro sinal de exaustão da pressão. Sweep × displacement: a queda do petróleo de terça aliviou a curva de manhã e a tarde devolveu o alívio, mas operadores citam 'fatores técnicos pra não devolver prêmios' + ajuste de posições pré-Copom (Warren/Broadcast) → posição parada esperando CPI, não convicção hawkish nova. Fluxo: Ibov +0,68% (169.813) giro R$25bi ok · gringo −R$1,8bi em junho (ainda saindo · acumulado ano +R$39,7bi encolhendo) → recuperação modesta sem fluxo novo. Convicção BAIXA pra direção própria: a curva hoje é função do CPI das 09:30. Trégua/twist = alívio MARGINAL pro WIN (não vira viés sozinho). CPI quente reacende o bear shift; benigno abre correção."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Markdown (TF daily) PAUSADO — possível Fase A de acumulação em teste: SC 168.650 (08/06) + 3º dia de absorção + higher low 168.715 + fechou positivo ~no EQ 169.943",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "Binário pós-CPI: VENDA condicional em premium (CPI quente) OU COMPRA condicional em discount (CPI benigno)",
+      "racional_publico": "O índice segurou o fundo pelo terceiro dia seguido — não fez nova mínima e fechou positivo. Mas a notícia grita risk-off (guerra + inflação acelerando). Quem decide é a inflação americana das 9h30: número quente = medo volta (vender premium com confirmação), número benigno = alívio (comprar discount). Antes do número = apostando, não operando.",
+      "niveis_chave": {
+        "ajuste_b3": 170155,
+        "ajuste_b3_data": "2026-06-09",
+        "fechamento_anterior": 170000,
+        "PDH": 171170,
+        "PDL": 168715,
+        "maxima_anterior": 171170,
+        "minima_anterior": 168715,
+        "abertura_anterior": 169800,
+        "range_anterior_pts": 2455,
+        "variacao_anterior_pts": 500,
+        "variacao_anterior_pct": 0.3,
+        "EQ": 169943,
+        "contratos_negociados": 43000,
+        "contratos_em_aberto": 177739,
+        "_nota": "EOD terça 09/06 (print): O 169.800 · H/PDH 171.170 · L/PDL 168.715 · C 170.000 · ajuste 170.155 · +500pts (+0,30%) · amplitude 2.455. EQ=(171.170+168.715)/2=169.943. Fechou ~no EQ/leve premium. NÃO fez nova mínima (168.715 > 168.650 de ontem) e fechou positivo = 3º dia de firmeza/absorção. weekly_low recente 168.650 mantém."
+      },
+      "ajuste_b3_meta": {
+        "valor": 170155,
+        "data_referencia": "2026-06-09",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-09)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR o CPI · operar só pós-digestão (≥10:00) na zona certa COM gatilho",
+        "cenarios": [
+          {
+            "cenario": "VENDA (CPI quente ≥4,3% ou reação clara risk-off)",
+            "entry_zona": "170.800–171.300 (premium · até o PDH 171.170)",
+            "entry_meio": 171050,
+            "stop": 171500,
+            "stop_nota": "acima do PDH · LIÇÃO 90",
+            "stop_pts": 450,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 169943,
+                "referencia": "EQ",
+                "rr_pelo_meio": 2.46
+              },
+              {
+                "label": "TP2",
+                "nivel": 168715,
+                "referencia": "PDL",
+                "rr_pelo_meio": 5.19
+              },
+              {
+                "label": "TP3",
+                "nivel": 167800,
+                "referencia": "extensão",
+                "rr_pelo_meio": null
+              }
+            ],
+            "contratos": 3,
+            "risco_monetario_nota": "450×R$0,20=R$90 → R$270 ≤ R$300"
+          },
+          {
+            "cenario": "COMPRA (CPI benigno ≤4,1% ou reação clara de alívio)",
+            "entry_zona": "169.200–169.700 (discount · ≤ EQ 169.943)",
+            "entry_meio": 169450,
+            "stop": 168550,
+            "stop_nota": "abaixo do fundo duplo 168.650/168.715 · LIÇÃO 90",
+            "stop_pts": 900,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 171170,
+                "referencia": "PDH",
+                "rr_pelo_meio": 1.91
+              },
+              {
+                "label": "TP2",
+                "nivel": 172600,
+                "referencia": "origem do breakdown 01/06",
+                "rr_pelo_meio": 3.5
+              }
+            ],
+            "contratos": 1,
+            "risco_monetario_nota": "900×R$0,20=R$180 ≤ R$300"
+          }
+        ],
+        "partials": "50/30/20",
+        "setup": "AGUARDAR o CPI 09:30. Quente → vender repique em premium com rejeição + MSS. Benigno → comprar pullback em discount com rejeição + MSS. EM LINHA (4,2/2,9) → o quente já era esperado: a REAÇÃO do preço manda, esperar 30min de digestão e operar só a zona com gatilho.",
+        "kill_zone": "10:00–11:00 (pós-digestão CPI) OU 14:00–15:30 (NY)",
+        "gatilho": "VENDA: CPI quente + repique a 170.800–171.300 + rejeição (pavio/engolfo) + MSS. COMPRA: CPI benigno + recuo a 169.200–169.700 + rejeição + MSS.",
+        "anti_trade": "NÃO operar 09:15–10:00. Não vender abaixo do EQ (fundo absorvendo · LIÇÃO 66). Não comprar esticado acima do EQ sem pullback. Manchete de resposta iraniana = ficar de fora.",
+        "cancelamento": "VENDA cancela acima de 171.500 sustentado. COMPRA cancela se perder 168.550."
+      },
+      "comentario_breve": "Absorção tripla no fundo × CPI/guerra · dia binário, o número decide",
+      "_score_breakdown": {
+        "total": 4,
+        "nota": "AGUARDAR — absorção tripla no fundo × CPI/guerra · dia binário, o número decide"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Consolidação (TF daily) após markup de 3 dias — respirou e fechou ~no EQ 5.199",
+      "score": 4.5,
+      "veredito": "AGUARDAR",
+      "vies": "COMPRA condicional em discount (CPI quente/escalada ME) · VENDA condicional em premium (CPI benigno)",
+      "racional_publico": "O dólar tem tese de alta (guerra, inflação americana), mas parou de subir apesar dos ataques — o petróleo não entrou em pânico e o DXY está parado. Comprar esticado sem recuo é perseguir preço. Esperar o CPI das 9h30: se vier quente, comprar o recuo com confirmação; se vier benigno, vender a falha no topo.",
+      "niveis_chave": {
+        "ajuste_b3": 5197.087,
+        "ajuste_b3_data": "2026-06-09",
+        "fechamento_anterior": 5203.5,
+        "PDH": 5221,
+        "PDL": 5177.5,
+        "maxima_anterior": 5221,
+        "minima_anterior": 5177.5,
+        "abertura_anterior": 5195,
+        "range_anterior_pts": 43.5,
+        "variacao_anterior_pts": -20.5,
+        "variacao_anterior_pct": -0.39,
+        "EQ": 5199.25,
+        "contratos_negociados": 195260,
+        "contratos_em_aberto": 866487,
+        "_nota": "EOD terça 09/06 (print): O 5.195,00 · H/PDH 5.221,00 · L/PDL 5.177,50 · C 5.203,50 · ajuste 5.197,09 · −20,50pts (−0,39%) · amplitude 43,50. EQ=(5.221+5.177,5)/2=5.199,25. Fechou ~no EQ/leve premium. Dólar respirou (leve baixa) mas segue suportado por petróleo em alta + risk-off geopolítico."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5197.087,
+        "data_referencia": "2026-06-09",
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-09)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR o CPI · operar só pós-digestão na zona certa COM gatilho",
+        "cenarios": [
+          {
+            "cenario": "COMPRA (CPI quente OU nova escalada ME)",
+            "entry_zona": "5.180–5.197 (discount · ≤ ajuste 5.197)",
+            "entry_meio": 5188.5,
+            "stop": 5169,
+            "stop_nota": "abaixo do PDL 5.177,5 · LIÇÃO 90",
+            "stop_pts": 19.5,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 5221,
+                "referencia": "PDH",
+                "rr_pelo_meio": 1.67
+              },
+              {
+                "label": "TP2",
+                "nivel": 5240,
+                "referencia": null,
+                "rr_pelo_meio": 2.64
+              },
+              {
+                "label": "TP3",
+                "nivel": 5260,
+                "referencia": "referência estrutural",
+                "rr_pelo_meio": null
+              }
+            ],
+            "contratos": 1,
+            "risco_monetario_nota": "19,5×R$10=R$195 ≤ R$300"
+          },
+          {
+            "cenario": "VENDA (CPI benigno)",
+            "entry_zona": "5.214–5.221 (premium · até o PDH)",
+            "entry_meio": 5217.5,
+            "stop": 5229,
+            "stop_nota": "acima do PDH",
+            "stop_pts": 11.5,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 5197,
+                "referencia": "ajuste/EQ",
+                "rr_pelo_meio": 1.78
+              },
+              {
+                "label": "TP2",
+                "nivel": 5177.5,
+                "referencia": "PDL",
+                "rr_pelo_meio": 3.48
+              }
+            ],
+            "contratos": 2,
+            "risco_monetario_nota": "11,5×R$10×2=R$230 ≤ R$300"
+          }
+        ],
+        "partials": "50/30/20",
+        "setup": "AGUARDAR o CPI. Quente/guerra → comprar recuo em discount com rejeição + MSS. Benigno → vender falha no premium com rejeição + MSS. Não comprar esticado sem recuo (drivers globais esfriaram: petróleo estável · DXY parado).",
+        "kill_zone": "10:00–11:00 (pós-digestão CPI) OU 14:00–15:30 (NY · atenção fluxo cambial 14:30)",
+        "gatilho": "COMPRA: CPI quente + recuo a 5.180–5.197 + rejeição + MSS. VENDA: CPI benigno + falha em 5.214–5.221 + rejeição + MSS.",
+        "anti_trade": "NÃO operar 09:15–10:00. Não comprar acima de 5.210 sem recuo. Não vender se houver manchete de escalada no ME.",
+        "cancelamento": "COMPRA cancela se perder 5.169. VENDA cancela acima de 5.229 sustentado."
+      },
+      "comentario_breve": "Tese de alta com lastro mas sem momentum novo (petróleo sem pânico · dólar parado) · CPI decide",
+      "_score_breakdown": {
+        "total": 4.5,
+        "nota": "AGUARDAR — tese de alta com lastro mas sem momentum novo (petróleo sem pânico · dólar parado) · CPI decide"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "07:00",
+      "evento": "Pesquisa Genial/Quaest (avaliação + intenção de voto)",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "nota": "JÁ SAIU: Lula 44×38 no 2º turno · rejeição Flávio 56% · cautela mantida"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "nota": "evitar 09:00–09:25"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "IBGE Pesquisa Industrial Mensal Regional (abr)",
+      "pais": "BR",
+      "impacto": "BAIXO"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "CPI EUA (Mai) + Núcleo — MARKET MOVER",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "mensal 0,5% / anual 4,2% (ant 3,8%) · núcleo 0,3% / 2,9% (ant 2,8%)",
+      "janela_evitar": "09:15-10:00",
+      "nota": "define Fed higher-for-longer, Copom e o tom do dia · NÃO operar antes"
+    },
+    {
+      "hora_brt": "10:00",
+      "evento": "CNI Indicadores Industriais (abr)",
+      "pais": "BR",
+      "impacto": "BAIXO"
+    },
+    {
+      "hora_brt": "10:45",
+      "evento": "Banco do Canadá decisão de juros",
+      "pais": "CA",
+      "impacto": "MEDIO"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "Estoques semanais de petróleo EUA (DOE)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "−5,1M",
+      "nota": "relevante com a guerra"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "BC oferta até 50k swap cambial (rolagem)",
+      "pais": "BR",
+      "impacto": "MEDIO"
+    },
+    {
+      "hora_brt": "12:00",
+      "evento": "BC compromissadas 3m (até R$5bi)",
+      "pais": "BR",
+      "impacto": "BAIXO"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "Leilão Treasury 10 anos",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "anterior": "4,468%"
+    },
+    {
+      "hora_brt": "14:30",
+      "evento": "BC fluxo cambial estrangeiro semanal",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "nota": "lente 3 do DI (LIÇÃO 93)"
+    },
+    {
+      "hora_brt": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55",
+      "nota": "evitar 17:45–17:55"
+    },
+    {
+      "hora_brt": "sem hora",
+      "evento": "CCJ Senado vota PEC 65 autonomia BC ('Dia D') + Câmara pode votar PLP combustíveis",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "nota": "ruído político/fiscal intraday"
+    },
+    {
+      "hora_brt": "após fechamento",
+      "evento": "Balanço Oracle",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "nota": "termômetro IA após a liquidação tech"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    "09:00–09:25 (leilão de abertura B3 · EVITAR)",
+    "09:15–10:00 (CPI EUA 09:30 · EVITAR · NÃO operar antes nem na digestão imediata)",
+    "10:00–11:00 (janela PRINCIPAL · pós-digestão do CPI · entrar só na zona certa COM gatilho)",
+    "14:00–15:30 (confluência NY · atenção leilão 10y 14:00 + fluxo cambial 14:30)"
+  ],
+  "regras_do_dia": [
+    "NÃO operar antes do CPI das 09:30 nem na digestão imediata (até 10:00)",
+    "CPI EM LINHA (4,2/2,9) = quente já esperado: a reação do preço manda, não o número — esperar a primeira meia hora",
+    "Guerra é o curinga: manchete de 'resposta pesada' iraniana invalida setup fora de hora — stop físico SEMPRE",
+    "Só entrar em zona (premium/discount) com gatilho — não perseguir preço",
+    "O tombo da Ásia é de tecnologia (IA), não do Brasil — não vender WIN por manchete do Kospi",
+    "Risco máximo 1% da banca por trade (banca 30k)"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA",
+    "fase_2_completa_em": "2026-06-10 quarta manhã (Cowork FASE 2 + Code publish · pré-CPI)",
+    "criado_em": "2026-06-10 quarta manhã (Code FASE 2)",
+    "licoes_aplicadas": [
+      "Correção F27/F31 do preliminar (fechamento↔ajuste trocados · conferir sempre a ordem do BDM 'X% (de Y% no ajuste anterior)')",
+      "Publicação pré-CPI com cenários condicionais · reação ao CPI = update intraday com data_source (LIÇÃO 64)",
+      "LIÇÃO 93: DI 4 lentes aplicadas (Wyckoff do juro · sweep×displacement · fluxo · convicção)",
+      "LIÇÃO 89: premium/discount nas zonas de entrada",
+      "LIÇÃO 90: stop no lado certo (acima/abaixo dos níveis estruturais)",
+      "LIÇÃO 91: RR calculado pelo meio da zona",
+      "LIÇÃO 69: manchete QI 85 sem jargão",
+      "LIÇÃO 66: não vender embaixo (absorção no fundo)",
+      "LIÇÃO 70: paywall (plano operacional completo só no app pago)"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker EOD terça 09/06 (Renato): O 169.800 H 171.170 L 168.715 C 170.000 ajuste 170.155 +500/+0,30%",
+      "preco_eod_wdo": "Print home broker EOD terça 09/06 (Renato): O 5.195 H 5.221 L 5.177,5 C 5.203,5 ajuste 5.197,09 −20,5/−0,39%",
+      "di_curva": "Bom Dia Mercado/Broadcast terça 09/06 EOD: F27 14,480 (+0,7bps vs 14,473) · F29 14,920 (−0,8bps vs 14,928) · F31 14,755 (−1,9bps vs 14,774) · F33 −3,3bps",
+      "globais": "Falcão / Bom Dia Mercado (quarta madrugada): EUA atacaram Irã (Bandar Abbas, Minab, Qeshm, Sirik) · IRGC promete 'resposta pesada' · Brent estável ~92 · Ásia: Kospi −4,52%, Nikkei −1,89% (tech) · minério +1,51% · dólar BR de lado R$5,1775 · DXY parado 99,97 · Ibov +0,68%",
+      "agenda": "Falcão / Bom Dia Mercado quarta 10/06: CPI EUA 09:30 (anual proj 4,2% vs 3,8%) · núcleo 2,9% vs 2,8% · estoques petróleo 11:30 · leilão 10y 14:00 · fluxo cambial 14:30"
+    }
+  }
+}

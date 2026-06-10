@@ -1,0 +1,179 @@
+{
+  "data": "2026-06-10",
+  "data_extenso": "Quarta-feira, 10 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 27,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_ (framing pós-overnight final + reação ao CPI EUA · QI 85 sem jargão · LIÇÃO 69)",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_ · base: WIN fechou 170.000 (ajuste 170.155, +500/+0,30%), recuperou da mínima 168.715, ~no EQ 169.943 (leve premium) · 3º dia firmando",
+    "wdo_linha": "_PENDENTE_FASE2_ · base: WDO fechou 5.203,50 (ajuste 5.197,09, −20,50/−0,39%), ~no EQ 5.199 · suportado por petróleo/risk-off",
+    "janela_operacional": "_PENDENTE_FASE2_ · ATENÇÃO: CPI EUA 09:30 é market mover — evitar entrada pré-dado · kill zone provável pós-digestão 10:00–11:00",
+    "nivel_chave": "WIN EQ 169.943 · PDH 171.170 · PDL 168.715 | WDO EQ 5.199 · PDH 5.221 · PDL 5.177,5 | DI parou de disparar (zero a zero · ainda ~15% Selic)",
+    "agenda_top1": "🇺🇸 CPI EUA (Mai) 09:30 — MARKET MOVER · anual projeção 4,2% (vs 3,8% ant = aceleração) · núcleo 2,9% · pode cravar Fed higher-for-longer"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_ (provável FORTE · CPI EUA market mover + Oriente Médio re-escalando + petróleo subindo)",
+    "highlights": [
+      "📌 Briefing #27 FASE 1 noturna (terça 09/06 · sessão Cowork · preliminar pra quarta 10/06). Núcleo de preço EOD terça oficial (prints Renato) já incorporado.",
+      "📊 WIN EOD terça 09/06 (print): abertura 169.800, máxima (PDH) 171.170, mínima (PDL) 168.715, fechamento 170.000, ajuste B3 170.155, variação +500pts (+0,30%), amplitude 2.455, contratos 43,00k, contratos em aberto 177.739. EQ = (171.170+168.715)/2 = 169.943. Fechou ~no EQ / leve PREMIUM (170.000 > 169.943). Recuperou da mínima 168.715 e fechou positivo — 3º dia firmando após o markdown (absorção do fundo confirmando). NÃO fez nova mínima (168.715 > mínima de ontem 168.650).",
+      "💵 WDO EOD terça 09/06 (print): abertura 5.195,00, máxima (PDH) 5.221,00, mínima (PDL) 5.177,50, fechamento 5.203,50, ajuste B3 5.197,09, variação −20,50pts (−0,39%), amplitude 43,50, contratos 195,26k, contratos em aberto 866.487. EQ = (5.221+5.177,5)/2 = 5.199,25. Fechou ~no EQ / leve premium (5.203,50 > 5.199,25). Lateral/leve baixa — dólar respirou.",
+      "💵 Juros futuros BR (release Falcão · fechamento EOD terça 09/06): 'apagaram a queda e fecharam de lado' — praticamente ZERO A ZERO vs ajustes anteriores. F27 14,473% (ant 14,48% · ~−0,7bps), F29 14,92% (ant 14,928% · ~−0,8bps), F31 14,774% (ant 14,755% · ~+1,9bps). A DISPARADA DE 2 DIAS PAROU, mas a curva segue PRESSIONADA em nível alto (~15% · precifica fim dos cortes + risco de alta na Selic). Mercado vê 'não há mais espaço pra corte'. Leve steepening na ponta longa.",
+      "🛢️🔥 ORIENTE MÉDIO RE-ESCALOU FORTE (terça noite): EUA confirmaram ataques de 'autodefesa' a alvos no Irã (resposta à queda de um helicóptero Apache · Trump: resposta 'muito forte'). Irã promete resposta 'DECISIVA'. Ataques relatados em Qeshm e arredores do Estreito de Ormuz; Kuwait já busca oleodutos alternativos (risco de Ormuz fechar). Risco geopolítico ALTO — curinga do dia.",
+      "🛢️ PETRÓLEO subindo com a escalada: WTI ~US$89,05 (+0,96% no eletrônico). Brent firme. Petróleo em alta = pressão inflacionária + suporte ao WDO + headwind pra WIN (custo/risco).",
+      "🇺🇸 FUTUROS EUA NO VERMELHO (pós-ataques): Dow −0,32%, S&P −0,34%, Nasdaq −0,39% (~20h39 BRT). Risk-off geopolítico. Headwind pra WIN via correlação (metodologia 5.5).",
+      "🇨🇳 CHINA inflação (21:31 terça): IPC mensal mai −0,2% (proj +0,3%), IPC anual +1,3% (proj 1,2% · leve acima), IPP anual +3,8% (proj 2,8% · acima). Misto — deflação mensal mas anual/PPI acima do esperado.",
+      "🗓️ QUARTA = DIA DO CPI EUA (09:30) · MARKET MOVER da semana: projeção anual 4,2% (vs 3,8% anterior = ACELERAÇÃO esperada) · núcleo anual 2,9% (vs 2,8%) · mensal 0,5%. CPI quente confirma Fed higher-for-longer → risk-off (pressiona WIN, sustenta WDO). CPI benigno = alívio. É o dado que define o tom do dia.",
+      "📌 Status trade #N-1 (#26 · 09/06): WIN e WDO saíram AGUARDAR. O Analisador registrou hoje 1 compra WIN que bateu alvo (placar honesto +1.282) — a tese de absorção/recuperação do WIN se confirmou intraday."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "_PENDENTE_FASE2_ (provável ALTA)",
+      "narrativa_dominante": "_PENDENTE_FASE2_ · provável: 'guerra no Oriente Médio + CPI quente = risk-off, petróleo voando, bolsa cai e dólar sobe'",
+      "fonte_observada": "Falcão / Money Cast / consenso pós-ataques EUA-Irã",
+      "regua_por_ativo": "_PENDENTE_FASE2_ (montar 3 estados WIN/WDO após overnight final + reação ao CPI · esquema do #26)",
+      "contra_evidencias": [
+        "WIN firmou 3 dias (absorção no fundo 168.6/168.7) — não está em queda livre apesar da narrativa baixista",
+        "DI PAROU de disparar (zero a zero) — a pressão de juros deu trégua",
+        "Petróleo/ME pode ser sweep de notícia (Trump historicamente reverte tom) — vigiar squeeze",
+        "OPEP+ produção elevada (+188k bpd) segue como teto estrutural no petróleo (do #26)"
+      ],
+      "leitura_bertani": "_PENDENTE_FASE2_ · base: respeitar o curinga duplo (CPI EUA + ME) SEM perseguir preço — não operar pré-CPI, esperar a digestão. WIN firmando × risk-off geopolítico = conflito a resolver na FASE 2."
+    },
+    "di_curva": {
+      "leitura": "DI de lado EOD terça 09/06 (Falcão · 'apagaram a queda'): F27 14,473 (~−0,7bps), F29 14,92 (~−0,8bps), F31 14,774 (~+1,9bps). A disparada de 2 dias PAROU — curva zero a zero vs ajustes anteriores, mas segue PRESSIONADA (~15% · precifica fim dos cortes / risco de alta Selic). Leve steepening na ponta longa (F31 +1,9). 4 LENTES (LIÇÃO 93) a aplicar na FASE 2 com Δbps oficiais do Falcão da manhã.",
+      "vertices_bps": {
+        "1y_F27": "~−0,7bps (14,473 vs ~14,48)",
+        "3y_F29": "~−0,8bps (14,92 vs ~14,928)",
+        "5y_F31": "~+1,9bps (14,774 vs ~14,755)"
+      },
+      "fonte": "Release Falcão (terça 09/06 EOD). VALIDAR Δbps exatos com release Falcão de quarta 7h11 na FASE 2.",
+      "implicacao": "Trégua na pressão dos juros (parou de subir) é alívio MARGINAL pra WIN, mas o nível alto (~15%) e o CPI EUA quarta mantêm o ambiente carregado. 4 lentes na FASE 2."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: markdown possivelmente pausando · absorção no fundo 168.6/168.7 · 3 dias firmando · definir fase com TF explícito LIÇÃO 71)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: cautela pré-CPI · vender só em premium / comprar só em discount · LIÇÃO 89)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 170155,
+        "ajuste_b3_data": "2026-06-09",
+        "fechamento_anterior": 170000,
+        "PDH": 171170,
+        "PDL": 168715,
+        "maxima_anterior": 171170,
+        "minima_anterior": 168715,
+        "abertura_anterior": 169800,
+        "range_anterior_pts": 2455,
+        "variacao_anterior_pts": 500,
+        "variacao_anterior_pct": 0.30,
+        "EQ": 169943,
+        "contratos_negociados": 43000,
+        "contratos_em_aberto": 177739,
+        "_nota": "EOD terça 09/06 (print): O 169.800 · H/PDH 171.170 · L/PDL 168.715 · C 170.000 · ajuste 170.155 · +500pts (+0,30%) · amplitude 2.455. EQ=(171.170+168.715)/2=169.943. Fechou ~no EQ/leve premium. NÃO fez nova mínima (168.715 > 168.650 de ontem) e fechou positivo = 3º dia de firmeza/absorção. weekly_low recente 168.650 mantém."
+      },
+      "ajuste_b3_meta": {
+        "valor": 170155,
+        "data_referencia": "2026-06-09",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-09)"
+      },
+      "plano": "_PENDENTE_FASE2_ (entry/stop/alvos com premium/discount LIÇÃO 89 · RR≥1,5 pelo meio da zona LIÇÃO 6/91 · stop no lado certo LIÇÃO 90 · kill zone pós-CPI)",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: lateral/leve baixa · ~no EQ · suportado por petróleo/risk-off)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: comprar só em pullback/discount · driver = petróleo/ME + CPI EUA)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 5197.09,
+        "ajuste_b3_data": "2026-06-09",
+        "fechamento_anterior": 5203.50,
+        "PDH": 5221.00,
+        "PDL": 5177.50,
+        "maxima_anterior": 5221.00,
+        "minima_anterior": 5177.50,
+        "abertura_anterior": 5195.00,
+        "range_anterior_pts": 43.50,
+        "variacao_anterior_pts": -20.50,
+        "variacao_anterior_pct": -0.39,
+        "EQ": 5199.25,
+        "contratos_negociados": 195260,
+        "contratos_em_aberto": 866487,
+        "_nota": "EOD terça 09/06 (print): O 5.195,00 · H/PDH 5.221,00 · L/PDL 5.177,50 · C 5.203,50 · ajuste 5.197,09 · −20,50pts (−0,39%) · amplitude 43,50. EQ=(5.221+5.177,5)/2=5.199,25. Fechou ~no EQ/leve premium. Dólar respirou (leve baixa) mas segue suportado por petróleo em alta + risk-off geopolítico."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5197.09,
+        "data_referencia": "2026-06-09",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-09)"
+      },
+      "plano": "_PENDENTE_FASE2_",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "08:25", "evento": "Boletim Focus (BCB)", "pais": "BR", "impacto": "BAIXO", "nota": "Recorrente · olhar Selic terminal / IPCA pós-CPI build-up" },
+    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "09:00-09:25", "nota": "Abertura na véspera/dia do CPI EUA + ME re-escalando = volátil" },
+    { "hora_brt": "09:30", "evento": "CPI EUA (Mai) — MARKET MOVER", "pais": "US", "impacto": "ALTO", "projecao": "anual 4,2% (ant 3,8%) · núcleo anual 2,9% (ant 2,8%) · mensal 0,5% (ant 0,6%)", "janela_evitar": "09:15-10:00", "nota": "Define o tom do dia. Quente = Fed higher-for-longer = risk-off (pressiona WIN, sustenta WDO). Benigno = alívio. NÃO operar antes." },
+    { "hora_brt": "11:30", "evento": "Estoques de petróleo bruto + Cushing (EUA)", "pais": "US", "impacto": "MEDIO", "projecao": "−5,1M (bruto)", "nota": "Relevante com o petróleo em alta pela escalada no ME" },
+    { "hora_brt": "14:00", "evento": "Leilão Treasury Note 10 anos (EUA)", "pais": "US", "impacto": "MEDIO", "anterior": "4,468%" },
+    { "hora_brt": "14:30", "evento": "Fluxo Cambial Estrangeiro (BR)", "pais": "BR", "impacto": "MEDIO", "anterior": "2,805B", "nota": "Lente 3 do DI (LIÇÃO 93): cruzar fluxo gringo com a leitura de juros/WIN" },
+    { "hora_brt": "15:00", "evento": "Balanço Orçamentário Federal EUA (Mai)", "pais": "US", "impacto": "BAIXO", "anterior": "215,0B" },
+    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "17:45-17:55" }
+  ],
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_ · base: EVITAR 09:15-10:00 (CPI EUA 09:30) · janela provável 10:00-11:00 pós-digestão do CPI · confluência NY 14:00-15:30"
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_ · base: NÃO operar antes do CPI EUA 09:30 (market mover) · respeitar o curinga geopolítico (Oriente Médio/petróleo · choque de manchete) · não perseguir preço esticado · stop físico 1% banca"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-09 terça noite (sessão Cowork · FASE 1 noturna · pré-briefing #27)",
+    "fase_1_noturna_completa_em": "2026-06-09 terça · núcleo de preço EOD oficial WIN/WDO (prints Renato) + DI EOD (Falcão · de lado) + globais overnight (Oriente Médio re-escalou + petróleo subindo + futuros EUA no vermelho + China inflação) + agenda quarta (CPI EUA market mover) + herança #26 carregada",
+    "pendentes_fase_2": [
+      "DI_curva: Δbps oficiais do release Falcão de QUARTA 7h11 (VALIDAR_FALCAO_QUARTA_711) + as 4 LENTES (LIÇÃO 93) pra virar viés. Base noturna: de lado (~zero a zero), ainda ~15% Selic.",
+      "globais_overnight_FINAL: re-puxar madrugada→manhã (Oriente Médio é dinâmico · petróleo · DXY · USDJPY · 2Y · futuros EUA · Ásia). A escalada EUA-Irã pode evoluir (resposta iraniana 'decisiva' prometida).",
+      "score_veredito_setups WIN e WDO: definir com preço oficial + DI 4 lentes + reação pré-CPI. WIN: firmou 3 dias (absorção) × risk-off (CPI/ME) — resolver conflito. WDO: suportado por petróleo/ME, comprar só em discount. Premium/discount LIÇÃO 89 · RR≥1,5 LIÇÃO 6 · stop LIÇÃO 90 · RR pelo meio da zona LIÇÃO 91.",
+      "manchete_subtitulo: framing pós-overnight + ângulo CPI EUA · QI 85 sem jargão (LIÇÃO 69) · sem fonte upstream (LIÇÃO 67).",
+      "filtro_anti_narrativa: régua 3 estados WIN/WDO (esquema #25/#26) · narrativa provável 'guerra + CPI = risk-off' × contra-evidências (WIN firmou, DI parou, petróleo pode ser sweep de notícia).",
+      "nivel_vento: confirmar (provável FORTE · CPI market mover + ME + petróleo).",
+      "agenda: confirmar horários/projeções do CPI e demais no Falcão da manhã."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: ZERO dado inventado · núcleo de preço e DI oficiais dos prints/Falcão de terça · Δbps exatos e overnight final marcados _PENDENTE FASE 2",
+      "LIÇÃO 54: fase PARCIAL_AGUARDANDO_FASE2 honesta · pendentes explícitos",
+      "LIÇÃO 61: fechamento ≠ ajuste (WIN fech 170.000 × ajuste 170.155 · WDO fech 5.203,50 × ajuste 5.197,09)",
+      "LIÇÃO 15: agenda NÃO classificada como calma · CPI EUA market mover destacado + recorrentes",
+      "LIÇÃO 93: DI 4 lentes + fluxo cambial (14:30) marcados pra FASE 2",
+      "LIÇÃO 89: premium/discount pra aplicar nos setups (WIN ~EQ leve premium · WDO ~EQ)"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker EOD terça 09/06 (Renato): O 169.800 H 171.170 L 168.715 C 170.000 ajuste 170.155 +500/+0,30%",
+      "preco_eod_wdo": "Print home broker EOD terça 09/06 (Renato): O 5.195 H 5.221 L 5.177,5 C 5.203,5 ajuste 5.197,09 −20,5/−0,39%",
+      "di_curva": "Release Falcão terça 09/06 EOD: F27 14,473 · F29 14,92 · F31 14,774 · 'de lado/zero a zero'. Δbps exatos = FASE 2 (Falcão quarta 7h11).",
+      "globais": "Falcão / Money Cast (terça noite): EUA atacaram Irã (autodefesa) · Irã resposta 'decisiva' · Ormuz risco (Kuwait oleodutos alt) · WTI ~89,05 +0,96% · futuros EUA Dow −0,32%/S&P −0,34%/Nasdaq −0,39% · China IPC anual 1,3%/IPP 3,8%",
+      "agenda": "Print agenda Falcão quarta 10/06: CPI EUA 09:30 (anual proj 4,2%) · estoques petróleo 11:30 · leilão 10y 14:00 · fluxo cambial BR 14:30 · balanço orçamentário EUA 15:00"
+    }
+  }
+}

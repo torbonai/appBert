@@ -139,7 +139,7 @@
       "ajuste_b3_meta": {
         "valor": 169101,
         "data_referencia": "2026-06-08",
-        "fonte": "Print home broker EOD segunda 08/06 (Renato · Resumo de 08/06/2026)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-08)"
       },
       "plano": {
         "direcao": "AGUARDAR (venda condicional em premium OU compra em Spring confirmado)",
@@ -186,7 +186,10 @@
         "cancelamento": "VENDA cancela se romper 170.700. COMPRA cancela se perder 168.300."
       },
       "comentario_breve": "Macro baixista mas fundo absorveu (varreu 168.650 e voltou pro EQ). Vender só no repique premium com gatilho, não perseguir o fundo.",
-      "_score_breakdown": { "total": 4, "nota": "AGUARDAR — macro baixista mas fundo absorveu · vender só no repique premium" }
+      "_score_breakdown": {
+        "total": 4,
+        "nota": "AGUARDAR — macro baixista mas fundo absorveu · vender só no repique premium"
+      }
     },
     {
       "codigo": "WDO1!",
@@ -199,18 +202,18 @@
       "niveis_chave": {
         "ajuste_b3": 5211.97,
         "ajuste_b3_data": "2026-06-08",
-        "fechamento_anterior": 5224.00,
-        "PDH": 5232.00,
-        "PDL": 5162.50,
-        "maxima_anterior": 5232.00,
-        "minima_anterior": 5162.50,
-        "abertura_anterior": 5180.50,
-        "range_anterior_pts": 69.50,
-        "variacao_anterior_pts": 24.00,
+        "fechamento_anterior": 5224,
+        "PDH": 5232,
+        "PDL": 5162.5,
+        "maxima_anterior": 5232,
+        "minima_anterior": 5162.5,
+        "abertura_anterior": 5180.5,
+        "range_anterior_pts": 69.5,
+        "variacao_anterior_pts": 24,
         "variacao_anterior_pct": 0.46,
         "EQ": 5197.25,
-        "weekly_high_20d": 5232.00,
-        "weekly_low_20d": 5162.50,
+        "weekly_high_20d": 5232,
+        "weekly_low_20d": 5162.5,
         "suporte_critico": "5.197,25 (EQ · linha premium/discount) / 5.162,50 (PDL)",
         "resistencia_critica": "5.232 (PDH · perto da máxima)",
         "_nota": "Núcleo oficial dos prints home broker EOD segunda 08/06 (Renato). Amplitude 69,50 = 5.232−5.162,50 (consistente). Fechou 5.224 em PREMIUM (EQ 5.197,25), perto da máxima · 2º dia de alta · dólar firme. LIÇÃO 61: fechamento (5.224) ≠ ajuste (5.211,97)."
@@ -229,7 +232,7 @@
         "tp1_rr": 1.53,
         "tp1_partial_pct": 30,
         "tp2": 5258,
-        "tp2_rr": 2.40,
+        "tp2_rr": 2.4,
         "tp2_partial_pct": 40,
         "tp3": 5290,
         "tp3_rr": 3.47,
@@ -243,23 +246,136 @@
         "cancelamento": "Cancela se perder 5.156 (pullback invalidado)."
       },
       "comentario_breve": "Tese de alta com lastro (DI hawk · carry · USDBRL máx), mas esticada. Comprar só no pullback discount, não perseguir.",
-      "_score_breakdown": { "total": 5, "nota": "AGUARDAR pullback — tese de alta com lastro (DI hawk · carry · USDBRL máx) mas comprar só em discount; DXY de lado/Brent recuando enfraqueceram o lado global" }
+      "_score_breakdown": {
+        "total": 5,
+        "nota": "AGUARDAR pullback — tese de alta com lastro (DI hawk · carry · USDBRL máx) mas comprar só em discount; DXY de lado/Brent recuando enfraqueceram o lado global"
+      }
     }
   ],
   "agenda_macro": [
-    { "hora_brt": "05:00", "evento": "IPC-Fipe 1ª quadrissemana junho", "pais": "BR", "impacto": "MEDIO", "projecao": "+0,45% (repetiu maio)", "anterior": "—", "janela_evitar": "—", "nota": "Já divulgado" },
-    { "hora_brt": "08:00", "evento": "IGP-DI (FGV)", "pais": "BR", "impacto": "MEDIO", "projecao": "+0,74%", "anterior": "+2,41%", "janela_evitar": "—" },
-    { "hora_brt": "08:00", "evento": "IPC-S Capitais 1ª quadri junho (FGV)", "pais": "BR", "impacto": "BAIXO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
-    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "09:00-09:25", "nota": "Evitar 09:00-09:25" },
-    { "hora_brt": "09:30", "evento": "Balança Comercial abr (EUA)", "pais": "US", "impacto": "ALTO", "projecao": "−55,5B", "anterior": "−56B", "janela_evitar": "09:25-10:00", "nota": "Evitar 09:25-10:00" },
-    { "hora_brt": "09:30", "evento": "Estoques no atacado abr (EUA)", "pais": "US", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
-    { "hora_brt": "11:00", "evento": "Leilão do Tesouro (LFT 2032 + NTN-B 2031/2037/2045)", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Termômetro do apetite pós-disparo dos juros" },
-    { "hora_brt": "11:00", "evento": "Vendas de Casas Usadas / NAHB (EUA)", "pais": "US", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "10:55-11:15" },
-    { "hora_brt": "11:30", "evento": "BC swap cambial rolagem (até 50k)", "pais": "BR", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
-    { "hora_brt": "12:00", "evento": "BC compromissadas 3m (até R$5bi)", "pais": "BR", "impacto": "BAIXO", "projecao": "—", "anterior": "—", "janela_evitar": "—" },
-    { "hora_brt": "13:30", "evento": "Christine Lagarde (BCE) jantar informal", "pais": "EU", "impacto": "MEDIO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Véspera da decisão do BCE (quinta)" },
-    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "17:45-17:55" },
-    { "hora_brt": "22:30", "evento": "China CPI + PPI mai", "pais": "CN", "impacto": "ALTO", "projecao": "—", "anterior": "—", "janela_evitar": "—", "nota": "Após o fechamento BR → impacta a abertura de QUARTA (mesmo dia do CPI EUA, o market mover da semana)" }
+    {
+      "hora_brt": "05:00",
+      "evento": "IPC-Fipe 1ª quadrissemana junho",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "+0,45% (repetiu maio)",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Já divulgado"
+    },
+    {
+      "hora_brt": "08:00",
+      "evento": "IGP-DI (FGV)",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "+0,74%",
+      "anterior": "+2,41%",
+      "janela_evitar": "—"
+    },
+    {
+      "hora_brt": "08:00",
+      "evento": "IPC-S Capitais 1ª quadri junho (FGV)",
+      "pais": "BR",
+      "impacto": "BAIXO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "09:00-09:25",
+      "nota": "Evitar 09:00-09:25"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "Balança Comercial abr (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "−55,5B",
+      "anterior": "−56B",
+      "janela_evitar": "09:25-10:00",
+      "nota": "Evitar 09:25-10:00"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "Estoques no atacado abr (EUA)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "Leilão do Tesouro (LFT 2032 + NTN-B 2031/2037/2045)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Termômetro do apetite pós-disparo dos juros"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "Vendas de Casas Usadas / NAHB (EUA)",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "10:55-11:15"
+    },
+    {
+      "hora_brt": "11:30",
+      "evento": "BC swap cambial rolagem (até 50k)",
+      "pais": "BR",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora_brt": "12:00",
+      "evento": "BC compromissadas 3m (até R$5bi)",
+      "pais": "BR",
+      "impacto": "BAIXO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—"
+    },
+    {
+      "hora_brt": "13:30",
+      "evento": "Christine Lagarde (BCE) jantar informal",
+      "pais": "EU",
+      "impacto": "MEDIO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Véspera da decisão do BCE (quinta)"
+    },
+    {
+      "hora_brt": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "17:45-17:55"
+    },
+    {
+      "hora_brt": "22:30",
+      "evento": "China CPI + PPI mai",
+      "pais": "CN",
+      "impacto": "ALTO",
+      "projecao": "—",
+      "anterior": "—",
+      "janela_evitar": "—",
+      "nota": "Após o fechamento BR → impacta a abertura de QUARTA (mesmo dia do CPI EUA, o market mover da semana)"
+    }
   ],
   "regras_do_dia": [
     "Não operar colado na abertura (09:00–09:25)",

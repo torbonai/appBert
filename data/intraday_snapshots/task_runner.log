@@ -5214,3 +5214,203 @@ SyntaxError: Unexpected end of input
 
 Node.js v24.15.0
 Exit code: 1 
+ 
+=== 09/06/2026  8:30:01,33 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026  9:30:03,22 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 10:30:01,84 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 11:30:01,37 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 12:30:01,54 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 13:30:01,54 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 14:30:01,97 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 15:30:02,72 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 16:30:02,19 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
+ 
+=== 09/06/2026 17:30:01,13 === 
+file:///C:/Users/HP/tradingview-mcp-jackson/scripts/hourly_snapshot.js:311
+  if (!NO_PUBL
+              
+
+SyntaxError: Unexpected end of input
+    at compileSourceTextModule (node:internal/modules/esm/utils:318:16)
+    at ModuleLoader.moduleStrategy (node:internal/modules/esm/translators:90:18)
+    at #translate (node:internal/modules/esm/loader:451:20)
+    at afterLoad (node:internal/modules/esm/loader:507:29)
+    at ModuleLoader.loadAndTranslate (node:internal/modules/esm/loader:512:12)
+    at #getOrCreateModuleJobAfterResolve (node:internal/modules/esm/loader:555:36)
+    at afterResolve (node:internal/modules/esm/loader:603:52)
+    at ModuleLoader.getOrCreateModuleJob (node:internal/modules/esm/loader:609:12)
+    at node:internal/modules/esm/loader:628:32
+    at TracingChannel.tracePromise (node:diagnostics_channel:362:14)
+
+Node.js v24.15.0
+Exit code: 1 
