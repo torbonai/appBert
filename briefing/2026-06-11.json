@@ -118,7 +118,7 @@
       "ajuste_b3_meta": {
         "valor": 168897,
         "data_referencia": "2026-06-10",
-        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-10)"
       },
       "plano": {
         "direcao": "AGUARDAR o bloco da manhã (BCE+PPI) · operar só pós-digestão (≥10:00) na zona certa COM gatilho",
@@ -165,7 +165,7 @@
                 "label": "TP2",
                 "nivel": 170800,
                 "referencia": "origem do impulso de queda de quarta",
-                "rr_pelo_meio": 4.0
+                "rr_pelo_meio": 4
               }
             ],
             "contratos": 2,
@@ -194,16 +194,16 @@
       "vies": "COMPRA condicional em discount SÓ com escalada real no Oriente Médio · VENDA condicional em premium se o alívio global segurar",
       "racional_publico": "O dólar não subiu com a guerra dois dias seguidos — e de madrugada o petróleo devolveu a alta. A tese de compra precisa de escalada NOVA pra valer; sem ela, o fluxo positivo e o Brasil exportador seguram o real. Se o alívio global segurar, a falha no topo do range é o trade; se a guerra reacender de verdade, o recuo vira compra. A decisão da Europa às 9h15 pode chacoalhar o câmbio — esperar assentar.",
       "niveis_chave": {
-        "ajuste_b3": 5191.89,
+        "ajuste_b3": 5191.886,
         "ajuste_b3_data": "2026-06-10",
         "fechamento_anterior": 5208.5,
-        "PDH": 5223.0,
+        "PDH": 5223,
         "PDL": 5184.5,
-        "maxima_anterior": 5223.0,
+        "maxima_anterior": 5223,
         "minima_anterior": 5184.5,
-        "abertura_anterior": 5220.0,
+        "abertura_anterior": 5220,
         "range_anterior_pts": 38.5,
-        "variacao_anterior_pts": 5.0,
+        "variacao_anterior_pts": 5,
         "variacao_anterior_pct": 0.1,
         "EQ": 5203.75,
         "contratos_negociados": 239650,
@@ -211,9 +211,9 @@
         "_nota": "EOD quarta 10/06 (print): O 5.220,00 · H/PDH 5.223,00 · L/PDL 5.184,50 · C 5.208,50 · ajuste 5.191,89 · +5,00 (+0,10%) · amplitude 38,50. EQ=5.203,75. Fechou leve premium. Dólar à vista −0,09% (5,1726) — real ABSORVEU a escalada (núcleo CPI benigno + fluxo +2,588bi junho + exportador de petróleo)."
       },
       "ajuste_b3_meta": {
-        "valor": 5191.89,
+        "valor": 5191.886,
         "data_referencia": "2026-06-10",
-        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-10)"
       },
       "plano": {
         "direcao": "AGUARDAR o bloco da manhã · BCE 09:15 pode chacoalhar o câmbio · operar só pós-digestão na zona certa COM gatilho",
@@ -260,7 +260,7 @@
                 "label": "TP2",
                 "nivel": 5245,
                 "referencia": "extensão",
-                "rr_pelo_meio": 3.0
+                "rr_pelo_meio": 3
               }
             ],
             "contratos": 1,
