@@ -1,0 +1,180 @@
+{
+  "data": "2026-06-11",
+  "data_extenso": "Quinta-feira, 11 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 28,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_ (framing pós-overnight · Trump prometeu novo ataque ao Irã 'ainda hoje' (quarta à noite) — o overnight define TUDO · QI 85 sem jargão · LIÇÃO 69)",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_ · base: WIN caiu −1.255 (−0,74%) e FEZ NOVA MÍNIMA 168.420 (perdeu o fundo 168.650/168.715 que segurava há 3 dias) · fechou 168.745 em DISCOUNT (abaixo do EQ 169.160), recuperando ~325 pts do fundo",
+    "wdo_linha": "_PENDENTE_FASE2_ · base: WDO +5,00 (+0,10%) fechou 5.208,50 leve premium (EQ 5.203,75) · dólar à vista −0,09% (5,1726) ABSORVEU a guerra graças ao núcleo do CPI benigno + fluxo positivo + Brasil exportador de petróleo",
+    "janela_operacional": "_PENDENTE_FASE2_ · base: overnight é o curinga (ataque prometido) · BCE decide quinta · IPCA BR sexta · Copom+Fed semana que vem",
+    "nivel_chave": "WIN EQ 169.160 · PDH 169.900 · PDL/NOVA MÍNIMA 168.420 | WDO EQ 5.203,75 · PDH 5.223 · PDL 5.184,5 | DI cedeu leve ('apareceram aplicadores' · prêmio julgado excessivo)",
+    "agenda_top1": "_PENDENTE_FALCAO_QUINTA_711_ · provável: decisão BCE (quinta) + petróleo/Ormuz overnight + build-up IPCA sexta"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_ (provável FORTE→TUFÃO se o ataque prometido se confirmar no overnight · petróleo +4% no eletrônico · Nasdaq futuro −2,4% after-hours)",
+    "highlights": [
+      "📌 Briefing #28 FASE 1 noturna (quarta 10/06 · sessão Cowork · preliminar pra quinta 11/06). Núcleo de preço EOD quarta oficial (prints Renato) incorporado.",
+      "📊 WIN EOD quarta 10/06 (print): abertura 169.000, máxima (PDH) 169.900, mínima (PDL) 168.420, fechamento 168.745, ajuste B3 168.897, variação −1.255 pts (−0,74%), amplitude 1.480, contratos 25,51k, em aberto 177.879. EQ = (169.900+168.420)/2 = 169.160. ⚠️ FEZ NOVA MÍNIMA (168.420 < 168.650 de segunda) — a absorção de 3 dias QUEBROU. Fechou em DISCOUNT (168.745 < EQ), recuperando ~325 pts do fundo. Ibovespa −0,70% aos 168.619 (mín 168.071), 2ª queda da semana.",
+      "💵 WDO EOD quarta 10/06 (print): abertura 5.220,00, máxima (PDH) 5.223,00, mínima (PDL) 5.184,50, fechamento 5.208,50, ajuste B3 5.191,89, variação +5,00 (+0,10%), amplitude 38,50, contratos 239,65k, em aberto 864.520. EQ = 5.203,75. Dólar à vista fechou em LEVE BAIXA (−0,09% · R$5,1726 · máx 5,1976 mín 5,1596) MESMO com a guerra — núcleo do CPI benigno + real exportador de petróleo + fluxo cambial positivo (junho até dia 5: +US$2,588bi · ano +US$16,6bi).",
+      "💵 Juros futuros BR (Falcão fechamento + Broadcast 17h20): LEVE BAIXA em dia de cautela — F27 14,495% (ajuste ant 14,511 = −1,6bps), F29 14,94% (ant 14,968 = −2,8bps), F31 ~14,795/14,82% (ant 14,809 · VALIDAR_FALCAO_QUINTA_711). Sem gatilho específico: 'correção após o estresse que levou as taxas a flertar com 15%' · 'o ajuste passou do ponto e começam a aparecer aplicadores' (estrategista) · mercado 'disfuncional e volátil no intraday' (Goldenstein). Curta caiu 3-4bps à tarde. ASA revisou Selic terminal 2026: 13,25%→14,25% (corte de 25bps na próxima reunião = FIM do ciclo) e IPCA 2026 5,3%→5,5%. Opções digitais: 70% manutenção 14,50% no Copom 17/06.",
+      "🛢️🔥 CENÁRIO-2 · TRUMP PROMETEU NOVO ATAQUE 'AINDA HOJE' (quarta à noite): EUA bombardearam alvos iranianos de madrugada · Irã ATACOU bases americanas na Jordânia, Kuwait e Bahrein quarta de manhã · Trump frustrado com demora de Teerã (Axios) avalia 'operação de grande escala porém de CURTA duração' pra forçar acordo · Tasnim: Irã atacará novos alvos · Hegseth: 'Centcom estará bastante ocupado esta noite' · embaixada EUA orienta saída do Iraque · defesa aérea ativada em Fars. MAS: negociação real continua (Catar mediando em Doha · delegação catariana foi a Teerã) e Trump segue defendendo solução negociada. O OVERNIGHT DE QUARTA PRA QUINTA É O DADO MAIS IMPORTANTE DO DIA — re-puxar na FASE 2.",
+      "🛢️ PETRÓLEO ACELEROU: Brent ago fechou +1,8% (US$93,10) e às 17h50 o eletrônico marcava WTI +4,13% (US$91,86) e Brent +3,54% (US$94,69) com a troca de ameaças. Drivers: estoques EUA caíram −7,227M (proj −2,9M) + produção OPEP em maio = MENOR DESDE OS ANOS 2000 (bloqueio naval + Ormuz fechado pelo Irã). ESPECIAL Broadcast: sem acordo + Ormuz fechado prolongado, projeções chegam a US$180/barril (Hedgepoint · 20% da oferta global em risco · ExxonMobil já via 150-160) · guerra prolongada = US$90-120 (Swissquote) · acordo = abaixo de US$80 · visão moderada US$90-95 no Q3 (Capital Economics). Consenso: mesmo com acordo, normalização leva MESES (recompor estoques).",
+      "🇺🇸 CPI maio SAIU EM LINHA (0,5% m · 4,2% a · núcleo 0,2% m ABAIXO da proj 0,3% · núcleo 2,9% a): o núcleo benigno aliviou câmbio e curva BR, MAS os Treasuries não sustentaram alívio e o ouro DESABOU −3% (menor desde nov/2025) com medo de Fed mais duro. Macquarie: próximo movimento do Fed = ALTA de 25bps no Q1 2027 'ou até antes' · inflação acima de 2% no horizonte previsível. Fed decide semana que vem (1ª sinalização relevante do novo presidente Kevin Warsh).",
+      "🇺🇸 NY: quedas >1% nos índices, puxadas por CHIPS (ETF semicondutores −3% · 2º dia de correção IA) + realização pré-IPO da SpaceX (demanda já superou a oferta de ações · 'funding' drenando fluxo de outros ativos, incluindo a B3 segundo gestores) · Nasdaq futuro −2,4% no after-hours com a troca de ameaças EUA-Irã.",
+      "🇧🇷 Ibov −0,70% (168.619): Vale −1,02% (maior detratora) × Petrobras +1,2/+1,5% (petróleo) · cautela pré-Copom (17/06) e pré-Fed · Genial/Quaest (Lula 44×38) azedou os juros pela manhã segundo gestor · 'pra Bolsa voltar a subir, precisa o BC cortar' (Manchester) × 'stop nos juros antecedeu a realização · muita gente largou a toalha do corte · pareceu exagerado' (SVN).",
+      "🇧🇷🇺🇸 TARIFAS: Brasil e EUA reúnem-se SEXTA (remoto) — MDIC (Márcio Elias Rosa) × USTR (Jamieson Greer) · Brasil não atenderá exigências da Seção 301 mas avalia reduzir tarifas em setores específicos · sensível pro fluxo/risco BR.",
+      "📌 Status trade #N-1 (#27 · 10/06): WIN 4 e WDO 4,5 AGUARDAR com cenários condicionais — NENHUM gatilho disparou: CPI veio EM LINHA (nem ≥4,3 nem ≤4,1), a zona de venda do WIN (170.800-171.300) nunca foi alcançada (máx 169.900) e a compra exigia CPI benigno. Disciplina protegeu: o WIN fez nova mínima à tarde. _PENDENTE_PLACAR_ANALISADOR_ (confirmar ops do cockpit no fechamento)."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "_PENDENTE_FASE2_ (provável ALTA)",
+      "narrativa_dominante": "_PENDENTE_FASE2_ · provável: 'guerra escalando + petróleo a caminho de US$180 = vende bolsa, compra dólar' (ESPECIAL US$180 vai dominar as manchetes)",
+      "fonte_observada": "Falcão / Broadcast (Cenário-2 + especial petróleo) / consenso pós-ameaças Trump",
+      "regua_por_ativo": "_PENDENTE_FASE2_ (montar 3 estados WIN/WDO após overnight final)",
+      "contra_evidencias": [
+        "Dólar BR caiu no dia da escalada (−0,09%) — núcleo CPI benigno + fluxo +US$2,6bi + Brasil exportador de petróleo amortecem o choque",
+        "DI caiu com guerra e petróleo subindo — mercado julgou o prêmio excessivo ('aplicadores aparecendo') · prêmio já MUITO carregado",
+        "Trump derruba e puxa o petróleo conforme a manchete do dia (acordo '2-3 dias' segunda · ataque quarta) — Axios: ataques de GRANDE escala mas CURTA duração, objetivo é FORÇAR acordo, não guerra prolongada · 'às vezes Trump joga espuma e não faz nada' (Fair Corretora)",
+        "Catar mediando em Doha + delegação foi a Teerã = canal de negociação VIVO mesmo durante os ataques",
+        "Parte da queda da bolsa é técnica, não macro: funding pro IPO da SpaceX + correção de chips/IA (global, não Brasil)",
+        "US$180 é CENÁRIO DE CAUDA (condicional a Ormuz fechado prolongado), não projeção-base — Capital Economics vê 90-95 no Q3"
+      ],
+      "leitura_bertani": "_PENDENTE_FASE2_ · base: o overnight manda — ataque confirmado + resposta iraniana = gap e modo defesa; overnight quieto = mercado pode repetir quarta (digerir e corrigir prêmios). WIN perdeu o fundo (nova mínima 168.420) = a tese de absorção MORREU até segunda ordem; não comprar facas. WDO sustentado mas o real está mais resiliente que a manchete sugere."
+    },
+    "di_curva": {
+      "leitura": "DI EOD quarta 10/06 em LEVE BAIXA (correção sem gatilho · 'prêmio passou do ponto · aplicadores aparecendo'): F27 14,495 (−1,6bps), F29 14,94 (−2,8bps), F31 ~14,795/14,82 (VALIDAR). Curta cedeu 3-4bps à tarde. Nível segue ~15% e o ambiente segue carregado: ASA puxou Selic terminal pra 14,25% (fim de ciclo já na próxima reunião) e IPCA 5,5%. 4 LENTES (LIÇÃO 93) na FASE 2 com Δbps oficiais do Falcão de quinta.",
+      "vertices_bps": {
+        "1y_F27": "−1,6bps (14,495 vs ajuste 14,511)",
+        "3y_F29": "−2,8bps (14,94 vs ajuste 14,968)",
+        "5y_F31": "_VALIDAR_FALCAO_QUINTA_711_ (Broadcast 17h20: 14,795 vs 14,809 = −1,4bps · Falcão fechamento citou ~14,82)"
+      },
+      "fonte": "Falcão Notícias 18:05 (fechamento) + Broadcast 17h20 (Arícia Martins). ⚠️ NOTA: os AJUSTES de terça (14,511/14,968/14,809) ≠ fechamentos de terça (14,480/14,920/14,755) — LIÇÃO 61 vale pros juros também: comparar ajuste com ajuste.",
+      "implicacao": "2º dia sem alta = a disparada perdeu força e o mercado começa a aplicar (apostar na queda das taxas). MAS com Copom (17/06) + Fed/Warsh na semana que vem + petróleo em choque de oferta, a curva segue refém de manchete. Alívio marginal pro WIN; tira um driver do WDO."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: a possível Fase A de acumulação FALHOU — nova mínima 168.420 quebrou o fundo 168.650/168.715 · markdown retomado OU Spring mais profundo em teste · definir com TF explícito LIÇÃO 71 + overnight)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: defensivo · NÃO comprar faca em guerra · vender só em premium com rejeição · LIÇÃO 89)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 168897,
+        "ajuste_b3_data": "2026-06-10",
+        "fechamento_anterior": 168745,
+        "PDH": 169900,
+        "PDL": 168420,
+        "maxima_anterior": 169900,
+        "minima_anterior": 168420,
+        "abertura_anterior": 169000,
+        "range_anterior_pts": 1480,
+        "variacao_anterior_pts": -1255,
+        "variacao_anterior_pct": -0.74,
+        "EQ": 169160,
+        "contratos_negociados": 25510,
+        "contratos_em_aberto": 177879,
+        "_nota": "EOD quarta 10/06 (print): O 169.000 · H/PDH 169.900 · L/PDL 168.420 · C 168.745 · ajuste 168.897 · −1.255 (−0,74%) · amplitude 1.480. EQ=(169.900+168.420)/2=169.160. ⚠️ NOVA MÍNIMA da sequência (168.420 < 168.650) — absorção de 3 dias quebrou. Fechou em discount, ~325 pts acima do fundo. Volume fraco (25,51k vs 43k terça)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 168897,
+        "data_referencia": "2026-06-10",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+      },
+      "plano": "_PENDENTE_FASE2_ (premium/discount LIÇÃO 89 · RR≥1,5 LIÇÃO 6 · stop lado certo LIÇÃO 90 · RR pelo meio da zona LIÇÃO 91 · overnight define o mapa)",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: lateral/leve premium · real resiliente apesar da guerra · drivers em cabo de guerra: petróleo/risco × núcleo CPI benigno + fluxo + exportador)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: comprar só em recuo/discount E só com escalada real · o dólar NÃO subiu no dia da guerra)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 5191.89,
+        "ajuste_b3_data": "2026-06-10",
+        "fechamento_anterior": 5208.50,
+        "PDH": 5223.00,
+        "PDL": 5184.50,
+        "maxima_anterior": 5223.00,
+        "minima_anterior": 5184.50,
+        "abertura_anterior": 5220.00,
+        "range_anterior_pts": 38.50,
+        "variacao_anterior_pts": 5.00,
+        "variacao_anterior_pct": 0.10,
+        "EQ": 5203.75,
+        "contratos_negociados": 239650,
+        "contratos_em_aberto": 864520,
+        "_nota": "EOD quarta 10/06 (print): O 5.220,00 · H/PDH 5.223,00 · L/PDL 5.184,50 · C 5.208,50 · ajuste 5.191,89 · +5,00 (+0,10%) · amplitude 38,50. EQ=5.203,75. Fechou leve premium. Dólar à vista −0,09% (5,1726) — real ABSORVEU a escalada (núcleo CPI benigno + fluxo +2,588bi junho + exportador de petróleo · BofA: carry em exportador de commodity segue vivo)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5191.89,
+        "data_referencia": "2026-06-10",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+      },
+      "plano": "_PENDENTE_FASE2_",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "09:00-09:25", "nota": "Overnight de guerra (ataque prometido) = risco de gap · redobrar cuidado" },
+    { "hora_brt": "_VALIDAR_", "evento": "Decisão de juros BCE (zona do euro) — mencionada como 'reunião marcada para amanhã (11)'", "pais": "EU", "impacto": "ALTO", "nota": "_PENDENTE_FALCAO_QUINTA_711_ confirmar horário (decisão ~09:15 BRT + coletiva Lagarde ~09:45 padrão) · choque de energia da guerra deve elevar projeções de inflação do BCE" },
+    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "17:45-17:55" },
+    { "hora_brt": "_PENDENTE_", "evento": "_PENDENTE_FALCAO_QUINTA_711_ — completar agenda do dia (LIÇÃO 15: não classificar como calma)", "pais": "BR/US", "impacto": "ALTO", "nota": "Atenção: SEXTA tem IPCA maio (market mover BR) + reunião Brasil-EUA tarifas · semana que vem Copom 17/06 + Fed/Warsh" }
+  ],
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_ · base: depende do overnight · evitar abertura 09:00-09:25 SEMPRE · se houver ataque na madrugada, esperar digestão completa antes de qualquer trade"
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_ · base: overnight de guerra = NÃO carregar viés da véspera sem re-checar manchetes · não comprar faca no WIN (fundo quebrou) · não comprar WDO esticado (real resiliente) · stop físico 1% PL"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-10 quarta noite (sessão Cowork · FASE 1 noturna · pré-briefing #28)",
+    "fase_1_noturna_completa_em": "2026-06-10 quarta ~18h30 · núcleo de preço EOD oficial WIN/WDO (prints Renato) + DI fechamento (Falcão/Broadcast) + Cenário-2 Broadcast completo + especial petróleo US$180 + Bom Dia... (Cenário-2 vespertino) + Falcão fechamento",
+    "pendentes_fase_2": [
+      "OVERNIGHT É O DADO Nº1: Trump prometeu atacar o Irã 'ainda hoje' (quarta à noite) · Hegseth confirmou Centcom ativo · Irã promete atacar novos alvos · re-puxar TUDO de manhã (petróleo · futuros · Ásia · manchetes ME). Às 17h50: WTI +4,13% (91,86) · Brent +3,54% (94,69) · Nasdaq fut −2,4%.",
+      "DI_curva: Δbps oficiais do Falcão de QUINTA 7h11 (F31 AMBÍGUO: 14,795 Broadcast 17h20 × ~14,82 Falcão fechamento) + 4 LENTES (LIÇÃO 93).",
+      "agenda: confirmar BCE (horário) + completar agenda do dia inteiro no Falcão da manhã (LIÇÃO 15).",
+      "score_veredito_setups WIN e WDO: WIN perdeu o fundo (nova mínima 168.420 · absorção morreu) — re-mapear estrutura. WDO: real resiliente × guerra — comprar só recuo com escalada confirmada. Premium/discount L89 · RR≥1,5 L6 · stop L90 · meio da zona L91.",
+      "manchete_subtitulo: QI 85 sem jargão (L69) · sem fonte upstream (L67) · cuidado com o anchoring do 'US$180' (é cauda, não base).",
+      "filtro: régua 3 estados WIN/WDO · narrativa 'petróleo a 180 = vende tudo' × contra-evidências (dólar BR caiu no dia da guerra · DI cedeu · ataque é tática de negociação per Axios · SpaceX/chips é técnico).",
+      "status #27/placar Analisador: confirmar ops do cockpit (tracker) no fechamento de quarta.",
+      "nivel_vento: confirmar (FORTE provável · TUFÃO se ataque confirmar)."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: ZERO dado inventado · preço/DI oficiais dos prints e Falcão/Broadcast · overnight e F31 marcados pendentes",
+      "LIÇÃO 54: fase PARCIAL honesta · pendentes explícitos",
+      "LIÇÃO 61 (estendida aos juros): fechamento ≠ ajuste — WIN fech 168.745 × ajuste 168.897 · WDO fech 5.208,50 × ajuste 5.191,89 · DI: comparar AJUSTE com AJUSTE (ajustes de terça 14,511/14,968/14,809 ≠ fechamentos 14,480/14,920/14,755)",
+      "LIÇÃO 15: agenda não classificada como calma · BCE + IPCA sexta + Copom/Fed semana que vem destacados",
+      "LIÇÃO 93: DI 4 lentes marcadas pra FASE 2",
+      "LIÇÃO 89: WIN fechou em discount (não vender embaixo sem estrutura) · WDO leve premium (não comprar esticado)"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker EOD quarta 10/06 (Renato): O 169.000 H 169.900 L 168.420 C 168.745 ajuste 168.897 −1.255/−0,74% · 25,51k contratos",
+      "preco_eod_wdo": "Print home broker EOD quarta 10/06 (Renato): O 5.220 H 5.223 L 5.184,5 C 5.208,5 ajuste 5.191,89 +5,00/+0,10% · 239,65k contratos",
+      "di_curva": "Falcão Notícias 18:05 (Arícia Martins · fechamento) + Broadcast 17h20: F27 14,495 (−1,6) · F29 14,94 (−2,8) · F31 14,795/14,82 (validar quinta)",
+      "globais": "Cenário-2 Broadcast (vespertino completo) + Falcão 17h-18h: Trump novo ataque 'ainda hoje' · Irã atacou bases na Jordânia/Kuwait/Bahrein · WTI +4,13% eletrônico · Nasdaq fut −2,4% AH · ouro −3% · especial petróleo US$180 (Hedgepoint/Swissquote/Capital Economics) · estoques −7,227M · OPEP menor produção desde anos 2000 · SpaceX IPO drenando fluxo · Macquarie Fed alta Q1-27 · ASA Selic terminal 14,25%",
+      "cambio_fluxo": "BCB: fluxo cambial junho até dia 5 +US$2,588bi (ano +16,6bi) · dólar à vista −0,09% R$5,1726",
+      "agenda": "_PENDENTE_FALCAO_QUINTA_711_ (BCE citado terça como 'reunião amanhã (11)')"
+    }
+  }
+}

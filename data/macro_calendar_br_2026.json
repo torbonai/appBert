@@ -116,7 +116,7 @@
         "impacto": "ALTO",
         "tag": "cpi_us",
         "janela_evitar": "09:15-10:00",
-        "nota": "Define Fed higher-for-longer + tom do Copom semana que vem. Briefing #27: NÃO operar antes · janela pós-digestão 10:00-11:00"
+        "nota": "SAIU (09:30 oficial Broadcast): EM LINHA — mensal +0,5% (proj +0,5%) · anual 4,2% (proj 4,2%) · NÚCLEO mensal +0,2% ABAIXO da proj (+0,3%) = leve surpresa benigna · núcleo anual 2,9% em linha. Sem choque hawkish novo: o quente já estava precificado. Reação do preço manda · janela pós-digestão 10:00-11:00 · vigiar se DI devolve a alta pré-dado (F29 +6bps às 09:26)"
       },
       {
         "hora_brt": "11:30",
@@ -139,6 +139,18 @@
         "fonte": "BCB",
         "impacto": "MEDIO",
         "tag": "fluxo_cambial"
+      }
+    ],
+    "2026-06-11": [
+      {
+        "hora_brt": "09:15",
+        "evento": "🇪🇺 Decisão de juros BCE + coletiva Lagarde (~09:45) (CONFIRMAR HORÁRIO)",
+        "fonte": "BCE",
+        "impacto": "ALTO",
+        "tag": "bce_decisao",
+        "janela_evitar": "09:10-10:15",
+        "review_required": true,
+        "nota": "Choque de energia da guerra deve elevar projeções de inflação do BCE · overnight EUA-Irã (ataque prometido por Trump quarta à noite) é o curinga do dia"
       }
     ],
     "2026-06-12": [

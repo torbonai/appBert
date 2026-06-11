@@ -1,0 +1,49 @@
+{
+  "mercado": "NASDAQ (NAS100)",
+  "gerado_em": "2026-06-11T00:30:02",
+  "periodo": {
+    "de": "2026-06-08",
+    "ate": "2026-06-10",
+    "dias_com_dados": 6,
+    "janela_canonica_desde": "2026-06-01"
+  },
+  "amostra": {
+    "operacoes_fechadas": 3,
+    "ganhos": 2,
+    "perdas": 0,
+    "break_even": 1,
+    "abertas_agora": 4,
+    "confiavel": false,
+    "badge": "AMOSTRA EM CONSTRUÇÃO (3/30)"
+  },
+  "metricas": {
+    "taxa_acerto_pct": 100.0,
+    "ganho_medio_pts": 215.0,
+    "perda_media_pts": null,
+    "rr_realizado": null,
+    "r_multiple_medio": 1.04,
+    "expectativa_pts_por_trade": null,
+    "expectativa_R_por_trade": null,
+    "pts_acumulados": 430,
+    "melhor_trade_pts": 360,
+    "pior_trade_pts": 0,
+    "drawdown_max_pts": 0,
+    "drawdown_atual_pts": 0,
+    "seq_max_ganhos": 2,
+    "seq_max_perdas": 0,
+    "curva_acumulada": [
+      70,
+      70,
+      430
+    ]
+  },
+  "kelly": {
+    "kelly_cheio_pct": null,
+    "rotulo": "TETO TEÓRICO — nunca operar o Kelly cheio (Live #3)",
+    "regra_bertani": "2% do PL por trade · 1% em dia de evento",
+    "margem_seguranca": null,
+    "_nota": "margem_seguranca = quantas vezes abaixo do teto Kelly a regra de 2% opera"
+  },
+  "_fonte": "performance_dia_*.json (tracker por candle real · só ops em que o preço deu entrada · BE em 1R · alvo final = ALVO 2)",
+  "_regras": "W exclui break-even · abertas fora · n<30 = amostra em construção · janela desde 2026-06-01"
+}

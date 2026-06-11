@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Métricas do Analisador · Bertani Tela Pro</title>
+<style>
+  :root {
+    --bg: #0B0E14; --bg2: #0F141C; --card: #151C29; --border: #1F2A3C;
+    --text: #E6EBF2; --muted: #8A95A8; --accent: #2962FF;
+    --green: #00C853; --red: #FF1744; --orange: #FF9800; --gold: #D4AF37;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { background: var(--bg); color: var(--text); font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; min-height: 100vh; }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 28px 20px 60px; }
+  header.top { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 6px; }
+  .brand { font-size: 22px; font-weight: 800; letter-spacing: 0.5px; }
+  .brand span { color: var(--gold); }
+  .tier { background: rgba(212,175,55,0.15); color: var(--gold); border: 1px solid var(--gold); padding: 4px 12px; border-radius: 999px; font-size: 12px; font-weight: 700; letter-spacing: 1px; }
+  .sub { color: var(--muted); font-size: 14px; margin-bottom: 22px; }
+  .toolbar { display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-bottom: 18px; }
+  .tabs { display: inline-flex; background: var(--bg2); border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+  .tabs button { background: transparent; border: 0; color: var(--muted); padding: 10px 22px; font-size: 14px; font-weight: 700; cursor: pointer; }
+  .tabs button.on { background: var(--card); color: var(--gold); }
+  .badge { padding: 6px 14px; border-radius: 8px; font-size: 12.5px; font-weight: 700; letter-spacing: 0.5px; }
+  .badge.construcao { background: rgba(255,152,0,0.14); color: var(--orange); border: 1px solid rgba(255,152,0,0.5); }
+  .badge.consolidada { background: rgba(0,200,83,0.14); color: var(--green); border: 1px solid rgba(0,200,83,0.5); }
+  .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 14px; }
+  .mcard { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .mcard .lbl { font-size: 11.5px; color: var(--muted); letter-spacing: 1.2px; text-transform: uppercase; font-weight: 700; }
+  .mcard .val { font-size: 32px; font-weight: 800; margin-top: 6px; line-height: 1.1; }
+  .mcard .det { font-size: 12.5px; color: var(--muted); margin-top: 6px; line-height: 1.45; }
+  .pos { color: var(--green); } .neg { color: var(--red); } .gold { color: var(--gold); } .mut { color: var(--muted); }
+  .kelly-box { background: linear-gradient(135deg, rgba(212,175,55,0.10), rgba(212,175,55,0.03)); border: 1px solid var(--gold); border-radius: 12px; padding: 20px 22px; margin: 18px 0; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 16px; align-items: center; }
+  .kelly-box .big { font-size: 30px; font-weight: 800; }
+  .kelly-box .cap { font-size: 12px; color: var(--muted); letter-spacing: 1px; text-transform: uppercase; font-weight: 700; }
+  .kelly-box .note { font-size: 13px; color: var(--text); line-height: 1.5; }
+  .spark-card { background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; margin-top: 14px; }
+  .rules { background: var(--bg2); border: 1px solid var(--border); border-radius: 12px; padding: 16px 20px; margin-top: 22px; font-size: 13px; color: var(--muted); line-height: 1.7; }
+  .rules strong { color: var(--text); }
+  .edu { margin-top: 22px; background: var(--card); border: 1px solid var(--border); border-radius: 12px; padding: 18px 20px; }
+  .edu h3 { font-size: 15px; margin-bottom: 8px; color: var(--gold); }
+  .edu p { font-size: 13.5px; color: var(--muted); line-height: 1.6; }
+  .edu a { color: var(--accent); text-decoration: none; font-weight: 600; }
+  footer { margin-top: 30px; font-size: 12px; color: var(--muted); line-height: 1.6; border-top: 1px solid var(--border); padding-top: 16px; }
+  .stamp { font-size: 12px; color: var(--muted); }
+  #err { display: none; background: rgba(255,23,68,0.1); border: 1px solid var(--red); color: var(--red); padding: 14px 18px; border-radius: 10px; margin: 20px 0; font-size: 14px; }
+  a.back { color: var(--muted); text-decoration: none; font-size: 13px; }
+  a.back:hover { color: var(--text); }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header class="top">
+    <div>
+      <div class="brand">MÉTRICAS DO <span>ANALISADOR</span></div>
+      <a class="back" href="../dashboard.html">← voltar ao painel</a>
+    </div>
+    <div class="tier">🔒 TELA PRO</div>
+  </header>
+  <p class="sub">As fórmulas da série Matemática aplicadas ao track record real — placar honesto: só conta operação em que o preço deu entrada.</p>
+
+  <div class="toolbar">
+    <div class="tabs">
+      <button id="tab-br" class="on" onclick="load('br')">B3 · WIN/WDO</button>
+      <button id="tab-nq" onclick="load('nq')">NASDAQ · NAS100</button>
+    </div>
+    <span id="badge" class="badge construcao">—</span>
+  </div>
+
+  <div id="err">Não consegui carregar as métricas agora. Tenta recarregar a página.</div>
+
+  <div class="grid" id="cards"></div>
+
+  <div class="kelly-box" id="kellybox" style="display:none;">
+    <div>
+      <div class="cap">Kelly cheio (teto teórico)</div>
+      <div class="big gold" id="k-teto">—</div>
+      <div class="note mut">nunca se opera o Kelly cheio</div>
+    </div>
+    <div>
+      <div class="cap">Regra Bertani</div>
+      <div class="big" id="k-regra">2% do PL</div>
+      <div class="note mut">1% em dia de evento</div>
+    </div>
+    <div>
+      <div class="cap">Margem de segurança</div>
+      <div class="big pos" id="k-margem">—</div>
+      <div class="note" id="k-nota">quantas vezes abaixo do teto a regra opera</div>
+    </div>
+  </div>
+
+  <div class="spark-card">
+    <div class="mcard-lbl" style="font-size:11.5px;color:var(--muted);letter-spacing:1.2px;text-transform:uppercase;font-weight:700;">Curva acumulada (pts · por operação fechada)</div>
+    <svg id="spark" width="100%" height="90" viewBox="0 0 600 90" preserveAspectRatio="none"></svg>
+  </div>
+
+  <div class="rules">
+    <strong>Como esses números nascem (regras honestas):</strong> uma operação só entra no placar se o preço alcançou a zona de entrada depois do call — acertar direção sem entrada vale ZERO · entrada = meio da zona · break-even ao andar 1R · alvo final = Alvo 2 · 1 posição por vez · operações abertas ficam FORA das métricas · break-even não conta como acerto nem erro · <span id="r-janela">—</span>.
+  </div>
+
+  <div class="edu">
+    <h3>Entenda cada número (série Matemática · aulas gratuitas)</h3>
+    <p>
+      Taxa de acerto e expectativa → <a href="https://www.youtube.com/@renatobertani" target="_blank">Live #2 · Sua taxa de acerto mente</a> ·
+      Kelly, risco de ruína e drawdown → <a href="https://www.youtube.com/@renatobertani" target="_blank">Live #3 · Até quem acerta muito pode quebrar</a> ·
+      Tamanho de amostra (por que o selo "em construção") → Live #4 · quarta 20h.
+    </p>
+  </div>
+
+  <footer>
+    <div class="stamp" id="stamp">—</div>
+    <p style="margin-top:8px;">Renato Bertani · Analista CNPI T 9644 · Resolução CVM 20/2021 · Conteúdo educacional — não constitui recomendação. Pontos estimados pelo preço de cada ciclo; a execução é sua. Resultados passados não garantem retornos futuros.</p>
+  </footer>
+</div>
+
+<script>
+  function fmt(v, suf) { return (v === null || v === undefined) ? '—' : (String(v).replace('.', ',') + (suf || '')); }
+  function card(lbl, val, cls, det) {
+    return '<div class="mcard"><div class="lbl">' + lbl + '</div><div class="val ' + (cls||'') + '">' + val + '</div>' + (det ? '<div class="det">' + det + '</div>' : '') + '</div>';
+  }
+  function spark(curva) {
+    var svg = document.getElementById('spark');
+    if (!curva || curva.length < 2) { svg.innerHTML = '<text x="300" y="50" fill="#8A95A8" font-size="13" text-anchor="middle">poucos dados ainda — a curva aparece com mais operações</text>'; return; }
+    var min = Math.min(0, Math.min.apply(null, curva)), max = Math.max(0, Math.max.apply(null, curva));
+    var range = (max - min) || 1;
+    var pts = curva.map(function(v, i) {
+      var x = (i / (curva.length - 1)) * 580 + 10;
+      var y = 80 - ((v - min) / range) * 70;
+      return x.toFixed(1) + ',' + y.toFixed(1);
+    });
+    var zeroY = 80 - ((0 - min) / range) * 70;
+    var last = curva[curva.length - 1];
+    svg.innerHTML =
+      '<line x1="10" y1="' + zeroY + '" x2="590" y2="' + zeroY + '" stroke="#1F2A3C" stroke-width="1" stroke-dasharray="4 4"/>' +
+      '<polyline fill="none" stroke="' + (last >= 0 ? '#00C853' : '#FF1744') + '" stroke-width="2.5" points="' + pts.join(' ') + '"/>';
+  }
+  function load(m) {
+    document.getElementById('tab-br').className = m === 'br' ? 'on' : '';
+    document.getElementById('tab-nq').className = m === 'nq' ? 'on' : '';
+    var file = m === 'nq' ? 'metricas_nasdaq.json' : 'metricas.json';
+    fetch('../data/metricas/' + file + '?ts=' + Date.now())
+      .then(function(r) { if (!r.ok) throw 0; return r.json(); })
+      .then(function(d) {
+        document.getElementById('err').style.display = 'none';
+        var a = d.amostra, mt = d.metricas, k = d.kelly;
+        var b = document.getElementById('badge');
+        b.textContent = a.badge; b.className = 'badge ' + (a.confiavel ? 'consolidada' : 'construcao');
+        var posneg = function(v) { return v === null ? 'mut' : (v >= 0 ? 'pos' : 'neg'); };
+        var html = '';
+        html += card('Taxa de acerto', fmt(mt.taxa_acerto_pct, '%'), 'gold', a.ganhos + ' ganhos · ' + a.perdas + ' perdas · ' + a.break_even + ' break-even (fora da taxa)');
+        html += card('R realizado', fmt(mt.rr_realizado, 'x'), mt.rr_realizado === null ? 'mut' : '', mt.rr_realizado === null ? 'sem perda na amostra — incalculável (honesto)' : 'ganho médio ' + fmt(mt.ganho_medio_pts) + ' pts ÷ perda média ' + fmt(mt.perda_media_pts) + ' pts');
+        html += card('Expectativa por trade', fmt(mt.expectativa_pts_por_trade, ' pts'), posneg(mt.expectativa_pts_por_trade), mt.expectativa_R_por_trade !== null ? 'equivale a ' + fmt(mt.expectativa_R_por_trade) + 'R por operação' : 'precisa de ganhos E perdas na amostra');
+        html += card('Acumulado', fmt(mt.pts_acumulados, ' pts'), posneg(mt.pts_acumulados), a.operacoes_fechadas + ' operações fechadas · ' + a.abertas_agora + ' aberta(s) agora (fora das métricas)');
+        html += card('Drawdown máximo', fmt(mt.drawdown_max_pts, ' pts'), mt.drawdown_max_pts > 0 ? 'neg' : 'mut', 'atual: ' + fmt(mt.drawdown_atual_pts, ' pts'));
+        html += card('Sequências', '+' + (mt.seq_max_ganhos || 0) + ' / −' + (mt.seq_max_perdas || 0), '', 'maior sequência de ganhos / de perdas');
+        html += card('Melhor · pior trade', fmt(mt.melhor_trade_pts) + ' · ' + fmt(mt.pior_trade_pts), '', 'em pontos');
+        html += card('R-multiple médio', fmt(mt.r_multiple_medio, 'R'), posneg(mt.r_multiple_medio), 'resultado médio em múltiplos do risco de cada operação');
+        document.getElementById('cards').innerHTML = html;
+        var kb = document.getElementById('kellybox');
+        if (k.kelly_cheio_pct !== null) {
+          kb.style.display = '';
+          document.getElementById('k-teto').textContent = fmt(k.kelly_cheio_pct, '%');
+          document.getElementById('k-margem').textContent = k.margem_seguranca !== null ? fmt(k.margem_seguranca, 'x') : '—';
+        } else {
+          kb.style.display = '';
+          document.getElementById('k-teto').textContent = 'N/A';
+          document.getElementById('k-margem').textContent = '—';
+          document.getElementById('k-nota').textContent = 'Kelly exige ganhos E perdas na amostra — sem perda registrada, não se calcula (e a gente não inventa).';
+        }
+        spark(mt.curva_acumulada);
+        document.getElementById('r-janela').textContent = 'janela desde ' + (d.periodo.janela_canonica_desde || '—');
+        document.getElementById('stamp').textContent = d.mercado + ' · período ' + (d.periodo.de || '—') + ' → ' + (d.periodo.ate || '—') + ' · atualizado em ' + (d.gerado_em || '—').replace('T', ' ');
+      })
+      .catch(function() { document.getElementById('err').style.display = 'block'; });
+  }
+  load('br');
+</script>
+</body>
+</html>
