@@ -143,6 +143,16 @@
     ],
     "2026-06-11": [
       {
+        "hora_brt": "09:00",
+        "evento": "🇧🇷 Serviços IBGE abril/2026",
+        "fonte": "IBGE",
+        "impacto": "ALTO",
+        "tag": "servicos_ibge",
+        "janela_evitar": "08:50-09:30",
+        "review_required": false,
+        "nota": "Indicador mensal de atividade do setor terciário · pode mover índice e juros caso surpreenda"
+      },
+      {
         "hora_brt": "09:15",
         "evento": "🇪🇺 Decisão de juros BCE + coletiva Lagarde (~09:45) (CONFIRMAR HORÁRIO)",
         "fonte": "BCE",
@@ -151,6 +161,26 @@
         "janela_evitar": "09:10-10:15",
         "review_required": true,
         "nota": "Choque de energia da guerra deve elevar projeções de inflação do BCE · overnight EUA-Irã (ataque prometido por Trump quarta à noite) é o curinga do dia"
+      },
+      {
+        "hora_brt": "09:30",
+        "evento": "🇺🇸 PPI (índice de preços ao produtor) maio/2026",
+        "fonte": "BLS",
+        "impacto": "ALTO",
+        "tag": "ppi_eua",
+        "janela_evitar": "09:25-10:00",
+        "review_required": false,
+        "nota": "Inflação no atacado EUA · proxy para pressões de custo · afeta leitura do FED sobre ciclo de juros"
+      },
+      {
+        "hora_brt": "09:45",
+        "evento": "🇪🇺 Coletiva de imprensa Christine Lagarde (BCE)",
+        "fonte": "BCE",
+        "impacto": "ALTO",
+        "tag": "lagarde_press",
+        "janela_evitar": "09:40-10:30",
+        "review_required": false,
+        "nota": "Forward guidance após decisão de juros 09:15 · mercado busca sinais de viés para próximas reuniões"
       }
     ],
     "2026-06-12": [

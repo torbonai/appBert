@@ -4,6 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Métricas do Analisador · Bertani Tela Pro</title>
+<link rel="stylesheet" href="../assets/css/style.css">
 <style>
   :root {
     --bg: #0B0E14; --bg2: #0F141C; --card: #151C29; --border: #1F2A3C;
@@ -50,12 +51,23 @@
 </style>
 </head>
 <body>
-<div class="wrap">
-  <header class="top">
-    <div>
-      <div class="brand">MÉTRICAS DO <span>ANALISADOR</span></div>
-      <a class="back" href="../dashboard.html">← voltar ao painel</a>
+<nav class="app-nav">
+  <div class="wrap">
+    <div class="brand">
+      <div class="brand-mark">B</div>
+      <span>BERTANI</span>
     </div>
+    <div class="nav-links">
+      <a href="../dashboard.html">Dashboard</a>
+      <a href="../educacao/fases-wyckoff.html">Educação</a>
+      <a href="../registro/historico.html">Track Record</a>
+    </div>
+    <button class="btn" onclick="window.BertaniApp.access.logout()">Sair</button>
+  </div>
+</nav>
+<div class="wrap">
+  <header class="top" style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin:22px 0 6px;">
+    <div style="font-size:22px;font-weight:800;letter-spacing:0.5px;">MÉTRICAS DO <span style="color:var(--gold,#D4AF37);">ANALISADOR</span></div>
     <div class="tier">🔒 TELA PRO</div>
   </header>
   <p class="sub">As fórmulas da série Matemática aplicadas ao track record real — placar honesto: só conta operação em que o preço deu entrada.</p>
@@ -114,6 +126,7 @@
   </footer>
 </div>
 
+<script src="../assets/js/app.js"></script>
 <script>
   function fmt(v, suf) { return (v === null || v === undefined) ? '—' : (String(v).replace('.', ',') + (suf || '')); }
   function card(lbl, val, cls, det) {

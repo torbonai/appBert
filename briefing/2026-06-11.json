@@ -1,0 +1,411 @@
+{
+  "data": "2026-06-11",
+  "data_extenso": "Quinta-feira, 11 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 28,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "GUERRA SEM PÂNICO: O MUNDO SOBE, MAS NOSSA BOLSA PERDEU O CHÃO — SÓ OPERE DEPOIS DAS 10H",
+    "subtitulo": "Os EUA bombardearam o Irã de novo de madrugada — e o petróleo CAIU, as bolsas lá fora SUBIRAM. Quando a bomba cai e o mercado boceja, a manchete perdeu o poder de assustar. Só que a nossa bolsa rompeu ontem o fundo que segurava há 3 dias, com pouca gente vendendo — sinal sujo, dos que pegam gente no contrapé. E a manhã é pesada: Europa decide juros às 9h15, inflação do produtor americano sai às 9h30, entrevista às 9h45. Deixe a manhã digerir: depois das 10h, vender o repique no preço caro com confirmação OU comprar só se a retomada se provar. Amanhã tem IPCA."
+  },
+  "resumo_30s": {
+    "win_linha": "WIN perdeu o fundo dos 3 dias (nova mínima 168.420 · fechou 168.745 abaixo do meio do range) MAS a quebra veio com o menor volume da semana e o mundo amanheceu comprando · repique = vender no preço caro com confirmação · score 4 AGUARDAR",
+    "wdo_linha": "WDO de lado (5.208,50 · leve acima do meio) · dólar à vista CAIU no dia da guerra e o petróleo devolveu de madrugada — tese de alta sem gás · comprar só com escalada real · score 4 AGUARDAR",
+    "janela_operacional": "NÃO operar 09:00–10:00 (serviços BR 09:00 + BCE 09:15 + PPI EUA 09:30 + coletiva 09:45) · janela principal 10:00–11:00 COM gatilho · NY 14:00–15:30",
+    "nivel_chave": "WIN EQ 169.160 · PDH 169.900 · nova mínima 168.420 | WDO EQ 5.203,75 · PDH 5.223 · PDL 5.184,5 | DI: curta aliviou, longa cobrou prêmio (twist)",
+    "agenda_top1": "🇪🇺 BCE 09:15 — deve SUBIR os juros 25bp (choque de energia da guerra) + coletiva Lagarde 09:45 · 🇺🇸 PPI 09:30 no meio · véspera de IPCA"
+  },
+  "contexto_macro": {
+    "nivel_vento": "FORTE",
+    "highlights": [
+      "📊 WIN EOD quarta 10/06 (print): abertura 169.000, máxima (PDH) 169.900, mínima (PDL) 168.420, fechamento 168.745, ajuste B3 168.897, variação −1.255 pts (−0,74%), amplitude 1.480, contratos 25,51k, em aberto 177.879. EQ = (169.900+168.420)/2 = 169.160. ⚠️ FEZ NOVA MÍNIMA (168.420 < 168.650 de segunda) — a absorção de 3 dias QUEBROU. Fechou em discount (168.745 < EQ), recuperando ~325 pts do fundo. Ibovespa −0,70% aos 168.619 (mín 168.071), 2ª queda da semana.",
+      "💵 WDO EOD quarta 10/06 (print): abertura 5.220,00, máxima (PDH) 5.223,00, mínima (PDL) 5.184,50, fechamento 5.208,50, ajuste B3 5.191,89, variação +5,00 (+0,10%), amplitude 38,50, contratos 239,65k, em aberto 864.520. EQ = 5.203,75. Dólar à vista fechou em LEVE BAIXA (−0,09% · R$5,1726) MESMO com a guerra — núcleo do CPI benigno + real exportador de petróleo + fluxo cambial positivo (junho até dia 5: +US$2,588bi · ano +US$16,6bi).",
+      "💵 Juros futuros BR (ajustes oficiais B3 quarta vs terça): TWIST — curta ALIVIOU (F27 14,480 · −3,1bps), miolo parado (F29 14,967 · −0,1bps), longa COBROU prêmio (F31 14,841 · +3,2bps). Não foi 'queda geral': o mercado aplicou na curta ('prêmio passou do ponto · aplicadores aparecendo') e exigiu mais prêmio na longa (petróleo/inflação à frente). Magnitudes <5bps = sem sinal forte. ASA: Selic terminal 14,25% · opções digitais: 70% manutenção no Copom 17/06.",
+      "🛢️🔥 OVERNIGHT: EUA dispararam a 2ª rodada — 49 Tomahawks contra múltiplas cidades (alvos a ~65km de Teerã) e declararam os ataques 'CONCLUÍDOS' · Irã retaliou bases aliadas (Jordânia, Kuwait, Bahrein), chamou o cessar-fogo de abril de 'letra morta' e mantém o Estreito de Ormuz como trunfo · AIEA aprovou resolução exigindo acesso ao programa nuclear (urânio a 60%) · negociação travada, mas canal do Catar segue vivo.",
+      "📉➡️📈 A REAÇÃO É O DADO DO DIA: mesmo com a 2ª rodada, o petróleo VIROU PRA BAIXO (Brent 92,18 · −0,99% · WTI 89,32 às 7h) · futuros NY firmes (Nasdaq +1,2% · S&P +0,75% · Dow +0,70%) · Europa em alta · Treasuries cedendo (2Y 4,125% · 10Y 4,527% · 30Y 5,008%) · VIX −6% (20,8) · ouro −0,6% · DXY 100,12 (+0,18%). O mercado comprou a tese 'grande escala + CURTA duração = forçar acordo'. Cauda: US$150 se as hostilidades plenas voltarem — cenário-limite, não base.",
+      "🇪🇺 BCE 09:15 deve SUBIR os juros em 25bps (depósito 2,00%→2,25%) — alta sob o choque de energia da guerra · o que move mercado é a SINALIZAÇÃO da trajetória (coletiva Lagarde 09:45 + discurso 11:15) · choque do petróleo eleva as projeções de inflação da zona do euro.",
+      "🇧🇷 Serviços de abril às 09:00 (mediana +0,6% m/m após −1,2% em março) a 6 dias do Copom · mercado espera balanço de riscos 'assimétrico PRA CIMA' (última vez: ata de mar/2025, quando o juro subiu 1pp) · possível alta da projeção de inflação 2027 de 3,5% pra 3,6% = juro alto por mais tempo · AMANHÃ: IPCA de maio ★★★ + reunião Brasil-EUA sobre tarifas (remoto).",
+      "💵 O real segue mais resiliente que a manchete: dólar à vista CAIU no dia da escalada (−0,09% · R$5,1726) · fluxo cambial junho +US$2,588bi (ano +US$16,6bi) · Brasil exportador de petróleo amortece o choque. De manhã o dólar global sobe leve (DXY +0,18%) à espera do BCE — decisão pode chacoalhar o câmbio.",
+      "🏦 Fluxo doméstico disputado: precificação Copasa/Equatorial hoje (~R$49 · demanda R$50bi pra ~R$3bi ofertados) + follow-on Engie de R$5,7bi — ofertas bilionárias drenam fluxo da bolsa na margem (mesma lógica do IPO da SpaceX em NY).",
+      "🌏 Ásia mista (Nikkei +0,06% · Kospi +0,43% · HSI −0,65% · Xangai −0,16%) ainda digerindo a correção de IA em NY (Nasdaq −1,98% ontem · chips) · petróleo e minério em queda são o contraponto do Ibov hoje.",
+      "📌 Status #27 (quarta): WIN 4 e WDO 4,5 AGUARDAR — NENHUM gatilho disparou (CPI em linha · zona de venda 170.800–171.300 nunca alcançada · máxima do dia 169.900) · disciplina protegeu: o WIN fez nova mínima à tarde. Placar honesto do Analisador B3: 20 análises · 0 operações (nenhuma entrada dada). NASDAQ: compra das 09:38 bateu alvo."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "ALTA",
+      "narrativa_dominante": "Guerra escalando + petróleo a caminho de US$150/180 = vende bolsa, compra dólar",
+      "fonte_observada": "Consenso de imprensa pós-2ª rodada de ataques + especial petróleo (projeções de cauda US$150-180)",
+      "regua_por_ativo": {
+        "WIN1!": {
+          "noticia_dir": -1,
+          "noticia_label": "Baixista madura: guerra+petróleo — mas a manchete parou de mover o preço global",
+          "estrutura_dir": -1,
+          "estrutura_label": "Quebrou o fundo de 3 dias (nova mínima 168.420) MAS com o menor volume da semana e recuperando 325 pts do fundo",
+          "veredito": "CUIDADO",
+          "veredito_label": "notícia e estrutura apontam pra baixo — mas as duas com sinal sujo",
+          "relacao": "Pela primeira vez na semana notícia e estrutura concordam (baixa), só que nenhuma das duas é limpa: o mundo amanheceu comprando mesmo com a 2ª rodada de ataques, e a quebra do fundo veio sem volume. Vender é o trade estrutural — mas SÓ no preço caro com confirmação. Comprar é apanhar faca até prova em contrário.",
+          "posicao_regua": 40,
+          "score_clareza": 4,
+          "estagio": "fim",
+          "estagio_alerta": "Narrativa baixista madura (10ª semana) + quebra sem volume + mundo em alívio = risco de squeeze contra vendedor atrasado",
+          "racional_uma_linha": "A bolsa perdeu o fundo, mas quem quebrou não tinha força — vender só no repique caro, comprar só com retomada provada."
+        },
+        "WDO1!": {
+          "noticia_dir": 1,
+          "noticia_label": "Altista: guerra/petróleo sustentam o dólar — mas a manchete de hoje já é 'busca de normalidade'",
+          "estrutura_dir": 0,
+          "estrutura_label": "Lateral · fechou leve premium 5.208,50 · dólar à vista CAIU no dia da guerra",
+          "veredito": "CUIDADO",
+          "veredito_label": "tese de alta esvaziando — petróleo devolvendo e real resiliente",
+          "relacao": "A tese de compra do dólar precisava de escalada e petróleo subindo; o overnight entregou o contrário (ataques 'concluídos' · petróleo caindo · bolsas subindo). O fluxo positivo e o Brasil exportador seguram o real. Comprar só em recuo E só se a escalada voltar de verdade; vender a falha no topo se o alívio segurar — mas o BCE às 9h15 pode chacoalhar o câmbio antes.",
+          "posicao_regua": 50,
+          "score_clareza": 4,
+          "estagio": "fim",
+          "estagio_alerta": "2º dia em que o dólar não sobe com manchete de guerra — narrativa altista perdendo tração",
+          "racional_uma_linha": "Dólar caiu no dia da guerra e o petróleo devolveu de madrugada — sem escalada real, a tese de alta está sem gás."
+        }
+      },
+      "contradicoes": [
+        "A REAÇÃO desmente a manchete: 2ª rodada de ataques + 49 Tomahawks e o petróleo CAIU (Brent 92,18 · −0,99%), futuros NY subiram (+0,7/+1,2%), VIX −6%, ouro −0,6% — o mercado comprou 'grande escala + curta duração = forçar acordo'",
+        "Dólar BR caiu no dia da escalada (−0,09%) e o fluxo cambial é positivo (+US$2,6bi em junho) — Brasil exportador de petróleo amortece o choque",
+        "DI: a curta cedeu oficialmente (−3,1bps no ajuste) com 'aplicadores aparecendo' — prêmio julgado excessivo pelo próprio mercado de juros",
+        "A quebra do fundo do WIN veio com o MENOR volume da semana (25,5k vs 43k na véspera) — vendedor sem força no rompimento",
+        "US$150/180 no petróleo é cenário-limite condicional (Ormuz fechado prolongado / hostilidades plenas), não projeção-base (visão moderada: US$90-95 no trimestre)",
+        "Canal de negociação segue vivo (mediação do Catar em Doha) mesmo durante os ataques — EUA declararam os ataques 'concluídos'"
+      ],
+      "leitura_bertani": "O mercado global desprezou a 2ª rodada de ataques — petróleo caindo e bolsas subindo. Se essa leitura segurar, o dia é de correção de prêmios. Mas o WIN quebrou o fundo: alívio aqui é repique até prova em contrário — vender o preço caro com confirmação é o trade estrutural; comprar só com retomada provada. O dólar está sem gás sem escalada nova. Bloco BCE+PPI (9h15–9h45) pode chacoalhar tudo — não operar dentro dele. Stop físico sempre: a guerra segue curinga."
+    },
+    "di_curva": {
+      "leitura": "DI EOD quarta 10/06 oficial (ajuste vs ajuste): TWIST — F27 −3,1bps (14,480), F29 −0,1bps (14,967), F31 +3,2bps (14,841). A curta aliviou ('prêmio passou do ponto · aplicadores aparecendo'), o miolo parou e a longa voltou a cobrar prêmio com o choque do petróleo. Magnitudes <5bps = sem sinal forte. Nível segue ~15% a 6 dias do Copom.",
+      "vertices_bps": {
+        "1y_F27": "−3,1bps (14,480 vs ajuste 14,511)",
+        "3y_F29": "−0,1bps (14,967 vs 14,968 · flat)",
+        "5y_F31": "+3,2bps (14,841 vs 14,809 · longa cobrou prêmio)"
+      },
+      "fonte": "Ajustes oficiais B3 EOD quarta 10/06 (Resumo DI jan27/29/31) · comparação ajuste-contra-ajuste",
+      "implicacao": "4 lentes: (1) Wyckoff do juro — 2º dia sem máxima nova na curta/miolo (F29 flat · F27 cedendo) = topo do ciclo de juro EM TESTE na parte curta, favorável WIN na margem; MAS a longa (F31 +3,2) segue em demanda por prêmio (fiscal + petróleo) — a curva NÃO virou. (2) Sweep × displacement — quarta não houve disparo: rotação leve sem gatilho (twist), nem sweep nem displacement, sem repricing novo. (3) Fluxo — fluxo cambial junho +US$2,588bi (positivo) × gringo B3 −R$1,8bi em junho (ainda saindo) = misto; o câmbio resiliente confirma que não há fuga — o prêmio da curva é doméstico (Copom/fiscal). (4) Convicção BAIXA pra direção própria — curta alivia × longa sobe × Copom 17/06 com balanço de riscos 'assimétrico pra cima' esperado × petróleo em choque. Hoje a curva é função de: serviços 09:00 (Copom) + petróleo intraday + PPI EUA. Alívio MARGINAL pro WIN pela curta; a longa neutraliza. Não vira viés sozinho."
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "Markdown (TF daily) RETOMADO — nova mínima 168.420 quebrou a possível Fase A de acumulação (fundo 168.650/168.715 de 3 dias) · MAS a quebra veio com o menor volume da semana e o fechamento recuperou ~325 pts: possível Spring mais profundo do range, em teste — precisa de MSS pra validar",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "Defensivo: VENDA condicional em premium (repique sem força) OU COMPRA condicional só com retomada provada (alívio global + MSS)",
+      "racional_publico": "A bolsa rompeu ontem o fundo que segurava há 3 dias — estrutura virou vendedora. Mas a quebra veio com pouca gente vendendo (menor volume da semana) e o mundo amanheceu comprando mesmo com novos ataques. Repique aqui tem preço certo pra vender (no caro, com confirmação) e preço errado pra comprar (perseguindo). Antes das 10h, com Europa decidindo juros e inflação americana no meio, não existe trade.",
+      "niveis_chave": {
+        "ajuste_b3": 168897,
+        "ajuste_b3_data": "2026-06-10",
+        "fechamento_anterior": 168745,
+        "PDH": 169900,
+        "PDL": 168420,
+        "maxima_anterior": 169900,
+        "minima_anterior": 168420,
+        "abertura_anterior": 169000,
+        "range_anterior_pts": 1480,
+        "variacao_anterior_pts": -1255,
+        "variacao_anterior_pct": -0.74,
+        "EQ": 169160,
+        "contratos_negociados": 25510,
+        "contratos_em_aberto": 177879,
+        "_nota": "EOD quarta 10/06 (print): O 169.000 · H/PDH 169.900 · L/PDL 168.420 · C 168.745 · ajuste 168.897 · −1.255 (−0,74%) · amplitude 1.480. EQ=(169.900+168.420)/2=169.160. ⚠️ NOVA MÍNIMA da sequência (168.420 < 168.650) — absorção de 3 dias quebrou. Fechou em discount, ~325 pts acima do fundo. Volume fraco (25,51k vs 43k terça)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 168897,
+        "data_referencia": "2026-06-10",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR o bloco da manhã (BCE+PPI) · operar só pós-digestão (≥10:00) na zona certa COM gatilho",
+        "cenarios": [
+          {
+            "cenario": "VENDA (alívio global murchando OU manchete nova de escalada · repique sem força até o preço caro)",
+            "entry_zona": "169.500–169.900 (premium · entre EQ 169.160 e PDH 169.900)",
+            "entry_meio": 169700,
+            "stop": 170150,
+            "stop_nota": "acima do PDH 169.900 · LIÇÃO 90",
+            "stop_pts": 450,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 168420,
+                "referencia": "nova mínima/PDL",
+                "rr_pelo_meio": 2.84
+              },
+              {
+                "label": "TP2",
+                "nivel": 167500,
+                "referencia": "extensão do markdown",
+                "rr_pelo_meio": 4.89
+              }
+            ],
+            "contratos": 3,
+            "risco_monetario_nota": "450×R$0,20=R$90 → R$270 ≤ R$300"
+          },
+          {
+            "cenario": "COMPRA (alívio global confirmado + retomada provada: defesa do fundo com rejeição + MSS 15min)",
+            "entry_zona": "168.450–168.750 (discount · reteste da região da quebra)",
+            "entry_meio": 168600,
+            "stop": 168050,
+            "stop_nota": "abaixo da nova mínima 168.420 · LIÇÃO 90",
+            "stop_pts": 550,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 169900,
+                "referencia": "PDH",
+                "rr_pelo_meio": 2.36
+              },
+              {
+                "label": "TP2",
+                "nivel": 170800,
+                "referencia": "origem do impulso de queda de quarta",
+                "rr_pelo_meio": 4.0
+              }
+            ],
+            "contratos": 2,
+            "risco_monetario_nota": "550×R$0,20=R$110 → R$220 ≤ R$300"
+          }
+        ],
+        "partials": "50/30/20",
+        "setup": "A estrutura virou vendedora (fundo quebrado), mas o sinal é sujo (sem volume) e o mundo amanheceu em alívio. VENDA: esperar o repique esticar até o premium e FALHAR (rejeição/pavio + MSS baixista 15min). COMPRA: só se o reteste do fundo segurar com rejeição clara + MSS altista — sem isso, é faca.",
+        "kill_zone": "10:00–11:00 (pós-digestão BCE/PPI) OU 14:00–15:30 (NY · atenção leilão 30 anos 14:00)",
+        "gatilho": "VENDA: repique a 169.500–169.900 + rejeição (pavio/engolfo) + MSS baixista. COMPRA: reteste 168.450–168.750 + rejeição + MSS altista 15min.",
+        "anti_trade": "NÃO operar 09:00–10:00 (BCE+PPI+coletiva). Não vender abaixo do EQ 169.160 (LIÇÃO 89 · preço já barato). Não comprar perseguindo repique sem reteste. Manchete de Ormuz/ataque novo = ficar de fora.",
+        "cancelamento": "VENDA cancela acima de 170.150 sustentado. COMPRA cancela se perder 168.050."
+      },
+      "comentario_breve": "Fundo quebrou sem volume × mundo em alívio · repique é pra vender no caro, não pra comprar",
+      "_score_breakdown": {
+        "total": 4,
+        "nota": "AGUARDAR — estrutura quebrou mas sem volume · mundo em alívio · dia de BCE+PPI · só zona com gatilho"
+      }
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "Lateral (TF daily · range 5.177,5–5.223 há 3 pregões) — consolidação pós-markup · fechou leve premium · dólar à vista caindo apesar da guerra",
+      "score": 4,
+      "veredito": "AGUARDAR",
+      "vies": "COMPRA condicional em discount SÓ com escalada real no Oriente Médio · VENDA condicional em premium se o alívio global segurar",
+      "racional_publico": "O dólar não subiu com a guerra dois dias seguidos — e de madrugada o petróleo devolveu a alta. A tese de compra precisa de escalada NOVA pra valer; sem ela, o fluxo positivo e o Brasil exportador seguram o real. Se o alívio global segurar, a falha no topo do range é o trade; se a guerra reacender de verdade, o recuo vira compra. A decisão da Europa às 9h15 pode chacoalhar o câmbio — esperar assentar.",
+      "niveis_chave": {
+        "ajuste_b3": 5191.89,
+        "ajuste_b3_data": "2026-06-10",
+        "fechamento_anterior": 5208.5,
+        "PDH": 5223.0,
+        "PDL": 5184.5,
+        "maxima_anterior": 5223.0,
+        "minima_anterior": 5184.5,
+        "abertura_anterior": 5220.0,
+        "range_anterior_pts": 38.5,
+        "variacao_anterior_pts": 5.0,
+        "variacao_anterior_pct": 0.1,
+        "EQ": 5203.75,
+        "contratos_negociados": 239650,
+        "contratos_em_aberto": 864520,
+        "_nota": "EOD quarta 10/06 (print): O 5.220,00 · H/PDH 5.223,00 · L/PDL 5.184,50 · C 5.208,50 · ajuste 5.191,89 · +5,00 (+0,10%) · amplitude 38,50. EQ=5.203,75. Fechou leve premium. Dólar à vista −0,09% (5,1726) — real ABSORVEU a escalada (núcleo CPI benigno + fluxo +2,588bi junho + exportador de petróleo)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5191.89,
+        "data_referencia": "2026-06-10",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-10)"
+      },
+      "plano": {
+        "direcao": "AGUARDAR o bloco da manhã · BCE 09:15 pode chacoalhar o câmbio · operar só pós-digestão na zona certa COM gatilho",
+        "cenarios": [
+          {
+            "cenario": "VENDA (alívio global se mantém: petróleo devolvendo + bolsas firmes)",
+            "entry_zona": "5.215–5.223 (premium · até o PDH)",
+            "entry_meio": 5219,
+            "stop": 5231,
+            "stop_nota": "acima do PDH 5.223 · LIÇÃO 90",
+            "stop_pts": 12,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 5192,
+                "referencia": "ajuste B3",
+                "rr_pelo_meio": 2.25
+              },
+              {
+                "label": "TP2",
+                "nivel": 5184.5,
+                "referencia": "PDL",
+                "rr_pelo_meio": 2.88
+              }
+            ],
+            "contratos": 2,
+            "risco_monetario_nota": "12×R$10×2=R$240 ≤ R$300"
+          },
+          {
+            "cenario": "COMPRA (escalada REAL nova: Ormuz/ataque com petróleo virando pra cima)",
+            "entry_zona": "5.185–5.200 (discount · ≤ EQ 5.203,75)",
+            "entry_meio": 5192.5,
+            "stop": 5175,
+            "stop_nota": "abaixo do PDL 5.184,5 · LIÇÃO 90",
+            "stop_pts": 17.5,
+            "alvos": [
+              {
+                "label": "TP1",
+                "nivel": 5223,
+                "referencia": "PDH",
+                "rr_pelo_meio": 1.74
+              },
+              {
+                "label": "TP2",
+                "nivel": 5245,
+                "referencia": "extensão",
+                "rr_pelo_meio": 3.0
+              }
+            ],
+            "contratos": 1,
+            "risco_monetario_nota": "17,5×R$10=R$175 ≤ R$300"
+          }
+        ],
+        "partials": "50/30/20",
+        "setup": "O dólar não subiu com a guerra 2 dias seguidos — a tese de alta precisa de escalada NOVA pra valer. Alívio segurando → vender a falha no topo do range. Escalada real (petróleo virando pra cima + manchete) → comprar o recuo com rejeição + MSS. BCE no meio do caminho: esperar o câmbio assentar.",
+        "kill_zone": "10:00–11:00 (pós-digestão BCE/PPI) OU 14:00–15:30 (NY)",
+        "gatilho": "VENDA: falha em 5.215–5.223 + rejeição + MSS baixista. COMPRA: escalada real + recuo a 5.185–5.200 + rejeição + MSS altista.",
+        "anti_trade": "NÃO operar 09:00–10:00. Não comprar esticado sem recuo (dólar caiu no dia da guerra). Não vender se houver manchete de escalada nova.",
+        "cancelamento": "VENDA cancela acima de 5.231 sustentado. COMPRA cancela se perder 5.175."
+      },
+      "comentario_breve": "Tese de alta sem gás (petróleo devolvendo · real resiliente) · BCE no meio · só zona com gatilho",
+      "_score_breakdown": {
+        "total": 4,
+        "nota": "AGUARDAR — tese de alta sem gás (petróleo devolvendo · real resiliente) · BCE no meio · só zona com gatilho"
+      }
+    }
+  ],
+  "agenda_macro": [
+    {
+      "hora_brt": "09:00",
+      "evento": "Leilão de abertura B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-09:25",
+      "nota": "evitar 09:00–09:25"
+    },
+    {
+      "hora_brt": "09:00",
+      "evento": "IBGE Pesquisa Mensal de Serviços (abr)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "projecao": "mediana +0,6% m/m (ant −1,2%) · anual ~3,0%",
+      "nota": "sensível pro Copom 17/06 (balanço de riscos 'assimétrico pra cima' esperado) · véspera de IPCA"
+    },
+    {
+      "hora_brt": "09:15",
+      "evento": "Decisão BCE — deve SUBIR 25bp (depósito 2,00→2,25%)",
+      "pais": "EU",
+      "impacto": "ALTO",
+      "janela_evitar": "09:00-10:00",
+      "nota": "alta sob choque de energia da guerra · sinalização de trajetória manda · coletiva 09:45"
+    },
+    {
+      "hora_brt": "09:30",
+      "evento": "PPI EUA (Mai) + pedidos de auxílio-desemprego",
+      "pais": "US",
+      "impacto": "ALTO",
+      "projecao": "PPI 0,7% m (ant 1,4%) · núcleo 0,5% (ant 1,0%) · claims 220K",
+      "janela_evitar": "09:15-10:00",
+      "nota": "1 dia depois do CPI em linha · sensível pro Fed (decide semana que vem)"
+    },
+    {
+      "hora_brt": "09:45",
+      "evento": "Coletiva de imprensa do BCE (Lagarde)",
+      "pais": "EU",
+      "impacto": "ALTO"
+    },
+    {
+      "hora_brt": "11:00",
+      "evento": "Tesouro: leilões de LTN e NTN-F",
+      "pais": "BR",
+      "impacto": "MEDIO"
+    },
+    {
+      "hora_brt": "11:15",
+      "evento": "Discurso de Christine Lagarde (BCE)",
+      "pais": "EU",
+      "impacto": "MEDIO"
+    },
+    {
+      "hora_brt": "13:00",
+      "evento": "Relatório WASDE",
+      "pais": "US",
+      "impacto": "BAIXO"
+    },
+    {
+      "hora_brt": "14:00",
+      "evento": "Leilão Treasury 30 anos (US$22bi)",
+      "pais": "US",
+      "impacto": "MEDIO",
+      "nota": "teste de demanda por juro longo americano (30y 5,008%)"
+    },
+    {
+      "hora_brt": "17:45",
+      "evento": "Leilão de fechamento B3",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "janela_evitar": "17:45-17:55"
+    },
+    {
+      "hora_brt": "amanhã 09:00",
+      "evento": "IPCA de maio (market mover BR) + reunião Brasil-EUA tarifas (remoto)",
+      "pais": "BR",
+      "impacto": "ALTO",
+      "nota": "não carregar posição pesada pro fim do dia de hoje"
+    }
+  ],
+  "kill_zones_recomendadas": [
+    "09:00–09:25 (leilão de abertura B3 · EVITAR)",
+    "09:00–10:00 (bloco pesado: serviços BR 09:00 + BCE 09:15 + PPI EUA 09:30 + coletiva 09:45 · EVITAR — a manhã decide o tom, não opere dentro dela)",
+    "10:00–11:00 (janela PRINCIPAL · pós-digestão do bloco · entrar só na zona certa COM gatilho)",
+    "14:00–15:30 (NY · atenção leilão Treasury 30 anos 14:00)"
+  ],
+  "regras_do_dia": [
+    "NÃO operar 09:00–10:00: serviços BR (9h), decisão de juros na Europa (9h15), inflação do produtor EUA (9h30) e coletiva (9h45) caem em sequência",
+    "A bolsa perdeu o fundo ontem: repique é pra VENDER no preço caro com confirmação — não é pra comprar perseguindo",
+    "Não comprar dólar esticado: ele CAIU no dia da guerra e o petróleo devolveu de madrugada — compra só com escalada real nova",
+    "Guerra segue curinga: manchete de Ormuz/ataque novo invalida tudo fora de hora — stop físico SEMPRE",
+    "Petróleo a US$150/180 é cenário-limite, não previsão — não deixar a manchete virar viés",
+    "Amanhã tem IPCA + reunião Brasil-EUA: não carregar posição pesada pro fim do dia",
+    "Risco máximo 1% da banca por trade (banca 30k)"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PRONTA",
+    "fase_2_completa_em": "2026-06-11 quinta manhã (Cowork FASE 2 + escrita direta · pré-bloco BCE/PPI)",
+    "criado_em": "2026-06-10 quarta noite (FASE 1) + 2026-06-11 quinta manhã (FASE 2 Cowork)",
+    "licoes_aplicadas": [
+      "L61 estendida: DI comparado AJUSTE com AJUSTE (prints oficiais Resumo B3 10/06 · F31 ambíguo RESOLVIDO: fech 14,820 · ajuste 14,841)",
+      "L93: DI 4 lentes (Wyckoff do juro · sweep×displacement · fluxo · convicção BAIXA)",
+      "L89: venda só em premium / compra só em discount (4 cenários conferidos contra EQ)",
+      "L90: stop no lado certo nos 4 cenários",
+      "L91: RR calculado pelo meio da zona nos 4 cenários (todos ≥1,5)",
+      "L69: manchete e subtítulo QI 85 sem jargão",
+      "L71: fase Wyckoff com TF explícito (daily)",
+      "L15: agenda completa (BCE + serviços + PPI + Lagarde + leilões + 30y + IPCA amanhã)",
+      "L64/L1: zero dado inventado — overnight de prints Renato 07:44–07:50 + imprensa internacional · DI de prints oficiais",
+      "ADENDO 10/06 §6.3: telegram formato TEASER",
+      "L66: não vender embaixo sem estrutura (venda só em premium)"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker EOD quarta 10/06 (Renato): O 169.000 H 169.900 L 168.420 C 168.745 ajuste 168.897 −1.255/−0,74% · 25,51k contratos",
+      "preco_eod_wdo": "Print home broker EOD quarta 10/06 (Renato): O 5.220 H 5.223 L 5.184,5 C 5.208,5 ajuste 5.191,89 +5,00/+0,10% · 239,65k contratos",
+      "di_curva": "Prints oficiais Resumo B3 10/06 (Renato · quinta manhã): F27 ajuste 14,480 (−3,1bps) · F29 14,967 (−0,1) · F31 14,841 (+3,2) · ajuste-vs-ajuste",
+      "globais": "Prints Renato 07:44–07:50 (futuros NY · Treasuries · DXY · Brent · Ásia · agenda) + imprensa internacional overnight (2ª rodada 'concluída' · 49 Tomahawks · retaliação Irã em bases aliadas · AIEA · Catar) + abertura da imprensa financeira BR (BCE +25bp esperado · serviços abr · Copom assimétrico pra cima · Copasa/Engie)",
+      "cambio_fluxo": "BCB: fluxo cambial junho até dia 5 +US$2,588bi (ano +16,6bi) · dólar à vista −0,09% R$5,1726",
+      "placar_analisador": "bertani_app/track_record/performance_dia_2026-06-10.json: 20 análises · 0 operações"
+    }
+  }
+}
