@@ -318,10 +318,30 @@
       });
     },
 
+    /** 10/06/2026: injeta o link Métricas no menu principal de TODAS as páginas (1 edição · app inteiro).
+     *  Gated pra Tela Pro+ via applyNavGate (pattern 'metricas'). */
+    injectMetricasNav() {
+      const nav = document.querySelector('nav.app-nav .nav-links');
+      if (!nav || nav.querySelector('a[data-metricas]')) return;
+      // raiz vs subpasta (briefing/, educacao/, registro/, ...)
+      const depth = (window.location.pathname.match(/\//g) || []).length;
+      const prefix = window.location.pathname.indexOf('/briefing/') >= 0 || window.location.pathname.indexOf('/educacao/') >= 0 ||
+                     window.location.pathname.indexOf('/registro/') >= 0 || window.location.pathname.indexOf('/checklist/') >= 0 ||
+                     window.location.pathname.indexOf('/calculadora/') >= 0 ? '../' :
+                     (window.location.pathname.indexOf('/modelos/') >= 0 || window.location.pathname.indexOf('/fases/') >= 0 ? '../../' : '');
+      const a = document.createElement('a');
+      a.setAttribute('data-metricas', '1');
+      a.href = prefix + 'briefing/metricas.html';
+      a.textContent = 'Métricas';
+      // insere antes do Track Record (ou no fim)
+      const tr = Array.prototype.find.call(nav.querySelectorAll('a'), x => (x.getAttribute('href') || '').indexOf('historico') >= 0);
+      nav.insertBefore(a, tr || null);
+    },
+
     applyNavGate() {
       const isTelaPro = APP.access.has(APP.access.TIER_TELAPRO);
       if (isTelaPro) return;
-      const techPatterns = ['calculadora', 'educacao', 'historico', 'checklist', 'novo-trade'];
+      const techPatterns = ['calculadora', 'educacao', 'historico', 'checklist', 'novo-trade', 'metricas'];
       document.querySelectorAll('nav.app-nav .nav-links a').forEach(a => {
         const href = (a.getAttribute('href') || '').toLowerCase();
         if (techPatterns.some(p => href.indexOf(p) >= 0)) a.style.display = 'none';
@@ -357,6 +377,7 @@
   APP.init = function (opts) {
     opts = opts || {};
     const onReady = () => {
+      APP.ui.injectMetricasNav();
       APP.ui.activeNav();
       APP.ui.applyNavGate();
       APP.ui.renderAuthButton();
