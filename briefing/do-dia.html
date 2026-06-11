@@ -281,6 +281,18 @@
     .plano-cell .v.warn { color: var(--warn); }
     .plano-cell .v.gold { color: var(--gold); }
     .plano-cell .s { font-size: 12px; color: var(--muted-2); margin-top: 2px; }
+    .mapa-block { margin-top: 18px; border: 1px solid rgba(43,189,107,0.55); border-radius: 14px; padding: 16px 18px; background: rgba(20,28,44,0.45); }
+    .mapa-head { display: flex; flex-direction: column; gap: 2px; margin-bottom: 14px; }
+    .mapa-title { font-size: 13px; font-weight: 700; letter-spacing: 0.06em; color: #2bbd6b; }
+    .mapa-sub { font-size: 12px; color: var(--muted); }
+    .mapa-canvas { position: relative; }
+    .mapa-legend { display: flex; gap: 8px; flex-wrap: wrap; margin-top: 12px; }
+    .mapa-legend span { font-size: 11px; border-radius: 4px; padding: 3px 9px; }
+    .mapa-foot { border-top: 1px solid rgba(138,149,168,0.25); margin-top: 12px; padding-top: 10px; font-size: 12px; color: var(--muted); }
+    .mapa-cta { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; margin-top: 14px; border: 1px solid var(--gold); border-radius: 10px; padding: 12px 14px; text-decoration: none; }
+    .mapa-cta strong { font-size: 13px; color: var(--gold); }
+    .mapa-cta small { font-size: 11px; color: var(--muted); }
+    .mapa-cta-btn { background: var(--gold); color: #1a1505; font-size: 12px; font-weight: 700; border-radius: 8px; padding: 8px 14px; white-space: nowrap; }
 
     .tps-line {
       display: grid; grid-template-columns: repeat(3, 1fr);
@@ -567,6 +579,116 @@
         return /r/i.test(s) ? s : s + 'R';
       }
 
+      function mdParseZona(z) {
+        if (!z) return null;
+        var m = String(z).match(/\d[\d.]*(?:,\d+)?/g);
+        if (!m || !m.length) return null;
+        var n = m.slice(0, 2).map(function (t) { return parseFloat(t.replace(/\./g, '').replace(',', '.')); });
+        if (n.length === 1) n.push(n[0]);
+        return { lo: Math.min(n[0], n[1]), hi: Math.max(n[0], n[1]) };
+      }
+      function renderMapaDia(at, telaPro) {
+        try {
+          var nc = at.niveis_chave || {};
+          var cen = (at.plano && at.plano.cenarios) || [];
+          var venda = null, compra = null;
+          cen.forEach(function (c) {
+            var t = c.cenario || '';
+            if (!venda && /VENDA|SHORT/i.test(t)) venda = c;
+            else if (!compra && /COMPRA|LONG/i.test(t)) compra = c;
+          });
+          if (!venda && !compra) return null;
+          var zV = venda ? mdParseZona(venda.entry_zona) : null;
+          var zC = compra ? mdParseZona(compra.entry_zona) : null;
+          var pts = [];
+          function push(v) { if (typeof v === 'number' && isFinite(v)) pts.push(v); }
+          push(nc.PDH); push(nc.PDL); push(nc.EQ); push(nc.fechamento_anterior);
+          [venda, compra].forEach(function (c) { if (c) { push(c.stop); push(c.entry_meio); } });
+          if (zV) { push(zV.lo); push(zV.hi); }
+          if (zC) { push(zC.lo); push(zC.hi); }
+          if (pts.length < 4) return null;
+          var max = Math.max.apply(null, pts), min = Math.min.apply(null, pts);
+          var pad = (max - min) * 0.05 || 1;
+          max += pad; min -= pad;
+          var H = 440;
+          function y(p) { return Math.round((max - p) / (max - min) * H); }
+
+          var labels = [];
+          function lab(p, color, bold) {
+            if (typeof p !== 'number') return;
+            labels.push({ y: y(p), t: fmtPts(p), c: color || 'var(--muted)', b: !!bold });
+          }
+          var body = '';
+          body += '<div style="position:absolute;left:92px;top:0;bottom:0;width:1px;background:rgba(138,149,168,0.25);"></div>';
+          if (typeof nc.EQ === 'number') {
+            body += '<div style="position:absolute;left:100px;right:0;top:' + y(nc.EQ) + 'px;border-top:1px dashed rgba(138,149,168,0.6);"></div>';
+            body += '<div style="position:absolute;right:0;top:' + (y(nc.EQ) - 18) + 'px;font-size:11px;color:var(--muted);">meio do range — terra de ninguém</div>';
+            lab(nc.EQ, 'var(--muted)');
+          }
+          function zona(z, c, tipo) {
+            if (!z || !c) return;
+            var top = y(z.hi), h = Math.max(y(z.lo) - top, 34);
+            var isVenda = tipo === 'venda';
+            var bg = isVenda ? 'rgba(255,60,90,0.12)' : 'rgba(40,200,110,0.12)';
+            var bd = isVenda ? 'rgba(255,90,110,0.55)' : 'rgba(40,200,110,0.5)';
+            var tc = isVenda ? '#ff8093' : '#5fd99a';
+            var t1 = isVenda ? 'VENDER AQUI — preço caro' : 'COMPRAR AQUI — só com confirmação';
+            var t2 = (c.gatilho ? '' : '') + (isVenda ? 'rejeição confirmada' : 'retomada provada') + ' · stop ' + fmtPts(c.stop);
+            body += '<div style="position:absolute;left:100px;right:0;top:' + top + 'px;height:' + h + 'px;background:' + bg + ';border:1px solid ' + bd + ';border-radius:6px;display:flex;align-items:center;padding:0 12px;overflow:hidden;">';
+            body += '<div><div style="font-size:13px;font-weight:700;color:' + tc + ';">' + t1 + '</div>';
+            body += '<div style="font-size:11px;color:var(--muted);">' + t2 + '</div></div></div>';
+            lab(z.hi, 'var(--text-2)', true); lab(z.lo, 'var(--text-2)');
+            if (typeof c.stop === 'number') {
+              body += '<div style="position:absolute;left:100px;right:0;top:' + y(c.stop) + 'px;border-top:2px dashed var(--warn);"></div>';
+              body += '<div style="position:absolute;right:0;top:' + (y(c.stop) + (isVenda ? -18 : 4)) + 'px;font-size:11px;color:var(--warn);">stop da ' + tipo + '</div>';
+              lab(c.stop, 'var(--warn)', true);
+            }
+          }
+          zona(zV, venda, 'venda');
+          zona(zC, compra, 'compra');
+          if (typeof nc.fechamento_anterior === 'number') {
+            var fy = y(nc.fechamento_anterior);
+            body += '<div style="position:absolute;left:100px;right:0;top:' + fy + 'px;border-top:2px solid var(--text-2);"></div>';
+            body += '<div style="position:absolute;right:0;top:' + (fy - 22) + 'px;font-size:11px;color:var(--text-2);background:rgba(138,149,168,0.12);border-radius:4px;padding:1px 7px;">fechou aqui · ' + fmtPts(nc.fechamento_anterior) + '</div>';
+          }
+          if (typeof nc.PDL === 'number') {
+            body += '<div style="position:absolute;right:0;top:' + (y(nc.PDL) + 3) + 'px;font-size:11px;color:var(--gold);">fundo de ontem · ' + fmtPts(nc.PDL) + '</div>';
+            lab(nc.PDL, 'var(--gold)', true);
+          }
+          if (typeof nc.PDH === 'number') lab(nc.PDH, 'var(--text-2)', true);
+          labels.sort(function (a, b) { return a.y - b.y; });
+          var lastY = -99;
+          labels.forEach(function (L) {
+            if (L.y - lastY < 15) return;
+            lastY = L.y;
+            body += '<div style="position:absolute;left:0;width:84px;top:' + (L.y - 8) + 'px;text-align:right;font-family:var(--mono);font-size:12px;' + (L.b ? 'font-weight:700;' : '') + 'color:' + L.c + ';">' + L.t + '</div>';
+          });
+
+          var alvosTxt = [];
+          if (venda && venda.alvos && venda.alvos.length) alvosTxt.push('Venda → alvos ' + venda.alvos.map(function (a) { return fmtPts(a.nivel); }).join(' / '));
+          if (compra && compra.alvos && compra.alvos.length) alvosTxt.push('Compra → alvos ' + compra.alvos.map(function (a) { return fmtPts(a.nivel); }).join(' / '));
+          var contrTxt = '';
+          if (telaPro) {
+            var cc = [];
+            if (venda && venda.contratos) cc.push('venda ' + venda.contratos + ' contrato' + (venda.contratos > 1 ? 's' : ''));
+            if (compra && compra.contratos) cc.push('compra ' + compra.contratos + ' contrato' + (compra.contratos > 1 ? 's' : ''));
+            if (cc.length) contrTxt = ' · Tela Pro: ' + cc.join(' · ') + ' (risco ≤1% banca 30k)';
+          }
+
+          var out = '';
+          out += '<div class="mapa-block">';
+          out += '<div class="mapa-head"><span class="mapa-title">🗺 MAPA DO DIA</span><span class="mapa-sub">o preço diz o que fazer em cada região · fora das zonas, não existe trade</span></div>';
+          out += '<div class="mapa-canvas" style="height:' + H + 'px;">' + body + '</div>';
+          out += '<div class="mapa-legend"><span style="color:#ff8093;background:rgba(255,60,90,0.12);">vermelho = zona de venda</span><span style="color:#5fd99a;background:rgba(40,200,110,0.12);">verde = zona de compra</span><span style="color:var(--warn);background:rgba(138,149,168,0.1);">tracejado = stop</span></div>';
+          out += '<div class="mapa-foot">' + alvosTxt.join(' · ') + (alvosTxt.length ? ' · ' : '') + 'parciais 50/30/20 · risco 1% do PL' + contrTxt + '</div>';
+          out += '<a class="mapa-cta" href="https://www.youtube.com/@renatobertani" target="_blank" rel="noopener">';
+          out += '<span><strong>🤖 O mapa é o plano. O gatilho é AO VIVO.</strong><br><small>O Analisador Bertani vigia essas zonas o pregão inteiro e mostra quando o preço dá entrada.</small></span>';
+          out += '<span class="mapa-cta-btn">Ver o Analisador agora ▶</span></a>';
+          out += '</div>';
+          return out;
+        } catch (e) { console.error('[mapa-do-dia]', e); return null; }
+      }
+
       function loadIntradaySnap(briefingDate) {
         var el = document.getElementById('intraday-snap');
         if (!el) return;
@@ -824,8 +946,11 @@
           html += '<div class="racional-block" style="filter: blur(4px); opacity: 0.5; user-select: none;">' + (at.racional_publico || '') + '</div>';
         }
 
-        // Plano operacional · só renderiza se ATIVO tem plano (briefings AGUARDAR não têm)
-        if (at.plano && hasBriefing) {
+        // Plano operacional · MAPA DO DIA quando o JSON traz cenarios[] (v1 11/06/2026) · fallback pro card antigo
+        var mapaHtml = (hasBriefing && at.plano && at.plano.cenarios && at.plano.cenarios.length && at.niveis_chave) ? renderMapaDia(at, hasTelaPro) : null;
+        if (mapaHtml) {
+          html += mapaHtml;
+        } else if (at.plano && hasBriefing) {
           var planoCls = at.plano.direcao === 'SHORT' ? 'short' : 'long';
           var dirIcon = at.plano.direcao === 'SHORT' ? '▼' : '▲';
           var dirCol = at.plano.direcao === 'SHORT' ? 'warn' : 'ok';
