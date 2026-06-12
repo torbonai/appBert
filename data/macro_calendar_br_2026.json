@@ -154,13 +154,13 @@
       },
       {
         "hora_brt": "09:15",
-        "evento": "🇪🇺 Decisão de juros BCE + coletiva Lagarde (~09:45) (CONFIRMAR HORÁRIO)",
+        "evento": "🇪🇺 Decisão de juros BCE + coletiva Lagarde (~09:45)",
         "fonte": "BCE",
         "impacto": "ALTO",
         "tag": "bce_decisao",
         "janela_evitar": "09:10-10:15",
-        "review_required": true,
-        "nota": "Choque de energia da guerra deve elevar projeções de inflação do BCE · overnight EUA-Irã (ataque prometido por Trump quarta à noite) é o curinga do dia"
+        "review_required": false,
+        "nota": "RESULTADO: SUBIU 25bp → 2,25% (1ª alta desde set/2023 · choque de energia da guerra). Lagarde: inflação volta à meta só no 2S/2027 · 'riscos para o crescimento são negativos' · monitora dimensão/persistência dos preços de energia · próximos passos em aberto. (atualizado 12/06 FASE 2 #29)"
       },
       {
         "hora_brt": "09:30",
@@ -186,23 +186,24 @@
     "2026-06-12": [
       {
         "hora_brt": "09:00",
-        "evento": "🇧🇷 IPCA maio/2026 — MARKET MOVER BR (CONFIRMAR HORA com IBGE)",
+        "evento": "🇧🇷 IPCA maio/2026 — MARKET MOVER BR",
         "fonte": "IBGE",
         "impacto": "ALTO",
         "tag": "ipca",
-        "janela_evitar": "08:30-10:00",
-        "review_required": true
+        "janela_evitar": "08:50-09:45",
+        "review_required": true,
+        "nota": "Proj Broadcast: mensal 0,55% (ant 0,67%) · 12 MESES ACELERA 4,39%→4,68% (acima do teto) · núcleos 0,50→0,45 marginal · serviços subjacentes elevados. 5 dias do Copom: valida ou mata os ~60% de corte precificados em 11/06. ATUALIZAR ESTA NOTA COM O RESULTADO às 9h (padrão · Analisador lê)"
       }
     ],
     "2026-06-17": [
       {
         "hora_brt": "18:30",
-        "evento": "🇧🇷 Copom — decisão Selic (CONFIRMAR DATA · mercado: 70% manutenção 14,50%)",
+        "evento": "🇧🇷 Copom — decisão Selic",
         "fonte": "BCB",
         "impacto": "ALTO",
         "tag": "copom_decisao",
         "review_required": true,
-        "nota": "Pós-fechamento B3 mas dia inteiro é build-up · curva embute Selic ~15%"
+        "nota": "REPRICING 11/06 (acordo EUA-Irã + DI bull flatten −40bps no miolo): corte de 0,25 voltou a ser MAJORITÁRIO (~60% vs ~30% véspera · Bmg) · Selic terminal 2026 caiu 15,05%→14,80% · IPCA de 12/06 e assinatura do acordo (domingo · Genebra) podem reprecificar de novo · BGC mantém manutenção (atualizado 12/06 FASE 2 #29)"
       }
     ]
   }

@@ -1,0 +1,190 @@
+{
+  "data": "2026-06-12",
+  "data_extenso": "Sexta-feira, 12 de junho de 2026",
+  "hora_publicacao": "08:00",
+  "edicao": 29,
+  "autor": {
+    "nome": "Renato Bertani",
+    "registro": "Analista CNPI · T 9644"
+  },
+  "destaque": {
+    "manchete": "_PENDENTE_FASE2_ (framing pós-overnight · eixo provável: euforia do acordo NÃO ASSINADO × IPCA 9h que pode azedar a festa do corte de Selic × binário de fim de semana (assinatura sábado/segunda) · QI 85 sem jargão L69)",
+    "subtitulo": "_PENDENTE_FASE2_"
+  },
+  "resumo_30s": {
+    "win_linha": "_PENDENTE_FASE2_ · base: WIN EXPLODIU +3.110 pts (+1,84%) com Trump cancelando os ataques e anunciando acordo 'praticamente concluído' — rompeu o topo de terça (172.360 > 171.170 = estrutura de baixa NEGADA, squeeze que o filtro #28 alertou) · fechou 171.855 em PREMIUM (EQ 170.440)",
+    "wdo_linha": "_PENDENTE_FASE2_ · base: WDO DESABOU −83,50 (−1,60% · fech 5.125 em discount profundo) · dólar à vista −1,37% a R$5,1016 (mín 5,0921) = melhor moeda emergente do dia · real surfou acordo + diferencial de juros",
+    "janela_operacional": "_PENDENTE_FASE2_ · base: IPCA 09:00 ★★★ = não operar na abertura · binário de fim de semana (assinatura do acordo sábado/segunda) = cuidado com posição pro fim do dia",
+    "nivel_chave": "WIN EQ 170.440 · PDH 172.360 · PDL 168.520 · ajuste 171.886 | WDO EQ 5.160,75 · PDH 5.206 · PDL 5.115,5 · ajuste 5.140,34 | DI: BULL FLATTEN MONSTRO (miolo −40,8bps)",
+    "agenda_top1": "🇧🇷 IPCA maio 09:00 ★★★ — proj mensal 0,53% (ant 0,67%) MAS 12 meses ACELERA pra 4,66% (ant 4,39%) · 5 dias do Copom · pode validar ou matar os 60% de corte que a curva precificou hoje"
+  },
+  "contexto_macro": {
+    "nivel_vento": "_PENDENTE_FASE2_ (provável FORTE: euforia de acordo não assinado + IPCA ★★★ na abertura + estreia SpaceX no Nasdaq + binário de fim de semana)",
+    "highlights": [
+      "📌 Briefing #29 FASE 1 noturna (quinta 11/06 ~22h · sessão Cowork · preliminar pra sexta 12/06). Núcleo de preço EOD quinta oficial (prints Renato) + DI oficial ajuste-vs-ajuste incorporados.",
+      "📊 WIN EOD quinta 11/06 (print): abertura 169.635, máxima (PDH) 172.360, mínima (PDL) 168.520, fechamento 171.855, ajuste B3 171.886, variação +3.110 pts (+1,84%), amplitude 3.840, contratos 47,00k, em aberto 178.404. EQ = (172.360+168.520)/2 = 170.440. 🚀 DIA DE SQUEEZE: rompeu o topo de terça (171.170) e fez máxima 172.360 — a estrutura de baixa foi NEGADA (a nova mínima de quarta 168.420 virou Spring confirmado · higher high no daily). Fechou em PREMIUM. Ibovespa +1,71% aos 171.497 (máx 171.926) · volume R$30,4bi.",
+      "💵 WDO EOD quinta 11/06 (print): abertura 5.197,00, máxima (PDH) 5.206,00, mínima (PDL) 5.115,50, fechamento 5.125,00, ajuste B3 5.140,34, variação −83,50 (−1,60%), amplitude 90,50, contratos 282,11k, em aberto 871.228. EQ = 5.160,75. Fechou em DISCOUNT PROFUNDO. Dólar à vista −1,37% a R$5,1016 (máx 5,1820 de manhã · mín 5,0921 à tarde) = melhor moeda emergente do dia · futuro jul 5.124 (−1,62%) · DXY −0,30%.",
+      "💵 Juros futuros BR (ajustes oficiais B3 quinta vs quarta · prints): BULL FLATTEN MONSTRO — F27 14,331 (−14,9bps), F29 14,559 (−40,8bps), F31 14,462 (−37,9bps). Curva inteira derreteu com o acordo (estopim EXTERNO, não doméstico): 'DIs tocaram mínimas intradia e continuaram queimando prêmios' · aposta de corte de 0,25 no Copom (17/06) voltou a ser MAJORITÁRIA (~60% vs ~30% na véspera) · Selic terminal 2026 cedeu de 15,05% pra 14,80%. ⚠️ Contraponto: profissionais chamam de correção de 'exagero' (curva flertou com 15%) e a PMS quente foi 'completamente ignorada' — a curva está operando manchete, não dado.",
+      "🕊️ TRUMP CANCELOU OS ATAQUES E ANUNCIOU ACORDO COM O IRÃ: 'praticamente concluído' · memorando de entendimento 'muito forte' · assinatura 'em breve, talvez no fim de semana' (sábado ou segunda · na Europa · JD Vance representaria os EUA) · Khamenei teria aprovado os termos e 'todos no Irã aprovaram' · Teerã quer o acordo 'muito mais' que Washington · EUA suspendem bloqueio marítimo na assinatura · Estreito de Ormuz reaberto com a assinatura (Axios: termos incluem liberação de ativos iranianos + reabertura de Ormuz). Mediação elogiada do Paquistão/Catar.",
+      "⚠️ MAS O ACORDO NÃO ESTÁ ASSINADO — contradições abertas: fontes do Irã e de Israel NEGARAM que houvesse entendimento até o início da tarde · agência Fars: dúvida sobre QUAL versão Trump se refere (se for a proposta DO IRÃ, sem as exigências dos EUA, alta chance de aprovação) · NY Post: Irã entregou último rascunho ao Catar ontem · o próprio Trump se contradisse ('Ormuz será aberto com a assinatura' → 'Ormuz está aberto há meses'). Sexta é véspera do binário: assinatura no fim de semana OU frustração na segunda.",
+      "📉➡️📈 REAÇÃO DA QUINTA: petróleo fechou −4% no regular e ampliava pra −5% no eletrônico — Brent e WTI ABAIXO de US$90 (Mizuho: petróleo em tendência de queda desde meados de maio · mercado já acreditava em acordo) · NY: Dow +1,86% · S&P +1,75% · tech +2,94% (semis no centro · véspera da estreia da SpaceX) · Treasuries nas mínimas do dia (30 anos voltou ABAIXO de 5%) · ouro com suporte em US$4.200 · Commerzbank vê euro a US$1,16 no fim do mês SE acordo + Ormuz reaberto duradouro · FMI reduziu projeções da zona do euro (inflação mais alta + atividade mais fraca · ING/Capital: BCE mantém porta aberta pra MAIS altas).",
+      "🇧🇷 IPCA maio AMANHÃ 09:00 ★★★: proj mensal 0,53% (ant 0,67%) · COM AJUSTE 0,63% ant · ⚠️ 12 MESES ACELERA: proj 4,66% (ant 4,39%). É o teste da festa: a curva precificou corte (60%) IGNORANDO a PMS de hoje que veio o DOBRO da mediana (+1,2% m/m vs 0,6% proj · 'era pra ter feito preço, foi completamente ignorado' · BGC mantém manutenção: 'não há motivo pro BC cortar, muito pelo contrário'). IPCA quente = curva devolve o rally e WIN perde combustível doméstico · IPCA benigno = valida o corte e o rally ganha segunda perna.",
+      "🚀 SPACEX ESTREIA NO NASDAQ SEXTA: tech +2,94% na véspera · BlackRock pediu compra de US$5bi em papéis · IPO drena fluxo global (inclusive da B3: 'o estrangeiro saiu por geopolítica E pela onda de IPOs tech — troca de cavalo' · Azimut) · Brasil barato: 8,5x P/L vs 10,5x histórico · pré-condições pro fluxo voltar (Azimut/Carlier): fim das hostilidades confirmado + fim das ofertas tech + cenário eleitoral + cortes de juros.",
+      "🇧🇷🇺🇸 SEXTA também tem: reunião Brasil-EUA sobre tarifas (remota · MDIC Márcio Elias Rosa × USTR Jamieson Greer · Seção 301 · sensível pro fluxo/risco BR) + produção/vendas de veículos 11:00 + Michigan 11:00 (expectativas de inflação) + CFTC 16:30. Semana que vem: COPOM QUARTA 17/06 + Fed/Warsh.",
+      "📌 Status #28 (quinta): WIN 4 e WDO 4 AGUARDAR com cenários condicionais. VENDA cancelou CEDO e certo (gatilho de cancelamento 170.150 atropelado pelo rally — a regra protegeu). COMPRA: a zona 168.450–168.750 FOI TOCADA (mínima do dia 168.520) e os DOIS alvos bateram com folga (TP1 169.900 RR 2,36 · TP2 170.800 RR 4,0 — o dia foi a 172.360) — _PENDENTE_FASE2_ confirmar o HORÁRIO da mínima (se foi dentro da janela proibida 09:00–10:00, registrar honesto: zona certa, janela vetada). Analisador B3: venda 171.950 às 17:15 no topo varrido (172.100/172.370) → fechada manual 17:55 a ~171.635 = +315 pts (não carregar overnight) · acumulado +1.249 pts · 9 ops · 63% acerto desde 01/06."
+    ],
+    "filtro_anti_narrativa": {
+      "ativa": true,
+      "intensidade": "_PENDENTE_FASE2_ (provável ALTA)",
+      "narrativa_dominante": "_PENDENTE_FASE2_ · provável (INVERTEU DE LADO pela 1ª vez em semanas): 'acordo feito · guerra acabou · petróleo despenca · corte de Selic vem · compra tudo'",
+      "fonte_observada": "Consenso pós-anúncio Trump (cancelamento dos ataques + 'acordo praticamente concluído')",
+      "regua_por_ativo": "_PENDENTE_FASE2_ (montar 3 estados WIN/WDO após overnight final · atenção: agora a narrativa é ALTISTA e o risco escondido é o squeeze contrário — frustração da assinatura)",
+      "contra_evidencias": [
+        "O acordo NÃO está assinado: memorando previsto pra 'sábado ou segunda' · fontes do Irã e de Israel negaram entendimento até o início da tarde · Fars questiona QUAL versão foi aprovada",
+        "O próprio Trump se contradisse no mesmo dia ('Ormuz abre com a assinatura' → 'Ormuz está aberto há meses') — manchete dele é instrumento de negociação, não fato (padrão da semana inteira)",
+        "A curva de juros ignorou DADO DOMÉSTICO QUENTE pra operar manchete externa: PMS veio o DOBRO da mediana (+1,2% vs 0,6%) e foi 'completamente ignorada' · IPCA 12m deve ACELERAR pra ~4,66% amanhã 09:00",
+        "Queda dos DIs de 40bps no miolo em UM dia = mesmo 'exagero' do estresse, agora no sentido oposto — curva refém de manchete nos dois lados",
+        "WIN subiu +1,84% e fechou em premium extremo — comprar esticado em véspera de IPCA + fim de semana binário é perseguir preço (L89)",
+        "Estreia da SpaceX drena fluxo global na sexta — rally sem gringo novo na B3 (saída de junho ainda não revertida)"
+      ],
+      "leitura_bertani": "_PENDENTE_FASE2_ · base: a narrativa virou de lado mas o método não muda — agora o consenso é EUFORIA e o risco escondido é a frustração (assinatura que não vem + IPCA quente). WIN em premium pós-squeeze: comprar só em pullback com estrutura · vender só com gatilho de frustração real. WDO em discount profundo: vender esticado não · comprar só se o acordo desandar. O IPCA das 9h é o juiz doméstico do rally."
+    },
+    "di_curva": {
+      "leitura": "DI EOD quinta 11/06 oficial (ajuste vs ajuste · prints): BULL FLATTEN MONSTRO — F27 14,331 (−14,9bps), F29 14,559 (−40,8bps), F31 14,462 (−37,9bps). Curva inteira derreteu com o anúncio do acordo (estopim externo) · corte de 0,25 no Copom voltou a 60% · Selic terminal 14,80%. Movimento ≥5bps em TODOS os vértices = sinal forte· miolo caindo mais = mercado precifica ciclo de corte adiante.",
+      "vertices_bps": {
+        "1y_F27": "−14,9bps (ajuste 14,331 vs 14,480)",
+        "3y_F29": "−40,8bps (ajuste 14,559 vs 14,967 · MIOLO LIDEROU)",
+        "5y_F31": "−37,9bps (ajuste 14,462 vs 14,841)"
+      },
+      "fonte": "Prints oficiais Resumo B3 EOD quinta 11/06 (Renato) · ajuste-contra-ajuste · L61",
+      "implicacao": "_PENDENTE_FASE2_ (4 LENTES L93 com overnight + IPCA: lente 1 — topo do ciclo de juro CONFIRMOU e virou · lente 2 — displacement ou sweep de manchete? fechamento nas mínimas sugere displacement MAS o gatilho é um acordo NÃO assinado · lente 3 — fluxo gringo ainda negativo em junho · lente 4 — convicção depende do IPCA 9h e da assinatura. Bull flatten favorece WIN long/WDO short ENQUANTO a manchete segurar.)"
+    }
+  },
+  "ativos": [
+    {
+      "codigo": "WIN1!",
+      "nome": "Mini Índice Bovespa",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: Spring de quarta (168.420) CONFIRMADO + SOS — rompeu o topo de terça 171.170 com range de 3.840 pts e fechou em premium · markdown NEGADO · possível Fase D de acumulação/markup inicial no daily · definir TF explícito L71 + checar volume do rompimento)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: comprar só PULLBACK com estrutura (EQ 170.440 / origem do rompimento ~170.900-171.200) · NÃO comprar esticado em premium L89 · vender só com frustração REAL do acordo)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 171886,
+        "ajuste_b3_data": "2026-06-11",
+        "fechamento_anterior": 171855,
+        "PDH": 172360,
+        "PDL": 168520,
+        "maxima_anterior": 172360,
+        "minima_anterior": 168520,
+        "abertura_anterior": 169635,
+        "range_anterior_pts": 3840,
+        "variacao_anterior_pts": 3110,
+        "variacao_anterior_pct": 1.84,
+        "EQ": 170440,
+        "contratos_negociados": 47000,
+        "contratos_em_aberto": 178404,
+        "_nota": "EOD quinta 11/06 (print): O 169.635 · H/PDH 172.360 · L/PDL 168.520 · C 171.855 · ajuste 171.886 · +3.110 (+1,84%) · amplitude 3.840 · 47,00k contratos (volume FORTE vs 25,5k quarta). EQ=(172.360+168.520)/2=170.440. Rompeu o topo de terça 171.170 = higher high · fechou premium. Mínima 168.520 tocou a zona de compra do #28 (168.450-168.750)."
+      },
+      "ajuste_b3_meta": {
+        "valor": 171886,
+        "data_referencia": "2026-06-11",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-11)"
+      },
+      "plano": "_PENDENTE_FASE2_ (premium/discount L89 · RR≥1,5 L6 · stop lado certo L90 · RR pelo meio L91 · IPCA 9h + assinatura no fim de semana definem o mapa)",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    },
+    {
+      "codigo": "WDO1!",
+      "nome": "Mini Dólar",
+      "fase_wyckoff": "_PENDENTE_FASE2_ (base: markdown forte no daily — perdeu o range 5.177-5.223 com amplitude 90,5 e fechou em discount profundo · real melhor EM do dia · estrutura vendedora ENQUANTO acordo segurar)",
+      "score": "_PENDENTE_FASE2_",
+      "veredito": "_PENDENTE_FASE2_",
+      "vies": "_PENDENTE_FASE2_ (lean: vender só REPIQUE ao premium (região 5.160-5.180) com falha · NÃO vender esticado no fundo L89 · comprar só se acordo desandar/IPCA explodir)",
+      "racional_publico": "_PENDENTE_FASE2_",
+      "niveis_chave": {
+        "ajuste_b3": 5140.34,
+        "ajuste_b3_data": "2026-06-11",
+        "fechamento_anterior": 5125.0,
+        "PDH": 5206.0,
+        "PDL": 5115.5,
+        "maxima_anterior": 5206.0,
+        "minima_anterior": 5115.5,
+        "abertura_anterior": 5197.0,
+        "range_anterior_pts": 90.5,
+        "variacao_anterior_pts": -83.5,
+        "variacao_anterior_pct": -1.6,
+        "EQ": 5160.75,
+        "contratos_negociados": 282110,
+        "contratos_em_aberto": 871228,
+        "_nota": "EOD quinta 11/06 (print): O 5.197,00 · H/PDH 5.206,00 · L/PDL 5.115,50 · C 5.125,00 · ajuste 5.140,34 · −83,50 (−1,60%) · amplitude 90,50 · 282,11k contratos. EQ=5.160,75. Fechou discount profundo. Dólar à vista −1,37% R$5,1016 (mín 5,0921 · menor desde 03/06) · spot rompeu R$5,10 intradia."
+      },
+      "ajuste_b3_meta": {
+        "valor": 5140.34,
+        "data_referencia": "2026-06-11",
+        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-11)"
+      },
+      "plano": "_PENDENTE_FASE2_",
+      "comentario_breve": "_PENDENTE_FASE2_"
+    }
+  ],
+  "agenda_macro": [
+    { "hora_brt": "06:00", "evento": "China: novos empréstimos (mai)", "pais": "CN", "impacto": "MEDIO", "projecao": "450,0B (ant −10,0B)" },
+    { "hora_brt": "09:00", "evento": "Leilão de abertura B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "09:00-09:25" },
+    { "hora_brt": "09:00", "evento": "IPCA maio — MARKET MOVER BR", "pais": "BR", "impacto": "ALTO", "projecao": "mensal 0,53% (ant 0,67%) · 12 meses 4,66% (ant 4,39% = ACELERAÇÃO) · com ajuste ant 0,63%", "janela_evitar": "08:50-09:45", "nota": "5 dias do Copom (17/06) · valida ou mata os 60% de corte precificados · NÃO operar antes nem na digestão" },
+    { "hora_brt": "11:00", "evento": "Produção e vendas de veículos (mai)", "pais": "BR", "impacto": "MEDIO", "projecao": "ant −9,5% / −7,8%" },
+    { "hora_brt": "11:00", "evento": "Michigan: confiança + expectativas de inflação (jun · preliminar)", "pais": "US", "impacto": "MEDIO", "projecao": "confiança 44,3 (ant 44,1) · expectativa 1a ant 4,8% · 5a ant 3,9%" },
+    { "hora_brt": "_VALIDAR_", "evento": "Reunião Brasil-EUA sobre tarifas (remota · MDIC × USTR · Seção 301)", "pais": "BR/US", "impacto": "MEDIO", "nota": "sensível pro fluxo/risco BR · sem horário divulgado" },
+    { "hora_brt": "_VALIDAR_", "evento": "Estreia da SpaceX no Nasdaq (IPO)", "pais": "US", "impacto": "MEDIO", "nota": "drena fluxo global · termômetro tech (véspera +2,94%)" },
+    { "hora_brt": "14:00", "evento": "Baker Hughes: contagem de sondas", "pais": "US", "impacto": "BAIXO" },
+    { "hora_brt": "16:30", "evento": "CFTC: posições líquidas de especuladores (BRL · S&P · Nasdaq · ouro · petróleo)", "pais": "US", "impacto": "BAIXO" },
+    { "hora_brt": "17:45", "evento": "Leilão de fechamento B3", "pais": "BR", "impacto": "ALTO", "janela_evitar": "17:45-17:55" },
+    { "hora_brt": "fim de semana", "evento": "POSSÍVEL ASSINATURA do acordo EUA-Irã ('sábado ou segunda' · na Europa)", "pais": "GLOBAL", "impacto": "ALTO", "nota": "binário de fim de semana: assinou = gap de continuação segunda · frustrou = devolve tudo · gerenciar posição de sexta com isso em mente" },
+    { "hora_brt": "_PENDENTE_", "evento": "_PENDENTE_FALCAO_SEXTA_711_ — completar agenda do dia (LIÇÃO 15)", "pais": "BR/US", "impacto": "ALTO", "nota": "Semana que vem: COPOM quarta 17/06 + Fed/Warsh" }
+  ],
+  "kill_zones_recomendadas": [
+    "_PENDENTE_FASE2_ · base: evitar 09:00–09:45 (leilão + IPCA 09:00 + digestão) · janela principal provável 09:45/10:00–11:00 COM gatilho · atenção 11:00 (veículos BR + Michigan) · fim do dia: reduzir/zerar antes do leilão (binário de fim de semana)"
+  ],
+  "regras_do_dia": [
+    "_PENDENTE_FASE2_ · base: IPCA 9h decide o lado doméstico — não operar antes · não comprar WIN esticado em premium pós-squeeze (L89) · não vender WDO esticado no fundo · acordo NÃO assinado: manchete de frustração invalida tudo fora de hora · NÃO carregar posição pesada pro fim de semana (assinatura sábado/segunda = binário) · stop físico SEMPRE"
+  ],
+  "eventos_bertani": [],
+  "compliance": {
+    "registro": "Analista CNPI credenciado pela APIMEC · registro T 9644",
+    "resolucao": "CVM 20/2021",
+    "disclaimer": "Este relatório não constitui oferta ou solicitação de compra/venda. Operações alavancadas envolvem risco de perda superior ao capital investido. Resultados passados não garantem retornos futuros. Antes de operar consulte seu assessor de investimentos."
+  },
+  "_meta": {
+    "fase": "PARCIAL_AGUARDANDO_FASE2",
+    "criado_em": "2026-06-11 quinta noite (sessão Cowork · FASE 1 noturna · pré-briefing #29)",
+    "fase_1_noturna_completa_em": "2026-06-11 quinta ~22h · núcleo de preço EOD oficial WIN/WDO (prints Renato) + DI oficial ajuste-vs-ajuste (prints) + Cenário-2/Falcão fechamento completo + falas Trump tarde (Khamenei aprovou · memorando · Ormuz) + agenda Investing sexta",
+    "pendentes_fase_2": [
+      "OVERNIGHT É O DADO Nº1: o acordo avançou/assinou/frustrou? Manchetes da madrugada + petróleo (fechou −4/−5% · <US$90) + futuros NY + Ásia + DXY/USDJPY/Treasuries. Trump prometeu assinatura 'sábado ou segunda' — qualquer desmentido iraniano/israelense muda o dia.",
+      "IPCA 09:00 ★★★ sai DEPOIS do publish (padrão #27/CPI): publicar pré-IPCA com cenários condicionais + update intraday com data_source (L64) quando sair.",
+      "DI: ajustes oficiais JÁ CRAVADOS pelos prints (−14,9/−40,8/−37,9) — validar no Falcão 7h11 se não houve revisão + completar 4 LENTES (L93) com overnight.",
+      "agenda: completar com Falcão da manhã (L15) + horário da reunião Brasil-EUA + estreia SpaceX.",
+      "score_veredito_setups WIN e WDO: WIN premium pós-squeeze (comprar só pullback com estrutura · EQ 170.440 · origem do rompimento) · WDO discount profundo (vender só repique). Premium/discount L89 · RR≥1,5 L6 · stop L90 · meio da zona L91.",
+      "status #28 honesto: confirmar HORÁRIO da mínima 168.520 de quinta (se dentro da janela proibida 09:00-10:00, registrar 'zona certa · janela vetada · alvos bateram') + placar Analisador consolidado (+315 fechada manual 17:55).",
+      "manchete_subtitulo: QI 85 sem jargão (L69) · sem fonte upstream (L67) · anti-anchoring: 'guerra acabou' AINDA NÃO é fato — é memorando não assinado.",
+      "filtro: régua 3 estados — ATENÇÃO: narrativa INVERTEU pra altista · risco escondido agora é frustração da assinatura + IPCA quente.",
+      "nivel_vento: confirmar (FORTE provável).",
+      "BCE de quinta: confirmar resultado oficial (+25bp esperado) e atualizar a nota do evento 11/06 no macro_calendar (padrão novo · Analisador lê) — verificar se foi feito."
+    ],
+    "licoes_aplicadas": [
+      "LIÇÃO 1/64: ZERO dado inventado · preço/DI oficiais dos prints · overnight e horário da mínima marcados pendentes",
+      "LIÇÃO 54: fase PARCIAL honesta · pendentes explícitos",
+      "LIÇÃO 61: DI ajuste-vs-ajuste (14,331/14,559/14,462 vs 14,480/14,967/14,841) · WIN fech 171.855 ≠ ajuste 171.886 · WDO fech 5.125 ≠ ajuste 5.140,34",
+      "LIÇÃO 15: agenda não classificada como calma · IPCA + SpaceX + tarifas + assinatura fim de semana + Copom 17/06 destacados",
+      "LIÇÃO 93: DI 4 lentes marcadas pra FASE 2 (dia de DI FORTE · pré-flight obrigatório)",
+      "LIÇÃO 89: WIN fechou premium (não comprar esticado) · WDO discount profundo (não vender esticado)",
+      "LIÇÃO 66 (espelhada): squeeze contra vendedor atrasado ACONTECEU como o filtro #28 alertou — virou case do método"
+    ],
+    "fontes": {
+      "preco_eod_win": "Print home broker EOD quinta 11/06 (Renato): O 169.635 H 172.360 L 168.520 C 171.855 ajuste 171.886 +3.110/+1,84% · 47,00k contratos",
+      "preco_eod_wdo": "Print home broker EOD quinta 11/06 (Renato): O 5.197 H 5.206 L 5.115,5 C 5.125 ajuste 5.140,34 −83,50/−1,60% · 282,11k contratos",
+      "di_curva": "Prints oficiais Resumo B3 EOD quinta 11/06 (Renato): F27 ajuste 14,331 (−14,9bps) · F29 14,559 (−40,8bps) · F31 14,462 (−37,9bps)",
+      "globais": "Cenário-2/fechamento (quinta noite): Trump cancelou ataques + acordo 'praticamente concluído' + assinatura fim de semana + Khamenei/todos aprovaram + suspensão bloqueio marítimo + Ormuz · contradições (Fars/fontes Irã-Israel/NYP/Axios) · petróleo −4/−5% <US$90 · NY +1,75/+2% (tech +2,94 · SpaceX D-1) · Treasuries mínimas (30y <5%) · Ibov +1,71% 171.497 vol R$30,4bi · dólar à vista −1,37% R$5,1016 melhor EM · DXY −0,30% · FMI zona euro · Commerzbank euro 1,16 · PMS +1,2% (2x mediana · ignorada) · Copom 60% corte · Selic terminal 14,80% · BGC contra · Azimut/Boragini fluxo-IPOs-múltiplos 8,5x",
+      "agenda": "Print Investing (quinta 21h56 · agenda de sexta 12/06): IPCA 09:00 (0,53%/4,66%) · veículos 11:00 · Michigan 11:00 · Baker Hughes 14:00 · CFTC 16:30 · China empréstimos 06:00 · _PENDENTE_FALCAO_SEXTA_711_ completar"
+    }
+  }
+}
