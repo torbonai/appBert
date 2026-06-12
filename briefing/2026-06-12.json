@@ -120,7 +120,7 @@
       "ajuste_b3_meta": {
         "valor": 171886,
         "data_referencia": "2026-06-11",
-        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-11)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-11)"
       },
       "plano": {
         "direcao": "AGUARDAR o IPCA 09:00 · operar só pós-digestão (≥09:45/10:00) na zona certa COM gatilho · NÃO perseguir o rally",
@@ -196,14 +196,14 @@
       "vies": "Vendedor condicional: VENDA só em REPIQUE à região cara com falha · COMPRA só com frustração do acordo ou IPCA explosivo · NUNCA vender esticado no fundo",
       "racional_publico": "O dólar despencou no dia do anúncio e fechou no fundo — o real foi a melhor moeda emergente do mundo ontem. Vender aqui embaixo é chegar atrasado na festa: se o preço repicar até a região cara e falhar, aí sim existe venda com lógica. E o jogo inverte com um gatilho só: se o acordo desandar no fim de semana ou a inflação das 9h vier quente, o desmonte de ontem vira recompra rápida — por isso a compra existe, mas só com esse gatilho. Hoje o juiz é o IPCA.",
       "niveis_chave": {
-        "ajuste_b3": 5140.34,
+        "ajuste_b3": 5140.339,
         "ajuste_b3_data": "2026-06-11",
-        "fechamento_anterior": 5125.0,
-        "PDH": 5206.0,
+        "fechamento_anterior": 5125,
+        "PDH": 5206,
         "PDL": 5115.5,
-        "maxima_anterior": 5206.0,
+        "maxima_anterior": 5206,
         "minima_anterior": 5115.5,
-        "abertura_anterior": 5197.0,
+        "abertura_anterior": 5197,
         "range_anterior_pts": 90.5,
         "variacao_anterior_pts": -83.5,
         "variacao_anterior_pct": -1.6,
@@ -213,9 +213,9 @@
         "_nota": "EOD quinta 11/06 (print): O 5.197,00 · H/PDH 5.206,00 · L/PDL 5.115,50 · C 5.125,00 · ajuste 5.140,34 · −83,50 (−1,60%) · amplitude 90,50 · 282,11k contratos. EQ=5.160,75. Fechou discount profundo. Dólar à vista −1,37% R$5,1016 (mín 5,0921 · menor desde 03/06)."
       },
       "ajuste_b3_meta": {
-        "valor": 5140.34,
+        "valor": 5140.339,
         "data_referencia": "2026-06-11",
-        "fonte": "B3 settlement oficial via print home broker EOD (2026-06-11)"
+        "fonte": "B3 settlement oficial via TradingView close D-1 (2026-06-11)"
       },
       "plano": {
         "direcao": "AGUARDAR o IPCA 09:00 · operar só pós-digestão na zona certa COM gatilho · swap do BC às 11:30 pode mexer na margem",

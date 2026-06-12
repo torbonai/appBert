@@ -1,11 +1,10 @@
 {
   "mercado": "NASDAQ (NAS100)",
-  "gerado_em": "2026-06-11T00:30:02",
+  "gerado_em": "2026-06-12T11:24:44",
   "periodo": {
     "de": "2026-06-08",
     "ate": "2026-06-10",
-    "dias_com_dados": 6,
-    "janela_canonica_desde": "2026-06-01"
+    "dias_com_dados": 8
   },
   "amostra": {
     "operacoes_fechadas": 3,
@@ -31,6 +30,7 @@
     "drawdown_atual_pts": 0,
     "seq_max_ganhos": 2,
     "seq_max_perdas": 0,
+    "seq_atual": "+2",
     "curva_acumulada": [
       70,
       70,
@@ -41,9 +41,10 @@
     "kelly_cheio_pct": null,
     "rotulo": "TETO TEÓRICO — nunca operar o Kelly cheio (Live #3)",
     "regra_bertani": "2% do PL por trade · 1% em dia de evento",
+    "fracao_usada_2pct": null,
     "margem_seguranca": null,
     "_nota": "margem_seguranca = quantas vezes abaixo do teto Kelly a regra de 2% opera"
   },
   "_fonte": "performance_dia_*.json (tracker por candle real · só ops em que o preço deu entrada · BE em 1R · alvo final = ALVO 2)",
-  "_regras": "W exclui break-even · abertas fora · n<30 = amostra em construção · janela desde 2026-06-01"
+  "_regras": "W exclui break-even · abertas fora das métricas · n<30 = amostra em construção"
 }

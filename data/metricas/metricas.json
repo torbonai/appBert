@@ -1,52 +1,56 @@
 {
   "mercado": "B3 (WIN/WDO)",
-  "gerado_em": "2026-06-11T00:29:50",
+  "gerado_em": "2026-06-12T11:24:44",
   "periodo": {
     "de": "2026-06-02",
-    "ate": "2026-06-09",
-    "dias_com_dados": 7,
-    "janela_canonica_desde": "2026-06-01"
+    "ate": "2026-06-11",
+    "dias_com_dados": 8
   },
   "amostra": {
-    "operacoes_fechadas": 6,
-    "ganhos": 2,
+    "operacoes_fechadas": 9,
+    "ganhos": 5,
     "perdas": 3,
     "break_even": 1,
-    "abertas_agora": 2,
+    "abertas_agora": 0,
     "confiavel": false,
-    "badge": "AMOSTRA EM CONSTRUÇÃO (6/30)"
+    "badge": "AMOSTRA EM CONSTRUÇÃO (9/30)"
   },
   "metricas": {
-    "taxa_acerto_pct": 40.0,
-    "ganho_medio_pts": 952.0,
+    "taxa_acerto_pct": 62.5,
+    "ganho_medio_pts": 500.8,
     "perda_media_pts": 418.3,
-    "rr_realizado": 2.28,
-    "r_multiple_medio": -0.02,
-    "expectativa_pts_por_trade": 129.8,
-    "expectativa_R_por_trade": 0.31,
-    "pts_acumulados": 649,
+    "rr_realizado": 1.2,
+    "r_multiple_medio": 0.11,
+    "expectativa_pts_por_trade": 156.1,
+    "expectativa_R_por_trade": 0.37,
+    "pts_acumulados": 1249,
     "melhor_trade_pts": 1282,
     "pior_trade_pts": -475,
     "drawdown_max_pts": 805,
-    "drawdown_atual_pts": 450,
-    "seq_max_ganhos": 2,
+    "drawdown_atual_pts": 0,
+    "seq_max_ganhos": 3,
     "seq_max_perdas": 2,
+    "seq_atual": "+2",
     "curva_acumulada": [
       -330,
       -805,
-      -183,
-      1099,
-      1099,
-      649
+      -690,
+      -68,
+      1214,
+      1214,
+      764,
+      934,
+      1249
     ]
   },
   "kelly": {
-    "kelly_cheio_pct": 13.6,
+    "kelly_cheio_pct": 31.2,
     "rotulo": "TETO TEÓRICO — nunca operar o Kelly cheio (Live #3)",
     "regra_bertani": "2% do PL por trade · 1% em dia de evento",
-    "margem_seguranca": 6.8,
+    "fracao_usada_2pct": "1/16",
+    "margem_seguranca": 15.6,
     "_nota": "margem_seguranca = quantas vezes abaixo do teto Kelly a regra de 2% opera"
   },
   "_fonte": "performance_dia_*.json (tracker por candle real · só ops em que o preço deu entrada · BE em 1R · alvo final = ALVO 2)",
-  "_regras": "W exclui break-even · abertas fora · n<30 = amostra em construção · janela desde 2026-06-01"
+  "_regras": "W exclui break-even · abertas fora das métricas · n<30 = amostra em construção"
 }
